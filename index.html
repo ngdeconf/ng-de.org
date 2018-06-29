@@ -15,6 +15,10 @@ layout: base
     <h3>{{ site.description }}</h3>
 
         <ul>
+            {% if site.twitter_username %}
+            <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span class="description">Twitter</span></a></li>
+            {% endif %}
+
             {% if site.github_username %}
             <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
             {% endif %}
@@ -29,10 +33,6 @@ layout: base
 
             {% if site.vk_username %}
             <li><a class="fa fa-2x fa-vk" href="https://vk.com/{{ site.vk_username }}"><span class="description">ВКонтакте</span></a></li>
-            {% endif %}
-
-            {% if site.twitter_username %}
-            <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span class="description">Twitter</span></a></li>
             {% endif %}
 
             {% if site.google_plus_username %}
@@ -103,8 +103,9 @@ layout: base
 
         <footer>
             <div class="legal">
-                <a href="/imprint/">imprint</a>
-                <a href="/data-privacy/">data privacy</a>
+                <a target="_blank" href="https://berlincodeofconduct.org/">code of conduct</a>
+                <a target="_blank" href="/imprint/">imprint</a>
+                <a target="_blank" href="/data-privacy/">data privacy</a>
             </div>
         </footer>
 </div>
