@@ -118,6 +118,15 @@ header::after {
     color: initial;
 }
 
+footer {
+    font-size: 0.7rem;
+}
+
+footer .legal a {
+    padding: 10px;
+}
+
+
 @media (max-width: 450px) {
 ul {
     text-align: center;
