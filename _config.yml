@@ -16,7 +16,7 @@
 # Site settings
 name: NG-DE 2019
 description: "Nifty little description"
-title: Your awesome title
+title: NG-DE 2019 - Angular Conference - Summer 2019 in Berlin
 description: >- # this means to ignore newlines until "baseurl:"
   The first Angular-Conference in Germany taking place in summer 2019.
 
