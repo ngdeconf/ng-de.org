@@ -33,17 +33,28 @@ h1 {
     font-family: 'Open Sans';
     margin: -10px 0;
 }
-h3 {
+h2 {
     color: white;
     padding-bottom: 20px;
+    padding-top: 20px;
     font-weight: thin;
+    font-size: 1.3em;
 }
+
+h3 {
+    color: white;
+    font-weight: thin;
+    font-size: 1em;
+}
+
 .content {
     padding-top: 100px;
     padding-bottom: 40px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 ul {
     list-style: none;
@@ -125,6 +136,10 @@ footer {
 footer .legal a {
     padding: 10px;
     border: none
+}
+
+.legal {
+    padding-top: 50px;
 }
 
 

@@ -15,10 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 # Site settings
 name: NG-DE 2019
-description: "Nifty little description"
 title: NG-DE 2019 - Angular Conference - Summer 2019 in Berlin
 description: >- # this means to ignore newlines until "baseurl:"
-  The first Angular-Conference in Germany taking place in summer 2019.
+  Angular-Conference - Summer 2019 - Berlin
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://ng-de.org" # the base hostname & protocol for your site, e.g. http://example.com
