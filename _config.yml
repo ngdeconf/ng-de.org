@@ -20,7 +20,7 @@ title: NG-DE 2019 - Angular Conference - Summer 2019 in Berlin
 description: >- # this means to ignore newlines until "baseurl:"
   The first Angular-Conference in Germany taking place in summer 2019.
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://ng-de.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
@@ -51,11 +51,11 @@ avatar: yes
 #avatar_img_path: "imgs/avatar.jpg""
 # You can link to your GitHub image. That way it will get updated
 # automatically whenever you change your GitHub profile picture
-avatar_img_path: "imgs/angularjs-de-logo.png"
+avatar_img_path: "/imgs/angularjs-de-logo.png"
 
 
 front_img: yes
-front_img_path: "imgs/daniel-brosch-594428-unsplash.jpg"
+front_img_path: "/imgs/daniel-brosch-594428-unsplash.jpg"
 #front_img_path: "https://external.url/image.jpg"
 
 

@@ -1,6 +1,5 @@
 body {
     font-family: 'Open Sans',Helvetica,Arial,sans-serif;
-    background-color: rgba(0, 0, 0, 0.9);
     position: absolute; 
     top: 0;
     bottom: 0;
@@ -8,6 +7,7 @@ body {
     left: 0;
     margin: 0;
 }
+
 #fullscreen {
     z-index: -999;
     min-height: 100%;
@@ -68,13 +68,54 @@ li:hover {
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.5);
 }
-a {
+.content a {
     color: white;
     padding: 15px;
     text-decoration: none;
 }
 .description {
     display: none;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    text-align: center;
+}
+
+header::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.legal-content {
+    max-width: 960px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.legal-content h1,
+.legal-content h2,
+.legal-content h3 {
+    color: black;
+}
+
+.legal-content a {
+    color: initial;
 }
 
 @media (max-width: 450px) {
@@ -97,7 +138,7 @@ li:hover {
     background-color: none;
     transition: none;
 }
-a {
+.content a {
     text-align: justify;
     border: 2px solid white;
     border-radius: 5px;
@@ -106,7 +147,7 @@ a {
     padding-left: 30px;
     width: 70%;
 }
-a:hover {
+.content a:hover {
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     transition: 500ms;
@@ -124,3 +165,4 @@ a:hover {
     padding-top: 60px;
 }
 }
+
