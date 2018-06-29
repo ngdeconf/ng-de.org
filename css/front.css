@@ -84,6 +84,11 @@ li:hover {
     padding: 15px;
     text-decoration: none;
 }
+
+.content footer a {
+    text-transform: uppercase;
+}
+
 .description {
     display: none;
 }
