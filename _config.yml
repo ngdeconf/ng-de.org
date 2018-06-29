@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   The first Angular-Conference in Germany taking place in summer 2019.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ng-de.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
