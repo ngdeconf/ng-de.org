@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: rgb(48, 54, 63);
+  color: rgb(245, 244, 247);
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  color: rgb(245, 244, 247);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+.header {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.header__logo {
+  max-width: 250px;
+}
+
+.teaser {
+  text-align: center;
+}
+
+.teaser__conference-name {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.teaser__conference-details {
+  font-size: 1.5em;
+}
+
+.social-media {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.social-media__up-to-date {
+  margin: 25px auto;
+}
+
+.social-media__networks {
+  font-size: 2em;
+  letter-spacing: 10px;
+}
+
+.social-media__network:hover {
+  color: rgb(233, 103, 77);
+}
+
+.link--primary {
+  color: rgb(233, 103, 77);
+}
+
+.footer {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.footer__link {
+  margin: 0 10px;
+}
