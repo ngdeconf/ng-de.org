@@ -21,6 +21,12 @@ layout: landing
       {% if site.data.socialmedia.newsletter %}
       <a class="social-media__network" href="{{ site.data.socialmedia.newsletter.url }}" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
       {% endif %}
+      {% if site.data.socialmedia.instagram %}
+      <a class="social-media__network" href="{{ site.data.socialmedia.instagram.url }}" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      {% endif %}
+      {% if site.data.socialmedia.youtube %}
+      <a class="social-media__network" href="{{ site.data.socialmedia.youtube.url }}" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+      {% endif %}
     </div>
   </section>
 </main>
