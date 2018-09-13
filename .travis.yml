@@ -50,7 +50,8 @@ script:
 
 after_success:
   # deploy to firebase using stored token. 
-  - firebase deploy --token "$FIREBASE_TOKEN" --project $TRAVIS_BRANCH
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then firebase deploy --token "$FIREBASE_TOKEN" --project master ; fi 
+  - if [ "$TRAVIS_BRANCH" == "beta" ]; then firebase deploy --token "$FIREBASE_TOKEN" --project beta; fi 
 
 env:
   global:
