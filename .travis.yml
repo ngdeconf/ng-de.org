@@ -51,9 +51,9 @@ script:
 after_success:
   #deploy to firebase using stored token. 
   if: branch = master
-  - firebase deploy --token "$FIREBASE_TOKEN" 
+    - firebase deploy --token "$FIREBASE_TOKEN" 
   if: branch = beta
-  - firebase deploy --token "$FIREBASE_TOKEN" --project beta
+    - firebase deploy --token "$FIREBASE_TOKEN" --project beta
 
 env:
   global:
