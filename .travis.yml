@@ -49,11 +49,16 @@ script:
   - jekyll build 
 
 after_success:
-  #deploy to firebase using stored token. 
-  if: branch = master
-    - firebase deploy --token "$FIREBASE_TOKEN" 
-  if: branch = beta
-    - firebase deploy --token "$FIREBASE_TOKEN" --project beta
+  # deploy to firebase using stored token. 
+  - if branch = master; then firebase deploy --token "$FIREBASE_TOKEN" ; fi 
+  - if branch = beta; then firebase deploy --token "$FIREBASE_TOKEN" --project beta; fi 
+
+deploy:
+- on: 
+  provider: firebase
+  token:
+    secure: "YOUR ENCRYPTED token"
+  project: "myapp-staging"
 
 env:
   global:
