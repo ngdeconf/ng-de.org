@@ -2,5 +2,6 @@
   "projects": {
     "default": "ngdeconf",
     "beta": "ngdeconf-beta"
+    "master": "ngdeconf"
   }
 }
