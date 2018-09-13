@@ -14,6 +14,7 @@ node_js:
 branches:
   only:
     - master
+    - beta
 
 #set notifications frequency
 notifications:
