@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "ngdeconf"
+    "default": "ngdeconf",
+    "beta": "ngdeconf-beta"
   }
 }
