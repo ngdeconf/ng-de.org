@@ -34,6 +34,7 @@ before_install:
   - gem install bundler 
   #if gems are missing this script will get the missing gems.
   - bundle check || bundle install 
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then JEKYLL_ENV = "production"; fi
 
 install:
   #install firebase tools, required to deploy on firebase hosting 
