@@ -4,6 +4,9 @@
 
 html {
   background: rgb(48, 54, 63);
+  background: linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
+  background: -moz-linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
+  background: -webkit-linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
   color: rgb(245, 244, 247);
 }
 
@@ -32,6 +35,9 @@ p {
   width: 100%;
   z-index: 100;
   background: rgb(48, 54, 63);
+  background: linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
+  background: -moz-linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
+  background: -webkit-linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
 }
 
 .navigation-list__item {
@@ -88,6 +94,7 @@ p {
   }
 
   .navigation__toggler:checked ~ .navigation {
+    background: rgb(48, 54, 63);
     height: 100%;
   }
 }
@@ -112,4 +119,12 @@ p {
   transform: skewY(-2deg);
   padding: 50px 0;
   margin: 50px 0;
+}
+
+.button {
+  padding: 7px;
+  text-decoration: none;
+  background: none;
+  border: 3px solid rgb(48, 54, 63);
+  cursor: pointer;
 }
