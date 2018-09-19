@@ -78,6 +78,7 @@ layout: default
   <section class="footer container">
     <div class="row row--two">
       <div class="row__col">
+        <h3>Please note ...</h3>
         <ul class="link-list">
           <li class="link-list__item"><a href="#" rel="noopener">Code of Conduct</a></li>
           <li class="link-list__item"><a href="#" rel="noopener">Imprint</a></li>
@@ -85,8 +86,9 @@ layout: default
         </ul>
       </div>
       <div class="row__col">
-        {% if site.data.socialmedia.twitter %}
+        <h3>Follow us ...</h3>
         <div class="social-media-list">
+          {% if site.data.socialmedia.twitter %}
           <a 
             class="social-media-list__item"
             href="{{ site.data.socialmedia.twitter.url }}" 
