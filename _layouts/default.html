@@ -16,6 +16,16 @@
     {% include _ga.html %}
   </head>
   <body>
-    {{content}}
+    {% include navigation.html %}
+    {% include header.html %}
+    <main class="main">
+      <div class="main__content">
+        <section class="container">
+          {{content}}
+        </section>
+      </div>
+    </main>
+    {% include footer.html %}
+
   </body>
 </html>

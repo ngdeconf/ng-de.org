@@ -1,0 +1,19 @@
+<input id="navigation__toggler" class="navigation__toggler" type="checkbox" />
+<nav class="navigation">
+  <section class="container">
+    <div class="row">
+      <div class="row__col">
+        <label class="navigation__hamburger" for="navigation__toggler">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="navigation-list">
+          {% for link in site.data.pages.links %}
+          <li class="navigation-list__item">
+            <a class="navigation__link {% if link.url == page.url %}navigation__link--active{% endif %}" href="{{ link.url }}">{{ link.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+</nav>
