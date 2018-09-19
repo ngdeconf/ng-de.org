@@ -2,6 +2,7 @@
 ---
 
 @import 'normalize.scss';
+@import 'variables.scss';
 
 * {
   box-sizing: border-box;
@@ -9,17 +10,14 @@
 }
 
 html {
-  background: rgb(48, 54, 63);
-  background: linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
-  background: -moz-linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
-  background: -webkit-linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
+  @extend %default-separated-background;
   color: rgb(245, 244, 247);
 }
 
 body {
   min-height: 100%;
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $font-general;
 }
 
 a {
@@ -40,10 +38,7 @@ p {
   position: fixed;
   width: 100%;
   z-index: 100;
-  background: rgb(48, 54, 63);
-  background: linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
-  background: -moz-linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
-  background: -webkit-linear-gradient(left, #2F363F 0%,#2F363F 50%,#39414D 50%,#39414D 100%);
+  @extend %default-separated-background;
 }
 
 .navigation-list__item {
@@ -94,14 +89,16 @@ p {
     display: none;
   }
 
-  .navigation__toggler:checked ~ .navigation .navigation-list {
-    display: flex;
-    flex-direction: column;
-  }
+  .navigation__toggler:checked {
+    ~ .navigation .navigation-list {
+      display: flex;
+      flex-direction: column;
+    }
 
-  .navigation__toggler:checked ~ .navigation {
-    background: rgb(48, 54, 63);
-    height: 100%;
+    ~ .navigation {
+      background: $primary-grey;
+      height: 100%;
+    }
   }
 }
 
@@ -117,7 +114,7 @@ p {
 
 .main {
   background: #fff;
-  color: rgb(48, 54, 63);
+  color: $primary-grey;
   transform: skewY(2deg);
 }
 
@@ -131,6 +128,6 @@ p {
   padding: 7px;
   text-decoration: none;
   background: none;
-  border: 3px solid rgb(48, 54, 63);
+  border: 3px solid $primary-grey;
   cursor: pointer;
 }
