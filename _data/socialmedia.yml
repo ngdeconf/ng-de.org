@@ -1,19 +1,24 @@
 twitter:
+  service: Twitter
   username: "@ngdeconf"
   url: https://twitter.com/ngdeconf
 
 facebook:
+  service: Facebook
   username: ngdeconf
   url: https://facebook.com/ngdeconf
 
 newsletter:
+  service: Newsletter
   username: Newsletter
   url: https://ng-de.us5.list-manage.com/subscribe?u=465db430c1cb88ec6dea2ca40&id=a64bc22ee3
 
 instagram:
+  service: Instagram
   username: ngdeconf
   url: https://www.instagram.com/ngdeconf
 
 youtube:
+  service: Youtube
   username: Youtube
   url: https://www.youtube.com/channel/UCBw_r4N2nv72l9IV2hn042A

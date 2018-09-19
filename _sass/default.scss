@@ -17,6 +17,11 @@ body {
 
 a {
   color: rgb(245, 244, 247);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p {
@@ -164,5 +169,32 @@ p {
   .row__col {
     width: 100%;
     padding: 0 1.5em;
+  }
+
+  &.row--two .row__col {
+    width: 50%;
+  }
+}
+
+.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .link-list__item {
+    margin: 0;
+    padding: .25em 0;
+  }
+}
+
+.social-media-list {
+  .social-media-list__item {
+    font-size: 2em;
+    letter-spacing: 1em;
+    line-height: 2em;
+
+    &:hover {
+      color: $primary-red;
+    }
   }
 }
