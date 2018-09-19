@@ -24,9 +24,8 @@ p {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: $screen-large;
   margin: auto;
-  padding: 0 25px;
 }
 
 .navigation {
@@ -74,7 +73,7 @@ p {
   padding: 0;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: $screen-medium) {
 
   .navigation__hamburger {
     display: block;
@@ -100,6 +99,7 @@ p {
 .header {
   min-height: 200px;
   padding-top: 100px;
+  padding-bottom: 25px;
   text-align: center;
 }
 
@@ -119,6 +119,12 @@ p {
   background: #fff;
   color: $primary-grey;
   transform: skewY(2deg);
+}
+
+.footer {
+  min-height: 200px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .main__content {
@@ -150,4 +156,13 @@ p {
 .button-primary:hover {
   background: $primary-red;
   color: #fff;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  .row__col {
+    width: 100%;
+    padding: 0 1.5em;
+  }
 }

@@ -16,3 +16,7 @@ $primary-red: rgb(232, 65, 24);
 %default-separated-background {
   @include backgroundSeparated($primary-grey, $secondary-grey);
 }
+
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1200px;
