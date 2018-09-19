@@ -1,0 +1,25 @@
+links:
+  - name: Home
+    url: /
+    navigation: true
+    footer: false
+  - name: Speakers
+    url: /speakers
+    navigation: true
+    footer: false
+  - name: Schedule
+    url: /schedule
+    navigation: true
+    footer: false
+  - name: Location
+    url: /location
+    navigation: true
+    footer: false
+  - name: About
+    url: /about
+    navigation: true
+    footer: false
+  - name: Code of Conduct
+    url: /code-of-conduct
+    navigation: true
+    footer: false
