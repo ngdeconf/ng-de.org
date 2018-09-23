@@ -9,25 +9,44 @@ Background Image by Daniel Brosch on Unsplash
 
 ## Development
 
-### 1. Get a local copy of the repository
-Download or clone the repo to your machine.
+### 0. Prerequisite Software
 
-### 2. Install the runtime dependenies
-*You may need to install ruby.*
-If the ruby runtime is already on your machine make sure to have the `bundler` gem installed.
+* [Git](http://git-scm.com) and/or the **GitHub app** (for [Mac](http://mac.github.com) or
+  [Windows](http://windows.github.com)); [GitHub's Guide to Installing
+  Git](https://help.github.com/articles/set-up-git) is a good source of information.
 
-```bash
-gem install bundler
+* [Ruby](https://www.ruby-lang.org/en/)
+
+### 1. Getting the Sources
+
+Fork and clone repository:
+
+1. Login to your GitHub account or create one by following the instructions given
+   [here](https://github.com/signup/free).
+2. [Fork](http://help.github.com/forking) the [main repository](https://github.com/ngdeconf/ng-de.org).
+3. Clone your fork of the repository and define an `upstream` remote pointing back to
+   the main repository that you forked in the first place.
+
+```shell
+# Clone your GitHub repository:
+git clone git@github.com:<github username>/ng-de.org.git
+
+# Go to the directory:
+cd ng-de.org
+
+# Add the main repository as an upstream remote to your repository:
+git remote add upstream https://github.com/ngdeconf/ng-de.org.git
 ```
 
-### 3. Install the project dependencies
-Download deps that are defined in `Gemfile`.
-
+### 2. Install the project dependencies
 ```bash
+# install bundler as ruby package manager
+gem install bundler
+# install the project depdencies defined int the Gemfile
 bundle install
 ```
 
-### 4. Run the jekyll instance
+### 3. Run the jekyll instance
 
 ```bash
 # start the web page at http://localhost:4000
