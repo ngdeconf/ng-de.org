@@ -20,7 +20,7 @@ If the ruby runtime is already on your machine make sure to have the `bundler` g
 gem install bundler
 ```
 
-### 3.Install the project dependencies
+### 3. Install the project dependencies
 Download deps that are defined in `Gemfile`.
 
 ```bash
