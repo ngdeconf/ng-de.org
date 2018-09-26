@@ -1,0 +1,28 @@
+main: null
+
+platinum: null
+
+gold: null
+
+silver: null
+
+bronze: null
+
+community:
+  - name: Angular Berlin
+    logo: angular-berlin.svg
+    url: https://www.meetup.com/AngularJS-Meetup-Berlin/
+  - name: Angular Ruhr
+    logo: angular-ruhr.svg
+    url: https://www.meetup.com/de-DE/Angular-Ruhr/
+  - name: FrankenJS
+    logo: frankenjs.svg
+    url: https://frankenjs.org
+
+partners:
+  - name: angularjs.de
+    logo: angularjs-de.svg
+    url: https://angularjs.de
+  - name: workshops.de
+    logo: workshops-de.svg
+    url: https://workshops.de
