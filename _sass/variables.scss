@@ -6,6 +6,8 @@ $secondary-grey: rgb(57, 65, 77);
 
 $primary-red: rgb(232, 65, 24);
 
+$primary-white: rgb(245, 244, 247);
+
 @mixin backgroundSeparated($colorLeft, $colorRight) {
   background: $colorLeft;
   background: linear-gradient(left, $colorLeft 0%, $colorLeft 50%, $colorRight 50%, $colorRight 100%);

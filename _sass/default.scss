@@ -6,7 +6,8 @@
 
 html {
   @extend %default-separated-background;
-  color: rgb(245, 244, 247);
+  color: $primary-white;
+  font-size: 1.2em;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 }
 
 a {
-  color: rgb(245, 244, 247);
+  color: $primary-white;
   text-decoration: none;
 }
 
@@ -25,7 +26,7 @@ a:hover {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .container {
@@ -118,13 +119,17 @@ p {
 }
 
 .header__slug {
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 .main {
   background: #fff;
   color: $primary-grey;
   transform: skewY(2deg);
+
+  a {
+    color: $primary-red;
+  }
 }
 
 .footer {
@@ -150,6 +155,7 @@ p {
 .button:hover {
   color: $primary-red;
   border-color: $primary-red;
+  text-decoration: none;
 }
 
 .button-primary {
@@ -163,6 +169,7 @@ p {
   background: $primary-red;
   color: #fff;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -174,6 +181,14 @@ p {
 
   &.row--two .row__col {
     width: 50%;
+  }
+
+  &.row--three .row__col {
+    width: 33.332%;
+  }
+
+  &.row--four .row__col {
+    width: 25%;
   }
 }
 
@@ -197,5 +212,18 @@ p {
     &:hover {
       color: $primary-red;
     }
+  }
+}
+
+.lead {
+  margin: 75px 0;
+
+  .lead__headline {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .lead__content {
+    text-align: center;
   }
 }
