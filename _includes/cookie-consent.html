@@ -20,14 +20,14 @@
   const ACCEPTED = 'cookie-consent-accepted';
 
   const agree = () => {
-    sessionStorage.setItem(ACCEPTED, true);
+    localStorage.setItem(ACCEPTED, true);
     cookieConsent.classList.remove('cookie-consent--active');
     accept.removeEventListener('click', agree);
   };
 
   accept.addEventListener('click', agree);
 
-  if (!sessionStorage.getItem(ACCEPTED)) {
+  if (!localStorage.getItem(ACCEPTED)) {
     cookieConsent.classList.add('cookie-consent--active');
   }
 })();
