@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" version="1.1" baseProfile="full" width="400" height="400">
+    <defs/>
+    <polygon points="-25,-50,0,-25,-25,0,-50,-25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0107371; stroke-width: 0;"/>
+    <polygon points="0,-25,25,0,0,25,-25,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0547016; stroke-width: 0;"/>
+    <polygon points="25,-50,50,-25,25,0,0,-25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0246425; stroke-width: 0;"/>
+    <polygon points="50,-25,75,0,50,25,25,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0544495; stroke-width: 0;"/>
+    <polygon points="75,-50,100,-25,75,0,50,-25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0535094; stroke-width: 0;"/>
+    <polygon points="100,-25,125,0,100,25,75,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0286265; stroke-width: 0;"/>
+    <polygon points="125,-50,150,-25,125,0,100,-25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0665104; stroke-width: 0;"/>
+    <polygon points="150,-25,175,0,150,25,125,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0765489; stroke-width: 0;"/>
+    <polygon points="175,-50,200,-25,175,0,150,-25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0219061; stroke-width: 0;"/>
+    <polygon points="200,-25,225,0,200,25,175,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0610479; stroke-width: 0;"/>
+    <polygon points="225,-50,250,-25,225,0,200,-25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0489556; stroke-width: 0;"/>
+    <polygon points="250,-25,275,0,250,25,225,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0398763; stroke-width: 0;"/>
+    <polygon points="275,-50,300,-25,275,0,250,-25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0606302; stroke-width: 0;"/>
+    <polygon points="300,-25,325,0,300,25,275,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0701527; stroke-width: 0;"/>
+    <polygon points="325,-50,350,-25,325,0,300,-25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0655987; stroke-width: 0;"/>
+    <polygon points="350,-25,375,0,350,25,325,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.089792; stroke-width: 0;"/>
+    <polygon points="375,-50,400,-25,375,0,350,-25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0645287; stroke-width: 0;"/>
+    <polygon points="400,-25,425,0,400,25,375,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0371514; stroke-width: 0;"/>
+    <polygon points="425,-50,450,-25,425,0,400,-25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0650165; stroke-width: 0;"/>
+
+    <polygon points="475,-50,500,-25,475,0,450,-25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0358527; stroke-width: 0;"/>
+    <polygon points="0,-25,25,0,0,25,-25,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="25,0,50,25,25,50,0,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0413043; stroke-width: 0;"/>
+    <polygon points="50,-25,75,0,50,25,25,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.233333; stroke-width: 0;"/>
+    <polygon points="75,0,100,25,75,50,50,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0441203; stroke-width: 0;"/>
+    <polygon points="100,-25,125,0,100,25,75,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.293333; stroke-width: 0;"/>
+    <polygon points="125,0,150,25,125,50,100,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0872405; stroke-width: 0;"/>
+    <polygon points="150,-25,175,0,150,25,125,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.4; stroke-width: 0;"/>
+    <polygon points="175,0,200,25,175,50,150,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0153604; stroke-width: 0;"/>
+    <polygon points="200,-25,225,0,200,25,175,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="225,0,250,25,225,50,200,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0388398; stroke-width: 0;"/>
+    <polygon points="250,-25,275,0,250,25,225,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.266667; stroke-width: 0;"/>
+    <polygon points="275,0,300,25,275,50,250,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.071048; stroke-width: 0;"/>
+    <polygon points="300,-25,325,0,300,25,275,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="325,0,350,25,325,50,300,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0102282; stroke-width: 0;"/>
+    <polygon points="350,-25,375,0,350,25,325,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.233333; stroke-width: 0;"/>
+    <polygon points="375,0,400,25,375,50,350,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0635456; stroke-width: 0;"/>
+    <polygon points="400,-25,425,0,400,25,375,0" fill="#ff0000" stroke="#ffffff" style="opacity: 0.4; stroke-width: 0;"/>
+
+    <polygon points="-25,0,0,25,-25,50,-50,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0172306; stroke-width: 0;"/>
+    <polygon points="0,25,25,50,0,75,-25,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0782517; stroke-width: 0;"/>
+    <polygon points="25,0,50,25,25,50,0,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="50,25,75,50,50,75,25,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0613108; stroke-width: 0;"/>
+    <polygon points="75,0,100,25,75,50,50,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.366667; stroke-width: 0;"/>
+    <polygon points="100,25,125,50,100,75,75,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0576519; stroke-width: 0;"/>
+    <polygon points="125,0,150,25,125,50,100,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.266667; stroke-width: 0;"/>
+    <polygon points="150,25,175,50,150,75,125,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00855511; stroke-width: 0;"/>
+    <polygon points="175,0,200,25,175,50,150,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.266667; stroke-width: 0;"/>
+    <polygon points="200,25,225,50,200,75,175,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0160281; stroke-width: 0;"/>
+    <polygon points="225,0,250,25,225,50,200,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.433333; stroke-width: 0;"/>
+    <polygon points="250,25,275,50,250,75,225,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0623147; stroke-width: 0;"/>
+    <polygon points="275,0,300,25,275,50,250,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.2; stroke-width: 0;"/>
+    <polygon points="300,25,325,50,300,75,275,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0319946; stroke-width: 0;"/>
+    <polygon points="325,0,350,25,325,50,300,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.266667; stroke-width: 0;"/>
+    <polygon points="350,25,375,50,350,75,325,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0204578; stroke-width: 0;"/>
+    <polygon points="375,0,400,25,375,50,350,25" fill="#ff0000" stroke="#ffffff" style="opacity: 0.266667; stroke-width: 0;"/>
+    <polygon points="400,25,425,50,400,75,375,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0783152; stroke-width: 0;"/>
+
+    <polygon points="0,25,25,50,0,75,-25,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.466667; stroke-width: 0;"/>
+    <polygon points="25,50,50,75,25,100,0,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0497303; stroke-width: 0;"/>
+    <polygon points="50,25,75,50,50,75,25,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.2; stroke-width: 0;"/>
+    <polygon points="75,50,100,75,75,100,50,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0868872; stroke-width: 0;"/>
+    <polygon points="100,25,125,50,100,75,75,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="125,50,150,75,125,100,100,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0770755; stroke-width: 0;"/>
+    <polygon points="150,25,175,50,150,75,125,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.288667; stroke-width: 0;"/>
+    <polygon points="175,50,200,75,175,100,150,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0579161; stroke-width: 0;"/>
+    <polygon points="200,25,225,50,200,75,175,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.233333; stroke-width: 0;"/>
+    <polygon points="225,50,250,75,225,100,200,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0881927; stroke-width: 0;"/>
+    <polygon points="250,25,275,50,250,75,225,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.233333; stroke-width: 0;"/>
+    <polygon points="275,50,300,75,275,100,250,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.017072; stroke-width: 0;"/>
+    <polygon points="300,25,325,50,300,75,275,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.133333; stroke-width: 0;"/>
+    <polygon points="325,50,350,75,325,100,300,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0687236; stroke-width: 0;"/>
+    <polygon points="350,25,375,50,350,75,325,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.366667; stroke-width: 0;"/>
+    <polygon points="375,50,400,75,375,100,350,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0665619; stroke-width: 0;"/>
+    <polygon points="400,25,425,50,400,75,375,50" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+
+    <polygon points="-25,50,0,75,-25,100,-50,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0259692; stroke-width: 0;"/>
+    <polygon points="0,75,25,100,0,125,-25,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0172595; stroke-width: 0;"/>
+    <polygon points="25,50,50,75,25,100,0,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="50,75,75,100,50,125,25,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0399079; stroke-width: 0;"/>
+    <polygon points="75,50,100,75,75,100,50,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.266667; stroke-width: 0;"/>
+    <polygon points="100,75,125,100,100,125,75,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0133869; stroke-width: 0;"/>
+    <polygon points="125,50,150,75,125,100,100,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.186667; stroke-width: 0;"/>
+    <polygon points="150,75,175,100,150,125,125,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0621765; stroke-width: 0;"/>
+    <polygon points="175,50,200,75,175,100,150,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.466667; stroke-width: 0;"/>
+    <polygon points="200,75,225,100,200,125,175,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0352277; stroke-width: 0;"/>
+    <polygon points="225,50,250,75,225,100,200,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.266667; stroke-width: 0;"/>
+    <polygon points="250,75,275,100,250,125,225,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0268472; stroke-width: 0;"/>
+    <polygon points="275,50,300,75,275,100,250,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.293333; stroke-width: 0;"/>
+    <polygon points="300,75,325,100,300,125,275,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0607071; stroke-width: 0;"/>
+    <polygon points="325,50,350,75,325,100,300,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.4; stroke-width: 0;"/>
+    <polygon points="350,75,375,100,350,125,325,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0186831; stroke-width: 0;"/>
+    <polygon points="375,50,400,75,375,100,350,75" fill="#ff0000" stroke="#ffffff" style="opacity: 0.266667; stroke-width: 0;"/>
+    <polygon points="400,75,425,100,400,125,375,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0690079; stroke-width: 0;"/>
+
+    <polygon points="0,75,25,100,0,125,-25,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.233333; stroke-width: 0;"/>
+    <polygon points="25,100,50,125,25,150,0,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00851587; stroke-width: 0;"/>
+    <polygon points="50,75,75,100,50,125,25,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.266667; stroke-width: 0;"/>
+    <polygon points="75,100,100,125,75,150,50,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0265609; stroke-width: 0;"/>
+    <polygon points="100,75,125,100,100,125,75,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.4; stroke-width: 0;"/>
+    <polygon points="125,100,150,125,125,150,100,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0628583; stroke-width: 0;"/>
+    <polygon points="150,75,175,100,150,125,125,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.3; stroke-width: 0;"/>
+    <polygon points="175,100,200,125,175,150,150,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0858504; stroke-width: 0;"/>
+    <polygon points="200,75,225,100,200,125,175,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.366667; stroke-width: 0;"/>
+    <polygon points="225,100,250,125,225,150,200,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.073632; stroke-width: 0;"/>
+    <polygon points="250,75,275,100,250,125,225,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.3; stroke-width: 0;"/>
+    <polygon points="275,100,300,125,275,150,250,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0679753; stroke-width: 0;"/>
+    <polygon points="300,75,325,100,300,125,275,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.266667; stroke-width: 0;"/>
+    <polygon points="325,100,350,125,325,150,300,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0187249; stroke-width: 0;"/>
+    <polygon points="350,75,375,100,350,125,325,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.4; stroke-width: 0;"/>
+    <polygon points="375,100,400,125,375,150,350,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0223012; stroke-width: 0;"/>
+    <polygon points="400,75,425,100,400,125,375,100" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+
+    <polygon points="-25,100,0,125,-25,150,-50,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0292239; stroke-width: 0;"/>
+    <polygon points="0,125,25,150,0,175,-25,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00675955; stroke-width: 0;"/>
+    <polygon points="25,100,50,125,25,150,0,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="50,125,75,150,50,175,25,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0253546; stroke-width: 0;"/>
+    <polygon points="75,100,100,125,75,150,50,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.373333; stroke-width: 0;"/>
+    <polygon points="100,125,125,150,100,175,75,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0461169; stroke-width: 0;"/>
+    <polygon points="125,100,150,125,125,150,100,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.533333; stroke-width: 0;"/>
+    <polygon points="150,125,175,150,150,175,125,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0754602; stroke-width: 0;"/>
+    <polygon points="175,100,200,125,175,150,150,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="200,125,225,150,200,175,175,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0441657; stroke-width: 0;"/>
+    <polygon points="225,100,250,125,225,150,200,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.366667; stroke-width: 0;"/>
+    <polygon points="250,125,275,150,250,175,225,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0615836; stroke-width: 0;"/>
+    <polygon points="275,100,300,125,275,150,250,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.304; stroke-width: 0;"/>
+    <polygon points="300,125,325,150,300,175,275,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0371593; stroke-width: 0;"/>
+    <polygon points="325,100,350,125,325,150,300,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.266667; stroke-width: 0;"/>
+    <polygon points="350,125,375,150,350,175,325,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00245156; stroke-width: 0;"/>
+    <polygon points="375,100,400,125,375,150,350,125" fill="#ff0000" stroke="#ffffff" style="opacity: 0.506667; stroke-width: 0;"/>
+    <polygon points="400,125,425,150,400,175,375,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0869954; stroke-width: 0;"/>
+
+    <polygon points="0,125,25,150,0,175,-25,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.533333; stroke-width: 0;"/>
+    <polygon points="25,150,50,175,25,200,0,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00134649; stroke-width: 0;"/>
+    <polygon points="50,125,75,150,50,175,25,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.4; stroke-width: 0;"/>
+    <polygon points="75,150,100,175,75,200,50,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0370049; stroke-width: 0;"/>
+    <polygon points="100,125,125,150,100,175,75,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.4; stroke-width: 0;"/>
+    <polygon points="125,150,150,175,125,200,100,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0426421; stroke-width: 0;"/>
+    <polygon points="150,125,175,150,150,175,125,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.446667; stroke-width: 0;"/>
+    <polygon points="175,150,200,175,175,200,150,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00305307; stroke-width: 0;"/>
+    <polygon points="200,125,225,150,200,175,175,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="225,150,250,175,225,200,200,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0750217; stroke-width: 0;"/>
+    <polygon points="250,125,275,150,250,175,225,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.466667; stroke-width: 0;"/>
+    <polygon points="275,150,300,175,275,200,250,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0137144; stroke-width: 0;"/>
+    <polygon points="300,125,325,150,300,175,275,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.466667; stroke-width: 0;"/>
+    <polygon points="325,150,350,175,325,200,300,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0634089; stroke-width: 0;"/>
+    <polygon points="350,125,375,150,350,175,325,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.486667; stroke-width: 0;"/>
+    <polygon points="375,150,400,175,375,200,350,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0092321; stroke-width: 0;"/>
+    <polygon points="400,125,425,150,400,175,375,150" fill="#ff0000" stroke="#ffffff" style="opacity: 0.4; stroke-width: 0;"/>
+
+    <polygon points="-25,150,0,175,-25,200,-50,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0776514; stroke-width: 0;"/>
+    <polygon points="0,175,25,200,0,225,-25,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0143234; stroke-width: 0;"/>
+    <polygon points="25,150,50,175,25,200,0,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.4; stroke-width: 0;"/>
+    <polygon points="50,175,75,200,50,225,25,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0244579; stroke-width: 0;"/>
+    <polygon points="75,150,100,175,75,200,50,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.466667; stroke-width: 0;"/>
+    <polygon points="100,175,125,200,100,225,75,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0573226; stroke-width: 0;"/>
+    <polygon points="125,150,150,175,125,200,100,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.133333; stroke-width: 0;"/>
+    <polygon points="150,175,175,200,150,225,125,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0111736; stroke-width: 0;"/>
+    <polygon points="175,150,200,175,175,200,150,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="200,175,225,200,200,225,175,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0572217; stroke-width: 0;"/>
+    <polygon points="225,150,250,175,225,200,200,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.3; stroke-width: 0;"/>
+    <polygon points="250,175,275,200,250,225,225,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0107065; stroke-width: 0;"/>
+    <polygon points="275,150,300,175,275,200,250,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0268809; stroke-width: 0;"/>
+    <polygon points="300,175,325,200,300,225,275,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0329662; stroke-width: 0;"/>
+    <polygon points="325,150,350,175,325,200,300,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.4; stroke-width: 0;"/>
+    <polygon points="350,175,375,200,350,225,325,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0791775; stroke-width: 0;"/>
+    <polygon points="375,150,400,175,375,200,350,175" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="400,175,425,200,400,225,375,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0608706; stroke-width: 0;"/>
+
+    <polygon points="0,175,25,200,0,225,-25,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0409365; stroke-width: 0;"/>
+    <polygon points="25,200,50,225,25,250,0,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0621707; stroke-width: 0;"/>
+    <polygon points="50,175,75,200,50,225,25,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="75,200,100,225,75,250,50,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0517799; stroke-width: 0;"/>
+    <polygon points="100,175,125,200,100,225,75,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0386768; stroke-width: 0;"/>
+    <polygon points="125,200,150,225,125,250,100,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00719583; stroke-width: 0;"/>
+    <polygon points="150,175,175,200,150,225,125,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.008;stroke-width: 0;"/>
+    <polygon points="175,200,200,225,175,250,150,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0807431; stroke-width: 0;"/>
+    <polygon points="200,175,225,200,200,225,175,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.333333; stroke-width: 0;"/>
+    <polygon points="225,200,250,225,225,250,200,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0711303; stroke-width: 0;"/>
+    <polygon points="250,175,275,200,250,225,225,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00794857; stroke-width: 0;"/>
+    <polygon points="275,200,300,225,275,250,250,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0611571; stroke-width: 0;"/>
+    <polygon points="300,175,325,200,300,225,275,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0702335; stroke-width: 0;"/>
+    <polygon points="325,200,350,225,325,250,300,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0343991; stroke-width: 0;"/>
+    <polygon points="350,175,375,200,350,225,325,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.3; stroke-width: 0;"/>
+    <polygon points="375,200,400,225,375,250,350,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0647017; stroke-width: 0;"/>
+    <polygon points="400,175,425,200,400,225,375,200" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0630472; stroke-width: 0;"/>
+
+    <polygon points="475,200,500,225,475,250,450,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00565801; stroke-width: 0;"/>
+
+    <polygon points="-25,200,0,225,-25,250,-50,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0584655; stroke-width: 0;"/>
+    <polygon points="0,225,25,250,0,275,-25,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0853589; stroke-width: 0;"/>
+    <polygon points="25,200,50,225,25,250,0,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0582443; stroke-width: 0;"/>
+    <polygon points="50,225,75,250,50,275,25,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0614219; stroke-width: 0;"/>
+    <polygon points="75,200,100,225,75,250,50,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0549615; stroke-width: 0;"/>
+    <polygon points="100,225,125,250,100,275,75,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0806015; stroke-width: 0;"/>
+    <polygon points="125,200,150,225,125,250,100,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0873193; stroke-width: 0;"/>
+    <polygon points="150,225,175,250,150,275,125,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0567101; stroke-width: 0;"/>
+    <polygon points="175,200,200,225,175,250,150,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0567706; stroke-width: 0;"/>
+    <polygon points="200,225,225,250,200,275,175,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0614024; stroke-width: 0;"/>
+    <polygon points="225,200,250,225,225,250,200,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0357788; stroke-width: 0;"/>
+    <polygon points="250,225,275,250,250,275,225,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0392326; stroke-width: 0;"/>
+    <polygon points="275,200,300,225,275,250,250,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0638211; stroke-width: 0;"/>
+    <polygon points="300,225,325,250,300,275,275,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0108283; stroke-width: 0;"/>
+    <polygon points="325,200,350,225,325,250,300,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0804505; stroke-width: 0;"/>
+    <polygon points="350,225,375,250,350,275,325,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0749936; stroke-width: 0;"/>
+    <polygon points="375,200,400,225,375,250,350,225" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0842214; stroke-width: 0;"/>
+    <polygon points="400,225,425,250,400,275,375,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00309869; stroke-width: 0;"/>
+
+    <polygon points="0,225,25,250,0,275,-25,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0394998; stroke-width: 0;"/>
+    <polygon points="25,250,50,275,25,300,0,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00750674; stroke-width: 0;"/>
+    <polygon points="50,225,75,250,50,275,25,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00683238; stroke-width: 0;"/>
+    <polygon points="75,250,100,275,75,300,50,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0635772; stroke-width: 0;"/>
+    <polygon points="100,225,125,250,100,275,75,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00522601; stroke-width: 0;"/>
+    <polygon points="125,250,150,275,125,300,100,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0124565; stroke-width: 0;"/>
+    <polygon points="150,225,175,250,150,275,125,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.063729; stroke-width: 0;"/>
+    <polygon points="175,250,200,275,175,300,150,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0509429; stroke-width: 0;"/>
+    <polygon points="200,225,225,250,200,275,175,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0877256; stroke-width: 0;"/>
+    <polygon points="225,250,250,275,225,300,200,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0142789; stroke-width: 0;"/>
+    <polygon points="250,225,275,250,250,275,225,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0738494; stroke-width: 0;"/>
+    <polygon points="275,250,300,275,275,300,250,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0151741; stroke-width: 0;"/>
+    <polygon points="300,225,325,250,300,275,275,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0255232; stroke-width: 0;"/>
+    <polygon points="325,250,350,275,325,300,300,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0178624; stroke-width: 0;"/>
+    <polygon points="350,225,375,250,350,275,325,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0869398; stroke-width: 0;"/>
+    <polygon points="375,250,400,275,375,300,350,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0633665; stroke-width: 0;"/>
+    <polygon points="400,225,425,250,400,275,375,250" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0663163; stroke-width: 0;"/>
+
+    <polygon points="-25,250,0,275,-25,300,-50,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0713408; stroke-width: 0;"/>
+    <polygon points="0,275,25,300,0,325,-25,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0609203; stroke-width: 0;"/>
+    <polygon points="25,250,50,275,25,300,0,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.030745; stroke-width: 0;"/>
+    <polygon points="50,275,75,300,50,325,25,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0732396; stroke-width: 0;"/>
+    <polygon points="75,250,100,275,75,300,50,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.025294; stroke-width: 0;"/>
+    <polygon points="100,275,125,300,100,325,75,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00929648; stroke-width: 0;"/>
+    <polygon points="125,250,150,275,125,300,100,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0545283; stroke-width: 0;"/>
+    <polygon points="150,275,175,300,150,325,125,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0707506; stroke-width: 0;"/>
+    <polygon points="175,250,200,275,175,300,150,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0294006; stroke-width: 0;"/>
+    <polygon points="200,275,225,300,200,325,175,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0615306; stroke-width: 0;"/>
+    <polygon points="225,250,250,275,225,300,200,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0342614; stroke-width: 0;"/>
+    <polygon points="250,275,275,300,250,325,225,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0465836; stroke-width: 0;"/>
+    <polygon points="275,250,300,275,275,300,250,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0459032; stroke-width: 0;"/>
+    <polygon points="300,275,325,300,300,325,275,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0550777; stroke-width: 0;"/>
+    <polygon points="325,250,350,275,325,300,300,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0602654; stroke-width: 0;"/>
+    <polygon points="350,275,375,300,350,325,325,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0303666; stroke-width: 0;"/>
+    <polygon points="375,250,400,275,375,300,350,275" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0393335; stroke-width: 0;"/>
+    <polygon points="400,275,425,300,400,325,375,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.017878; stroke-width: 0;"/>
+
+    <polygon points="0,275,25,300,0,325,-25,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0436507; stroke-width: 0;"/>
+    <polygon points="25,300,50,325,25,350,0,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0184187; stroke-width: 0;"/>
+    <polygon points="50,275,75,300,50,325,25,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0879241; stroke-width: 0;"/>
+    <polygon points="75,300,100,325,75,350,50,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0131015; stroke-width: 0;"/>
+    <polygon points="100,275,125,300,100,325,75,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0596246; stroke-width: 0;"/>
+    <polygon points="125,300,150,325,125,350,100,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0511986; stroke-width: 0;"/>
+    <polygon points="150,275,175,300,150,325,125,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0814949; stroke-width: 0;"/>
+    <polygon points="175,300,200,325,175,350,150,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0409316; stroke-width: 0;"/>
+    <polygon points="200,275,225,300,200,325,175,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0477407; stroke-width: 0;"/>
+    <polygon points="225,300,250,325,225,350,200,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0477407; stroke-width: 0;"/>
+    <polygon points="250,275,275,300,250,325,225,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0696659; stroke-width: 0;"/>
+    <polygon points="275,300,300,325,275,350,250,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.062227; stroke-width: 0;"/>
+    <polygon points="300,275,325,300,300,325,275,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0185817; stroke-width: 0;"/>
+    <polygon points="325,300,350,325,325,350,300,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0653437; stroke-width: 0;"/>
+    <polygon points="350,275,375,300,350,325,325,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0527292; stroke-width: 0;"/>
+    <polygon points="375,300,400,325,375,350,350,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0320448; stroke-width: 0;"/>
+    <polygon points="400,275,425,300,400,325,375,300" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0280777; stroke-width: 0;"/>
+
+    <polygon points="-25,300,0,325,-25,350,-50,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0180103; stroke-width: 0;"/>
+    <polygon points="0,325,25,350,0,375,-25,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0694779; stroke-width: 0;"/>
+    <polygon points="25,300,50,325,25,350,0,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0616398; stroke-width: 0;"/>
+    <polygon points="50,325,75,350,50,375,25,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0885202; stroke-width: 0;"/>
+    <polygon points="75,300,100,325,75,350,50,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0202274; stroke-width: 0;"/>
+    <polygon points="100,325,125,350,100,375,75,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0628297; stroke-width: 0;"/>
+    <polygon points="125,300,150,325,125,350,100,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0272869; stroke-width: 0;"/>
+    <polygon points="150,325,175,350,150,375,125,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0275185; stroke-width: 0;"/>
+    <polygon points="175,300,200,325,175,350,150,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0242577; stroke-width: 0;"/>
+    <polygon points="200,325,225,350,200,375,175,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0267268; stroke-width: 0;"/>
+    <polygon points="225,300,250,325,225,350,200,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0298499; stroke-width: 0;"/>
+    <polygon points="250,325,275,350,250,375,225,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0145035; stroke-width: 0;"/>
+    <polygon points="275,300,300,325,275,350,250,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0460749; stroke-width: 0;"/>
+    <polygon points="300,325,325,350,300,375,275,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0665716; stroke-width: 0;"/>
+    <polygon points="325,300,350,325,325,350,300,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0602581; stroke-width: 0;"/>
+    <polygon points="350,325,375,350,350,375,325,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0069916; stroke-width: 0;"/>
+    <polygon points="375,300,400,325,375,350,350,325" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0483235; stroke-width: 0;"/>
+    <polygon points="400,325,425,350,400,375,375,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0413977; stroke-width: 0;"/>
+
+    <polygon points="0,325,25,350,0,375,-25,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0640247; stroke-width: 0;"/>
+    <polygon points="25,350,50,375,25,400,0,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.000240419; stroke-width: 0;"/>
+    <polygon points="50,325,75,350,50,375,25,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0428922; stroke-width: 0;"/>
+    <polygon points="75,350,100,375,75,400,50,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.087182; stroke-width: 0;"/>
+    <polygon points="100,325,125,350,100,375,75,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0840997; stroke-width: 0;"/>
+    <polygon points="125,350,150,375,125,400,100,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00170176; stroke-width: 0;"/>
+    <polygon points="150,325,175,350,150,375,125,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0565748; stroke-width: 0;"/>
+    <polygon points="175,350,200,375,175,400,150,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0857457; stroke-width: 0;"/>
+    <polygon points="200,325,225,350,200,375,175,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0525539; stroke-width: 0;"/>
+    <polygon points="225,350,250,375,225,400,200,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0187968; stroke-width: 0;"/>
+    <polygon points="250,325,275,350,250,375,225,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0845125; stroke-width: 0;"/>
+    <polygon points="275,350,300,375,275,400,250,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0725109; stroke-width: 0;"/>
+    <polygon points="300,325,325,350,300,375,275,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0653279; stroke-width: 0;"/>
+    <polygon points="325,350,350,375,325,400,300,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0621335; stroke-width: 0;"/>
+    <polygon points="350,325,375,350,350,375,325,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0492621; stroke-width: 0;"/>
+    <polygon points="375,350,400,375,375,400,350,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0607669; stroke-width: 0;"/>
+    <polygon points="400,325,425,350,400,375,375,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0643291; stroke-width: 0;"/>
+
+    <polygon points="500,325,525,350,500,375,475,350" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00376613; stroke-width: 0;"/>
+    <polygon points="-25,350,0,375,-25,400,-50,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0540438; stroke-width: 0;"/>
+    <polygon points="0,375,25,400,0,425,-25,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0819564; stroke-width: 0;"/>
+    <polygon points="25,350,50,375,25,400,0,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0897642; stroke-width: 0;"/>
+    <polygon points="50,375,75,400,50,425,25,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0509089; stroke-width: 0;"/>
+    <polygon points="75,350,100,375,75,400,50,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0649171; stroke-width: 0;"/>
+    <polygon points="100,375,125,400,100,425,75,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0453404; stroke-width: 0;"/>
+    <polygon points="125,350,150,375,125,400,100,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0654683; stroke-width: 0;"/>
+    <polygon points="150,375,175,400,150,425,125,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.054667; stroke-width: 0;"/>
+    <polygon points="175,350,200,375,175,400,150,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0783528; stroke-width: 0;"/>
+    <polygon points="200,375,225,400,200,425,175,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0381999; stroke-width: 0;"/>
+    <polygon points="225,350,250,375,225,400,200,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0263466; stroke-width: 0;"/>
+    <polygon points="250,375,275,400,250,425,225,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0235596; stroke-width: 0;"/>
+    <polygon points="275,350,300,375,275,400,250,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0843026; stroke-width: 0;"/>
+    <polygon points="300,375,325,400,300,425,275,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0248562; stroke-width: 0;"/>
+    <polygon points="325,350,350,375,325,400,300,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00664758; stroke-width: 0;"/>
+    <polygon points="350,375,375,400,350,425,325,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0439412; stroke-width: 0;"/>
+    <polygon points="375,350,400,375,375,400,350,375" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0883567; stroke-width: 0;"/>
+    <polygon points="400,375,425,400,400,425,375,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.00195864; stroke-width: 0;"/>
+
+    <polygon points="0,375,25,400,0,425,-25,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0538661; stroke-width: 0;"/>
+
+    <polygon points="50,375,75,400,50,425,25,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0408215; stroke-width: 0;"/>
+
+    <polygon points="100,375,125,400,100,425,75,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0831609; stroke-width: 0;"/>
+
+    <polygon points="150,375,175,400,150,425,125,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0481793; stroke-width: 0;"/>
+
+    <polygon points="200,375,225,400,200,425,175,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0323756; stroke-width: 0;"/>
+
+    <polygon points="250,375,275,400,250,425,225,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0282307; stroke-width: 0;"/>
+
+    <polygon points="300,375,325,400,300,425,275,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0369448; stroke-width: 0;"/>
+
+    <polygon points="350,375,375,400,350,425,325,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0472597; stroke-width: 0;"/>
+
+    <polygon points="400,375,425,400,400,425,375,400" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0307759; stroke-width: 0;"/>
+
+    <polygon points="-25,400,0,425,-25,450,-50,425" fill="#ff0000" stroke="#ffffff" style="opacity: 0.0173551; stroke-width: 0;"/>
+
+    <text x="175" y="375" style="font-family: Arial; font-weight: bold; font-size: 175px;" fill="#FF8888">JS</text>
+</svg>

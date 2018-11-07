@@ -12,29 +12,23 @@
     {% endif %}
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ "css/normalize.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "css/landing.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
+    <link rel="stylesheet" href="{{ "css/default.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
     {% include _ga.html %}
   </head>
   <body>
-    <header class="container">
-      <section class="header">
-        <a href="/">
-          <img
-            class="header__logo"
-            src="{{ "assets/logo.svg" | prepend: site.baseurl }}"
-            alt="ng-de Conference Logo"
-            title="ng-de Conference Logo">
-        </a>
-      </section>
-    </header>
-    {{content}}
-    <footer class="container">
-      <section class="footer">
-        <a class="footer__link" href="/code-of-conduct">Code Of Conduct</a>
-        <a class="footer__link" href="/imprint">Imprint</a>
-        <a class="footer__link" href="/data-privacy">Data Privacy</a>
-      </section>
-    </footer>
+    {% include navigation.html %}
+    {% include header.html %}
+    <main class="main">
+      <div class="main__content">
+        <section class="container">
+          {{content}}
+        </section>
+        <section class="container">
+          {% include sponsors.html %}
+        </section>
+      </div>
+    </main>
+    {% include footer.html %}
+    {% include cookie-consent.html %}
   </body>
 </html>

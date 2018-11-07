@@ -1,0 +1,24 @@
+$font-general: 'Source Sans Pro', sans-serif;
+// font headlines (Roboto?)
+
+$primary-grey: rgb(48, 54, 63);
+$secondary-grey: rgb(57, 65, 77);
+
+$primary-red: rgb(232, 65, 24);
+
+$primary-white: rgb(245, 244, 247);
+
+@mixin backgroundSeparated($colorLeft, $colorRight) {
+  background: $colorLeft;
+  background: linear-gradient(left, $colorLeft 0%, $colorLeft 50%, $colorRight 50%, $colorRight 100%);
+  background: -moz-linear-gradient(left, $colorLeft 0%, $colorLeft 50%, $colorRight 50%, $colorRight 100%);
+  background: -webkit-linear-gradient(left, $colorLeft 0%, $colorLeft 50%, $colorRight 50%, $colorRight 100%);
+}
+
+%default-separated-background {
+  @include backgroundSeparated($primary-grey, $secondary-grey);
+}
+
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1200px;

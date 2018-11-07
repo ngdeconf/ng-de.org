@@ -1,32 +1,23 @@
 ---
 permalink: /
-layout: landing
+layout: default
 ---
-<main class="container">
-  <section class="teaser">
-    <h1 class="teaser__conference-name">ng-de 2019</h1>
-    <h2 class="teaser__conference-details">Angular Community Conference &bull; Summer 2019 &bull; Berlin, Germany</h2>
-  </section>
-  <section class="social-media">
-    <p class="social-media__up-to-date">
-      Be always up to date ...
-    </p>
-    <div class="social-media__networks">
-      {% if site.data.socialmedia.twitter %}
-      <a class="social-media__network" href="{{ site.data.socialmedia.twitter.url }}" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-      {% endif %}
-      {% if site.data.socialmedia.facebook %}
-      <a class="social-media__network" href="{{ site.data.socialmedia.facebook.url }}" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-      {% endif %}
-      {% if site.data.socialmedia.newsletter %}
-      <a class="social-media__network" href="{{ site.data.socialmedia.newsletter.url }}" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
-      {% endif %}
-      {% if site.data.socialmedia.instagram %}
-      <a class="social-media__network" href="{{ site.data.socialmedia.instagram.url }}" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-      {% endif %}
-      {% if site.data.socialmedia.youtube %}
-      <a class="social-media__network" href="{{ site.data.socialmedia.youtube.url }}" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-      {% endif %}
+
+<div class="row">
+  <div class="row__col">
+    <div class="lead">
+      <h2 class="lead__headline">For the community, by the community</h2>
+      <p class="lead__content">
+        NG-DE is the first community-driven Angular conference in Germany. We will run the opening event in Berlin, 30 & 31 August 2019. The venue BOLLE FESTSÄLE is located next to the beautiful river Spree, close to Bellevue palace and Tiergarten. A bunch of one-day workshops are planned for August 29 which can be booked separately.
+      </p>
     </div>
-  </section>
-</main>
+    <div class="lead">
+      <h2 class="lead__headline">A conference is more than mate-tea and wifi</h2>
+      <p class="lead__content">
+        We want to create an open, diverse and welcoming conference with  fantastic speakers and a warm and friendly environment. Barista coffee and childcare are just a few topics we want to offer.
+        
+        If you are interested to become a sponsor, we appreciate if you get in touch with us.
+      </p>
+    </div>
+  </div>
+</div>
