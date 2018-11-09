@@ -45,9 +45,8 @@ install:
 script: 
   #continue even after error
   - set -e 
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then JEKYLL_ENV=production; fi
-  #build jekyll site
-  - jekyll build 
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then JEKYLL_ENV=production jekyll build ; fi
+  - if [ "$TRAVIS_BRANCH" == "beta" ]; then jekyll build ; fi
 
 after_success:
   # deploy to firebase using stored token. 
