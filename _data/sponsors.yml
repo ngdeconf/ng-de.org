@@ -20,9 +20,9 @@ community:
     url: https://frankenjs.org
 
 partners:
-  - name: angularjs.de
-    logo: angularjs-de.svg
-    url: https://angularjs.de
+  - name: angular.de
+    logo: angular-de.svg
+    url: https://angular.de
   - name: workshops.de
     logo: workshops-de.svg
     url: https://workshops.de
