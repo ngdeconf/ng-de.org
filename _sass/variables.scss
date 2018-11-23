@@ -1,6 +1,15 @@
 $font-general: 'Source Sans Pro', sans-serif;
-// font headlines (Roboto?)
+$font-headlines: 'Lora', sans-serif;
+$base-font-size: 1rem !default;
 
+$primary-color: #e84118;
+$primary-color-dark: darken(#e84118, 5%);
+$primary-color-light: lighten(#e84118, 10%);
+$secondary-color: #e67e22;
+$base-color: (
+  light: #ecf0f1,
+  dark: #30363f
+);
 $primary-grey: rgb(48, 54, 63);
 $secondary-grey: rgb(57, 65, 77);
 
