@@ -59,6 +59,6 @@ front_img_path: "/imgs/daniel-brosch-594428-unsplash.jpg"
 #front_img_path: "https://external.url/image.jpg"
 
 
-favicon_img: no
-favicon_img_path: "imgs/favicon.ico"
+favicon_img: yes
+favicon_img_path: "/assets/favicons/"
 #favicon_img_path: "https://external.url/favicon.ico"
