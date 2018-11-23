@@ -1,0 +1,30 @@
+<div class="topbar">
+  {% unless page.nav_exclude_logo == true %}
+  <h1 class="topbar__logo">
+    <a href="/">
+      <img
+        class="topbar__logo2"
+        src="{{ "assets/logo.svg" | prepend: site.baseurl }}"
+        alt="ng-de Conference Logo"
+        title="ng-de Conference Logo">
+    </a>
+  </h1>
+  <time class="topbar__time">30 & 31 August, 2019</time>
+  {% endunless %}
+  <nav class="topbar__nav">
+    <ul class="menu" role="menubar">
+      {% for link in site.data.pages.links %}
+      {% if link.navigation %}
+      <li class="menu__item" role="menuitem">
+        <a class="menu__link {% if link.url == page.url %}menu__link--active{% endif %}" href="{{ link.url }}">{{ link.name }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+      <li class="menu__item" role="menuitem">
+        <a class="menu__button button button--compact" href="#">
+          <span class="button__scale">Call for Paper</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,53 @@
+$menu-fontsize: 1.2rem;
+$menu-item-gap: 2rem;
+$menu-link-color: map-get($base-color, dark);
+$menu-link-color-hover: $primary-color;
+
+.menu {
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  padding: 0;
+  margin: 0 -($menu-item-gap / 2);
+  list-style-type: none;
+
+  &__item {
+    font-size: $menu-fontsize;
+    margin: 0 ($menu-item-gap / 2);
+  }
+
+  &__link {
+    display: inline-block;
+    line-height: 2rem;
+    font-weight: 600;
+    color: $menu-link-color;
+    margin-bottom: 0;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: $menu-link-color-hover;
+      transition: width .3s;
+    }
+
+    &:hover {
+      color: $menu-link-color-hover;
+
+      &:after {
+        width: 100%;
+      }
+    }
+
+    &--active {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__button.button {
+    margin-bottom: 0;
+  }
+}

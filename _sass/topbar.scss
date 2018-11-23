@@ -1,0 +1,41 @@
+$topbar-height: 90px;
+$topbar-color: map-get($base-color, dark);
+$topbar-background: #e6ebed;
+
+.topbar {
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  color: $topbar-color;
+  background-color: $topbar-background;
+  transition: transform 500ms ease-in-out;
+
+  display: flex;
+  align-items: center;
+  height: $topbar-height;
+
+  &__logo {
+    height: 100%;
+    margin: 0 1.2rem 0 0;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__time {
+    font-size: calc(18px + 0.5vw);
+    font-family: "Lora";
+    font-weight: 600;
+  }
+
+  &__nav {
+    margin-left: auto;
+  }
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+}
