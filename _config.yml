@@ -26,6 +26,12 @@ ga_property: "UA-121643275-1"
 # Build settings
 markdown: kramdown
 
+plugins:
+- jekyll-autoprefixer
+
+autoprefixer:
+  only_production: true
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
