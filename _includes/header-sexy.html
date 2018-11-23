@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="header__content">
+    <img
+      class="header__logo"
+      src="{{ "assets/logo.svg" | prepend: site.baseurl }}"
+      alt="ng-de Conference Logo"
+      title="ng-de Conference Logo">
+    <h1 class="header__title">Angular Conference</h1>
+    <h2 class="header__description">Berlin &bull; 30 &amp; 31 August, 2019</h2>
+    <div class="header__buttons">
+      <a class="button button--xlarge" href="#">
+        <span class="button__scale">Call for Paper</span>
+      </a>
+    </div>
+  </div>
+  <div class="header__background">
+    {% include header-background.html %}
+  </div>
+</header>
