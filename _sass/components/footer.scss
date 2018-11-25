@@ -3,7 +3,7 @@
   padding-top: 35px;
   padding-bottom: 35px;
   margin-top: 60px;
-  background: lighten($body-background, 1%);
+  background: $footer-background;
 
   &:before {
     content: '';
