@@ -154,25 +154,6 @@ img {
   padding: 3rem 0;
 }
 
-.footer {
-  padding-top: 25px;
-  padding-bottom: 25px;
-
-  &:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to right, map-get($colors, primary), map-get($colors, secondary));
-    top: -3px;
-    left: 0;
-  }
-
-  &__title {
-    margin-top: 0;
-  }
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -194,6 +175,14 @@ img {
 
   &--four .row__col {
     width: 25%;
+  }
+
+  @media screen and (max-width: $screen-small) {
+    &--two .row__col,
+    &--three .row__col,
+    &--four .row__col {
+      width: 100%;
+    }
   }
 }
 

@@ -1,62 +1,64 @@
 <footer>
-  <section class="footer container">
-    <div class="row row--two">
-      <div class="row__col">
-        <h3 class="footer__title">Please note ...</h3>
-        <ul class="link-list">
-          <li class="link-list__item"><a href="/code-of-conduct" rel="noopener">Code of Conduct</a></li>
-          <li class="link-list__item"><a href="/imprint" rel="noopener">Imprint</a></li>
-          <li class="link-list__item"><a href="/data-privacy" rel="noopener">Data Privacy</a></li>
-        </ul>
-      </div>
-      <div class="row__col">
-        <h3 class="footer__title">Follow us ...</h3>
-        <div class="social-list">
-          {% if site.data.socialmedia.twitter %}
-          <a
-            class="social-list__item"
-            href="{{ site.data.socialmedia.twitter.url }}"
-            target="_blank"
-            rel="noopener"
-            title="{{ site.data.socialmedia.twitter.service }}"
-          ><i class="fab fa-twitter"></i></a>
-          {% endif %}
-          {% if site.data.socialmedia.facebook %}
-          <a
-            class="social-list__item"
-            href="{{ site.data.socialmedia.facebook.url }}"
-            target="_blank"
-            rel="noopener"
-            title="{{ site.data.socialmedia.facebook.service }}"
-          ><i class="fab fa-facebook"></i></a>
-          {% endif %}
-          {% if site.data.socialmedia.instagram %}
-          <a
-            class="social-list__item"
-            href="{{ site.data.socialmedia.instagram.url }}"
-            target="_blank"
-            rel="noopener"
-            title="{{ site.data.socialmedia.instagram.service }}"
-          ><i class="fab fa-instagram"></i></a>
-          {% endif %}
-          {% if site.data.socialmedia.youtube %}
-          <a
-            class="social-list__item"
-            href="{{ site.data.socialmedia.youtube.url }}"
-            target="_blank"
-            rel="noopener"
-            title="{{ site.data.socialmedia.youtube.service }}"
-          ><i class="fab fa-youtube"></i></a>
-          {% endif %}
-          {% if site.data.socialmedia.newsletter %}
-          <a
-            class="social-list__item"
-            href="{{ site.data.socialmedia.newsletter.url }}"
-            target="_blank"
-            rel="noopener"
-            title="{{ site.data.socialmedia.newsletter.service }}"
-          ><i class="fas fa-envelope"></i></a>
-          {% endif %}
+  <section class="footer">
+    <div class="container">
+      <div class="row row--two">
+        <div class="row__col">
+          <h3 class="footer__title">Please note ...</h3>
+          <ul class="footer__menu link-list">
+            <li class="link-list__item"><a href="/code-of-conduct" rel="noopener">Code of Conduct</a></li>
+            <li class="link-list__item"><a href="/imprint" rel="noopener">Imprint</a></li>
+            <li class="link-list__item"><a href="/data-privacy" rel="noopener">Data Privacy</a></li>
+          </ul>
+        </div>
+        <div class="row__col">
+          <h3 class="footer__title">Follow us ...</h3>
+          <div class="social-list">
+            {% if site.data.socialmedia.twitter %}
+            <a
+              class="social-list__item"
+              href="{{ site.data.socialmedia.twitter.url }}"
+              target="_blank"
+              rel="noopener"
+              title="{{ site.data.socialmedia.twitter.service }}"
+            ><i class="fab fa-twitter"></i></a>
+            {% endif %}
+            {% if site.data.socialmedia.facebook %}
+            <a
+              class="social-list__item"
+              href="{{ site.data.socialmedia.facebook.url }}"
+              target="_blank"
+              rel="noopener"
+              title="{{ site.data.socialmedia.facebook.service }}"
+            ><i class="fab fa-facebook"></i></a>
+            {% endif %}
+            {% if site.data.socialmedia.instagram %}
+            <a
+              class="social-list__item"
+              href="{{ site.data.socialmedia.instagram.url }}"
+              target="_blank"
+              rel="noopener"
+              title="{{ site.data.socialmedia.instagram.service }}"
+            ><i class="fab fa-instagram"></i></a>
+            {% endif %}
+            {% if site.data.socialmedia.youtube %}
+            <a
+              class="social-list__item"
+              href="{{ site.data.socialmedia.youtube.url }}"
+              target="_blank"
+              rel="noopener"
+              title="{{ site.data.socialmedia.youtube.service }}"
+            ><i class="fab fa-youtube"></i></a>
+            {% endif %}
+            {% if site.data.socialmedia.newsletter %}
+            <a
+              class="social-list__item"
+              href="{{ site.data.socialmedia.newsletter.url }}"
+              target="_blank"
+              rel="noopener"
+              title="{{ site.data.socialmedia.newsletter.service }}"
+            ><i class="fas fa-envelope"></i></a>
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
