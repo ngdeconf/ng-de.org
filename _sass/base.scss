@@ -1,0 +1,202 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  color: $body-fontcolor;
+  font-size: $body-fontsize;
+  font-family: $body-fontfamily;
+  line-height: $base-lineheight;
+  background: $body-background;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
+}
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: inherit;
+  letter-spacing: $paragraph-letterspacing;
+  line-height: $paragraph-lineheight;
+  margin: $paragraph-margin;
+  text-rendering: optimizeLegibility;
+}
+
+em, i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+strong, b {
+  font-weight: $base-weight-bold;
+  line-height: inherit;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-family: $headline-fontfamily;
+  font-weight: $headline-fontweight;
+  line-height: $headline-lineheight;
+  color: $headline-color;
+  margin: $headline-margin;
+  text-rendering: optimizeLegibility;
+
+  small {
+    line-height: 0;
+  }
+}
+
+@each $headline, $headline-defs in $headline-styles {
+  #{$headline}, .#{$headline} {
+    @if map-has-key($headline-defs, font-size) {
+      font-size: map-get($headline-defs, font-size);
+    }
+    @if map-has-key($headline-defs, font-family) {
+      font-family: map-get($headline-defs, font-family);
+    }
+    @if map-has-key($headline-defs, line-height) {
+      line-height: map-get($headline-defs, line-height);
+    }
+    @if map-has-key($headline-defs, margin-top) {
+      margin-top: map-get($headline-defs, margin-top);
+    }
+    @if map-has-key($headline-defs, margin-bottom) {
+      margin-bottom: map-get($headline-defs, margin-bottom);
+    }
+  }
+}
+
+a {
+  cursor: pointer;
+  line-height: inherit;
+  color: $link-color;
+  text-decoration: $link-textdecoration;
+  transition: $link-transition;
+
+  &:hover, &:focus {
+    color: $link-color-hover;
+    text-decoration: $link-textdecoration-hover;
+  }
+
+  img {
+    border: 0;
+  }
+}
+
+ul, ol, dl {
+  list-style-position: $list-style-position;
+  line-height: $list-lineheight;
+  margin: $list-margin;
+}
+
+ul {
+  padding-left: 1em;
+  list-style-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 6 6' width='6px' height='11px' xmlns='http://www.w3.org/2000/svg'><rect fill='#{map-get($colors, primary)}' width='6' height='6' rx='4' ry='4'/></svg>");
+}
+
+ul, ol {
+  & & {
+    margin-bottom: 0;
+  }
+}
+
+li {
+  font-size: inherit;
+  padding-left: .3em;
+  margin-bottom: .5em;
+}
+
+img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 20px;
+
+  &--large {
+    max-width: 1360px;
+  }
+}
+
+// .main {
+//   background: #fff;
+//   color: $primary-grey;
+//   transform: skewY(2deg);
+
+//   &__content {
+//     transform: skewY(-2deg);
+//     padding: 50px 0;
+//     margin: 50px 0;
+//   }
+// }
+
+.main {
+  padding: 3rem 0;
+}
+
+.footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, map-get($colors, primary), map-get($colors, secondary));
+    top: -3px;
+    left: 0;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+
+  &__col {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  &--two .row__col {
+    width: 50%;
+  }
+
+  &--three .row__col {
+    width: 33.332%;
+  }
+
+  &--four .row__col {
+    width: 25%;
+  }
+}
+
+.no-mt {
+  margin-top: 0 !important;
+}

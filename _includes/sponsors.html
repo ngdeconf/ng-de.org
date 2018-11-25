@@ -1,87 +1,85 @@
- <div class="row">
-  <div class="row__col sponsors">
-    {% if site.data.sponsors.main %}
-    <h2 class="sponsors__headline">Main Sponsor</h2>
-    <div class="sponsors__list">
-      {% for sponsor in site.data.sponsors.main %}
-        <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-          <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
-        </a>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    {% if site.data.sponsors.platinum %}
-    <h2 class="sponsors__headline">Platinum Sponsors</h2>
-    <div class="sponsors__list">
-      {% for sponsor in site.data.sponsors.platinum %}
-        <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-          <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
-        </a>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    {% if site.data.sponsors.gold %}
-    <h2 class="sponsors__headline">Gold Sponsors</h2>
-    <div class="sponsors__list">
-      {% for sponsor in site.data.sponsors.gold %}
-        <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-          <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
-        </a>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    {% if site.data.sponsors.silver %}
-    <h2 class="sponsors__headline">Silver Sponsors</h2>
-    <div class="sponsors__list">
-      {% for sponsor in site.data.sponsors.silver %}
-        <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-          <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
-        </a>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    {% if site.data.sponsors.bronze %}
-    <h2 class="sponsors__headline">Bronze Sponsors</h2>
-    <div class="sponsors__list">
-      {% for sponsor in site.data.sponsors.bronze %}
-        <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-          <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
-        </a>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    {% if site.data.sponsors.partners %}
-    <h2 class="sponsors__headline">Partners</h2>
-    <div class="sponsors__list">
-      {% for sponsor in site.data.sponsors.partners %}
-        <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-          <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
-        </a>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    {% if site.data.sponsors.community %}
-    <h2 class="sponsors__headline">Community Partners</h2>
-    <div class="sponsors__list">
-      {% for sponsor in site.data.sponsors.community %}
-        <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-          <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
-        </a>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    <h2 class="sponsors__headline">Get involved</h2>
-    <p class="sponsors__join">
-      We are always looking for companies, organizations and people who are engaged in the community and want to help us to create an awesome and welcoming event.
-      <br /><br />
-      <a href="mailto:info@ng-de.org?subject=Sponsoring%20Request" class="button-primary">Become a Sponsor</a>
-    </p>
+<div class="sponsors">
+  {% if site.data.sponsors.main %}
+  <h3 class="sponsors__headline">Main Sponsor</h3>
+  <div class="sponsors__list">
+    {% for sponsor in site.data.sponsors.main %}
+      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+      </a>
+    {% endfor %}
   </div>
+  {% endif %}
+
+  {% if site.data.sponsors.platinum %}
+  <h3 class="sponsors__headline">Platinum Sponsors</h3>
+  <div class="sponsors__list">
+    {% for sponsor in site.data.sponsors.platinum %}
+      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if site.data.sponsors.gold %}
+  <h3 class="sponsors__headline">Gold Sponsors</h3>
+  <div class="sponsors__list">
+    {% for sponsor in site.data.sponsors.gold %}
+      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if site.data.sponsors.silver %}
+  <h3 class="sponsors__headline">Silver Sponsors</h3>
+  <div class="sponsors__list">
+    {% for sponsor in site.data.sponsors.silver %}
+      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if site.data.sponsors.bronze %}
+  <h3 class="sponsors__headline">Bronze Sponsors</h3>
+  <div class="sponsors__list">
+    {% for sponsor in site.data.sponsors.bronze %}
+      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if site.data.sponsors.partners %}
+  <h3 class="sponsors__headline">Partners</h3>
+  <div class="sponsors__list">
+    {% for sponsor in site.data.sponsors.partners %}
+      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if site.data.sponsors.community %}
+  <h3 class="sponsors__headline">Community Partners</h3>
+  <div class="sponsors__list">
+    {% for sponsor in site.data.sponsors.community %}
+      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <h3 class="sponsors__headline">Get involved</h3>
+  <p class="sponsors__join">
+    We are always looking for companies, organizations and people who are engaged in the community and want to help us to create an awesome and welcoming event.
+    <br /><br />
+    <a href="mailto:info@ng-de.org?subject=Sponsoring%20Request" class="button-primary">Become a Sponsor</a>
+  </p>
 </div>

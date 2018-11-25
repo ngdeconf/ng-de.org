@@ -1,0 +1,10 @@
+.social-list {
+  &__item {
+    font-size: 2em;
+    line-height: 2em;
+
+    & + & {
+      margin-left: 2rem;
+    }
+  }
+}

@@ -1,9 +1,18 @@
 ---
 ---
 
-@import 'normalize.scss';
-@import 'variables.scss';
-@import 'default.scss';
-@import 'cookie-consent.scss';
+@import 'variables';
 
-@import 'sponsors.scss';
+@import 'normalize';
+@import 'base';
+
+@import 'components/button';
+@import 'components/lead';
+@import 'components/header';
+@import 'components/topbar';
+@import 'components/navigation';
+@import 'components/menu';
+@import 'components/link-list';
+@import 'components/social-list';
+@import 'components/sponsors';
+@import 'components/cookie-consent';

@@ -1,11 +1,58 @@
-<header>
-  <section class="header container">
+{% if page.show_header == true %}
+<header class="header">
+  <div class="header__content">
     <img
       class="header__logo"
       src="{{ "assets/logo.svg" | prepend: site.baseurl }}"
       alt="ng-de Conference Logo"
       title="ng-de Conference Logo">
     <h1 class="header__title">Angular Conference</h1>
-    <h2 class="header__slug">Berlin &bull; 30 &amp; 31 August, 2019</h2>
-  </section>
+    <h2 class="header__description"><time>Berlin &bull; 30 &amp; 31 August, 2019</time></h2>
+    <div class="header__buttons">
+      <a class="button button--xlarge" href="#">
+        <span class="button__scale">Call for Paper</span>
+      </a>
+    </div>
+  </div>
+  <div class="header__background">
+    <div class="header-background">
+      <div class="header-background__shape">
+        <svg viewBox="0 0 500 100">
+          <defs>
+            <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0" stop-color="#3c4553"/>
+              <stop offset="0.8" stop-color="#323944" />
+              <stop offset="1" stop-color="#323944"/>
+            </linearGradient>
+          </defs>
+          <polygon points="75,10 300,100 -100,100" fill="url(#gradient3)" />
+        </svg>
+      </div>
+      <div class="header-background__shape">
+        <svg viewBox="0 0 500 100">
+          <defs>
+            <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0" stop-color="#454f5f"/>
+              <stop offset="0.8" stop-color="#323944" />
+              <stop offset="1" stop-color="#323944"/>
+            </linearGradient>
+          </defs>
+          <polygon points="420,10 600,100 100,100" fill="url(#gradient2)" />
+        </svg>
+      </div>
+      <div class="header-background__shape">
+        <svg viewBox="0 0 500 100">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0" stop-color="#454f5f"/>
+              <stop offset="0.8" stop-color="#323944" />
+              <stop offset="1" stop-color="#323944"/>
+            </linearGradient>
+          </defs>
+          <polygon points="250,30 500,100 0,100" fill="url(#gradient)" />
+        </svg>
+      </div>
+    </div>
+  </div>
 </header>
+{% endif %}

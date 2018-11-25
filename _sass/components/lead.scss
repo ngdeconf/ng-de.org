@@ -1,0 +1,21 @@
+.lead {
+  $b: &;
+  margin: calc(1.75em + .5vw) 0;
+
+  &__headline {
+    font-size: calc(24px + 1vw);
+    text-align: center;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &:first-child {
+    margin-top: 0;
+
+    #{$b}__headline {
+      margin-top: 0;
+    }
+  }
+}

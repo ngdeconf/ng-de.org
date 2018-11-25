@@ -1,33 +1,67 @@
-$font-general: 'Source Sans Pro', sans-serif;
-$font-headlines: 'Lora', sans-serif;
-$base-font-size: 1rem !default;
+/*
+ * Base
+ */
+$base-fontsize: 1rem;
+$base-width: rem-calc(1200);
+$base-lineheight: 1.5;
+$base-weight-normal: 400;
+$base-weight-bold: 600;
 
-$primary-color: #e84118;
-$primary-color-dark: darken(#e84118, 5%);
-$primary-color-light: lighten(#e84118, 10%);
-$secondary-color: #e67e22;
-$base-color: (
+$colors: (
   light: #ecf0f1,
-  dark: #30363f
+  dark: #30363f,
+  primary: #e84118,
+  secondary: #e67e22
 );
-$primary-grey: rgb(48, 54, 63);
-$secondary-grey: rgb(57, 65, 77);
 
-$primary-red: rgb(232, 65, 24);
+$body-fontsize: calc(19px + .25vw);
+$body-fontcolor: map-get($colors, light);
+$body-fontfamily: 'Source Sans Pro', sans-serif;
+$body-background: #323944;
 
-$primary-white: rgb(245, 244, 247);
+/*
+ * Typography
+ */
 
-@mixin backgroundSeparated($colorLeft, $colorRight) {
-  background: $colorLeft;
-  background: linear-gradient(left, $colorLeft 0%, $colorLeft 50%, $colorRight 50%, $colorRight 100%);
-  background: -moz-linear-gradient(left, $colorLeft 0%, $colorLeft 50%, $colorRight 50%, $colorRight 100%);
-  background: -webkit-linear-gradient(left, $colorLeft 0%, $colorLeft 50%, $colorRight 50%, $colorRight 100%);
-}
+$headline-fontfamily: 'Lora', sans-serif;
+$headline-fontweight: $base-weight-bold;
+$headline-color: inherit;
+$headline-lineheight: 1.4;
+$headline-margin: 0 0 0.5rem;
 
-%default-separated-background {
-  @include backgroundSeparated($primary-grey, $secondary-grey);
-}
+$headline-styles: (
+  'h1': ( 'font-size': calc(26px + 1.6vw) ),
+  'h2': ( 'font-size': calc(22px + 1.6vw) ),
+  'h3': ( 'font-size': calc(24px + .25vw), 'margin-top': 2em, 'margin-bottom': .75em ),
+  'h4': ( 'font-size': calc(18px + .25vw), 'font-family': $body-fontfamily )
+);
 
-$screen-small: 768px;
-$screen-medium: 992px;
-$screen-large: 1200px;
+$paragraph-letterspacing: -.003em;
+$paragraph-lineheight: 1.6;
+$paragraph-margin: calc(1em + .5vw) 0;
+
+$list-lineheight: $paragraph-lineheight;
+$list-margin: $paragraph-margin;
+$list-style-position: outside;
+
+$link-color: map-get($colors, primary);
+$link-color-hover: map-get($colors, secondary);
+$link-textdecoration: none;
+$link-textdecoration-hover: none;
+$link-transition: color 200ms ease-in;
+
+$button-colors: $colors;
+
+/*
+ * Breakpoints
+ */
+
+$breakpoints: (
+  small: 768px,
+  medium: 992px,
+  large: 1200px
+);
+
+$screen-small: map-get($breakpoints, small);
+$screen-medium: map-get($breakpoints, medium);
+$screen-large: map-get($breakpoints, large);

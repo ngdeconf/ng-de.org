@@ -1,16 +1,13 @@
 .sponsors {
-
-  .sponsors__headline {
-
+  &__headline {
     text-align: center;
   }
 
-  .sponsors__list {
-
+  &__list {
     text-align: center;
   }
 
-  .sponsors__join {
+  &__join {
     display: block;
     margin: auto;
     max-width: 600px;
@@ -19,9 +16,7 @@
 }
 
 .sponsor {
-
-  .sponsor__logo {
-
+  &__logo {
     width: 120px;
     height: 120px;
     margin: 1.5em;
