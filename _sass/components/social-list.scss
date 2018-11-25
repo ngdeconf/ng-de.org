@@ -1,10 +1,22 @@
 .social-list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
   &__item {
     font-size: 2em;
-    line-height: 2em;
+    line-height: 1;
+    color: inherit;
+    opacity: 0.7;
+    transition: color, opacity 300ms ease-in;
 
     & + & {
       margin-left: 2rem;
+    }
+
+    &:hover {
+      color: map-get($colors, primary);
+      opacity: 1;
     }
   }
 }
