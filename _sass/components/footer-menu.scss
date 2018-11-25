@@ -24,7 +24,7 @@
     background-color: map-get($colors, light);
     transition: opacity 300ms ease-in;
 
-    &:hover {
+    &:hover, &:focus {
       opacity: 1;
       color: $footer-background;
       background-color: map-get($colors, light);

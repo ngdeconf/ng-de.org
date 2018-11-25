@@ -14,31 +14,39 @@
       margin-left: 2rem;
     }
 
-    &:hover {
+    &:hover, &:focus {
       color: map-get($colors, light);
       opacity: 1;
     }
 
-    &--twitter:hover {
-      color: #00aced;
-    }
-
-    &--facebook:hover {
-      color: #3b5998;
-    }
-
-    &--instagram:hover {
-      color: #d6249f;
-      .fab.fa-instagram {
-        color: transparent;
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-        -webkit-background-clip: text;
-        background-clip: text;
+    &--twitter {
+      &:hover, &:focus {
+        color: #00aced;
       }
     }
 
-    &--youtube:hover {
-      color: #bb0000;
+    &--facebook {
+      &:hover, &:focus {
+        color: #3b5998;
+      }
+    }
+
+    &--instagram {
+      &:hover, &:focus {
+        color: #d6249f;
+        .fab.fa-instagram {
+          color: transparent;
+          background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+          -webkit-background-clip: text;
+          background-clip: text;
+        }
+      }
+    }
+
+    &--youtube {
+      &:hover, &:focus {
+        color: #bb0000;
+      }
     }
 
     &--newsletter {}
