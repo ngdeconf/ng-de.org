@@ -186,6 +186,10 @@ img {
   }
 }
 
+.prevent-scroll {
+  overflow: hidden;
+}
+
 .no-mt {
   margin-top: 0 !important;
 }

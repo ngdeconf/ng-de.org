@@ -1,8 +1,10 @@
 $topbar-height: 90px;
 $topbar-color: map-get($colors, dark);
 $topbar-background: #e6ebed;
+$topbar-mobile-zindex: 10;
 
 .topbar {
+  $b: &;
   padding: 0.5rem 1.5rem;
   width: 100%;
   color: $topbar-color;
@@ -26,16 +28,55 @@ $topbar-background: #e6ebed;
     font-size: calc(18px + 0.5vw);
     font-family: "Lora";
     font-weight: 600;
+    margin: 0 1.2rem 0 0;
   }
 
   &__nav {
     margin-left: auto;
   }
 
-  &--fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 3;
+  &__toggle {
+    display: none;
+  }
+
+  &--is-open {}
+
+  @media only screen and (max-width: $screen-small) {
+    &__nav {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 20vh;
+      background-color: $topbar-background;
+
+      position: fixed;
+      z-index: $topbar-mobile-zindex;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__toggle {
+      cursor: pointer;
+      font-size: 2rem;
+      display: initial;
+      position: relative;
+      margin-left: auto;
+      z-index: $topbar-mobile-zindex + 1;
+    }
+
+    &--is-open {
+      position: fixed;
+      z-index: 10;
+      top: 0;
+      left: 0;
+
+      #{$b} {
+        &__nav {
+          display: flex;
+        }
+      }
+    }
   }
 }

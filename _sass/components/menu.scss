@@ -4,16 +4,18 @@ $menu-link-color: map-get($colors, dark);
 $menu-link-color-hover: map-get($colors, primary);
 
 .menu {
+  $b: &;
   display: flex;
   flex-flow: nowrap;
   align-items: center;
   padding: 0;
-  margin: 0 -($menu-item-gap / 2);
+  margin: 0 (-$menu-item-gap / 2);
   list-style-type: none;
   list-style-image: none;
 
   &__item {
     font-size: $menu-fontsize;
+    padding: 0;
     margin: 0 ($menu-item-gap / 2);
   }
 
@@ -38,6 +40,10 @@ $menu-link-color-hover: map-get($colors, primary);
 
       &:after {
         width: 100%;
+
+        @media only screen and (max-width: $screen-small) {
+          display: none;
+        }
       }
     }
 
@@ -50,5 +56,21 @@ $menu-link-color-hover: map-get($colors, primary);
 
   &__button.button {
     margin-bottom: 0;
+  }
+
+  &--topbar {}
+
+  @media only screen and (max-width: 768px) {
+    &--topbar {
+      flex-direction: column;
+      margin: 0;
+
+      #{$b} {
+        &__item {
+          font-size: calc(22px + .5vw);
+          margin: ($menu-item-gap / 2) 0;
+        }
+      }
+    }
   }
 }

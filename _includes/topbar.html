@@ -1,4 +1,4 @@
-<div class="topbar">
+<div class="topbar" id="topbar">
   {% unless page.hide_topbar_logo == true %}
   <h1 class="topbar__logo">
     <a href="/">
@@ -11,8 +11,11 @@
   </h1>
   <time class="topbar__time">30 & 31 August, 2019</time>
   {% endunless %}
+  <div class="topbar__toggle">
+    <i class="fas fa-bars"></i>
+  </div>
   <nav class="topbar__nav">
-    <ul class="menu" role="menubar">
+    <ul class="menu menu--topbar" role="menubar">
       {% for link in site.data.pages.links %}
       {% if link.navigation %}
       <li class="menu__item" role="menuitem">
@@ -28,3 +31,15 @@
     </ul>
   </nav>
 </div>
+<script type="text/javascript">
+(() => {
+  const topbar = document.getElementById('topbar');
+  const topbarToggler = topbar.querySelector('.topbar__toggle');
+
+  const topbarToggle = () => {
+    topbar.classList.toggle('topbar--is-open');
+    document.body.classList.toggle('prevent-scroll');
+  }
+  topbarToggler.addEventListener('click', topbarToggle);
+})();
+</script>
