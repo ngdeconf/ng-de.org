@@ -33,12 +33,31 @@
 </div>
 <script type="text/javascript">
 (() => {
+  // Nice little function from https://benfrain.com/preventing-body-scroll-for-modals-in-ios/
+  const freezeVp = (e) => {
+    e.preventDefault();
+  };
+
+  const stopBodyScrolling = (bool) => {
+    if (bool === true) {
+      document.body.classList.add('prevent-scroll');
+      document.body.addEventListener('touchmove', freezeVp, false);
+    } else {
+      document.body.classList.remove('prevent-scroll');
+      document.body.removeEventListener('touchmove', freezeVp, false);
+    }
+  }
+
   const topbar = document.getElementById('topbar');
   const topbarToggler = topbar.querySelector('.topbar__toggle');
 
   const topbarToggle = () => {
     topbar.classList.toggle('topbar--is-open');
-    document.body.classList.toggle('prevent-scroll');
+    if (topbar.classList.contains('topbar--is-open')) {
+      stopBodyScrolling(true);
+    } else {
+      stopBodyScrolling(false);
+    }
   }
   topbarToggler.addEventListener('click', topbarToggle);
 })();
