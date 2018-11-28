@@ -6,12 +6,13 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ site.description }}">
+    <meta property="og:image:height" content="1000">
+    <meta property="og:image:width" content="1910">
     <meta property="og:title" content="NG-DE 2019">
-    <meta property="og:description" content="Angular Conference | Berlin • 30 & 31 August, 2019">
-    <meta property="og:image" content="https://beta.ng-de.org/assets/socialmedia-header.png">
-    <meta property="og:url" content="https://ng-de.org/">
+    <meta property="og:description" content="Angular Conference - Summer 2019 in Berlin">
+    <meta property="og:url" content="https://beta.ng-de.org">
+    <meta property="og:image" content="https://beta.ng-de.org/opengraph/og-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:site_name" content="NG-DE 2019">
     <meta name="twitter:image:alt" content="Angular Conference | Berlin • 30 & 31 August, 2019">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     {% if site.favicon_img %}
