@@ -1,0 +1,21 @@
+{
+  "name": "NG-DE 2019",
+  "short_name": "NG-DE",
+  "start_url": ".",
+  "display": "fullscreen",
+  "background_color" : "#323944",
+  "theme_color": "#323944",
+  "description": "Angular Conference - Summer 2019 in Berlin",
+  "icons": [
+    {
+      "src": "/assets/favicons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
