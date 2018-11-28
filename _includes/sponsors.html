@@ -4,7 +4,13 @@
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.main %}
       <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+        <img
+          class="sponsor__logo lazy"
+          src="placeholder-image.jpg"
+          data-src="/assets/sponsors/{{ sponsor.logo }}"
+          data-srcset="/assets/sponsors/{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          title="{{ sponsor.name }}">
       </a>
     {% endfor %}
   </div>
@@ -15,7 +21,13 @@
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.platinum %}
       <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+        <img
+          class="sponsor__logo lazy"
+          src="placeholder-image.jpg"
+          data-src="/assets/sponsors/{{ sponsor.logo }}"
+          data-srcset="/assets/sponsors/{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          title="{{ sponsor.name }}">
       </a>
     {% endfor %}
   </div>
@@ -26,7 +38,12 @@
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.gold %}
       <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+        <img
+          class="sponsor__logo lazy"
+          data-src="/assets/sponsors/{{ sponsor.logo }}"
+          data-srcset="/assets/sponsors/{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          title="{{ sponsor.name }}">
       </a>
     {% endfor %}
   </div>
@@ -37,7 +54,12 @@
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.silver %}
       <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+        <img
+          class="sponsor__logo lazy"
+          data-src="/assets/sponsors/{{ sponsor.logo }}"
+          data-srcset="/assets/sponsors/{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          title="{{ sponsor.name }}">
       </a>
     {% endfor %}
   </div>
@@ -48,7 +70,12 @@
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.bronze %}
       <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+        <img
+          class="sponsor__logo lazy"
+          data-src="/assets/sponsors/{{ sponsor.logo }}"
+          data-srcset="/assets/sponsors/{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          title="{{ sponsor.name }}">
       </a>
     {% endfor %}
   </div>
@@ -59,7 +86,12 @@
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.partners %}
       <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+        <img
+          class="sponsor__logo lazy"
+          data-src="/assets/sponsors/{{ sponsor.logo }}"
+          data-srcset="/assets/sponsors/{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          title="{{ sponsor.name }}">
       </a>
     {% endfor %}
   </div>
@@ -70,7 +102,12 @@
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.community %}
       <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
-        <img class="sponsor__logo" src="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}" />
+        <img
+          class="sponsor__logo lazy"
+          data-src="/assets/sponsors/{{ sponsor.logo }}"
+          data-srcset="/assets/sponsors/{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          title="{{ sponsor.name }}">
       </a>
     {% endfor %}
   </div>
