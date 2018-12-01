@@ -38,38 +38,7 @@
     </main>
     {% include footer.html %}
     {% include cookie-consent.html %}
-    <script type="text/javascript">
-      (() => {
-        document.addEventListener("DOMContentLoaded", function() {
-          var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-
-          if ("IntersectionObserver" in window) {
-            let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-              entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                  let lazyImage = entry.target;
-                  lazyImage.src = lazyImage.dataset.src;
-                  lazyImage.srcset = lazyImage.dataset.srcset;
-                  lazyImage.classList.remove("lazy");
-                  lazyImageObserver.unobserve(lazyImage);
-                }
-              });
-            });
-
-            lazyImages.forEach(function(lazyImage) {
-              lazyImageObserver.observe(lazyImage);
-            });
-          } else {
-            // Possibly fall back to a more compatible method here
-            lazyImages.forEach(function(lazyImage) {
-              lazyImage.src = lazyImage.dataset.src;
-              lazyImage.srcset = lazyImage.dataset.srcset;
-              lazyImage.classList.remove("lazy");
-            });
-          }
-        });
-      })();
-    </script>
+    {% include _lazy-load.html %}
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/solid.js" integrity="sha384-Xgf/DMe1667bioB9X1UM5QX+EG6FolMT4K7G+6rqNZBSONbmPh/qZ62nBPfTx+xG" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/brands.js" integrity="sha384-S2C955KPLo8/zc2J7kJTG38hvFV+SnzXM6hwfEUhGHw5wPo6uXbnbjSJgw3clO4G" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/fontawesome.js" integrity="sha384-bNOdVeWbABef8Lh4uZ8c3lJXVlHdf8W5hh1OpJ4dGyqIEhMmcnJrosjQ36Kniaqm" crossorigin="anonymous"></script>
