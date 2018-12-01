@@ -20,7 +20,7 @@ branches:
 notifications:
   email:
     on_success: never
-    on_failure : change 
+    on_failure : change
 
 
 before_install:
@@ -29,29 +29,29 @@ before_install:
   #use rvm 2.3
   - rvm use 2.3
   #set home varaibles
-  - . $HOME/.nvm/nvm.sh && nvm install 10.1 && nvm use 10.1  
+  - . $HOME/.nvm/nvm.sh && nvm install 10.1 && nvm use 10.1
   #install gems through bundler
-  - gem install bundler 
+  - gem install bundler
   #if gems are missing this script will get the missing gems.
-  - bundle check || bundle install 
+  - bundle check || bundle install
 
 install:
-  #install firebase tools, required to deploy on firebase hosting 
-  - npm install -g firebase-tools 
+  #install firebase tools, required to deploy on firebase hosting
+  - npm install -g firebase-tools
 
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-script: 
+script:
   #continue even after error
-  - set -e 
+  - set -e
   - if [ "$TRAVIS_BRANCH" == "master" ]; then JEKYLL_ENV=production jekyll build ; fi
-  - if [ "$TRAVIS_BRANCH" == "beta" ]; then jekyll build ; fi
+  - if [ "$TRAVIS_BRANCH" == "beta" ]; then jekyll build --config _config.yml,_config.beta.yml ; fi
 
 after_success:
-  # deploy to firebase using stored token. 
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then firebase deploy --token "$FIREBASE_TOKEN" --project master ; fi 
-  - if [ "$TRAVIS_BRANCH" == "beta" ]; then firebase deploy --token "$FIREBASE_TOKEN" --project beta; fi 
+  # deploy to firebase using stored token.
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then firebase deploy --token "$FIREBASE_TOKEN" --project master ; fi
+  - if [ "$TRAVIS_BRANCH" == "beta" ]; then firebase deploy --token "$FIREBASE_TOKEN" --project beta; fi
 
 env:
   global:
@@ -60,4 +60,4 @@ env:
 sudo: false # route your build to the container-based infrastructure for a faster build
 
 #Visit article at - http://wrapcode.com
-#Cheers, Rahul. 
+#Cheers, Rahul.
