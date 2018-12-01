@@ -20,7 +20,6 @@ const filesToCache = [
   {%- for file in site.static_files %}
     {%- if
       file.extname == '.js' or
-      file.path contains '/assets/location' or
       file.path contains '/assets/sponsors'
     %}
   '{{ file.path }}',
