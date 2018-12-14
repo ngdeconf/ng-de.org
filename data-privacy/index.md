@@ -2,167 +2,235 @@
 layout: default
 ---
 
-## Data Privacy
+# Privacy Policy / Data Protection Declaration
 
-## 1. Datenschutz auf einen Blick
+## GENERAL INFORMATION:
+As being responsible for this website, we take the protection of your personal data very seriously. We treat your personal data confidentiality in particular in accordance with the statutory data protection regulations. By using this website, various personal data is collected. Personal data is data that you can be personally identified with. This data protection declaration describes which data we collect and for what we use it. It also explains how and for what purpose this is done. We would like to point out that data transmission over the Internet (e.g. communication by e-mail) can have security gaps. A complete protection of data against access by third parties is not possible.
 
-### Allgemeine Hinweise
-Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.
+## RESPONSIBLE FOR THE WEBSITE:
+Symetics GmbH
+c/o Factory
+Lohmühlenstraße 65, 12435 Berlin
+Germany
 
-### Datenerfassung auf unserer Website
-### Wer ist verantwortlich für die Datenerfassung auf dieser Website?
+## RESPONSIBLE FOR DATA PROTECTION:
+Symetics GmbH
+c/o Factory
+Lohmühlenstraße 65, 12435 Berlin
+Germany
 
-Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
-
-### Wie erfassen wir Ihre Daten?
-Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
-
-Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie unsere Website betreten.
-
-### Wofür nutzen wir Ihre Daten?
-Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.
-
-### Welche Rechte haben Sie bezüglich Ihrer Daten?
-Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
-
-### Analyse-Tools und Tools von Drittanbietern
-Beim Besuch unserer Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit Cookies und mit sogenannten Analyseprogrammen. Die Analyse Ihres Surf-Verhaltens erfolgt in der Regel anonym; das Surf-Verhalten kann nicht zu Ihnen zurückverfolgt werden. Sie können dieser Analyse widersprechen oder sie durch die Nichtbenutzung bestimmter Tools verhindern. Detaillierte Informationen dazu finden Sie in der folgenden Datenschutzerklärung.
-
-Sie können dieser Analyse widersprechen. Über die Widerspruchsmöglichkeiten werden wir Sie in dieser Datenschutzerklärung informieren.
-
-## 2. Allgemeine Hinweise und Pflichtinformationen
-### Datenschutz
-Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
-
-Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.
-
-Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
-
-### Hinweis zur verantwortlichen Stelle
-Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
-
-Symetics GmbH  
-Kopstadtplatz 24/25  
-45127 Essen  
-
+Robin Böhm
 E-Mail: robin.boehm@angular.de
 
-Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
+## Visiting our Website:
 
-### Widerruf Ihrer Einwilligung zur Datenverarbeitung
-Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
+By visiting our website we process certain data of our visitors. What kind of data, on which legal basis, for what purpose and for how long we process, please read our subsequent data privacy policy.
 
-### Beschwerderecht bei der zuständigen Aufsichtsbehörde
-Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde in datenschutzrechtlichen Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem unser Unternehmen seinen Sitz hat. Eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten können folgendem Link entnommen werden: [https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html]().
+## Providing our Website:
 
-### SSL- bzw. TLS-Verschlüsselung
-Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von “http://” auf “https://” wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+By loading our webpage, some data is being stored in a web server protocol file:
 
-Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
 
-### Auskunft, Sperrung, Löschung
-Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.
 
-### Widerspruch gegen Werbe-Mails
-Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.
+* Date and time of the request for the load of the web page
 
-## 3. Datenerfassung auf unserer Website
-### Cookies
-Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.
+* size of the data package being transmitted within the connection
 
-Die meisten der von uns verwendeten Cookies sind so genannte “Session-Cookies”. Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät gespeichert bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen.
+* Type and version of the used browser as well as your IP address
 
-Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browser aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.
 
-Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (z.B. Warenkorbfunktion) erforderlich sind, werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste. Soweit andere Cookies (z.B. Cookies zur Analyse Ihres Surfverhaltens) gespeichert werden, werden diese in dieser Datenschutzerklärung gesondert behandelt.
 
-### Server-Log-Dateien
-Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
+Furthermore, we store the following information:
 
-- Browsertyp und Browserversion
-- verwendetes Betriebssystem
-- Referrer URL
-- Hostname des zugreifenden Rechners
-- Uhrzeit der Serveranfrage
-- IP-Adresse
+* HTTP Method
 
-Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+* Host name
 
-Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. f DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.
+* URI of the request
 
-## 4. Analyse Tools und Werbung
+* HTTP Response Code
+
+* Referrer
+
+* User-Agent
+
+* Edge Result, Edge Request-ID
+
+* Host Header, HTTP-Protocol, Time to first byte, x-forward header, SSL-Protocol and SSL cypher, Protocol version, FLE-Status, FLE encrypted fields.
+
+
+
+The legal base for the processing of your IP address is Art.  6, para. 1, lit. f) GDPR. Our legitimate interest to store this data is based on the following purposes:
+
+
+* ensure a seamless connection establishment
+
+* ensure the smooth usage of our website / application
+
+* technical analysis of the system security and stability
+
+Your IP address is generally not stored, we especially do not use itf for analysing personal data. A full storage of the IP address would only happen so that we can track technical errors or hacker attacks. Our web servers are configured in a way that your IP address is deleted in a timely manner after your visit of our site.
+
+### Github
+Github is a cloud service provider and content delivery network. Here we host and operate our website. Legal basis for using GitHub on our website is the privacy shield framework (https://www.privacyshield.gov/participant?id=a2zt000000001K2AAI&status=Active). We may process your personal data until our legitimate interest ceases to exist.
+
+For more details of Githubs privacy and security processes, please visit https://help.github.com/articles/github-privacy-statement/.
+
+## Rights according to legal data protection regulations
+
+You have the right to request information, correction, deletion or blocking of your personal data. As far as you should request deletion of your personal data stored by us, we will execute your request without undue delay, unless legal duties for documentation or storage apply. You can object to the usage of your personal data for advertising or market research purposes or revoke given opt-ins at any time.
+
+In case we process personal data of you, you are so called "affected" within the meaning of the General Data Protection Regulation (GDPR) and you have the following rights vis-à-vis the controller:
+
+* Right to information according to Art. 15 GDPR
+
+You have the right to get information for free about your personal data stored by us at any time. Furthermore, you have the right to have your data provided to us transferred to yourself or a third party at any time.
+
+* Right to correct any information that is inaccurate or incomplete according to Art. 16 GDPR
+
+* Right to Deletion according to Art. 17 GDPR
+
+* Right to limitation of processing according to Art. 18 GDPR
+
+At your request, we will correct, block or delete the personal data stored about you, provided that other statutory regulations (e.g. obligations to store data from the German Commercial Code) do not prevent this.
+
+* Right to data transferability according to Art. 20 GDPR
+
+You have the right to get information about your personal data for free in a structured, current and readable format
+
+* Right of contradiction/revocation of permission according to Art. 21 GDPR
+
+If you have given us your consent to process your personal data,  you can revoke this at any time
+
+* Right of complaint to the national supervisory authority according to Art. 13 para. 2 lit. d) GDPR
+
+Without prejudice to any other administrative or judicial remedy, you have the right of appeal to a supervisory authority, in particular in the Member State where you reside, work or suspect of infringement, if you believe that the processing of personal data concerning you is contrary to the GDPR.
+
+The supervisory authority to which the complaint has been lodged shall inform the complainant of the status and results of the complaint, including the possibility of a judicial remedy according to Art. 78 GDPR.
+
+In order to process your request (please mail: [info@ng-de.org](mailto:info@ng-de.org)), we are obliged to check your identity carefully. Please understand that we reserve the right - depending on the criticality of the data - to request further information or proof of identity. This serves in particular to protect your personal data from unauthorized access by third parties. We would like to point out that we reserve the right not to process requests that are received inappropriately frequently or without corresponding proof of identity. We will inform you of this in writing (via E-Mail).
+
+## Children
+
+Persons under 16 should not send us personal data without the consent of their parents or persons with parental power. We ask for no personal data from children and adolescents, nor do we collect such information nor pass it on to third parties.
+
+## Use Of Cookies
+
+Cookies are small text files that are stored on your computer and saved by your browser. Cookies do not cause any damage to your computer and do not contain any viruses. Our cookies remain stored on your terminal for a certain period of time.
+
+In your browser settings, you can determine whether you want to be informed merely about the setting of a cookie, whether you want to grant or exclude permission either for individual cases or for cookies in general, or whether you want cookies to be automatically deleted when your browser is closed. Disabling cookies may limit the functionality of this website.
+
+Cookies, which are necessary for the execution of the electronic communication process or for the provision of certain functions desired by you, are stored on the basis of Art. 6 para. 1 lit. f) GDPR. The website operator has a legitimate interest in the storage of cookies for technically error-free and optimized provision of his services. If other cookies (e.g. cookies for analyzing your surfing behavior) are stored, they are handled separately under the analysis service used.
+
+Our cookies remain on your computer for a certain period of time enabling our cloud provider to recognize your computer behind a shared IP-address space on the basis of the logged data (visit to our website including date and time, browser type, operating system) in order to provide end user security.
+
+## Newsletter
+
+With the following information we inform you about the contents of our newsletter as well as the registration, dispatch and statistical evaluation procedures as well as your right of objection. By subscribing to our newsletter, you agree to the receipt and the procedures described.
+
+The legal basis for sending our newsletter is your consent via double opt-in according to Art. 6 para. 1 lit. a GDPR.
+
+### Newsletter Content
+
+We send newsletters and e-mails containing promotional information (hereinafter referred to as "Newsletter") only with the consent of the recipient. Provided that in the context of a registration to the newsletter whose contents are specifically described, they are decisive for the consent of the users. In our newsletters we inform you periodically about the NG-DE program announcements, discounted ticket/hotel/travel offers and further events by email.
+
+### Use of "MailChimp" shipping service provider
+
+We use MailChimp to send our newsletter to our subscribers. MailChimp is a service provided by The Rocket Science Group, LLC, 512 Means Street, Suite 404, Atlanta, GA 30318, USA.
+
+The email addresses of our newsletter recipients, as well as any other information described in this notice, are stored on the servers of MailChimp in the USA. MailChimp uses this information for sending and to evaluate the newsletters on our behalf. Furthermore, MailChimp can use its own information to check these Use data to optimize or improve your own services, e.g. to technically optimize shipping and the presentation of the newsletter or for economic purposes, in order to determine from which countries the recipients come.
+
+The data stored when you registered for the newsletter (E-mail address, name, IP address, and time and date of registration) will be sent to a server operated by The Rocket Science Group in the United States and stored there in accordance with the EU-US Privacy Shield. MailChimp uses this information for sending and to evaluate the newsletters on our behalf. Furthermore, MailChimp can use its own information to check these Use data to optimize or improve your own services, e.g. to technically optimize shipping and the presentation of the newsletter or for economic purposes, in order to determine from which countries the recipients come. However, MailChimp does not use the data of our newsletter recipients to write them down itself or to send them back to us.
+
+We trust in the reliability and IT and data security of MailChimp. MailChimp is protected under the US-EU Data Protection Agreement ["Privacy Shield"](https://www.privacyshield.gov/participant?id=a2zt0000000000TO6hAAG) and is thus committed to comply with EU data protection regulations. Furthermore, we have created with MailChimp a ["Data Processing Agreement"](https://mailchimp.com/legal/forms/data-processing-agreement/). This is a contract, in which MailChimp is responsible for to protect the data of our users in accordance with their data protection regulations on our behalf and in particular not to pass them on to third parties. The data protection regulations of MailChimp can be [viewed here](https://mailchimp.com/legal/privacy/).
+
+Further information about the data protection offered by MailChimp can be found at:
+
+[https://mailchimp.com/legal/privacy/](https://mailchimp.com/legal/privacy/)
+
+Further information about the EU-US Privacy Shield can be found at:
+
+[Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit](https://www.bfdi.bund.de/DE/Europa_International/International/Artikel/EU-US_PrivacyShield_Daten%C3%BCbermittlungenUSA.html?nn=5217040)
+
+[https://ec.europa.eu/info/law/law-topic/data-protection_en](https://ec.europa.eu/info/law/law-topic/data-protection_en)
+
+### Double opt-in and logging
+
+The registration for our newsletter takes place in a so-called double opt-in procedure. This means that you will receive an e-mail after registration, in which you will be asked to confirm your registration. This confirmation is necessary so that no one can log on with foreign e-mail addresses. The registrations for the newsletter are recorded in order to be able to prove the registration process according to legal requirements. Therefore we store the login and the confirmation time, as well as the IP address. Also, the changes to your data stored with the shipping service provider (MailChimp) are logged.
+
+### Logon data
+
+To subscribe to the newsletter, it is sufficient to provide your e-mail address. Optionally, we ask you to give a name in the newsletter for personal address.
+
+### Newsletter Consent
+
+You will be asked to consent to the use of your personal data to receive our newsletter as follows:
+
+#### NG-DE Conference
+
+"By entering your e-mail address and clicking the button below, you confirm that you are 16 years or older. You agree that the NG-DE (represented by Symetics GmbH, Lohmühlenstraße 65, 12435 Berlin) will use the data and information provided by you in connection with the use of the newsletter to regularly send you information about the NG-DE by e-mail. By clicking below, you agree that NG-DE may process your information in accordance with these terms. You can change your mind at any time by clicking the unsubscribe link in the footer of any e-mail you receive from us, or by contacting us at info@ng-de.org. NG-DE will treat your information with respect. For further information, please see our privacy policy on our website."
+
+### Statistical survey and analysis
+
+The newsletters contain a so-called "web-beacon". A pixel-sized file retrieved from the server of the shipping service provider when the newsletter is opened. Within the framework of this call, technical information, such as information about the browser and your system, as well as your IP address and time of the call-up are collected. This information is used to technically improve the services based on the technical data or the target groups and their reading behavior by means of their polling points (which can be determined using the IP address) or the access times. Statistical surveys also include determining whether the newsletters are opened, when they are opened, and which links are clicked. This information can be assigned to individual newsletter recipients for technical reasons. It is, however, neither our endeavor, nor that of the shipping service provider, to observe individual users. The evaluations are much more useful for us to recognize the reading habits of our users and adapt our content to them or to send different content according to the interests of our users.
+
+### Cancellation / Revocation
+
+We may process your personal data until you revoke your consent. You can cancel the receipt of our newsletter at any time, i.e. revoke your consent. So that goes out at the same time your consents to its dispatch via MailChimp and the statistical analyses. A separate revocation of sending via MailChimp or the statistical evaluation is unfortunately not possible.
+
+A link to cancel the newsletter can be found at the end of each newsletter.
+
+For instructions to take this step, please refer to the confirmation e-mail and each newsletter.
+
+## Link to third parties
+
+### Embedding of external platforms
+
+You will find links to other websites on this website, directly or indirectly by means of links. The legal basis for such processing is our legitimate interest pursuant to Art. 6 para. 1 lit. f) GDPR. We may process your personal data until our legitimate interest ceases to exist.
+
+We hereby expressly distance ourselves from all contents of these sites to which links are established and do not adopt these contents as our own. We do not have any influence on changes of the linked content. Our website may contain links to other providers' websites, which are not covered by this data protection policy. To the extent that the use of websites of other providers involves the capture, processing and use of personal data, please refer to the data protection policy of the relevant provider.
+
+### Use of YouTube
+
+Our website uses the YouTube video platform operated by YouTube LLC, 901 Cherry Ave. San Bruno, CA 94066 USA. YouTube is a platform that enables playback of audio and video files. When you load a page on our website, the integrated YouTube player establishes a connection to YouTube in order to ensure the technical transmission of the video or audio file. When the connection to YouTube is established, data is transferred to YouTube.
+
+For information about the scope and purpose of data collection, the further processing and use of the data by YouTube and your rights and the settings you can configure to protect your privacy, please refer to the YouTube Privacy Guidelines: [https://www.youtube.com/t/privacy_guidelines](https://www.youtube.com/t/privacy_guidelines).
+
+### Google Maps
+
+Our website uses the map service Google Maps via an API. The provider is Google Inc, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA. To use the functions of Google Maps it is necessary to save your IP address. This information is usually transferred to a Google server in the USA and stored there. The provider of this site has no influence on this data transmission. The use of Google Maps is in the interest of an appealing representation of our online offers and at an easy findability of the places indicated by us on the web page.
+
 ### Google Analytics
-Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.
+This website uses functions of the web analytics service Google Analytics. Provider is Google Inc., 1600 Amphitheater Parkway, Mountain View, CA 94043, USA.
 
-Google Analytics verwendet so genannte "Cookies". Das sind Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.
+Google Analytics uses so-called "cookies". These are text files that are stored on your computer and that allow an analysis of the use of the website by you. The information generated by the cookie about your use of this website is usually transmitted to a Google server in the USA and stored there.
 
-Die Speicherung von Google-Analytics-Cookies erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der Analyse des Nutzerverhaltens, um sowohl sein Webangebot als auch seine Werbung zu optimieren.
+Google Analytics cookies are stored on the basis of Art. 6 para. 1 lit. f DSGVO. The website operator has a legitimate interest in analyzing user behavior in order to optimize both its website and its advertising.
 
-### IP-Anonymisierung
-Wir haben auf dieser Website die Funktion IP-Anonymisierung aktiviert. Dadurch wird Ihre IP-Adresse von Google innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum vor der Übermittlung in die USA gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt.
+### IP anonymization
+We have activated the function IP anonymization on this website. As a result, your IP address will be truncated by Google within member states of the European Union or other parties to the Agreement on the European Economic Area prior to transmission to the United States. Only in exceptional cases will the full IP address be sent to a Google server in the USA and shortened there. On behalf of the operator of this website, Google will use this information to evaluate your use of the website, to compile reports on website activity and to provide other services related to website activity and internet usage to the website operator. The IP address provided by Google Analytics as part of Google Analytics will not be merged with other Google data.
 
 ### Browser Plugin
-Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich werden nutzen können. Sie können darüber hinaus die Erfassung der durch den Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: [https://tools.google.com/dlpage/gaoptout?hl=de]().
+You can prevent the storage of cookies by a corresponding setting of your browser software; however, please note that if you do this, you may not be able to use all the features of this website to the fullest extent possible. In addition, you may prevent the collection by Google of the data generated by the cookie and related to your use of the website (including your IP address) as well as the processing of this data by Google by downloading the browser plug-in available under the following link and install: [https://tools.google.com/dlpage/gaoptout?hl=en] ().
 
-### Widerspruch gegen Datenerfassung
-Sie können die Erfassung Ihrer Daten durch Google Analytics verhindern, indem Sie auf folgenden Link klicken. Es wird ein Opt-Out-Cookie gesetzt, der die Erfassung Ihrer Daten bei zukünftigen Besuchen dieser Website verhindert: <a href="javascript:gaOptout();">Google Analytics deaktivieren.</a>
+### Opt-Out to data collection
+You can prevent the collection of your data by Google Analytics by clicking on the following link. An opt-out cookie is set to prevent your data from being collected on future visits to this site: <a href="javascript:gaOptout();"> Disable Google Analytics. </a>
 
-Mehr Informationen zum Umgang mit Nutzerdaten bei Google Analytics finden Sie in der Datenschutzerklärung von Google: [https://support.google.com/analytics/answer/6004245?hl=de]().
+For more information on how to handle user data on Google Analytics, please refer to the Google Privacy Policy [https://support.google.com/analytics/answer/6004245?hl=en] ().
 
-### Auftragsdatenverarbeitung
-Wir haben mit Google einen Vertrag zur Auftragsdatenverarbeitung abgeschlossen und setzen die strengen Vorgaben der deutschen Datenschutzbehörden bei der Nutzung von Google Analytics vollständig um.
+### order data processing
+We have entered into a contract data processing agreement with Google and fully implement the strict requirements of the German data protection authorities when using Google Analytics.
 
-### Demografische Merkmale bei Google Analytics
-Diese Website nutzt die Funktion “demografische Merkmale” von Google Analytics. Dadurch können Berichte erstellt werden, die Aussagen zu Alter, Geschlecht und Interessen der Seitenbesucher enthalten. Diese Daten stammen aus interessenbezogener Werbung von Google sowie aus Besucherdaten von Drittanbietern. Diese Daten können keiner bestimmten Person zugeordnet werden. Sie können diese Funktion jederzeit über die Anzeigeneinstellungen in Ihrem Google-Konto deaktivieren oder die Erfassung Ihrer Daten durch Google Analytics wie im Punkt “Widerspruch gegen Datenerfassung” dargestellt generell untersagen.
+### Demographics in Google Analytics
+This website uses the demographics feature of Google Analytics. As a result, reports can be produced that contain statements on the age, gender and interests of the site visitors. This data comes from interest-based advertising from Google and third-party visitor data. This data can not be assigned to a specific person. You can disable this feature at any time through the ad settings in your Google Account, or generally prohibit the collection of your data by Google Analytics as outlined in the section "Opt-Out to Data Collection".
 
-## 5. Newsletter
-### Newsletterdaten
-Wenn Sie den auf der Website angebotenen Newsletter beziehen möchten, benötigen wir von Ihnen eine E-Mail-Adresse sowie Informationen, welche uns die Überprüfung gestatten, dass Sie der Inhaber der angegebenen E-Mail-Adresse sind und mit dem Empfang des Newsletters einverstanden sind. Weitere Daten werden nicht bzw. nur auf freiwilliger Basis erhoben. Diese Daten verwenden wir ausschließlich für den Versand der angeforderten Informationen und geben diese nicht an Dritte weiter.
+You can find more information on the handling of user data in Google's data protection declaration: : [https://www.google.de/intl/de/policies/privacy/](https://www.google.de/intl/de/policies/privacy/)
 
-Die Verarbeitung der in das Newsletteranmeldeformular eingegebenen Daten erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Die erteilte Einwilligung zur Speicherung der Daten, der E-Mail-Adresse sowie deren Nutzung zum Versand des Newsletters können Sie jederzeit widerrufen, etwa über den "Austragen"-Link im Newsletter. Die Rechtmäßigkeit der bereits erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.
+Google is certified under the Privacy Shield Agreement and thus offers a guarantee of compliance with the European data protection law ([https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active](https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active)).
 
-Die von Ihnen zum Zwecke des Newsletter-Bezugs bei uns hinterlegten Daten werden von uns bis zu Ihrer Austragung aus dem Newsletter gespeichert und nach der Abbestellung des Newsletters gelöscht. Daten, die zu anderen Zwecken bei uns gespeichert wurden (z.B. E-Mail-Adressen für den Mitgliederbereich) bleiben hiervon unberührt.
 
-### MailChimp
-Diese Website nutzt die Dienste von MailChimp für den Versand von Newslettern. Anbieter ist die Rocket Science Group LLC, 675 Ponce De Leon Ave NE, Suite 5000, Atlanta, GA 30308, USA.
+Version: Dec 2018
 
-MailChimp ist ein Dienst, mit dem u.a. der Versand von Newslettern organisiert und analysiert werden kann. Wenn Sie Daten zum Zwecke des Newsletterbezugs eingeben (z.B. E-Mail-Adresse), werden diese auf den Servern von MailChimp in den USA gespeichert.
-
-MailChimp verfügt über eine Zertifizierung nach dem “EU-US-Privacy-Shield”. Der “Privacy-Shield” ist ein Übereinkommen zwischen der Europäischen Union (EU) und den USA, das die Einhaltung europäischer Datenschutzstandards in den USA gewährleisten soll.
-
-Mit Hilfe von MailChimp können wir unsere Newsletterkampagnen analysieren. Wenn Sie eine mit MailChimp versandte E-Mail öffnen, verbindet sich eine in der E-Mail enthaltene Datei (sog. web-beacon) mit den Servern von MailChimp in den USA. So kann festgestellt werden, ob eine Newsletter-Nachricht geöffnet und welche Links ggf. angeklickt wurden. Außerdem werden technische Informationen erfasst (z.B. Zeitpunkt des Abrufs, IP-Adresse, Browsertyp und Betriebssystem). Diese Informationen können nicht dem jeweiligen Newsletter-Empfänger zugeordnet werden. Sie dienen ausschließlich der statistischen Analyse von Newsletterkampagnen. Die Ergebnisse dieser Analysen können genutzt werden, um künftige Newsletter besser an die Interessen der Empfänger anzupassen.
-
-Wenn Sie keine Analyse durch MailChimp wollen, müssen Sie den Newsletter abbestellen. Hierfür stellen wir in jeder Newsletternachricht einen entsprechenden Link zur Verfügung. Des Weiteren können Sie den Newsletter auch direkt auf der Website abbestellen.
-
-Die Datenverarbeitung erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Sie können diese Einwilligung jederzeit widerrufen, indem Sie den Newsletter abbestellen. Die Rechtmäßigkeit der bereits erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.
-
-Die von Ihnen zum Zwecke des Newsletter-Bezugs bei uns hinterlegten Daten werden von uns bis zu Ihrer Austragung aus dem Newsletter gespeichert und nach der Abbestellung des Newsletters sowohl von unseren Servern als auch von den Servern von MailChimp gelöscht. Daten, die zu anderen Zwecken bei uns gespeichert wurden (z.B. E-Mail-Adressen für den Mitgliederbereich) bleiben hiervon unberührt.
-
-Näheres entnehmen Sie den Datenschutzbestimmungen von MailChimp unter: [https://mailchimp.com/legal/terms/]().
-
-Abschluss eines Data-Processing-Agreements
-Wir haben ein sog. „Data-Processing-Agreement“ mit MailChimp abgeschlossen, in dem wir MailChimp verpflichten, die Daten unserer Kunden zu schützen und sie nicht an Dritte weiterzugeben. Dieser Vertrag kann unter folgendem Link eingesehen werden: [https://mailchimp.com/legal/forms/data-processing-agreement/sample-agreement/]().
-
-## 6. Plugins und Tools
-### YouTube
-Unsere Website nutzt Plugins der von Google betriebenen Seite YouTube. Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA.
-
-Wenn Sie eine unserer mit einem YouTube-Plugin ausgestatteten Seiten besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem YouTube-Server mitgeteilt, welche unserer Seiten Sie besucht haben.
-
-Wenn Sie in Ihrem YouTube-Account eingeloggt sind, ermöglichen Sie YouTube, Ihr Surfverhalten direkt Ihrem persönlichen Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem YouTube-Account ausloggen.
-
-Die Nutzung von YouTube erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.
-
-Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von YouTube unter: [https://www.google.de/intl/de/policies/privacy]().
-
-### Vimeo
-Unsere Website nutzt Plugins des Videoportals Vimeo. Anbieter ist die Vimeo Inc., 555 West 18th Street, New York, New York 10011, USA.
-
-Wenn Sie eine unserer mit einem Vimeo-Plugin ausgestatteten Seiten besuchen, wird eine Verbindung zu den Servern von Vimeo hergestellt. Dabei wird dem Vimeo-Server mitgeteilt, welche unserer Seiten Sie besucht haben. Zudem erlangt Vimeo Ihre IP-Adresse. Dies gilt auch dann, wenn Sie nicht bei Vimeo eingeloggt sind oder keinen Account bei Vimeo besitzen. Die von Vimeo erfassten Informationen werden an den Vimeo-Server in den USA übermittelt.
-
-Wenn Sie in Ihrem Vimeo-Account eingeloggt sind, ermöglichen Sie Vimeo, Ihr Surfverhalten direkt Ihrem persönlichen Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem Vimeo-Account ausloggen.
-
-Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Vimeo unter: [https://vimeo.com/privacy]().
 
 <script>
   var gaProperty = '{{ site.ga_property }}';
@@ -171,6 +239,6 @@ Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzer
   function gaOptout() {
     document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
     window[disableStr] = true;
-    alert('Google Analytics deaktiviert');
+    alert('Google Analytics deactivated');
   }
 </script>
