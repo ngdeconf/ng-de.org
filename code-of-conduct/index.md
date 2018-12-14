@@ -1,48 +1,78 @@
 ---
 layout: default
 ---
-## Code Of Conduct
-### Purpose
-A primary goal of all the conferences and user groups that refer to this Code of Conduct is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status and religion (or lack thereof).
+## Code of Conduct
+### PURPOSE
 
-This Code of Conduct outlines our expectations for all those who participate in our community, as well as the consequences for unacceptable behavior.
+We want to provide a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion or lack thereof. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
 
-We invite all those who participate in our events to help us create safe and positive experiences for everyone.
+### ANTI-HARASSMENT
 
-### Open [Source/Culture/Tech] Citizenship
-A supplemental goal of this Code of Conduct is to increase open [source/culture/tech] citizenship by encouraging participants to recognize and strengthen the relationships between our actions and their effects on our community.
+Harassment includes, but is not limited to:
 
-Communities mirror the societies in which they exist and positive action is essential to counteract the many forms of inequality and abuses of power that exist in society.
+* Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion
+* Sexual images in public spaces
+* Deliberate intimidation, stalking, or following
+* Harassing photography or recording
+* Sustained disruption of talks or other events
+* Inappropriate physical contact
+* Invasion of personal space
+* Unwelcome sexual attention
+* Advocating for, or encouraging, any of the above behaviour
 
-If you see someone who is making an extra effort to ensure our community is welcoming, friendly, and encourages all participants to contribute to the fullest extent, we want to know.
+### ENFORCEMENT
 
-### Expected Behavior
-- Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this community.
-- Exercise consideration and respect in your speech and actions.
-- Attempt collaboration before conflict.
-- Refrain from demeaning, discriminatory, or harassing behavior and speech.
-- Be mindful of your surroundings and of your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential.
+Participants asked to stop any harassing behavior are expected to comply immediately.
 
-### Unacceptable Behavior
-Unacceptable behaviors include: intimidating, harassing, abusive, discriminatory, derogatory or demeaning speech or actions by any participant in our community online, at all related events and in one-on-one communications carried out in the context of community business. Community event venues may be shared with members of the public; please be respectful to all patrons of these locations.
+If a participant engages in harassing behaviour, event organisers retain the right to take any actions to keep the event a welcoming environment for all participants. This includes warning the offender or expulsion from the conference with no refund.
 
-Harassment includes: harmful or prejudicial verbal or written comments related to gender, sexual orientation, race, religion, disability; inappropriate use of nudity and/or sexual images (including presentation slides); inappropriate depictions of violence (including presentation slides); deliberate intimidation, stalking or following; harassing photography or recording; sustained disruption of talks or other events; inappropriate physical contact, and unwelcome sexual attention.
+Event organisers may take action to address anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants. We expect participants to follow these rules at all event venues and event-related social activities. We think people should follow these rules outside event activities too!
 
-### Consequences of Unacceptable Behavior
-Unacceptable behavior from any community member, including sponsors and those with decision-making authority, will not be tolerated. Anyone asked to stop unacceptable behavior is expected to comply immediately.
+### REPORTING
 
-If a community member engages in unacceptable behavior, the community organizers may take any action they deem appropriate, up to and including a temporary ban or permanent expulsion from the community without warning (and without refund in the case of a paid event).
+If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. The conference team can be identified by t-shirts. Harassment and other Code of Conduct violations reduce the value of our event for everyone. We want you to be happy at our event. People like you make our event a better place. You can make a report either personally or anonymously.
 
-### If You Witness or Are Subject to Unacceptable Behavior
-If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible. You can find a list of organizers to contact for each of the supporters of this code of conduct at the bottom of this page. Additionally, community organizers are available to help community members engage with local law enforcement or to otherwise help those experiencing unacceptable behavior feel safe. In the context of in-person events, organizers will also provide escorts as desired by the person experiencing distress.
+#### Anonymous report
 
-### Addressing Grievances
-If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify one of the event organizers with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
+You [can make an anonymous report here](https://docs.google.com/forms/d/e/1FAIpQLSf09UWQ8WJVoE4X84buLHd26O37SMC-PFRoCFHSFdfCVJz8gw/viewform). We can’t follow up an anonymous report with you directly, but we will fully investigate it and take whatever action is necessary to prevent a recurrence.
 
-### Scope
-We expect all community participants (contributors, paid or otherwise; sponsors; and other guests) to abide by this Code of Conduct in all community venues—online and in-person—as well as in all one-on-one communications pertaining to community business.
+#### Personal report
 
-### License and attribution
-Berlin Code of Conduct is distributed under a [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) license. It is based on [the pdx.rb code of conduct](https://pdxruby.org/codeofconduct).
+You can make a personal report by:
 
-You find more information about this Code of Conduct at [https://berlincodeofconduct.org/]().
+Contacting a TEAM member, identified by TEAM t-shirt.  
+Emailing us: [coc@ng-de.org](mailto:coc@ng-de.org)  
+Calling us: We’ll publish a phone number that is staffed during main conference hours.  
+When taking a personal report, our team will ensure you are safe and cannot be overheard. They may involve other event staff to ensure your report is managed properly. Once safe, we’ll ask you to tell us about what happened. This can be upsetting, but we’ll handle it as respectfully as possible, and you can bring someone to support you. You won’t be asked to confront anyone and we won’t tell anyone who you are.  
+
+Our team will be happy to help you contact hotel/venue security, local law enforcement, local support services, provide escorts, or otherwise assist you to feel safe for the duration of the event. We value your attendance.
+
+Important contact numbers
+Police: [Alt-Moabit 145, 10557 Berlin](https://goo.gl/maps/Ty5NpQbTULM2), phone: 110
+Medical Emergency: Call 112.
+
+### PHOTO POLICY
+
+We will have colored lanyards for attendees to indicate their comfort level with being photographed:
+
+Black: fine to photograph  
+Red: do not photograph  
+In case of any doubt, please ask before taking photographs of attendees, speakers or team members.
+
+### INCLUSIVE LANGUAGE
+
+In our commitment to a harassment-free and inclusive environment we strongly believe it’s important to pay attention to harmful language patterns.
+
+#### Ableism
+
+Words like “crazy”, “dumb”, “insane” or “lame” are examples of ableist language, devaluating people who have physical or mental disabilities. Its appearance often stems not from any intentional desire to offend, but from our innate sense of what it means to be normal. These words can be avoided by using more fitting, clearer descriptions of what we want to communicate.
+
+#### Sexism
+
+Using gendered terms like “dude” or “guys” to address a mixed-gendered group of people contributes to furthering exclusion of underrepresented individuals. We strongly advise avoiding gendered pronouns as well as gendered terms.
+
+### ATTRIBUTION
+
+This Code of Conduct is based on [JSConf EU](https://2019.jsconf.eu/code-of-conduct/), [The Geek Feminism Wiki](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy) and related sources.
+
+Last update: 14 Dec 2018
