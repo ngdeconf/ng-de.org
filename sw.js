@@ -76,13 +76,13 @@ self.addEventListener('fetch', event => {
 
   // For non-HTML requests, look in the cache first else fall back to the network.
   event.respondWith(
-    caches.match(request).then(response => {
-      if (response) {
-        // console.log('Serving cached: ', event.request.url);
+    caches.match(request).then(match => {
+      if (!match) { return fetch(request); }
+      return fetch(request).then(response => {
+        // Update cache.
+        caches.open(staticCacheName).then(cache => cache.put(request, response.clone()));
         return response;
-      }
-      // console.log('Fetching: ', event.request.url);
-      return fetch(request)
+      }) || response;
     })
   );
 });
