@@ -8,9 +8,9 @@ links:
 #  - name: Schedule
 #    url: /schedule/
 #    navigation: true
-#  - name: Location
-#    url: /location/
-#    navigation: true
+  - name: Location
+    url: /location/
+    navigation: true
 #  - name: About
 #    url: /about/
 #    navigation: true
