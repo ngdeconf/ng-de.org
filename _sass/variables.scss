@@ -19,6 +19,7 @@ $body-fontcolor: map-get($colors, light);
 $body-fontfamily: 'Source Sans Pro', sans-serif;
 $body-background: #323944;
 
+$footer-fontcolor: map-get($colors, light);
 $footer-background: lighten($body-background, 1%);
 
 /*
