@@ -30,23 +30,29 @@ layout: default
     title="BOLLE FESTSÄLE">
 </div>
 
-## BOLLE FESTSÄLE
+<section class="section section--main">
+  <div class="container">
 
-The conference is located at BOLLE FESTSÄLE in the heart of Berlin, close to the river Spree.
+    ## BOLLE FESTSÄLE
 
-REWRITE --- The BOLLE event venue is one of the most impressive locations in Berlin. The landmarked brick building from the industrial era circa 1890, formerly the Carl Bolle dairy factory, is the ideal setting for all kinds of events. Covering a total area of over 3,000 m², the site comprises two event spaces, three historical Kontorräume and a bar with a roof terrace. The adjoining Hotel ABION Spreebogen and ABION Villa offer comfortable accommodation options within walking distance, right by the river Spree.
+    The conference is located at BOLLE FESTSÄLE in the heart of Berlin, close to the river Spree.
 
-### Public Transportation
+    REWRITE --- The BOLLE event venue is one of the most impressive locations in Berlin. The landmarked brick building from the industrial era circa 1890, formerly the Carl Bolle dairy factory, is the ideal setting for all kinds of events. Covering a total area of over 3,000 m², the site comprises two event spaces, three historical Kontorräume and a bar with a roof terrace. The adjoining Hotel ABION Spreebogen and ABION Villa offer comfortable accommodation options within walking distance, right by the river Spree.
 
-<div class="fullwidth">
-  <div class="mapouter">
-    <div class="gmap_canvas">
-      <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Bolle%20Fests%C3%A4le%20Berlin&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 100%;"></iframe>
+    ### Public Transportation
+
+    <div class="fullwidth">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Bolle%20Fests%C3%A4le%20Berlin&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 100%;"></iframe>
+        </div>
+        <style>
+          .mapouter{
+            overflow:hidden;height:500px;}
+            .gmap_canvas {background:none!important;height:500px;}
+        </style>
+      </div>
     </div>
-    <style>
-      .mapouter{
-        overflow:hidden;height:500px;}
-        .gmap_canvas {background:none!important;height:500px;}
-    </style>
+
   </div>
-</div>
+</section>

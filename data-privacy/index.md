@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: section
 ---
 
 # Privacy Policy / Data Protection Declaration

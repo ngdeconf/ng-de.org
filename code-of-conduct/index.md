@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: section
 ---
 ## Code of Conduct
 ### PURPOSE
