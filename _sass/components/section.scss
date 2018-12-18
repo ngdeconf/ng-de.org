@@ -1,6 +1,10 @@
 .section {
   padding: 3rem 0;
 
+  &--top-banner {
+    padding: 0;
+  }
+
   &--main {}
 
   &--sponsors {}

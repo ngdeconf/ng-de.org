@@ -2,33 +2,35 @@
 layout: default
 ---
 
-<div class="fullwidth">
-  <img class="lazy" sizes="(max-width: 3840px) 100vw, 3840px"
-    data-srcset="
-    /assets/location/cover/cover_rcerat_c_scale,w_480.jpg 480w,
-    /assets/location/cover/cover_rcerat_c_scale,w_901.jpg 901w,
-    /assets/location/cover/cover_rcerat_c_scale,w_1207.jpg 1207w,
-    /assets/location/cover/cover_rcerat_c_scale,w_1465.jpg 1465w,
-    /assets/location/cover/cover_rcerat_c_scale,w_1695.jpg 1695w,
-    /assets/location/cover/cover_rcerat_c_scale,w_1911.jpg 1911w,
-    /assets/location/cover/cover_rcerat_c_scale,w_2111.jpg 2111w,
-    /assets/location/cover/cover_rcerat_c_scale,w_2288.jpg 2288w,
-    /assets/location/cover/cover_rcerat_c_scale,w_2461.jpg 2461w,
-    /assets/location/cover/cover_rcerat_c_scale,w_2633.jpg 2633w,
-    /assets/location/cover/cover_rcerat_c_scale,w_2798.jpg 2798w,
-    /assets/location/cover/cover_rcerat_c_scale,w_2964.jpg 2964w,
-    /assets/location/cover/cover_rcerat_c_scale,w_3111.jpg 3111w,
-    /assets/location/cover/cover_rcerat_c_scale,w_3258.jpg 3258w,
-    /assets/location/cover/cover_rcerat_c_scale,w_3406.jpg 3406w,
-    /assets/location/cover/cover_rcerat_c_scale,w_3547.jpg 3547w,
-    /assets/location/cover/cover_rcerat_c_scale,w_3686.jpg 3686w,
-    /assets/location/cover/cover_rcerat_c_scale,w_3830.jpg 3830w,
-    /assets/location/cover/cover_rcerat_c_scale,w_3834.jpg 3834w,
-    /assets/location/cover/cover_rcerat_c_scale,w_3840.jpg 3840w"
-    data-src="/assets/location/cover/cover_rcerat_c_scale,w_3840.jpg"
-    alt="BOLLE FESTSÄLE"
-    title="BOLLE FESTSÄLE">
-</div>
+<section class="section section--top-banner">
+  <div class="fullwidth">
+    <img class="lazy" sizes="(max-width: 3840px) 100vw, 3840px"
+      data-srcset="
+      /assets/location/cover/cover_rcerat_c_scale,w_480.jpg 480w,
+      /assets/location/cover/cover_rcerat_c_scale,w_901.jpg 901w,
+      /assets/location/cover/cover_rcerat_c_scale,w_1207.jpg 1207w,
+      /assets/location/cover/cover_rcerat_c_scale,w_1465.jpg 1465w,
+      /assets/location/cover/cover_rcerat_c_scale,w_1695.jpg 1695w,
+      /assets/location/cover/cover_rcerat_c_scale,w_1911.jpg 1911w,
+      /assets/location/cover/cover_rcerat_c_scale,w_2111.jpg 2111w,
+      /assets/location/cover/cover_rcerat_c_scale,w_2288.jpg 2288w,
+      /assets/location/cover/cover_rcerat_c_scale,w_2461.jpg 2461w,
+      /assets/location/cover/cover_rcerat_c_scale,w_2633.jpg 2633w,
+      /assets/location/cover/cover_rcerat_c_scale,w_2798.jpg 2798w,
+      /assets/location/cover/cover_rcerat_c_scale,w_2964.jpg 2964w,
+      /assets/location/cover/cover_rcerat_c_scale,w_3111.jpg 3111w,
+      /assets/location/cover/cover_rcerat_c_scale,w_3258.jpg 3258w,
+      /assets/location/cover/cover_rcerat_c_scale,w_3406.jpg 3406w,
+      /assets/location/cover/cover_rcerat_c_scale,w_3547.jpg 3547w,
+      /assets/location/cover/cover_rcerat_c_scale,w_3686.jpg 3686w,
+      /assets/location/cover/cover_rcerat_c_scale,w_3830.jpg 3830w,
+      /assets/location/cover/cover_rcerat_c_scale,w_3834.jpg 3834w,
+      /assets/location/cover/cover_rcerat_c_scale,w_3840.jpg 3840w"
+      data-src="/assets/location/cover/cover_rcerat_c_scale,w_3840.jpg"
+      alt="BOLLE FESTSÄLE"
+      title="BOLLE FESTSÄLE">
+  </div>
+</section>
 
 <section class="section section--main">
   <div class="container">
