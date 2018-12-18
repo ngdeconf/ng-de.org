@@ -1,0 +1,15 @@
+<script>
+(() => {
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.shuffle').forEach(region => {
+      const shuffled = Array.from(region.children).map((a) => 
+        [Math.random(), a]).sort((a, b) => a[0] - b[0]).map(a => a[1]
+      );
+      region.innerHTML = '';
+      shuffled.forEach(elem => {
+        region.appendChild(elem);
+      });
+    })
+  });
+})();
+</script>

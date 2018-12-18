@@ -1,0 +1,14 @@
+<div class="team shuffle">
+  {% assign members = site.data.team | where: include.where, "true" %}
+  {% for member in members %}
+    <a href="https://twitter.com/{{ member.twitter }}" data-name="{{ member.name }}" class="team__member" target="_blank" rel="nofollow noreferer">
+      <img
+        class="team__member-picture lazy"
+        src="placeholder-image.jpg"
+        data-src="/assets/team/{{ member.image }}"
+        data-srcset="/assets/team/{{ member.image }}"
+        alt="{{ member.name }}"
+        title="{{ member.name }}">
+    </a>
+  {% endfor %}
+</div>

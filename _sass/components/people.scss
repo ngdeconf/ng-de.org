@@ -1,0 +1,50 @@
+.team {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: -1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &__member {
+
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: .5rem;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 50%;
+
+    background: linear-gradient(to right, map-get($colors, primary), map-get($colors, secondary));
+
+    &::after {
+      content: attr(data-name);
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      height: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,.7);
+      z-index: 99999;
+      bottom: 0;
+      transition: height 0.15s ease-out;
+    }
+
+    &:hover {
+
+      &::after {
+        height: 50%;
+      }
+    }
+  }
+
+  &__member-picture {
+    border-radius: 50%;
+  }
+
+}

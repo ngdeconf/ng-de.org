@@ -1,11 +1,42 @@
-organizers:
-  - name: Robin
-    twitter: "@robinboehm"
-  - name: Martin
-    twitter: "@chaos_monster"
-  - name: Peter
-    twitter: "@BaggersIO"
-
-team:
-  - name: Sascha
-    twitter: "@saschanuissl"
+- name: Robin
+  twitter: "robinboehm"
+  image: robin.jpg
+  organizer: true
+  judge: true
+  team: true
+- name: Martin
+  twitter: "chaos_monster"
+  image: martin.png
+  organizer: true
+  judge: true
+  team: true
+- name: Peter
+  twitter: "BaggersIO"
+  image: peter.jpg
+  organizer: true
+  judge: true
+  team: true
+- name: Sascha
+  twitter: "saschanuissl"
+  image: sascha.jpg
+  organizer: false
+  judge: false
+  team: true
+- name: Katrin
+  twitter: "Ka_TriN_F"
+  image: katrin.jpg
+  organizer: false
+  judge: true
+  team: true
+- name: Feli
+  twitter: "kotzendekrabbe"
+  image: feli.jpg
+  organizer: false
+  judge: true
+  team: true
+- name: Katja
+  twitter: "wkatja__meyer"
+  image: katja.jpg
+  organizer: false
+  judge: true
+  team: true
