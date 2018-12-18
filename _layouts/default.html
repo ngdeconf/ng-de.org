@@ -28,11 +28,15 @@
     {% include header.html %}
     <main class="main">
       <div class="main__content">
-        <section class="container">
-          {{content}}
+        <section class="section section--main">
+          <div class="container">
+            {{content}}
+          </div>
         </section>
-        <section class="container">
-          {% include sponsors.html %}
+        <section class="section section--sponsors">
+          <div class="container">
+            {% include sponsors.html %}
+          </div>
         </section>
       </div>
     </main>
