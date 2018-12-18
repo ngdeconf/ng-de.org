@@ -9,9 +9,13 @@ cfp_url: https://docs.google.com/forms/d/1P1eWsjlw7BAwRIHt6DyxkCq4mpaek_2aM8rtiF
 
 The CFP for NG-DE Conference on August 30th & 31st, 2019 at BOLLE FESTSÄLE in Berlin is now open. The CFP will close on {{ page.cfp_end }}
 
-<a class="button button--xlarge" href="{{ page.cfp_url }}" target="_blank" rel="nofollow noopener">
-  <span class="button__scale">Submit Your Paper</span>
-</a>
+<div class="cfp">
+  <div class="cfp__cta">
+    <a class="button button--xlarge" href="{{ page.cfp_url }}" target="_blank" rel="nofollow noopener">
+      <span class="button__scale">Submit Your Paper</span>
+    </a>
+  </div>
+</div>
 
 ## Topics we are looking for
 
