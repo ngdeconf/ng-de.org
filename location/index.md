@@ -34,11 +34,26 @@ layout: default
 <section class="section section--main">
 <div class="container" markdown="1">
 
-## BOLLE FESTSÄLE
+# The Venue
 
 The conference is located at BOLLE FESTSÄLE in the heart of Berlin, close to the river Spree. The brick building was built in the industrial era round about 1890 and is with its 1.500 square meters the ideal location to connect the Angular community.
 
-Busses, trams and commuter trains are in walking distance. It takes ~30 minutes to Berlin-Tegel airport (TXL). The venue is surrounded by hotels of any category.
+Busses, trams and commuter trains are in walking distance. It takes approximately 30 minutes to Berlin-Tegel airport (TXL). The venue is surrounded by hotels of any category.
+
+## Location
+
+BOLLE FESTSÄLE  
+Alt-Moabit 98  
+10559 Berlin  
+GERMANY
+
+## Public Transportation
+
+**Bus 245** departs almost in front of the venue (Kleiner Tiergarten). It takes only 5 minutes to Hauptbahnhof (Berlin Central Railway Station)
+
+**Commuter trains** depart from Bellevue train station only 10 minutes walk from the conference.
+
+**Berlin Airports (TXL/SXF)** can be reached by airport shuttles and regional trains departing from Hauptbahnhof (Berlin Central Railway Station)
 
 </div>
 </section>
