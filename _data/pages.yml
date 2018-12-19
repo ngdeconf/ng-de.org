@@ -11,9 +11,9 @@ links:
   - name: Location
     url: /location/
     navigation: true
-#  - name: About
-#    url: /about/
-#    navigation: true
+  - name: Team
+    url: /team/
+    navigation: true
   - name: Code of Conduct
     url: /code-of-conduct/
     navigation: true

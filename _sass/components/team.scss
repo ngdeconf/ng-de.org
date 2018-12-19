@@ -1,4 +1,5 @@
 .team {
+  $b: &;
 
   display: flex;
   flex-flow: row wrap;
@@ -7,8 +8,19 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 
+  &--details {
+    flex-direction: column;
+
+    #{$b}__member-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
   &__member {
 
+    flex: 0 0 200px;
     display: block;
     position: relative;
     width: 200px;
@@ -30,7 +42,6 @@
       left: 0;
       right: 0;
       background: rgba(0,0,0,.7);
-      z-index: 99999;
       bottom: 0;
       transition: height 0.15s ease-out;
     }

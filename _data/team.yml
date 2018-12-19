@@ -4,39 +4,53 @@
   organizer: true
   judge: true
   team: true
+  bio: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 - name: Martin
   twitter: "chaos_monster"
   image: martin.png
   organizer: true
   judge: true
   team: true
+  bio: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 - name: Peter
   twitter: "BaggersIO"
   image: peter.jpg
   organizer: true
   judge: true
   team: true
+  bio: >
+    Peter is organiser of NG-DE conference and founder of the FrankenJS user group in the greater Nuremberg area. He started coding in 1998 and felt in love with AngularJS around 2011. He now works as a freelance JavaScript consultant with a strong focus on Angular applications.
 - name: Sascha
   twitter: "saschanuissl"
   image: sascha.jpg
   organizer: false
   judge: false
   team: true
+  bio: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 - name: Katrin
   twitter: "Ka_TriN_F"
   image: katrin.jpg
   organizer: false
   judge: true
   team: true
+  bio: >
+    Katrin works as a Design Systems Engineer at Dynatrace. With her work for the design system Barista, she is focusing on bridging the gap between designers and developers. Additionally, she is organising the #DevOne developers and ops conference in Linz. She loves being outdoors, doing sports and traveling the globe with her van and her mountain bike.
 - name: Feli
   twitter: "kotzendekrabbe"
   image: feli.jpg
   organizer: false
   judge: true
   team: true
+  bio: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 - name: Katja
   twitter: "wkatja__meyer"
   image: katja.jpg
   organizer: false
   judge: true
   team: true
+  bio: >
+    After finishing my studies in the fields of biotechnology I realized quite fast, that this is not the area I would love to work in. It was a great decision to change my professional orientation and start working as a software developer. While I have much experience with databases and back-end development, I am always eager to learn something new. I started to learn Angular some months ago and with my fascination for what I have learned so far, I am curiously looking forward to discover even more exciting things about this framework.

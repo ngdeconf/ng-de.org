@@ -1,6 +1,7 @@
-<div class="team shuffle">
+<div class="team {% if include.details %}team--details{% endif %} shuffle">
   {% assign members = site.data.team | where: include.where, "true" %}
   {% for member in members %}
+  <div class="team__member-container">
     <a href="https://twitter.com/{{ member.twitter }}" data-name="{{ member.name }}" class="team__member" target="_blank" rel="nofollow noreferer">
       <img
         class="team__member-picture lazy"
@@ -10,5 +11,11 @@
         alt="{{ member.name }}"
         title="{{ member.name }}">
     </a>
+    {% if include.details %}
+<div markdown="1">
+{{ member.bio }}
+</div>
+    {% endif %}
+  </div>
   {% endfor %}
 </div>
