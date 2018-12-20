@@ -5,7 +5,7 @@ cfp_end: "March 10th, 2019."
 cfp_url: https://docs.google.com/forms/d/1P1eWsjlw7BAwRIHt6DyxkCq4mpaek_2aM8rtiF0D7pg
 ---
 
-# Call for Papers
+## Call for Papers
 
 The CFP for NG-DE Conference on August 30th & 31st, 2019 at BOLLE FESTSÄLE in Berlin is now open. The CFP will close on {{ page.cfp_end }}
 
@@ -17,7 +17,7 @@ The CFP for NG-DE Conference on August 30th & 31st, 2019 at BOLLE FESTSÄLE in B
   </div>
 </div>
 
-## Topics we are looking for
+### Topics we are looking for
 
 - Angular in general
 - RxJS
@@ -28,7 +28,7 @@ The CFP for NG-DE Conference on August 30th & 31st, 2019 at BOLLE FESTSÄLE in B
 - NativeScript & Ionic
 - Meta talks tailored for the Angular & Dev Community
 
-## The process
+### The process
 
 As soon as the CFP closes we will start with the blind-voting process to pick the talks. Blind voting means, that we will select the topics only by title and abstract.
 
@@ -36,11 +36,11 @@ This guarantees a fair progress to everbody whether you are a super hero on stag
 
 The poll will run by the organisers and people from the Community to ensure diverse and balanced results.
 
-## Your Judges
+### Your Judges
 
 {% include team.html where="judge" %}
 
-## When your talk get selected
+### When your talk get selected
 
 - We will cover travel costs to Berlin and public transportation within the city during your stay. We even arrange a room at the speakers hotel close to the venue.  
   The room will be booked from August 29th to September 1st.
