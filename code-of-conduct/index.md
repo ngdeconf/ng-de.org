@@ -47,8 +47,8 @@ When taking a personal report, our team will ensure you are safe and cannot be o
 
 Our team will be happy to help you contact hotel/venue security, local law enforcement, local support services, provide escorts, or otherwise assist you to feel safe for the duration of the event. We value your attendance.
 
-Important contact numbers
-Police: [Alt-Moabit 145, 10557 Berlin](https://goo.gl/maps/Ty5NpQbTULM2), phone: 110
+Important contact numbers  
+Police: [Alt-Moabit 145, 10557 Berlin](https://goo.gl/maps/Ty5NpQbTULM2), phone: 110  
 Medical Emergency: Call 112.
 
 ### PHOTO POLICY
