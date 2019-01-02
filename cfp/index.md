@@ -17,24 +17,30 @@ The CFP for NG-DE Conference on August 30th & 31st, 2019 at BOLLE FESTSÄLE in B
   </div>
 </div>
 
+- The talk should fit into 30 minutes
+- The talk must be in English
+- We run a single track for both days
+- You have to agree with our [Code of Conduct](/code-of-conduct) and GDPR
+- Deadline will be March 10th
+
 ### Topics we are looking for
 
 - Angular in general
 - RxJS
-- ngRx
+- ngRx & State Management
 - Universal
 - Web Performance
 - Progressive Web Apps
 - NativeScript & Ionic
-- Meta talks tailored for the Angular & Dev Community
+- Everything which is interesting for the Angular community
 
 ### The process
 
-As soon as the CFP closes we will start with the blind-voting process to pick the talks. Blind voting means, that we will select the topics only by title and abstract.
+Regarding the voting process we are oriented on jsconf.eu.
 
-This guarantees a fair progress to everbody whether you are a super hero on stage or a first-time speaker.
-
-The poll will run by the organisers and people from the Community to ensure diverse and balanced results.
+- All submissions are anonymized, so that there is no bias towards the submitter.
+- All submissions are reviewed and voted by the jury.
+- The top submissions are then de-anonymized so we can take speaker details into account.
 
 ### Your Judges
 
@@ -42,11 +48,9 @@ The poll will run by the organisers and people from the Community to ensure dive
 
 ### When your talk get selected
 
-- We will cover travel costs to Berlin and public transportation within the city during your stay. We even arrange a room at the speakers hotel close to the venue.  
-  The room will be booked from August 29th to September 1st.
-
-- For sure you won't have to pay to enter the conference and will get a free ticket for both days.
-
+- Travel and accomendation for the conference will be paid.
+- For sure you won't have to pay to enter the conference.
 - We will add your talk, bio and Twitter handle on the website and promote you via our social media accounts, before, during and after the conference.
+- Your talk will be recorded and published on our YouTube channel after the conference.
 
 Do you have any questions? Feel free to get in touch with us [info@ng-de.org](mailto:info@ng-de.org)
