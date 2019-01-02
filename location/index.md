@@ -1,5 +1,6 @@
 ---
 layout: default
+gmaps_bolle: https://www.google.com/maps/place/BOLLE+Fests%C3%A4le/@52.52478,13.34647,15z/data=!4m5!3m4!1s0x0:0xecf15562de88eae5!8m2!3d52.52478!4d13.34647
 ---
 
 <section class="section section--top-banner">
@@ -42,7 +43,7 @@ Busses, trams and commuter trains are in walking distance. It takes approximatel
 
 ### Location
 
-BOLLE FESTSÄLE  
+[BOLLE FESTSÄLE]({{page.gmaps_bolle}})  
 Alt-Moabit 98  
 10559 Berlin  
 GERMANY
