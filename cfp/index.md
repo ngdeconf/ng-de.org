@@ -1,7 +1,7 @@
 ---
 layout: section
 
-cfp_end: "March 10th, 2019."
+cfp_end: "March 17th, 2019 23:59 CET"
 cfp_url: https://docs.google.com/forms/d/1P1eWsjlw7BAwRIHt6DyxkCq4mpaek_2aM8rtiF0D7pg
 ---
 
@@ -21,7 +21,7 @@ The CFP for NG-DE Conference on August 30th & 31st, 2019 at BOLLE FESTSÄLE in B
 - The talk must be in English
 - We run a single track for both days
 - You have to agree with our [Code of Conduct](/code-of-conduct) and GDPR
-- Deadline will be March 10th
+- Deadline will be {{ page.cfp_end }}
 
 ### Topics we are looking for
 
