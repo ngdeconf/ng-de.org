@@ -10,13 +10,13 @@ Lohmühlenstraße 65
 12435 Berlin
 
 ### Kontakt:
-E-Mail: [robin.boehm@angular.de](mailto:robin.boehm@angular.de)  
+E-Mail: [robin.boehm@workshops.de](mailto:robin.boehm@workshops.de)  
 Telefon: +49 (0) 201 / 87535773
 
 ### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 Robin Böhm  
-Willmanndamm 8  
-10827 Berlin
+Merseburger Str. 2
+10823 Berlin
 
 ### Online-Streitbeilegung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: [https://ec.europa.eu/consumers/odr](https://ec.europa.eu/consumers/odr). Unsere E-Mail-Adresse finden Sie oben im Impressum.
