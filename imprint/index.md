@@ -5,8 +5,9 @@ layout: section
 ## Imprint
 Angaben gemäß § 5 TMG:  
 Symetics GmbH  
-Kopstadtplatz 24/25  
-45127 Essen
+c/o Factory
+Lohmühlenstraße 65
+12435 Berlin
 
 ### Kontakt:
 E-Mail: [robin.boehm@angular.de](mailto:robin.boehm@angular.de)  
