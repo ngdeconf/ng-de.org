@@ -42,7 +42,7 @@ Regarding the voting process we are oriented on jsconf.eu.
 - All submissions are reviewed and voted by the jury.
 - The top submissions are then de-anonymized so we can take speaker details into account.
 
-### Your Judges
+### Your Jury
 
 {% include team.html where="judge" %}
 
