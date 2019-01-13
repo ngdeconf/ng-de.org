@@ -8,7 +8,7 @@ cfp_url: about:blank
 
 ## Call for Papers
 
-The CFP for NG-DE Conference on August 30th & 31st, 2019 at BOLLE FESTSÄLE in Berlin is now open.
+The CFP for NG-DE Conference on August 30 & 31, 2019 at BOLLE FESTSÄLE in Berlin is now open. 
 The CFP will close on {{ page.cfp_end }}
 
 <div class="cfp">
@@ -19,21 +19,21 @@ The CFP will close on {{ page.cfp_end }}
   </div>
 </div>
 
-- The talk should fit into 30 minutes.
-- We do no Q&A. But if you want to have one, it should not exceed your 30 minutes.
+- The talk should be 30 minutes.
+- We won't do any Q&A, but if you want to have one it should not exceed your 30 minute slot.
 - The talk must be in English.
-- We run a single track for both days.
-- You have to agree with our [Code of Conduct](/code-of-conduct) and [Privacy Policy](/data-privacy).
-- The deadline for submission is the {{ page.cfp_end }}.
+- We will run a single track for both days.
+- By submitting a talk you agree with our [Code of Conduct](/code-of-conduct/) and [Privacy Policy](/data-privacy/).
+- The deadline is {{ page.cfp_end }}
 
 ### Topics we are looking for
 
-Our audience will be people interested in Angular with every experience level. So topics can address beginners as well as experts.
+Our audience will be people interested in Angular from every level of expertise. So don't worry, your talk can address any level from beginners to experts.
 
 - Angular in general
 - RxJS
 - ngRx & State Management
-- Universal
+- Angular Universal
 - Web Performance
 - Progressive Web Apps
 - NativeScript & Ionic
@@ -41,25 +41,28 @@ Our audience will be people interested in Angular with every experience level. S
   - making developers lives easier
   - becoming a better developer
   - how to improve the community
-  - and many more
+  - and anything else you can think of
 
-### The process
+### The Selection Process
 
-The voting process is modeled on that used by jsconf.eu.
+For the selection of talks we will follow the jsconf.eu process. That means:
 
-- All submissions are anonymized, so that there is no bias towards the submitter.
-- All submissions are reviewed and voted on by the jury.
+- All submissions will be anonymized, so that there is no bias towards the submitter.
+- All submissions will be reviewed and voted on by the jury.
 - The top submissions are then de-anonymized so we can take speaker details into account.
 
-### Your Jury
+### The Jury
 
 {% include team.html where="judge" %}
 
-### When your talk has been selected
+### If your talk gets selected
 
-- Travel and accomendation for the conference will be paid for by us.
+- We will cover your travel and accommodation costs for the conference.
 - The conference ticket is included for both days.
-- We will add your talk, bio and Twitter handle on the website and promote you via our social media accounts, before, during and after the conference.
+- We will add your talk, bio and Twitter handle on the website and promote you via our social media accounts before, during and after the conference.
 - Your talk will be recorded and published on our YouTube channel after the conference.
 
-Do you have any questions? Feel free to get in touch with us: [info@ng-de.org](mailto:info@ng-de.org)
+We're looking forward to your submissions!
+
+Still have a question? 
+Feel free to get in touch with us [info@ng-de.org](mailto:info@ng-de.org)
