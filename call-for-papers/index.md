@@ -23,7 +23,7 @@ The CFP will close on {{ page.cfp_end }}
 - We won't do any Q&A, but if you want to have one it should not exceed your 30 minute slot.
 - The talk must be in English.
 - We will run a single track for both days.
-- By submitting a talk you agree with our [Code of Conduct](/code-of-conduct/) and [Privacy Policy](/data-privacy/).
+- By submitting a talk you agree with our [Code of Conduct](/code-of-conduct/) and [Privacy Policy](/privacy-policy/).
 - The deadline is {{ page.cfp_end }}
 
 ### Topics we are looking for
