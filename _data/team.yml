@@ -7,7 +7,7 @@
   bio: >
     Robin is an entrepreneur driven by continuous improvement to empower people to learn and grow.
     He founded [Angular.DE](https://angular.de){:target="_blank"} and wrote several books about Angular.
-    His company [Workshops.DE](https://workshops.de){:target="_blank"} offers high-quality trainings for modern technoligies.
+    His company [Workshops.DE](https://workshops.de){:target="_blank"} offers high-quality trainings for modern technologies.
 - name: Martin
   twitter: "chaos_monster"
   image: martin.png
@@ -31,8 +31,8 @@
   judge: false
   team: true
   bio: >
-    Sascha is a frontend developer, and webdesigner. Mainly at [adorsys](https://adorsys.de){:target="_blank"}, but available for small assignments as well. Sascha inherently understands that the user is one of the most valuable asset an organization can have, and is driven by user-driven focus, ideals and experience.
-    When not programming or designing, Sascha enjoys traveling, going on hikes, and meeting new people. He loves discussing about nearly all kind of things to improve himself or others.
+    Sascha is a frontend developer and webdesigner. Mainly at [adorsys](https://adorsys.de){:target="_blank"}, but available for small assignments as well. Sascha inherently understands that the user is one of the most valuable assets an organization can have and is driven by user-driven focus, ideals and experience.
+    When not programming or designing, Sascha enjoys traveling, going on hikes and meeting new people. He loves discussing about nearly all kind of things to improve himself or others.
 - name: Katrin
   twitter: "Ka_TriN_F"
   image: katrin.jpg
@@ -56,4 +56,4 @@
   judge: true
   team: true
   bio: >
-    After finishing her studies in the fields of biotechnology Katja realized quite fast, that this is not the area she would love to work in. After the decision to change her professional orientation, she now works as a software developer at [virtual7](http://virtual7.de/){:target="_blank"} . While she has much experience with databases and back-end development, she is always eager to learn something new. With her fascination for what she has learned so far as Angular beginner, she is curiously looking forward to discover even more exciting things about this framework.
+    After finishing her studies in the fields of biotechnology Katja realized quite fast, that this is not the area she would love to work in. After the decision to change her professional orientation, she now works as a software developer at [virtual7](http://virtual7.de/){:target="_blank"}. While she has much experience with databases and back-end development, she is always eager to learn something new. With her fascination for what she has learned so far as Angular beginner, she is curiously looking forward to discover even more exciting things about this framework.
