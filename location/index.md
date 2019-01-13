@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Location - NG-DE 2019 - Angular Conference - Summer 2019 in Berlin
 gmaps_bolle: https://www.google.com/maps/place/BOLLE+Fests%C3%A4le/@52.52478,13.34647,15z/data=!4m5!3m4!1s0x0:0xecf15562de88eae5!8m2!3d52.52478!4d13.34647
 ---
 
