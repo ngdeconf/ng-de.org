@@ -5,10 +5,9 @@
   judge: true
   team: true
   bio: >
-    Robin is CEO of [Workshops.DE](https://workshops.de){:target="_blank"}.
-    Together with more than 25 trainers he teached over 6500 attendees at high-quality on-site trainings.
-    In 2012 he founded [Angular.DE](https://angular.de){:target="_blank"} and wrote several books about Angular.
-    Besides Angular he's also running [ReactJS.DE](https://reactjs.de){:target="_blank"} and supports [Code University Berlin](https://code.berlin){:target="_blank"}.
+    Robin is an entrepreneur driven by continuous improvement to empower people to learn and grow.
+    He founded [Angular.DE](https://angular.de){:target="_blank"} and wrote several books about Angular.
+    His company [Workshops.DE](https://workshops.de){:target="_blank"} offers high-quality trainings for modern technoligies.
 - name: Martin
   twitter: "chaos_monster"
   image: martin.png
