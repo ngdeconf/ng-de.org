@@ -8,7 +8,8 @@ cfp_url: about:blank
 
 ## Call for Papers
 
-The CFP for NG-DE Conference on August 30th & 31st, 2019 at BOLLE FESTSÄLE in Berlin is now open. The CFP will close on {{ page.cfp_end }}
+The CFP for NG-DE Conference on August 30th & 31st, 2019 at BOLLE FESTSÄLE in Berlin is now open.
+The CFP will close on {{ page.cfp_end }}
 
 <div class="cfp">
   <div class="cfp__cta">
