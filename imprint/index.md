@@ -1,5 +1,6 @@
 ---
 layout: section
+title: Imprint - NG-DE 2019 - Angular Conference - Summer 2019 in Berlin
 ---
 
 ## Imprint
