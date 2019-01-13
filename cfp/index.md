@@ -22,7 +22,7 @@ The CFP for NG-DE Conference on August 30th & 31st, 2019 at BOLLE FESTSÄLE in B
 - We do no Q&A. But if you want to have one it should not exceed your 30 minutes.
 - The talk must be in English
 - We run a single track for both days
-- You have to agree with our [Code of Conduct](/code-of-conduct) and [GDPR](/data-privacy)
+- You have to agree with our [Code of Conduct](/code-of-conduct) and [Privacy Policy](/data-privacy)
 - Deadline will be {{ page.cfp_end }}
 
 ### Topics we are looking for
