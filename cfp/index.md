@@ -18,7 +18,7 @@ The CFP for NG-DE Conference on August 30th & 31st, 2019 at BOLLE FESTSÄLE in B
   </div>
 </div>
 
-- The talk shouldn’t be longer than 30 minutes.
+- The talk should fit into 30 minutes.
 - We do no Q&A. But if you want to have one, it should not exceed your 30 minutes.
 - The talk must be in English.
 - We run a single track for both days.
