@@ -4,7 +4,10 @@ platinum: null
 
 gold: null
 
-silver: null
+silver:
+  - name: Adesso
+    logo: adesso.png
+    url: https://www.adesso.de
 
 bronze: null
 
