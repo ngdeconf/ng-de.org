@@ -27,6 +27,9 @@ community:
   - name: NG-BE
     logo: ng-be.png
     url: https://ng-be.org/
+  - name: Angular Dresden
+    logo: angular-dresden.svg
+    url: https://angular-dresden.de/
 
 partners:
   - name: angular.de
