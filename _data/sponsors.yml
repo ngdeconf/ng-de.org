@@ -21,6 +21,9 @@ community:
   - name: Angular Hamburg
     logo: angular-hamburg.svg
     url: https://www.meetup.com/de-DE/Hamburg-AngularJS-Meetup/
+  - name: NG-BE
+    logo: ng-be.png
+    url: https://ng-be.org/
 
 partners:
   - name: angular.de
