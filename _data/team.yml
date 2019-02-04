@@ -57,3 +57,11 @@
   team: true
   bio: >
     After finishing her studies in the fields of biotechnology Katja realized quite fast, that this is not the area she would love to work in. After the decision to change her professional orientation, she now works as a software developer at [virtual7](http://virtual7.de/){:target="_blank"}. While she has much experience with databases and back-end development, she is always eager to learn something new. With her fascination for what she has learned so far as Angular beginner, she is curiously looking forward to discover even more exciting things about this framework.
+- name: Madleine
+  twitter: "maggysche"
+  image: madeleine.jpg
+  organizer: false
+  judge: false
+  team: true
+  bio: >
+    Madeleine is a web developer and also DevRel at [9elements](https://9elements.com/){:target="_blank"} in Bochum. For 9elements, she organizes the JavaScript Conference [RuhrJS](https://ruhrjs.org /){:target="_blank"}, the Meetups PottJS, and Facebook Developer Circle Ruhr and loves to meet new people. In her free time, she loves to draw, dance and sing karaoke (really bad, but does it matter?).
