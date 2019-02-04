@@ -30,6 +30,9 @@ community:
   - name: Angular Dresden
     logo: angular-dresden.svg
     url: https://angular-dresden.de/
+  - name: RuhrJS
+    logo: ruhrjs.svg
+    url: https://www.ruhrjs.de/
 
 partners:
   - name: angular.de
