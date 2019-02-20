@@ -2,7 +2,7 @@
   {% assign members = site.data.team | where: include.where, "true" %}
   {% for member in members %}
   <div class="team__member-container">
-    <a href="https://twitter.com/{{ member.twitter }}" data-name="{{ member.name }}" class="team__member" target="_blank" rel="nofollow noreferer">
+    <a href="https://twitter.com/{{ member.twitter }}" data-name="{{ member.name }}" data-role="{{ member.role }}" class="team__member" target="_blank" rel="nofollow noreferer">
       <img
         class="team__member-picture lazy"
         src="placeholder-image.jpg"

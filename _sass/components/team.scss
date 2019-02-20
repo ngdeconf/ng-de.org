@@ -39,6 +39,20 @@
 
     background: linear-gradient(to right, map-get($colors, primary), map-get($colors, secondary));
 
+    &::before {
+      content: attr(data-role);
+      color: #fff;
+      position: absolute;
+      display: block;
+      width: 50%;
+      background: rgb(0,0,0);
+      padding: .5rem;
+      transform: rotate(-45deg);
+      transform-origin: 60% 110%;
+      font-size: 1rem;
+      text-align: center;
+    }
+
     &::after {
       content: attr(data-name);
       display: flex;
