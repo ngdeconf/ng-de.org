@@ -37,7 +37,7 @@
     overflow: hidden;
     border-radius: 50%;
 
-    background: linear-gradient(to right, map-get($colors, primary), map-get($colors, secondary));
+    background: linear-gradient(125deg, map-get($colors, primary), map-get($colors, secondary));
 
     &::before {
       content: attr(data-role);
@@ -45,7 +45,7 @@
       position: absolute;
       display: block;
       width: 50%;
-      background: rgb(0,0,0);
+      background: map-get($colors, primary);
       padding: .5rem;
       transform: rotate(-45deg);
       transform-origin: 60% 110%;
