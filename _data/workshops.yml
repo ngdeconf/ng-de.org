@@ -1,0 +1,12 @@
+- title: Angular Intensiv Workshop for Beginners
+  description: Some Workshop description
+  price: 395
+  trainer:
+    name: Robin
+    twitter: robinboehm
+    image: robin.jpg
+    role: Trainer
+- title: RxJS
+  trainer:
+    name: Martin
+    

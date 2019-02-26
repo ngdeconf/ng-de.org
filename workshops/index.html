@@ -1,0 +1,39 @@
+---
+layout: section
+title: Workshops - NG-DE 2019 - Angular Conference - Summer 2019 in Berlin
+noindex: true
+description: >
+  The NG-DE conference is a non-profit conference organised for the community, by the community.
+  We want to create an open, diverse and welcoming conference with fantastic speakers and a warm and friendly environment. 
+---
+
+<h1>Workshops</h1>
+<p>
+  All workshops will take place at the hotel of our conference venue on 29. August 2019. 
+</p>
+  {% for workshop in site.data.workshops %}
+    <div>
+      <div class="workshop">
+        <div>
+            <div class="workshop__trainer-container">
+                <a href="https://twitter.com/{{ workshop.trainer.twitter }}" data-name="{{ workshop.trainer.name }}" data-role="{{ workshop.trainer.role }}" class="workshop__trainer" target="_blank" rel="nofollow noreferer">
+                  <img
+                    class="workshop__trainer-picture lazy"
+                    src="placeholder-image.jpg"
+                    data-src="/assets/team/{{ workshop.trainer.image }}"
+                    data-srcset="/assets/team/{{ workshop.trainer.image }}"
+                    alt="{{ workshop.trainer.name }}"
+                    title="{{ workshop.trainer.name }}">
+                </a>
+              </div>
+            </div>
+            <div class="workshop__content">
+                <h2>{{ workshop.title }}</h2>
+                <span markdown="1">
+                    {{ workshop.description }}
+                    </span>
+            </div>
+        </div>
+      </div>
+      
+  {% endfor %}
