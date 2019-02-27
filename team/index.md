@@ -6,6 +6,10 @@ description: >
   We create an open, diverse and welcoming conference with fantastic speakers and a warm and friendly environment. 
 ---
 
-## Proudly organized by ...
+## Organizing team
+
+{% include team.html where="organizer" details="true" %}
+
+## Volunteer team
 
 {% include team.html where="team" details="true" %}
