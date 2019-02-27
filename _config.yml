@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 # Site settings
 name: NG-DE 2019
-title: NG-DE 2019 - Angular Conference - Summer 2019 in Berlin
+title: NG-DE 2019 - Angular Conference - 2019 in Berlin
 description: >- # this means to ignore newlines until "baseurl:"
   Angular-Conference - Summer 2019 - Berlin
 

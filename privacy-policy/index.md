@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Privacy Policy - NG-DE 2019 - Angular Conference - Summer 2019 in Berlin
+title: Privacy Policy - NG-DE 2019 - Angular Conference - 2019 in Berlin
 noindex: true
 ---
 

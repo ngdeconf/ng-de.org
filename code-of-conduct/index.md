@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Code of Conduct - NG-DE 2019 - Angular Conference - Summer 2019 in Berlin
+title: Code of Conduct - NG-DE 2019 - Angular Conference - 2019 in Berlin
 ---
 ## Code of Conduct
 

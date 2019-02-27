@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Sponsorships - NG-DE 2019 - Angular Conference - Summer 2019 in Berlin
+title: Sponsorships - NG-DE 2019 - Angular Conference - 2019 in Berlin
 ---
 
 # Become a sponsor for NG-DE 2019

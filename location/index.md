@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Location - NG-DE 2019 - Angular Conference - Summer 2019 in Berlin
+title: Location - NG-DE 2019 - Angular Conference - 2019 in Berlin
 description: >
   NG-DE is the first community-driven Angular conference in Germany.
   It will take place at BOLLE FESTSÄLE in the heart of Berlin, close to the river Spree.
