@@ -28,6 +28,11 @@
   background: map-get($colors, light);
   border-radius: 5px;
 
+  &.community_partner {
+    width: 100px;
+    height: 100px;
+  }
+
   &__logo {
     display: block;
     object-fit: contain;
