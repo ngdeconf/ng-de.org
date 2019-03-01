@@ -38,8 +38,11 @@
     twitter: elmd_
     image: dominik.png
     role: Trainer
-- title: PWA
+- title: Angular PWA - let's get progressive
   description: >
+    Dave is an Angular GDE and Trainer, in his workshop you'll learn how to install and configure @angular/pwa in your Application.
+    You'll learn how to use the awesome features of PWA like caching, offline functionality, App-like experience (install to homescreen) and push notifications.
+    So you see PWA comes wit great power. But keep in mind, with great power comes great responsibility!
   trainer:
     name: David Müllerchen
     twitter: webdave_de
