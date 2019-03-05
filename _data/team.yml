@@ -43,7 +43,7 @@
   organizer: false
   judge: true
   team: true
-  role: Judge
+  role: Jury
   bio: >
     [Katrin](https://twitter.com/Ka_TriN_F){:target="_blank"} works as a Design Systems Engineer at Dynatrace. With her work for the design system [Barista](https://barista.dynatrace.com/){:target="_blank"}, she is focusing on bridging the gap between designers and developers. Additionally, she is organising the [#DevOne](http://devone.at/){:target="_blank"} developers and ops conference in Linz. She loves being outdoors, doing sports and traveling the globe with her van and her mountain bike.
 - name: Feli
@@ -52,7 +52,7 @@
   organizer: false
   judge: true
   team: true
-  role: Judge
+  role: Jury
   bio: >
     [Feli](https://twitter.com/kotzendekrabbe){:target="_blank"} is Principal Product Engineer at [SinnerSchrader](https://sinnerschrader.com){:target="_blank"} based in Hamburg, Germany, working in Developer Relations. She has been a developer for 13 years, is curator of the [JSConf EU](https://jsconf.eu){:target="_blank"}, team member of [CSSConf EU](https://2019.cssconf.eu){:target="_blank"}, and organizing various meetups in Hamburg. Fun Fact: Feli is always wearing mismatched socks.
 - name: Katja
@@ -61,7 +61,7 @@
   organizer: false
   judge: true
   team: true
-  role: Judge
+  role: Jury
   bio: >
     After finishing her studies in the fields of biotechnology [Katja](https://twitter.com/katja__meyer){:target="_blank"} realized quite fast, that this is not the area she would love to work in. After the decision to change her professional orientation, she now works as a software developer at [virtual7](http://virtual7.de/){:target="_blank"}. While she has much experience with databases and back-end development, she is always eager to learn something new. With her fascination for what she has learned so far as Angular beginner, she is curiously looking forward to discover even more exciting things about this framework.
 - name: Madleine
