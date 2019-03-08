@@ -4,7 +4,7 @@
   organizer: true
   judge: true
   team: true
-  role: Organizer
+  role: Organiser
   bio: >
     [Robin](https://twitter.com/robinboehm){:target="_blank"} is an entrepreneur driven by continuous improvement to empower people to learn and grow.
     He founded [Angular.DE](https://angular.de){:target="_blank"} and wrote several books about Angular.
@@ -15,7 +15,7 @@
   organizer: true
   judge: true
   team: true
-  role: Organizer
+  role: Organiser
   bio: >
     [Martin](https://twitter.com/chaos_monster){:target="_blank"} is Principal Product Engineer at SinnerSchrader, who has been working with JavaScript since Angularjs version 1.0.7. During his studies of mathematics and computer science he had the opportunity to teach, where his need to make the world more understandable arose. After some time with Java, he switched to JavaScript and the browser, where he is closer to the user. In his spare time he organizes the Angular meeting in Berlin.
 - name: Peter
@@ -24,7 +24,7 @@
   organizer: true
   judge: true
   team: true
-  role: Organizer
+  role: Organiser
   bio: >
     [Peter](https://twitter.com/baggersio){:target="_blank"} is founder and organizer of NG-DE conference and [FrankenJS](http://frankenjs.org){:target="_blank"} user group in the greater Nuremberg area. He started coding in 1998 and felt in love with AngularJS around 2011. He now works as a freelance [JavaScript consultant](https://www.linkedin.com/in/muellerpeter/){:target="_blank"} with a strong focus on Angular applications.
 - name: Sascha
