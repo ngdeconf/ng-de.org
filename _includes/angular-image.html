@@ -1,13 +1,15 @@
 <a href="{{ include.url }}" class="angular-image" {% if include.target %}target="{{ include.target }}"{% endif %} rel="nofollow noreferer">
   {% if include.badge %}<span class="angular-image__badge">{{ include.badge }}</span>{% endif %}
-  <img
-    {% if include.image %}
-    style="background-image: url('{{ include.image }}'); background-size: cover;"
-    {% endif %}
-    class="angular-image__picture lazy {% if include.badge %}angular-image__picture--push-up{% endif %}"
-    src="placeholder-image.jpg"
-    data-src="/assets/team/team-mask.svg"
-    data-srcset="/assets/team/team-mask.svg"
-    alt="{{ include.name }}"
-    title="{{ include.name }}">
+  <div>
+    <img
+      {% if include.image %}
+      style="background-image: url('{{ include.image }}'); background-size: cover;"
+      {% endif %}
+      class="angular-image__picture lazy {% if include.badge %}angular-image__picture--push-up{% endif %}"
+      src="placeholder-image.jpg"
+      data-src="/assets/team/team-mask.svg"
+      data-srcset="/assets/team/team-mask.svg"
+      alt="{{ include.name }}"
+      title="{{ include.name }}">
+  </div>
 </a>
