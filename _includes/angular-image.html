@@ -1,4 +1,4 @@
-<a href="{{ include.url }}" class="angular-image" {% if include.target %}target="{{ include.target }}"{% endif %} rel="nofollow noreferer">
+<a href="{{ include.url }}" class="angular-image {% if include.small %}angular-image--small{% endif %}" {% if include.target %}target="{{ include.target }}"{% endif %} rel="nofollow noreferer">
   {% if include.badge %}<span class="angular-image__badge">{{ include.badge }}</span>{% endif %}
   <div>
     <img

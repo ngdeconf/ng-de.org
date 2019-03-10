@@ -2,14 +2,11 @@
 
   $b: &;
 
-  flex: 0 0 200px;
   display: flex;
   flex-direction: column;
   position: relative;
   width: 200px;
   height: 200px;
-  padding: .5rem;
-  margin: 1rem;
 
   &__badge {
     display: inline-block;
@@ -31,4 +28,8 @@
     }
   }
 
+  &--small {
+    width: 100px;
+    height: 100px;
+  }
 }

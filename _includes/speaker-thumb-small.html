@@ -1,0 +1,16 @@
+{% assign speaker = site.data.speakers | where: 'id', include.speaker_id | first %}
+
+{% assign speaker_url = '/speakers/' | append: speaker.id %}
+{% assign speaker_image = '/assets/speakers/' | append: speaker.image %}
+
+<div class="speaker-thumb">
+  <div class="speaker-thumb__image">
+    {% include angular-image.html 
+      name=speaker.name 
+      url=speaker_url
+      image=speaker_image
+      small="true" %}
+  </div>
+</div>
+
+

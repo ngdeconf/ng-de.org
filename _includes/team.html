@@ -1,4 +1,4 @@
-<div class="team {% if include.details %}team--details{% endif %} shuffle">
+<div class="team {% if include.light %}team--light{% endif %} shuffle">
   {% assign members = site.data.team | where: include.where, "true" %}
   {% for member in members %}
   <div class="team__member-container">
@@ -15,12 +15,15 @@
         image=member_image %}
     </div>
 
-    {% if include.details %}
+
+    {% if include.light == nil %}
+<!-- jekyll needs this identation for markdown -->
 <div class="team__member-description" markdown="1">
 {{ member.bio }}
 </div>
     {% endif %}
 
+    
   </div>
   {% endfor %}
 </div>

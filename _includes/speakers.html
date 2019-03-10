@@ -1,14 +1,20 @@
-<div class="row row--three">
-  {% assign speakers = site.data.speakers %}
-  {% for speaker in speakers %}
-  <div class="row__col">
-    {% include speaker-thumb.html speaker_id=speaker.id %}
-  </div>
-  {% endfor %}
-
-  {% for i in (1..14) %}
-  <div class="row__col">
-      {% include speaker-thumb.html %}
+<div class="speakers">
+  <div class="row row--three">
+    {% assign speakers = site.data.speakers %}
+    {% for speaker in speakers %}
+    <div class="row__col">
+      <div class="speakers__speaker">
+        {% include speaker-thumb.html speaker_id=speaker.id %}
+      </div>
     </div>
-  {% endfor %}
+    {% endfor %}
+  
+    {% for i in (1..14) %}
+    <div class="row__col">
+      <div class="speakers__speaker">
+        {% include speaker-thumb.html %}
+      </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>

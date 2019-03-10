@@ -55,7 +55,7 @@ For the selection of talks we will follow the jsconf.eu process. That means:
 
 ### The Jury
 
-{% include team.html where="judge" %}
+{% include team.html where="judge" light="true" %}
 
 ### If your talk gets selected
 
