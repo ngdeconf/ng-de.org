@@ -22,38 +22,18 @@
         flex-direction: column;
       }
 
-    }
-  }
+      #{$b}__member-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
 
-  &__member {
-    flex: 0 0 200px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    padding: .5rem;
-    margin: 1rem;
+    }
   }
 
   &__member-description {
     justify-content: center;
     align-items: center;
-  }
-
-  &__member-badge {
-    display: inline-block;
-    padding: .25rem .75rem;
-    margin: auto;
-    text-align: center;
-    font-size: 1rem;
-    color: map-get($colors, light);
-    background: map-get($colors, primary);
-    z-index: 1;
-  }
-
-  &__member-picture {
-    transform: translate3d(0, -1.5rem, 0);
   }
 
 }

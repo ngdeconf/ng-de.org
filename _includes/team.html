@@ -2,22 +2,25 @@
   {% assign members = site.data.team | where: include.where, "true" %}
   {% for member in members %}
   <div class="team__member-container">
-    <a href="https://twitter.com/{{ member.twitter }}" class="team__member" target="_blank" rel="nofollow noreferer">
-      <span class="team__member-badge">{{ member.role }}</span>
-      <img
-        style="background-image: url('/assets/team/{{ member.image }}'); background-size: cover;"
-        class="team__member-picture lazy"
-        src="placeholder-image.jpg"
-        data-src="/assets/team/team-mask.svg"
-        data-srcset="/assets/team/team-mask.svg"
-        alt="{{ member.name }}"
-        title="{{ member.name }}">
-    </a>
+
+    <div class="team__member-image">
+      {% assign member_url = "https://twitter.com/" | append: member.twitter %}
+      {% assign member_image = "/assets/team/" | append: member.image %}
+  
+      {% include angular-image.html 
+        name=member.name 
+        badge=member.role
+        url=member_url
+        target="_blank"
+        image=member_image %}
+    </div>
+
     {% if include.details %}
 <div class="team__member-description" markdown="1">
 {{ member.bio }}
 </div>
     {% endif %}
+
   </div>
   {% endfor %}
 </div>

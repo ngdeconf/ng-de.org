@@ -1,0 +1,32 @@
+.angular-image {
+
+  $b: &;
+
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: .5rem;
+  margin: 1rem;
+
+  &__badge {
+    display: inline-block;
+    padding: .25rem .75rem;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    color: map-get($colors, light);
+    background: map-get($colors, primary);
+    z-index: 1;
+  }
+
+  &__picture {
+
+    &--push-up {
+      transform: translate3d(0, -1.5rem, 0);
+    }
+  }
+
+}
