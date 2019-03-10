@@ -1,0 +1,16 @@
+<div class="speaker-thumb">
+  <div class="speaker-thumb__image">
+    {% include angular-image.html 
+      name=include.name 
+      badge=include.badge
+      url=include.url
+      image=include.image %}
+  </div>
+  <div class="speaker-thumb__name">
+    <a href="{{ include.url }}"
+      {% if include.target %}target="{{ include.target }}"{% endif %}>{{ include.name }}</a>
+  </div>
+  <div class="speaker-thumb__title">
+    {{ include.title }}
+  </div>
+</div>

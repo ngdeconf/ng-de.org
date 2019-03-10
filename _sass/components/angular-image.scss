@@ -24,6 +24,8 @@
 
   &__picture {
 
+    background-color: map-get($colors, light);
+
     &--push-up {
       transform: translate3d(0, -1.5rem, 0);
     }
