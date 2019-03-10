@@ -1,3 +1,10 @@
+{% assign layout = 'dark' %}
+{% if include.layout == 'light' %}
+  {% assign layout = 'light' %}
+{% endif %}
+
+{% assign mask = '/assets/meta/angular-mask-' | append: layout | append: '.svg' %}
+
 <a href="{{ include.url }}" class="angular-image {% if include.small %}angular-image--small{% endif %}" {% if include.target %}target="{{ include.target }}"{% endif %} rel="nofollow noreferer">
   {% if include.badge %}<span class="angular-image__badge">{{ include.badge }}</span>{% endif %}
   <div>
@@ -7,8 +14,8 @@
       {% endif %}
       class="angular-image__picture lazy {% if include.badge %}angular-image__picture--push-up{% endif %}"
       src="placeholder-image.jpg"
-      data-src="/assets/team/team-mask.svg"
-      data-srcset="/assets/team/team-mask.svg"
+      data-src="{{ mask }}"
+      data-srcset="{{ mask }}"
       alt="{{ include.name }}"
       title="{{ include.name }}">
   </div>

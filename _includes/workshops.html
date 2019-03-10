@@ -1,0 +1,25 @@
+{% assign workshops = site.data.sessions | where: "type", "workshop" %}
+
+<div class="row">
+  {% for workshop in workshops %}
+  <div class="row__col">
+    <div class="workshop">
+      <h3 class="workshop__title">{{ workshop.title }}</h3>
+
+<!-- jekyll needs this identation for markdown -->
+<div class="workshop__description" markdown="1">
+{{ workshop.description }}
+</div>
+
+      <div>
+        <div class="workshop__trainer">
+          {% for trainer in workshop.speakers %}
+          {% include speaker-thumb-small.html speaker_id=trainer layout="light" %}
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+  {% endfor %}
+</div>
