@@ -1,3 +1,111 @@
-mcs: null
-
-speakers: null
+- id: tracy-lee
+  name: Tracy Lee
+  title: Unicorn Developer Avocado 🥑🦄
+  image: tracy-lee.jpg
+  biography: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  role: Speaker
+  profiles:
+    twitter: webdave_de
+    github: webdave1
+- id: martin-splitt
+  name: Martin Splitt
+  title: Unicorn Developer Avocado 🥑🦄
+  image: martin-splitt.jpg
+  biography: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  role: Speaker
+  profiles:
+    twitter: webdave_de
+    github: webdave1
+- id: carmen-popoviciu
+  name: Carmen Popoviciu
+  title: Unicorn Developer Avocado 🥑🦄
+  image: carmen-popoviciu.jpg
+  biography: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  role: Speaker
+  profiles:
+    twitter: webdave_de
+    github: webdave1
+- id: katerina-skroumpelou
+  name: Katerina Skroumpelou
+  title: Unicorn Developer Avocado 🥑🦄
+  image: katerina-skroumpelou.jpg
+  biography: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  role: Speaker
+  profiles:
+    twitter: webdave_de
+    github: webdave1
+- id: peter-mueller
+  name: Peter Müller
+  title: Head of Unicorns @ ACME Ltd.
+  image: peter-mueller.jpg
+  location: Nuremberg, Germany
+  biography: >
+    Griaß di! Rostbratwurst und Tausendsassa gutheißen hold Schmock. Der Tölpel bemuttern die nichtsnutzig Kleinod. Das Himmelfahrtskommando duellieren die flügge Blutwurst. Libero und Schlüpfer abkupfern pompös Fräulein. Die blindwütig Edelmut berappen. Der famos Zeche. Die Wuchtbrumme duellieren der verhärmt Schnösel. Die hold Haderlump. Die famos Missetäter. Der Freikörperkultur erquicken das flügge Mundraub. Lecko mio! 
+  role: Speaker
+  profiles:
+    twitter: BaggersIO
+    github: BaggersIO
+- id: david-muellerchen
+  name: David Müllerchen
+  title: Unicorn Developer Avocado 🥑🦄
+  image: david-muellerchen.jpg
+  biography: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  role: Trainer
+  profiles:
+    twitter: webdave_de
+    github: webdave1
+- id: dominic-elm
+  name: Dominic Elm
+  title: Unicorn Developer Avocado 🥑🦄
+  image: dominic-elm.jpg
+  biography: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  role: Trainer
+  profiles:
+    twitter: webdave_de
+    github: webdave1
+- id: jan-niklas-wortmann
+  name: Jan-Niklas Wortmann
+  title: Unicorn Developer Avocado 🥑🦄
+  image: jan-niklas-wortmann.jpg
+  biography: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  role: Trainer
+  profiles:
+    twitter: webdave_de
+    github: webdave1
+- id: kamil-mysliwiec
+  name: Kamil Mysliwiec
+  title: Unicorn Developer Avocado 🥑🦄
+  image: kamil-mysliwiec.jpg
+  biography: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  role: Trainer
+  profiles:
+    twitter: webdave_de
+    github: webdave1
+- id: manfred-steyer
+  name: Manfred Steyer
+  title: Unicorn Developer Avocado 🥑🦄
+  image: manfred-steyer.jpg
+  biography: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  role: Trainer
+  profiles:
+    twitter: webdave_de
+    github: webdave1
+- id: robin-boehm
+  name: Robin Böhm
+  title: Unicorn Developer Avocado 🥑🦄
+  image: robin-boehm.jpg
+  biography: >
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  role: Trainer
+  profiles:
+    twitter: webdave_de
+    github: webdave1
