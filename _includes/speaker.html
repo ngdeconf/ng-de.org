@@ -5,19 +5,43 @@
 
 {% assign thumb_title = speaker.title | append: '<br />' | append: speaker.location %}
 
+{% assign sessions = site.data.sessions | where: speakers, include.speaker_id %}
+
 <div class="speaker">
   <div class="speaker__thumb">
     {% include speaker-thumb.html speaker_id=include.speaker_id %}
   </div>
   <div class="speaker__social">
-    TODO: social profiles
+    {% if speaker.profiles.twitter %}
+    <a
+      class="speaker__social-item"
+      href="{{ twitter_url }}"
+      target="_blank"
+      rel="noopener"
+      title="{{ speaker.name }} on Twitter"
+      aria-label="{{ speaker.name }} on Twitter"
+    ><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if speaker.profiles.github %}
+    <a
+      class="speaker__social-item"
+      href="{{ github_url }}"
+      target="_blank"
+      rel="noopener"
+      title="{{ speaker.name }} on GitHub"
+      aria-label="{{ speaker.name }} on GitHub"
+    ><i class="fab fa-github" aria-hidden="true"></i></a>
+    {% endif %}
   </div>
-  <div class="speaker__bio">
-    <p>
-      {{ speaker.biography }}
-    </p>
-  </div>
+
+
+<!-- jekyll needs this identation for markdown -->
+<div class="speaker__bio" markdown="1">
+{{ speaker.biography }}
+</div>
+
+
   <div class="speaker__sessions">
-    TODO: talks / workshops
+
   </div>
 </div>

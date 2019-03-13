@@ -1,0 +1,11 @@
+.speaker {
+
+  &__social {
+    text-align: center;
+  }
+
+  &__social-item {
+    color: map-get($colors, light);
+    margin: 1rem .25rem;
+  }
+}
