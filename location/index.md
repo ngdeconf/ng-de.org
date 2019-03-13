@@ -49,6 +49,15 @@ Alt-Moabit 98
 10559 Berlin  
 GERMANY
 
+### Workshops
+
+All workshops will take place at the conference hotel next to the venue.
+
+[AMERON Hotel ABION Spreebogen](https://goo.gl/maps/WKhPnJwmmKR2){:target="_blank"}  
+Alt-Moabit 99  
+10559 Berlin  
+GERMANY
+
 ### Public Transportation
 
 **Bus 245** departs almost in front of the venue at the stop "Kleiner Tiergarten".

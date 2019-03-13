@@ -7,7 +7,7 @@
     - robin-boehm
     - peter-mueller
   tito:
-    price: 395
+    price_net: 395
     url: https://ti.to/ng-de/ng-de-2019
 - title: RxJS
   description: >
@@ -16,7 +16,7 @@
   speakers:
     - jan-niklas-wortmann
   tito:
-    price: 395
+    price_net: 395
     url: https://ti.to/ng-de/ng-de-2019
 - title: NestJS
   description: >
@@ -25,7 +25,7 @@
   speakers:
     - kamil-mysliwiec
   tito:
-    price: 395
+    price_net: 395
     url: https://ti.to/ng-de/ng-de-2019
 - title: Routing & Enterprise-Architektur
   description: >
@@ -34,7 +34,7 @@
   speakers:
     - manfred-steyer
   tito:
-    price: 395
+    price_net: 395
     url: https://ti.to/ng-de/ng-de-2019
 - title: NgRx
   description: >
@@ -43,7 +43,7 @@
   speakers:
     - dominic-elm
   tito:
-    price: 395
+    price_net: 395
     url: https://ti.to/ng-de/ng-de-2019
 - title: Progressive Web Apps
   description: >
@@ -52,7 +52,7 @@
   speakers:
     - david-muellerchen
   tito:
-    price: 395
+    price_net: 395
     url: https://ti.to/ng-de/ng-de-2019
 - title: Opening Keynote
   description: >

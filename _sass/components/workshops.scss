@@ -14,7 +14,30 @@
     margin: 0;
   }
 
+  &__details {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
   &__trainer {
     display: flex;
+  }
+}
+
+.order {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__price {
+    font-size: 1rem;
+    order: 1;
+  }
+
+  &__button {
+    margin-bottom: 0;
+    order: 0;
   }
 }

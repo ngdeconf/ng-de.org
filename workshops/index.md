@@ -8,6 +8,6 @@ description: >
 
 ## Workshops
 
-All workshops will take place at the hotel of our conference venue on 29. August 2019. 
+All workshops will take place at the [hotel of our conference](/location) venue on 29. August 2019. 
 
 {% include workshops.html %}
