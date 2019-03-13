@@ -38,17 +38,6 @@
   profiles:
     twitter: webdave_de
     github: webdave1
-- id: peter-mueller
-  name: Peter Müller
-  title: Head of Unicorns @ ACME Ltd.
-  image: peter-mueller.jpg
-  location: Nuremberg, Germany
-  biography: >
-    Griaß di! Rostbratwurst und Tausendsassa gutheißen hold Schmock. Der Tölpel bemuttern die nichtsnutzig Kleinod. Das Himmelfahrtskommando duellieren die flügge Blutwurst. Libero und Schlüpfer abkupfern pompös Fräulein. Die blindwütig Edelmut berappen. Der famos Zeche. Die Wuchtbrumme duellieren der verhärmt Schnösel. Die hold Haderlump. Die famos Missetäter. Der Freikörperkultur erquicken das flügge Mundraub. Lecko mio! 
-  role: Speaker
-  profiles:
-    twitter: BaggersIO
-    github: BaggersIO
 - id: david-muellerchen
   name: David Müllerchen
   title: Unicorn Developer Avocado 🥑🦄
@@ -61,51 +50,41 @@
     github: webdave1
 - id: dominic-elm
   name: Dominic Elm
-  title: Unicorn Developer Avocado 🥑🦄
+  title: Trainer at Thoughtram
   image: dominic-elm.jpg
   biography: >
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    Dominic is a Freelancer, Software Engineer and Trainer at thoughtram where he provides high quality Angular trainers all over the world. Besides web technologies he is also very passionate about Machine Learning. This journey has started in 2017 with MachineLabs Inc. where he is a technical Co-founder. Ever since then, he has been diving deep into the field of Machine Learning and is sharing his learnings with the community through an online course called Machine Learning Jump Start. Besides work, you will most likely find Dominic outside with his road bike or doing some other sporty activity. If not, he's probably drawing or reading a book.
   role: Trainer
   profiles:
-    twitter: ngdeconf
-    github: ngdeconf
+    twitter: elmd_
+    github: d3lm
 - id: jan-niklas-wortmann
   name: Jan-Niklas Wortmann
-  title: Unicorn Developer Avocado 🥑🦄
+  title: RxJS Core Member
   image: jan-niklas-wortmann.jpg
   biography: >
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
   role: Trainer
   profiles:
-    twitter: ngdeconf
-    github: ngdeconf
-- id: kamil-mysliwiec
-  name: Kamil Myśliwiec
-  title: Unicorn Developer Avocado 🥑🦄
-  image: kamil-mysliwiec.jpg
-  biography: >
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  role: Trainer
-  profiles:
-    twitter: ngdeconf
-    github: ngdeconf
+    twitter: niklas_wortmann
+    github:
 - id: manfred-steyer
   name: Manfred Steyer
-  title: Unicorn Developer Avocado 🥑🦄
+  title: softwarearchitekt.at
   image: manfred-steyer.jpg
   biography: >
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    Trainer, consultant and programming architect with focus on Angular. Google Developer Expert (GDE) who writes for O'Reilly, the German Java Magazine, windows.developer and Heise. Regularly speaks at conferences.
   role: Trainer
   profiles:
-    twitter: ngdeconf
-    github: ngdeconf
-- id: robin-boehm
-  name: Robin Böhm
-  title: Unicorn Developer Avocado 🥑🦄
-  image: robin-boehm.jpg
+    twitter: ManfredSteyer
+    github: manfredsteyer
+- id: gregor-woiwode
+  name: Gregor Woiwode
+  title: CTO of co-IT.eu
+  image: gregor-woiwode.jpg
   biography: >
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
   role: Trainer
   profiles:
-    twitter: ngdeconf
-    github: ngdeconf
+    twitter: GregOnNet
+    github: GregOnNet
