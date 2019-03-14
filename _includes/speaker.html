@@ -5,7 +5,7 @@
 
 {% assign thumb_title = speaker.title | append: '<br />' | append: speaker.location %}
 
-{% assign sessions = site.data.sessions | where: speakers, include.speaker_id %}
+{% assign sessions = site.data.sessions | where: 'speakers', include.speaker_id %}
 
 <div class="speaker">
   <div class="speaker__thumb">
@@ -42,6 +42,22 @@
 
 
   <div class="speaker__sessions">
+    <h3>Sessions</h3>
+    <ul class="sessions-list">
+      {% for session in sessions %}
+      <li class="sessions-list__item">
+        <strong>{{ session.title }} </strong>
+        <span class="tag tag--small">{{ session.type }}</span>
 
+
+<!-- jekyll needs this identation for markdown -->
+<div markdown="1">
+{{ session.description }}
+</div>
+
+
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
