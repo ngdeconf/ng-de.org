@@ -1,0 +1,19 @@
+.tag {
+
+  $b: &;
+
+  color: map-get($colors, light);
+  background: #bbb;
+  padding: .5rem;
+  border-radius: .5rem;
+
+  &--small {
+    font-size: 1rem;
+    padding: .25rem;
+    border-radius: .25rem;
+  }
+
+  & + & {
+    margin-left: .25rem;
+  }
+}
