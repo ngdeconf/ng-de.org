@@ -14,7 +14,7 @@
     - jan-niklas-wortmann
   tito:
     price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/e3pzkcv7vo4 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
 - title: Architectures for Enterprise Applications
@@ -29,7 +29,7 @@
     - manfred-steyer
   tito:
     price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/oqtsm-r8eku 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
 - title: Lorem Ipsum ...
@@ -40,7 +40,7 @@
     - dominic-elm
   tito:
     price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/iwxzleolokc 
   datetime: 2019-08-29 09:00:00 +0100
 - title: Angular PWA - let's get progressive
   description: >
@@ -50,7 +50,7 @@
     - david-muellerchen
   tito:
     price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/4wugnm-ou-g 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
 - title: Angular solid foundations
@@ -68,7 +68,7 @@
     - gregor-woiwode
   tito:
     price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/asbto1yway0 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
 - title: Opening Keynote
