@@ -1,10 +1,13 @@
 links:
   - name: Home
     url: /
+    navigation: false
+  - name: Speakers
+    url: /speakers/
     navigation: true
-#  - name: Speakers
-#    url: /speakers/
-#    navigation: true
+  - name: Workshops
+    url: /workshops/
+    navigation: true
 #  - name: Schedule
 #    url: /schedule/
 #    navigation: true
@@ -14,9 +17,9 @@ links:
   - name: Team
     url: /team/
     navigation: true
-  - name: Call For Papers
+  - name: CFP
     url: /call-for-papers/
     navigation: true
-  - name: Code of Conduct
+  - name: CoC
     url: /code-of-conduct/
     navigation: true
