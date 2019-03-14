@@ -9,3 +9,16 @@
     margin: 1rem .25rem;
   }
 }
+
+.sessions-list {
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    color: map-get($colors, dark);
+    background: map-get($colors, light);
+    padding: 1rem;
+  }
+}
