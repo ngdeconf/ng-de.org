@@ -1,46 +1,50 @@
 - id: tracy-lee
   name: Tracy Lee
-  title: Unicorn Developer Avocado 🥑🦄
+  title: Co-Founder at This Dot Labs ∙ RxJS Core Team
   image: tracy-lee.jpg
   biography: >
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    Tracy is the Co-Founder of This Dot Labs, an consultancy helping teams build front end applications and is focused on changing the ratio in tech. She is also a Google Developer Expert, RxJS Core Team member, a Women Techmakers Lead, and a frequent keynote speaker at conferences. She heads up Community Relations at Node Foundation, is the host of the Modern Web podcast, organizer of This.JavaScript, Contributor Days, Google Developer Group Silicon Valley and Triangle, and RxWorkshop. You can find her on Twitter [@ladyleet](https://twitter.com/ladyleet){:target="_blank"} or at [thisdot.co/labs](https://thisdot.co/labs){:target="_blank"}.
   role: Speaker
   profiles:
-    twitter: ngdeconf
-    github: ngdeconf
+    twitter: ladyleet
+    github: ladyleet
 - id: martin-splitt
   name: Martin Splitt
-  title: Unicorn Developer Avocado 🥑🦄
+  title: Developer Advocate at Google
   image: martin-splitt.jpg
   biography: >
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    Martin is open source contributor and web evangelist by heart from Zurich with a decade experience from the trenches of software engineering in multiple fields.  
+      
+    He works as a Webmasters Trends Analyst / Developer Advocate at Google for Search & web ecosystem. He helps people building applications or publishing content on the web to be successful, productive and visible.  
+      
+    Martin believes in the web platform and is working with bleeding edge technologies that will allow the web to prosper.
   role: Speaker
   profiles:
-    twitter: ngdeconf
-    github: ngdeconf
+    twitter: g33konaut
+    github: AVGP
 - id: carmen-popoviciu
   name: Carmen Popoviciu
-  title: Unicorn Developer Avocado 🥑🦄
+  title:  
   image: carmen-popoviciu.jpg
   biography: >
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    
   role: Speaker
   profiles:
-    twitter: ngdeconf
-    github: ngdeconf
+    twitter: CarmenPopoviciu
+    github: CarmenPopoviciu
 - id: katerina-skroumpelou
   name: Katerina Skroumpelou
-  title: Unicorn Developer Avocado 🥑🦄
+  title: Angular Athens
   image: katerina-skroumpelou.jpg
   biography: >
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    Katerina is a Google Developer Expert for Angular and Web Technologies, and a software engineer focused on the web front end. She likes to mix and match web technologies, experimenting with new things, and open sources her code for the general good. Being an active member of the Angular family, she speaks at international conferences and is the founder of the Angular Athens meetup. She is also involved with supporting diversity in the community. Katerina is obsessed with sharing knowledge and spreading the word about things she loves. She is indigenous to the internet, and she loves web development. She lives with her Maine Coon in Athens, Greece.
   role: Speaker
   profiles:
-    twitter: webdave_de
-    github: webdave1
+    twitter: psybercity
+    github: mandarini
 - id: david-muellerchen
   name: David Müllerchen
-  title: Unicorn Developer Avocado 🥑🦄
+  title: Trainer at Angular.DE
   image: david-muellerchen.jpg
   biography: >
     David is an Angular consultant who offers support for your Angular applications and projects. He's also part of the Angular.DE team. We adapt Angular to your teams needs to find the perfect fit, and get the most out of Angular’s platform. For individual developers or small groups we offer monthly workshops in Berlin, Munich, Hamburg and Essen.
