@@ -2,10 +2,37 @@
 layout: null
 ---
 
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js');
+
 const version = '{{site.time | date: '%Y%m%d%H%M%S'}}';
 const staticCacheName = `static::${version}`;
 
 console.log("installing service worker");
+
+workbox.routing.registerRoute(
+  new RegExp('.*\.js'),
+  workbox.strategies.networkFirst()
+);
+
+workbox.routing.registerRoute(
+  /.*\.css/,
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: 'css-cache',
+  })
+);
+
+workbox.routing.registerRoute(
+  /.*\.(?:png|jpg|jpeg|svg|gif)/,
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: 'image-cache',
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 20,
+        maxAgeSeconds: 7 * 24 * 60 * 60,
+      })
+    ],
+  })
+);
 
 const filesToCache = [
   '/',
@@ -27,62 +54,3 @@ const filesToCache = [
   {%- endfor %}
   'css/default.css'
 ];
-
-function updateStaticCache() {
-  return caches.open(staticCacheName).then(cache => {
-    return cache.addAll(filesToCache);
-  });
-}
-
-function clearOldCache() {
-  return caches.keys().then(keys => {
-    // Remove caches whose name is no longer valid.
-    return Promise.all(keys
-      .filter(key => {
-        return key !== staticCacheName;
-      })
-      .map(key => {
-        console.log(`Service Worker: removing cache ${key}`);
-        return caches.delete(key);
-      })
-    );
-  });
-}
-
-self.addEventListener('install', event => {
-  event.waitUntil(updateStaticCache().then(() => {
-    console.log(`Service Worker: cache updated to version: ${staticCacheName}`);
-  }));
-});
-
-self.addEventListener('activate', event => {
-  event.waitUntil(clearOldCache());
-});
-
-self.addEventListener('fetch', event => {
-  let request = event.request;
-  let url = new URL(request.url);
-
-  // Only deal with requests from the same domain.
-  if (url.origin !== location.origin) {
-    return;
-  }
-
-  // Always fetch non-GET requests from the network.
-  if (request.method !== 'GET') {
-    event.respondWith(fetch(request));
-    return;
-  }
-
-  // For non-HTML requests, look in the cache first else fall back to the network.
-  event.respondWith(
-    caches.match(request).then(match => {
-      if (!match) { return fetch(request); }
-      return fetch(request).then(response => {
-        // Update cache.
-        caches.open(staticCacheName).then(cache => cache.put(request, response.clone()));
-        return response;
-      }) || response;
-    })
-  );
-});
