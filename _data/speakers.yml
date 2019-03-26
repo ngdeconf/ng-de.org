@@ -94,3 +94,14 @@
   profiles:
     twitter: GregOnNet
     github: GregOnNet
+- id: michael-hladky
+  name: Michael Hladky
+  title: Google Developer Expert
+  image: michael-hladky.jpg
+  biography: >
+    Michael is Expert for SPA with a focus on Angular. 
+    Also he is organizer of the Angular Meetup in Vienna.
+  role: Trainer
+  profiles:
+    twitter: michael_hladky
+    github: BioPhoton
