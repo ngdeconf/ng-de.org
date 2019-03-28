@@ -67,7 +67,10 @@
   title: RxJS Core Member
   image: jan-niklas-wortmann.jpg
   biography: >
-    Jan-Niklas Wortmann is an IT consultant mostly working on Angular projects. He helps companies designing and implementing large scaled applications.Developing clean and maintainable code is one of his main goals. Due to his passion for the Community, he is member of the RxJS Core Team and organizer of the NgNiederrhein Meetup.  
+    Jan-Niklas Wortmann is an IT consultant mostly working on Angular projects.
+    He helps companies designing and implementing large scaled applications.
+    Developing clean and maintainable code is one of his main goals.
+    Due to his passion for the Community, he is member of the RxJS Core Team and organizer of the NgNiederrhein Meetup.  
   role: Trainer
   profiles:
     twitter: niklas_wortmann
