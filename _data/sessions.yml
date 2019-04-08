@@ -66,7 +66,9 @@
   description: >
     The state layer is one of those building block that can make developing and maintaining your application sweet and simple or a living hell.
     Having multiple existing solutions to choose from doesn't make the task much easier.
+    
     Or maybe you should roll our your own, specifically tailored for your case?
+    
     During this workshop we will explore several approaches and see which one solves what problems best.
   type: workshop
   speakers:
