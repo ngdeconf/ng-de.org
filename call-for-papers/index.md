@@ -10,40 +10,7 @@ description: >
 
 ## Call for Papers
 
-The CFP for NG-DE Conference on August 30 & 31, 2019 at BOLLE FESTSÄLE in Berlin is now open. 
-The CFP will close on {{ page.cfp_end }}
-
-<div class="cfp">
-  <div class="cfp__cta">
-    <a class="button button--xlarge" href="{{ page.cfp_url }}" target="_blank" rel="nofollow noopener">
-      <span class="button__scale">Submit Your Paper</span>
-    </a>
-  </div>
-</div>
-
-- The talk should be 30 minutes.
-- We won't do any Q&A, but if you want to have one it should not exceed your 30 minute slot.
-- The talk must be in English.
-- We will run a single track for both days.
-- By submitting a talk you agree with our [Code of Conduct](/code-of-conduct/) and [Privacy Policy](/privacy-policy/).
-- The deadline is {{ page.cfp_end }}
-
-### Topics we are looking for
-
-Our audience will be people interested in Angular from every level of expertise. So don't worry, your talk can address any level from beginners to experts.
-
-- Angular in general
-- RxJS
-- ngRx & State Management
-- Angular Universal
-- Web Performance
-- Progressive Web Apps
-- NativeScript & Ionic
-- Everything which is interesting for the Angular community, for example:
-  - making developers lives easier
-  - becoming a better developer
-  - how to improve the community
-  - and anything else you can think of
+**The CFP has been closed on Tuesday 18th at 23:59 CET.**
 
 ### The Selection Process
 
@@ -55,7 +22,7 @@ For the selection of talks we will follow the jsconf.eu process. That means:
 
 ### The Jury
 
-{% include team.html where="judge" light="true" %}
+{% include team.html where="judge" %}
 
 ### If your talk gets selected
 
