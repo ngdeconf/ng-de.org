@@ -33,16 +33,6 @@
     url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/oqtsm-r8eku 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
-- title: Lorem Ipsum ...
-  description: >
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-  type: workshop
-  speakers:
-    - dominic-elm
-  tito:
-    price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/iwxzleolokc 
-  datetime: 2019-08-29 09:00:00 +0100
 - title: Angular PWA - let's get progressive
   description: >
     Dave is an Angular GDE and Trainer, in his workshop you'll learn how to install and configure @angular/pwa in your Application. You'll learn how to use the awesome features of PWA like: caching, offline functionality, App-like experience (install to homescreen) and push notifications. So you see: PWA comes wit great power. But keep in mind: With great power comes great responsibility!
@@ -70,6 +60,21 @@
   tito:
     price_net: 395
     url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/asbto1yway0 
+  datetime: 2019-08-29 09:00:00 +0100
+  location: Hotel ABION
+- title:  Angular State Management
+  description: >
+    The state layer is one of those building block that can make developing and maintaining your application sweet and simple or a living hell.
+    Having multiple existing solutions to choose from doesn't make the task much easier.
+    Or maybe you should roll our your own, specifically tailored for your case?
+    During this workshop we will explore several approaches and see which one solves what problems best.
+  type: workshop
+  speakers:
+    - dominic-elm
+    - tomek-sułkowski
+  tito:
+    price_net: 395
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/iwxzleolokc
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
 - title: Opening Keynote
