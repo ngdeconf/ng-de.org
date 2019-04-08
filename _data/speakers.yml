@@ -57,11 +57,24 @@
   title: Trainer at Thoughtram
   image: dominic-elm.jpg
   biography: >
-    Dominic is a Freelancer, Software Engineer and Trainer at thoughtram where he provides high quality Angular trainers all over the world. Besides web technologies he is also very passionate about Machine Learning. This journey has started in 2017 with MachineLabs Inc. where he is a technical Co-founder. Ever since then, he has been diving deep into the field of Machine Learning and is sharing his learnings with the community through an online course called Machine Learning Jump Start. Besides work, you will most likely find Dominic outside with his road bike or doing some other sporty activity. If not, he's probably drawing or reading a book.
+    Dominic is a Freelancer, Software Engineer at StackBlitz and Trainer at thoughtram where he provides high quality Angular trainers all over the world. He is also a technical Co-founder at MachineLabs Inc. and the author of an online course called Machine Learning Jump Start.
+    Besides work, you will most likely find Dominic outside with his road bike or doing some other sporty activity.
+    If not, he's probably drawing or reading a book.
   role: Trainer
   profiles:
     twitter: elmd_
     github: d3lm
+- id: tomek-sułkowski
+  name: Tomek Sułkowski
+  title: Engineer at Stackblitz
+  image: tomek-sułkowski.jpg
+  biography: >
+    Tomek is a frontend engineer at StackBlitz, with a passion for improving development experience. He focuses on making our tools of trade not only performant and comfortable for seasoned programmers, but also accessible and fun for the newcomers.
+    He frequently shares the knowledge on workshops, podcasts, dev-events (co-organizing AngularTricity), in articles and the “tip-of-the-day” tweets.
+  role: Trainer
+  profiles:
+    twitter: sulco
+    github: sulco
 - id: jan-niklas-wortmann
   name: Jan-Niklas Wortmann
   title: RxJS Core Member
