@@ -23,6 +23,17 @@
   &__trainer {
     display: flex;
   }
+
+  @media screen and (max-width: $screen-xsmall) {
+    &__details {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__trainer {
+      margin: 25px 0;
+    }
+  }
 }
 
 .order {
