@@ -121,3 +121,14 @@
   profiles:
     twitter: michael_hladky
     github: BioPhoton
+- id: martina-kraus
+  name: Martina Kraus
+  title: Google Developer Expert
+  image: michael-hladky.jpg
+  biography: >
+    Martina Kraus always had always a strong interest in Web-Engineering. As a freelancer she focuses on implementing highly scalable software-solution with Node.Js and Angular.
+    Besides her work as a lecturer at the Hochschule Mannheim, she is also the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg Usergroup.
+  role: Trainer
+  profiles:
+    twitter: MartinaKraus11
+    github: martinakraus
