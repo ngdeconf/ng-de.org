@@ -78,13 +78,13 @@
       }
     }
     &:nth-of-type(2) {
-      animation: wave 7s ease 1.5s infinite;
+      animation: wave 7s ease -1s infinite;
       svg {
-        animation: scaler 7s ease 2s infinite;
+        animation: scaler 7s ease -5s infinite;
       }
     }
     &:nth-of-type(3) {
-      animation: wave 7s ease 2s infinite;
+      animation: wave 7s ease 0s infinite;
       svg {}
     }
   }
