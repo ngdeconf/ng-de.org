@@ -15,39 +15,49 @@
     font-size: 1rem;
     color: map-get($colors, light);
     background: map-get($colors, primary);
-    z-index: 1;
+    z-index: 11;
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__container {
     position: relative;
   }
 
-  &__mask {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    z-index: 10;
-  }
-
   &__picture {
+    height: 100%;
+    width: 100%;
     background-color: map-get($colors, light);
 
-    img {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-    }
-
-    &--push-up {
-      transform: translate3d(0, -1.5rem, 0);
+      height: 100%;
+      background-repeat: no-repeat;
+      z-index: 10;
     }
   }
 
   &--small {
     width: 100px;
     height: 100px;
+  }
+
+  &--dark {
+    .angular-image__picture:before {
+      background-image: url('/assets/meta/angular-mask-dark.svg');
+    }
+  }
+
+  &--light {
+    .angular-image__picture:before {
+      background-image: url('/assets/meta/angular-mask-light.svg');
+    }
   }
 }
