@@ -1,5 +1,4 @@
 .angular-image {
-
   $b: &;
 
   display: flex;
@@ -19,9 +18,28 @@
     z-index: 1;
   }
 
-  &__picture {
+  &__container {
+    position: relative;
+  }
 
+  &__mask {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+
+  &__picture {
     background-color: map-get($colors, light);
+
+    img {
+      width: 100%;
+    }
 
     &--push-up {
       transform: translate3d(0, -1.5rem, 0);

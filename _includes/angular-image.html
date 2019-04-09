@@ -8,15 +8,13 @@
 {% if page.url contains include.url %}
   <div class="angular-image {% if include.small %}angular-image--small{% endif %}">
     {% if include.badge %}<span class="angular-image__badge">{{ include.badge }}</span>{% endif %}
-    <div>
+    <div class="angular-image__picture {% if include.badge %}angular-image__picture--push-up{% endif %}">
+      <div class="angular-image__mask" style="background-image: url({{ mask }});"></div>
       <img
-        {% if include.image %}
-        style="background-image: url('{{ include.image }}'); background-size: cover;"
-        {% endif %}
-        class="angular-image__picture lazy {% if include.badge %}angular-image__picture--push-up{% endif %}"
-        src="placeholder-image.jpg"
-        data-src="{{ mask }}"
-        data-srcset="{{ mask }}"
+        class="lazy"
+        src="/assets/placeholder-image.svg"
+        data-src="{{ include.image }}"
+        data-srcset="{{ include.image }}"
         alt="{{ include.name }}"
         title="{{ include.name }}">
     </div>
@@ -24,15 +22,13 @@
 {% else %}
   <a href="{{ include.url }}" class="angular-image {% if include.small %}angular-image--small{% endif %}" {% if include.target %}target="{{ include.target }}"{% endif %} rel="nofollow noreferer">
     {% if include.badge %}<span class="angular-image__badge">{{ include.badge }}</span>{% endif %}
-    <div>
+    <div class="angular-image__picture {% if include.badge %}angular-image__picture--push-up{% endif %}">
+      <div class="angular-image__mask" style="background-image: url({{ mask }});"></div>
       <img
-        {% if include.image %}
-        style="background-image: url('{{ include.image }}'); background-size: cover;"
-        {% endif %}
-        class="angular-image__picture lazy {% if include.badge %}angular-image__picture--push-up{% endif %}"
-        src="placeholder-image.jpg"
-        data-src="{{ mask }}"
-        data-srcset="{{ mask }}"
+        class="lazy"
+        src="/assets/placeholder-image.svg"
+        data-src="{{ include.image }}"
+        data-srcset="{{ include.image }}"
         alt="{{ include.name }}"
         title="{{ include.name }}">
     </div>
