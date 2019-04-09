@@ -1,13 +1,22 @@
 main: null
 
-platinum: null
+platinum: 
+  - name: EON
+    logo: eon.png
+    url: https://www.eon.de
 
-gold: null
+gold: 
+  - name: AdorSys
+    logo: adorsys.png
+    url: https://www.adorsys.de
 
 silver:
   - name: Adesso
     logo: adesso.png
     url: https://www.adesso.de
+  - name: Twilio
+    logo: twilio.svg
+    url: https://www.twilio.com
 
 bronze: null
 
