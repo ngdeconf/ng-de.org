@@ -10,7 +10,7 @@ description: >
 
 ## Call for Papers
 
-**The CFP has been closed on Tuesday 18th at 23:59 CET.**
+**The CFP has been closed on Februar 18th at 23:59 CET.**
 
 ### The Selection Process
 
