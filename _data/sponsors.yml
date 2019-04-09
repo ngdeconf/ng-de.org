@@ -33,6 +33,9 @@ community:
   - name: RuhrJS
     logo: ruhrjs.svg
     url: https://www.ruhrjs.de/
+  - name: Angular Heidelberg
+    logo: angular-heidelberg.png
+    url: https://angular-heidelberg.de/
 
 partners:
   - name: angular.de

@@ -7,6 +7,7 @@
 @import 'base';
 
 @import 'components/button';
+@import 'components/tags';
 @import 'components/lead';
 @import 'components/header';
 @import 'components/footer';
@@ -18,7 +19,12 @@
 @import 'components/social-list';
 @import 'components/sponsors';
 @import 'components/cookie-consent';
+@import 'components/angular-image';
 @import 'components/team';
+@import 'components/speaker-thumb';
+@import 'components/speaker';
+@import 'components/speakers';
 @import 'components/workshops';
 
 @import 'pages/call-for-papers';
+@import 'pages/speakers';

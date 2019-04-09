@@ -1,0 +1,114 @@
+- title: RxJS Level UP - Essentials in reactive programming
+  description: >
+    This training will bring you basic RxJS skills!  
+      
+    RxJs is more popular than ever. It is backed into the Angular core and also used in frameworks like React, Vue, and others!  
+    This doesn't surprise as it leverages a powerful and elegant way to work with sync as well as async collections.
+      
+    In this workshop, you will get an overview of this library. We will learn about the concept, approach and implementation of RxJS!  
+
+    After a practical and detailed tour through observables we will implement our first stream-based code.  
+    Sounds interesting? Looking forward to meeting you at the workshop.
+  type: workshop
+  speakers:
+    - jan-niklas-wortmann
+    - michael-hladky
+  tito:
+    price_net: 395
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/e3pzkcv7vo4 
+  datetime: 2019-08-29 09:00:00 +0100
+  location: Hotel ABION
+- title: Architectures for Enterprise Applications
+  description: >
+    In this interactive seminar you will develop a critical understanding for planning and implementing large enterprise applications with Angular. You will explore and work with approaches to structure huge applications like npm packages, the Mono Repo Approach and Micro Apps.  
+      
+    After this, you will deal with component design and reusable Web Components. For this, you will use several proven concepts and Angular Elements.  
+      
+    In addition, this workshop will enable you to develop a well-articulated understanding for implementing I18N as well as advanced authentication and authorization solutions that allow for single sign on and can be used to integrate with existing Identity Providers like Active Directory.
+  type: workshop
+  speakers:
+    - manfred-steyer
+  tito:
+    price_net: 395
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/oqtsm-r8eku 
+  datetime: 2019-08-29 09:00:00 +0100
+  location: Hotel ABION
+- title: Angular PWA - let's get progressive
+  description: >
+    Dave is an Angular GDE and Trainer, in his workshop you'll learn how to install and configure @angular/pwa in your Application. You'll learn how to use the awesome features of PWA like: caching, offline functionality, App-like experience (install to homescreen) and push notifications. So you see: PWA comes wit great power. But keep in mind: With great power comes great responsibility!
+  type: workshop
+  speakers:
+    - david-muellerchen
+  tito:
+    price_net: 395
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/4wugnm-ou-g 
+  datetime: 2019-08-29 09:00:00 +0100
+  location: Hotel ABION
+- title: Angular solid foundations
+  description: >
+    Gregor is the CTO of co-IT.eu GmbH and loves to build tools that enable developers to be more productive.  
+    In this workshop you will learn about the fundamental techniques that get you started for your next Angular project.  
+      
+    You learn about the basic building blocks of Angular and how to use them the right way while you develop you own application.  
+      
+    Look forward to a packed day with Components, Directives, Pipes,  Inversion Of Control, Navigation & Http.  
+      
+    Rock On & Code
+  type: workshop
+  speakers:
+    - gregor-woiwode
+  tito:
+    price_net: 395
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/asbto1yway0 
+  datetime: 2019-08-29 09:00:00 +0100
+  location: Hotel ABION
+- title:  Angular State Management
+  description: >
+    The state layer is one of those building block that can make developing and maintaining your application sweet and simple or a living hell.
+    Having multiple existing solutions to choose from doesn't make the task much easier.
+    
+    Or maybe you should roll our your own, specifically tailored for your case?
+    
+    During this workshop we will explore several approaches and see which one solves what problems best.
+  type: workshop
+  speakers:
+    - dominic-elm
+    - tomek-sułkowski
+  tito:
+    price_net: 395
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/iwxzleolokc
+  datetime: 2019-08-29 09:00:00 +0100
+  location: Hotel ABION
+#- title:  NgGirls
+#  description: >
+#    ngGirls aims to introduce women to the world of technology and increase the diversity.
+#    Angular is a great technology to start with.
+#    We believe this is a win-win situation!
+#    We plan various events and activities in which the participants build and deploy a web application with Angular.
+#    We offer guidance to help finding a job in front end development.
+#    If you're a committed, motivated woman who wants to step into the Web Development world - your place is with us! 
+#  type: workshop
+#  speakers:
+#    - martina-kraus
+#    - robert-willemelis
+#  tito:
+#    price_net: 0
+#    url: 
+#  datetime: 2019-08-29 09:00:00 +0100
+#  location: Axel Springer Berlin
+- title: Opening Keynote
+  description: 
+  type: keynote
+  speakers:
+    - tracy-lee
+    - katerina-skroumpelou
+  datetime: 2019-08-30 09:30:00 +0100
+  location: Main Stage
+- title: Closing Keynote
+  description: 
+  type: keynote
+  speakers:
+    - carmen-popoviciu
+    - martin-splitt
+  datetime: 2019-08-31 16:00:00 +0100
+  location: Main Stage

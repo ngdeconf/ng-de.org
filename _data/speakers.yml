@@ -1,3 +1,148 @@
-mcs: null
-
-speakers: null
+- id: tracy-lee
+  name: Tracy Lee
+  title: Co-Founder at This Dot Labs ∙ RxJS Core Team
+  image: tracy-lee.jpg
+  biography: >
+    Tracy is the Co-Founder of This Dot Labs, an consultancy helping teams build front end applications and is focused on changing the ratio in tech. She is also a Google Developer Expert, RxJS Core Team member, a Women Techmakers Lead, and a frequent keynote speaker at conferences. She heads up Community Relations at Node Foundation, is the host of the Modern Web podcast, organizer of This.JavaScript, Contributor Days, Google Developer Group Silicon Valley and Triangle, and RxWorkshop. You can find her on Twitter [@ladyleet](https://twitter.com/ladyleet){:target="_blank"} or at [thisdot.co/labs](https://thisdot.co/labs){:target="_blank"}.
+  role: Speaker
+  profiles:
+    twitter: ladyleet
+    github: ladyleet
+- id: martin-splitt
+  name: Martin Splitt
+  title: Developer Advocate at Google
+  image: martin-splitt.jpg
+  biography: >
+    Martin is open source contributor and web evangelist by heart from Zurich with a decade experience from the trenches of software engineering in multiple fields.  
+      
+    He works as a Webmasters Trends Analyst / Developer Advocate at Google for Search & web ecosystem. He helps people building applications or publishing content on the web to be successful, productive and visible.  
+      
+    Martin believes in the web platform and is working with bleeding edge technologies that will allow the web to prosper.
+  role: Speaker
+  profiles:
+    twitter: g33konaut
+    github: AVGP
+- id: carmen-popoviciu
+  name: Carmen Popoviciu
+  title: Developer at Nulab
+  image: carmen-popoviciu.jpg
+  biography: >
+    Carmen is a web developer currently doing all things DevRel at Nulab. She enjoys building things with code and solving programming challenges. She thinks computer engineers are artists of code and is aspiring to one day be the engineering version of Anne Theresa de Keersmaeker. If you want to catch her at the after party, she'll probably be on the dance floor.
+  role: Speaker
+  profiles:
+    twitter: CarmenPopoviciu
+    github: CarmenPopoviciu
+- id: katerina-skroumpelou
+  name: Katerina Skroumpelou
+  title: Angular Athens
+  image: katerina-skroumpelou.jpg
+  biography: >
+    Katerina is a Google Developer Expert for Angular and Web Technologies, and a software engineer focused on the web front end. She likes to mix and match web technologies, experimenting with new things, and open sources her code for the general good. Being an active member of the Angular family, she speaks at international conferences and is the founder of the Angular Athens meetup. She is also involved with supporting diversity in the community. Katerina is obsessed with sharing knowledge and spreading the word about things she loves. She is indigenous to the internet, and she loves web development. She lives with her Maine Coon in Athens, Greece.
+  role: Speaker
+  profiles:
+    twitter: psybercity
+    github: mandarini
+- id: david-muellerchen
+  name: David Müllerchen
+  title: Trainer at Angular.DE
+  image: david-muellerchen.jpg
+  biography: >
+    David is an Angular consultant who offers support for your Angular applications and projects. He's also part of the Angular.DE team. We adapt Angular to your teams needs to find the perfect fit, and get the most out of Angular’s platform. For individual developers or small groups we offer monthly workshops in Berlin, Munich, Hamburg and Essen.
+  role: Trainer
+  profiles:
+    twitter: webdave_de
+    github: webdave1
+- id: dominic-elm
+  name: Dominic Elm
+  title: Trainer at Thoughtram
+  image: dominic-elm.jpg
+  biography: >
+    Dominic is a Freelancer, Software Engineer at StackBlitz and Trainer at thoughtram where he provides high quality Angular trainers all over the world. He is also a technical Co-founder at MachineLabs Inc. and the author of an online course called Machine Learning Jump Start.
+    Besides work, you will most likely find Dominic outside with his road bike or doing some other sporty activity.
+    If not, he's probably drawing or reading a book.
+  role: Trainer
+  profiles:
+    twitter: elmd_
+    github: d3lm
+- id: tomek-sułkowski
+  name: Tomek Sułkowski
+  title: Engineer at Stackblitz
+  image: tomek-sułkowski.jpg
+  biography: >
+    Tomek is a frontend engineer at StackBlitz, with a passion for improving development experience. He focuses on making our tools of trade not only performant and comfortable for seasoned programmers, but also accessible and fun for the newcomers.
+    He frequently shares the knowledge on workshops, podcasts, dev-events (co-organizing AngularTricity), in articles and the “tip-of-the-day” tweets.
+  role: Trainer
+  profiles:
+    twitter: sulco
+    github: sulco
+- id: jan-niklas-wortmann
+  name: Jan-Niklas Wortmann
+  title: RxJS Core Member
+  image: jan-niklas-wortmann.jpg
+  biography: >
+    Jan-Niklas Wortmann is an IT consultant mostly working on Angular projects.
+    He helps companies designing and implementing large scaled applications.
+    Developing clean and maintainable code is one of his main goals.
+    Due to his passion for the Community, he is member of the RxJS Core Team and organizer of the NgNiederrhein Meetup.  
+  role: Trainer
+  profiles:
+    twitter: niklas_wortmann
+    github:
+- id: manfred-steyer
+  name: Manfred Steyer
+  title: softwarearchitekt.at
+  image: manfred-steyer.jpg
+  biography: >
+    Trainer, consultant and programming architect with focus on Angular. Google Developer Expert (GDE) who writes for O'Reilly, the German Java Magazine, windows.developer and Heise. Regularly speaks at conferences.
+  role: Trainer
+  profiles:
+    twitter: ManfredSteyer
+    github: manfredsteyer
+- id: gregor-woiwode
+  name: Gregor Woiwode
+  title: CTO of co-IT.eu
+  image: gregor-woiwode.jpg
+  biography: >
+    Gregor is the CTO of co-IT.eu GmbH and loves to build tools that enable developers to be more productive. In his role as Speaker, Trainer and Consultant he teaches techniques to continuously improve the architectural design of Angular applications.  
+    
+    He also enjoys running or trying his hand at hobby cooking.
+  role: Trainer
+  profiles:
+    twitter: GregOnNet
+    github: GregOnNet
+- id: michael-hladky
+  name: Michael Hladky
+  title: Google Developer Expert
+  image: michael-hladky.jpg
+  biography: >
+    Michael is Expert for SPA with a focus on Angular. 
+    Also he is organizer of the Angular Meetup in Vienna.
+  role: Trainer
+  profiles:
+    twitter: michael_hladky
+    github: BioPhoton
+# - id: martina-kraus
+#   name: Martina Kraus
+#   title: Web-Engineer
+#   image: martina-kraus.jpg
+#   biography: >
+#     Martina Kraus always had always a strong interest in Web-Engineering.
+#     As a freelancer she focuses on implementing highly scalable software-solution with Node.Js and Angular.
+#     Besides her work as a lecturer at the Hochschule Mannheim, she is also the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg Usergroup.
+#   role: Trainer
+#   profiles:
+#     twitter: MartinaKraus11
+#     github: martinakraus
+# - id: robert-willemelis
+#   name: Robert Willemelis
+#   title: Frontend-Developer
+#   image: robert-willemelis.png
+#   biography: >
+#     Robert works as a Frontend-Developer for a big hosting service provider in Berlin.
+#     He is a core team member of ngGirls and passionate about Angular and about the software craftsmanship pattern.
+#     He likes to make people happy by being creative, producing new ideas, and bringing people together.
+#     Robert loves to travel around and attend conferences to get new inspiration for his daily work and for self-improvement.
+#   role: Trainer
+#   profiles:
+#     twitter: robertSPD
+#     github: willi84

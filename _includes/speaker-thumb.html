@@ -1,0 +1,52 @@
+{% if include.speaker_id %}
+
+  {% assign speaker = site.data.speakers | where: 'id', include.speaker_id | first %}
+
+  {% assign twitter_url = 'https://twitter.com/' | append: speaker.profiles.twitter %}
+  {% assign github_url = 'https://github.com/' | append: speaker.profiles.github %}
+
+  {% assign speaker_url = '/speakers/' | append: speaker.id %}
+  {% assign speaker_image = '/assets/speakers/' | append: speaker.image %}
+
+  <div class="speaker-thumb">
+    <div class="speaker-thumb__image">
+      {% include angular-image.html
+        name=speaker.name
+        badge=speaker.role
+        url=speaker_url
+        image=speaker_image
+        layout=include.layout %}
+    </div>
+    <div class="speaker-thumb__name">
+      {% if page.url contains speaker_url %}
+        <span>{{ speaker.name }}</span>
+      {% else %}
+        <a href="{{ speaker_url }}"
+          {% if include.target %}target="{{ include.target }}"{% endif %}>{{ speaker.name }}</a>
+      {% endif %}
+    </div>
+    <div class="speaker-thumb__title">
+      {{ speaker.title }}
+    </div>
+  </div>
+
+{% else %}
+
+  <div class="speaker-thumb">
+    <div class="speaker-thumb__image">
+      {% include angular-image.html
+        name="Open Slot"
+        badge="Speaker"
+        url="/call-for-papers"
+        layout=include.layout %}
+    </div>
+    <div class="speaker-thumb__name">
+      <a href="/call-for-papers">Open Slot</a>
+    </div>
+    <div class="speaker-thumb__title">
+      Will be announced soon ...
+    </div>
+  </div>
+
+{% endif %}
+

@@ -1,0 +1,18 @@
+.speaker-thumb {
+  $b: &;
+
+  &__image {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__name {
+    margin-top: .5rem;
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 1rem;
+  }
+}

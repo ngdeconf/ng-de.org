@@ -6,19 +6,19 @@ noindex: true
 
 ## Imprint
 Angaben gemäß § 5 TMG:  
-Symetics GmbH  
-c/o Factory
-Lohmühlenstraße 65
-12435 Berlin
+Symetics GmbH<br>
+c/o Factory<br>
+Lohmühlenstraße 65<br>
+12435 Berlin<br>
 
 ### Kontakt:
 E-Mail: [robin.boehm@workshops.de](mailto:robin.boehm@workshops.de)  
 Telefon: +49 (0) 201 / 87535773
 
 ### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-Robin Böhm  
-Merseburger Str. 2
-10823 Berlin
+Robin Böhm<br>
+Merseburger Str. 2<br>
+10823 Berlin<br>
 
 ### Online-Streitbeilegung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: [https://ec.europa.eu/consumers/odr](https://ec.europa.eu/consumers/odr). Unsere E-Mail-Adresse finden Sie oben im Impressum.

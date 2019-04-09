@@ -1,0 +1,63 @@
+{% assign speaker = site.data.speakers | where: 'id', include.speaker_id | first %}
+
+{% assign twitter_url = 'https://twitter.com/' | append: speaker.profiles.twitter %}
+{% assign github_url = 'https://github.com/' | append: speaker.profiles.github %}
+
+{% assign thumb_title = speaker.title | append: '<br />' | append: speaker.location %}
+
+{% assign sessions = site.data.sessions | where: 'speakers', include.speaker_id %}
+
+<div class="speaker">
+  <div class="speaker__thumb">
+    {% include speaker-thumb.html speaker_id=include.speaker_id %}
+  </div>
+  <div class="speaker__social">
+    {% if speaker.profiles.twitter %}
+    <a
+      class="speaker__social-item"
+      href="{{ twitter_url }}"
+      target="_blank"
+      rel="noopener"
+      title="{{ speaker.name }} on Twitter"
+      aria-label="{{ speaker.name }} on Twitter"
+    ><i class="fab fa-twitter" aria-hidden="true"></i></a>
+    {% endif %}
+    {% if speaker.profiles.github %}
+    <a
+      class="speaker__social-item"
+      href="{{ github_url }}"
+      target="_blank"
+      rel="noopener"
+      title="{{ speaker.name }} on GitHub"
+      aria-label="{{ speaker.name }} on GitHub"
+    ><i class="fab fa-github" aria-hidden="true"></i></a>
+    {% endif %}
+  </div>
+
+
+<!-- jekyll needs this identation for markdown -->
+<div class="speaker__bio" markdown="1">
+{{ speaker.biography }}
+</div>
+
+
+  <div class="speaker__sessions">
+    <h3>Sessions</h3>
+    <ul class="sessions-list">
+      {% for session in sessions %}
+      <li class="sessions-list__item">
+        <strong>{{ session.title }} </strong>
+        <span class="tag tag--small">{{ session.type }}</span>
+
+
+<!-- jekyll needs this identation for markdown -->
+<div markdown="1">
+{{ session.description }}
+</div>
+
+
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

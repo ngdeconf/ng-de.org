@@ -60,11 +60,13 @@ $button-colors: $colors;
  */
 
 $breakpoints: (
+  xsmall: 500px,
   small: 768px,
   medium: 992px,
   large: 1200px
 );
 
+$screen-xsmall: map-get($breakpoints, xsmall);
 $screen-small: map-get($breakpoints, small);
 $screen-medium: map-get($breakpoints, medium);
 $screen-large: map-get($breakpoints, large);

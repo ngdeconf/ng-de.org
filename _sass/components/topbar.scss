@@ -41,7 +41,7 @@ $topbar-mobile-zindex: 10;
 
   &--is-open {}
 
-  @media only screen and (max-width: $screen-small) {
+  @media only screen and (max-width: $screen-medium) {
     &__nav {
       display: none;
       flex-direction: column;
