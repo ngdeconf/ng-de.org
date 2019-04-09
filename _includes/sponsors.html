@@ -3,7 +3,7 @@
   <h3 class="sponsors__headline">Main Sponsor</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.main %}
-      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+      <a class="sponsor main" href="{{ sponsor.url }}" rel="nofollow noreferrer">
         <img
           class="sponsor__logo lazy"
           src="placeholder-image.jpg"
@@ -20,7 +20,7 @@
   <h3 class="sponsors__headline">Platinum Sponsors</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.platinum %}
-      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+      <a class="sponsor platinum" href="{{ sponsor.url }}" rel="nofollow noreferrer">
         <img
           class="sponsor__logo lazy"
           src="placeholder-image.jpg"
@@ -37,7 +37,7 @@
   <h3 class="sponsors__headline">Gold Sponsors</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.gold %}
-      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+      <a class="sponsor gold" href="{{ sponsor.url }}" rel="nofollow noreferrer">
         <img
           class="sponsor__logo lazy"
           data-src="/assets/sponsors/{{ sponsor.logo }}"
@@ -53,7 +53,7 @@
   <h3 class="sponsors__headline">Silver Sponsors</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.silver %}
-      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+      <a class="sponsor silver" href="{{ sponsor.url }}" rel="nofollow noreferrer">
         <img
           class="sponsor__logo lazy"
           data-src="/assets/sponsors/{{ sponsor.logo }}"
@@ -69,7 +69,7 @@
   <h3 class="sponsors__headline">Bronze Sponsors</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.bronze %}
-      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+      <a class="sponsor bronze" href="{{ sponsor.url }}" rel="nofollow noreferrer">
         <img
           class="sponsor__logo lazy"
           data-src="/assets/sponsors/{{ sponsor.logo }}"
@@ -85,7 +85,7 @@
   <h3 class="sponsors__headline">Partners</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.partners %}
-      <a class="sponsor" href="{{ sponsor.url }}" rel="nofollow noreferrer">
+      <a class="sponsor partner" href="{{ sponsor.url }}" rel="nofollow noreferrer">
         <img
           class="sponsor__logo lazy"
           data-src="/assets/sponsors/{{ sponsor.logo }}"

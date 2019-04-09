@@ -28,6 +28,26 @@
   background: map-get($colors, light);
   border-radius: 5px;
 
+  &.platinum {
+    width: 250px;
+    height: 250px;
+  }
+
+  &.gold {
+    width: 200px;
+    height: 200px;
+  }
+
+  &.silver {
+    width: 150px;
+    height: 150px;
+  }
+
+  &.bronze{
+    width: 130px;
+    height: 130px;
+  }
+
   &.community_partner {
     width: 100px;
     height: 100px;
