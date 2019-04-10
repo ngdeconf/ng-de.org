@@ -15,6 +15,8 @@
   margin: 0 0 1rem;
   transition: box-shadow 250ms ease-in, background-color 250ms ease-in, border-radius 250ms ease-in;
   border-radius: 100% 10% 100% 10% / 10% 100% 10% 100%;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
 
   &:hover, &:focus {
     color: #fff;
