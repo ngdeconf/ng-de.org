@@ -14,13 +14,13 @@
     <meta property="og:image" content="{{ "assets/opengraph/og-image.jpg" | prepend: site.baseurl | prepend: site.url }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image:alt" content="{{ site.title }}">
-    
+
     {% if page.noindex %}
       <meta name="robots" content="noindex, follow">
     {% else %}
       <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     {% endif %}
-    
+
     <link rel="manifest" href="/manifest.webmanifest">
     {% if site.favicon_img %}
     {% include _favicon.html %}

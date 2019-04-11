@@ -3,38 +3,34 @@
   {% assign layout = 'light' %}
 {% endif %}
 
-{% assign mask = '/assets/meta/angular-mask-' | append: layout | append: '.svg' %}
-
 {% if page.url contains include.url %}
-  <div class="angular-image {% if include.small %}angular-image--small{% endif %}">
+  <div class="angular-image angular-image--{{ layout }} {% if include.small %}angular-image--small{% endif %}">
     {% if include.badge %}<span class="angular-image__badge">{{ include.badge }}</span>{% endif %}
-    <div>
+    <div class="angular-image__picture">
+      {% if include.image %}
       <img
-        {% if include.image %}
-        style="background-image: url('{{ include.image }}'); background-size: cover;"
-        {% endif %}
-        class="angular-image__picture lazy {% if include.badge %}angular-image__picture--push-up{% endif %}"
-        src="placeholder-image.jpg"
-        data-src="{{ mask }}"
-        data-srcset="{{ mask }}"
+        class="lazy"
+        src="/assets/placeholder-image.svg"
+        data-src="{{ include.image }}"
+        data-srcset="{{ include.image }}"
         alt="{{ include.name }}"
         title="{{ include.name }}">
+      {% endif %}
     </div>
   </div>
 {% else %}
-  <a href="{{ include.url }}" class="angular-image {% if include.small %}angular-image--small{% endif %}" {% if include.target %}target="{{ include.target }}"{% endif %} rel="nofollow noreferer">
+  <a href="{{ include.url }}" class="angular-image angular-image--{{ layout }} {% if include.small %}angular-image--small{% endif %}" {% if include.target %}target="{{ include.target }}"{% endif %} rel="nofollow noreferer">
     {% if include.badge %}<span class="angular-image__badge">{{ include.badge }}</span>{% endif %}
-    <div>
+    <div class="angular-image__picture">
+      {% if include.image %}
       <img
-        {% if include.image %}
-        style="background-image: url('{{ include.image }}'); background-size: cover;"
-        {% endif %}
-        class="angular-image__picture lazy {% if include.badge %}angular-image__picture--push-up{% endif %}"
-        src="placeholder-image.jpg"
-        data-src="{{ mask }}"
-        data-srcset="{{ mask }}"
+        class="lazy"
+        src="/assets/placeholder-image.svg"
+        data-src="{{ include.image }}"
+        data-srcset="{{ include.image }}"
         alt="{{ include.name }}"
         title="{{ include.name }}">
+      {% endif %}
     </div>
   </a>
 {% endif %}
