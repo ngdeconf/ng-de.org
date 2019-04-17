@@ -22,6 +22,10 @@ bronze:
   - name: 9 Elements
     logo: 9elements.png
     url: https://9elements.com/
+  - name: MA-Tea
+    logo: ma-tea.png
+    url: https://www.ma-tea.de/
+
 
 community:
   - name: Angular Berlin
