@@ -17,6 +17,9 @@ silver:
   - name: Twilio
     logo: twilio.svg
     url: https://www.twilio.com
+  - name: MyHammer
+    logo: myhammer.png
+    url: https://www.myhammer.net
 
 bronze: 
   - name: 9 Elements
