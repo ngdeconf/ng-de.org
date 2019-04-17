@@ -18,7 +18,10 @@ silver:
     logo: twilio.svg
     url: https://www.twilio.com
 
-bronze: null
+bronze: 
+  - name: 9 Elements
+    logo: 9elements.png
+    url: https://9elements.com/
 
 community:
   - name: Angular Berlin
