@@ -1,0 +1,42 @@
+.day-picker {
+  display: flex;
+  margin: 2rem 0;
+
+  &__item {
+    display: flex;
+
+    flex: 1;
+    flex-direction: column;
+
+    text-align: center;
+  }
+}
+
+.schedule-item {
+  $b: &;
+
+  color: map-get($colors, dark);
+  background: map-get($colors, light);
+  padding: 1rem;
+  margin-bottom: .5rem;
+
+  &--past {
+    opacity: .85;
+  }
+
+  &--now {
+    border-top: 5px solid map-get($colors, primary);
+  }
+
+  &__time {}
+
+  &__title {
+    margin: 0;
+  }
+
+  &__speakers {}
+
+  &__location {
+    font-size: 1rem;
+  }
+}

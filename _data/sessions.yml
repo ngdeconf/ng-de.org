@@ -111,7 +111,8 @@
     url: http://ng-girls.org/ng-de-2019/
   datetime: 2019-08-29 09:00:00 +0100
   location: Axel Springer Berlin
-- title: Opening Keynote
+- id: opening-keynote
+  title: Opening Keynote
   description: 
   type: keynote
   speakers:
@@ -119,7 +120,8 @@
     - katerina-skroumpelou
   datetime: 2019-08-30 09:30:00 +0100
   location: Main Stage
-- title: Closing Keynote
+- id: closing-keynote
+  title: Closing Keynote
   description: 
   type: keynote
   speakers:

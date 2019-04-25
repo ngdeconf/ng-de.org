@@ -8,9 +8,9 @@ links:
   - name: Workshops
     url: /workshops/
     navigation: true
-#  - name: Schedule
-#    url: /schedule/
-#    navigation: true
+  - name: Schedule
+    url: /schedule/
+    navigation: true
   - name: Location
     url: /location/
     navigation: true
@@ -19,7 +19,7 @@ links:
     navigation: true
 #  - name: CFP
 #    url: /call-for-papers/
-    navigation: true
+#    navigation: true
   - name: CoC
     url: /code-of-conduct/
     navigation: true
