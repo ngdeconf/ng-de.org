@@ -1,14 +1,26 @@
 .day-picker {
   display: flex;
-  margin: 2rem 0;
+  margin: 1rem 0;
 
   &__item {
+
     display: flex;
 
     flex: 1;
     flex-direction: column;
-
     text-align: center;
+
+    padding: 1rem 0;
+
+    &--selected {
+      color: map-get($colors, dark);
+      background: map-get($colors, light);
+      border-top: 5px solid map-get($colors, primary);
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

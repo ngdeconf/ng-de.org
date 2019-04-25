@@ -6,6 +6,4 @@ description: >
   We want to create an open, diverse and welcoming conference with fantastic speakers and a warm and friendly environment. 
 ---
 
-## Schedule
-
 {% include schedule.html %}
