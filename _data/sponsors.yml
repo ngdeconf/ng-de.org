@@ -9,6 +9,9 @@ gold:
   - name: adorsys
     logo: adorsys.png
     url: https://www.adorsys.de
+  - name: SINNERSCHRADER
+    logo: sinnerschrader.svg
+    url: https://sinnerschrader.com
 
 silver:
   - name: Adesso
