@@ -79,23 +79,23 @@
     url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/iwxzleolokc
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
-#- title:  NgGirls
-#  description: >
-#    ngGirls aims to introduce women to the world of technology and increase the diversity.
-#    Angular is a great technology to start with.
-#    We believe this is a win-win situation!
-#    We plan various events and activities in which the participants build and deploy a web application with Angular.
-#    We offer guidance to help finding a job in front end development.
-#    If you're a committed, motivated woman who wants to step into the Web Development world - your place is with us! 
-#  type: workshop
-#  speakers:
-#    - martina-kraus
-#    - robert-willemelis
-#  tito:
-#    price_net: 0
-#    url: 
-#  datetime: 2019-08-29 09:00:00 +0100
-#  location: Axel Springer Berlin
+- title:  ngGirls
+  description: >
+    ngGirls aims to introduce women to the world of technology and increase the diversity.
+    Angular is a great technology to start with.
+    We believe this is a win-win situation!
+    We plan various events and activities in which the participants build and deploy a web application with Angular.
+    We offer guidance to help finding a job in front end development.
+    If you're a committed, motivated woman who wants to step into the Web Development world - your place is with us!  
+      
+    **Please note:** ngGirls is a free side event and not hosted by NG-DE itself. Please refer to [http://ng-girls.org/ng-de-2019/](http://ng-girls.org/ng-de-2019/) to register for the workshop.
+  type: workshop
+  speakers:
+  tito:
+    price_net: 0
+    url: http://ng-girls.org/ng-de-2019/
+  datetime: 2019-08-29 09:00:00 +0100
+  location: Axel Springer Berlin
 - title: Opening Keynote
   description: 
   type: keynote
