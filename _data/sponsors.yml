@@ -61,6 +61,9 @@ community:
   - name: ngGirls
     logo: ng-girls.png
     url: https://ng-girls.org
+  - name: Swiss Angular
+    logo: swiss-angular.png
+    url: https://swissangular.com
 
 partners:
   - name: angular.de
