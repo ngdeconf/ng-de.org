@@ -58,6 +58,9 @@ community:
   - name: Angular Heidelberg
     logo: angular-heidelberg.png
     url: https://angular-heidelberg.de/
+  - name: ngGirls
+    logo: ng-girls.png
+    url: https://ng-girls.org
 
 partners:
   - name: angular.de
