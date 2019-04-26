@@ -64,6 +64,9 @@ community:
   - name: Swiss Angular
     logo: swiss-angular.png
     url: https://swissangular.com
+  - name: Angular Finland
+    logo: angular-finland.svg
+    url: https://www.angular.fi/
 
 partners:
   - name: angular.de
