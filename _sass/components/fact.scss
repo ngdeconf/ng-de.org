@@ -1,0 +1,17 @@
+.fact {
+  $b: &;
+  margin: calc(0.75em + .5vw) 0;
+
+  &__number {
+    font-size: calc(48px + 1vw);
+    text-align: center;
+    border-bottom: 3px solid red;
+    max-width: 100px;
+    margin: auto;
+  }
+
+  &__label {
+    font-size: calc(6px + 1vw);
+    text-align: center;
+  }
+}
