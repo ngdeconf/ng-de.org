@@ -58,6 +58,15 @@ community:
   - name: Angular Heidelberg
     logo: angular-heidelberg.png
     url: https://angular-heidelberg.de/
+  - name: ngGirls
+    logo: ng-girls.png
+    url: https://ng-girls.org
+  - name: Swiss Angular
+    logo: swiss-angular.png
+    url: https://swissangular.com
+  - name: Angular Finland
+    logo: angular-finland.svg
+    url: https://www.angular.fi/
 
 partners:
   - name: angular.de

@@ -19,7 +19,7 @@
     </div>
     <div class="speaker-thumb__name">
       {% if page.url contains speaker_url %}
-        <span>{{ speaker.name }}</span>
+        <h1>{{ speaker.name }}</h1>
       {% else %}
         <a href="{{ speaker_url }}"
           {% if include.target %}target="{{ include.target }}"{% endif %}>{{ speaker.name }}</a>
