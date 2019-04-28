@@ -1,27 +1,26 @@
 {% assign workshops = site.data.sessions | where: "type", "workshop" %}
 
-{% for workshop in workshops %}
-<div class="workshop">
-  <h3 class="workshop__title">{{ workshop.title }}</h3>
+<div class="row row--two">
 
-<!-- jekyll needs this identation for markdown -->
-<div class="workshop__description" markdown="1">
-{{ workshop.description }}
-</div>
-
-  <div class="workshop__details">
-    <div class="workshop__trainer">
-      {% for trainer in workshop.speakers %}
-      {% include speaker-thumb-small.html speaker_id=trainer layout="light" %}
-      {% endfor %}
-    </div>
-    <div class="workshop__order order">
-      <span class="order__price">{{ workshop.tito.price_net }} EUR + 19% VAT</span>
-      <a class="button button--compact order__button" href="{{ workshop.tito.url }}" target="_blank">
-        <span class="button__scale">Buy Tickets</span>
-      </a>
+  {% for workshop in workshops %}
+  <div class="row__col">
+    <div class="workshop">
+      <h3 class="workshop__title">{{ workshop.title }}</h3>
+      <div class="workshop__details">
+        <div class="workshop__trainer">
+          {% for trainer in workshop.speakers %}
+          {% include speaker-thumb-small.html speaker_id=trainer layout="light" %}
+          {% endfor %}
+        </div>
+        <div class="workshop__order order">
+          <span class="order__price">{{ workshop.tito.price_net }} EUR + 19% VAT</span>
+          <a class="button button--compact order__button" href="{{ workshop.id }}/">
+            <span class="button__scale">Read More</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
+  {% endfor %}
 
 </div>
-{% endfor %}
