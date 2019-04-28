@@ -1,4 +1,5 @@
-- title: RxJS Level UP - Essentials in reactive programming
+- id: rxjs-level-up
+  title: RxJS Level UP - Essentials in reactive programming
   description: >
     This training will bring you basic RxJS skills!  
       
@@ -18,7 +19,8 @@
     url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/e3pzkcv7vo4 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
-- title: Architectures for Enterprise Applications
+- id: architectures-for-enterprise-applications
+  title: Architectures for Enterprise Applications
   description: >
     In this interactive seminar you will develop a critical understanding for planning and implementing large enterprise applications with Angular. You will explore and work with approaches to structure huge applications like npm packages, the Mono Repo Approach and Micro Apps.  
       
@@ -33,7 +35,8 @@
     url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/oqtsm-r8eku 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
-- title: Angular PWA - let's get progressive
+- id: angular-pwa
+  title: Angular PWA - let's get progressive
   description: >
     Dave is an Angular GDE and Trainer, in his workshop you'll learn how to install and configure @angular/pwa in your Application. You'll learn how to use the awesome features of PWA like: caching, offline functionality, App-like experience (install to homescreen) and push notifications. So you see: PWA comes wit great power. But keep in mind: With great power comes great responsibility!
   type: workshop
@@ -44,7 +47,8 @@
     url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/4wugnm-ou-g 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
-- title: Angular solid foundations
+- id: angular-solid-foundations
+  title: Angular solid foundations
   description: >
     Gregor is the CTO of co-IT.eu GmbH and loves to build tools that enable developers to be more productive.  
     In this workshop you will learn about the fundamental techniques that get you started for your next Angular project.  
@@ -62,7 +66,8 @@
     url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/asbto1yway0 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
-- title:  Angular State Management
+- id: angular-state-management
+  title:  Angular State Management
   description: >
     The state layer is one of those building block that can make developing and maintaining your application sweet and simple or a living hell.
     Having multiple existing solutions to choose from doesn't make the task much easier.
@@ -79,7 +84,8 @@
     url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/iwxzleolokc
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
-- title:  ngGirls
+- id: ng-girls
+  title:  ngGirls
   description: >
     ngGirls aims to introduce women to the world of technology and increase the diversity.
     Angular is a great technology to start with.
