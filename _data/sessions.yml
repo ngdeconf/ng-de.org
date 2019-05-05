@@ -133,3 +133,11 @@
   speakers:
     - jennifer-wadella
   type: talk
+- title: "No Apollo-gies: Making Apps Accessible"
+  description: >
+    Imagine an astronaut using your Angular application in space. Accessibility is about providing the best user experience that leads to software made with people in difficult situations in mind. Such difficulties might be temporal, permanent or caused by the environment... like Space.  
+      
+    I’ll prepare your app for use in the pitch black of space and brightest of sunlight. I’ll implement navigation with voice commands, use a keyboard and touch-screen with gloves. I will show you how to produce accessible software that is ready-to-use even on a spaceship.
+  speakers:
+    - vitalii-bobrov
+  type: talk

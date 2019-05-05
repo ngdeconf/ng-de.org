@@ -144,3 +144,14 @@
     twitter: likeOMGitsFEDAY
     github: 
     website: https://jenniferwadella.com
+- id: vitalii-bobrov
+  name: Vitalii Bobrov
+  title: Lead Software Engineer @ EPAM Systems
+  image: vitalii-bobrov.jpg
+  biography: >
+    Vitalii is a Lead JavaScript Engineer with more than six years of professional experience. He is co-organizer of Angular Wroclaw meetup. Vitalii is keeping up-to-date with the latest Web Platform features and doing great experiments with it. This guy is not just a nerd, but tech speaker, ngGirls mentor, and the father of the excellent little girl. 
+  role: Speaker
+  profiles:
+    twitter: https://twitter.com/bobrov1989
+    github: https://github.com/vitaliy-bobrov
+    website: http://bobrov.dev
