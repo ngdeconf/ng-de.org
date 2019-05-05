@@ -190,3 +190,9 @@
   speakers:
     - dmitry-vinnik
   type: talk
+- title: Do you want to build a build tool?
+  description: >
+    Tooling for code generation, transformation and interrogation has improved in leaps and bounds over the last few years! We now have things like Angular Schematics, Prettier and TSLint, that can manipulate code in powerful ways, speed up development, and provide insight into how our applications work. But how exactly do they work? This talk will be Code Tooling 101, and act as an introduction to Abstract Syntax Trees, and all the weird and wonderful things you can do with them. By the end of the talk, attendants should have an idea of how ASTs work, how they are used in code tooling, and how they can be used to manipulate and interrogate code at a structural level!
+  speakers:
+    - craig-spence
+  type: talk

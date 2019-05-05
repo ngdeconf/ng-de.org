@@ -227,3 +227,14 @@
     twitter: DmitryVinnik
     github: dmitryvinn
     website: https://dvinnik.com
+- id: craig-spence
+  name: Craig Spence
+  title: Senior Software Engineer @ Spotify
+  image: craig-spence.jpg
+  biography: >
+    Craig is a Software Engineer from New Zealand, working at Spotify in Stockholm. He loves building cool things that help teams build cool things! He also loves punk rock, Disney's Frozen, and his cat Cosy.
+  role: Speaker
+  profiles:
+    twitter: phenomnominal
+    github: phenomnomnominal
+    website: 
