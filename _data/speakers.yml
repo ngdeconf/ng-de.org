@@ -166,3 +166,14 @@
     twitter: KimMaida
     github: kmaida
     website: https://maida.kim
+- id: amadou-sall
+  name: Amadou Sall
+  title: Frontend Software Engineer @ Air France-KLM
+  image: amadou-sall.jpg
+  biography: >
+    Amadou Sall is a Frontend Software Engineer from Senegal 🇸🇳 based in Toulouse, France 🇫🇷. He's passionate about web, and mobile technologies, and currently specializes in Angular. Amadou works for Air France-KLM where he helps developers build better Angular applications. He regularly speaks, presents, and writes about Angular and its ecosystem. You can find his blog at www.amadousall.com, and follow him on Twitter at @ahasall.
+  role: Speaker
+  profiles:
+    twitter: ahasall
+    github: ahasall
+    website: https://www.amadousall.com

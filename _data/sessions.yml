@@ -147,3 +147,10 @@
   speakers:
     - kim-maida
   type: talk
+- title: Angular Material or Bootstrap? Stop asking the question!
+  description: >
+    Angular Material AND Bootstrap for your next Angular application? It doesn't make sense, does it? The first time I talked to my colleagues about combining the two, they laughed at me. But now, they love the approach because it works like a charm.  
+    In this session, we will see how we can leverage the best parts of both libraries to build beautiful, maintainable, and responsive Angular applications with very little CSS.
+  speakers:
+    - amadou-sall
+  type: talk
