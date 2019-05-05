@@ -121,11 +121,6 @@
   profiles:
     twitter: michael_hladky
     github: BioPhoton
-- id: ng-girls
-  name: You?
-  title: Call for Mentors
-  # image: michael-hladky.jpg
-  role: Trainer
 - id: martina-kraus
   name: Martina Kraus
   title: Web-Engineer
@@ -138,16 +133,3 @@
   profiles:
     twitter: MartinaKraus11
     github: martinakraus
-# - id: robert-willemelis
-#   name: Robert Willemelis
-#   title: Frontend-Developer
-#   image: robert-willemelis.png
-#   biography: >
-#     Robert works as a Frontend-Developer for a big hosting service provider in Berlin.
-#     He is a core team member of ngGirls and passionate about Angular and about the software craftsmanship pattern.
-#     He likes to make people happy by being creative, producing new ideas, and bringing people together.
-#     Robert loves to travel around and attend conferences to get new inspiration for his daily work and for self-improvement.
-#   role: Trainer
-#   profiles:
-#     twitter: robertSPD
-#     github: willi84
