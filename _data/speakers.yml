@@ -249,3 +249,14 @@
     twitter: thpnk
     github: thomaspink
     website: 
+- id: fabian-friedl
+  name: Fabian Friedl
+  title: Senior Software Engineer @ Dynatrace
+  image: fabian-friedl.jpg
+  biography: >
+    Fabian Friedl is a software engineer at Dynatrace and during the last 1.5 years has been working on the internal component library used across apps and continents. In his free time Fabian likes to climb the mountains surrounding Linz on his mountainbike.
+  role: Speaker
+  profiles:
+    twitter: fabian_friedl
+    github:
+    website: 

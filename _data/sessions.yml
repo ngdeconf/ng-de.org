@@ -201,4 +201,5 @@
     Building a component library in Angular seems like an easy task, until hundreds of developers start actively using it! In this talk, we will show you how a team of four manages to produce components at scale. Accessible, reliable, stable. An overall nice developer experience for more than 300 UI developers. Join us and find out how we managed to tackle both technical as well as social challenges, and what we did to keep peak quality.
   speakers:
     - thomas-pink
+    - fabian-friedl
   type: talk
