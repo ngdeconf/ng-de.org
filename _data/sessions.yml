@@ -172,3 +172,13 @@
   speakers:
     - hernan-magrini
   type: talk
+- title: "Add Native Mobile to Your Angular Projects: The Migration Story"
+  description: >
+    The Angular and NativeScript teams teamed up to create a new way to share your code between web and mobile apps with Angular and NativeScript. It allows you to easily share the business logic of your app, while providing you an intuitive way to separate the code that is different between the platforms.  
+      
+    The ability to share code between your Angular web app and Native mobile apps has never been easier (or more important). Who has the time to invest resources into separate apps for web, native iOS, and native Android?  
+      
+    In this talk you will learn how to take an existing Angular Web project and add NativeScript to it, by converting it to a code-sharing project. Then we will go through a few steps of converting individual components and modules into a code-sharing structure.
+  speakers:
+    - sebastian-witalec
+  type: talk
