@@ -177,3 +177,14 @@
     twitter: ahasall
     github: ahasall
     website: https://www.amadousall.com
+- id: guilherme-ventura
+  name: Guilherme Ventura
+  title: Full Stack JavaScript Engineer at Matterway
+  image: guilherme-ventura.jpg
+  biography: >
+    Guilherme is a JavaScript developer who loves how his work can positively impact people's lives, one way or another. Working in front-end development, he is always looking to improve user experience, while using the best tools and better ways to deal with data.
+  role: Speaker
+  profiles:
+    twitter: danguilherme
+    github: danguilherme
+    website: https://danguilherme.github.io/en/

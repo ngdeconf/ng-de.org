@@ -154,3 +154,14 @@
   speakers:
     - amadou-sall
   type: talk
+- title: "Watch out: observers are here to stay"
+  description: >
+    The web is evolving, we got it. One of the clear consequences is the complexity of our web apps (formerly known as ‘websites’). The conciseness of functional programming and its fundamentals got our attention, but we knew we could do better. And now we have the Reactive programming model, a functional and declarative way of dealing with big amounts of data.  
+      
+    In the center of it we have Observables: objects responsible to keep your application alive, reacting to any mutation your data may have, through any period of time. We'll take a look on the concepts and also on the lib that implements it in Angular's core: RxJS. Using the provided operators, we have great power on our hands, doing anything imaginable in a concise, declarative and easy-to-maintain way.  
+      
+    Watch out: observables are here to stay!
+  speakers:
+    - guilherme-ventura
+  type: talk
+    
