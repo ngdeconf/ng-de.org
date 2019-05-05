@@ -155,3 +155,14 @@
     twitter: https://twitter.com/bobrov1989
     github: https://github.com/vitaliy-bobrov
     website: http://bobrov.dev
+- id: kim-maida
+  name: Kim Maida
+  title: Manager, Community & Technical Content
+  image: kim-maida.jpg
+  biography: >
+    Kim is an Angular consultant and Google Developer Expert, working as the Manager of Community & Technical Content for Auth0. She's passionate about identity, authentication, constant learning, and the Angular community. She loves learning from and sharing with other developers. She organizes the Angular Ann Arbor meetup, enjoys running Angular authentication workshops, and mentors engineers whenever possible.
+  role: Speaker
+  profiles:
+    twitter: KimMaida
+    github: kmaida
+    website: https://maida.kim
