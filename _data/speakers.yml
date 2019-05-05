@@ -238,3 +238,14 @@
     twitter: phenomnominal
     github: phenomnomnominal
     website: 
+- id: thomas-pink
+  name: Thomas Pink
+  title: Senior Software Engineer @ Dynatrace
+  image: thomas-pink.jpg
+  biography: >
+    As a software engineer at Dynatrace, Thomas Pink works on a company wide angular component library used by more than 300 UI developers around the globe. He also spends a lot of time digging into the angular core and compiler, helps others as a volunteer firefighter and loves riding his motorbike on mountain roads.
+  role: Speaker
+  profiles:
+    twitter: thpnk
+    github: thomaspink
+    website: 
