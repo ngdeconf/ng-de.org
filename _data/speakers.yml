@@ -213,3 +213,17 @@
     twitter: sebawita
     github: 
     website: https://www.nativescript.org
+- id: dmitry-vinnik
+  name: Dmitry Vinnik
+  title: Lead Software Engineer @ Salesforce
+  image: dmitry-vinnik.jpg
+  biography: >
+    Dmitry Vinnik is a Lead Software Engineer at Salesforce and has been passionate about Software Quality since the very beginning of his career.
+    He started out as a Quality Engineer, and was able to bring test expertise into his current Software Engineering role to ensure delivery of a high quality product.
+    Dmitry is also a Scrum Master focused on making his team more efficient and productive. 
+    His background involves studying medicine and bioinformatics in addition to software and quality engineering.
+  role: Speaker
+  profiles:
+    twitter: DmitryVinnik
+    github: dmitryvinn
+    website: https://dvinnik.com
