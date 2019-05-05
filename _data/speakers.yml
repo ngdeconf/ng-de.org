@@ -129,7 +129,18 @@
     Martina Kraus always had always a strong interest in Web-Engineering.
     As a freelancer she focuses on implementing highly scalable software-solution with Node.Js and Angular.
     Besides her work as a lecturer at the Hochschule Mannheim, she is also the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg Usergroup.
-  role: Trainer
+  role: Speaker
   profiles:
     twitter: MartinaKraus11
     github: martinakraus
+- id: jennifer-wadella
+  name: Jennifer Wadella
+  title: JavaScript Developer @ Bitovi
+  image: jennifer-wadella.jpg
+  biography: >
+    Jennifer Wadella has been writing code since before she realized it was a credible career path. She currently works as a JavaScript Developer at Bitovi and loves building performant web applications, speaking at technical conferences, and brewing kombucha. Jennifer is an active member of the KC tech community and the founder of Kansas City Women in Technology(KCWiT), an organization aimed at growing the number of women in technology careers in Kansas City. She is the PubConf Sydney 2018 Champion, a Silicon Prairie Champion Award Nominee, Rising Trendsetter STEMMy award-winner, and is apparently Missouri's Coolest Woman according to Pure Wow.
+  role: Speaker
+  profiles:
+    twitter: likeOMGitsFEDAY
+    github: 
+    website: https://jenniferwadella.com

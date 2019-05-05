@@ -125,3 +125,11 @@
     - martin-splitt
   datetime: 2019-08-31 16:00:00 +0100
   location: Main Stage
+- title: Handling Angular Forms Without Losing Your Sanity
+  description: >
+    "Why’d you have to go and make things so complicated?" - Avril Lavigne, implementing Angular forms in 2019  
+      
+    Forms are such a basic part of web applications; how did they get so complicated? This talk will walk through Angular template driven vs. reactive forms and use cases for their implementation, basic & more complex form-validation, custom component implementations like typeahead and date-pickers, and finally use of the little-known Control Value Accessor interface to solve almost any form problem. This talk will also include some useful workarounds for those more complex PITA requirements that always seem to pop up in projects.
+  speakers:
+    - jennifer-wadella
+  type: talk
