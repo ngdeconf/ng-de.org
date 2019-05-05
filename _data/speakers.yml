@@ -188,3 +188,15 @@
     twitter: danguilherme
     github: danguilherme
     website: https://danguilherme.github.io/en/
+- id: hernan-magrini
+  name: Hernán Magrini
+  title: Engineering Manager @ Klarna
+  image: hernan-magrini.jpg
+  biography: >
+    Hernán is an Engineering Manager at Klarna and a self-taught Software Engineer, who believes in lifelong learning and helping others learn new things everyday.  
+    Originally from Argentina, he co-founded and led the local Google Developers Group where he organized and spoke at several conferences, focusing on his favourite topics: performance, usability, and team/project scalability.
+  role: Speaker
+  profiles:
+    twitter: HerMagrini
+    github: hmagrini
+    website:

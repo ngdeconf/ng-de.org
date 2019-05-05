@@ -164,4 +164,11 @@
   speakers:
     - guilherme-ventura
   type: talk
-    
+- title: Scaling apps in two weeks with Angular
+  description: >
+    Application scalability is a two sided coin: it has to scale with both your user-base and your team size. But when you need to start a project, you don't know how big will it become -- it could go from “small” all the way to “Google-sized”. With so many variables to consider, how do you evaluate if Angular is the right solution? What challenges will you face along the way as your team and project grow?  
+      
+    This is the tale of how we went from nothing to a worldwide distributed platform, to a team 10 times bigger, from low traffic to 2M visits per day, and all the challenges we faced. And most important of all: how we set the whole thing up in 14 days.
+  speakers:
+    - hernan-magrini
+  type: talk
