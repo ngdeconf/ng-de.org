@@ -1,10 +1,9 @@
 ---
 layout: section
-title: NG-Girls - NG-DE 2019 - Angular Conference - 2019 in Berlin
+title: Angular solid foundations workshop with Gregor Woiwode - NG-DE 2019 in Berlin
 description: >
-  NG-DE is a non-profit conference organised for the community, by the community.
-  We create an open, diverse and welcoming conference with fantastic speakers and a warm and friendly environment. 
-workshop_id: ng-girls
+  With Gregor Woiwode you learn about the basic building blocks of Angular and how to use them the right way while you develop you own application. 
+workshop_id: angular-solid-foundations
 ---
 
 {% include workshop.html workshop_id=page.workshop_id %}

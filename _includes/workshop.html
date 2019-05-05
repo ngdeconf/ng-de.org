@@ -1,7 +1,16 @@
-{% assign workshop = site.data.sessions | where: "id", include.workshop_id | first %}
+{% assign workshop = site.data.sessions | where: 'id', include.workshop_id | first %}
 
+<div class="workshop gradient-box">
+    <div class="workshop__logo_container">
+        <img
+        class="workshop__logo lazy"
+        src="/assets/placeholder-image.svg"
+        data-src="/assets/workshops/{{ workshop.logo }}"
+        data-srcset="/assets/workshops/{{ workshop.logo }}"
+        alt="{{ workshop.title }}"
+        title="{{ workshop.title }}">
+    </div>
 
-<div class="workshop">
     <h3 class="workshop__title">{{ workshop.title }}</h3>
   
   <!-- jekyll needs this identation for markdown -->
@@ -12,7 +21,7 @@
     <div class="workshop__details">
       <div class="workshop__trainer">
         {% for trainer in workshop.speakers %}
-        {% include speaker-thumb-small.html speaker_id=trainer layout="light" %}
+        {% include speaker-thumb.html speaker_id=trainer layout="light" %}
         {% endfor %}
       </div>
       <div class="workshop__order order">

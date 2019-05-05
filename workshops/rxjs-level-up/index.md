@@ -1,9 +1,8 @@
 ---
 layout: section
-title: Dominic Elm - NG-DE 2019 - Angular Conference - 2019 in Berlin
+title: RxJS Level UP - Essentials in reactive programming Workshop -  NG-DE 2019 in Berlin
 description: >
-  NG-DE is a non-profit conference organised for the community, by the community.
-  We create an open, diverse and welcoming conference with fantastic speakers and a warm and friendly environment. 
+  In this workshop with Jan-Niklas Wortmann and Michael Hladky, you will get an overview of this library. We will learn about the concept, approach and implementation of RxJS!  
 workshop_id: rxjs-level-up
 ---
 

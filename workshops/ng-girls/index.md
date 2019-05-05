@@ -1,9 +1,8 @@
 ---
 layout: section
-title: NG-Girls - NG-DE 2019 - Angular Conference - 2019 in Berlin
+title: NG-Girls Workshop with Martina Kraus - NG-DE 2019 Angular Conference in Berlin
 description: >
-  NG-DE is a non-profit conference organised for the community, by the community.
-  We create an open, diverse and welcoming conference with fantastic speakers and a warm and friendly environment. 
+  ngGirls aims to introduce women to the world of technology and increase the diversity. Angular is a great technology to start with. We believe this is a win-win situation! 
 workshop_id: ng-girls
 ---
 
