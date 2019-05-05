@@ -17,8 +17,8 @@ links:
   - name: Team
     url: /team/
     navigation: true
-  - name: CFP
-    url: /call-for-papers/
+#  - name: CFP
+#    url: /call-for-papers/
     navigation: true
   - name: CoC
     url: /code-of-conduct/
