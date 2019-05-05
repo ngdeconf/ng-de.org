@@ -1,4 +1,41 @@
-- title: Workshop Day
+- title: Workshops
   datetime: 2019-08-29 09:00:00 +0100
-  timetable:
-    - id: rxjs-level-up---essentials-in-reative-programming
+  entries:
+    - title: Breakfast
+      datetime: 2019-08-29 09:00:00 +0100
+      information: ""
+      location: Hotel ABION Spreebogen
+    - title: Workshop 1
+      datetime: 2019-08-29 10:00:00 +0100
+      information: ""
+      location: Room A
+      session: null
+
+- title: Friday
+  datetime: 2019-08-30 09:00:00 +0100
+  entries:
+    - title: Open Doors
+      datetime: 2019-08-30 08:30:00 +0100
+      information: ""
+      location: BOLLE FESTSÄLE ∙ Alt-Moabit 98, 10559 Berlin
+      session: null
+    - title: Breakfast
+      datetime: 2019-08-30 09:00:00 +0100
+      information: ""
+      location: FESTSAAL
+      session: null
+    - title: Warm Welcome
+      datetime: 2019-08-30 09:40:00 +0100
+      information: >
+        [NG-DE Team](/team)
+      location: Main Stage
+      session: null
+    - title: Draft - Opening Keynote
+      datetime: 2019-08-30 10:00:00 +0100
+      information: ""
+      location: Main Stage
+      session: opening-keynote
+
+- title: Saturday
+  datetime: 2019-08-29 09:00:00 +0100
+  entries:

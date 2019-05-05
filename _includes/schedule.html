@@ -1,3 +1,88 @@
+{% assign schedule = site.data.schedule %}
+{% assign sessions = site.data.sessions %}
+{% assign speakers = site.data.speakers %}
+
+<div class="day-picker">
+{% for day in schedule %}
+  <div class="day-picker__item" role="button" data-day-datetime="{{ day.datetime }}">
+    {{ day.title }}<br />
+    <small>{{ day.datetime | date: "%d. %B" }}</small>
+  </div>
+{% endfor %}
+</div>
+
+<div class="schedule">
+{% for day in schedule %}
+  {% assign entries = day.entries %}
+  {% for entry in entries %}
+
+    {% if entry.session %}
+      {% assign session = sessions | where: "id", entry.session | first %}
+    {% else %}
+      {% assign session = null %}
+    {% endif %}
+
+    <div class="schedule-item" data-entry-datetime="{{ entry.datetime }}">
+      <time class="schedule-item__time" datetime="{{ entry.datetime }}">
+        {{ entry.datetime | date: "%H:%M" }}
+      </time>
+      <h3 class="schedule-item__title">
+        {% if session.title %}
+          {{ session.title }}
+        {% else %}
+          {{ entry.title }}
+        {% endif %}
+      </h3>
+
+      {% if entry.information %}
+<!-- Jekyll needs this identation for markdown 🤷‍♂️ -->
+<div class="schedule-item__information" markdown="1">
+{{ entry.information }}
+</div>
+      {% endif %}
+
+      {% if session %}
+      <div class="schedule-item__speakers">
+        {% assign speakerCount = session.speakers.size %}
+        {% assign currentCount = 0 %}
+        {% for speaker_id in session.speakers %}
+
+          {%  assign currentCount = currentCount | plus: 1 %}
+          {% assign speaker = speakers | where: "id", speaker_id | first %}
+        
+          <a href="/speaker/{{ speaker.id }}">{{ speaker.name }}</a>
+          {% if currentCount < speakerCount %}
+          & 
+          {% endif %}
+
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <div class="schedule-item__location">{{ entry.location }}</div>
+    </div>
+  {% endfor %}
+{% endfor %}
+</div>
+
+<script>
+(function (){
+
+  const days = Array.from(document.querySelectorAll('[data-day-datetime]'));
+  const entries = Array.from(document.querySelectorAll('[data-entry-datetime]'));
+
+  let selectedDate = new Date();
+
+  
+  
+
+}());
+</script>
+
+<!--
+
+<hr />
+
 <div class="day-picker">
   <div class="day-picker__item" role="button">
     Workshops<br />
@@ -126,3 +211,4 @@
     <div class="schedule-item__location">FESTSAAL</div>
   </div>
 </div>
+-->
