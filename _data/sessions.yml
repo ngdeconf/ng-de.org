@@ -90,7 +90,7 @@
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
 - id: ng-girls
-  title:  ngGirls - Free Workshop for woman
+  title:  ngGirls - Free Workshop for women
   logo: ng-girls.png
   description: >
     ngGirls aims to introduce women to the world of technology and increase diversity.
@@ -98,7 +98,7 @@
     We believe this is a win-win situation!
     We plan various events and activities in which the participants build and deploy a web application with Angular.
     We offer guidance to help finding a job in front end development.
-    If you're a committed, motivated woman who wants to step into the Web Development world - your place is with us!  
+    If you're a committed, motivated women who wants to step into the Web Development world - your place is with us!  
       
     **Please note:** ngGirls is a free side event and not hosted by NG-DE itself. Please refer to [http://ng-girls.org/ng-de-2019/](http://ng-girls.org/ng-de-2019/){:target="_blank"} to register for the workshop.
   type: workshop
