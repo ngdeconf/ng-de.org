@@ -26,6 +26,16 @@
     }
   }
 
+  &__logo-container {
+    text-align: center;
+    padding: 25px;
+  }
+
+  &__logo {
+    width: 100px;
+    height: 100px;
+  }
+
   &__title {
     margin: 0;
     text-align: center;
@@ -58,17 +68,6 @@
       padding: .15rem .8rem;
     }
 
-  }
-
-  &__logo-container {
-    text-align: center;
-    padding: 25px;
-  }
-
-  &__logo {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
   }
 
   @media screen and (max-width: $screen-xsmall) {
