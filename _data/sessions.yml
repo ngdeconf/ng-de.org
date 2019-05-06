@@ -222,4 +222,23 @@
     - ryan-chenkie
     - brad-mcallister
   type: talk
-  
+- title: Performance for the long haul
+  description: >
+    You've heard all the rules—compress the images, minify the JavaScript, avoid repaints, only animate certain properties. They are good rules. Follow them and you will improve performance. Congrats! But what to do next? How do you know what's still left to learn? How do you identify the biggest performance bottlenecks—diagnose, and fix them? How can you bring your team along for the journey?  
+      
+    Performance for the long haul is a talk designed just for you. Together, we'll learn how to pinpoint *any* performance issue and implement a company-wide, effective performance strategy.  
+      
+    Things you'll learn:  
+      
+    - How to conduct a performance audit, form a hypothesis, then action it
+
+    - What real user conditions are, how to discover them for your users, how to test them
+
+    - How to use the extremely complicated performance tab of Chrome devtools with ease 
+    
+    - How to build and implement a long lasting performance system that works at your company 
+      
+    Come and learn how to create a long-lasting approach, not a temporary bandaid.
+  speakers:
+    - ben-schwarz
+  type: talk

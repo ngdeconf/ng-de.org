@@ -310,5 +310,13 @@
     twitter: sonicparke
     github: sonicparke
     website: 
-
-
+- id: ben-schwarz
+  name: Ben Schwarz
+  title: Founder of Calibre
+  image: ben-schwarz.jpg
+  biography: >
+  role: Speaker
+  profiles:
+    twitter: benschwarz
+    github:
+    website: calibreapp.com
