@@ -275,3 +275,14 @@
     twitter: AngularGirls
     github:
     website: https://ng-girls.org
+- id: kamil-mysliwiec
+  name: Kamil Mysliwiec
+  title: Co-Founder of Trilon.io | Creator of NestJS
+  image: kamil-mysliwiec.png
+  biography: >
+    Kamil Mysliwiec is an enthusiastic software engineer truly passionate about the web technologies. Creator of NestJS, Co-Founder of Trilon.io, international speaker, trainer, open source contributor mainly focused on the web-related things.
+  role: Speaker
+  profiles:
+    twitter: https://twitter.com/kammysliwiec
+    github: https://github.com/kamilmysliwiec
+    website: https://kamilmysliwiec.com/

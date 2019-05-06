@@ -209,3 +209,9 @@
   speakers:
     - martina-kraus
   type: talk
+- title: "Demystifying Dependency Injection: Angular vs Nest"
+  description: >
+    Dependency Injection framework is a core and inherent feature of both Nest and Angular. DI simplifies creating scalable, testable, and maintainable applications by giving us flexible and efficient abstractions. However, did we ever think how this mechanism works underneath? In this talk, we’ll compare how Nest and Angular DI systems differ from each other as well as dive into the basics of the metadata reflection API in TypeScript.
+  speakers:
+    - kamil-mysliwiec
+  type: talk
