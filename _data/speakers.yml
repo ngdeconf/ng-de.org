@@ -283,6 +283,32 @@
     Kamil Mysliwiec is an enthusiastic software engineer truly passionate about the web technologies. Creator of NestJS, Co-Founder of Trilon.io, international speaker, trainer, open source contributor mainly focused on the web-related things.
   role: Speaker
   profiles:
-    twitter: https://twitter.com/kammysliwiec
-    github: https://github.com/kamilmysliwiec
+    twitter: kammysliwiec
+    github: kamilmysliwiec
     website: https://kamilmysliwiec.com/
+- id: ryan-chenkie
+  name: Ryan Chenkie
+  title: Developer / Trainer
+  image: ryan-chenkie.jpeg
+  biography: >
+    Ryan is a full-stack JavaScript developer, trainer, and Google Developer Expert. While he dabbles with a lot of technologies, his go-to for every serious project is his first love: Angular. He’s also extremely excited about GraphQL and the promise it brings to reshape how we think about and build APIs, all while making developers happier and more productive.  
+      
+    Ryan teaches at Angularcasts and Front End Masters, builds apps for companies as a consultant, and contributes to open source with libraries such as angular2-jwt. Formerly at Auth0, he’s a fanatic about application security and has written a book on the topic called ‘Securing Angular Applications’.
+  role: Speaker
+  profiles:
+    twitter: ryanchenkie
+    github: chenkie
+    website: https://ryanchenkie.com
+- id: brad-mcallister
+  name: Brad McAllister
+  title: Software Engineering Lead
+  image: brad-mcallister.png
+  biography: >
+    Brad is currently a Software Engineering Lead at Sapphire Digital. In a past life, he was a systems administrator for 12 years but made the leap into development and regrets NOTHING. Today he finds himself focusing almost 100% on Angular and loves it but secretly dreams about being a full stack dev when he grows up. 
+  role: Speaker
+  profiles:
+    twitter: sonicparke
+    github: sonicparke
+    website: 
+
+
