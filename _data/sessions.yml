@@ -91,7 +91,7 @@
   location: Hotel ABION
 - id: ng-girls
   title:  ngGirls - Free Workshop For Women
-  logo: ng-girls.png
+  logo: ng-girls.svg
   description: >
     ngGirls aims to introduce women to the world of technology and increase diversity.
     Angular is a great technology to start with.
@@ -103,7 +103,7 @@
     **Please note:** ngGirls is a free side event and not hosted by NG-DE itself. Please refer to [http://ng-girls.org/ng-de-2019/](http://ng-girls.org/ng-de-2019/){:target="_blank"} to register for the workshop.
   type: workshop
   speakers:
-    - martina-kraus
+    - ng-girls
   tito:
     price_net: 0
     url: http://ng-girls.org/ng-de-2019/

@@ -260,3 +260,18 @@
     twitter: fabian_friedl
     github:
     website: 
+- id: ng-girls
+  name: ngGirls
+  title: aims to introduce women to the world of technology
+  image: ng-girls.png
+  biography: >
+    Are you a woman interested in learning how to build web applications with the latest technologies? We have good news for you: We are planning various events around the world for beginners!  
+      
+    We believe that the IT industry will greatly benefit from bringing more women into technology. We want to give you an opportunity to learn how to program and become a programmer.  
+      
+    On November 13th, 2016, we held our first event: a one-day workshop, in which selected participants built and deployed their very first Angular Web Application! The participants worked in small groups with the guidance of dedicated mentors.
+  role: Partner
+  profiles:
+    twitter: AngularGirls
+    github:
+    website: https://ng-girls.org
