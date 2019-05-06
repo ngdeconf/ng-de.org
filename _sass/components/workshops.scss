@@ -1,6 +1,11 @@
 .workshop {
   $b: &;
 
+  color: map-get($colors, dark);
+  background: map-get($colors, light);
+  padding: 1rem;
+  margin-bottom: 4rem;
+
   &.gradient-box {
     position: relative;
     box-sizing: border-box;
@@ -17,14 +22,9 @@
       z-index: -1;
       margin: -$border; /* !importanté */
       border-radius: inherit; /* !importanté */
-      background: linear-gradient(to right, #E74418, #E67D21);
+      background: linear-gradient(to right, map-get($colors, primary), map-get($colors, secondary));
     }
   }
-
-  color: map-get($colors, dark);
-  background: map-get($colors, light);
-  padding: 1rem;
-  margin-bottom: 4rem;
 
   &__title {
     margin: 0;
