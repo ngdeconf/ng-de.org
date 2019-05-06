@@ -4,7 +4,7 @@
 
   {% for workshop in workshops %}
   <div class="row__col">
-    <div class="workshop gradient-box">
+    <div class="workshop workshop--preview gradient-box">
       <div class="workshop__logo-container">
           <img
           class="workshop__logo lazy"
@@ -17,7 +17,7 @@
       <h3 class="workshop__title">
           {{ workshop.title }}
       </h3>
-      <div class="workshop__details">
+      <div class="workshop__trainer-container">
           {% for trainer in workshop.speakers %}
           <div class="workshop__trainer">
             {% include speaker-thumb.html speaker_id=trainer layout="light" %}
