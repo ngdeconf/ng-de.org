@@ -42,16 +42,17 @@
   profiles:
     twitter: psybercity
     github: mandarini
-- id: david-muellerchen
-  name: David Müllerchen
-  title: Trainer at Angular.DE
-  image: david-muellerchen.jpg
+- id: kamil-mysliwiec
+  name: Kamil Mysliwiec
+  title: Co-Founder of Trilon.io | Creator of NestJS
+  image: kamil-mysliwiec.png
   biography: >
-    David is an Angular consultant who offers support for your Angular applications and projects. He's also part of the Angular.DE team. We adapt Angular to your teams needs to find the perfect fit, and get the most out of Angular’s platform. For individual developers or small groups we offer monthly workshops in Berlin, Munich, Hamburg and Essen.
-  role: Trainer
+    Kamil Mysliwiec is an enthusiastic software engineer truly passionate about the web technologies. Creator of NestJS, Co-Founder of Trilon.io, international speaker, trainer, open source contributor mainly focused on the web-related things.
+  role: Speaker
   profiles:
-    twitter: webdave_de
-    github: webdave1
+    twitter: kammysliwiec
+    github: kamilmysliwiec
+    website: https://kamilmysliwiec.com/
 - id: dominic-elm
   name: Dominic Elm
   title: Trainer at thoughtram & Engineer at Stackblitz
@@ -98,6 +99,93 @@
   profiles:
     twitter: ManfredSteyer
     github: manfredsteyer
+- id: michael-hladky
+  name: Michael Hladky
+  title: Google Developer Expert
+  image: michael-hladky.jpg
+  biography: >
+    Michael is Expert for SPA with a focus on Angular. 
+    Also he is organizer of the Angular Meetup in Vienna.
+  role: Trainer
+  profiles:
+    twitter: michael_hladky
+    github: BioPhoton
+- id: martina-kraus
+  name: Martina Kraus
+  title: Web-Engineer
+  image: martina-kraus.jpg
+  biography: >
+    Martina Kraus always had always a strong interest in Web-Engineering.
+    As a freelancer she focuses on implementing highly scalable software-solution with Node.Js and Angular.
+    Besides her work as a lecturer at the Hochschule Mannheim, she is also the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg Usergroup.
+  role: Speaker
+  profiles:
+    twitter: MartinaKraus11
+    github: martinakraus
+- id: jennifer-wadella
+  name: Jennifer Wadella
+  title: JavaScript Developer @ Bitovi
+  image: jennifer-wadella.jpg
+  biography: >
+    Jennifer Wadella has been writing code since before she realized it was a credible career path. She currently works as a JavaScript Developer at Bitovi and loves building performant web applications, speaking at technical conferences, and brewing kombucha. Jennifer is an active member of the KC tech community and the founder of Kansas City Women in Technology(KCWiT), an organization aimed at growing the number of women in technology careers in Kansas City. She is the PubConf Sydney 2018 Champion, a Silicon Prairie Champion Award Nominee, Rising Trendsetter STEMMy award-winner, and is apparently Missouri's Coolest Woman according to Pure Wow.
+  role: Speaker
+  profiles:
+    twitter: likeOMGitsFEDAY
+    github: 
+    website: https://jenniferwadella.com
+- id: vitalii-bobrov
+  name: Vitalii Bobrov
+  title: Lead Software Engineer @ EPAM Systems
+  image: vitalii-bobrov.jpg
+  biography: >
+    Vitalii is a Lead JavaScript Engineer with more than six years of professional experience. He is co-organizer of Angular Wroclaw meetup. Vitalii is keeping up-to-date with the latest Web Platform features and doing great experiments with it. This guy is not just a nerd, but tech speaker, ngGirls mentor, and the father of the excellent little girl. 
+  role: Speaker
+  profiles:
+    twitter: https://twitter.com/bobrov1989
+    github: https://github.com/vitaliy-bobrov
+    website: http://bobrov.dev
+- id: kim-maida
+  name: Kim Maida
+  title: Manager, Community & Technical Content
+  image: kim-maida.jpg
+  biography: >
+    Kim is an Angular consultant and Google Developer Expert, working as the Manager of Community & Technical Content for Auth0. She's passionate about identity, authentication, constant learning, and the Angular community. She loves learning from and sharing with other developers. She organizes the Angular Ann Arbor meetup, enjoys running Angular authentication workshops, and mentors engineers whenever possible.
+  role: Speaker
+  profiles:
+    twitter: KimMaida
+    github: kmaida
+    website: https://maida.kim
+- id: david-muellerchen
+  name: David Müllerchen
+  title: Trainer at Angular.DE
+  image: david-muellerchen.jpg
+  biography: >
+    David is an Angular consultant who offers support for your Angular applications and projects. He's also part of the Angular.DE team. We adapt Angular to your teams needs to find the perfect fit, and get the most out of Angular’s platform. For individual developers or small groups we offer monthly workshops in Berlin, Munich, Hamburg and Essen.
+  role: Trainer
+  profiles:
+    twitter: webdave_de
+    github: webdave1
+- id: amadou-sall
+  name: Amadou Sall
+  title: Frontend Software Engineer @ Air France-KLM
+  image: amadou-sall.jpg
+  biography: >
+    Amadou Sall is a Frontend Software Engineer from Senegal 🇸🇳 based in Toulouse, France 🇫🇷. He's passionate about web, and mobile technologies, and currently specializes in Angular. Amadou works for Air France-KLM where he helps developers build better Angular applications. He regularly speaks, presents, and writes about Angular and its ecosystem. You can find his blog at www.amadousall.com, and follow him on Twitter at @ahasall.
+  role: Speaker
+  profiles:
+    twitter: ahasall
+    github: ahasall
+    website: https://www.amadousall.com
+- id: ben-schwarz
+  name: Ben Schwarz
+  title: Founder of Calibre
+  image: ben-schwarz.jpg
+  biography: >
+  role: Speaker
+  profiles:
+    twitter: benschwarz
+    github:
+    website: https://calibreapp.com
 - id: gregor-woiwode
   name: Gregor Woiwode
   title: CTO of co-IT.eu
@@ -110,44 +198,125 @@
   profiles:
     twitter: GregOnNet
     github: GregOnNet
-- id: michael-hladky
-  name: Michael Hladky
-  title: Google Developer Expert
-  image: michael-hladky.jpg
+- id: guilherme-ventura
+  name: Guilherme Ventura
+  title: Full Stack JavaScript Engineer at Matterway
+  image: guilherme-ventura.jpg
   biography: >
-    Michael is Expert for SPA with a focus on Angular. 
-    Also he is organizer of the Angular Meetup in Vienna.
-  role: Trainer
+    Guilherme is a JavaScript developer who loves how his work can positively impact people's lives, one way or another. Working in front-end development, he is always looking to improve user experience, while using the best tools and better ways to deal with data.
+  role: Speaker
   profiles:
-    twitter: michael_hladky
-    github: BioPhoton
+    twitter: danguilherme
+    github: danguilherme
+    website: https://danguilherme.github.io/en/
+- id: hernan-magrini
+  name: Hernán Magrini
+  title: Engineering Manager @ Klarna
+  image: hernan-magrini.jpg
+  biography: >
+    Hernán is an Engineering Manager at Klarna and a self-taught Software Engineer, who believes in lifelong learning and helping others learn new things everyday.  
+    Originally from Argentina, he co-founded and led the local Google Developers Group where he organized and spoke at several conferences, focusing on his favourite topics: performance, usability, and team/project scalability.
+  role: Speaker
+  profiles:
+    twitter: HerMagrini
+    github: hmagrini
+    website:
+- id: sebastian-witalec
+  name: Sebastian Witalec
+  title: Senior Developer Advocate 🥑
+  image: sebastian-witalec.png
+  biography: >
+    Sebastian Witalec is a Senior Developer Advocate for Progress who specialises in Angular and NativeScript. He loves working on both serious and fun projects and one day he will use his robot army to conquer the world.  
+      
+    He is always happy to learn about the new stuff and to pass the knowledge as far as his voice (or the wire) can take him. Sebastian is based in London actively working with various Dev communities in Europe. When not acting techie he is a massive football fan/player (probably bigger at heart than skills).
+  role: Speaker
+  profiles:
+    twitter: sebawita
+    github: 
+    website: https://www.nativescript.org
+- id: dmitry-vinnik
+  name: Dmitry Vinnik
+  title: Lead Software Engineer @ Salesforce
+  image: dmitry-vinnik.jpg
+  biography: >
+    Dmitry Vinnik is a Lead Software Engineer at Salesforce and has been passionate about Software Quality since the very beginning of his career.
+    He started out as a Quality Engineer, and was able to bring test expertise into his current Software Engineering role to ensure delivery of a high quality product.
+    Dmitry is also a Scrum Master focused on making his team more efficient and productive. 
+    His background involves studying medicine and bioinformatics in addition to software and quality engineering.
+  role: Speaker
+  profiles:
+    twitter: DmitryVinnik
+    github: dmitryvinn
+    website: https://dvinnik.com
+- id: craig-spence
+  name: Craig Spence
+  title: Senior Software Engineer @ Spotify
+  image: craig-spence.jpg
+  biography: >
+    Craig is a Software Engineer from New Zealand, working at Spotify in Stockholm. He loves building cool things that help teams build cool things! He also loves punk rock, Disney's Frozen, and his cat Cosy.
+  role: Speaker
+  profiles:
+    twitter: phenomnominal
+    github: phenomnomnominal
+    website: 
+- id: thomas-pink
+  name: Thomas Pink
+  title: Senior Software Engineer @ Dynatrace
+  image: thomas-pink.jpg
+  biography: >
+    As a software engineer at Dynatrace, Thomas Pink works on a company wide angular component library used by more than 300 UI developers around the globe. He also spends a lot of time digging into the angular core and compiler, helps others as a volunteer firefighter and loves riding his motorbike on mountain roads.
+  role: Speaker
+  profiles:
+    twitter: thpnk
+    github: thomaspink
+    website: 
+- id: fabian-friedl
+  name: Fabian Friedl
+  title: Senior Software Engineer @ Dynatrace
+  image: fabian-friedl.jpg
+  biography: >
+    Fabian Friedl is a software engineer at Dynatrace and during the last 1.5 years has been working on the internal component library used across apps and continents. In his free time Fabian likes to climb the mountains surrounding Linz on his mountainbike.
+  role: Speaker
+  profiles:
+    twitter: fabian_friedl
+    github:
+    website: 
+- id: ryan-chenkie
+  name: Ryan Chenkie
+  title: Developer / Trainer
+  image: ryan-chenkie.jpeg
+  biography: >
+    Ryan is a full-stack JavaScript developer, trainer, and Google Developer Expert. While he dabbles with a lot of technologies, his go-to for every serious project is his first love: Angular. He’s also extremely excited about GraphQL and the promise it brings to reshape how we think about and build APIs, all while making developers happier and more productive.  
+      
+    Ryan teaches at Angularcasts and Front End Masters, builds apps for companies as a consultant, and contributes to open source with libraries such as angular2-jwt. Formerly at Auth0, he’s a fanatic about application security and has written a book on the topic called ‘Securing Angular Applications’.
+  role: Speaker
+  profiles:
+    twitter: ryanchenkie
+    github: chenkie
+    website: https://ryanchenkie.com
+- id: brad-mcallister
+  name: Brad McAllister
+  title: Software Engineering Lead
+  image: brad-mcallister.png
+  biography: >
+    Brad is currently a Software Engineering Lead at Sapphire Digital. In a past life, he was a systems administrator for 12 years but made the leap into development and regrets NOTHING. Today he finds himself focusing almost 100% on Angular and loves it but secretly dreams about being a full stack dev when he grows up. 
+  role: Speaker
+  profiles:
+    twitter: sonicparke
+    github: sonicparke
+    website: 
 - id: ng-girls
-  name: You?
-  title: Call for Mentors
-  # image: michael-hladky.jpg
-  role: Trainer
-- id: martina-kraus
-  name: Martina Kraus
-  title: Web-Engineer
-  image: martina-kraus.jpg
+  name: ngGirls
+  title: aims to introduce women to the world of technology
+  image: ng-girls.png
   biography: >
-    Martina Kraus always had always a strong interest in Web-Engineering.
-    As a freelancer she focuses on implementing highly scalable software-solution with Node.Js and Angular.
-    Besides her work as a lecturer at the Hochschule Mannheim, she is also the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg Usergroup.
-  role: Trainer
+    Are you a woman interested in learning how to build web applications with the latest technologies? We have good news for you: We are planning various events around the world for beginners!  
+      
+    We believe that the IT industry will greatly benefit from bringing more women into technology. We want to give you an opportunity to learn how to program and become a programmer.  
+      
+    On November 13th, 2016, we held our first event: a one-day workshop, in which selected participants built and deployed their very first Angular Web Application! The participants worked in small groups with the guidance of dedicated mentors.
+  role: Partner
   profiles:
-    twitter: MartinaKraus11
-    github: martinakraus
-# - id: robert-willemelis
-#   name: Robert Willemelis
-#   title: Frontend-Developer
-#   image: robert-willemelis.png
-#   biography: >
-#     Robert works as a Frontend-Developer for a big hosting service provider in Berlin.
-#     He is a core team member of ngGirls and passionate about Angular and about the software craftsmanship pattern.
-#     He likes to make people happy by being creative, producing new ideas, and bringing people together.
-#     Robert loves to travel around and attend conferences to get new inspiration for his daily work and for self-improvement.
-#   role: Trainer
-#   profiles:
-#     twitter: robertSPD
-#     github: willi84
+    twitter: AngularGirls
+    github:
+    website: https://ng-girls.org

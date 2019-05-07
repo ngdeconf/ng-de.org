@@ -90,8 +90,8 @@
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
 - id: ng-girls
-  title:  ngGirls - Free Workshop for women
-  logo: ng-girls.png
+  title:  ngGirls - Free Workshop For Women
+  logo: ng-girls.svg
   description: >
     ngGirls aims to introduce women to the world of technology and increase diversity.
     Angular is a great technology to start with.
@@ -103,7 +103,7 @@
     **Please note:** ngGirls is a free side event and not hosted by NG-DE itself. Please refer to [http://ng-girls.org/ng-de-2019/](http://ng-girls.org/ng-de-2019/){:target="_blank"} to register for the workshop.
   type: workshop
   speakers:
-    - martina-kraus
+    - ng-girls
   tito:
     price_net: 0
     url: http://ng-girls.org/ng-de-2019/
@@ -125,3 +125,120 @@
     - martin-splitt
   datetime: 2019-08-31 16:00:00 +0100
   location: Main Stage
+- title: Handling Angular Forms Without Losing Your Sanity
+  description: >
+    "Why’d you have to go and make things so complicated?" - Avril Lavigne, implementing Angular forms in 2019  
+      
+    Forms are such a basic part of web applications; how did they get so complicated? This talk will walk through Angular template driven vs. reactive forms and use cases for their implementation, basic & more complex form-validation, custom component implementations like typeahead and date-pickers, and finally use of the little-known Control Value Accessor interface to solve almost any form problem. This talk will also include some useful workarounds for those more complex PITA requirements that always seem to pop up in projects.
+  speakers:
+    - jennifer-wadella
+  type: talk
+- title: "No Apollo-gies: Making Apps Accessible"
+  description: >
+    Imagine an astronaut using your Angular application in space. Accessibility is about providing the best user experience that leads to software made with people in difficult situations in mind. Such difficulties might be temporal, permanent or caused by the environment... like Space.  
+      
+    I’ll prepare your app for use in the pitch black of space and brightest of sunlight. I’ll implement navigation with voice commands, use a keyboard and touch-screen with gloves. I will show you how to produce accessible software that is ready-to-use even on a spaceship.
+  speakers:
+    - vitalii-bobrov
+  type: talk
+- title: Subjecting State to Good Behavior
+  description: >
+    Apps of all sizes need to manage state, but not all apps need a state machine like NgRx. What if we can't afford the code cost and indirection? What if we don't want to decouple our business layer? There's more to Angular state management than just getters and setters or a global stream. Let's set up readable, uncomplicated state management using behavior subjects, observables, and immutability — all OnPush ready. In this talk, we'll explore scaling up state management in Angular from extremely simple to more robust, and come away with knowledge that will help us gain a better understanding of Angular, RxJS, and even third party state management libraries.
+  speakers:
+    - kim-maida
+  type: talk
+- title: Angular Material or Bootstrap? Stop asking the question!
+  description: >
+    Angular Material AND Bootstrap for your next Angular application? It doesn't make sense, does it? The first time I talked to my colleagues about combining the two, they laughed at me. But now, they love the approach because it works like a charm.  
+    In this session, we will see how we can leverage the best parts of both libraries to build beautiful, maintainable, and responsive Angular applications with very little CSS.
+  speakers:
+    - amadou-sall
+  type: talk
+- title: "Watch out: observers are here to stay"
+  description: >
+    The web is evolving, we got it. One of the clear consequences is the complexity of our web apps (formerly known as ‘websites’). The conciseness of functional programming and its fundamentals got our attention, but we knew we could do better. And now we have the Reactive programming model, a functional and declarative way of dealing with big amounts of data.  
+      
+    In the center of it we have Observables: objects responsible to keep your application alive, reacting to any mutation your data may have, through any period of time. We'll take a look on the concepts and also on the lib that implements it in Angular's core: RxJS. Using the provided operators, we have great power on our hands, doing anything imaginable in a concise, declarative and easy-to-maintain way.  
+      
+    Watch out: observables are here to stay!
+  speakers:
+    - guilherme-ventura
+  type: talk
+- title: Scaling apps in two weeks with Angular
+  description: >
+    Application scalability is a two sided coin: it has to scale with both your user-base and your team size. But when you need to start a project, you don't know how big will it become -- it could go from “small” all the way to “Google-sized”. With so many variables to consider, how do you evaluate if Angular is the right solution? What challenges will you face along the way as your team and project grow?  
+      
+    This is the tale of how we went from nothing to a worldwide distributed platform, to a team 10 times bigger, from low traffic to 2M visits per day, and all the challenges we faced. And most important of all: how we set the whole thing up in 14 days.
+  speakers:
+    - hernan-magrini
+  type: talk
+- title: "Add Native Mobile to Your Angular Projects: The Migration Story"
+  description: >
+    The Angular and NativeScript teams teamed up to create a new way to share your code between web and mobile apps with Angular and NativeScript. It allows you to easily share the business logic of your app, while providing you an intuitive way to separate the code that is different between the platforms.  
+      
+    The ability to share code between your Angular web app and Native mobile apps has never been easier (or more important). Who has the time to invest resources into separate apps for web, native iOS, and native Android?  
+      
+    In this talk you will learn how to take an existing Angular Web project and add NativeScript to it, by converting it to a code-sharing project. Then we will go through a few steps of converting individual components and modules into a code-sharing structure.
+  speakers:
+    - sebastian-witalec
+  type: talk
+- title: Stress Driven Development, and How to Avoid It
+  description: >
+    When was the last time you took a day off? How many times this week have you worked overtime? These questions are related to one thing we all experience on a daily basis - stress.  Employees who are trapped by their routine to ""deliver business value at all cost"", often forget to take care of themselves. Unfortunately, this work-related stress affects our loved ones too, because work-life balance that we all hear about, usually means work-life stress.  
+      
+    What if I were to say that it does not have to be this way? In this talk, we discuss ways how to relax and avoid ""Stress Driven Development."" We deep dive into common stressors, and draft a comprehensive guide to removing stress at work and in our personal lives.
+  speakers:
+    - dmitry-vinnik
+  type: talk
+- title: Do you want to build a build tool?
+  description: >
+    Tooling for code generation, transformation and interrogation has improved in leaps and bounds over the last few years! We now have things like Angular Schematics, Prettier and TSLint, that can manipulate code in powerful ways, speed up development, and provide insight into how our applications work. But how exactly do they work? This talk will be Code Tooling 101, and act as an introduction to Abstract Syntax Trees, and all the weird and wonderful things you can do with them. By the end of the talk, attendants should have an idea of how ASTs work, how they are used in code tooling, and how they can be used to manipulate and interrogate code at a structural level!
+  speakers:
+    - craig-spence
+  type: talk
+- title: It's "just" a string - Learnings from building a component library
+  description: >
+    Building a component library in Angular seems like an easy task, until hundreds of developers start actively using it! In this talk, we will show you how a team of four manages to produce components at scale. Accessible, reliable, stable. An overall nice developer experience for more than 300 UI developers. Join us and find out how we managed to tackle both technical as well as social challenges, and what we did to keep peak quality.
+  speakers:
+    - thomas-pink
+    - fabian-friedl
+  type: talk
+- title: "Angular’s new renderer Ivy: a deep into the heart of Angular"
+  description: >
+    This talk will introduce you into the core principles of the new renderer Ivy. You will learn about the component factories and injection, the locality principle, how to develop higher order components and many more. All these will be shown by examples. After the talk you will have a basic understanding of how to use the new renderer and all the new options for developing Angular applications.
+  speakers:
+    - martina-kraus
+  type: talk
+- title: "Demystifying Dependency Injection: Angular vs Nest"
+  description: >
+    Dependency Injection framework is a core and inherent feature of both Nest and Angular. DI simplifies creating scalable, testable, and maintainable applications by giving us flexible and efficient abstractions. However, did we ever think how this mechanism works underneath? In this talk, we’ll compare how Nest and Angular DI systems differ from each other as well as dive into the basics of the metadata reflection API in TypeScript.
+  speakers:
+    - kamil-mysliwiec
+  type: talk
+- title: What is this? Angular in my React?
+  description: >
+    Reusable components are a great idea. That is, until you find yourself working in a React app and you’re unable to reuse the great Angular components you’ve already built. Thankfully, there’s a way around this. If you need to support multiple frontend frameworks, you can harness the power of Angular Elements to do just that and build reusable shared components that will drop right in your app. In this talk, we’ll show you how you can manage components across different frontend frameworks and keep everyone happy.
+  speakers:
+    - ryan-chenkie
+    - brad-mcallister
+  type: talk
+- title: Performance for the long haul
+  description: >
+    You've heard all the rules—compress the images, minify the JavaScript, avoid repaints, only animate certain properties. They are good rules. Follow them and you will improve performance. Congrats! But what to do next? How do you know what's still left to learn? How do you identify the biggest performance bottlenecks—diagnose, and fix them? How can you bring your team along for the journey?  
+      
+    Performance for the long haul is a talk designed just for you. Together, we'll learn how to pinpoint *any* performance issue and implement a company-wide, effective performance strategy.  
+      
+    Things you'll learn:  
+      
+    - How to conduct a performance audit, form a hypothesis, then action it
+
+    - What real user conditions are, how to discover them for your users, how to test them
+
+    - How to use the extremely complicated performance tab of Chrome devtools with ease 
+    
+    - How to build and implement a long lasting performance system that works at your company 
+      
+    Come and learn how to create a long-lasting approach, not a temporary bandaid.
+  speakers:
+    - ben-schwarz
+  type: talk

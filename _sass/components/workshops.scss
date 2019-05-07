@@ -1,6 +1,11 @@
 .workshop {
   $b: &;
 
+  color: map-get($colors, dark);
+  background: map-get($colors, light);
+  padding: 25px;
+  margin-bottom: 4rem;
+
   &.gradient-box {
     position: relative;
     box-sizing: border-box;
@@ -17,67 +22,42 @@
       z-index: -1;
       margin: -$border; /* !importanté */
       border-radius: inherit; /* !importanté */
-      background: linear-gradient(to right, #E74418, #E67D21);
+      background: linear-gradient(to right, map-get($colors, primary), map-get($colors, secondary));
     }
   }
 
-  color: map-get($colors, dark);
-  background: map-get($colors, light);
-  padding: 1rem;
-  margin-bottom: 4rem;
+  &__logo-container {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  &__logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__trainer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 0 25px 0;
+  }
 
   &__title {
     margin: 0;
     text-align: center;
   }
 
-  &__description {
-    margin: 0;
-  }
-
-  &__details {
-    align-items: flex-end;
-    justify-content: space-between;
-  }
-
-  &__trainer {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    .angular-image {
-      width: 100px;
-      height: 100px;
-    }
-
-    .angular-image__badge {
-      font-size: 0.8rem;
-      padding: .15rem .8rem;
-    }
-
-  }
-
-  &__logo_container {
-    text-align: center;
-  }
-
-  &__logo {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-  }
-
-  @media screen and (max-width: $screen-xsmall) {
-    &__details {
+  &--preview {
+    #{$b}__trainer-container {
       flex-direction: column;
-      align-items: center;
     }
 
-    &__trainer {
-      margin: 25px 0;
+    #{$b}__trainer {
+      margin-bottom: 35px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
