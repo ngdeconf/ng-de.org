@@ -4,7 +4,7 @@
     {% for speaker in speakers %}
     <div class="row__col">
       <div class="speakers__speaker">
-        {% include speaker-thumb.html speaker_id=speaker.id %}
+        {% include speaker-thumb.html speaker_id=speaker.id showSessionTitle="true" %}
       </div>
     </div>
     {% endfor %}
