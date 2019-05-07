@@ -1,8 +1,8 @@
 ---
 layout: section
-title: Architectures for Enterprise Applications - Workshop with Manfred Steyer - NG-DE 2019 - Angular Conference - Berlin
+title: Angular PWA - Workshop with David Müllerchen - NG-DE 2019 - Angular Conference - Berlin
 description: >
-  NG-DE is a non-profit conference organised for the community, by the community. In this interactive seminar by Manfred Steyer you will develop a critical understanding for planning and implementing large enterprise applications with Angular.
+  In this workshop you'll learn how to install and configure @angular/pwa in your Application and how to use the awesome features of PWA.
 workshop_id: angular-pwa
 ---
 
