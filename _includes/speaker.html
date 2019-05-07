@@ -46,9 +46,20 @@
     <ul class="sessions-list">
       {% for session in sessions %}
         {% if session.type == "workshop" %}
-        <div class="row">
-          {% include _workshop-small.html workshop=session %}
-        </div>
+          <div class="sessions-list__gradient_box">
+              <a
+              href="/workshops/{{ session.id }}/"
+              title="{{ session.title }} Workshop"
+              aria-label="{{ session.title }} Workshop"
+            >
+            <li class="sessions-list__item">
+              <strong>
+                {{ session.title }}
+              </strong>
+              <span class="tag tag--small">{{ session.type }}</span>
+            </li>
+          </a>
+          </div>
         {% else %}
         <div class="sessions-list__gradient_box">
           <li class="sessions-list__item">
