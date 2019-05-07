@@ -1,0 +1,31 @@
+{% assign workshop = include.workshop %}
+
+<div class="row__col">
+    <div class="workshop workshop--preview gradient-box">
+      <div class="workshop__logo-container">
+          <img
+          class="workshop__logo lazy"
+          src="/assets/placeholder-image.svg"
+          data-src="/assets/workshops/{{ workshop.logo }}"
+          data-srcset="/assets/workshops/{{ workshop.logo }}"
+          alt="{{ workshop.title }}"
+          title="{{ workshop.title }}">
+      </div>
+      <h3 class="workshop__title">
+          {{ workshop.title }}
+      </h3>
+      <div class="workshop__trainer-container">
+          {% for trainer in workshop.speakers %}
+          <div class="workshop__trainer">
+            {% include speaker-thumb.html speaker_id=trainer layout="light" %}
+          </div>
+          {% endfor %}
+      </div>
+      <div class="workshop__order order">
+          <span class="order__price">{{ workshop.tito.price_net }} EUR + 19% VAT</span>
+          <a class="button button--compact order__button" href="/workshops/{{ workshop.id }}/">
+            <span class="button__scale">Read More</span>
+          </a>
+        </div>
+    </div>
+  </div>
