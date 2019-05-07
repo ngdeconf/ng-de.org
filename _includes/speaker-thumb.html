@@ -8,6 +8,8 @@
   {% assign speaker_url = '/speakers/' | append: speaker.id %}
   {% assign speaker_image = '/assets/speakers/' | append: speaker.image %}
 
+  {% assign session = site.data.sessions | where: 'speakers', include.speaker_id | first %}
+
   <div class="speaker-thumb">
     <div class="speaker-thumb__image">
       {% include angular-image.html
@@ -26,7 +28,11 @@
       {% endif %}
     </div>
     <div class="speaker-thumb__title">
-      {{ speaker.title }}
+      {% if include.showSessionTitle %}
+        {{ session.title }}
+      {% else %}
+        {{ speaker.title }}
+      {% endif %}
     </div>
   </div>
 
