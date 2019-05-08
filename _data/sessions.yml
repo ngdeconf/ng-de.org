@@ -220,7 +220,7 @@
     Reusable components are a great idea. That is, until you find yourself working in a React app and you’re unable to reuse the great Angular components you’ve already built. Thankfully, there’s a way around this. If you need to support multiple frontend frameworks, you can harness the power of Angular Elements to do just that and build reusable shared components that will drop right in your app. In this talk, we’ll show you how you can manage components across different frontend frameworks and keep everyone happy.
   speakers:
     - ryan-chenkie
-    - brad-mcallister
+    - brad-mcalister
   type: talk
 - title: Performance for the long haul
   description: >
