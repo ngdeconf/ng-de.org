@@ -31,7 +31,9 @@ bronze:
   - name: MA-Tea
     logo: ma-tea.svg
     url: https://www.ma-tea.de/
-
+  - name: jambit
+    logo: jambit.svg
+    url: https://jambit.com
 
 community:
   - name: Angular Berlin
