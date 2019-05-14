@@ -6,6 +6,6 @@ description: >
   We create an open, diverse and welcoming conference with fantastic speakers and a warm and friendly environment. 
 ---
 
-## Your Speakers & Trainers
+# Your Speakers & Trainers
 
 {% include speakers.html %}
