@@ -24,7 +24,7 @@
       {% if page.url contains speaker_url %}
         <h1>{{ speaker.name }}</h1>
       {% else %}
-        <a href="{{ speaker_url }}"
+        <a href="{{ speaker_url }}/"
           {% if include.target %}target="{{ include.target }}"{% endif %}>{{ speaker.name }}</a>
       {% endif %}
     </div>
