@@ -5,7 +5,8 @@
   {% assign twitter_url = 'https://twitter.com/' | append: speaker.profiles.twitter %}
   {% assign github_url = 'https://github.com/' | append: speaker.profiles.github %}
 
-  {% assign speaker_url = '/speakers/' | append: speaker.id %}
+  {% assign speaker_id_encoded = speaker.id | url_encode %}
+  {% assign speaker_url = '/speakers/' | append: speaker_id_encoded %}
   {% assign speaker_image = '/assets/speakers/' | append: speaker.image %}
 
   {% assign session = site.data.sessions | where: 'speakers', include.speaker_id | first %}

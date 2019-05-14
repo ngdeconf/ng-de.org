@@ -6,6 +6,6 @@ description: >
   We create an open, diverse and welcoming conference with fantastic speakers and a warm and friendly environment. 
 ---
 
-## Proudly organized by ...
+# Proudly organized by the NG-DE Team
 
 {% include team.html where="team" details="true" %}

@@ -6,7 +6,7 @@ description: >
   We want to create an open, diverse and welcoming conference with fantastic speakers and a warm and friendly environment. 
 ---
 
-## Workshops
+# Workshops
 
 All workshops will take place at the [hotel of our conference](/location) venue on 29. August 2019. 
 
