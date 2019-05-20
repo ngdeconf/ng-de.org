@@ -1,9 +1,5 @@
 {% assign workshops = site.data.sessions | where: "type", "workshop" %}
 
-<div class="row row--two">
-
-  {% for workshop in workshops %}
-    {% include _workshop-small.html %}
-  {% endfor %}
-
-</div>
+{% for workshop in workshops %}
+  {% include _workshop-small.html %}
+{% endfor %}

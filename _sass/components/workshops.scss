@@ -39,7 +39,11 @@
   &__trainer-container {
     display: flex;
     justify-content: space-around;
-    padding: 35px 0 25px 0;
+    padding: 35px 0;
+  }
+
+  &__trainer {
+    flex: 1;
   }
 
   &__title {
@@ -48,18 +52,23 @@
     font-size: calc(1rem + 1.6vw);
   }
 
-  &--preview {
-    #{$b}__trainer-container {
+  @media screen and (max-width: $screen-xsmall) {
+    &__trainer-container {
       flex-direction: column;
     }
 
     #{$b}__trainer {
+      flex: 1;
       margin-bottom: 35px;
 
       &:last-child {
         margin-bottom: 0;
       }
     }
+  }
+
+  &--preview {
+
   }
 }
 
