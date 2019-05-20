@@ -305,6 +305,17 @@
     twitter: sonicparke
     github: sonicparke
     website: 
+- id: markus-ende
+  name: Markus Ende
+  title: Freelance Trainer, IT Consultant & Software Developer
+  image: markus-ende.jpg
+  biography: >
+    Markus is a freelance software developer, IT consultant and trainer, currently doing mainly frontend stuff with Angular. He loves testing all the things and spreading the love for it. In his spare time he enjoys doing sports, acting and other nerd stuff, preferably with his wife and kids.
+  role: Trainer
+  profiles:
+    twitter: _der_markusende
+    github: Markus-Ende
+    website: https://markusende.de
 - id: ng-girls
   name: ngGirls
   title: aims to introduce women to the world of technology
