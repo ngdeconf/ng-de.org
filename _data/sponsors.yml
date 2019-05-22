@@ -35,6 +35,11 @@ bronze:
     logo: jambit.svg
     url: https://jambit.com
 
+travel: 
+  - name: Google
+    logo: google.svg
+    url: https://google.com/
+
 community:
   - name: Angular Berlin
     logo: angular-berlin.svg
@@ -77,6 +82,3 @@ partners:
   - name: angular.de
     logo: angular-de.svg
     url: https://angular.de
-  - name: workshops.de
-    logo: workshops-de.svg
-    url: https://workshops.de
