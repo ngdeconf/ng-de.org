@@ -1,4 +1,21 @@
 <div class="sponsors">
+  {% if site.data.sponsors.partners %}
+  <h3 class="sponsors__headline">Proudly presented by</h3>
+  <div class="sponsors__list">
+    {% for sponsor in site.data.sponsors.partners %}
+      <a class="sponsor sponsor--partner" href="{{ sponsor.url }}" rel="nofollow noreferrer" target="_blank">
+        <img
+          class="sponsor__logo lazy"
+          src="/assets/placeholder-image.svg"
+          data-src="/assets/sponsors/{{ sponsor.logo }}"
+          data-srcset="/assets/sponsors/{{ sponsor.logo }}"
+          alt="{{ sponsor.name }}"
+          title="{{ sponsor.name }}">
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+    
   {% if site.data.sponsors.main %}
   <h3 class="sponsors__headline">Main Sponsor</h3>
   <div class="sponsors__list">
@@ -84,11 +101,11 @@
   </div>
   {% endif %}
 
-  {% if site.data.sponsors.partners %}
-  <h3 class="sponsors__headline">Partners</h3>
+  {% if site.data.sponsors.travel %}
+  <h3 class="sponsors__headline">Travel Sponsors</h3>
   <div class="sponsors__list">
-    {% for sponsor in site.data.sponsors.partners %}
-      <a class="sponsor sponsor--partner" href="{{ sponsor.url }}" rel="nofollow noreferrer" target="_blank">
+    {% for sponsor in site.data.sponsors.travel %}
+      <a class="sponsor sponsor--travel" href="{{ sponsor.url }}" rel="nofollow noreferrer" target="_blank">
         <img
           class="sponsor__logo lazy"
           src="/assets/placeholder-image.svg"
