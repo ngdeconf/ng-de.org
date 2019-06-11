@@ -77,6 +77,9 @@ community:
   - name: Conference Buddy
     logo: confbuddy.png
     url: https://twitter.com/confbuddy
+  - name: Angular Leipzig
+    logo: angular-leipzig.png
+    url: https://www.meetup.com/Angular-Meetup-Leipzig/
 
 partners:
   - name: angular.de
