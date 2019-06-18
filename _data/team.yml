@@ -82,3 +82,13 @@
   team: true
   bio: >
     [David](https://twitter.com/webdave_de){:target="_blank"} is an Angular consultant who offers support for your Angular applications and projects. He's also part of the [Angular.DE](https://angular.de){:target="_blank"} team. We adapt Angular to your teams needs to find the perfect fit, and get the most out of Angular’s platform. For individual developers or small groups we offer monthly workshops in Berlin, Munich, Hamburg and Essen.
+- name: Martina
+  role: Organiser
+  twitter: "MartinaKraus11"
+  image: martina.jpg
+  organizer: true
+  judge: false
+  team: true
+  bio: >
+    [Martina](https://twitter.com/MartinaKraus11){:target="_blank"} always had always a strong interest in Web-Engineering. As a Software Developer of [inovex GmbH](https://www.inovex.de/de/) she focuses on implementing highly scalable software-solution with Node.JS and Angular. Besides her work as a lecturer at the Hochschule Mannheim, she is also the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg Usergroup.
+    
