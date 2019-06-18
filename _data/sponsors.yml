@@ -34,6 +34,9 @@ bronze:
   - name: jambit
     logo: jambit.svg
     url: https://jambit.com
+  - name: Bridging-IT
+    logo: bridging-it.svg
+    url: https://bridging-it.de
 
 travel: 
   - name: Google
