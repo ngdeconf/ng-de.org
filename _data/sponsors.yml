@@ -42,6 +42,10 @@ travel:
   - name: Google
     logo: google.svg
     url: https://google.com/
+  - name: Dynatrace
+    logo: dynatrace.svg
+    url: https://dynatrace.com/
+
 
 community:
   - name: Angular Berlin
