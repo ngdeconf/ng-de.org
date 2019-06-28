@@ -331,3 +331,14 @@
     twitter: AngularGirls
     github:
     website: https://ng-girls.org
+- id: tobias-struckmeier
+  name: Tobias Struckmeier
+  title: Senior Software Engineer @adessoAG
+  image: tobias-struckmeier.jpg
+  biography: >
+    Tobias feels comfortable either in the frontend and the backend.
+    He's not focused on a single framework so he likes to create things with NodeJS, PHP, Angular, React, TypeScript or even Vanilla JavaScript.
+    His strengths are to create effective and innovative solutions and be a friendly team player.
+  role: Trainer
+  profiles:
+    twitter: tobmaster
