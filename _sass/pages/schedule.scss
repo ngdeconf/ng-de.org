@@ -32,6 +32,10 @@
   padding: 1rem;
   margin-bottom: .5rem;
 
+  &--hidden {
+    display: none;
+  }
+
   &--past {
     opacity: .85;
   }
