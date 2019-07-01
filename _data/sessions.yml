@@ -112,8 +112,11 @@
   datetime: 2019-08-29 09:00:00 +0100
   location: Axel Springer Berlin
 - id: opening-keynote
-  title: Opening Keynote
-  description: 
+  title: Creating A More Sustainable Development Team with Angular and the PAMstack
+  description: >
+    In this talk we'll discuss the ideas around how to create an sustainable architecture for your team through the PAMstack, a new framework for creating inclusive development teams. We'll talk about some of the abstractions and tools that Angular has to enable the longevity and success of your teams to support junior developers, designers, project managers, and more. No application is too critical, complicated, or obscure to be able to achieve this. 
+      
+    We will also talk through how you can build a corresponding culture that allows inclusivity on your team, and why this is so critical to your business. We'll walk through processes you can incorporate, team roles, and how you can build a better template for the future.
   type: keynote
   speakers:
     - tracy-lee
@@ -121,8 +124,19 @@
   datetime: 2019-08-30 09:30:00 +0100
   location: Main Stage
 - id: closing-keynote
-  title: Closing Keynote
-  description: 
+  title: The Myth of the Brilliant Developer
+  description: >
+    "I walk into a large white room. It's a dance studio in midtown Manhattan. I'm wearing a sweatshirt, faded jeans, and Nike cross-trainers. The room is lined with eight-foot-high mirrors. There's a boom box in the corner. The floor is clean, virtually spotless if you don't count the thousands of skid marks and footprints left there by dancers rehearsing. Other than the mirrors, the boom box, the skid marks, and me, the room is empty.  
+      
+    To some people, this empty room symbolizes something profound, mysterious, and terrifying: the task of starting with nothing and working your way toward creating something whole and beautiful and satisfying.  
+      
+    Some people find this moment—the moment before creativity begins—so painful that they simply cannot deal with it. In its most extreme form, this terror totally paralyzes people.  
+      
+    The blank space can be humbling. But I've faced it my whole professional life. It's my job. It's also my calling. Bottom line: Filling this empty space constitutes my identity."
+      
+          Twyla Tharp in “The Creative Habit
+      
+    This talk stems from a personal question both Carmen and Martin share, but is deeply rooted in the work of dr. Carol S. Dweck and choreographer Twyla Tharp. Just as with their research and practices, our talk starts by questioning what “natural talent” really means or whether such a thing exists at all, and goes on to analyse how this belief manifests itself and can influence our careers as developers. By tackling this subject, our wish is to open up the discussion about our self-image as developers and about what we as a community can do to create a healthy and empowering environment for everyone.
   type: keynote
   speakers:
     - carmen-popoviciu
