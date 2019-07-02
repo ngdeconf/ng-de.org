@@ -1,32 +1,28 @@
 - title: Workshops
   datetime: 2019-08-29 09:00:00 +0000
   entries:
-    - title: Breakfast
-      datetime: 2019-08-29 09:00:00 +0000
-      information: ""
-      location: Hotel ABION Spreebogen
     - title: Workshop 1
-      datetime: 2019-08-29 10:00:00 +0000
+      datetime: 2019-08-29 09:00:00 +0000
       information: ""
       location: Room A
       session: angular-solid-foundations
     - title: Workshop 2
-      datetime: 2019-08-29 10:00:00 +0000
+      datetime: 2019-08-29 09:00:00 +0000
       information: ""
       location: Room B
       session: architectures-for-enterprise-applications
     - title: Workshop 3
-      datetime: 2019-08-29 10:00:00 +0000
+      datetime: 2019-08-29 09:00:00 +0000
       information: ""
       location: Room C
       session: rxjs-level-up
     - title: Workshop 4
-      datetime: 2019-08-29 10:00:00 +0000
+      datetime: 2019-08-29 09:00:00 +0000
       information: ""
       location: Room D
       session: angular-state-management
     - title: Workshop 5
-      datetime: 2019-08-29 10:00:00 +0000
+      datetime: 2019-08-29 09:00:00 +0000
       information: ""
       location: Room E
       session: angular-pwa
