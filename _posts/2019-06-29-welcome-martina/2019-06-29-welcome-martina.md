@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to the NG-DE Team Martina Kraus"
-date:   2019-06-28 14:58:59 +0200
+date:   2019-07-01 14:58:59 +0200
 categories: team
 description: "In this post we want to welcome Martina to our team and want explain the story how we got here ..."
 ---
