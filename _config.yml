@@ -26,6 +26,8 @@ ga_property: "UA-121643275-1"
 # Build settings
 markdown: kramdown
 
+permalink: /news/:slug/
+
 plugins:
 - jekyll-autoprefixer
 
@@ -71,3 +73,11 @@ front_img_path: "/imgs/daniel-brosch-594428-unsplash.jpg"
 favicon_img: yes
 favicon_img_path: "/assets/favicons/"
 #favicon_img_path: "https://external.url/favicon.ico"
+
+
+defaults:
+  - scope:
+      path: "_posts" # an empty string here means all files in the project
+    values:
+      layout: "post"
+      header_image: "header.jpg"

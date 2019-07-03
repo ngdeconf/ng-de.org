@@ -32,6 +32,8 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-autoprefixer (1.0.2)
       autoprefixer-rails (~> 9.3)
+    jekyll-postfiles (3.0.0)
+      jekyll (~> 3.6)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-watch (2.1.2)
@@ -64,6 +66,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8.3)
   jekyll-autoprefixer
+  jekyll-postfiles
 
 BUNDLED WITH
    1.17.1
