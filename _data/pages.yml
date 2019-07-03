@@ -5,21 +5,27 @@ links:
   - name: Speakers
     url: /speakers/
     navigation: true
+  - name: Schedule
+    url: /schedule/
+    navigation: true
   - name: Workshops
     url: /workshops/
     navigation: true
-#  - name: Schedule
-#    url: /schedule/
-#    navigation: true
   - name: Location
     url: /location/
+    navigation: true
+#  - name: CFP
+#    url: /call-for-papers/
+#    navigation: true
+
+
+second_links:
+  - name: News
+    url: /news/
     navigation: true
   - name: Team
     url: /team/
     navigation: true
-#  - name: CFP
-#    url: /call-for-papers/
-    navigation: true
-  - name: CoC
+  - name: Code of Conduct
     url: /code-of-conduct/
     navigation: true

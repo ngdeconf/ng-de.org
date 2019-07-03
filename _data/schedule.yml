@@ -1,0 +1,202 @@
+- title: Workshops
+  datetime: 2019-08-29 09:00:00 +0000
+  entries:
+    - title: Workshop 1
+      datetime: 2019-08-29 09:00:00 +0000
+      information: ""
+      location: Room A
+      session: angular-solid-foundations
+    - title: Workshop 2
+      datetime: 2019-08-29 09:00:00 +0000
+      information: ""
+      location: Room B
+      session: architectures-for-enterprise-applications
+    - title: Workshop 3
+      datetime: 2019-08-29 09:00:00 +0000
+      information: ""
+      location: Room C
+      session: rxjs-level-up
+    - title: Workshop 4
+      datetime: 2019-08-29 09:00:00 +0000
+      information: ""
+      location: Room D
+      session: angular-state-management
+    - title: Workshop 5
+      datetime: 2019-08-29 09:00:00 +0000
+      information: ""
+      location: Room E
+      session: angular-pwa
+
+- title: Friday
+  datetime: 2019-08-30 09:00:00 +0000
+  entries:
+    - title: Open Doors
+      datetime: 2019-08-30 08:30:00 +0000
+      information: ""
+      location: BOLLE FESTSÄLE ∙ Alt-Moabit 98, 10559 Berlin
+      session: null
+    - title: Breakfast
+      datetime: 2019-08-30 09:00:00 +0000
+      information: ""
+      location: FESTSAAL
+      session: null
+    - title: Warm Welcome
+      datetime: 2019-08-30 09:40:00 +0000
+      information: >
+        [NG-DE Team](/team)
+      location: Main Stage
+      session: null
+    - title: Draft - Opening Keynote
+      datetime: 2019-08-30 10:00:00 +0000
+      information: ""
+      location: Main Stage
+      session: opening-keynote
+    - title: Talk 1
+      datetime: 2019-08-30 10:30:00 +0000
+      information: ""
+      location: Main Stage
+      session: handling-angular-forms-without-losing-your-sanity
+    - title: Break
+      datetime: 2019-08-30 11:00:00 +0000
+      information: >
+        ☕️🍎
+      location: Sponsoring Hall & Catering Area
+      session: null
+    - title: Talk 2
+      datetime: 2019-08-30 11:45:00 +0000
+      information: ""
+      location: Main Stage
+      session: angulars-new-renderer-ivy-a-deep-into-the-heart-of-angular
+    - title: Talk 3
+      datetime: 2019-08-30 12:15:00 +0000
+      information: ""
+      location: Main Stage
+      session: subjejcting-state-to-good-behavior
+    - title: Lunch
+      datetime: 2019-08-30 12:45:00 +0000
+      information: >
+        🥙🥤
+      location: Sponsoring Hall & Catering Area
+      session: null
+    - title: Talk 4
+      datetime: 2019-08-30 14:15:00 +0000
+      information: ""
+      location: Main Stage
+      session: add-native-mobile-to-your-angular-projects-the-migration-story
+    - title: Talk 5
+      datetime: 2019-08-30 14:45:00 +0000
+      information: ""
+      location: Main Stage
+      session: watch-out-observers-are-here-to-stay
+    - title: Talk 6
+      datetime: 2019-08-30 15:15:00 +0000
+      information: ""
+      location: Main Stage
+      session: scaling-apps-in-two-weeks-with-angular
+    - title: Break
+      datetime: 2019-08-30 15:45:00 +0000
+      information: >
+        ☕️🍰
+      location: Sponsoring Hall & Catering Area
+      session: null
+    - title: Talk 7
+      datetime: 2019-08-30 16:30:00 +0000
+      information: ""
+      location: Main Stage
+      session: stress-driven-development-and-how-to-avoid-it
+    - title: Closing Day 1
+      datetime: 2019-08-30 17:00:00 +0000
+      information: >
+        [NG-DE Team](/team)
+      location: Main Stage
+      session: null
+    - title: Party
+      datetime: 2019-08-30 19:00:00 +0000
+      information: >
+        🥳🍻
+      location: Location TBD
+      session: null
+
+- title: Saturday
+  datetime: 2019-08-31 09:00:00 +0000
+  entries:
+    - title: Open Doors
+      datetime: 2019-08-31 08:30:00 +0000
+      information: ""
+      location: BOLLE FESTSÄLE ∙ Alt-Moabit 98, 10559 Berlin
+      session: null
+    - title: Breakfast
+      datetime: 2019-08-31 09:00:00 +0000
+      information: ""
+      location: FESTSAAL
+      session: null
+    - title: Intro Day 2
+      datetime: 2019-08-31 09:50:00 +0000
+      information: >
+        [NG-DE Team](/team)
+      location: Main Stage
+      session: null
+    - title: Talk 8
+      datetime: 2019-08-31 10:00:00 +0000
+      information: ""
+      location: Main Stage
+      session: angular-material-or-bootstrap-stop-asking-the-question
+    - title: Talk 9
+      datetime: 2019-08-31 10:30:00 +0000
+      information: ""
+      location: Main Stage
+      session: do-you-want-to-build-a-build-tool
+    - title: Break
+      datetime: 2019-08-31 11:00:00 +0000
+      information: >
+        ☕️🍎
+      location: Sponsoring Hall & Catering Area
+      session: null
+    - title: Talk 10
+      datetime: 2019-08-31 11:45:00 +0000
+      information: ""
+      location: Main Stage
+      session: its-just-a-string-learnings-from-building-a-component-library
+    - title: Talk 11
+      datetime: 2019-08-31 12:15:00 +0000
+      information: ""
+      location: Main Stage
+      session: no-apollogies-making-apps-accessible
+    - title: Lunch & Family Photo 📷
+      datetime: 2019-08-31 12:45:00 +0000
+      information: >
+        🥙🥤
+      location: Sponsoring Hall & Catering Area
+      session: null
+    - title: Talk 12
+      datetime: 2019-08-31 14:15:00 +0000
+      information: ""
+      location: Main Stage
+      session: demiystifying-dependency-injection-angular-vs-nest
+    - title: Talk 13
+      datetime: 2019-08-31 14:45:00 +0000
+      information: ""
+      location: Main Stage
+      session: what-is-this-angular-in-my-react
+    - title: Break
+      datetime: 2019-08-31 15:15:00 +0000
+      information: >
+        ☕️🍰
+      location: Sponsoring Hall & Catering Area
+      session: null
+    - title: Talk 14
+      datetime: 2019-08-31 16:00:00 +0000
+      information: ""
+      location: Main Stage
+      session: performance-for-the-long-haul
+    - title: Closing Keynote
+      datetime: 2019-08-31 16:30:00 +0000
+      information: ""
+      location: Main Stage
+      session: closing-keynote
+    - title: Last Words & Closing the Conference
+      datetime: 2019-08-31 17:00:00 +0000
+      information: >
+        [NG-DE Team](/team)
+      location: Main Stage
+      session: null
