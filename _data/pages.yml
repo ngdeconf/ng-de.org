@@ -11,6 +11,9 @@ links:
   - name: Workshops
     url: /workshops/
     navigation: true
+  - name: News
+    url: /news/
+    navigation: true
   - name: Location
     url: /location/
     navigation: true
@@ -19,10 +22,8 @@ links:
 #    navigation: true
 
 
+
 second_links:
-  - name: News
-    url: /news/
-    navigation: true
   - name: Team
     url: /team/
     navigation: true
