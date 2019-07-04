@@ -231,7 +231,10 @@ Facebook uses so-called "cookies". These are text files that are stored on your 
 
 Facebook cookies are stored on the basis of Art. 6 para. 1 lit. f DSGVO. The website operator has a legitimate interest in analyzing user behavior in order to optimize both its website and its advertising.
 
-Version: Jun 2019
+## commento.io
+This website uses functions of the web comment service [commento.io](https://commento.io/privacy). Provider is Commento, Inc., 1355 Market Street, Suite 900, San Francisco, CA 94103
+
+Version: Jul 2019
 
 
 <script>
