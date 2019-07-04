@@ -10,7 +10,10 @@ layout: default
     </div>
     <div class="comments">
       <div id="commento"></div>
-      <script src="https://cdn.commento.io/js/commento.js"></script>
+      <script 
+        async
+        src="https://cdn.commento.io/js/commento.js"
+        data-css-override="https://ng-de.org/css/commento.css"></script>
     </div>
   </div>
 </section>
