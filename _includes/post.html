@@ -1,0 +1,16 @@
+<a class="posts__post-header" href="{{post.slug}}/" style="background-image: url({{post.slug}}/{{ post.header_image }})" >
+  <span class="posts__post-header-categories ml-2">
+    {% for category in post.categories %}
+      <span class="text-uppercase">{{ category }}</span>
+      {% unless forloop.last %}<span class="ml-1 mr-1">•</span>{% endunless %}
+    {% endfor %}
+  </span>
+</a>
+
+<a href="{{post.slug}}/">
+  <h3>{{post.title}}</h3>
+  <time>{{ post.date | date: "%d.%m.%Y" }}</time>
+  <p class="mb-4 mt-3 text-muted">
+    {{post.description}}
+  </p>
+</a>

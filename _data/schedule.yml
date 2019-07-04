@@ -1,32 +1,28 @@
 - title: Workshops
   datetime: "2019-08-29T09:00:00"
   entries:
-    - title: Breakfast
-      datetime: "2019-08-29T09:00:00"
-      information: ""
-      location: Hotel ABION Spreebogen
     - title: Workshop 1
-      datetime: "2019-08-29T10:00:00"
+      datetime: "2019-08-29T09:00:00"
       information: ""
       location: Room A
       session: angular-solid-foundations
     - title: Workshop 2
-      datetime: "2019-08-29T10:00:00"
+      datetime: "2019-08-29T09:00:00"
       information: ""
       location: Room B
       session: architectures-for-enterprise-applications
     - title: Workshop 3
-      datetime: "2019-08-29T10:00:00"
+      datetime: "2019-08-29T09:00:00"
       information: ""
       location: Room C
       session: rxjs-level-up
     - title: Workshop 4
-      datetime: "2019-08-29T10:00:00"
+      datetime: "2019-08-29T09:00:00"
       information: ""
       location: Room D
       session: angular-state-management
     - title: Workshop 5
-      datetime: "2019-08-29T10:00:00"
+      datetime: "2019-08-29T09:00:00"
       information: ""
       location: Room E
       session: angular-pwa
@@ -70,7 +66,7 @@
       datetime: "2019-08-30T11:45:00"
       information: ""
       location: Main Stage
-      session: no-apollogies-making-apps-accessible
+      session: angulars-new-renderer-ivy-a-deep-into-the-heart-of-angular
     - title: Talk 3
       datetime: "2019-08-30T12:15:00"
       information: ""
@@ -86,7 +82,7 @@
       datetime: "2019-08-30T14:15:00"
       information: ""
       location: Main Stage
-      session: angular-material-or-bootstrap-stop-asking-the-question
+      session: add-native-mobile-to-your-angular-projects-the-migration-story
     - title: Talk 5
       datetime: "2019-08-30T14:45:00"
       information: ""
@@ -107,7 +103,7 @@
       datetime: "2019-08-30T16:30:00"
       information: ""
       location: Main Stage
-      session: add-native-mobile-to-your-angular-projects-the-migration-story
+      session: stress-driven-development-and-how-to-avoid-it
     - title: Closing Day 1
       datetime: "2019-08-30T17:00:00"
       information: >
@@ -144,7 +140,7 @@
       datetime: "2019-08-31T10:00:00"
       information: ""
       location: Main Stage
-      session: stress-driven-development-and-how-to-avoid-it
+      session: angular-material-or-bootstrap-stop-asking-the-question
     - title: Talk 9
       datetime: "2019-08-31T10:30:00"
       information: ""
@@ -165,7 +161,7 @@
       datetime: "2019-08-31T12:15:00"
       information: ""
       location: Main Stage
-      session: angulars-new-renderer-ivy-a-deep-into-the-heart-of-angular
+      session: no-apollogies-making-apps-accessible
     - title: Lunch & Family Photo 📷
       datetime: "2019-08-31T12:45:00"
       information: >

@@ -1,0 +1,14 @@
+.post {
+
+    &__image-container {
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 400px;
+        }
+    }
+
+    
+
+}
