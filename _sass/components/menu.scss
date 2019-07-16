@@ -61,7 +61,7 @@ $menu-link-color-hover: map-get($colors, primary);
   &--topbar {}
 
   @media only screen and (max-width: $screen-medium) {
-    &--topbar {
+    &--topbar, &--bottombar {
       flex-direction: column;
       margin: 0;
 

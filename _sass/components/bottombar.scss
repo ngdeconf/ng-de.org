@@ -13,7 +13,7 @@ $bottombar-mobile-zindex: 10;
 
   display: flex;
   align-items: center;
-  height: $bottombar-height;
+  min-height: $bottombar-height;
   
   position: relative;
   

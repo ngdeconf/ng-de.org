@@ -1,5 +1,5 @@
 - id: angular-solid-foundations
-  title: Angular solid foundations for beginners
+  title: Angular solid foundations - from zero to hero
   logo: angular-solid-foundations.svg
   description: >
     Gregor is the CTO of co-IT.eu GmbH and loves to build tools that enable developers to be more productive.  
@@ -274,4 +274,11 @@
   speakers:
     - ben-schwarz
   type: talk
-  
+- id: master-of-ceremonies
+  title: Master of Ceremonies
+  description: >
+    
+  speakers:
+    - ola-gasidlo
+    - juan-herrera
+  type: 🎤

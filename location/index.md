@@ -58,6 +58,50 @@ Alt-Moabit 99
 10559 Berlin  
 GERMANY
 
+</div>
+</section>
+<section class="section section--impressions">
+  <div class="fullwidth">
+    <div class="impressions">
+      <div class="impressions__impression">
+        <img class="lazy" sizes="(max-width: 1280px) 100vw, 1280px"
+          data-srcset="
+          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_190.jpg 190w,
+          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_423.jpg 423w,
+          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_593.jpg 593w,
+          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_730.jpg 730w,
+          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_859.jpg 859w,
+          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_979.jpg 979w,
+          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_1083.jpg 1083w,
+          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_1185.jpg 1185w,
+          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_1240.jpg 1240w,
+          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_1280.jpg 1280w"
+          data-src="/assets/location/impression-1/impression-1_kkxlen_c_scale,w_1280.jpg"
+          alt="BOLLE FESTSÄLE"
+          title="BOLLE FESTSÄLE">
+      </div>
+      <div class="impressions__impression">
+        <img class="lazy" sizes="(max-width: 1280px) 100vw, 1280px"
+          data-srcset="
+          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_190.jpg 190w,
+          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_450.jpg 450w,
+          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_635.jpg 635w,
+          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_795.jpg 795w,
+          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_936.jpg 936w,
+          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_1076.jpg 1076w,
+          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_1187.jpg 1187w,
+          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_1274.jpg 1274w,
+          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_1280.jpg 1280w"
+          data-src="/assets/location/impression-2/impression-2_pqqwvi_c_scale,w_1280.jpg"
+          alt="BOLLE FESTSÄLE"
+          title="BOLLE FESTSÄLE">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--main">
+<div class="container" markdown="1">
+
 ### Public Transportation
 
 **Bus 245** departs almost in front of the venue at the stop "Kleiner Tiergarten".
