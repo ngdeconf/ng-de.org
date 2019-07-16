@@ -42,6 +42,27 @@
   profiles:
     twitter: psybercity
     github: mandarini
+- id: ola-gasidlo
+  name: Ola Gasidlo
+  title: Sr. Platform Software Engineer @ Mozilla
+  image: ola-gasidlo.jpg
+  biography: >
+    Ola is a Sr. Platform Engineer at Mozilla living in Berlin, who is very passionate about Open Source, web standards and empowering people. She loves making the web accessible for everyone, riding the trails, and daughter-driven development. 
+  role: MC
+  profiles:
+    twitter: misprintedtype
+    github: zoepage
+    website: https://searchfox.org/mozilla-central/source/devtools/
+- id: juan-herrera
+  name: Juan Herrera
+  title: Software Developer @ Parkside Interactive
+  image: juan-herrera.jpg
+  biography: >
+    Juan Herrera is a Google Developer Expert in Angular 🅰 and Web Technologies 📱, certified Sprint Master 💡, and community organizer. He works for Parkside Interactive as a Software Developer where he constantly advocates for a culture of engineering excellence. He loves dancing and singing 🤵.
+  role: MC
+  profiles:
+    twitter: jdjuan
+    github: jdjuan
 - id: kamil-mysliwiec
   name: Kamil Mysliwiec
   title: Co-Founder of Trilon.io | Creator of NestJS
