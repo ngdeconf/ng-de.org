@@ -13,10 +13,10 @@
   title: Developer Advocate at Google
   image: martin-splitt.jpg
   biography: >
-    Martin is open source contributor and web evangelist by heart from Zurich with a decade experience from the trenches of software engineering in multiple fields.  
-      
-    He works as a Webmasters Trends Analyst / Developer Advocate at Google for Search & web ecosystem. He helps people building applications or publishing content on the web to be successful, productive and visible.  
-      
+    Martin is open source contributor and web evangelist by heart from Zurich with a decade experience from the trenches of software engineering in multiple fields.
+
+    He works as a Webmasters Trends Analyst / Developer Advocate at Google for Search & web ecosystem. He helps people building applications or publishing content on the web to be successful, productive and visible.
+
     Martin believes in the web platform and is working with bleeding edge technologies that will allow the web to prosper.
   role: Speaker
   profiles:
@@ -47,7 +47,7 @@
   title: Sr. Platform Software Engineer @ Mozilla
   image: ola-gasidlo.jpg
   biography: >
-    Ola is a Sr. Platform Engineer at Mozilla living in Berlin, who is very passionate about Open Source, web standards and empowering people. She loves making the web accessible for everyone, riding the trails, and daughter-driven development. 
+    Ola is a Sr. Platform Engineer at Mozilla living in Berlin, who is very passionate about Open Source, web standards and empowering people. She loves making the web accessible for everyone, riding the trails, and daughter-driven development.
   role: MC
   profiles:
     twitter: misprintedtype
@@ -105,7 +105,7 @@
     Jan-Niklas Wortmann is an IT consultant mostly working on Angular projects.
     He helps companies designing and implementing large scaled applications.
     Developing clean and maintainable code is one of his main goals.
-    Due to his passion for the Community, he is member of the RxJS Core Team and organizer of the NgNiederrhein Meetup.  
+    Due to his passion for the Community, he is member of the RxJS Core Team and organizer of the NgNiederrhein Meetup.
   role: Trainer
   profiles:
     twitter: niklas_wortmann
@@ -125,7 +125,7 @@
   title: Google Developer Expert
   image: michael-hladky.jpg
   biography: >
-    Michael is Expert for SPA with a focus on Angular. 
+    Michael is Expert for SPA with a focus on Angular.
     Also he is organizer of the Angular Meetup in Vienna.
   role: Trainer
   profiles:
@@ -136,7 +136,7 @@
   title: Web-Engineer
   image: martina-kraus.jpg
   biography: >
-    Martina Kraus always had always a strong interest in Web-Engineering.
+    Martina Kraus always had a strong interest in Web-Engineering. Her biggest passion is to talk and share knowledge about it
     As a Software Developer of inovex GmbH she focuses on implementing highly scalable software-solution with Node.Js and Angular.
     Besides her work as a lecturer at the Hochschule Mannheim, she is also the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg Usergroup.
   role: Speaker
@@ -152,14 +152,14 @@
   role: Speaker
   profiles:
     twitter: likeOMGitsFEDAY
-    github: 
+    github:
     website: https://jenniferwadella.com
 - id: vitalii-bobrov
   name: Vitalii Bobrov
   title: Lead Software Engineer @ EPAM Systems
   image: vitalii-bobrov.jpg
   biography: >
-    Vitalii is a Lead JavaScript Engineer with more than six years of professional experience. He is co-organizer of Angular Wroclaw meetup. Vitalii is keeping up-to-date with the latest Web Platform features and doing great experiments with it. This guy is not just a nerd, but tech speaker, ngGirls mentor, and the father of the excellent little girl. 
+    Vitalii is a Lead JavaScript Engineer with more than six years of professional experience. He is co-organizer of Angular Wroclaw meetup. Vitalii is keeping up-to-date with the latest Web Platform features and doing great experiments with it. This guy is not just a nerd, but tech speaker, ngGirls mentor, and the father of the excellent little girl.
   role: Speaker
   profiles:
     twitter: bobrov1989
@@ -212,8 +212,8 @@
   title: CTO of co-IT.eu
   image: gregor-woiwode.jpg
   biography: >
-    Gregor is the CTO of co-IT.eu GmbH and loves to build tools that enable developers to be more productive. In his role as Speaker, Trainer and Consultant he teaches techniques to continuously improve the architectural design of Angular applications.  
-    
+    Gregor is the CTO of co-IT.eu GmbH and loves to build tools that enable developers to be more productive. In his role as Speaker, Trainer and Consultant he teaches techniques to continuously improve the architectural design of Angular applications.
+
     He also enjoys running or trying his hand at hobby cooking.
   role: Trainer
   profiles:
@@ -235,7 +235,7 @@
   title: Engineering Manager @ Klarna
   image: hernan-magrini.jpg
   biography: >
-    Hernán is an Engineering Manager at Klarna and a self-taught Software Engineer, who believes in lifelong learning and helping others learn new things everyday.  
+    Hernán is an Engineering Manager at Klarna and a self-taught Software Engineer, who believes in lifelong learning and helping others learn new things everyday.
     Originally from Argentina, he co-founded and led the local Google Developers Group where he organized and spoke at several conferences, focusing on his favourite topics: performance, usability, and team/project scalability.
   role: Speaker
   profiles:
@@ -247,13 +247,13 @@
   title: Senior Developer Advocate 🥑
   image: sebastian-witalec.png
   biography: >
-    Sebastian Witalec is a Senior Developer Advocate for Progress who specialises in Angular and NativeScript. He loves working on both serious and fun projects and one day he will use his robot army to conquer the world.  
-      
+    Sebastian Witalec is a Senior Developer Advocate for Progress who specialises in Angular and NativeScript. He loves working on both serious and fun projects and one day he will use his robot army to conquer the world.
+
     He is always happy to learn about the new stuff and to pass the knowledge as far as his voice (or the wire) can take him. Sebastian is based in London actively working with various Dev communities in Europe. When not acting techie he is a massive football fan/player (probably bigger at heart than skills).
   role: Speaker
   profiles:
     twitter: sebawita
-    github: 
+    github:
     website: https://www.nativescript.org
 - id: dmitry-vinnik
   name: Dmitry Vinnik
@@ -262,7 +262,7 @@
   biography: >
     Dmitry Vinnik is a Lead Software Engineer at Salesforce and has been passionate about Software Quality since the very beginning of his career.
     He started out as a Quality Engineer, and was able to bring test expertise into his current Software Engineering role to ensure delivery of a high quality product.
-    Dmitry is also a Scrum Master focused on making his team more efficient and productive. 
+    Dmitry is also a Scrum Master focused on making his team more efficient and productive.
     His background involves studying medicine and bioinformatics in addition to software and quality engineering.
   role: Speaker
   profiles:
@@ -279,7 +279,7 @@
   profiles:
     twitter: phenomnominal
     github: phenomnomnominal
-    website: 
+    website:
 - id: thomas-pink
   name: Thomas Pink
   title: Senior Software Engineer @ Dynatrace
@@ -290,7 +290,7 @@
   profiles:
     twitter: thpnk
     github: thomaspink
-    website: 
+    website:
 - id: fabian-friedl
   name: Fabian Friedl
   title: Senior Software Engineer @ Dynatrace
@@ -301,14 +301,14 @@
   profiles:
     twitter: fabian_friedl
     github:
-    website: 
+    website:
 - id: ryan-chenkie
   name: Ryan Chenkie
   title: Developer / Trainer
   image: ryan-chenkie.jpeg
   biography: >
-    Ryan is a full-stack JavaScript developer, trainer, and Google Developer Expert. While he dabbles with a lot of technologies, his go-to for every serious project is his first love: Angular. He’s also extremely excited about GraphQL and the promise it brings to reshape how we think about and build APIs, all while making developers happier and more productive.  
-      
+    Ryan is a full-stack JavaScript developer, trainer, and Google Developer Expert. While he dabbles with a lot of technologies, his go-to for every serious project is his first love: Angular. He’s also extremely excited about GraphQL and the promise it brings to reshape how we think about and build APIs, all while making developers happier and more productive.
+
     Ryan teaches at Angularcasts and Front End Masters, builds apps for companies as a consultant, and contributes to open source with libraries such as angular2-jwt. Formerly at Auth0, he’s a fanatic about application security and has written a book on the topic called ‘Securing Angular Applications’.
   role: Speaker
   profiles:
@@ -320,12 +320,12 @@
   title: Software Engineering Lead
   image: brad-mcalister.png
   biography: >
-    Brad is currently a Software Engineering Lead at Sapphire Digital. In a past life, he was a systems administrator for 12 years but made the leap into development and regrets NOTHING. Today he finds himself focusing almost 100% on Angular and loves it but secretly dreams about being a full stack dev when he grows up. 
+    Brad is currently a Software Engineering Lead at Sapphire Digital. In a past life, he was a systems administrator for 12 years but made the leap into development and regrets NOTHING. Today he finds himself focusing almost 100% on Angular and loves it but secretly dreams about being a full stack dev when he grows up.
   role: Speaker
   profiles:
     twitter: sonicparke
     github: sonicparke
-    website: 
+    website:
 - id: markus-ende
   name: Markus Ende
   title: Freelance Trainer, IT Consultant & Software Developer
@@ -342,10 +342,10 @@
   title: aims to introduce women to the world of technology
   image: ng-girls.png
   biography: >
-    Are you a woman interested in learning how to build web applications with the latest technologies? We have good news for you: We are planning various events around the world for beginners!  
-      
-    We believe that the IT industry will greatly benefit from bringing more women into technology. We want to give you an opportunity to learn how to program and become a programmer.  
-      
+    Are you a woman interested in learning how to build web applications with the latest technologies? We have good news for you: We are planning various events around the world for beginners!
+
+    We believe that the IT industry will greatly benefit from bringing more women into technology. We want to give you an opportunity to learn how to program and become a programmer.
+
     On November 13th, 2016, we held our first event: a one-day workshop, in which selected participants built and deployed their very first Angular Web Application! The participants worked in small groups with the guidance of dedicated mentors.
   role: Partner
   profiles:
