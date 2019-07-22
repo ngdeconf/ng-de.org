@@ -2,13 +2,13 @@
   title: Angular solid foundations - from zero to hero
   logo: angular-solid-foundations.svg
   description: >
-    Gregor is the CTO of co-IT.eu GmbH and loves to build tools that enable developers to be more productive.
-    In this workshop you will learn about the fundamental techniques that get you started for your next Angular project.
-
-    You learn about the basic building blocks of Angular and how to use them the right way while you develop you own application.
-
-    Look forward to a packed day with Components, Directives, Pipes,  Inversion Of Control, Navigation & Http.
-
+    Gregor is the CTO of co-IT.eu GmbH and loves to build tools that enable developers to be more productive.  
+    In this workshop you will learn about the fundamental techniques that get you started for your next Angular project.  
+      
+    You learn about the basic building blocks of Angular and how to use them the right way while you develop you own application.  
+      
+    Look forward to a packed day with Components, Directives, Pipes,  Inversion Of Control, Navigation & Http.  
+      
     Rock On & Code
   type: workshop
   speakers:
@@ -16,38 +16,38 @@
     - markus-ende
   tito:
     price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/asbto1yway0
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/asbto1yway0 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
 - id: architectures-for-enterprise-applications
   title: Architectures for Enterprise Applications
   logo: router.svg
   description: >
-    In this interactive seminar you will develop a critical understanding for planning and implementing large enterprise applications with Angular. You will explore and work with approaches to structure huge applications like npm packages, the Mono Repo Approach and Micro Apps.
-
-    After this, you will deal with component design and reusable Web Components. For this, you will use several proven concepts and Angular Elements.
-
+    In this interactive seminar you will develop a critical understanding for planning and implementing large enterprise applications with Angular. You will explore and work with approaches to structure huge applications like npm packages, the Mono Repo Approach and Micro Apps.  
+      
+    After this, you will deal with component design and reusable Web Components. For this, you will use several proven concepts and Angular Elements.  
+      
     In addition, this workshop will enable you to develop a well-articulated understanding for implementing I18N as well as advanced authentication and authorization solutions that allow for single sign on and can be used to integrate with existing Identity Providers like Active Directory.
   type: workshop
   speakers:
     - manfred-steyer
   tito:
     price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/oqtsm-r8eku
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/oqtsm-r8eku 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
 - id: rxjs-level-up
   title: RxJS Level UP - Essentials in reactive programming
   logo: rxjs.png
   description: >
-    This training will bring you basic RxJS skills!
-
-    RxJs is more popular than ever. It is backed into the Angular core and also used in frameworks like React, Vue, and others!
+    This training will bring you basic RxJS skills!  
+      
+    RxJs is more popular than ever. It is backed into the Angular core and also used in frameworks like React, Vue, and others!  
     This doesn't surprise as it leverages a powerful and elegant way to work with sync as well as async collections.
+      
+    In this workshop, you will get an overview of this library. We will learn about the concept, approach and implementation of RxJS!  
 
-    In this workshop, you will get an overview of this library. We will learn about the concept, approach and implementation of RxJS!
-
-    After a practical and detailed tour through observables we will implement our first stream-based code.
+    After a practical and detailed tour through observables we will implement our first stream-based code.  
     Sounds interesting? Looking forward to meeting you at the workshop.
   type: workshop
   speakers:
@@ -55,7 +55,7 @@
     - michael-hladky
   tito:
     price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/e3pzkcv7vo4
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/e3pzkcv7vo4 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
 - id: angular-state-management
@@ -64,9 +64,9 @@
   description: >
     The state layer is one of those building block that can make developing and maintaining your application sweet and simple or a living hell.
     Having multiple existing solutions to choose from doesn't make the task much easier.
-
+    
     Or maybe you should roll our your own, specifically tailored for your case?
-
+    
     During this workshop we will explore several approaches and see which one solves what problems best.
   type: workshop
   speakers:
@@ -88,7 +88,7 @@
     - tobias-struckmeier
   tito:
     price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/4wugnm-ou-g
+    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/4wugnm-ou-g 
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
 - id: ng-girls
@@ -100,8 +100,8 @@
     We believe this is a win-win situation!
     We plan various events and activities in which the participants build and deploy a web application with Angular.
     We offer guidance to help finding a job in front end development.
-    If you're a committed, motivated women who wants to step into the Web Development world - your place is with us!
-
+    If you're a committed, motivated women who wants to step into the Web Development world - your place is with us!  
+      
     **Please note:** ngGirls is a free side event and not hosted by NG-DE itself. Please refer to [http://ng-girls.org/ng-de-2019/](http://ng-girls.org/ng-de-2019/){:target="_blank"} to register for the workshop.
   type: workshop
   speakers:
@@ -114,8 +114,8 @@
 - id: opening-keynote
   title: Creating A More Sustainable Development Team with Angular and the PAMstack
   description: >
-    In this talk we'll discuss the ideas around how to create an sustainable architecture for your team through the PAMstack, a new framework for creating inclusive development teams. We'll talk about some of the abstractions and tools that Angular has to enable the longevity and success of your teams to support junior developers, designers, project managers, and more. No application is too critical, complicated, or obscure to be able to achieve this.
-
+    In this talk we'll discuss the ideas around how to create an sustainable architecture for your team through the PAMstack, a new framework for creating inclusive development teams. We'll talk about some of the abstractions and tools that Angular has to enable the longevity and success of your teams to support junior developers, designers, project managers, and more. No application is too critical, complicated, or obscure to be able to achieve this. 
+      
     We will also talk through how you can build a corresponding culture that allows inclusivity on your team, and why this is so critical to your business. We'll walk through processes you can incorporate, team roles, and how you can build a better template for the future.
   type: keynote
   speakers:
@@ -126,16 +126,16 @@
 - id: closing-keynote
   title: The Myth of the Brilliant Developer
   description: >
-    "I walk into a large white room. It's a dance studio in midtown Manhattan. I'm wearing a sweatshirt, faded jeans, and Nike cross-trainers. The room is lined with eight-foot-high mirrors. There's a boom box in the corner. The floor is clean, virtually spotless if you don't count the thousands of skid marks and footprints left there by dancers rehearsing. Other than the mirrors, the boom box, the skid marks, and me, the room is empty.
-
-    To some people, this empty room symbolizes something profound, mysterious, and terrifying: the task of starting with nothing and working your way toward creating something whole and beautiful and satisfying.
-
-    Some people find this moment—the moment before creativity begins—so painful that they simply cannot deal with it. In its most extreme form, this terror totally paralyzes people.
-
+    "I walk into a large white room. It's a dance studio in midtown Manhattan. I'm wearing a sweatshirt, faded jeans, and Nike cross-trainers. The room is lined with eight-foot-high mirrors. There's a boom box in the corner. The floor is clean, virtually spotless if you don't count the thousands of skid marks and footprints left there by dancers rehearsing. Other than the mirrors, the boom box, the skid marks, and me, the room is empty.  
+      
+    To some people, this empty room symbolizes something profound, mysterious, and terrifying: the task of starting with nothing and working your way toward creating something whole and beautiful and satisfying.  
+      
+    Some people find this moment—the moment before creativity begins—so painful that they simply cannot deal with it. In its most extreme form, this terror totally paralyzes people.  
+      
     The blank space can be humbling. But I've faced it my whole professional life. It's my job. It's also my calling. Bottom line: Filling this empty space constitutes my identity."
-
+      
           Twyla Tharp in “The Creative Habit
-
+      
     This talk stems from a personal question both Carmen and Martin share, but is deeply rooted in the work of dr. Carol S. Dweck and choreographer Twyla Tharp. Just as with their research and practices, our talk starts by questioning what “natural talent” really means or whether such a thing exists at all, and goes on to analyse how this belief manifests itself and can influence our careers as developers. By tackling this subject, our wish is to open up the discussion about our self-image as developers and about what we as a community can do to create a healthy and empowering environment for everyone.
   type: keynote
   speakers:
@@ -146,8 +146,8 @@
 - id: handling-angular-forms-without-losing-your-sanity
   title: Handling Angular Forms Without Losing Your Sanity
   description: >
-    "Why’d you have to go and make things so complicated?" - Avril Lavigne, implementing Angular forms in 2019
-
+    "Why’d you have to go and make things so complicated?" - Avril Lavigne, implementing Angular forms in 2019  
+      
     Forms are such a basic part of web applications; how did they get so complicated? This talk will walk through Angular template driven vs. reactive forms and use cases for their implementation, basic & more complex form-validation, custom component implementations like typeahead and date-pickers, and finally use of the little-known Control Value Accessor interface to solve almost any form problem. This talk will also include some useful workarounds for those more complex PITA requirements that always seem to pop up in projects.
   speakers:
     - jennifer-wadella
@@ -155,8 +155,8 @@
 - id: no-apollogies-making-apps-accessible
   title: "No Apollogies: Making Apps Accessible"
   description: >
-    Imagine an astronaut using your Angular application in space. Accessibility is about providing the best user experience that leads to software made with people in difficult situations in mind. Such difficulties might be temporal, permanent or caused by the environment... like Space.
-
+    Imagine an astronaut using your Angular application in space. Accessibility is about providing the best user experience that leads to software made with people in difficult situations in mind. Such difficulties might be temporal, permanent or caused by the environment... like Space.  
+      
     I’ll prepare your app for use in the pitch black of space and brightest of sunlight. I’ll implement navigation with voice commands, use a keyboard and touch-screen with gloves. I will show you how to produce accessible software that is ready-to-use even on a spaceship.
   speakers:
     - vitalii-bobrov
@@ -171,7 +171,7 @@
 - id: angular-material-or-bootstrap-stop-asking-the-question
   title: Angular Material or Bootstrap? Stop asking the question!
   description: >
-    Angular Material AND Bootstrap for your next Angular application? It doesn't make sense, does it? The first time I talked to my colleagues about combining the two, they laughed at me. But now, they love the approach because it works like a charm.
+    Angular Material AND Bootstrap for your next Angular application? It doesn't make sense, does it? The first time I talked to my colleagues about combining the two, they laughed at me. But now, they love the approach because it works like a charm.  
     In this session, we will see how we can leverage the best parts of both libraries to build beautiful, maintainable, and responsive Angular applications with very little CSS.
   speakers:
     - amadou-sall
@@ -179,10 +179,10 @@
 - id: watch-out-observers-are-here-to-stay
   title: "Watch out: observers are here to stay"
   description: >
-    The web is evolving, we got it. One of the clear consequences is the complexity of our web apps (formerly known as ‘websites’). The conciseness of functional programming and its fundamentals got our attention, but we knew we could do better. And now we have the Reactive programming model, a functional and declarative way of dealing with big amounts of data.
-
-    In the center of it we have Observables: objects responsible to keep your application alive, reacting to any mutation your data may have, through any period of time. We'll take a look on the concepts and also on the lib that implements it in Angular's core: RxJS. Using the provided operators, we have great power on our hands, doing anything imaginable in a concise, declarative and easy-to-maintain way.
-
+    The web is evolving, we got it. One of the clear consequences is the complexity of our web apps (formerly known as ‘websites’). The conciseness of functional programming and its fundamentals got our attention, but we knew we could do better. And now we have the Reactive programming model, a functional and declarative way of dealing with big amounts of data.  
+      
+    In the center of it we have Observables: objects responsible to keep your application alive, reacting to any mutation your data may have, through any period of time. We'll take a look on the concepts and also on the lib that implements it in Angular's core: RxJS. Using the provided operators, we have great power on our hands, doing anything imaginable in a concise, declarative and easy-to-maintain way.  
+      
     Watch out: observables are here to stay!
   speakers:
     - guilherme-ventura
@@ -190,8 +190,8 @@
 - id: scaling-apps-in-two-weeks-with-angular
   title: Scaling apps in two weeks with Angular
   description: >
-    Application scalability is a two sided coin: it has to scale with both your user-base and your team size. But when you need to start a project, you don't know how big will it become -- it could go from “small” all the way to “Google-sized”. With so many variables to consider, how do you evaluate if Angular is the right solution? What challenges will you face along the way as your team and project grow?
-
+    Application scalability is a two sided coin: it has to scale with both your user-base and your team size. But when you need to start a project, you don't know how big will it become -- it could go from “small” all the way to “Google-sized”. With so many variables to consider, how do you evaluate if Angular is the right solution? What challenges will you face along the way as your team and project grow?  
+      
     This is the tale of how we went from nothing to a worldwide distributed platform, to a team 10 times bigger, from low traffic to 2M visits per day, and all the challenges we faced. And most important of all: how we set the whole thing up in 14 days.
   speakers:
     - hernan-magrini
@@ -199,10 +199,10 @@
 - id: add-native-mobile-to-your-angular-projects-the-migration-story
   title: "Add Native Mobile to Your Angular Projects: The Migration Story"
   description: >
-    The Angular and NativeScript teams teamed up to create a new way to share your code between web and mobile apps with Angular and NativeScript. It allows you to easily share the business logic of your app, while providing you an intuitive way to separate the code that is different between the platforms.
-
-    The ability to share code between your Angular web app and Native mobile apps has never been easier (or more important). Who has the time to invest resources into separate apps for web, native iOS, and native Android?
-
+    The Angular and NativeScript teams teamed up to create a new way to share your code between web and mobile apps with Angular and NativeScript. It allows you to easily share the business logic of your app, while providing you an intuitive way to separate the code that is different between the platforms.  
+      
+    The ability to share code between your Angular web app and Native mobile apps has never been easier (or more important). Who has the time to invest resources into separate apps for web, native iOS, and native Android?  
+      
     In this talk you will learn how to take an existing Angular Web project and add NativeScript to it, by converting it to a code-sharing project. Then we will go through a few steps of converting individual components and modules into a code-sharing structure.
   speakers:
     - sebastian-witalec
@@ -210,8 +210,8 @@
 - id: stress-driven-development-and-how-to-avoid-it
   title: Stress Driven Development, and How to Avoid It
   description: >
-    When was the last time you took a day off? How many times this week have you worked overtime? These questions are related to one thing we all experience on a daily basis - stress.  Employees who are trapped by their routine to ""deliver business value at all cost"", often forget to take care of themselves. Unfortunately, this work-related stress affects our loved ones too, because work-life balance that we all hear about, usually means work-life stress.
-
+    When was the last time you took a day off? How many times this week have you worked overtime? These questions are related to one thing we all experience on a daily basis - stress.  Employees who are trapped by their routine to ""deliver business value at all cost"", often forget to take care of themselves. Unfortunately, this work-related stress affects our loved ones too, because work-life balance that we all hear about, usually means work-life stress.  
+      
     What if I were to say that it does not have to be this way? In this talk, we discuss ways how to relax and avoid ""Stress Driven Development."" We deep dive into common stressors, and draft a comprehensive guide to removing stress at work and in our personal lives.
   speakers:
     - dmitry-vinnik
@@ -256,20 +256,20 @@
 - id: performance-for-the-long-haul
   title: Performance for the long haul
   description: >
-    You've heard all the rules—compress the images, minify the JavaScript, avoid repaints, only animate certain properties. They are good rules. Follow them and you will improve performance. Congrats! But what to do next? How do you know what's still left to learn? How do you identify the biggest performance bottlenecks—diagnose, and fix them? How can you bring your team along for the journey?
-
-    Performance for the long haul is a talk designed just for you. Together, we'll learn how to pinpoint *any* performance issue and implement a company-wide, effective performance strategy.
-
-    Things you'll learn:
-
+    You've heard all the rules—compress the images, minify the JavaScript, avoid repaints, only animate certain properties. They are good rules. Follow them and you will improve performance. Congrats! But what to do next? How do you know what's still left to learn? How do you identify the biggest performance bottlenecks—diagnose, and fix them? How can you bring your team along for the journey?  
+      
+    Performance for the long haul is a talk designed just for you. Together, we'll learn how to pinpoint *any* performance issue and implement a company-wide, effective performance strategy.  
+      
+    Things you'll learn:  
+      
     - How to conduct a performance audit, form a hypothesis, then action it
 
     - What real user conditions are, how to discover them for your users, how to test them
 
-    - How to use the extremely complicated performance tab of Chrome devtools with ease
-
-    - How to build and implement a long lasting performance system that works at your company
-
+    - How to use the extremely complicated performance tab of Chrome devtools with ease 
+    
+    - How to build and implement a long lasting performance system that works at your company 
+      
     Come and learn how to create a long-lasting approach, not a temporary bandaid.
   speakers:
     - ben-schwarz
@@ -277,7 +277,7 @@
 - id: master-of-ceremonies
   title: Master of Ceremonies
   description: >
-
+    
   speakers:
     - ola-gasidlo
     - juan-herrera
