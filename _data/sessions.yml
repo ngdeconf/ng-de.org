@@ -232,7 +232,7 @@
     - fabian-friedl
   type: talk
 - id: angulars-new-renderer-ivy-a-deep-into-the-heart-of-angular
-  title: "Angular’s new renderer Ivy: a deep into the heart of Angular"
+  title: "Angular’s new renderer Ivy: a deep dive into the heart of Angular"
   description: >
     This talk will introduce you into the core principles of the new renderer Ivy. You will learn about the component factories and injection, the locality principle, how to develop higher order components and many more. All these will be shown by examples. After the talk you will have a basic understanding of how to use the new renderer and all the new options for developing Angular applications.
   speakers:
