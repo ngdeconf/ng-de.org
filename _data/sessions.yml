@@ -207,15 +207,6 @@
   speakers:
     - sebastian-witalec
   type: talk
-- id: stress-driven-development-and-how-to-avoid-it
-  title: Stress Driven Development, and How to Avoid It
-  description: >
-    When was the last time you took a day off? How many times this week have you worked overtime? These questions are related to one thing we all experience on a daily basis - stress.  Employees who are trapped by their routine to ""deliver business value at all cost"", often forget to take care of themselves. Unfortunately, this work-related stress affects our loved ones too, because work-life balance that we all hear about, usually means work-life stress.  
-      
-    What if I were to say that it does not have to be this way? In this talk, we discuss ways how to relax and avoid ""Stress Driven Development."" We deep dive into common stressors, and draft a comprehensive guide to removing stress at work and in our personal lives.
-  speakers:
-    - dmitry-vinnik
-  type: talk
 - id: do-you-want-to-build-a-build-tool
   title: Do you want to build a build tool?
   description: >
@@ -282,3 +273,22 @@
     - ola-gasidlo
     - juan-herrera
   type: 🎤
+- id: bye-bye-ngmodules
+  title: Bye bye NgModules
+  description: >
+    Zones? Injectors? Modules? Haven't you always wanted to create just 1 simple component without being worried about those massive buzzwords? Now you can finally get it!  
+      
+    Angular is changing, and with the upcoming release of Ivy, it becomes much leaner and dynamic than before.  
+    In this talk, I will demonstrate why Angular Ivy is truly a game changer. We will understand how we can leverage the Ivy renderer to create independent components, without zones, and without the need of modules. We will learn how to import non-routable components dynamically and even to create higher order components decorators!  
+      
+    Ivy is coming! 
+  speakers:
+    - eliran-eliassy
+  type: talk
+- id: angular-performance-your-app-at-the-speed-of-light
+  title: "Angular Performance: Your App at the Speed of Light"
+  description: >
+    In this talk, you’ll get to know common performance pitfalls in Angular applications and learn how to avoid them. We’ll have a look at different change detection strategies and ChangeDetectorRef, Zone.js and NgZone. Let’s make your Angular app blazing fast!
+  speakers:
+    - christian-liebel
+  type: talk

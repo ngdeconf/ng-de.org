@@ -90,6 +90,9 @@ community:
   - name: JetBrains
     logo: jetbrains.svg
     url: https://www.jetbrains.com
+  - name: The Barn Coffee Berlin
+    logo: the-barn-logo.png
+    url: https://www.thebarn.de
 
 partners:
   - name: angular.de
