@@ -230,18 +230,6 @@
     twitter: danguilherme
     github: danguilherme
     website: https://danguilherme.github.io/en/
-- id: hernan-magrini
-  name: Hernán Magrini
-  title: Engineering Manager @ Klarna
-  image: hernan-magrini.jpg
-  biography: >
-    Hernán is an Engineering Manager at Klarna and a self-taught Software Engineer, who believes in lifelong learning and helping others learn new things everyday.  
-    Originally from Argentina, he co-founded and led the local Google Developers Group where he organized and spoke at several conferences, focusing on his favourite topics: performance, usability, and team/project scalability.
-  role: Speaker
-  profiles:
-    twitter: HerMagrini
-    github: hmagrini
-    website:
 - id: sebastian-witalec
   name: Sebastian Witalec
   title: Senior Developer Advocate 🥑
@@ -255,20 +243,25 @@
     twitter: sebawita
     github: 
     website: https://www.nativescript.org
-- id: dmitry-vinnik
-  name: Dmitry Vinnik
-  title: Lead Software Engineer @ Salesforce
-  image: dmitry-vinnik.jpg
+- id: eliran-eliassy
+  name: Eliran Eliassy
+  title: Founder & developer @ e-square
+  image: eliran-eliassy.jpg
   biography: >
-    Dmitry Vinnik is a Lead Software Engineer at Salesforce and has been passionate about Software Quality since the very beginning of his career.
-    He started out as a Quality Engineer, and was able to bring test expertise into his current Software Engineering role to ensure delivery of a high quality product.
-    Dmitry is also a Scrum Master focused on making his team more efficient and productive. 
-    His background involves studying medicine and bioinformatics in addition to software and quality engineering.
+    Eliran is an experienced FE developer, specialized in B2C applications  
+
+    Founder & developer @ e-square.io  
+      
+    Co-Organiser @ AngularUP Annual Conference  
+
+    Co-Organiser and manager @ Angular-IL meetup  
+
+    Writer for AngularInDepth.com  
   role: Speaker
   profiles:
-    twitter: DmitryVinnik
-    github: dmitryvinn
-    website: https://dvinnik.com
+    twitter: eliraneliassy
+    github: eliraneliassy
+    website: https://eliassy.dev
 - id: craig-spence
   name: Craig Spence
   title: Senior Software Engineer @ Spotify
@@ -326,6 +319,17 @@
     twitter: sonicparke
     github: sonicparke
     website: 
+- id: christian-liebel
+  name: Christian Liebel
+  title: Consultant
+  image: christian-liebel.jpg
+  biography: >
+    Christian Liebel is a cross-platform development enthusiast thrilled by the opportunities offered by modern web technologies: Christian helps enterprises and independent software vendors to develop modern, cross-platform business applications based on Angular. Being a Microsoft MVP, Google GDE and member of the W3C WebApps working group, he speaks about Progressive Web Apps at user groups and conferences, both national and international. You can reach him directly via email (christian.liebel@thinktecture.com) or Twitter (@christianliebel).
+  role: Speaker
+  profiles:
+    twitter: christianliebel
+    github: christianliebel
+    website: https://christianliebel.com
 - id: markus-ende
   name: Markus Ende
   title: Freelance Trainer, IT Consultant & Software Developer
@@ -337,6 +341,17 @@
     twitter: _der_markusende
     github: Markus-Ende
     website: https://markusende.de
+- id: tobias-struckmeier
+  name: Tobias Struckmeier
+  title: Senior Software Engineer @adessoAG
+  image: tobias-struckmeier.jpg
+  biography: >
+    Tobias feels comfortable either in the frontend and the backend.
+    He's not focused on a single framework so he likes to create things with NodeJS, PHP, Angular, React, TypeScript or even Vanilla JavaScript.
+    His strengths are to create effective and innovative solutions and be a friendly team player.
+  role: Trainer
+  profiles:
+    twitter: tobmaster
 - id: ng-girls
   name: ngGirls
   title: aims to introduce women to the world of technology
@@ -352,14 +367,3 @@
     twitter: AngularGirls
     github:
     website: https://ng-girls.org
-- id: tobias-struckmeier
-  name: Tobias Struckmeier
-  title: Senior Software Engineer @adessoAG
-  image: tobias-struckmeier.jpg
-  biography: >
-    Tobias feels comfortable either in the frontend and the backend.
-    He's not focused on a single framework so he likes to create things with NodeJS, PHP, Angular, React, TypeScript or even Vanilla JavaScript.
-    His strengths are to create effective and innovative solutions and be a friendly team player.
-  role: Trainer
-  profiles:
-    twitter: tobmaster

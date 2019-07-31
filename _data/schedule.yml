@@ -92,7 +92,7 @@
       datetime: "2019-08-30T15:15:00"
       information: ""
       location: Main Stage
-      session: scaling-apps-in-two-weeks-with-angular
+      session: angular-performance-your-app-at-the-speed-of-light
     - title: Break
       datetime: "2019-08-30T15:45:00"
       information: >
@@ -103,7 +103,7 @@
       datetime: "2019-08-30T16:30:00"
       information: ""
       location: Main Stage
-      session: stress-driven-development-and-how-to-avoid-it
+      session: bye-bye-ngmodules
     - title: Closing Day 1
       datetime: "2019-08-30T17:00:00"
       information: >
