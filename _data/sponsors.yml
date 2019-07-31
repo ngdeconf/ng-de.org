@@ -87,6 +87,9 @@ community:
   - name: Angular Leipzig
     logo: angular-leipzig.png
     url: https://www.meetup.com/Angular-Meetup-Leipzig/
+  - name: Angular Israel
+    logo: angular-il.jpg
+    url: https://www.meetup.com/de-DE/Angular-IL
   - name: JetBrains
     logo: jetbrains.svg
     url: https://www.jetbrains.com
