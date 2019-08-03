@@ -23,6 +23,9 @@ silver:
   - name: MyHammer
     logo: myhammer.png
     url: https://www.myhammer.net
+  - name: WhiteSource
+    logo: whitesource.svg
+    url: https://whitesourcesoftware.com
 
 bronze: 
   - name: 9 Elements
