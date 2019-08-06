@@ -205,7 +205,7 @@
       
     In this talk you will learn how to take an existing Angular Web project and add NativeScript to it, by converting it to a code-sharing project. Then we will go through a few steps of converting individual components and modules into a code-sharing structure.
   speakers:
-    - sebastian-witalec
+    - stanimira-vlaeva
   type: talk
 - id: do-you-want-to-build-a-build-tool
   title: Do you want to build a build tool?

@@ -230,19 +230,19 @@
     twitter: danguilherme
     github: danguilherme
     website: https://danguilherme.github.io/en/
-- id: sebastian-witalec
-  name: Sebastian Witalec
-  title: Senior Developer Advocate 🥑
-  image: sebastian-witalec.png
+- id: stanimira-vlaeva
+  name: Stanimira Vlaeva
+  title: Developer Advocate @ Progress Software
+  image: stanimira-vlaeva.jpg
   biography: >
-    Sebastian Witalec is a Senior Developer Advocate for Progress who specialises in Angular and NativeScript. He loves working on both serious and fun projects and one day he will use his robot army to conquer the world.  
+    Stanimira is a developer advocate on the NativeScript team at Progress, Google Developer Expert for Angular and Web Technologies, and co-organizer of the Angular Sofia meetup.  
       
-    He is always happy to learn about the new stuff and to pass the knowledge as far as his voice (or the wire) can take him. Sebastian is based in London actively working with various Dev communities in Europe. When not acting techie he is a massive football fan/player (probably bigger at heart than skills).
+    For the past three years she has been working on the integration between NativeScript and Angular, NativeScript schematics, the web and mobile code-sharing story, hot module replacement, and the webpack performance optimization tricks in NativeScript.
   role: Speaker
   profiles:
-    twitter: sebawita
-    github: 
-    website: https://www.nativescript.org
+    twitter: StanimiraVlaeva
+    github: is0k0
+    website: https://www.nativescript.org/
 - id: eliran-eliassy
   name: Eliran Eliassy
   title: Founder & developer @ e-square
