@@ -48,6 +48,15 @@ travel:
   - name: Dynatrace
     logo: dynatrace.svg
     url: https://dynatrace.com/
+  - name: Parkside
+    logo: parkside.svg
+    url: https://www.parkside-interactive.com/de
+  - name: inovex
+    logo: inovex.svg
+    url: https://www.inovex.de/de/
+  - name: progress
+    logo: progress.svg
+    url: https://progress.com/
 
 
 community:
