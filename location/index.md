@@ -49,6 +49,13 @@ Alt-Moabit 98
 10559 Berlin  
 GERMANY
 
+### Accessibility
+The conference venue will happen at the first floor of the building. If you can’t use the stairs there is an elevator you can use to get to the venue.
+
+### Wardrobe
+You find a wardrobe in the sponsoring hall where you can put your bags and jackets and other stuff. You’ll get a number for each piece you store. There will be people from our team the whole time. 
+
+
 ### Workshops
 
 All workshops will take place at the conference hotel next to the venue.
