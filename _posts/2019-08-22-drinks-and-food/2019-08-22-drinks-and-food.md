@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Food and Drinks"
+title:  "Drinks and Food"
 date:   2019-08-22 09:58:59 +0200
 categories: team
 description: "An overview about all the food that is included at the NG-DE 2019 conference"
