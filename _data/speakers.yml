@@ -42,17 +42,16 @@
   profiles:
     twitter: psybercity
     github: mandarini
-- id: ola-gasidlo
-  name: Ola Gasidlo
-  title: Sr. Platform Software Engineer @ Mozilla
-  image: ola-gasidlo.jpg
+- id: lewis-cowper
+  name: Lewis Cowper
+  title: Site Reliability Engineer @ finleap Connect
+  image: lewis-cowper.jpg
   biography: >
-    Ola is a Sr. Platform Engineer at Mozilla living in Berlin, who is very passionate about Open Source, web standards and empowering people. She loves making the web accessible for everyone, riding the trails, and daughter-driven development. 
+    Lewis is passionate about the web, and works on shoving applications into boxes and then moving those boxes around between servers and data centres. Originally from Scotland, but now living in Berlin, outside of his day job he enjoys learning more about how computers work under the hood.
   role: MC
   profiles:
-    twitter: misprintedtype
-    github: zoepage
-    website: https://searchfox.org/mozilla-central/source/devtools/
+    twitter: lewiscowper
+    github: lewiscowper
 - id: juan-herrera
   name: Juan Herrera
   title: Software Developer @ Parkside Interactive
