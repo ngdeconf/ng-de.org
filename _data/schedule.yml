@@ -4,27 +4,27 @@
     - title: Workshop 1
       datetime: "2019-08-29T09:00:00"
       information: ""
-      location: Room A
+      location: Room Glienicke
       session: angular-solid-foundations
     - title: Workshop 2
       datetime: "2019-08-29T09:00:00"
       information: ""
-      location: Room B
+      location: Room Köpenick
       session: architectures-for-enterprise-applications
     - title: Workshop 3
       datetime: "2019-08-29T09:00:00"
       information: ""
-      location: Room C
+      location: Room Grunewald
       session: rxjs-level-up
     - title: Workshop 4
       datetime: "2019-08-29T09:00:00"
       information: ""
-      location: Room D
+      location: Room Moabit 1
       session: angular-state-management
     - title: Workshop 5
       datetime: "2019-08-29T09:00:00"
       information: ""
-      location: Room E
+      location: Room Pankow
       session: angular-pwa
 
 - title: Friday
@@ -110,11 +110,11 @@
         [NG-DE Team](/team)
       location: Main Stage
       session: null
-    - title: Party
+    - title: Party 🥳🍻
       datetime: "2019-08-30T19:00:00"
       information: >
-        🥳🍻
-      location: Location TBD
+        [Biergarten Moabiter Freiheit](https://bit.ly/30ArWi3){:target="_blank"}
+      location: Biergarten Moabiter Freiheit ∙ Alt-Moabit 24, 10559 Berlin
       session: null
 
 - title: Saturday
