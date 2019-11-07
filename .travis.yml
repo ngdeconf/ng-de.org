@@ -5,6 +5,7 @@ cache:
   bundler: true
   directories:
   - node_modules # NPM packages
+  - .jekyll-cache # NPM packages
 
 #define node js version to use
 node_js:
@@ -25,9 +26,9 @@ notifications:
 
 before_install:
   #install rvm 2.3
-  - rvm install 2.3
+  - rvm install 2.4
   #use rvm 2.3
-  - rvm use 2.3
+  - rvm use 2.4
   #set home varaibles
   - . $HOME/.nvm/nvm.sh && nvm install 10.1 && nvm use 10.1
   #install gems through bundler
