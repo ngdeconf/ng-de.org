@@ -1,18 +1,18 @@
 ---
 layout: section
-title: Imprint - NG-DE 2019 - Angular Conference - 2019 in Berlin
+title: Imprint - NG-DE 2020 - Angular Conference - 2020 in Berlin
 noindex: true
 ---
 
 ## Imprint
-Angaben gemäß § 5 TMG:  
+Angaben gemäß § 5 TMG:
 Symetics GmbH<br>
 c/o Factory<br>
 Lohmühlenstraße 65<br>
 12435 Berlin<br>
 
 ### Kontakt:
-E-Mail: [robin.boehm@workshops.de](mailto:robin.boehm@workshops.de)  
+E-Mail: [robin.boehm@workshops.de](mailto:robin.boehm@workshops.de)
 Telefon: +49 (0) 201 / 87535773
 
 ### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:

@@ -1,11 +1,11 @@
 ---
 permalink: /
 layout: section
-hide_topbar_logo: true
+hide_topbar_logo: false
 show_header: true
 description: >
   NG-DE is the first community-driven Angular conference in Germany.
-  It will take place in Berlin, 30 - 31 August 2019.
+  It will take place in Berlin, 21 - 22 August 2020.
 ---
 
 <div class="lead">
@@ -56,7 +56,7 @@ description: >
   <h3 class="lead__headline">For the community, by the community</h3>
   <p class="lead__content">
     NG-DE is the first non-profit community-driven Angular conference in Germany.
-    It will take place in Berlin, 30 - 31 August 2019.
+    It will take place in Berlin, 21 - 22 August 2020.
     The venue BOLLE FESTSÄLE is located next to the beautiful Spree river, close to Bellevue palace and Tiergarten.
     A bunch of one-day workshops are planned for August 29 which can be booked separately from the main event.
   </p>
@@ -74,13 +74,13 @@ description: >
   </p>
 </div>
 
+{% if site.feature_flags.speaker_enabled %}
 <div class="lead">
   <div class="lead__content">
-    <a class="button button--xlarge" href="speakers/">
-      <span class="button__scale">Meet our speakers</span>
-    </a>
+    <a class="button button--xlarge" href="speakers/">Meet our speakers</a>
   </div>
 </div>
+{% endif %}
 
 <section class="section section--sponsors">
   <div class="container">

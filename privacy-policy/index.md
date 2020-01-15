@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Privacy Policy - NG-DE 2019 - Angular Conference - 2019 in Berlin
+title: Privacy Policy - NG-DE 2020 - Angular Conference - 2020 in Berlin
 noindex: true
 ---
 
@@ -12,19 +12,19 @@ As being responsible for this website, we take the protection of your personal d
 
 ### Responsible for the website
 
-Symetics GmbH  
-c/o Factory  
-Lohmühlenstraße 65, 12435 Berlin  
+Symetics GmbH
+c/o Factory
+Lohmühlenstraße 65, 12435 Berlin
 Germany
 
 ### Responsible for data protection
 
-Symetics GmbH  
-c/o Factory  
-Lohmühlenstraße 65, 12435 Berlin  
+Symetics GmbH
+c/o Factory
+Lohmühlenstraße 65, 12435 Berlin
 Germany
 
-Robin Böhm  
+Robin Böhm
 E-Mail: [robin.boehm@angular.de](mailto:robin.boehm@angular.de)
 
 ### Visiting our Website:

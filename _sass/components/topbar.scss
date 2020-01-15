@@ -24,11 +24,16 @@ $topbar-mobile-zindex: 10;
     }
   }
 
-  &__time {
-    font-size: calc(18px + 0.5vw);
-    font-family: "Lora";
-    font-weight: 600;
+  &__info {
+    font-size: calc(16px + 0.5vw);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
     margin: 0 1.2rem 0 0;
+  }
+
+  &__address {
+    font-style: normal;
   }
 
   &__nav {

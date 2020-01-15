@@ -6,31 +6,21 @@
 
   font-size: calc(.9em + .1vw);
   font-weight: 600;
-  color: map-get($colors, primary);
+  color: map-get($colors, light);
   text-align: center;
-  border: 3px solid map-get($colors, primary);
-  background-color: transparent;
+  background-color: map-get($colors, primary);
+  background-image: linear-gradient(45deg, #e84118, #e67e22);
 
-  padding: 0.6em 1em;
+  padding: 0.5em 1em;
   margin: 0 0 1rem;
   transition: box-shadow 250ms ease-in, background-color 250ms ease-in, border-radius 250ms ease-in;
-  border-radius: 100% 10% 100% 10% / 10% 100% 10% 100%;
+  border-radius: 5px;
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
 
   &:hover, &:focus {
-    color: #fff;
-    box-shadow: inset 0 0 0 2em map-get($colors, primary);
-    border-radius: 10% 100% 10% 100% / 100% 10% 100% 10%;
-  }
-
-  &__scale {
-    display: inline-block;
-    transition: transform 250ms ease-in;
-
-    #{$b}:hover & {
-      transform: scale(1.06);
-    }
+    color: map-get($colors, light);
   }
 
   &--expand {
@@ -45,7 +35,7 @@
   }
 
   &--xlarge {
-    font-size: calc(0.9em + .25vw);
+    font-size: calc(1em + .25vw);
   }
 
   &--compact {

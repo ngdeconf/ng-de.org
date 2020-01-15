@@ -1,10 +1,10 @@
 ---
 layout: section
-title: Call for Paper - NG-DE 2019 - Angular Conference - 2019 in Berlin
+title: Call for Paper - NG-DE 2020 - Angular Conference - 2020 in Berlin
 cfp_end: "March 17th, 2019 23:59 CET"
 cfp_url: https://docs.google.com/forms/d/1P1eWsjlw7BAwRIHt6DyxkCq4mpaek_2aM8rtiF0D7pg
 description: >
-  The CFP for NG-DE Conference on August 30 & 31, 2019 at BOLLE FESTSÄLE in Berlin is now open. 
+  The CFP for NG-DE Conference on August 30 & 31, 2019 at BOLLE FESTSÄLE in Berlin is now open.
   The CFP will close on March 17th, 2019 23:59 CET.
 ---
 
@@ -33,5 +33,5 @@ For the selection of talks we will follow the jsconf.eu process. That means:
 
 We're looking forward to your submissions!
 
-Still have a question? 
+Still have a question?
 Feel free to get in touch with us [info@ng-de.org](mailto:info@ng-de.org)
