@@ -9,7 +9,7 @@ cache:
 
 #define node js version to use
 node_js:
-  - "10"
+  - "12"
 
 #choose branch on commit of which this script should excecute
 branches:
@@ -30,7 +30,7 @@ before_install:
   #use rvm 2.3
   - rvm use 2.4
   #set home varaibles
-  - . $HOME/.nvm/nvm.sh && nvm install 10.1 && nvm use 10.1
+  - . $HOME/.nvm/nvm.sh && nvm install 12 && nvm use 12
   #install gems through bundler
   - gem install bundler
   #if gems are missing this script will get the missing gems.
