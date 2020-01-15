@@ -12,12 +12,12 @@
     </div>
 
     <h1 class="workshop__title">{{ workshop.title }}</h1>
-  
+
   <!-- jekyll needs this identation for markdown -->
   <div class="workshop__description" markdown="1">
   {{ workshop.description }}
   </div>
-  
+
     <div class="workshop__trainer-container">
       {% for trainer in workshop.speakers %}
       <div class="workshop__trainer">
@@ -28,9 +28,7 @@
 
     <div class="workshop__order order">
       <span class="order__price">{{ workshop.tito.price_net }} EUR + 19% VAT</span>
-      <a class="button button--compact order__button" href="{{ workshop.tito.url }}" target="_blank">
-        <span class="button__scale">Buy Tickets</span>
-      </a>
+      <a class="button button--compact order__button" href="{{ workshop.tito.url }}" target="_blank">Buy Tickets</a>
     </div>
-  
+
   </div>

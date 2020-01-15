@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: section
-hide_topbar_logo: true
+hide_topbar_logo: false
 show_header: true
 description: >
   NG-DE is the first community-driven Angular conference in Germany.
@@ -74,13 +74,13 @@ description: >
   </p>
 </div>
 
+{% if site.feature_flags.speaker_enabled %}
 <div class="lead">
   <div class="lead__content">
-    <a class="button button--xlarge" href="speakers/">
-      <span class="button__scale">Meet our speakers</span>
-    </a>
+    <a class="button button--xlarge" href="speakers/">Meet our speakers</a>
   </div>
 </div>
+{% endif %}
 
 <section class="section section--sponsors">
   <div class="container">

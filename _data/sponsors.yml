@@ -1,63 +1,20 @@
 main: null
 
-platinum: 
+platinum:
   - name: EON
     logo: eon.png
     url: https://www.eon.de
 
-gold: 
-  - name: AdorSys
-    logo: adorsys.png
-    url: https://www.adorsys.de
-  - name: SINNERSCHRADER
-    logo: sinnerschrader.svg
-    url: https://sinnerschrader.com
+gold:
 
 silver:
   - name: Adesso
     logo: adesso.png
     url: https://www.adesso.de
-  - name: Twilio
-    logo: twilio.svg
-    url: https://www.twilio.com
-  - name: MyHammer
-    logo: myhammer.png
-    url: https://www.myhammer.net
-  - name: WhiteSource
-    logo: whitesource.svg
-    url: https://whitesourcesoftware.com
 
-bronze: 
-  - name: 9 Elements
-    logo: 9elements.png
-    url: https://9elements.com/
-  - name: MA-Tea
-    logo: ma-tea.svg
-    url: https://www.ma-tea.de/
-  - name: jambit
-    logo: jambit.svg
-    url: https://jambit.com
-  - name: Bridging-IT
-    logo: bridging-it.svg
-    url: https://bridging-it.de
+bronze:
 
-travel: 
-  - name: Google
-    logo: google.svg
-    url: https://google.com/
-  - name: Dynatrace
-    logo: dynatrace.svg
-    url: https://dynatrace.com/
-  - name: Parkside
-    logo: parkside.svg
-    url: https://www.parkside-interactive.com/de
-  - name: inovex
-    logo: inovex.svg
-    url: https://www.inovex.de/de/
-  - name: progress
-    logo: progress.svg
-    url: https://progress.com/
-
+travel:
 
 community:
   - name: Angular Berlin

@@ -2,26 +2,28 @@ links:
   - name: Home
     url: /
     navigation: false
-  - name: Speakers
-    url: /speakers/
-    navigation: true
-  - name: Schedule
-    url: /schedule/
-    navigation: true
-  - name: Workshops
-    url: /workshops/
-    navigation: true
+    cta: false
+  # - name: Speakers
+  #   url: /speakers/
+  #   navigation: true
+  # - name: Schedule
+  #   url: /schedule/
+  #   navigation: true
+  # - name: Workshops
+  #   url: /workshops/
+  #   navigation: true
   - name: News
     url: /news/
     navigation: true
+    cta: false
   - name: Location
     url: /location/
     navigation: true
-#  - name: CFP
-#    url: /call-for-papers/
-#    navigation: true
-
-
+    cta: false
+  - name: Call for Papers
+    url: /call-for-papers/
+    navigation: true
+    cta: true
 
 second_links:
   - name: Team

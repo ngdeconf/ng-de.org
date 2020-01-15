@@ -74,6 +74,8 @@ favicon_img: yes
 favicon_img_path: "/assets/favicons/"
 #favicon_img_path: "https://external.url/favicon.ico"
 
+feature_flags:
+  speaker_enabled: false
 
 defaults:
   - scope:
