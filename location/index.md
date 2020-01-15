@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Location - NG-DE 2019 - Angular Conference - 2019 in Berlin
+title: Location - NG-DE 2020 - Angular Conference - 2020 in Berlin
 description: >
   NG-DE is the first community-driven Angular conference in Germany.
   It will take place at BOLLE FESTSÄLE in the heart of Berlin, close to the river Spree.
@@ -45,24 +45,24 @@ The conference will take place at BOLLE FESTSÄLE in the heart of Berlin, close 
 The brick building was built in the industrial era round about 1890 and will provide 1.500 square meters for the Angular community to connect.
 
 [BOLLE FESTSÄLE]({{page.gmaps_bolle}}){:target="_blank"}<br>
-Alt-Moabit 98  
-10559 Berlin  
+Alt-Moabit 98
+10559 Berlin
 GERMANY
 
 ### Accessibility
 The conference venue will happen at the first floor of the building. If you can’t use the stairs there is an elevator you can use to get to the venue.
 
 ### Wardrobe
-You find a wardrobe in the sponsoring hall where you can put your bags and jackets and other stuff. You’ll get a number for each piece you store. There will be people from our team the whole time. 
+You find a wardrobe in the sponsoring hall where you can put your bags and jackets and other stuff. You’ll get a number for each piece you store. There will be people from our team the whole time.
 
 
 ### Workshops
 
 All workshops will take place at the conference hotel next to the venue.
 
-[AMERON Hotel ABION Spreebogen](https://goo.gl/maps/WKhPnJwmmKR2){:target="_blank"}  
-Alt-Moabit 99  
-10559 Berlin  
+[AMERON Hotel ABION Spreebogen](https://goo.gl/maps/WKhPnJwmmKR2){:target="_blank"}
+Alt-Moabit 99
+10559 Berlin
 GERMANY
 
 </div>
@@ -114,10 +114,10 @@ GERMANY
 **Bus 245** departs almost in front of the venue at the stop "Kleiner Tiergarten".
  From there it takes only 5 minutes to Hauptbahnhof (Berlin Central Railway Station).
 
-**S-Bahn (commuter trains)** depart from "Bellevue" train station which is a 10-minute walk from the conference. 
+**S-Bahn (commuter trains)** depart from "Bellevue" train station which is a 10-minute walk from the conference.
 
 **Berlin Airports (TXL/SXF)** can be reached by airport shuttles and regional trains departing from Hauptbahnhof (Berlin Central Railway Station).
-From Berlin-Tegel airport (TXL) you can reach the conference venue in approximately 30 minutes. 
+From Berlin-Tegel airport (TXL) you can reach the conference venue in approximately 30 minutes.
 
 </div>
 </section>

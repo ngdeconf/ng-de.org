@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Code of Conduct - NG-DE 2019 - Angular Conference - 2019 in Berlin
+title: Code of Conduct - NG-DE 2020 - Angular Conference - 2020 in Berlin
 ---
 # Code of Conduct
 
@@ -42,23 +42,23 @@ You [can make an anonymous report here](https://docs.google.com/forms/d/e/1FAIpQ
 
 You can make a personal report by:
 
-Contacting a TEAM member, identified by TEAM t-shirt.  
-Emailing us: [coc@ng-de.org](mailto:coc@ng-de.org)  
-Calling us: We’ll publish a phone number that is staffed during main conference hours.  
-When taking a personal report, our team will ensure you are safe and cannot be overheard. They may involve other event staff to ensure your report is managed properly. Once safe, we’ll ask you to tell us about what happened. This can be upsetting, but we’ll handle it as respectfully as possible, and you can bring someone to support you. You won’t be asked to confront anyone and we won’t tell anyone who you are.  
+Contacting a TEAM member, identified by TEAM t-shirt.
+Emailing us: [coc@ng-de.org](mailto:coc@ng-de.org)
+Calling us: We’ll publish a phone number that is staffed during main conference hours.
+When taking a personal report, our team will ensure you are safe and cannot be overheard. They may involve other event staff to ensure your report is managed properly. Once safe, we’ll ask you to tell us about what happened. This can be upsetting, but we’ll handle it as respectfully as possible, and you can bring someone to support you. You won’t be asked to confront anyone and we won’t tell anyone who you are.
 
 Our team will be happy to help you contact hotel/venue security, local law enforcement, local support services, provide escorts, or otherwise assist you to feel safe for the duration of the event. We value your attendance.
 
-Important contact numbers  
-Police: [Alt-Moabit 145, 10557 Berlin](https://goo.gl/maps/Ty5NpQbTULM2), phone: 110  
+Important contact numbers
+Police: [Alt-Moabit 145, 10557 Berlin](https://goo.gl/maps/Ty5NpQbTULM2), phone: 110
 Medical Emergency: Call 112.
 
 ### PHOTO POLICY
 
 We will have colored lanyards for attendees to indicate their comfort level with being photographed:
 
-Black: fine to photograph  
-Red: do not photograph  
+Black: fine to photograph
+Red: do not photograph
 In case of any doubt, please ask before taking photographs of attendees, speakers or team members.
 
 ### INCLUSIVE LANGUAGE
