@@ -5,7 +5,7 @@ cfp_end: "April 16th, 2020 23:59 CET"
 cfp_url: https://forms.gle/HmyywE2BEv8gKPFz6
 description: >
   The CFP for NG-DE Conference on August 21 & 22, 2020 at BOLLE FESTSÄLE in Berlin is now open.
-  The CFP will close on March 17th, 2019 23:59 CET.
+  The CFP will close on April 16th, 2020 23:59 CET.
 ---
 
 ## Call for Papers
