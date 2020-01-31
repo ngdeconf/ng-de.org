@@ -11,7 +11,7 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:url" content="{{ site.url }}">
-    <meta property="og:image" content="{{ "assets/opengraph/og-image.jpg" | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:image" content="{{ "assets/opengraph/og-image.jpg" | prepend: site.baseurl | prepend: site.url }}?{{site.time | date: '%s%N'}}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image:alt" content="{{ site.title }}">
 
