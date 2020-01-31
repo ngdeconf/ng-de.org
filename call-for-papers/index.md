@@ -1,16 +1,16 @@
 ---
 layout: section
 title: Call for Paper - NG-DE 2020 - Angular Conference - 2020 in Berlin
-cfp_end: "March 17th, 2019 23:59 CET"
-cfp_url: https://docs.google.com/forms/d/1P1eWsjlw7BAwRIHt6DyxkCq4mpaek_2aM8rtiF0D7pg
+cfp_end: "April 16th, 2020 23:59 CET"
+cfp_url: https://forms.gle/HmyywE2BEv8gKPFz6
 description: >
-  The CFP for NG-DE Conference on August 30 & 31, 2019 at BOLLE FESTSÄLE in Berlin is now open.
+  The CFP for NG-DE Conference on August 21 & 22, 2020 at BOLLE FESTSÄLE in Berlin is now open.
   The CFP will close on March 17th, 2019 23:59 CET.
 ---
 
 ## Call for Papers
 
-**The CFP has been closed on Februar 18th at 23:59 CET.**
+**The CFP is open: [Apply here](https://forms.gle/HmyywE2BEv8gKPFz6)**
 
 ### The Selection Process
 
@@ -22,11 +22,11 @@ For the selection of talks we will follow the jsconf.eu process. That means:
 
 ### The Jury
 
-{% include team.html where="judge" %}
+The Jury of this year will be announced soon.
 
 ### If your talk gets selected
 
-- We will cover your travel and accommodation costs for the conference.
+- We will cover your travel and accommodation (two nights) costs for the conference.
 - The conference ticket is included for both days.
 - We will add your talk, bio and Twitter handle on the website and promote you via our social media accounts before, during and after the conference.
 - Your talk will be recorded and published on our YouTube channel after the conference.
