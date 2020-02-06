@@ -9,29 +9,10 @@ gmaps_bolle: https://www.google.com/maps/place/BOLLE+Fests%C3%A4le/@52.52478,13.
 
 <section class="section section--top-banner">
   <div class="fullwidth">
-    <img class="lazy" sizes="(max-width: 3840px) 100vw, 3840px"
-      data-srcset="
-      /assets/location/cover/cover_rcerat_c_scale,w_480.jpg 480w,
-      /assets/location/cover/cover_rcerat_c_scale,w_901.jpg 901w,
-      /assets/location/cover/cover_rcerat_c_scale,w_1207.jpg 1207w,
-      /assets/location/cover/cover_rcerat_c_scale,w_1465.jpg 1465w,
-      /assets/location/cover/cover_rcerat_c_scale,w_1695.jpg 1695w,
-      /assets/location/cover/cover_rcerat_c_scale,w_1911.jpg 1911w,
-      /assets/location/cover/cover_rcerat_c_scale,w_2111.jpg 2111w,
-      /assets/location/cover/cover_rcerat_c_scale,w_2288.jpg 2288w,
-      /assets/location/cover/cover_rcerat_c_scale,w_2461.jpg 2461w,
-      /assets/location/cover/cover_rcerat_c_scale,w_2633.jpg 2633w,
-      /assets/location/cover/cover_rcerat_c_scale,w_2798.jpg 2798w,
-      /assets/location/cover/cover_rcerat_c_scale,w_2964.jpg 2964w,
-      /assets/location/cover/cover_rcerat_c_scale,w_3111.jpg 3111w,
-      /assets/location/cover/cover_rcerat_c_scale,w_3258.jpg 3258w,
-      /assets/location/cover/cover_rcerat_c_scale,w_3406.jpg 3406w,
-      /assets/location/cover/cover_rcerat_c_scale,w_3547.jpg 3547w,
-      /assets/location/cover/cover_rcerat_c_scale,w_3686.jpg 3686w,
-      /assets/location/cover/cover_rcerat_c_scale,w_3830.jpg 3830w,
-      /assets/location/cover/cover_rcerat_c_scale,w_3834.jpg 3834w,
-      /assets/location/cover/cover_rcerat_c_scale,w_3840.jpg 3840w"
-      data-src="/assets/location/cover/cover_rcerat_c_scale,w_3840.jpg"
+    <img class="lazy"
+      src="/assets/placeholder-image.svg"
+      data-src="/assets/location/cover/ng-de-sponsoring-area.jpg"
+      data-srcset="/assets/location/cover/ng-de-sponsoring-area.jpg"
       alt="BOLLE FESTSÄLE"
       title="BOLLE FESTSÄLE">
   </div>
@@ -45,9 +26,9 @@ The conference will take place at BOLLE FESTSÄLE in the heart of Berlin, close 
 The brick building was built in the industrial era round about 1890 and will provide 1.500 square meters for the Angular community to connect.
 
 [BOLLE FESTSÄLE]({{page.gmaps_bolle}}){:target="_blank"}<br>
-Alt-Moabit 98
-10559 Berlin
-GERMANY
+Alt-Moabit 98<br>
+10559 Berlin<br>
+GERMANY<br>
 
 ### Accessibility
 The conference venue will happen at the first floor of the building. If you can’t use the stairs there is an elevator you can use to get to the venue.
@@ -71,35 +52,18 @@ GERMANY
   <div class="fullwidth">
     <div class="impressions">
       <div class="impressions__impression">
-        <img class="lazy" sizes="(max-width: 1280px) 100vw, 1280px"
-          data-srcset="
-          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_190.jpg 190w,
-          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_423.jpg 423w,
-          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_593.jpg 593w,
-          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_730.jpg 730w,
-          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_859.jpg 859w,
-          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_979.jpg 979w,
-          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_1083.jpg 1083w,
-          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_1185.jpg 1185w,
-          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_1240.jpg 1240w,
-          /assets/location/impression-1/impression-1_kkxlen_c_scale,w_1280.jpg 1280w"
-          data-src="/assets/location/impression-1/impression-1_kkxlen_c_scale,w_1280.jpg"
+        <img class="lazy"
+          src="/assets/placeholder-image.svg"
+          data-src="/assets/location/impression-1/ng-de-stage.jpg"
+          data-srcset="/assets/location/impression-1/ng-de-stage.jpg"
           alt="BOLLE FESTSÄLE"
           title="BOLLE FESTSÄLE">
       </div>
       <div class="impressions__impression">
-        <img class="lazy" sizes="(max-width: 1280px) 100vw, 1280px"
-          data-srcset="
-          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_190.jpg 190w,
-          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_450.jpg 450w,
-          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_635.jpg 635w,
-          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_795.jpg 795w,
-          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_936.jpg 936w,
-          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_1076.jpg 1076w,
-          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_1187.jpg 1187w,
-          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_1274.jpg 1274w,
-          /assets/location/impression-2/impression-2_pqqwvi_c_scale,w_1280.jpg 1280w"
-          data-src="/assets/location/impression-2/impression-2_pqqwvi_c_scale,w_1280.jpg"
+        <img class="lazy" 
+          src="/assets/placeholder-image.svg"
+          data-src="/assets/location/impression-2/ng-de-kicker.jpg"
+          data-srcset="/assets/location/impression-2/ng-de-kicker.jpg"
           alt="BOLLE FESTSÄLE"
           title="BOLLE FESTSÄLE">
       </div>
