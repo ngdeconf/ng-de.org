@@ -4,7 +4,7 @@
   organizer: true
   judge: true
   team: true
-  role: organizer
+  role: Organizer
   bio: >
     [Robin](https://twitter.com/robinboehm){:target="_blank"} is an entrepreneur driven by continuous improvement to empower people to learn and grow.
     He founded [Angular.DE](https://angular.de){:target="_blank"} and wrote several books about Angular.
@@ -21,7 +21,7 @@
 - name: Sascha
   twitter: "saschanuissl"
   image: sascha.jpg
-  organizer: false
+  organizer: true
   judge: false
   team: true
   role: Organizer
@@ -29,7 +29,7 @@
     [Sascha](https://twitter.com/saschanuissl){:target="_blank"} is a frontend developer and webdesigner. Mainly at [adorsys](https://adorsys.de){:target="_blank"}, but available for small assignments as well. Sascha inherently understands that the user is one of the most valuable assets an organization can have and is driven by user-driven focus, ideals and experience.
     When not programming or designing, Sascha enjoys traveling, going on hikes and meeting new people. He loves discussing about nearly all kind of things to improve himself or others.# - name: Feli
 - name: Martina
-  role: organizer
+  role: Organizer
   twitter: "MartinaKraus11"
   image: martina.jpg
   organizer: true
