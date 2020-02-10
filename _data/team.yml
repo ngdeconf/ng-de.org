@@ -35,18 +35,17 @@
   image: martina.jpg
   organizer: true
   judge: true
-  role: Organizer
   team: true
   bio: >
     [Martina](https://twitter.com/MartinaKraus11){:target="_blank"} is a Google Developer Expert in Angular and Web-Technologies. As a Trainer, Consultant and Speaker she focuses on implementing highly scalable software-solution with WebAssembly and Angular. She is the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg and Angular Leipzig Usergroup.
 - name: Feli
   twitter: "kotzendekrabbe"
   image: feli.jpg
-    organizer: false
-    judge: true
-   team: false
-   role: Jury
-     bio: >
+  organizer: false
+  judge: true
+  team: false
+  role: Jury
+  bio: >
    [Feli](https://twitter.com/kotzendekrabbe){:target="_blank"} is Principal Product Engineer at [SinnerSchrader](https://sinnerschrader.com){:target="_blank"} based in Hamburg, Germany, working in Developer Relations. She has been a developer for 13 years, is curator of the [JSConf EU](https://jsconf.eu){:target="_blank"}, team member of [CSSConf EU](https://2019.cssconf.eu){:target="_blank"}, and organizing various meetups in Hamburg. Fun Fact: Feli is always wearing mismatched socks.
 - name: Madleine
   twitter: "maggysche"
@@ -67,11 +66,11 @@
   bio: >
     [David](https://twitter.com/webdave_de){:target="_blank"} is an Angular consultant who offers support for your Angular applications and projects. He's also part of the [Angular.DE](https://angular.de){:target="_blank"} team. We adapt Angular to your teams needs to find the perfect fit, and get the most out of Angular’s platform. For individual developers or small groups we offer monthly workshops in Berlin, Munich, Hamburg and Essen.
 - name: Marika
-twitter: ""
-image: marika.png
-organizer: false
-judge: true
-team: false
-role: Jury
-bio: >
-  Marika works as a Frontend Software Engineer in Berlin. As a Freelancer she already made many experiences working with Angular in huge customer projects and in UI Desing.
+  twitter: ""
+  image: marika.png
+  organizer: false
+  judge: true
+  team: false
+  role: Jury
+  bio: >
+    Marika works as a Frontend Software Engineer in Berlin. As a Freelancer she already made many experiences working with Angular in huge customer projects and in UI Desing.
