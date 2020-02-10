@@ -9,15 +9,16 @@
     [Robin](https://twitter.com/robinboehm){:target="_blank"} is an entrepreneur driven by continuous improvement to empower people to learn and grow.
     He founded [Angular.DE](https://angular.de){:target="_blank"} and wrote several books about Angular.
     His company [Workshops.DE](https://workshops.de){:target="_blank"} offers high-quality trainings for modern technologies.
-# - name: Martin
- # twitter: "chaos_monster"
- # image: martin.png
- # organizer: true
- # judge: true
- # team: true
- # role: organizer
- # bio: >
- #   [Martin](https://twitter.com/chaos_monster){:target="_blank"} is Principal Product Engineer at SinnerSchrader, who has been working with JavaScript since Angularjs version 1.0.7. During his studies of mathematics and computer science he had the opportunity to teach, where his need to make the world more understandable arose. After some time with Java, he switched to JavaScript and the browser, where he is closer to the user. In his spare time he organizes the Angular meeting in Berlin.
+- name: Martin
+  twitter: "chaos_monster"
+  image: martin.png
+  organizer: false
+  judge: true
+  team: false
+  role: Jury
+  role: organizer
+  bio: >
+    [Martin](https://twitter.com/chaos_monster){:target="_blank"} is Principal Product Engineer at SinnerSchrader, who has been working with JavaScript since Angularjs version 1.0.7. During his studies of mathematics and computer science he had the opportunity to teach, where his need to make the world more understandable arose. After some time with Java, he switched to JavaScript and the browser, where he is closer to the user. In his spare time he organizes the Angular meeting in Berlin.
 - name: Sascha
   twitter: "saschanuissl"
   image: sascha.jpg
@@ -27,7 +28,7 @@
   role: Organizer
   bio: >
     [Sascha](https://twitter.com/saschanuissl){:target="_blank"} is a frontend developer and webdesigner. Mainly at [adorsys](https://adorsys.de){:target="_blank"}, but available for small assignments as well. Sascha inherently understands that the user is one of the most valuable assets an organization can have and is driven by user-driven focus, ideals and experience.
-    When not programming or designing, Sascha enjoys traveling, going on hikes and meeting new people. He loves discussing about nearly all kind of things to improve himself or others.# - name: Feli
+    When not programming or designing, Sascha enjoys traveling, going on hikes and meeting new people. He loves discussing about nearly all kind of things to improve himself or others.
 - name: Martina
   role: Organizer
   twitter: "MartinaKraus11"
@@ -37,15 +38,16 @@
   team: true
   bio: >
     [Martina](https://twitter.com/MartinaKraus11){:target="_blank"} is a Google Developer Expert in Angular and Web-Technologies. As a Trainer, Consultant and Speaker she focuses on implementing highly scalable software-solution with WebAssembly and Angular. She is the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg and Angular Leipzig Usergroup.
-#  twitter: "kotzendekrabbe"
-#  image: feli.jpg
-  #  organizer: false
-  #  judge: true
-  # team: true
-  # role: Jury
-    # bio: >
-  # [Feli](https://twitter.com/kotzendekrabbe){:target="_blank"} is Principal Product Engineer at [SinnerSchrader](https://sinnerschrader.com){:target="_blank"} based in Hamburg, Germany, working in Developer Relations. She has been a developer for 13 years, is curator of the [JSConf EU](https://jsconf.eu){:target="_blank"}, team member of [CSSConf EU](https://2019.cssconf.eu){:target="_blank"}, and organizing various meetups in Hamburg. Fun Fact: Feli is always wearing mismatched socks.
-- name: Madleine
+- name: Feli
+  twitter: "kotzendekrabbe"
+  image: feli.jpg
+  organizer: false
+  judge: true
+  team: false
+  role: Jury
+  bio: >
+   [Feli](https://twitter.com/kotzendekrabbe){:target="_blank"} is Principal Product Engineer at [SinnerSchrader](https://sinnerschrader.com){:target="_blank"} based in Hamburg, Germany, working in Developer Relations. She has been a developer for 13 years, is curator of the [JSConf EU](https://jsconf.eu){:target="_blank"}, team member of [CSSConf EU](https://2019.cssconf.eu){:target="_blank"}, and organizing various meetups in Hamburg. Fun Fact: Feli is always wearing mismatched socks.
+- name: Madeleine
   twitter: "maggysche"
   image: madeleine.jpg
   organizer: false
@@ -63,3 +65,12 @@
   team: true
   bio: >
     [David](https://twitter.com/webdave_de){:target="_blank"} is an Angular consultant who offers support for your Angular applications and projects. He's also part of the [Angular.DE](https://angular.de){:target="_blank"} team. We adapt Angular to your teams needs to find the perfect fit, and get the most out of Angular’s platform. For individual developers or small groups we offer monthly workshops in Berlin, Munich, Hamburg and Essen.
+- name: Marika
+  twitter: "marikasteinert"
+  image: marika.png
+  organizer: false
+  judge: true
+  team: false
+  role: Jury
+  bio: >
+    Marika works as a Frontend Software Engineer in Berlin. As a Freelancer she already made many experiences working with Angular in huge customer projects and in UI Desing.
