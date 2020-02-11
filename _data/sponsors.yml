@@ -16,6 +16,11 @@ bronze:
 
 travel:
 
+scholarship:
+  - name: Angular Architects
+    logo: angulararchitects.svg
+    url: http://angulararchitects.io
+
 community:
   - name: Angular Berlin
     logo: angular-berlin.svg
