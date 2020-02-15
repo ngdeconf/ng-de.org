@@ -16,7 +16,6 @@
   judge: true
   team: false
   role: Jury
-  role: organizer
   bio: >
     [Martin](https://twitter.com/chaos_monster){:target="_blank"} is Principal Product Engineer at SinnerSchrader, who has been working with JavaScript since Angularjs version 1.0.7. During his studies of mathematics and computer science he had the opportunity to teach, where his need to make the world more understandable arose. After some time with Java, he switched to JavaScript and the browser, where he is closer to the user. In his spare time he organizes the Angular meeting in Berlin.
 - name: Sascha
@@ -61,7 +60,7 @@
   twitter: "webdave_de"
   image: webdave.jpg
   organizer: false
-  judge: false
+  judge: true
   team: true
   bio: >
     [David](https://twitter.com/webdave_de){:target="_blank"} is an Angular consultant who offers support for your Angular applications and projects. He's also part of the [Angular.DE](https://angular.de){:target="_blank"} team. We adapt Angular to your teams needs to find the perfect fit, and get the most out of Angular’s platform. For individual developers or small groups we offer monthly workshops in Berlin, Munich, Hamburg and Essen.
@@ -73,4 +72,4 @@
   team: false
   role: Jury
   bio: >
-    Marika works as a Frontend Software Engineer in Berlin. As a Freelancer she already made many experiences working with Angular in huge customer projects and in UI Desing.
+    [Marika](https://twitter.com/marikasteinert){:target="_blank"} works as a Frontend Software Engineer in Berlin. As a Freelancer she already made many experiences working with Angular in huge customer projects and in UI Design.
