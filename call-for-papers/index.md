@@ -22,7 +22,7 @@ For the selection of talks we will follow the jsconf.eu process. That means:
 
 ### The Jury
 
-The Jury of this year will be announced soon.
+{% include team.html where="judge" %}
 
 ### If your talk gets selected
 
