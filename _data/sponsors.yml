@@ -11,6 +11,9 @@ silver:
   - name: Adesso
     logo: adesso.png
     url: https://www.adesso.de
+  - name: adorsys
+    logo: adorsys.png
+    url: https://www.adorsys.de
 
 bronze:
 
