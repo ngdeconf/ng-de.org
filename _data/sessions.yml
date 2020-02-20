@@ -77,20 +77,6 @@
     url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/iwxzleolokc
   datetime: 2019-08-29 09:00:00 +0100
   location: Hotel ABION
-- id: angular-pwa
-  title: Angular PWA - let's get progressive
-  logo: pwa.svg
-  description: >
-    Dave is an Angular GDE and Trainer, in his workshop you'll learn how to install and configure @angular/pwa in your Application. You'll learn how to use the awesome features of PWA like: caching, offline functionality, App-like experience (install to homescreen) and push notifications. So you see: PWA comes wit great power. But keep in mind: With great power comes great responsibility!
-  type: workshop
-  speakers:
-    - david-muellerchen
-    - tobias-struckmeier
-  tito:
-    price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/4wugnm-ou-g 
-  datetime: 2019-08-29 09:00:00 +0100
-  location: Hotel ABION
 - id: ng-girls
   title:  ngGirls - Free Workshop For Women
   logo: ng-girls.svg
