@@ -1,24 +1,3 @@
-- id: angular-solid-foundations
-  title: Angular solid foundations - from zero to hero
-  logo: angular-solid-foundations.svg
-  description: >
-    Gregor is the CTO of co-IT.eu GmbH and loves to build tools that enable developers to be more productive.  
-    In this workshop you will learn about the fundamental techniques that get you started for your next Angular project.  
-      
-    You learn about the basic building blocks of Angular and how to use them the right way while you develop you own application.  
-      
-    Look forward to a packed day with Components, Directives, Pipes,  Inversion Of Control, Navigation & Http.  
-      
-    Rock On & Code
-  type: workshop
-  speakers:
-    - gregor-woiwode
-    - markus-ende
-  tito:
-    price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/asbto1yway0 
-  datetime: 2019-08-29 09:00:00 +0100
-  location: Hotel ABION
 - id: architectures-for-enterprise-applications
   title: Architectures for Enterprise Applications
   logo: router.svg
