@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Code of Conduct - NG-DE 2020 - Angular Conference - 2020 in Berlin
+title: Code of Conduct - NG-DE 2021 - Angular Conference - 2021 in Berlin
 ---
 # Code of Conduct
 

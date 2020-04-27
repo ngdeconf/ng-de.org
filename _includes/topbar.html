@@ -2,16 +2,12 @@
   {% unless page.hide_topbar_logo == true %}
   <div class="topbar__logo">
     <a href="/">
-      <img
-        class="topbar__logo2"
-        src="{{ "assets/logo.svg" | prepend: site.baseurl }}"
-        alt="ng-de Conference Logo"
-        title="ng-de Conference Logo">
+      <img class="topbar__logo2" src="{{ "assets/logo.svg" | prepend: site.baseurl }}" alt="ng-de Conference Logo" title="ng-de Conference Logo">
     </a>
   </div>
   <div class="topbar__info">
     <address class="topbar__address">Bolle Festsäle, Berlin</address>
-    <time class="topbar__time">August 21-22, 2020</time>
+    <time class="topbar__time">August, 2021</time>
   </div class="topbar__address">
   {% endunless %}
   <div class="topbar__toggle" aria-hidden="true">
@@ -44,33 +40,33 @@
   </nav>
 </div>
 <script type="text/javascript">
-(() => {
-  // Nice little function from https://benfrain.com/preventing-body-scroll-for-modals-in-ios/
-  const freezeVp = (e) => {
-    e.preventDefault();
-  };
+  (() => {
+    // Nice little function from https://benfrain.com/preventing-body-scroll-for-modals-in-ios/
+    const freezeVp = (e) => {
+      e.preventDefault();
+    };
 
-  const stopBodyScrolling = (bool) => {
-    if (bool === true) {
-      document.body.classList.add('prevent-scroll');
-      document.body.addEventListener('touchmove', freezeVp, false);
-    } else {
-      document.body.classList.remove('prevent-scroll');
-      document.body.removeEventListener('touchmove', freezeVp, false);
+    const stopBodyScrolling = (bool) => {
+      if (bool === true) {
+        document.body.classList.add('prevent-scroll');
+        document.body.addEventListener('touchmove', freezeVp, false);
+      } else {
+        document.body.classList.remove('prevent-scroll');
+        document.body.removeEventListener('touchmove', freezeVp, false);
+      }
     }
-  }
 
-  const topbar = document.getElementById('topbar');
-  const topbarToggler = topbar.querySelector('.topbar__toggle');
+    const topbar = document.getElementById('topbar');
+    const topbarToggler = topbar.querySelector('.topbar__toggle');
 
-  const topbarToggle = () => {
-    topbar.classList.toggle('topbar--is-open');
-    if (topbar.classList.contains('topbar--is-open')) {
-      stopBodyScrolling(true);
-    } else {
-      stopBodyScrolling(false);
+    const topbarToggle = () => {
+      topbar.classList.toggle('topbar--is-open');
+      if (topbar.classList.contains('topbar--is-open')) {
+        stopBodyScrolling(true);
+      } else {
+        stopBodyScrolling(false);
+      }
     }
-  }
-  topbarToggler.addEventListener('click', topbarToggle);
-})();
+    topbarToggler.addEventListener('click', topbarToggle);
+  })();
 </script>

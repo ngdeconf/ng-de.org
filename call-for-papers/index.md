@@ -1,17 +1,15 @@
 ---
 layout: section
-title: Call for Paper - NG-DE 2020 - Angular Conference - 2020 in Berlin
-cfp_end: "April 16th, 2020 23:59 CET"
+title: Call for Paper - NG-DE 2021 - Angular Conference - 2021 in Berlin
+cfp_end: "April 16th, 2021 23:59 CET"
 cfp_url: https://forms.gle/HmyywE2BEv8gKPFz6
 description: >
-  The CFP for NG-DE Conference on August 21 & 22, 2020 at BOLLE FESTSÄLE in Berlin is now open.
-  The CFP will close on April 16th, 2020 23:59 CET.
+  The CFP for NG-DE Conference in August 2021 at BOLLE FESTSÄLE in Berlin is now open.
 ---
 
 ## Call for Papers
 
-**The CFP is open: [Apply here](https://forms.gle/HmyywE2BEv8gKPFz6)**
-**CFP closes April 16, 2020 23:59 CET**
+**CFP will open early 2021**
 
 ### The Selection Process
 

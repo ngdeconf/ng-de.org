@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Privacy Policy - NG-DE 2020 - Angular Conference - 2020 in Berlin
+title: Privacy Policy - NG-DE 2021 - Angular Conference - 2021 in Berlin
 noindex: true
 ---
 
