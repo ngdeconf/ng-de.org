@@ -11,9 +11,9 @@ silver:
   - name: Adesso
     logo: adesso.png
     url: https://www.adesso.de
-  - name: adorsys
-    logo: adorsys.png
-    url: https://www.adorsys.de
+#  - name: adorsys
+#    logo: adorsys.png
+#    url: https://www.adorsys.de
 
 bronze:
 
@@ -23,6 +23,9 @@ scholarship:
   - name: Angular Architects
     logo: angulararchitects.svg
     url: http://angulararchitects.io
+  - name: Thinktecture
+    logo: thinktecture.svg
+    url: https://www.thinktecture.com/
 
 community:
   - name: Angular Berlin
