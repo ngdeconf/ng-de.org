@@ -28,17 +28,17 @@ jobs:
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && JEKYLL_ENV=production jekyll build --future"
 
     - name: Deploy Beta
-      if: github.ref == 'refs/heads/beta' && github.event == 'push'
+      if: github.ref == 'refs/heads/beta'
       uses: doonstore/firebase-deploy@v1
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         FIREBASE_PROJECT: 'beta'
         
     - name: Deploy Prod
-      if: github.ref == 'refs/heads/master' && github.event == 'push'
+      if: github.ref == 'refs/heads/master'
       uses: doonstore/firebase-deploy@v1
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
