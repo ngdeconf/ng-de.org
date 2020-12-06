@@ -1,10 +1,10 @@
-name: Build Jekyll and Deploy to Firebase
+name: Build Jekyll and Deploy to Firebase Beta
 
 on:
   push:
-    branches: [ master ]
+    branches: [ beta ]
   pull_request:
-    branches: [ master ]
+    branches: [ beta ]
 
 jobs:
   build:
@@ -14,15 +14,15 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Build Prod
+    - name: Build Beta
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && JEKYLL_ENV=production jekyll build"
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --config _config.yml,_config.beta.yml"
 
-    - name: Deploy Prod
-      if: github.ref == 'refs/heads/master'
+    - name: Deploy Beta
+      if: github.ref == 'refs/heads/beta'
       uses: doonstore/firebase-deploy@v1
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        FIREBASE_PROJECT: 'master'
+        FIREBASE_PROJECT: 'beta'
