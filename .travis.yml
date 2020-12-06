@@ -36,7 +36,7 @@ before_install:
 
 install:
   #install firebase tools, required to deploy on firebase hosting
-  - npm -g i firebase-tools
+  - npm i firebase-tools -D
 
 
 # Assume bundler is being used, therefore
@@ -49,8 +49,8 @@ script:
 
 after_success:
   # deploy to firebase using stored token.
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then firebase deploy --token "$FIREBASE_TOKEN" --project master ; fi
-  - if [ "$TRAVIS_BRANCH" == "beta" ]; then firebase deploy --token "$FIREBASE_TOKEN" --project beta; fi
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then npx firebase deploy --token "$FIREBASE_TOKEN" --project master ; fi
+  - if [ "$TRAVIS_BRANCH" == "beta" ]; then npx firebase deploy --token "$FIREBASE_TOKEN" --project beta; fi
 
 env:
   global:
