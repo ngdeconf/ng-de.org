@@ -9,7 +9,7 @@ cache:
 
 #define node js version to use
 node_js:
-  - "12"
+  - lts/14
 
 #choose branch on commit of which this script should excecute
 branches:
@@ -29,8 +29,6 @@ before_install:
   - rvm install 2.4
   #use rvm 2.3
   - rvm use 2.4
-  #set home varaibles
-  - . $HOME/.nvm/nvm.sh && nvm install 12 && nvm use 12
   #install gems through bundler
   - gem install bundler
   #if gems are missing this script will get the missing gems.
@@ -38,7 +36,7 @@ before_install:
 
 install:
   #install firebase tools, required to deploy on firebase hosting
-  - sudo npm -g i firebase-tools
+  - npm -g i firebase-tools
 
 
 # Assume bundler is being used, therefore
