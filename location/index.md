@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Location - NG-DE 2021 - Angular Conference - 2021 in Berlin
+title: Location - NG-DE 2022 - Angular Conference - 2022 in Berlin
 description: >
   NG-DE is the first community-driven Angular conference in Germany.
   It will take place at BOLLE FESTSÄLE in the heart of Berlin, close to the river Spree.
@@ -60,7 +60,7 @@ GERMANY
           title="BOLLE FESTSÄLE">
       </div>
       <div class="impressions__impression">
-        <img class="lazy" 
+        <img class="lazy"
           src="/assets/placeholder-image.svg"
           data-src="/assets/location/impression-2/ng-de-kicker.jpg"
           data-srcset="/assets/location/impression-2/ng-de-kicker.jpg"

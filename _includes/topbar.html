@@ -7,7 +7,7 @@
   </div>
   <div class="topbar__info">
     <address class="topbar__address">Bolle Festsäle, Berlin</address>
-    <time class="topbar__time">August, 2021</time>
+    <time class="topbar__time">September, 2022</time>
   </div class="topbar__address">
   {% endunless %}
   <div class="topbar__toggle" aria-hidden="true">
@@ -18,7 +18,7 @@
       {% for link in site.data.pages.links %}
       {% if link.navigation %}
       <li class="menu__item" role="menuitem">
-        <a class="menu__link {% if link.url == page.url %}menu__link--active{% endif %}" href="{{ link.url }}">{{ link.name }}</a>
+        <a class="menu__link {% if link.url == page.url or page.url contains link.url %}menu__link--active{% endif %}" href="{{ link.url }}">{{ link.name }}</a>
       </li>
       {% endif %}
       {% endfor %}

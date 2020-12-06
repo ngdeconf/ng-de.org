@@ -1,11 +1,11 @@
 ---
 layout: section
-title: Sponsorships - NG-DE 2021 - Angular Conference - 2021 in Berlin
+title: Sponsorships - NG-DE 2022 - Angular Conference - 2022 in Berlin
 ---
 
-# Become a sponsor for NG-DE 2021
+# Become a sponsor for NG-DE 2022
 
-We are currently offering sponsorship packages for NG-DE 2021.
+We are currently offering sponsorship packages for NG-DE 2022.
 Contact us to learn more about our available packages, or talk with us about your unique idea.
 We’re looking forward to create a custom offer for you and find the best possible way to connect you with our audience!
 

@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 # Site settings
-name: NG-DE 2021
-title: NG-DE 2021 - Angular Conference - 2021 in Berlin
+name: NG-DE 2022
+title: NG-DE 2022 - Angular Conference - 2022 in Berlin
 description: >- # this means to ignore newlines until "baseurl:"
-  Angular-Conference - Summer 2021 - Berlin
+  Angular-Conference - Summer 2022 - Berlin
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://ng-de.org" # the base hostname & protocol for your site, e.g. http://example.com

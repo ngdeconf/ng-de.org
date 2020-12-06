@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Imprint - NG-DE 2021 - Angular Conference - 2021 in Berlin
+title: Imprint - NG-DE 2022 - Angular Conference - 2022 in Berlin
 noindex: true
 ---
 
