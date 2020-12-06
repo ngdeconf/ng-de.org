@@ -71,6 +71,3 @@ DEPENDENCIES
   jekyll (~> 4.1.1)
   jekyll-autoprefixer
   jekyll-postfiles
-
-BUNDLED WITH
-   1.17.1
