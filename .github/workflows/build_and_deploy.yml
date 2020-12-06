@@ -14,14 +14,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Build the site in the jekyll/builder container Beta
+    - name: Build the site in the jekyll/builder container | Beta
       if: github.ref == 'refs/heads/beta'
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future --config _config.yml,_config.beta.yml"
 
-    - name: Build the site in the jekyll/builder container Prod
+    - name: Build the site in the jekyll/builder container | Prod
       if: github.ref == 'refs/heads/master'
       env:
         JEKYLL_ENV: 'production'
