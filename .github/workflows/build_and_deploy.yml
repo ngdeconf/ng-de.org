@@ -1,0 +1,45 @@
+name: Build Jekyll and Deploy to Firebase
+
+on:
+  push:
+    branches: [ master, beta ]
+  pull_request:
+    branches: [ master, beta ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build the site in the jekyll/builder container Beta
+      if: github.ref == 'refs/heads/beta'
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future --config _config.yml,_config.beta.yml"
+
+    - name: Build the site in the jekyll/builder container Prod
+      if: github.ref == 'refs/heads/master'
+      env:
+        JEKYLL_ENV: 'production'
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+
+    - name: Deploy Beta
+      if: github.ref == 'refs/heads/beta' && github.event == 'push'
+      uses: doonstore/firebase-deploy@v1
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        FIREBASE_PROJECT: 'beta'
+        
+    - name: Deploy Prod
+      if: github.ref == 'refs/heads/master' && github.event == 'push'
+      uses: doonstore/firebase-deploy@v1
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        FIREBASE_PROJECT: 'master'
