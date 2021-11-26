@@ -11,7 +11,7 @@ facebook:
 newsletter:
   service: Newsletter
   username: Newsletter
-  url: https://ng-de.us5.list-manage.com/subscribe?u=465db430c1cb88ec6dea2ca40&id=a64bc22ee3
+  url: https://ng-de.us5.list-manage.com/subscribe?u=465db430c1cb88ec6dea2ca40&id=a64bc22ee3&group%5B33018%5D%5B1%5D=1
 
 instagram:
   service: Instagram
