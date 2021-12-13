@@ -1,15 +1,13 @@
 ---
 layout: section
 title: Call for Paper - NG-DE 2022 - Angular Conference - 2022 in Berlin
-cfp_end: "April 16th, 2022 23:59 CET"
-cfp_url: https://forms.gle/HmyywE2BEv8gKPFz6
+cfp_end: "April 30th, 2022 23:59 CET"
+cfp_url: https://forms.gle/7DKqEg6N7FSHmcZw6
 description: >
   The CFP for NG-DE Conference in September 2022 at BOLLE FESTSÄLE in Berlin is now open.
 ---
 
 ## Call for Papers
-
-**CFP will open early 2022**
 
 ### The Selection Process
 
@@ -29,7 +27,7 @@ For the selection of talks we will follow the jsconf.eu process. That means:
 
 ### The Jury
 
-{% include team.html where="judge" %}
+Will be announced shortly
 
 
 

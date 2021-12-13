@@ -20,10 +20,10 @@ links:
     url: /location/
     navigation: true
     cta: false
-  # - name: Call for Papers
-  #   url: /call-for-papers/
-  #   navigation: true
-  #   cta: true
+  - name: Call for Papers
+    url: /call-for-papers/
+    navigation: true
+    cta: true
 
 second_links:
   - name: Team
