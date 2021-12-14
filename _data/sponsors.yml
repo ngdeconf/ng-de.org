@@ -20,12 +20,12 @@ bronze:
 travel:
 
 scholarship:
-  - name: Angular Architects
-    logo: angulararchitects.svg
-    url: http://angulararchitects.io
-  - name: Thinktecture
-    logo: thinktecture.svg
-    url: https://www.thinktecture.com/
+#  - name: Angular Architects
+#    logo: angulararchitects.svg
+#    url: http://angulararchitects.io
+#  - name: Thinktecture
+#    logo: thinktecture.svg
+#    url: https://www.thinktecture.com/
 
 community:
   - name: Angular Berlin
@@ -40,12 +40,12 @@ community:
   - name: Angular Hamburg
     logo: angular-hamburg.svg
     url: https://www.meetup.com/de-DE/Hamburg-AngularJS-Meetup/
-  - name: NG-BE
-    logo: ng-be.png
-    url: https://ng-be.org/
-  - name: Angular Dresden
-    logo: angular-dresden.svg
-    url: https://angular-dresden.de/
+#  - name: NG-BE
+#    logo: ng-be.png
+#    url: https://ng-be.org/
+#  - name: Angular Dresden
+#    logo: angular-dresden.svg
+#    url: https://angular-dresden.de/
   - name: RuhrJS
     logo: ruhrjs.svg
     url: https://www.ruhrjs.de/
@@ -55,27 +55,27 @@ community:
   - name: ngGirls
     logo: ng-girls.png
     url: https://ng-girls.org
-  - name: Swiss Angular
-    logo: swiss-angular.png
-    url: https://swissangular.com
-  - name: Angular Finland
-    logo: angular-finland.svg
-    url: https://www.angular.fi/
-  - name: Conference Buddy
-    logo: confbuddy.png
-    url: https://twitter.com/confbuddy
+#  - name: Swiss Angular
+#    logo: swiss-angular.png
+#    url: https://swissangular.com
+#  - name: Angular Finland
+#    logo: angular-finland.svg
+#    url: https://www.angular.fi/
+#  - name: Conference Buddy
+#    logo: confbuddy.png
+#    url: https://twitter.com/confbuddy
   - name: Angular Leipzig
     logo: angular-leipzig.png
     url: https://www.meetup.com/Angular-Meetup-Leipzig/
-  - name: Angular Israel
-    logo: angular-il.jpg
-    url: https://www.meetup.com/de-DE/Angular-IL
-  - name: JetBrains
-    logo: jetbrains.svg
-    url: https://www.jetbrains.com
-  - name: The Barn Coffee Berlin
-    logo: the-barn-logo.png
-    url: https://www.thebarn.de
+#  - name: Angular Israel
+#    logo: angular-il.jpg
+#    url: https://www.meetup.com/de-DE/Angular-IL
+#  - name: JetBrains
+#    logo: jetbrains.svg
+#    url: https://www.jetbrains.com
+#  - name: The Barn Coffee Berlin
+#    logo: the-barn-logo.png
+#    url: https://www.thebarn.de
 
 partners:
   - name: angular.de
