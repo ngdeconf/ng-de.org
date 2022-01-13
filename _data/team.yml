@@ -12,12 +12,30 @@
 - name: Martina
   role: Organizer
   twitter: "MartinaKraus11"
-  image: martina.jpg
+  image: martina.png
   organizer: true
   judge: true
   team: true
   bio: >
-    [Martina](https://twitter.com/MartinaKraus11){:target="_blank"} is a Google Developer Expert in Angular and Web-Technologies. As a Trainer, Consultant and Speaker she focuses on implementing highly scalable software-solution with WebAssembly and Angular. She is the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg and Angular Leipzig Usergroup.
+    [Martina](https://twitter.com/MartinaKraus11){:target="_blank"} is a Google Developer Expert in Angular. As a Trainer, Consultant and Speaker she focuses on implementing highly scalable software-solution with WebAssembly and Angular. She is the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg.
+- name: Joe
+  role: Team
+  twitter: "JoeRayGregory"
+  image: joe.jpeg
+  organizer: false
+  judge: true
+  team: true
+  bio: >
+    [Joe Ray Gregory](https://twitter.com/JoeRayGregory){:target="_blank"}  is a 37 years old Vue.js enthusiast from Lüneburg, Germany. Joe works as a mentor, speaker, trainer and consultant to help his customers to reach their goals efficiently based on his over 15 years of experience in frontend and web development. He is the founder and organizer of the Vuejs Meetup Hamburg and supports the Open Source CMS Contao as organizer for years.
+- name: Carina
+  role: Team
+  twitter: "Rejamela"
+  image: carina.png
+  organizer: false
+  judge: true
+  team: true
+  bio: >
+    [Carina](https://twitter.com/Rejamela){:target="_blank"} Carina is a Social Media and Community Manager. She works with companies like workshops.DE. Carina is also a content creator and streamer on twitch. She is the Co-organizer of the Angular Meetup Berlin and the Angular Ruhr Meetup, formerly organized the VueDay together with heise and dpunkt. She loves bringing people together and learning new things.
 - name: David
   role: Team
   twitter: "webdave_de"
@@ -27,3 +45,12 @@
   team: true
   bio: >
     [David](https://twitter.com/webdave_de){:target="_blank"} is an Angular consultant who offers support for your Angular applications and projects. He's also part of the [Angular.DE](https://angular.de){:target="_blank"} team. We adapt Angular to your teams needs to find the perfect fit, and get the most out of Angular’s platform. For individual developers or small groups we offer monthly workshops in Berlin, Munich, Hamburg and Essen.
+- name: Maria
+  role: Team
+  twitter: "BrowserPerson"
+  image: maria.jpeg
+  organizer: false
+  judge: true
+  team: true
+  bio: >
+    [Maria](https://twitter.com/BrowserPerson)%7B:target=%22_blank%22%7D is a Frontend Technology Lead at Aleri with current focus on Angular. She writes for ng-conf and speaks now and there at tech meetups and conferences. In her tweets and articles Maria likes to share her learnings from everyday coding. Fun fact: she illustrates her stories herself because she likes drawing.
