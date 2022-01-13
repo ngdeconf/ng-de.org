@@ -9,25 +9,6 @@
     [Robin](https://twitter.com/robinboehm){:target="_blank"} is an entrepreneur driven by continuous improvement to empower people to learn and grow.
     He founded [Angular.DE](https://angular.de){:target="_blank"} and wrote several books about Angular.
     His company [Workshops.DE](https://workshops.de){:target="_blank"} offers high-quality trainings for modern technologies.
-- name: Martin
-  twitter: "chaos_monster"
-  image: martin.png
-  organizer: false
-  judge: true
-  team: false
-  role: Jury
-  bio: >
-    [Martin](https://twitter.com/chaos_monster){:target="_blank"} is Principal Product Engineer at SinnerSchrader, who has been working with JavaScript since Angularjs version 1.0.7. During his studies of mathematics and computer science he had the opportunity to teach, where his need to make the world more understandable arose. After some time with Java, he switched to JavaScript and the browser, where he is closer to the user. In his spare time he organizes the Angular meeting in Berlin.
-- name: Sascha
-  twitter: "_tidusIO"
-  image: sascha.jpg
-  organizer: true
-  judge: false
-  team: true
-  role: Organizer
-  bio: >
-    [Sascha](https://twitter.com/_tidusIO){:target="_blank"} is passionate about web, technology and design in general. He's driven by user-driven focus, ideals and experience. He loves trying out ideas to see what works.
-    In his spare time, Sascha enjoys discovering the world, meeting new cultures and people and searching for his way of life.
 - name: Martina
   role: Organizer
   twitter: "MartinaKraus11"
@@ -37,24 +18,6 @@
   team: true
   bio: >
     [Martina](https://twitter.com/MartinaKraus11){:target="_blank"} is a Google Developer Expert in Angular and Web-Technologies. As a Trainer, Consultant and Speaker she focuses on implementing highly scalable software-solution with WebAssembly and Angular. She is the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg and Angular Leipzig Usergroup.
-- name: Feli
-  twitter: "kotzendekrabbe"
-  image: feli.jpg
-  organizer: false
-  judge: true
-  team: false
-  role: Jury
-  bio: >
-   [Feli](https://twitter.com/kotzendekrabbe){:target="_blank"} is Principal Product Engineer at [SinnerSchrader](https://sinnerschrader.com){:target="_blank"} based in Hamburg, Germany, working in Developer Relations. She has been a developer for 13 years, is curator of the [JSConf EU](https://jsconf.eu){:target="_blank"}, team member of [CSSConf EU](https://2019.cssconf.eu){:target="_blank"}, and organizing various meetups in Hamburg. Fun Fact: Feli is always wearing mismatched socks.
-- name: Madeleine
-  twitter: "maggysche"
-  image: madeleine.jpg
-  organizer: false
-  judge: false
-  team: true
-  role: Supporter
-  bio: >
-    [Madeleine](https://twitter.com/maggysche){:target="_blank"} is a web developer and also DevRel at [9elements](https://9elements.com/){:target="_blank"} in Bochum. For 9elements, she organizes the JavaScript Conference [RuhrJS](https://ruhrjs.de /){:target="_blank"}, the Meetups PottJS, and Facebook Developer Circle Ruhr and loves to meet new people. In her free time, she loves to draw, dance and sing karaoke (really bad, but does it matter?).
 - name: David
   role: Team
   twitter: "webdave_de"
@@ -64,12 +27,3 @@
   team: true
   bio: >
     [David](https://twitter.com/webdave_de){:target="_blank"} is an Angular consultant who offers support for your Angular applications and projects. He's also part of the [Angular.DE](https://angular.de){:target="_blank"} team. We adapt Angular to your teams needs to find the perfect fit, and get the most out of Angular’s platform. For individual developers or small groups we offer monthly workshops in Berlin, Munich, Hamburg and Essen.
-- name: Marika
-  twitter: "marikasteinert"
-  image: marika.png
-  organizer: false
-  judge: true
-  team: false
-  role: Jury
-  bio: >
-    [Marika](https://twitter.com/marikasteinert){:target="_blank"} works as a Frontend Software Engineer in Berlin. As a Freelancer she already made many experiences working with Angular in huge customer projects and in UI Design.
