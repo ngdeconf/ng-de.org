@@ -75,7 +75,7 @@
   team: true
   role: Jury
   bio: >
-    [Martin](https://twitter.com/chaos_monster){:target="_blank"} builds apps for UNOWN with Angular and Node.js to make the fashion industry more sustainable. He has been working with JavaScript since Angular.js version 1.0.7. While studying mathematics and computer science, he was given the opportunity to teach. This is where his need to make the world more understandable came from. After some time with Java, he switched to JavaScript to be closer to the user.
+    [Martin](https://twitter.com/chaos_monster){:target="_blank"} is co-founder and former organizer of the first edition of NG-DE. He has been working with JavaScript and Angular since Angular.js version 1.0.7. Currently he makes the fashion industry more sustainable as a coding fullstack architect for  [UNOWN](https://unown-fashion.com).
 - name: Peter
   twitter: "BaggersIO"
   image: peter.png
