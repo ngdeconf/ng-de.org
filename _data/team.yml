@@ -67,4 +67,22 @@
     Vue.js is his absolute favorite and an integral part of his daily work.
     For this reason he founded vuejs.de, the first German Vue community for everything about Vue, and organized the VueDay with heise and dpunkt.
     Besides his passion, programming, he is also a lecturer and coach and loves to share his knowledge.
-    
+- name: Martin
+  twitter: "chaos_monster"
+  image: martin.png
+  organizer: false
+  judge: true
+  team: true
+  role: Jury
+  bio: >
+    [Martin](https://twitter.com/chaos_monster){:target="_blank"} builds apps for UNOWN with Angular and Node.js to make the fashion industry more sustainable. He has been working with JavaScript since Angular.js version 1.0.7. While studying mathematics and computer science, he was given the opportunity to teach. This is where his need to make the world more understandable came from. After some time with Java, he switched to JavaScript to be closer to the user.
+- name: Peter
+  twitter: "BaggersIO"
+  image: peter.png
+  organizer: false
+  judge: true
+  team: true
+  role: Jury
+  bio: >
+    [Peter](https://twitter.com/baggersio){:target="_blank"} is co-founder and former organizer of the first edition of NG-DE. In addition, he co-founded [qupaya](https://qupaya.com){:target="_blank"}, a remote-first software engineering and consultancy company specialized in Angular and NestJS development. In his rare spare time and beside the pandemic, he's organizing the FrankenJS user group in the greater Nuremberg area.
+
