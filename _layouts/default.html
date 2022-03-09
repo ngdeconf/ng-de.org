@@ -27,7 +27,7 @@
     {% endif %}
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lora" rel="stylesheet">
     <link rel="stylesheet" href="{{ "css/default.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
-    {% include _ga.html %}
+    {% include _gtm.html %}
   </head>
   <body>
     {% include topbar.html %}
@@ -47,5 +47,6 @@
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/brands.js" integrity="sha384-S2C955KPLo8/zc2J7kJTG38hvFV+SnzXM6hwfEUhGHw5wPo6uXbnbjSJgw3clO4G" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/fontawesome.js" integrity="sha384-bNOdVeWbABef8Lh4uZ8c3lJXVlHdf8W5hh1OpJ4dGyqIEhMmcnJrosjQ36Kniaqm" crossorigin="anonymous"></script>
     {% include _twitter.html %}
+    {% include _gtm_body.html %}
   </body>
 </html>
