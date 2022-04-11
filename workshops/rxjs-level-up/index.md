@@ -1,8 +1,10 @@
 ---
 layout: section
-title: RxJS Level UP - Essentials in reactive programming Workshop -  NG-DE 2019 in Berlin
+title: RxJS Level UP - Essentials in reactive programming Workshop -  NG-DE 2022 in Berlin
 description: >
-  In this workshop with Jan-Niklas Wortmann and Michael Hladky, you will get an overview of this library. We will learn about the concept, approach and implementation of RxJS!  
+  Master global and component state and optimize template logic.
+  If you already know REDUX or reactive state management patterns and want to learn more advanced things about the architecture-related components, this is the workshop you need to book.
+  Local component state, flattening operators, contextual state and its display component templates, performance for component bindings and advanced custom operators – this workshop will provide a solid foundation from which you can continue to develop these and many more advanced skills pushing your knowledge to the next level.
 workshop_id: rxjs-level-up
 ---
 

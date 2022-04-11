@@ -1,81 +1,51 @@
 - id: architectures-for-enterprise-applications
-  title: Architectures for Enterprise Applications
+  title: Angular Architecture Workshop - From Moduliths to Micro Frontends
   logo: router.svg
   description: >
-    In this interactive seminar you will develop a critical understanding for planning and implementing large enterprise applications with Angular. You will explore and work with approaches to structure huge applications like npm packages, the Mono Repo Approach and Micro Apps.  
-      
-    After this, you will deal with component design and reusable Web Components. For this, you will use several proven concepts and Angular Elements.  
-      
-    In addition, this workshop will enable you to develop a well-articulated understanding for implementing I18N as well as advanced authentication and authorization solutions that allow for single sign on and can be used to integrate with existing Identity Providers like Active Directory.
+    In this interactive workshop you will learn from Manfred Steyer - Angular GDE and Trusted Collaborator in the Angular team - how large and scalable enterprise applications can be developed with Angular.
+
+    To do this, we first consider the use of Strategic Domain Design to create a front-end Modulith (modular monolith). We use the popular Nx and Monorepos for the implementation. We look at approaches to enforce your architecture. 
+    
+    Also, we use incremental builds and the build cache to speed up builds and test runs dramatically.
   type: workshop
   speakers:
     - manfred-steyer
   tito:
     price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/oqtsm-r8eku 
-  datetime: 2019-08-29 09:00:00 +0100
+    url:
+  datetime: 2022-09-22 09:00:00 +0100
   location: Hotel ABION
 - id: rxjs-level-up
   title: RxJS Level UP - Essentials in reactive programming
   logo: rxjs.png
   description: >
-    This training will bring you basic RxJS skills!  
-      
-    RxJs is more popular than ever. It is backed into the Angular core and also used in frameworks like React, Vue, and others!  
-    This doesn't surprise as it leverages a powerful and elegant way to work with sync as well as async collections.
-      
-    In this workshop, you will get an overview of this library. We will learn about the concept, approach and implementation of RxJS!  
+    Master global and component state and optimize template logic.
+    If you already know REDUX or reactive state management patterns and want to learn more advanced things about the architecture-related components, this is the workshop you need to book.
 
-    After a practical and detailed tour through observables we will implement our first stream-based code.  
-    Sounds interesting? Looking forward to meeting you at the workshop.
+    Local component state, flattening operators, contextual state and its display component templates, performance for component bindings and advanced custom operators – this workshop will provide a solid foundation from which you can continue to develop these and many more advanced skills pushing your knowledge to the next level.
+
+
+    We will learn:
+    - Local vs. global state (when to use what)
+    - Derived state (shared computations, distinct changes, and nullish values)
+    - Model vs. ViewModel
+    - OOP Design Patterns for Component state (Facade, MVVM/Presenter, MVC, Adapter)
+    - Subscription-less architecture
+    - Optimize data fetching with RxJS flattening operators
+    - How to handle error, complete, suspense, and values in the template
+    - Reactive Component lazy loading
+    - Improving UX with Reusable reactive helpers
+    - Resilient error handling
+    - Advanced custom operators
+    - Performant component bindings
   type: workshop
   speakers:
-    - jan-niklas-wortmann
     - michael-hladky
   tito:
     price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/e3pzkcv7vo4 
-  datetime: 2019-08-29 09:00:00 +0100
+    url: 
+  datetime: 2022-09-22 09:00:00 +0100
   location: Hotel ABION
-- id: angular-state-management
-  title:  All about Angular State Management
-  logo: labs.svg
-  description: >
-    The state layer is one of those building block that can make developing and maintaining your application sweet and simple or a living hell.
-    Having multiple existing solutions to choose from doesn't make the task much easier.
-    
-    Or maybe you should roll our your own, specifically tailored for your case?
-    
-    During this workshop we will explore several approaches and see which one solves what problems best.
-  type: workshop
-  speakers:
-    - dominic-elm
-    - tomek-sułkowski
-  tito:
-    price_net: 395
-    url: https://ti.to/ng-de/ng-de-2019-workshop-day/with/iwxzleolokc
-  datetime: 2019-08-29 09:00:00 +0100
-  location: Hotel ABION
-- id: ng-girls
-  title:  ngGirls - Free Workshop For Women
-  logo: ng-girls.svg
-  description: >
-    ngGirls aims to introduce women to the world of technology and increase diversity.
-    Angular is a great technology to start with.
-    We believe this is a win-win situation!
-    We plan various events and activities in which the participants build and deploy a web application with Angular.
-    We offer guidance to help finding a job in front end development.
-    If you're a committed, motivated women who wants to step into the Web Development world - your place is with us!  
-      
-    **Please note:** ngGirls is a free side event and not hosted by NG-DE itself. Please refer to [http://ng-girls.org/ng-de-2019/](http://ng-girls.org/ng-de-2019/){:target="_blank"} to register for the workshop.
-  type: workshop
-  speakers:
-    - ng-girls
-  tito:
-    price_net: 0
-    url: http://ng-girls.org/ng-de-2019/
-  datetime: 2019-08-29 09:00:00 +0100
-  location: Axel Springer Berlin
 - id: opening-keynote
   title: Creating A More Sustainable Development Team with Angular and the PAMstack
   description: >
