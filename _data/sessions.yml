@@ -46,6 +46,23 @@
     url: 
   datetime: 2022-09-22 09:00:00 +0100
   location: Hotel ABION
+- id: desktop-class-productivity-apps-with-angular-and-project-fugu
+  title: Implementing desktop-class productivity apps with Angular and Project Fugu 🅰️💘🐡
+  logo: angular-solid-foundations.svg
+  description: >
+    Chris is a GDE for Angular and web capabilities. 
+    In his hands-on workshop, you'll learn how to implement desktop-class productivity apps using the new Project Fugu web APIs. 
+    This joint project between Google, Intel, Microsoft, and others seeks to bring missing features to the web, including access to the local file system, clipboard, and registering Angular apps as default file handlers. 
+    Learn how you can finally bring productivity apps like IDEs, image editors, or office apps to the web!
+    You also need to bring your own laptop to this workshop.
+  type: workshop
+  speakers:
+    - christian-liebel
+  tito:
+    price_net: 395
+    url:
+  datetime: 2022-09-22 09:00:00 +0100
+  location: Hotel ABION
 - id: opening-keynote
   title: Creating A More Sustainable Development Team with Angular and the PAMstack
   description: >
@@ -219,11 +236,4 @@
     Ivy is coming! 
   speakers:
     - eliran-eliassy
-  type: talk
-- id: angular-performance-your-app-at-the-speed-of-light
-  title: "Angular Performance: Your App at the Speed of Light"
-  description: >
-    In this talk, you’ll get to know common performance pitfalls in Angular applications and learn how to avoid them. We’ll have a look at different change detection strategies and ChangeDetectorRef, Zone.js and NgZone. Let’s make your Angular app blazing fast!
-  speakers:
-    - christian-liebel
   type: talk
