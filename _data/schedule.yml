@@ -1,191 +1,191 @@
 - title: Workshops
-  datetime: "2019-08-29T09:00:00"
+  datetime: "2022-09-22T09:00:00"
   entries:
     - title: Workshop 1
-      datetime: "2019-08-29T09:00:00"
+      datetime: "2022-09-22T09:00:00"
       information: ""
       location: Room Köpenick
       session: architectures-for-enterprise-applications
     - title: Workshop 2
-      datetime: "2019-08-29T09:00:00"
+      datetime: "2022-09-22T09:00:00"
       information: ""
       location: Room Grunewald
       session: rxjs-level-up
     - title: Workshop 3
-      datetime: "2019-08-29T09:00:00"
+      datetime: "2022-09-22T09:00:00"
       information: ""
       location: Room Moabit 1
-      session: angular-state-management
+      session: desktop-class-productivity-apps-with-angular-and-project-fugu
 
 - title: Friday
-  datetime: "2019-08-30T09:00:00"
+  datetime: "2022-09-23T09:00:00"
   entries:
     - title: Open Doors
-      datetime: "2019-08-30T08:30:00"
+      datetime: "2022-09-23T08:30:00"
       information: ""
       location: BOLLE FESTSÄLE ∙ Alt-Moabit 98, 10559 Berlin
       session: null
     - title: Breakfast
-      datetime: "2019-08-30T09:00:00"
+      datetime: "2022-09-23T09:00:00"
       information: ""
       location: FESTSAAL
       session: null
     - title: Warm Welcome
-      datetime: "2019-08-30T09:40:00"
+      datetime: "2022-09-23T09:40:00"
       information: >
         [NG-DE Team](/team)
       location: Main Stage
       session: null
     - title: Draft - Opening Keynote
-      datetime: "2019-08-30T10:00:00"
+      datetime: "2022-09-23T10:00:00"
       information: ""
       location: Main Stage
       session: opening-keynote
     - title: Talk 1
-      datetime: "2019-08-30T10:30:00"
+      datetime: "2022-09-23T10:30:00"
       information: ""
       location: Main Stage
-      session: handling-angular-forms-without-losing-your-sanity
+      session: null
     - title: Break
-      datetime: "2019-08-30T11:00:00"
+      datetime: "2022-09-23T11:00:00"
       information: >
         ☕️🍎
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 2
-      datetime: "2019-08-30T11:45:00"
+      datetime: "2022-09-23T11:45:00"
       information: ""
       location: Main Stage
-      session: angulars-new-renderer-ivy-a-deep-into-the-heart-of-angular
+      session: null
     - title: Talk 3
-      datetime: "2019-08-30T12:15:00"
+      datetime: "2022-09-23T12:15:00"
       information: ""
       location: Main Stage
-      session: subjejcting-state-to-good-behavior
+      session: null
     - title: Lunch
-      datetime: "2019-08-30T12:45:00"
+      datetime: "2022-09-23T12:45:00"
       information: >
         🥙🥤
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 4
-      datetime: "2019-08-30T14:15:00"
+      datetime: "2022-09-23T14:15:00"
       information: ""
       location: Main Stage
-      session: add-native-mobile-to-your-angular-projects-the-migration-story
+      session: null
     - title: Talk 5
-      datetime: "2019-08-30T14:45:00"
+      datetime: "2022-09-23T14:45:00"
       information: ""
       location: Main Stage
-      session: watch-out-observers-are-here-to-stay
+      session: null
     - title: Talk 6
-      datetime: "2019-08-30T15:15:00"
+      datetime: "2022-09-23T15:15:00"
       information: ""
       location: Main Stage
-      session: angular-performance-your-app-at-the-speed-of-light
+      session: null
     - title: Break
-      datetime: "2019-08-30T15:45:00"
+      datetime: "2022-09-23T15:45:00"
       information: >
         ☕️🍰
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 7
-      datetime: "2019-08-30T16:30:00"
+      datetime: "2022-09-23T16:30:00"
       information: ""
       location: Main Stage
-      session: bye-bye-ngmodules
+      session: null
     - title: Closing Day 1
-      datetime: "2019-08-30T17:00:00"
+      datetime: "2022-09-23T17:00:00"
       information: >
         [NG-DE Team](/team)
       location: Main Stage
       session: null
     - title: Party 🥳🍻
-      datetime: "2019-08-30T19:00:00"
+      datetime: "2022-09-23T19:00:00"
       information: >
         [Biergarten Moabiter Freiheit](https://bit.ly/30ArWi3){:target="_blank"}
       location: Biergarten Moabiter Freiheit ∙ Alt-Moabit 24, 10559 Berlin
       session: null
 
 - title: Saturday
-  datetime: "2019-08-31T09:00:00"
+  datetime: "2022-09-24T09:00:00"
   entries:
     - title: Open Doors
-      datetime: "2019-08-31T08:30:00"
+      datetime: "2022-09-24T08:30:00"
       information: ""
       location: BOLLE FESTSÄLE ∙ Alt-Moabit 98, 10559 Berlin
       session: null
     - title: Breakfast
-      datetime: "2019-08-31T09:00:00"
+      datetime: "2022-09-24T09:00:00"
       information: ""
       location: FESTSAAL
       session: null
     - title: Intro Day 2
-      datetime: "2019-08-31T09:50:00"
+      datetime: "2022-09-24T09:50:00"
       information: >
         [NG-DE Team](/team)
       location: Main Stage
       session: null
     - title: Talk 8
-      datetime: "2019-08-31T10:00:00"
+      datetime: "2022-09-24T10:00:00"
       information: ""
       location: Main Stage
-      session: angular-material-or-bootstrap-stop-asking-the-question
+      session: null
     - title: Talk 9
-      datetime: "2019-08-31T10:30:00"
+      datetime: "2022-09-24T10:30:00"
       information: ""
       location: Main Stage
-      session: do-you-want-to-build-a-build-tool
+      session: null
     - title: Break
-      datetime: "2019-08-31T11:00:00"
+      datetime: "2022-09-24T11:00:00"
       information: >
         ☕️🍎
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 10
-      datetime: "2019-08-31T11:45:00"
+      datetime: "2022-09-24T11:45:00"
       information: ""
       location: Main Stage
-      session: its-just-a-string-learnings-from-building-a-component-library
+      session: null
     - title: Talk 11
-      datetime: "2019-08-31T12:15:00"
+      datetime: "2022-09-24T12:15:00"
       information: ""
       location: Main Stage
-      session: no-apollogies-making-apps-accessible
+      session: null
     - title: Lunch & Family Photo 📷
-      datetime: "2019-08-31T12:45:00"
+      datetime: "2022-09-24T12:45:00"
       information: >
         🥙🥤
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 12
-      datetime: "2019-08-31T14:15:00"
+      datetime: "2022-09-24T14:15:00"
       information: ""
       location: Main Stage
-      session: demiystifying-dependency-injection-angular-vs-nest
+      session: null
     - title: Talk 13
-      datetime: "2019-08-31T14:45:00"
+      datetime: "2022-09-24T14:45:00"
       information: ""
       location: Main Stage
-      session: what-is-this-angular-in-my-react
+      session: null
     - title: Break
-      datetime: "2019-08-31T15:15:00"
+      datetime: "2022-09-24T15:15:00"
       information: >
         ☕️🍰
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 14
-      datetime: "2019-08-31T16:00:00"
+      datetime: "2022-09-24T16:00:00"
       information: ""
       location: Main Stage
-      session: performance-for-the-long-haul
+      session: null
     - title: Closing Keynote
-      datetime: "2019-08-31T16:30:00"
+      datetime: "2022-09-24T16:30:00"
       information: ""
       location: Main Stage
       session: closing-keynote
     - title: Last Words & Closing the Conference
-      datetime: "2019-08-31T17:00:00"
+      datetime: "2022-09-24T17:00:00"
       information: >
         [NG-DE Team](/team)
       location: Main Stage
