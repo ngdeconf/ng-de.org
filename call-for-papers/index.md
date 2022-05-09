@@ -9,7 +9,9 @@ description: >
 ---
 
 ## Call for Papers
-The CFP for NG-DE/ dotvue Conference September 22 - 24, 2022 at BOLLE FESTSÄLE in Berlin is now open.
+Our call for paper is now closed. We will start the selection process soon and announce the schedule here and on <a target="_blank" href="{{ site.data.socialmedia.twitter.url }}">twitter</a>.
+
+<!-- The CFP for NG-DE/ dotvue Conference September 22 - 24, 2022 at BOLLE FESTSÄLE in Berlin is now open.
 The CFP will close on {{ page.cfp_end }}
 <div class="cfp">
   <div class="cfp__cta">
@@ -39,7 +41,7 @@ Our audience will be people interested in Angular from every level of expertise.
   - making developers lives easier
   - becoming a better developer
   - how to improve the community
-  - and anything else you can think of
+  - and anything else you can think of -->
 
 ### The Selection Process
 
