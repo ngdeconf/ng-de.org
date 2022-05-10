@@ -40,7 +40,7 @@
       datetime: "2022-09-23T10:00:00"
       information: ""
       location: Main Stage
-      session: opening-keynote
+      session: null
     - title: Talk 1
       datetime: "2022-09-23T10:30:00"
       information: ""
@@ -126,12 +126,12 @@
         [NG-DE Team](/team)
       location: Main Stage
       session: null
-    - title: Talk 8
+    - title: Draft - Opening Keynote
       datetime: "2022-09-24T10:00:00"
       information: ""
       location: Main Stage
       session: null
-    - title: Talk 9
+    - title: Talk 8
       datetime: "2022-09-24T10:30:00"
       information: ""
       location: Main Stage
@@ -142,12 +142,12 @@
         ☕️🍎
       location: Sponsoring Hall & Catering Area
       session: null
-    - title: Talk 10
+    - title: Talk 9
       datetime: "2022-09-24T11:45:00"
       information: ""
       location: Main Stage
       session: null
-    - title: Talk 11
+    - title: Talk 10
       datetime: "2022-09-24T12:15:00"
       information: ""
       location: Main Stage
@@ -158,12 +158,12 @@
         🥙🥤
       location: Sponsoring Hall & Catering Area
       session: null
-    - title: Talk 12
+    - title: Talk 11
       datetime: "2022-09-24T14:15:00"
       information: ""
       location: Main Stage
       session: null
-    - title: Talk 13
+    - title: Talk 12
       datetime: "2022-09-24T14:45:00"
       information: ""
       location: Main Stage
@@ -174,16 +174,16 @@
         ☕️🍰
       location: Sponsoring Hall & Catering Area
       session: null
-    - title: Talk 14
+    - title: Talk 13
       datetime: "2022-09-24T16:00:00"
       information: ""
       location: Main Stage
       session: null
-    - title: Closing Keynote
+    - title: Talk 14
       datetime: "2022-09-24T16:30:00"
       information: ""
       location: Main Stage
-      session: closing-keynote
+      session: null
     - title: Last Words & Closing the Conference
       datetime: "2022-09-24T17:00:00"
       information: >

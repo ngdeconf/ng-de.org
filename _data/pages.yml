@@ -6,9 +6,9 @@ links:
   # - name: Speakers
   #   url: /speakers/
   #   navigation: true
-  # - name: Schedule
-  #   url: /schedule/
-  #   navigation: true
+  - name: Schedule
+    url: /schedule/
+    navigation: true
   - name: Workshops
     url: /workshops/
     navigation: true
