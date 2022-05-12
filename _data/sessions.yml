@@ -64,18 +64,21 @@
   datetime: 2022-09-22 09:00:00 +0100
   location: Hotel ABION
 - id: opening-keynote-day-1
-  title:
+  title: Angular v1000
   description: >
+    What will Angular look like 986 releases from now? Angular's future roadmap is filled with innovation and exploration into new concepts like standalone components, hydration, and more. How is Angular thinking about the future? With Angular v15's release right around the corner, we will talk about the state of Angular, and how current and future projects impact Angular developers and beyond! Join us to talk about how Angular is thinking about and planning for the future of the web.
   type: keynote
   speakers:
-    - ana-cidre
+    - emma-twersky
   datetime: 2022-09-23 09:30:00 +0100
   location: Main Stage
 - id: opening-keynote-day-2
-  title:
+  title: Community === You
   description: >
+    We hear about it, we talk about it and we're a part of it: The Community - it's more than just a buzzword. 
+    The developer community at large is an incredible place, and many people have benefited from being part of it. But do you really know the value of being part of a community group and how it can help you? Whether you want to participate in an existing community group, build your own or just want to learn more, this talk will go in-depth about the developer community. We’ll dive into what the community is, how you can be a part of it and how it can help you grow. I’ll also share some personal learnings and findings that I have discovered on my journey to building and being a part of various community groups.
   type: keynote
   speakers:
-    - emma
+    - ana-cidre
   datetime: 2022-09-24 09:30:00 +0100
   location: Main Stage

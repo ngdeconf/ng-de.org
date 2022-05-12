@@ -40,7 +40,7 @@
       datetime: "2022-09-23T10:00:00"
       information: ""
       location: Main Stage
-      session: null
+      session: opening-keynote-day-1
     - title: Talk 1
       datetime: "2022-09-23T10:30:00"
       information: ""
@@ -130,7 +130,7 @@
       datetime: "2022-09-24T10:00:00"
       information: ""
       location: Main Stage
-      session: null
+      session: opening-keynote-day-2
     - title: Talk 8
       datetime: "2022-09-24T10:30:00"
       information: ""
