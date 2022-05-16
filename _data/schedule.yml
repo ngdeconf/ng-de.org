@@ -36,11 +36,11 @@
         [NG-DE Team](/team)
       location: Main Stage
       session: null
-    - title: Draft - Opening Keynote
+    - title: Opening Keynote
       datetime: "2022-09-23T10:00:00"
       information: ""
       location: Main Stage
-      session: null
+      session: opening-keynote-day-1
     - title: Talk 1
       datetime: "2022-09-23T10:30:00"
       information: ""
@@ -103,8 +103,8 @@
     - title: Party 🥳🍻
       datetime: "2022-09-23T19:00:00"
       information: >
-        [Biergarten Moabiter Freiheit](https://bit.ly/30ArWi3){:target="_blank"}
-      location: Biergarten Moabiter Freiheit ∙ Alt-Moabit 24, 10559 Berlin
+        tba
+      location: tba
       session: null
 
 - title: Saturday
@@ -126,11 +126,11 @@
         [NG-DE Team](/team)
       location: Main Stage
       session: null
-    - title: Draft - Opening Keynote
+    - title: Opening Keynote
       datetime: "2022-09-24T10:00:00"
       information: ""
       location: Main Stage
-      session: null
+      session: opening-keynote-day-2
     - title: Talk 8
       datetime: "2022-09-24T10:30:00"
       information: ""
