@@ -3,5 +3,6 @@
     "default": "ngdeconf",
     "beta": "ngdeconf-beta",
     "master": "ngdeconf"
-  }
+  },
+  "targets": {}
 }
