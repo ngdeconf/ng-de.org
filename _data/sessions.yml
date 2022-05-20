@@ -63,6 +63,23 @@
     url:
   datetime: 2022-09-22 09:00:00 +0100
   location: Hotel ABION
+- id: handling-state-in-angular-application
+  title: Handling state in Angular applications - NgRx Store and ComponentStore
+  logo: ngrx.svg
+  description: >
+    NgRx is the most popular state management library for Angular apps. It's widely used, well supported and maintained.
+
+    Now NgRx has two distinct and independent libraries for state management - Store and ComponentStore. We’ll start by learning WHY and HOW to use the Store properly and WHERE it can help, after that we’ll cover ComponentStore, its use cases and differences from the Store.
+
+    Who is this workshop for? Whether you have never used NgRx before or were using it for a while - you'll learn something new during this training. Intermediate and advanced Angular developers will benefit the most from this workshop.
+  type: workshop
+  speakers:
+    - alex-okrushko
+  tito:
+    price_net: 395
+    url:
+  datetime: 2022-09-22 09:00:00 +0100
+  location: Hotel ABION
 - id: opening-keynote-day-1
   title: Angular v1000
   description: >

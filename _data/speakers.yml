@@ -30,6 +30,16 @@
   profiles:
     twitter: christianliebel
     github: christianliebel
+- id: alex-okrushko
+  name: Alex Okrushko
+  title: Principal Architect at Cisco CX
+  image: alex-okrushko.jpeg
+  biography: >
+    Alex is a Principal Architect at Cisco CX - Customer Experience. He is part of the NgRx team, GDE in Angular, @AngularToronto organizer and co-organizer of the official Angular Discord. In his free time, he loves to learn & share the knowledge, provides NgRx workshops and helps with ts.dev/style - the TypeScript style guide.
+  role: Trainer
+  profiles:
+    twitter: AlexOkrushko
+    github: alex-okrushko
 - id: ana-cidre
   name: Ana Cidre
   title: Head of International Developer Relations at Auth0
