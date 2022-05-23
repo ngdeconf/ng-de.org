@@ -12,7 +12,7 @@
     - manfred-steyer
   tito:
     price_net: 395
-    url:
+    url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/angular-architecture-workshop-from-moduliths-to-micro-frontends
   datetime: 2022-09-22 09:00:00 +0100
   location: Hotel ABION
 - id: rxjs-level-up
@@ -43,7 +43,7 @@
     - michael-hladky
   tito:
     price_net: 395
-    url: 
+    url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/rxjs-level-up-essentials-in-reactive-programming
   datetime: 2022-09-22 09:00:00 +0100
   location: Hotel ABION
 - id: desktop-class-productivity-apps-with-angular-and-project-fugu
@@ -60,7 +60,7 @@
     - christian-liebel
   tito:
     price_net: 395
-    url:
+    url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/implementing-desktop-class-productivity-apps-with-angular-and-project-fugu
   datetime: 2022-09-22 09:00:00 +0100
   location: Hotel ABION
 - id: handling-state-in-angular-application
@@ -77,7 +77,7 @@
     - alex-okrushko
   tito:
     price_net: 395
-    url:
+    url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/handling-state-in-angular-applications-ngrx-store-and-componentstore
   datetime: 2022-09-22 09:00:00 +0100
   location: Hotel ABION
 - id: opening-keynote-day-1
