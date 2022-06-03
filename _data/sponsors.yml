@@ -3,19 +3,37 @@ main: null
 platinum:
   - name: EON
     logo: eon.png
-    url: https://www.eon.de
+    url: https://eon.de
+  - name: Storyblok
+    logo: storyblok.png
+    url: https://storyblok.com
 
 gold:
+  - name: LeanIX
+    logo: leanix.png
+    url: https://leanix.net
 
 silver:
   - name: Adesso
     logo: adesso.png
-    url: https://www.adesso.de
+    url: https://adesso.de
+  - name: Auth0
+    logo: auth0.png
+    url: https://auth0.com
+  - name: Firebase
+    logo: firebase.png
+    url: https://firebase.google.com
+  - name: Firebase
+    logo: firebase.png
+    url: https://sumcumo.com
 #  - name: adorsys
 #    logo: adorsys.png
 #    url: https://www.adorsys.de
 
 bronze:
+  - name: MaTea
+    logo: ma-tea.svg
+    url: https://ma-tea.de
 
 travel:
 
@@ -43,9 +61,9 @@ community:
   - name: NG-BE
     logo: ng-be.png
     url: https://ng-be.org/
-#  - name: Angular Dresden
-#    logo: angular-dresden.svg
-#    url: https://angular-dresden.de/
+  #  - name: Angular Dresden
+  #    logo: angular-dresden.svg
+  #    url: https://angular-dresden.de/
   - name: RuhrJS
     logo: ruhrjs.svg
     url: https://www.ruhrjs.de/
@@ -55,15 +73,15 @@ community:
   - name: ngGirls
     logo: ng-girls.png
     url: https://ng-girls.org
-#  - name: Swiss Angular
-#    logo: swiss-angular.png
-#    url: https://swissangular.com
-#  - name: Angular Finland
-#    logo: angular-finland.svg
-#    url: https://www.angular.fi/
-#  - name: Conference Buddy
-#    logo: confbuddy.png
-#    url: https://twitter.com/confbuddy
+  #  - name: Swiss Angular
+  #    logo: swiss-angular.png
+  #    url: https://swissangular.com
+  #  - name: Angular Finland
+  #    logo: angular-finland.svg
+  #    url: https://www.angular.fi/
+  #  - name: Conference Buddy
+  #    logo: confbuddy.png
+  #    url: https://twitter.com/confbuddy
   - name: Angular Leipzig
     logo: angular-leipzig.png
     url: https://www.meetup.com/Angular-Meetup-Leipzig/
