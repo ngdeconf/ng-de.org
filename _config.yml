@@ -30,7 +30,7 @@ markdown: kramdown
 permalink: /news/:slug/
 
 plugins:
-- jekyll-autoprefixer
+  - jekyll-autoprefixer
 
 autoprefixer:
   only_production: true
@@ -58,25 +58,22 @@ twitter_username: ngdeconf
 # medium_username:  ngdeconf
 newsletter: https://ng-de.us5.list-manage.com/subscribe?u=465db430c1cb88ec6dea2ca40&id=a64bc22ee3
 
-
 avatar: yes
 #avatar_img_path: "imgs/avatar.jpg""
 # You can link to your GitHub image. That way it will get updated
 # automatically whenever you change your GitHub profile picture
 avatar_img_path: "/imgs/angularjs-de-logo.png"
 
-
 front_img: yes
 front_img_path: "/imgs/daniel-brosch-594428-unsplash.jpg"
 #front_img_path: "https://external.url/image.jpg"
-
 
 favicon_img: yes
 favicon_img_path: "/assets/favicons/"
 #favicon_img_path: "https://external.url/favicon.ico"
 
 feature_flags:
-  speaker_enabled: false
+  speaker_enabled: true
 
 defaults:
   - scope:
