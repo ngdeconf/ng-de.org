@@ -1,10 +1,9 @@
 <div class="speakers">
-  <div class="row row--three">
-    {% assign speakers = site.data.speakers %}
-    {% for speaker in speakers %}
+  <div class="row row--three shuffle">
+    {% assign speakers = site.data.speakers %} {% for speaker in speakers %}
     <div class="row__col">
       <div class="speakers__speaker">
-        {% include speaker-thumb.html speaker_id=speaker.id showSessionTitle="true" %}
+        {% include speaker-thumb.html speaker_id=speaker.id %}
       </div>
     </div>
     {% endfor %}
