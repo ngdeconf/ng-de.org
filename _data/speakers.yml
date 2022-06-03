@@ -46,7 +46,7 @@
   image: ana-cidre.jpeg
   biography: >
     Ana is Head of International Developer Relations at Auth0. Her passion lies within the developer community and how to make it a more diverse and inclusive space for all. In addition to her day to day job, she is the founder of GalsTech, a group to support women in tech in her local region Galicia, and ngSpain, an Angular conference based in Spain. You will probably find Ana on a stage, working on making the spaces she is in more inclusive and diverse, or playing with her kids.
-  role: Speaker
+  role: Keynote
   profiles:
     twitter: AnaCidre_
 - id: emma-twersky
@@ -55,7 +55,7 @@
   image: emma-twersky.png
   biography: >
     Emma is a Developer Relations Engineer at Google, focusing on Angular and open source. She is passionate about helping developers make the web more accessible, usable, and beautiful!
-  role: Speaker
+  role: Keynote
   profiles:
     twitter: twerske
     github: twerske
