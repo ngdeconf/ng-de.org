@@ -79,9 +79,9 @@ community:
   #  - name: Angular Finland
   #    logo: angular-finland.svg
   #    url: https://www.angular.fi/
-  #  - name: Conference Buddy
-  #    logo: confbuddy.png
-  #    url: https://twitter.com/confbuddy
+  - name: Conference Buddy
+    logo: confbuddy.png
+    url: https://twitter.com/confbuddy
   - name: Angular Leipzig
     logo: angular-leipzig.png
     url: https://www.meetup.com/Angular-Meetup-Leipzig/
@@ -91,9 +91,9 @@ community:
 #  - name: JetBrains
 #    logo: jetbrains.svg
 #    url: https://www.jetbrains.com
-#  - name: The Barn Coffee Berlin
-#    logo: the-barn-logo.png
-#    url: https://www.thebarn.de
+- name: The Barn Coffee Berlin
+  logo: the-barn-logo.png
+  url: https://www.thebarn.de
 
 partners:
   - name: angular.de
