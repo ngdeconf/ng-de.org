@@ -99,3 +99,6 @@ partners:
   - name: angular.de
     logo: angular-de.svg
     url: https://angular.de
+  - name: workshops.de
+    logo: workshops-de.svg
+    url: https://workshops.de
