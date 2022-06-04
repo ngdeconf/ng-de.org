@@ -1,16 +1,22 @@
 {% if page.show_header == true %}
 <header class="header">
   <div class="header__content">
-    <img class="header__logo" src="{{ "assets/logo.svg" | prepend: site.baseurl }}" alt="ng-de Conference Logo" title="ng-de Conference Logo">
+    <img class="header__logo" src="{{ "assets/logo.svg" | prepend: site.baseurl
+    }}" alt="ng-de Conference Logo" title="ng-de Conference Logo">
     <h1 class="header__title">Angular Conference</h1>
     <h2 class="header__description">
       <address>Bolle Festsäle, Berlin</address>
-      <time>23th to 24th September 2022</time>
+      <time>23rd to 24th September 2022</time>
     </h2>
 
     <div class="header__buttons">
       {% if site.data.tickets.enabled == true %}
-      <a class="button button--xlarge" href="{{ site.data.tickets.url }}" target="_blank">Buy Tickets</a>
+      <a
+        class="button button--xlarge"
+        href="{{ site.data.tickets.url }}"
+        target="_blank"
+        >Buy Tickets</a
+      >
       {% endif %}
     </div>
 
