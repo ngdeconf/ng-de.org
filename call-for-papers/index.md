@@ -11,7 +11,7 @@ description: >
 ## Call for Papers
 Our call for paper is now closed. We will start the selection process soon and announce the schedule here and on <a target="_blank" href="{{ site.data.socialmedia.twitter.url }}">twitter</a>.
 
-<!-- The CFP for NG-DE/ dotvue Conference September 22 - 24, 2022 at BOLLE FESTSÄLE in Berlin is now open.
+<!-- The CFP for NG-DE/ dotvue Conference October 6 - 7, 2022 at BOLLE FESTSÄLE in Berlin is now open.
 The CFP will close on {{ page.cfp_end }}
 <div class="cfp">
   <div class="cfp__cta">
@@ -57,7 +57,7 @@ For the selection of talks we will follow the jsconf.eu process. That means:
 - The conference ticket is included for the conference days.
 - We will add your talk, bio and Twitter handle on the website and promote you via our social media accounts before, during and after the conference.
 - Your talk will be recorded and published on our YouTube channel after the conference.
-- There will be a guided walking tour through Berlin on Sunday 25th September, please book your travel according to it if you like to join :)
+- There will be a guided walking tour through Berlin on Saturday 8th October, please book your travel according to it if you like to join :)
 
 ### The Jury
 

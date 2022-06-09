@@ -13,7 +13,7 @@
   tito:
     price_net: 395
     url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/angular-architecture-workshop-from-moduliths-to-micro-frontends
-  datetime: 2022-09-22 09:00:00 +0100
+  datetime: 2022-10-05 09:00:00 +0100
   location: Hotel ABION
 - id: rxjs-for-angular
   title: RxJS for Angular
@@ -44,7 +44,7 @@
   tito:
     price_net: 395
     url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/rxjs-for-angular-essentials-in-reactive-programming
-  datetime: 2022-09-22 09:00:00 +0100
+  datetime: 2022-10-05 09:00:00 +0100
   location: Hotel ABION
 - id: desktop-class-productivity-apps-with-angular-and-project-fugu
   title: Implementing desktop-class productivity apps with Angular and Project Fugu 🅰️💘🐡
@@ -61,7 +61,7 @@
   tito:
     price_net: 395
     url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/implementing-desktop-class-productivity-apps-with-angular-and-project-fugu
-  datetime: 2022-09-22 09:00:00 +0100
+  datetime: 2022-10-05 09:00:00 +0100
   location: Hotel ABION
 - id: handling-state-in-angular-application
   title: Handling state in Angular applications - NgRx Store and ComponentStore
@@ -78,7 +78,7 @@
   tito:
     price_net: 395
     url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/handling-state-in-angular-applications-ngrx-store-and-componentstore
-  datetime: 2022-09-22 09:00:00 +0100
+  datetime: 2022-10-05 09:00:00 +0100
   location: Hotel ABION
 - id: opening-keynote-day-1
   title: Angular v1000
@@ -87,7 +87,7 @@
   type: keynote
   speakers:
     - emma-twersky
-  datetime: 2022-09-23 09:30:00 +0100
+  datetime: 2022-09-06 09:30:00 +0100
   location: Main Stage
 - id: opening-keynote-day-2
   title: Community === You
@@ -97,5 +97,5 @@
   type: keynote
   speakers:
     - ana-cidre
-  datetime: 2022-09-24 09:30:00 +0100
+  datetime: 2022-09-07 09:30:00 +0100
   location: Main Stage

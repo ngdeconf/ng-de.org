@@ -6,7 +6,7 @@ categories: general
 description: "We bring you one more conference day on top of the NG-DE conference days In cooperation with VueJS.de Conf!"
 ---
 
-we are happy to announce that we are back, busy planning the next NG-DE Conference for you in September 2022!
+we are happy to announce that we are back, busy planning the next NG-DE Conference for you in October 2022!
 And we have even more news for you: We bring you one more conference day on top of the
 NG-DE conference days In cooperation with VueJS.DE! The additional day is a new conference called vuesjs.de and will be also for the community, by the community!
 
