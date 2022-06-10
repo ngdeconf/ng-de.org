@@ -6,3 +6,5 @@ group :jekyll_plugins do
     gem 'jekyll-autoprefixer'
     gem 'jekyll-postfiles'
 end
+
+gem "webrick", "~> 1.7"
