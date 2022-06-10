@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "NG-DE 2022 postponed two weeks to October 2021"
+title:  "NG-DE 2022 postponed two weeks to October"
 date:   2022-06-10 09:58:59 +0200
 categories: general
 description: "NG-DE 2022 is postponed two weeks to October 2022. Read why and further information."
