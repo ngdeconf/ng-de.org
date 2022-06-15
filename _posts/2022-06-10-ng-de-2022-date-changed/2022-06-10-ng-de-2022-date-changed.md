@@ -42,9 +42,8 @@ Conference Hotel Abion (in the same building as the conference)
 - [Abion (Conference Hotel) ~159€](https://bookings.travelclick.com/12121?groupID=3547369&hotelID=12121#/datesofstay)
 
 More recommendations nearby:
-- [Motel One (800m) ~79€](https://www.motel-one.com/de/hotels/berlin/hotel-berlin-bellevue/)
+- [Motel One (800m) ~79€](https://www.motel-one.com/de/hotels/berlin/hotel-berlin-bellevue/) with [Formular for fix price Call-off contingent(Abrufkontingent)](https://drive.google.com/file/d/1ncv1k4ItsC8QbNXCfhyE5QmWapZoLjhO/view?usp=sharing)
 - [Hotel Tiergarten (200m) ~100€](https://www.hotel-tiergarten.de/)
-
 
 We hope you will join us on the new date, and we are very excited to have a wonderful conference with you this year!
 
