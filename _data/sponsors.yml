@@ -97,6 +97,9 @@ community:
   - name: The Barn Coffee Berlin
     logo: the-barn-logo.png
     url: https://www.thebarn.de
+  - name: GermanTechJobs
+    logo: germantech-logo-name-square-rounded.png
+    url: https://germantechjobs.de/en/jobs/Angular/all
 
 partners:
   - name: angular.de
