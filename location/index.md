@@ -73,6 +73,17 @@ GERMANY
 <section class="section section--main">
 <div class="container" markdown="1">
 
+### Hotels
+
+Please look for affordable hotels as soon as possible. We have otherwise been able to secure a contingent for you at the adjacent conference hotel:
+
+Conference Hotel Abion (in the same building as the conference)
+- [Abion (Conference Hotel) ~159€](https://bookings.travelclick.com/12121?groupID=3547369&hotelID=12121#/datesofstay)
+
+More recommendations nearby:
+- [Motel One (800m) ~79€](https://www.motel-one.com/de/hotels/berlin/hotel-berlin-bellevue/) with [Formular for fix price Call-off contingent(Abrufkontingent)](https://drive.google.com/file/d/1ncv1k4ItsC8QbNXCfhyE5QmWapZoLjhO/view?usp=sharing)
+- [Hotel Tiergarten (200m) ~100€](https://www.hotel-tiergarten.de/)
+
 ### Public Transportation
 
 **Bus 245** departs almost in front of the venue at the stop "Kleiner Tiergarten".
