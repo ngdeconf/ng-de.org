@@ -9,9 +9,6 @@ platinum:
     url: https://storyblok.com
 
 gold:
-  - name: LeanIX
-    logo: leanix.png
-    url: https://leanix.net
 
 silver:
   - name: Adesso
