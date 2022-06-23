@@ -23,9 +23,9 @@ silver:
   - name: Sumcumo
     logo: sumcumo.png
     url: https://sumcumo.com
-#  - name: adorsys
-#    logo: adorsys.png
-#    url: https://www.adorsys.de
+  - name: safetyio
+    logo: safetyio.png
+    url: https://safetyio.com
 
 bronze:
   - name: MaTea
