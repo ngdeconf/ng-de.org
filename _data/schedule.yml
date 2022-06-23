@@ -4,22 +4,27 @@
     - title: Workshop 1
       datetime: "2022-10-05T09:00:00"
       information: ""
-      location: tba
+      location: Hotel Abion
       session: architectures-for-enterprise-applications
+    - title: Workshop 5
+      datetime: "2022-10-05T09:00:00"
+      information: ""
+      location: Hotel Abion
+      session: cypress-testing-in-and-out
     - title: Workshop 2
       datetime: "2022-10-05T09:00:00"
       information: ""
-      location: tba
+      location: Hotel Abion
       session: rxjs-for-angular
     - title: Workshop 3
       datetime: "2022-10-05T09:00:00"
       information: ""
-      location: tba
+      location: Hotel Abion
       session: desktop-class-productivity-apps-with-angular-and-project-fugu
     - title: Workshop 4
       datetime: "2022-10-05T09:00:00"
       information: ""
-      location: tba
+      location: Hotel Abion
       session: handling-state-in-angular-application
 
 - title: Thursday
@@ -109,7 +114,7 @@
       datetime: "2022-10-06T19:00:00"
       information: >
         tba
-      location: tba
+      location: Hotel Abion
       session: null
 
 - title: Friday
