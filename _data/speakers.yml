@@ -10,6 +10,16 @@
   profiles:
     twitter: ManfredSteyer
     github: manfredsteyer
+- id: tobias-struckmeier
+  name: Tobias Struckmeier
+  title: Principal Engineer - Adesso SE
+  image: tobias-struckmeier.jpg
+  biography: >
+    Tobias Struckmeier has been working in software development for over 20 years. He has been involved in numerous projects as a full-stack developer throughout the years working with a plethora of tools and technologies giving him substantial experience in many fields.  He is helping teams adapting software quality methodologies and became a cypress ambassador in 2021 and founded the German Cypress meetup community.
+  role: Trainer
+  profiles:
+    twitter: tobmaster
+    github: tobmaster
 - id: michael-hladky
   name: Michael Hladky
   title: Google Developer Expert
