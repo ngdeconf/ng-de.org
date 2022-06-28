@@ -107,12 +107,10 @@
   datetime: 2022-10-05 09:00:00 +0100
   location: Hotel ABION
 - id: opening-keynote-day-1
-  title: Angular v1000
-  description: >
-    What will Angular look like 986 releases from now? Angular's future roadmap is filled with innovation and exploration into new concepts like standalone components, hydration, and more. How is Angular thinking about the future? With Angular v15's release right around the corner, we will talk about the state of Angular, and how current and future projects impact Angular developers and beyond! Join us to talk about how Angular is thinking about and planning for the future of the web.
+  title:
+  description:
   type: keynote
   speakers:
-    - emma-twersky
   datetime: 2022-09-06 09:30:00 +0100
   location: Main Stage
 - id: opening-keynote-day-2
