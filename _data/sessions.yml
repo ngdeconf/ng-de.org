@@ -123,3 +123,20 @@
     - ana-cidre
   datetime: 2022-09-07 09:30:00 +0100
   location: Main Stage
+- id: iterable-differs
+  title: Understanding The Iterable Differs
+  description: >
+    Have you ever wondered how Angular works so fast? 
+    Most of us use built-in directives like ngFor, ngClass, ngStyle, and more on daily basis, and get an enormous fast result. 
+    The secret behind all these fast utils is an Angular Abstraction most of us not really familiar with.  
+    In this talk, we will explain what the differs are and how the framework uses them internally.
+  speakers:
+    - eliran-eliassy
+  type: talk
+- id: iterable-differs
+  title: Beyond Micro Frontends - Three Additional Things Module Federation Makes Possible
+  description: >
+    Module Federation is often mentioned in the same breath as Micro Frontends. However, this innovative technology has so much more to offer. That is why we look at three different scenarios beyond Micro Frontends: Plugin-based systems that use extensions provided via an app store, A/B testing, and the drastic acceleration of your build times.  By the end, you will know how to use these possibilities in your applications.
+  speakers:
+    - manfred-steyer
+  type: talk

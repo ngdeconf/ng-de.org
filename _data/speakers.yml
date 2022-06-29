@@ -59,3 +59,18 @@
   role: Keynote
   profiles:
     twitter: AnaCidre_
+- id: eliran-eliassy
+  name: Eliran Eliassy
+  title: Founder & Developer @e-square.io
+  image: eliran-eliassy.png
+  biography: >
+    I'm a Google Developer Expert (GDE) for Angular.
+    Experienced FE developer, specialized in B2C applications.
+    Founder & Developer @ e-square.io
+    Angular enthusiast, Public speaker, Community leader.
+
+    Organizer and manager @ Angular-TLV meetup
+    Writer for AngularInDepth.com
+  role: Speaker
+  profiles:
+    twitter: EliranEliassy
