@@ -133,10 +133,140 @@
   speakers:
     - eliran-eliassy
   type: talk
-- id: iterable-differs
+- id: micro-frontends
   title: Beyond Micro Frontends - Three Additional Things Module Federation Makes Possible
   description: >
-    Module Federation is often mentioned in the same breath as Micro Frontends. However, this innovative technology has so much more to offer. That is why we look at three different scenarios beyond Micro Frontends: Plugin-based systems that use extensions provided via an app store, A/B testing, and the drastic acceleration of your build times.  By the end, you will know how to use these possibilities in your applications.
+    Module Federation is often mentioned in the same breath as Micro Frontends. 
+    However, this innovative technology has so much more to offer. 
+    That is why we look at three different scenarios beyond Micro Frontends: 
+    Plugin-based systems that use extensions provided via an app store, A/B testing, and the drastic acceleration of your build times.  
+    By the end, you will know how to use these possibilities in your applications.
   speakers:
     - manfred-steyer
+  type: talk
+- id: age-monorepos
+  title: The age of monorepos
+  description: >
+    The history of the web can be divided into evolutionary development leaps. 
+    The age of inline scripts, the age of jQuery, the age of SPAs, the age of JAMStack...  
+    We are now entering the next stage that has been carefully prepared in the past few years. 
+    Let me introduce you to the world of modern monorepo solutions and introduce you to the benefits you will reap by using them in every project size and setup. 
+    It's time you automate those boilerplate tasks and reduce the bottlenecks so you can focus on what truly matters.  Get ready for the next leap!
+  speakers:
+    - miroslav-jonas
+  type: talk
+- id: trusted-types
+  title: Securing Angular with Trusted Types
+  description: >
+    Cross-Site Scripting is game over! We've been hearing this for a while now. 
+    Unfortunately, it is still more than relevant in the world of Angular-based frontends.
+    While Angular offers great protections out-of-the-box, I’ve witnessed first-hand how even a little room for mistakes can still result in XSS vulnerabilities.   
+    No more. In this session, we look at Trusted Types, a platform-based defense that will eradicate XSS vulnerabilities in frontends. 
+    We investigate how Trusted Types can stop typical frontend XSS attacks. 
+    Additionally, we explore how to enable Trusted Types in Angular to protect your entire application. 
+    You will walk away with actionable advice to get started with Trusted Types.
+  speakers:
+    - philippe-de-ryck
+  type: talk
+- id: component-store
+  title: How to use NgRx ComponentStore?
+  description: >
+    By this time you might have heard about NgRx’s newest state management library, designed to help with locale state. 
+    You might have even enjoyed its elegant APIs. However you might still have one question: where and how can I use it? 
+    What are the best practices? 
+    In this presentation we’ll go over FOUR distinct use cases where this library can help. 
+    Understanding them will help take your state management skills onto the next level.
+  speakers:
+    - alex-okrushko
+  type: talk
+- id: lazy-loading
+  title: Lazy-loading techniques beyond (Angular) router
+  description: >
+    Lazy loading code & whole parts of the application is, or at least should be part of every production-ready product. 
+    This talk will guide us through techniques that might be applied beyond classic router level lazy-loading we all know from Angular router.
+  speakers:
+    - vojtech-masek
+  type: talk
+- id: cypress-testing
+  title: Cypress Component Testing - The Disappearance of Mr. Button
+  description: >
+    In the fast but yet peaceful county of Jest, Mr. Button went missing but here comes Detective DOMinic Printer. 
+    The investigation begins and questions start raining: Was the change detection triggered? 
+    Is it just the wrong selector? Isn't Mr. Button working in browser-land? 
+    By the way, didn't we introduce a visual regression? 
+    While end-to-end testing with Cypress sounds like the natural alternative, it comes with other challenges related to the size of the investigation area.  
+    Join us on this case, where we will see how Cypress Component Testing bridges the gap between both worlds and helps us narrow the investigation to instantly solve the mystery of the missing Mr. Button.
+  speakers:
+    - younes-jaaidi
+  type: talk
+- id: faster-angular
+  title: Perceived faster Angular applications
+  description: >
+    Angular is a powerful all-in-one JavaScript Framework and therefore a common choice for Enterprise applications. 
+    But many developers complain that Angular is too slow compared to more lightweight UI-only Frameworks even though Ivy has improved performance significantly.
+    Insights into the bootstrapping process of an Angular application will provide you some ideas how to load data or configuration upfront. 
+    Usability improvements using shimmer animations or parallel backend requests can mask slow data fetching and allow you to reduce the perceived waiting time for website users. 
+    Tips and tricks for loading animations and caching strategies will be explained.
+  speakers:
+    - cathrin-moeller
+  type: talk
+- id: project-fugu
+  title: Building desktop-class productivity apps with Angular and Project Fugu
+  description: >
+    Project Fugu is a multi-vendor effort that aims to bridge the gap between platform-specific apps and web applications: 
+    By introducing powerful capabiltities such as file system or clipboard access, developers can create desktop-class productivity apps for the web. 
+    This is the perfect complement to Angular, which can be used to develop feature-rich Progressive Web Apps. 
+
+    In this talk, I'll explain the objective of Project Fugu and show you how to add superpowers to your Angular apps!
+  speakers:
+    - christian-liebel
+  type: talk
+- id: accessible-angular
+  title: Creating Accessible Angular applications
+  description: >
+    In this talk, you will explore some important use cases with Angular code, accessibility issues that can block out the assistive tech users entirely from proceeding, and how to fix those. 
+    You will also learn about the accessibility tree to see how can the assistive technologies understand web content and how you can use that understanding to create a robust document structure.   
+    Key takeaway - a deeper understanding of accessibility and core concepts that will help you in contributing to a more inclusive and accessible digital world.
+  speakers:
+    - anuradha-kumari
+  type: talk
+- id: mobile-apps
+  title: Creating Mobile Apps without any Native knowledge - Angular App + Capacitor => Mobile App
+  description: >
+    In this talk, We’ll share how easy it is to create a mobile app from an existing Angular app. 
+    From a single codebase used for either Web and/or Mobile web experiences, we’ll show how capacitor can simply help transform such app into an Android and iOS App deployable on the Play store and App Store respectively. 
+    All these without really knowing anything about Native …
+  speakers:
+    - babarinde-odewumi
+  type: talk
+- id: standalone-components
+  title: Component-First Architecture with Angular Standalone Components
+  description: >
+    Angular is releasing Standalone Components, and with that we need a new architecture approach.  
+    Component-First Architecture is where our components define and drive the user experience of our application. 
+    Anything that impacts the user’s experience should be handled via our components, as it is our components that the user interacts with.  
+    In this talk, I'll describe what Component-First Architecture is, and how to implement it in Angular with the Angular Standalone Components
+  speakers:
+    - colum-ferry
+  type: talk
+- id: being-reactive
+  title: Stop Micromanaging State and Start Being Reactive!
+  description: >
+    Is your component full of local properties to hide and show panels? 
+    Do you need to call ‘refresh’ functions to make sure your state is up to date? 
+    Then you might be micromanaging your state. The good news is there is an easier way! 
+    In this talk we will cover some common micromanagement anti-patterns and go over some solutions to start making your app more reactive.
+  speakers:
+    - lara-newsom
+  type: talk
+- id: providers
+  title: A Practical Guide to Providers
+  description: >
+    Angular’s dependency injection (DI) system is incredibly powerful, but it can be overwhelming. 
+    What’s the difference between `useValue` and `useExisting`? Why should one create an injection token? 
+    Where should one provide a service - globally, in a module, or in a component? 🤯  
+    In this talk, we’ll cover Angular’s DI system at a high level and demystify the different ways you can provide services to your Angular app. 
+    You’ll get practical examples and real-world use cases that you can immediately apply to your projects.
+  speakers:
+    - alisa-duncan
   type: talk
