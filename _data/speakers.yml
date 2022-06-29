@@ -172,3 +172,13 @@
   profiles:
     github: yjaaidi
     twitter: yjaaidi
+- id: cathrin-moeller
+  name: Cathrin Möller
+  title: Fullstack developer at TNG Technology Consulting GmbH
+  image: cathrin-moeller.jpeg
+  biography: >
+    Cathrin is a full stack developer, architect and UX and CSS enthusiast and working as a Principal Consultant at TNG Technology Consulting since 2014. 
+    She has a broad experience from multiple client projects ranging from mature enterprise projects as well as development from scratch.
+    Therefore she knows common pitfalls and a lot of best practices that she likes sharing in talks.
+  role: Speaker
+  profiles:
