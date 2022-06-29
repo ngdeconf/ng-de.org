@@ -74,3 +74,101 @@
   role: Speaker
   profiles:
     twitter: EliranEliassy
+    github: eliraneliassy
+- id: miroslav-jonas
+  name: Miroslav Jonas
+  title: Senior engineer at Nrwl.io
+  image: miro-jonas.png
+  biography: >
+    Miro is a senior engineer at Nrwl.io and a core member of the Nx team. He's interested in the front end of things, helping companies build scalable and performant applications. He enjoys sharing with the community, speaking, contributing to open source, and organising events. Miro is co-founder of Angular Austria and co-organiser of Angular Vienna and ViennaJS meetups.
+  role: Speaker
+  profiles:
+    twitter: meeroslav
+    github: meeroslav
+- id: alisa-duncan
+  name: Alisa Duncan
+  title: Senior Developer Advocate at Okta
+  image: alisa-duncan.jpeg
+  biography: >
+    Alisa Duncan is a Senior Developer Advocate at Okta, a full-stack developer, and a community builder who loves the thrill of learning new things. She is a Google Developer Expert in Angular, a ngGirls core team member, co-organizes AngularKC meetup, and creates a curriculum for an organization that teaches women web development basics. When not coding or volunteering, she enjoys cooking, watching K-Dramas, and drinking a glass of wine.
+  role: Speaker
+  profiles:
+    twitter: AlisaDuncan
+    github: alisaduncan
+- id: anuradha-kumari
+  name: Anuradha Kumari
+  title: Frontend Developer at Passionate People
+  image: anuradha-kumari.png
+  biography: >
+    Anuradha is a frontend developer, working on making the web more accessible, one website at a time. She is passionate about exploring new technologies and sharing knowledge through tech articles and talks. As an accessibility advocate, she aims to spread awareness and empower the community towards achieving the common goal of inclusion through technology.
+  role: Speaker
+  profiles:
+    twitter: miracle_404
+    github: anuk79
+- id: babarinde-odewumi
+  name: Babarinde Odewumi
+  title: Senior Software Architect at Abba & King Systems LLC.
+  image: babarinde-odewumi.jpeg
+  biography: >
+    Currently Senior Software Architect at Abba & King Systems LLC. I love designing and building simple solutions. Lately, I have been involved in designing user experience channels  and middlewares for some of the most digitally inclined insurance companies in Sub Saharan Africa. Husband and Father of two.
+  role: Speaker
+  profiles:
+    github: babarinde
+- id: colum-ferry
+  name: Colum Ferry
+  title: Senior Software Engineer at Nrwl
+  image: colum-ferry.jpeg
+  biography: >
+    Hi, I'm Colum Ferry, a Senior Software Engineer at Nrwl, working on the Angular Plugin for Nx. I'm interested in architectural patterns with Angular and, more particularly, in achieving a Micro Frontend Architecture with Angular. I'm a married father of two rambunctious kids and I've lately turned into a huge Formula 1 fan!
+  role: Speaker
+  profiles:
+    github: Coly010
+    twitter: FerryColum
+- id: lara-newsom
+  name: Lara Newsom
+  title: Software Engineer on the Customer Experience Angular team at Cisco
+  image: lara-newsom.jpeg
+  biography: >
+    Lara is a Software Engineer on the Customer Experience Angular team at Cisco. Most of Lara’s career has been spent working in the full stack as a Software Consultant and she enjoys 
+    sharing the knowledge and experience she has gained with others through talks, blogs, or pairing with teammates. When she is not coding or teaching, Lara enjoys trail running, fostering rescue kittens, and traveling with her family.
+  role: Speaker
+  profiles:
+    github: lnewsom
+    twitter: laranerdsom
+- id: philippe-de-ryck
+  name: Philippe De Ryck
+  title: Founder of Pragmatic Web Security
+  image: philippe-de-ryck.jpeg
+  biography: >
+    Philippe De Ryck helps developers protect companies through better web security. His Ph.D. in web security from KU Leuven lies at the basis of his exceptional knowledge of the security landscape. As the founder of Pragmatic Web Security, Philippe delivers security training and security consulting to companies worldwide. His online course platform allows anyone to learn complex security topics at their own pace. Philippe is a Google Developer Expert and an Auth0 Ambassador for his community contributions on the security of web applications and APIs.
+  role: Speaker
+  profiles:
+    github: philippederyck
+    twitter: PhilippeDeRyck
+- id: vojtech-masek
+  name: Vojtech Mašek
+  title: Software Engineer at FlowUp
+  image: vojtech-masek.jpeg
+  biography: >
+    I am a software engineer focusing on the front-end with expertise in Angular, TypeScript, and Agile development. I lead development teams to release production-ready products, helping understand concepts of performance, size optimizations, or server-side rendering.
+  role: Speaker
+  profiles:
+    github: vmasek
+    twitter: mauriziovitale_
+- id: younes-jaaidi
+  name: Younes Jaaidi
+  title: Software Engineer at FlowUp
+  image: younes-jaaidi.jpeg
+  biography: >
+    Younes is a Google Developer Expert for Angular & Web Technologies.
+
+    He is a trainer, eXtreme Programming coach & tech advisor who loves the challenge of boosting teams’ efficiency and helping everyone enjoy every part of their job.
+    His experience convinced him that the key to making quality products is collective ownership, passion, and knowledge sharing.
+
+    In his spare time, you will find him contributing to open-source software, writing articles or speaking at meetups or conferences… and sometimes sailing.
+
+    His favorite trick? Adding features by removing code.
+  role: Speaker
+  profiles:
+    github: yjaaidi
+    twitter: yjaaidi

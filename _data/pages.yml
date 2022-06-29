@@ -3,9 +3,9 @@ links:
     url: /
     navigation: false
     cta: false
-  # - name: Speakers
-  #   url: /speakers/
-  #   navigation: true
+  - name: Speakers
+    url: /speakers/
+    navigation: true
   - name: Schedule
     url: /schedule/
     navigation: true
