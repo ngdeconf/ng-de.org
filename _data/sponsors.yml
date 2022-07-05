@@ -85,9 +85,12 @@ community:
   - name: Angular Love
     logo: angular.love.svg
     url: https://www.angular.love/en/
-  #  - name: Angular Isral
-  #    logo: angular-il.jpg
-  #    url: https://www.meetup.com/de-DE/Angular-IL
+  - name: Angular Israel
+    logo: angular-il.jpg
+    url: https://www.meetup.com/de-DE/Angular-IL
+  - name: Angular Rome
+    logo: angular-rome.svg
+    url: https://ngrome.io/home
   #  - name: JetBrains
   #    logo: jetbrains.svg
   #    url: https://www.jetbrains.com
