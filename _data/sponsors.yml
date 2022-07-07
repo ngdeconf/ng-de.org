@@ -94,12 +94,16 @@ community:
   #  - name: JetBrains
   #    logo: jetbrains.svg
   #    url: https://www.jetbrains.com
+  - name: Heise
+    logo: heise.png
+    url: https://www.heise.de/news/Konferenz-zu-Angular-und-Vue-js-Veranstalter-haben-Call-for-Papers-gestartet-6349744.html
   - name: The Barn Coffee Berlin
     logo: the-barn-logo.png
     url: https://www.thebarn.de
   - name: GermanTechJobs
     logo: germantech-logo-name-square-rounded.png
     url: https://germantechjobs.de/en/jobs/Angular/all
+  
 
 partners:
   - name: angular.de
