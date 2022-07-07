@@ -11,14 +11,18 @@ c/o Factory<br>
 Lohmühlenstraße 65<br>
 12435 Berlin<br>
 
+### Umsatzsteuer-ID
+Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
+DE295155649
+
 ### Kontakt:
 E-Mail: [robin.boehm@workshops.de](mailto:robin.boehm@workshops.de)
 Telefon: +49 (0) 201 / 87535773
 
 ### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 Robin Böhm<br>
-Merseburger Str. 2<br>
-10823 Berlin<br>
+Koppenstraße 82<br>
+10243 Berlin<br>
 
 ### Online-Streitbeilegung
 Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: [https://ec.europa.eu/consumers/odr](https://ec.europa.eu/consumers/odr). Unsere E-Mail-Adresse finden Sie oben im Impressum.
