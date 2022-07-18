@@ -94,6 +94,9 @@ community:
   #  - name: JetBrains
   #    logo: jetbrains.svg
   #    url: https://www.jetbrains.com
+  - name: Angular Cologne
+    logo: angular-cologne.svg
+    url: https://angular.cologne
   - name: Heise
     logo: heise.png
     url: https://www.heise.de/news/Konferenz-zu-Angular-und-Vue-js-Veranstalter-haben-Call-for-Papers-gestartet-6349744.html
