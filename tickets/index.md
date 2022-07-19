@@ -15,5 +15,13 @@ Both frameworks have a huge community focus and similar concepts so we provide a
 The venue BOLLE FESTSÄLE is located next to the beautiful Spree river, close to Bellevue palace and Tiergarten. A bunch of one-day workshops are planned which can be booked separately from the main event.
 
 By buying a ticket you accept the code of conduct.
-
 <tito-widget event="ng-de/vuejsde-conf-2022" releases="regular-ticket,regular-ticket-ng-de-conf-2-days-2-day-pass-copy,ngtgyud9c9c,ng-de-conf-2-day-pass-from-moduliths-to-micro-frontends-workshop,ng-de-conf-2-day-pass-rxjs-for-angular-workshop,ng-de-conf-2-day-pass-implementing-desktop-class-productivity-apps-with-angular-and-project-fugu-workshop,ng-de-conf-2-day-pass-handling-state-in-angular-applications-ngrx-store-and-componentstore-workshop,epljcabgrs8"></tito-widget>
+
+<script>
+  const url = new URL(location.href)
+  const searchParams = new URLSearchParams(url.searchParams);
+
+  if (searchParams.has("voucher")) {
+    document.querySelector('tito-widget').setAttribute("discount-code", searchParams.get("voucher"))
+  }
+</script>
