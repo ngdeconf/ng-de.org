@@ -28,7 +28,7 @@ By buying a ticket you accept the code of conduct.
 
   if (searchParams.has("voucher")) {
     const widgets = document.querySelectorAll('tito-widget');
-    for(widget of widgets){
+    for(const widget of widgets){
       widget.setAttribute("discount-code", searchParams.get("voucher"))
     }
   }
