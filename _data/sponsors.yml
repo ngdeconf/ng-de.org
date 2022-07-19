@@ -17,9 +17,6 @@ silver:
   - name: Auth0
     logo: auth0.png
     url: https://auth0.com
-  - name: Firebase
-    logo: firebase.png
-    url: https://firebase.google.com
   - name: Sumcumo
     logo: sumcumo.png
     url: https://sumcumo.com
