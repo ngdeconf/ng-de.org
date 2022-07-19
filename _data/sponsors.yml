@@ -103,6 +103,9 @@ community:
   - name: GermanTechJobs
     logo: germantech-logo-name-square-rounded.png
     url: https://germantechjobs.de/en/jobs/Angular/all
+  - name: Super Duper Developers Club
+    logo: sddc.png
+    url: https://twitter.com/sddevclub
   
 
 partners:
