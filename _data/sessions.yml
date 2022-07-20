@@ -36,6 +36,7 @@
   type: workshop
   speakers:
     - tobias-struckmeier
+    - ramona-schwering
   tito:
     price_net: 395
     url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/kubnb1wpp8c
