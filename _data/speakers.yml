@@ -27,6 +27,9 @@
   biography: >
     After her apprenticeship as an application developer, Ramona has contributed to product development at shopware AG for more than six years: First in quality assurance and now as a software developer. She owns both views of the product - that of a tester and a developer. Ramona primarily uses this to strengthen trust in test automation and support the testers.
   role: Trainer
+  profiles:
+    twitter: leichteckig
+    github: leichteckig
 - id: michael-hladky
   name: Michael Hladky
   title: Google Developer Expert

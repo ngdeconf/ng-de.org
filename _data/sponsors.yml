@@ -106,6 +106,9 @@ community:
   - name: Super Duper Developers Club
     logo: sddc.png
     url: https://twitter.com/sddevclub
+  - name: angularday
+    logo: angularday.png
+    url: https://2022.angularday.it/
   
 
 partners:
