@@ -10,6 +10,7 @@
   type: workshop
   speakers:
     - manfred-steyer
+    - rainer-hahnekamp
   tito:
     price_net: 395
     url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/angular-architecture-workshop-from-moduliths-to-micro-frontends

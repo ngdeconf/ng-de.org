@@ -10,6 +10,15 @@
   profiles:
     twitter: ManfredSteyer
     github: manfredsteyer
+- id: rainer-hahnekamp
+  name: Rainer Hahnekamp
+  title: softwarearchitekt.at
+  image: rainer-hahnekamp.jpg
+  biography: >
+    Rainer is a passionate software developer and loves to work with Angular, Java, and NET. Since 2019, he has been a trainer and consultant at AngularArchitects.io.
+  role: Trainer
+  profiles:
+    twitter: rainerhahnekamp
 - id: tobias-struckmeier
   name: Tobias Struckmeier
   title: Principal Engineer - Adesso SE
