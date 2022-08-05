@@ -2,7 +2,7 @@
   title: Angular Architecture Workshop - From Moduliths to Micro Frontends
   logo: router.svg
   description: >
-    In this interactive workshop you will learn from Manfred Steyer - Angular GDE and Trusted Collaborator in the Angular team - how large and scalable enterprise applications can be developed with Angular.
+    In this interactive workshop you will learn from Manfred Steyer and Rainer Hahnekamp how large and scalable enterprise applications can be developed with Angular.
 
     To do this, we first consider the use of Strategic Domain Design to create a front-end Modulith (modular monolith). We use the popular Nx and Monorepos for the implementation. We look at approaches to enforce your architecture. 
     
