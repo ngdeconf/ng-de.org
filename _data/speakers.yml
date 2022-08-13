@@ -4,6 +4,7 @@
   image: dariusz-kalbarczyk.jpeg
   biography: >
     Google Developer Expert, Developer Avocado 🥑, Angular lover, author, speaker, @ngPolandConf & @jsPolandConf conference organizer. Co-founder of the group Angular Warsaw and Angular Krakow. Skilled programmer with over 20 years of IT industry experience. Emerging technologies and social media enthusiast. He’s also spent years working closely with some of the biggest companies on the financial and telecommunication markets. While working with AngularJS/Angular for the past 7 years, he participated in the creation of a cutting edge banking transaction system designed for mobile platforms, and a group insurance support system, among others.
+  role: MC
   profiles:
     twitter: ngKalbarczyk
 - id: manfred-steyer
