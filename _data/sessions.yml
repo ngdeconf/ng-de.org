@@ -1,3 +1,10 @@
+- id: ng-de-mc-dariusz-kalbarczyk
+  title: Master of Ceremonies
+  description: >
+  
+  speakers:
+    - dariusz-kalbarczyk
+  type: 🎤
 - id: architectures-for-enterprise-applications
   title: Angular Architecture Workshop - From Moduliths to Micro Frontends
   logo: router.svg
