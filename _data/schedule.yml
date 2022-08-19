@@ -92,7 +92,7 @@
       datetime: "2022-10-06T15:15:00"
       information: ""
       location: Main Stage
-      session: age-monorepos
+      session: providers
     - title: Break
       datetime: "2022-10-06T15:45:00"
       information: >
@@ -188,7 +188,7 @@
       datetime: "2022-10-07T16:00:00"
       information: ""
       location: Main Stage
-      session: providers
+      session: age-monorepos
     - title: Talk 14
       datetime: "2022-10-07T16:30:00"
       information: ""
