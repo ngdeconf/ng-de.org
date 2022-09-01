@@ -109,6 +109,9 @@ community:
   - name: angularday
     logo: angularday.png
     url: https://2022.angularday.it/
+  - name: dpunkt.verlag
+    logo: dpunkt_logo.png
+    url: https://dpunkt.de
   
 
 partners:
