@@ -116,10 +116,12 @@
   datetime: 2022-10-05 09:00:00 +0100
   location: Hotel ABION
 - id: opening-keynote-day-1
-  title:
-  description:
+  title: How do new Angular features improve developer experience?
+  description: >
+    In this talk we’ll explore new features in Angular and how the improved developer experience is lowering the friction for building great experiences on the web.
   type: keynote
   speakers:
+    - simona-cotin
   datetime: 2022-09-06 09:30:00 +0100
   location: Main Stage
 - id: opening-keynote-day-2
