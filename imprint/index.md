@@ -7,7 +7,6 @@ noindex: true
 ## Imprint
 Angaben gemäß § 5 TMG:<br>
 Symetics GmbH<br>
-c/o Factory<br>
 Lohmühlenstraße 65<br>
 12435 Berlin<br>
 
