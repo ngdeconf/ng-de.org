@@ -32,3 +32,6 @@ second_links:
   - name: Code of Conduct
     url: /code-of-conduct/
     navigation: true
+  - name: COVID 
+    url: /covid/
+    navigation: true
