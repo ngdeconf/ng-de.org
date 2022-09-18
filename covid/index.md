@@ -5,9 +5,7 @@ title: COVID - NG-DE 2022 - Angular Conference - 2022 in Berlin
 # COVID-19 Rules
 
 Organising a conference in the times of the pandemic is not easy. 
-We will be following the [current regulations in Berlin](https://www.berlin.de/corona/en/measures/) to ensure you are safe.
-
-Additionally, to accommodate anyone’s safety needs, we would like to introduce the following point system.
+We will be following the [current regulations in Berlin](https://www.berlin.de/corona/en/measures/) to ensure you are safe. Additionally, to accommodate anyone’s safety needs, we would like to introduce the following point system.
 
 ### Point System
 
