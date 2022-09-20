@@ -17,7 +17,7 @@ The idea is that people can easily communicate their needs to others. Please be 
 
 ### Masks
 
-While moving around during the event, we strongly advise you to wear a FFP2 or medical mask when you are not at your seat.
+It is recommended to wear a mask for your own protection, but you don't have to.
 
 ### Disinfectant
 
