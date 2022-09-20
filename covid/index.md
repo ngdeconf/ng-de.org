@@ -17,7 +17,7 @@ The idea is that people can easily communicate their needs to others. Please be 
 
 ### Masks
 
-It is recommended to wear a mask for your own protection, but you don't have to.
+There is no requirement to wear masks at the event. Everyone must decide for themselves whether they want to wear a mask or not. Attention! Please be considerate of people who have a red dot on their name tag and respect their wish to keep the distance rule and wear a mask if you want to communicate with them.
 
 ### Disinfectant
 
