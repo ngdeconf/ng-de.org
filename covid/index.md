@@ -10,7 +10,7 @@ We will be following the [current regulations in Berlin](https://www.berlin.de/c
 ### Point System
 
 During checkin we will provide red dot stickers that you can put on your badges.
-* Red = “Always wear a FFP2-mask when talking to me (also when sitting/outside)”. FF2 masks will be provided.
+* Red = “Always wear a FFP2-mask when talking to me (also when sitting/outside)”. FFP2 masks will be provided.
 * no sticker = "I am happy with the hygiene concept of the conference".
 
 The idea is that people can easily communicate their needs to others. Please be considerate of each other’s feelings!
@@ -25,7 +25,8 @@ We will provide disinfectant at the entry of the venue and in the sanitary areas
 
 ### COVID Symptoms
 
-We kindly ask you to stay home if you have [COVID-like symptoms](https://www.who.int/health-topics/coronavirus#tab=tab_3). In this case we can offer you a refund on individual basis. If we notice that you are showing strong COVID-like symptoms or your behaviour is putting other attendees at risk, you may be asked to leave. In this case no refund is possible.
+We kindly ask you to stay home if you have [COVID-like symptoms](https://www.who.int/health-topics/coronavirus#tab=tab_3). In this case we can offer you a refund on individual basis. You can request it by filling in the [following form](https://docs.google.com/forms/d/1QlP5VixLzawLA2FLfDFJT80L8c0LMDHHs-CTrCDekvM/edit).
+If we notice that you are showing strong COVID-like symptoms or your behaviour is putting other attendees at risk, you may be asked to leave. In this case no refund is possible.
 
 If you have any additional questions, please contact us at <a href="mailto:info@ng-de.org?subject=COVID">info@ng-de.org</a>.
 
