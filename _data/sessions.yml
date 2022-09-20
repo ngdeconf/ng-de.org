@@ -281,3 +281,14 @@
   speakers:
     - alisa-duncan
   type: talk
+- id: ng-girls
+  title: ngGirls - build your own Angular application
+  logo: ngGirls.png
+  description: >
+    ngGirls aims to introduce women to the world of technology and increase the diversity. Angular is a great technology to start with. We believe this is a win-win situation! During the workshop you will build and deploy your very first Angular Web Application! Angular is an open-source platform for building web application, developed by Google and the community. It provides various tools to easily create a dynamic, interactive app that can run on desktop browsers, mobile and even robots.
+    The workshop is free of charge. Just fill out the application form. Don't wait too long - you can apply for a pass only until the stated deadline.
+  type: workshop
+  tito:
+    url: https://docs.google.com/forms/d/e/1FAIpQLSfZ2qMPfuigiq3KRnrTv30ndomTaGj6XK44RIvjHnnbIRO4Ow/viewform
+  datetime: 2022-10-04 09:00:00 +0100
+  location: Hotel ABION

@@ -21,7 +21,9 @@
       {% endfor %}
   </div>
   <div class="workshop__order order">
+      {% if workshop.tito.price_net %}
       <span class="order__price">{{ workshop.tito.price_net }} EUR + 19% VAT</span>
+      {% endif %}
       <a class="button button--compact order__button" href="/workshops/{{ workshop.id }}/">Read More</a>
     </div>
 </div>
