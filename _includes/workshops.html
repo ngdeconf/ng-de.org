@@ -1,4 +1,6 @@
-{% assign workshops = site.data.sessions | where: "type", "workshop" %}
+{% assign workshops = site.data.sessions | where: "type", "workshop" | where: "tito.price_net", "395" %}
+
+{% assign ngGirls = site.data.sessions | where: "id", "ng-girls" %}
 
 <h2>Cost of the workshops</h2>
 <p>We try to offer the workshops at the NG-DE conference at a particularly reasonable rate.</p>
@@ -22,5 +24,15 @@
 <h2>Workshop Offers</h2>
 
 {% for workshop in workshops %}
+  {% include _workshop-small.html %}
+{% endfor %}
+
+<h2>Our special guest - ngGirls</h2>
+<ul>
+  <li>Tuesday, 04.10.2022</li>
+  <li>Start: 9am, End: approx. 5pm, Breaks: will be announced on site.</li>
+</ul>
+
+{% for workshop in ngGirls %}
   {% include _workshop-small.html %}
 {% endfor %}
