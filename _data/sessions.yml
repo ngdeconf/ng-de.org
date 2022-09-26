@@ -4,6 +4,7 @@
   
   speakers:
     - dariusz-kalbarczyk
+    - natalia-venditto
   type: 🎤
 - id: architectures-for-enterprise-applications
   title: Angular Architecture Workshop - From Moduliths to Micro Frontends

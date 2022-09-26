@@ -7,6 +7,15 @@
   role: MC
   profiles:
     twitter: ngKalbarczyk
+- id: natalia-venditto
+  name: Natalia Venditto
+  title: Principal Program Manager @Microsoft
+  image: natalia-venditto.jpg
+  biography: >
+    After several years in the roles of frontend and full-stack developer, tech-lead and software architect, Natalia took on the challenge and adventure of working in developer tools and services. Now she leads DX for JavaScript developers in Azure, but she maintains Angular will always be her favorite framework.
+  role: MC
+  profiles:
+    twitter: AnfibiaCreativa
 - id: simona-cotin
   name: Simona Cotin
   title: Engineering Manager at Google
