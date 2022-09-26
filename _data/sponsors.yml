@@ -112,6 +112,9 @@ community:
   - name: dpunkt.verlag
     logo: dpunkt_logo.png
     url: https://dpunkt.de
+  - name: IT-Schulungen.com
+    logo: its_logo.png
+    url: https://www.it-schulungen.com/
   
 
 partners:
