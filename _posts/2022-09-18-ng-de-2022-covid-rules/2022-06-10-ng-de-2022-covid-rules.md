@@ -7,7 +7,7 @@ description: "NG-DE 2022 COVID-19 rules"
 ---
 
 Organising a conference in the times of the pandemic is not easy. 
-We have gathered best practices from other conferences and have studied the official regulation in Berlin. We have retrospected and tried to predict the future. We want to provide myximum safety and fun.
+We have gathered best practices from other conferences and have studied the official regulation in Berlin. We have retrospected and tried to predict the future. We want to provide maximum safety and fun.
 
 The results of our collective brainstorming is documented in our [COVID guidelines](/covid). Check it out!
 
