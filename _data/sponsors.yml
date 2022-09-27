@@ -28,6 +28,9 @@ bronze:
   - name: MaTea
     logo: ma-tea.svg
     url: https://ma-tea.de
+  - name: Celonis
+    logo: celonis.png
+    url: https://www.celonis.com/
 
 travel:
 
