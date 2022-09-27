@@ -131,16 +131,15 @@
   profiles:
     twitter: meeroslav
     github: meeroslav
-- id: alisa-duncan
-  name: Alisa Duncan
-  title: Senior Developer Advocate at Okta
-  image: alisa-duncan.jpeg
+- id: sam-bellen
+  name: Sam Bellen
+  title: Staff Developer Advocate Engineer at Auth0
+  image: sam-bellen.jpg
   biography: >
-    Alisa Duncan is a Senior Developer Advocate at Okta, a full-stack developer, and a community builder who loves the thrill of learning new things. She is a Google Developer Expert in Angular, a ngGirls core team member, co-organizes AngularKC meetup, and creates a curriculum for an organization that teaches women web development basics. When not coding or volunteering, she enjoys cooking, watching K-Dramas, and drinking a glass of wine.
+    I'm a Google Developer Expert who works as a Staff Developer Advocate Engineer at Auth0. At Auth0 we're trying to make authentication and identification as easy as possible, while still keeping it secure.
   role: Speaker
   profiles:
-    twitter: AlisaDuncan
-    github: alisaduncan
+    twitter: sambego
 - id: anuradha-kumari
   name: Anuradha Kumari
   title: Frontend Developer at Passionate People

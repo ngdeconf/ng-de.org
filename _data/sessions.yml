@@ -199,6 +199,17 @@
   speakers:
     - vojtech-masek
   type: talk
+- id: no-way-jose
+  title: No way, JOSE!
+  description: >
+    Is your first thought when thinking about cryptography, "nope, that's not for me!"? There's no need to. When explained with simple examples, you can see the basics are not that complicated. The JavaScript Object Signing and Encryption, or JOSE for short is a framework that helps us deal with encryption. It describes ways to securely transfer data either signed (JWS) or encrypted (JWE). Let's take a leap of faith and explore the wonderful world of cryptography together, shall we?
+
+    In this talk, I will try to explain the basics of encryption, signing, and hashing through simple examples. We'll look into how the JOSE standard can help us with encrypted content on the web using JSON Web Encryption (JWE) and JSON Web Keys (JWK). The audience does not need any specific knowledge about cryptography as this talk will go through the basics. Some programming knowledge can be useful but not necessary as code examples will be simple and explained.
+
+    The times when websites were just simple pieces of information are long gone. These days the web handles more sensitive data than ever before. To securely handle this data, we sometimes need to hash, encrypt or sign it. Sure there are a million tools, libraries, and pieces of software that handle this for you, but knowing the basics can certainly come in handy!
+  speakers:
+    - sam-bellen
+  type: talk
 - id: cypress-testing
   title: Cypress Component Testing - The Disappearance of Mr. Button
   description: >
@@ -271,17 +282,6 @@
   speakers:
     - lara-newsom
   type: talk
-- id: providers
-  title: A Practical Guide to Providers
-  description: >
-    Angular’s dependency injection (DI) system is incredibly powerful, but it can be overwhelming. 
-    What’s the difference between `useValue` and `useExisting`? Why should one create an injection token? 
-    Where should one provide a service - globally, in a module, or in a component? 🤯  
-    In this talk, we’ll cover Angular’s DI system at a high level and demystify the different ways you can provide services to your Angular app. 
-    You’ll get practical examples and real-world use cases that you can immediately apply to your projects.
-  speakers:
-    - alisa-duncan
-  type: talk
 - id: ng-girls
   title: ngGirls - build your own Angular application
   logo: ngGirls.png
@@ -291,7 +291,6 @@
   type: workshop
   speakers:
     - robert-willemelis
-    - alisa-duncan
   tito:
     url: https://docs.google.com/forms/d/e/1FAIpQLSfZ2qMPfuigiq3KRnrTv30ndomTaGj6XK44RIvjHnnbIRO4Ow/viewform
   datetime: 2022-10-04 09:00:00 +0100
