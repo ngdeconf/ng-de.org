@@ -26,6 +26,13 @@
       information: ""
       location: Hotel Abion
       session: handling-state-in-angular-application
+    - title: Get together and Pick up your badges 🥳🍻
+      datetime: "2022-10-05T18:00:00"
+      information: >
+        Our meeting point will be marked with beach flags from the conference so you can't miss it.
+        You will also be able to pick up already you conference badge 🥳
+      location: Arminiusmarkthalle, Arminiusstraße 2-4, 10551 Berlin
+      session: null
 
 - title: Thursday
   datetime: "2022-10-06T09:00:00"
@@ -111,7 +118,7 @@
       location: Main Stage
       session: null
     - title: Party 🥳🍻
-      datetime: "2022-10-06T17:15:00"
+      datetime: "2022-10-06T18:00:00"
       information: >
         Our meeting point will be marked with beach flags from the conference so you can't miss it.
       location: Arminiusmarkthalle, Arminiusstraße 2-4, 10551 Berlin
