@@ -2,7 +2,7 @@
 layout: post
 title:  "Drinks and Food"
 date:   2022-09-26 11:11:11 +0200
-categories: team
+categories: general
 description: "An overview about all the food that is included at the NG-DE 2022 conference"
 ---
 
