@@ -28,4 +28,4 @@ What could be better to fully experience Berlin throughout your stay?
 
 Best regards
 
-Martina, Toni, Joe, Maria, Carina, David and Robin
+Martina, Toni, Joe, Maria, Carina, Sarah, David and Robin

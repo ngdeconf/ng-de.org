@@ -54,6 +54,15 @@
   team: true
   bio: >
     [Maria](https://twitter.com/BrowserPerson){:target="_blank"} is a Frontend Technology Lead at Aleri with current focus on Angular. She writes for ng-conf and speaks now and there at tech meetups and conferences. In her tweets and articles Maria likes to share her learnings from everyday coding. Fun fact: she illustrates her stories herself because she likes drawing.
+- name: Sarah
+  role: Organizer
+  twitter: ""
+  image: sarah.jpeg
+  organizer: true
+  judge: false
+  team: true
+  bio: >
+    Sarah is a professional event and product manager. She has profound experience in organising trainings and congresses. She is an highly-skilled leader with  string understanding of business administration.
 - name: Toni
   role: Organizer
   twitter: ""
