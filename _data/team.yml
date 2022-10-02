@@ -57,7 +57,7 @@
 - name: Sarah
   role: Organizer
   twitter: ""
-  image: sarah.jpeg
+  image: sarah.png
   organizer: true
   judge: false
   team: true
