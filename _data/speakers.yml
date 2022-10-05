@@ -140,16 +140,6 @@
   role: Speaker
   profiles:
     twitter: sambego
-- id: anuradha-kumari
-  name: Anuradha Kumari
-  title: Frontend Developer at Passionate People
-  image: anuradha-kumari.png
-  biography: >
-    Anuradha is a frontend developer, working on making the web more accessible, one website at a time. She is passionate about exploring new technologies and sharing knowledge through tech articles and talks. As an accessibility advocate, she aims to spread awareness and empower the community towards achieving the common goal of inclusion through technology.
-  role: Speaker
-  profiles:
-    twitter: miracle_404
-    github: anuk79
 - id: babarinde-odewumi
   name: Babarinde Odewumi
   title: Senior Software Architect at Abba & King Systems LLC.

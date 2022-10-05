@@ -244,14 +244,12 @@
   speakers:
     - christian-liebel
   type: talk
-- id: accessible-angular
-  title: Creating Accessible Angular applications
+- id: jamstack
+  title: Fast jamstack code to cloud with SWA CLI
   description: >
-    In this talk, you will explore some important use cases with Angular code, accessibility issues that can block out the assistive tech users entirely from proceeding, and how to fix those. 
-    You will also learn about the accessibility tree to see how can the assistive technologies understand web content and how you can use that understanding to create a robust document structure.   
-    Key takeaway - a deeper understanding of accessibility and core concepts that will help you in contributing to a more inclusive and accessible digital world.
+    We will learn a about Azure Jamstack tools fully integrated to VS Code, that make it possible to build and deploy an Angular (or any JavaScript) app, an api and configure the CI/CD pipelines in lightning fast record times.
   speakers:
-    - anuradha-kumari
+    - natalia-venditto
   type: talk
 - id: mobile-apps
   title: Creating Mobile Apps without any Native knowledge - Angular App + Capacitor => Mobile App
