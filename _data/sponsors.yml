@@ -33,6 +33,9 @@ bronze:
     url: https://www.celonis.com/
 
 travel:
+  - name: Narwhal Technologies Inc.
+    logo: nrwl.png
+    url: https://nrwl.io/
 
 scholarship:
 #  - name: Angular Architects

@@ -180,6 +180,18 @@
   speakers:
     - philippe-de-ryck
   type: talk
+- id: partially-zonesless
+  title: Partially Zoneless - Performance tunning without Big Bang Refactorings
+  description: >
+    This session will feature the most up-to-date information to expand your knowledge of advanced
+    performance optimization techniques beyond the basics. Together, we will get hands-on with the powerful 
+    toolset, including Chrome and Angular DevTools, review the case study of web performance 
+    optimization and its outcomes, and learn how to achieve peak performance, reaching staggering 99 points. 
+    In the end, you'll go home with lots of exercises to guide you and a wealth of insights to work with, 
+    impressed by how much faster your application can get.
+  speakers:
+    - michael-hladky
+  type: talk
 - id: component-store
   title: How to use NgRx ComponentStore?
   description: >
@@ -250,15 +262,6 @@
     We will learn a about Azure Jamstack tools fully integrated to VS Code, that make it possible to build and deploy an Angular (or any JavaScript) app, an api and configure the CI/CD pipelines in lightning fast record times.
   speakers:
     - natalia-venditto
-  type: talk
-- id: mobile-apps
-  title: Creating Mobile Apps without any Native knowledge - Angular App + Capacitor => Mobile App
-  description: >
-    In this talk, We’ll share how easy it is to create a mobile app from an existing Angular app. 
-    From a single codebase used for either Web and/or Mobile web experiences, we’ll show how capacitor can simply help transform such app into an Android and iOS App deployable on the Play store and App Store respectively. 
-    All these without really knowing anything about Native …
-  speakers:
-    - babarinde-odewumi
   type: talk
 - id: standalone-components
   title: Component-First Architecture with Angular Standalone Components
