@@ -71,6 +71,10 @@
 <div markdown="1">
 {{ session.description }}
 </div>
+
+            {% if session.slides %}
+            <strong><a href="{{ session.slides }}" target="_blank">Slides</a></strong>
+            {% endif %}
     
     
           </li>

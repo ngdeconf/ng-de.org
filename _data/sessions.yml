@@ -135,6 +135,7 @@
     - ana-cidre
   datetime: 2022-09-07 09:30:00 +0100
   location: Main Stage
+  slides: https://docs.google.com/presentation/d/11UFA__KseeUWKldZzR8wLT8ghOXXCPyVqkOVehmMRYo/edit?usp=sharing
 - id: iterable-differs
   title: Understanding The Iterable Differs
   description: >
@@ -156,6 +157,7 @@
   speakers:
     - manfred-steyer
   type: talk
+  slides: /assets/slides/ngde2022-steyer-slides.pdf
 - id: age-monorepos
   title: The age of monorepos
   description: >
@@ -167,6 +169,7 @@
   speakers:
     - miroslav-jonas
   type: talk
+  slides: https://speakerdeck.com/meeroslav/age-of-monorepos-ngde
 - id: trusted-types
   title: Securing Angular with Trusted Types
   description: >
@@ -211,6 +214,7 @@
   speakers:
     - vojtech-masek
   type: talk
+  slides: https://docs.google.com/presentation/d/1c9zbxJ2xngYeKaeWElZQ76iw2-TPczfaSAm88mexIU8/edit#slide=id.g5544e03e36_0_0
 - id: no-way-jose
   title: No way, JOSE!
   description: >
@@ -256,6 +260,7 @@
   speakers:
     - christian-liebel
   type: talk
+  slides: https://speakerdeck.com/christianliebel/building-desktop-class-productivity-apps-with-angular-and-project-fugu
 - id: jamstack
   title: Fast jamstack code to cloud with SWA CLI
   description: >
@@ -273,6 +278,7 @@
   speakers:
     - colum-ferry
   type: talk
+  slides: https://docs.google.com/presentation/d/1inVmi86hFoklakQMWf7OIgbZV2S2iAgOrZgR9hKmIyQ/edit?usp=sharing
 - id: being-reactive
   title: Stop Micromanaging State and Start Being Reactive!
   description: >
