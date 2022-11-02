@@ -18,7 +18,7 @@ jobs:
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && jekyll build --config _config.yml,_config.beta.yml"
+        jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && jekyll build --config _config.yml,_config.2022.yml"
 
     - name: Deploy to Firebase Version 2022
       if: github.ref == 'refs/heads/ng-de-2022'
