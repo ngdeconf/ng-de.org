@@ -1,49 +1,16 @@
 main: null
 
 platinum:
-  - name: EON
-    logo: eon.png
-    url: https://eon.de
-  - name: Storyblok
-    logo: storyblok.png
-    url: https://storyblok.com
 
 gold:
 
 silver:
-  - name: Adesso
-    logo: adesso.png
-    url: https://adesso.de
-  - name: Auth0
-    logo: auth0.png
-    url: https://auth0.com
-  - name: Sumcumo
-    logo: sumcumo.png
-    url: https://sumcumo.com
-  - name: safetyio
-    logo: safetyio.png
-    url: https://www.safetyio.com?utm_source=ngsite&utm_medium=several&utm_campaign=NG-DE-conference&utm_id=CMPG210
 
 bronze:
-  - name: MaTea
-    logo: ma-tea.svg
-    url: https://ma-tea.de
-  - name: Celonis
-    logo: celonis.png
-    url: https://www.celonis.com/
 
 travel:
-  - name: Narwhal Technologies Inc.
-    logo: nrwl.png
-    url: https://nrwl.io/
 
 scholarship:
-#  - name: Angular Architects
-#    logo: angulararchitects.svg
-#    url: http://angulararchitects.io
-#  - name: Thinktecture
-#    logo: thinktecture.svg
-#    url: https://www.thinktecture.com/
 
 community:
   - name: Angular Berlin
@@ -121,7 +88,7 @@ community:
   - name: IT-Schulungen.com
     logo: its_logo.png
     url: https://www.it-schulungen.com/
-  
+
 
 partners:
   - name: angular.de
