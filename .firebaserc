@@ -1,9 +1,9 @@
 {
   "projects": {
+    "2022": "ngdeconf-2022",
     "default": "ngdeconf",
     "beta": "ngdeconf-beta",
-    "master": "ngdeconf",
-    "2022": "ngdeconf-2022"
+    "master": "ngdeconf"
   },
   "targets": {}
 }
