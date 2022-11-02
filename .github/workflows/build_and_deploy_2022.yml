@@ -20,9 +20,11 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod a+w /srv/jekyll/Gemfile.lock && chmod 777 /srv/jekyll && jekyll build --config _config.yml,_config.beta.yml"
 
-    - name: Deploy Version 2022
+    - name: Deploy to Firebase Version 2022
       if: github.ref == 'refs/heads/ng-de-2022'
-      uses: doonstore/firebase-deploy@v1
-      env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        FIREBASE_PROJECT: 'ngdeconf-2022'
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: '${{ secrets.GITHUB_TOKEN }}'
+        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NGDECONF }}'
+        channelId: live
+        projectId: ngdeconf-2022
