@@ -6,20 +6,26 @@ links:
   # - name: Speakers
   #   url: /speakers/
   #   navigation: true
-  # - name: Schedule
-  #   url: /schedule/
-  #   navigation: true
+  - name: Team
+    url: /team/
+    navigation: true
+  - name: Schedule
+    url: /schedule/
+    navigation: true
   # - name: Workshops
   #   url: /workshops/
   #   navigation: true
-  - name: News
-    url: /news/
+  # - name: News
+  #   url: /news/
+  #   navigation: true
+  #   cta: false
+  - name: Videos
+    url: https://www.youtube.com/@ng-de
     navigation: true
-    cta: false
-  - name: Location
-    url: /location/
-    navigation: true
-    cta: false
+  # - name: Location
+  #   url: /location/
+  #   navigation: true
+  #   cta: false
   # - name: Call for Papers
   #   url: /call-for-papers/
   #   navigation: true
@@ -35,3 +41,6 @@ second_links:
   - name: COVID
     url: /covid/
     navigation: true
+  # - name: Scholarship
+  #   url: https://forms.gle/u86n8aZ5SKrsBHnk9
+  #   navigation: true
