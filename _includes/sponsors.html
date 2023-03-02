@@ -3,7 +3,7 @@
   <h3 class="sponsors__headline">Proudly presented by</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.partners %}
-    <a class="sponsor sponsor--partner" href="{{ sponsor.url }}" rel="nofollow noreferrer" target="_blank">
+    <a class="sponsor sponsor--partner" href="{{ sponsor.url }}" target="_blank">
       <img class="sponsor__logo lazy" src="/assets/placeholder-image.svg" data-src="/assets/sponsors/{{ sponsor.logo }}" data-srcset="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
     </a>
     {% endfor %}
@@ -14,7 +14,7 @@
   <h3 class="sponsors__headline">Main Sponsor</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.main %}
-    <a class="sponsor sponsor--main" href="{{ sponsor.url }}" rel="nofollow noreferrer" target="_blank">
+    <a class="sponsor sponsor--main" href="{{ sponsor.url }}" target="_blank">
       <img class="sponsor__logo lazy" src="/assets/placeholder-image.svg" data-src="/assets/sponsors/{{ sponsor.logo }}" data-srcset="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
     </a>
     {% endfor %}
@@ -25,7 +25,7 @@
   <h3 class="sponsors__headline">Platinum Sponsors</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.platinum %}
-    <a class="sponsor sponsor--platinum" href="{{ sponsor.url }}" rel="nofollow noreferrer" target="_blank">
+    <a class="sponsor sponsor--platinum" href="{{ sponsor.url }}" target="_blank">
       <img class="sponsor__logo lazy" src="/assets/placeholder-image.svg" data-src="/assets/sponsors/{{ sponsor.logo }}" data-srcset="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
     </a>
     {% endfor %}
@@ -36,7 +36,7 @@
   <h3 class="sponsors__headline">Gold Sponsors</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.gold %}
-    <a class="sponsor sponsor--gold" href="{{ sponsor.url }}" rel="nofollow noreferrer" target="_blank">
+    <a class="sponsor sponsor--gold" href="{{ sponsor.url }}" target="_blank">
       <img class="sponsor__logo lazy" src="/assets/placeholder-image.svg" data-src="/assets/sponsors/{{ sponsor.logo }}" data-srcset="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
     </a>
     {% endfor %}
@@ -47,7 +47,7 @@
   <h3 class="sponsors__headline">Silver Sponsors</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.silver %}
-    <a class="sponsor sponsor--silver" href="{{ sponsor.url }}" rel="nofollow noreferrer" target="_blank">
+    <a class="sponsor sponsor--silver" href="{{ sponsor.url }}" target="_blank">
       <img class="sponsor__logo lazy" src="/assets/placeholder-image.svg" data-src="/assets/sponsors/{{ sponsor.logo }}" data-srcset="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
     </a>
     {% endfor %}
@@ -58,7 +58,7 @@
   <h3 class="sponsors__headline">Bronze Sponsors</h3>
   <div class="sponsors__list">
     {% for sponsor in site.data.sponsors.bronze %}
-    <a class="sponsor sponsor--bronze" href="{{ sponsor.url }}" rel="nofollow noreferrer" target="_blank">
+    <a class="sponsor sponsor--bronze" href="{{ sponsor.url }}" target="_blank">
       <img class="sponsor__logo lazy" src="/assets/placeholder-image.svg" data-src="/assets/sponsors/{{ sponsor.logo }}" data-srcset="/assets/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
     </a>
     {% endfor %}
