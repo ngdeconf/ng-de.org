@@ -1,11 +1,11 @@
 {
-  "name": "NG-DE 2022",
+  "name": "NG-DE 2024",
   "short_name": "NG-DE",
   "start_url": ".",
   "display": "fullscreen",
   "background_color": "#323944",
   "theme_color": "#323944",
-  "description": "Angular Conference - Summer 2022 in Berlin",
+  "description": "Angular Conference - Summer 2024 in Berlin",
   "icons": [
     {
       "src": "/assets/favicons/android-chrome-192x192.png",
