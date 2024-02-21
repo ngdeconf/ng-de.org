@@ -9,9 +9,9 @@ links:
   - name: Team
     url: /team/
     navigation: true
-  - name: Schedule
-    url: /schedule/
-    navigation: true
+  # - name: Schedule
+  #  url: /schedule/
+  #  navigation: true
   # - name: Workshops
   #   url: /workshops/
   #   navigation: true
