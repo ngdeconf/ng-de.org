@@ -67,27 +67,27 @@ community:
   - name: Angular Cologne
     logo: angular-cologne.svg
     url: https://angular.cologne
-  - name: Heise
-    logo: heise.png
-    url: https://www.heise.de/news/Konferenz-zu-Angular-und-Vue-js-Veranstalter-haben-Call-for-Papers-gestartet-6349744.html
-  - name: The Barn Coffee Berlin
-    logo: the-barn-logo.png
-    url: https://www.thebarn.de
-  - name: GermanTechJobs
-    logo: germantech-logo-name-square-rounded.png
-    url: https://germantechjobs.de/en/jobs/Angular/all
-  - name: Super Duper Developers Club
-    logo: sddc.png
-    url: https://twitter.com/sddevclub
-  - name: angularday
-    logo: angularday.png
-    url: https://2022.angularday.it/
-  - name: dpunkt.verlag
-    logo: dpunkt_logo.png
-    url: https://dpunkt.de
-  - name: IT-Schulungen.com
-    logo: its_logo.png
-    url: https://www.it-schulungen.com/
+  # - name: Heise
+  #   logo: heise.png
+  #   url: https://www.heise.de/news/Konferenz-zu-Angular-und-Vue-js-Veranstalter-haben-Call-for-Papers-gestartet-6349744.html
+  # - name: The Barn Coffee Berlin
+  #   logo: the-barn-logo.png
+  #   url: https://www.thebarn.de
+  # - name: GermanTechJobs
+  #   logo: germantech-logo-name-square-rounded.png
+  #   url: https://germantechjobs.de/en/jobs/Angular/all
+  # - name: Super Duper Developers Club
+  #   logo: sddc.png
+  #   url: https://twitter.com/sddevclub
+  # - name: angularday
+  #   logo: angularday.png
+  #   url: https://2022.angularday.it/
+  # - name: dpunkt.verlag
+  #   logo: dpunkt_logo.png
+  #   url: https://dpunkt.de
+  # - name: IT-Schulungen.com
+  #   logo: its_logo.png
+  #   url: https://www.it-schulungen.com/
 
 
 partners:

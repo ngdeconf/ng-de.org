@@ -1,17 +1,17 @@
 ---
 layout: section
-title: Call for Paper - NG-DE 2022 - Angular Conference - 2022 in Berlin
-cfp_end: "April 30th, 2022 23:59 CET"
-cfp_url: https://forms.gle/7DKqEg6N7FSHmcZw6
+title: Call for Paper - NG-DE 2024 - Angular Conference - 2024 in Berlin
+cfp_end: "April 10th, 2024 23:59 CET"
+cfp_url: https://forms.gle/VmwpQ6EM3HSBmejV6
 description: >
-  The CFP for NG-DE Conference in September 2022 at BOLLE FESTSÄLE in Berlin is now open.
+  The CFP for NG-DE Conference in September 2024 at Maritim Hotel in Bonn is now open.
   The CFP will close on {{ page.cfp_end }}
 ---
 
 ## Call for Papers
-Our call for paper is now closed. We will start the selection process soon and announce the schedule here and on <a target="_blank" href="{{ site.data.socialmedia.twitter.url }}">twitter</a>.
+<!-- Our call for paper is now closed. We will start the selection process soon and announce the schedule here and on <a target="_blank" href="{{ site.data.socialmedia.twitter.url }}">twitter</a>. -->
 
-<!-- The CFP for NG-DE/ dotvue Conference October 6 - 7, 2022 at BOLLE FESTSÄLE in Berlin is now open.
+The CFP for NG-DE/Vuejs.de Conference October 08 - 11, 2024 at Maritim Hotel in Bonn is now open.
 The CFP will close on {{ page.cfp_end }}
 <div class="cfp">
   <div class="cfp__cta">
@@ -41,7 +41,7 @@ Our audience will be people interested in Angular from every level of expertise.
   - making developers lives easier
   - becoming a better developer
   - how to improve the community
-  - and anything else you can think of -->
+  - and anything else you can think of
 
 ### The Selection Process
 
@@ -57,7 +57,6 @@ For the selection of talks we will follow the jsconf.eu process. That means:
 - The conference ticket is included for the conference days.
 - We will add your talk, bio and Twitter handle on the website and promote you via our social media accounts before, during and after the conference.
 - Your talk will be recorded and published on our YouTube channel after the conference.
-- There will be a guided walking tour through Berlin on Saturday 8th October, please book your travel according to it if you like to join :)
 
 ### The Jury
 
