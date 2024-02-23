@@ -34,7 +34,6 @@ GERMANY<br>
 
 Please look for affordable hotels as soon as possible. We have otherwise been able to secure a contingent for you at the conference hotel itself:
 
-Conference Hotel Abion (in the same building as the conference)
 - [Maritim Bonn ~159€ (use keyword <b>ngvueconf</b> for discount)](https://www.maritim.com/en/hotels/germany/hotel-bonn/rooms-suites)
 
 ### Public Transportation
