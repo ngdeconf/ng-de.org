@@ -19,13 +19,12 @@ links:
   #   url: /news/
   #   navigation: true
   #   cta: false
+  - name: Location
+    url: /location/
+    navigation: true
   - name: Videos
     url: https://www.youtube.com/@ng-de
     navigation: true
-  # - name: Location
-  #   url: /location/
-  #   navigation: true
-  #   cta: false
   # - name: Call for Papers
   #   url: /call-for-papers/
   #   navigation: true
