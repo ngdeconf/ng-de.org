@@ -31,11 +31,11 @@ The CFP will close on {{ page.cfp_end }}
 ### Topics we are looking for
 Our audience will be people interested in Angular from every level of expertise. So don't worry, your talk can address any level from beginners to experts.
 - Angular in general
-- RxJS
+- Latest Innovations in Angular (Signals, Hydration, Vite, esbuild)
+- Reactive Patterns
 - NgRx & State Management
-- Angular Universal
+- Security
 - Web Performance
-- Progressive Web Apps
 - Ionic / Cross Platform
 - Everything which is interesting for the Angular community, for example:
   - making developers lives easier
