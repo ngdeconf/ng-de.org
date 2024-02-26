@@ -9,6 +9,28 @@
     [Robin](https://twitter.com/robinboehm){:target="_blank"} is an entrepreneur driven by continuous improvement to empower people to learn and grow.
     He founded [Angular.DE](https://angular.de){:target="_blank"} and wrote several books about Angular.
     His company [Workshops.DE](https://workshops.de){:target="_blank"} offers high-quality trainings for modern technologies.
+- name: Sarah
+  role: Organizer
+  twitter: ""
+  image: sarah.png
+  organizer: true
+  judge: false
+  team: true
+  bio: >
+    Sarah is a professional event and product manager. She has profound experience in organising trainings and congresses. She is an highly-skilled leader with  string understanding of business administration.
+- name: Toni
+  role: Organizer
+  twitter: ""
+  image: toni.png
+  organizer: true
+  judge: true
+  team: true
+  bio: >
+    Antony is a freelance frontend consultant and has been supporting his clients for more than 12 years with their projects 
+    from the initial idea, through a well thought-out concept, to go-live.
+    Vue.js is his absolute favorite and an integral part of his daily work.
+    For this reason he founded vuejs.de, the first German Vue community for everything about Vue, and organized the VueDay with heise and dpunkt.
+    Besides his passion, programming, he is also a lecturer and coach and loves to share his knowledge.
 - name: Martina
   role: Team
   twitter: "MartinaKraus11"
@@ -54,28 +76,6 @@
   team: true
   bio: >
     [Maria](https://twitter.com/BrowserPerson){:target="_blank"} is a Frontend Technology Lead at Aleri with current focus on Angular. She writes for ng-conf and speaks now and there at tech meetups and conferences. In her tweets and articles Maria likes to share her learnings from everyday coding. Fun fact: she illustrates her stories herself because she likes drawing.
-- name: Sarah
-  role: Organizer
-  twitter: ""
-  image: sarah.png
-  organizer: true
-  judge: false
-  team: true
-  bio: >
-    Sarah is a professional event and product manager. She has profound experience in organising trainings and congresses. She is an highly-skilled leader with  string understanding of business administration.
-- name: Toni
-  role: Organizer
-  twitter: ""
-  image: toni.png
-  organizer: true
-  judge: true
-  team: true
-  bio: >
-    Antony is a freelance frontend consultant and has been supporting his clients for more than 12 years with their projects 
-    from the initial idea, through a well thought-out concept, to go-live.
-    Vue.js is his absolute favorite and an integral part of his daily work.
-    For this reason he founded vuejs.de, the first German Vue community for everything about Vue, and organized the VueDay with heise and dpunkt.
-    Besides his passion, programming, he is also a lecturer and coach and loves to share his knowledge.
 - name: Martin
   twitter: "chaos_monster"
   image: martin.png
