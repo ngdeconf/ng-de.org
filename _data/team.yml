@@ -10,7 +10,7 @@
     He founded [Angular.DE](https://angular.de){:target="_blank"} and wrote several books about Angular.
     His company [Workshops.DE](https://workshops.de){:target="_blank"} offers high-quality trainings for modern technologies.
 - name: Martina
-  role: Organizer
+  role: Team
   twitter: "MartinaKraus11"
   image: martina.png
   organizer: true
@@ -19,7 +19,7 @@
   bio: >
     [Martina](https://twitter.com/MartinaKraus11){:target="_blank"} is a Google Developer Expert in Angular. As a Trainer, Consultant and Speaker she focuses on implementing highly scalable software-solution with WebAssembly and Angular. She is the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg.
 - name: Joe
-  role: Organizer
+  role: Team
   twitter: "JoeRayGregory"
   image: joe.jpeg
   organizer: true
@@ -37,7 +37,7 @@
   bio: >
     [Carina](https://twitter.com/Rejamela){:target="_blank"} Carina is a Social Media and Community Manager. She works with companies like workshops.DE. Carina is also a content creator and streamer on twitch. She is the Co-organizer of the Angular Meetup Berlin and the Angular Ruhr Meetup, formerly organized the VueDay together with heise and dpunkt. She loves bringing people together and learning new things.
 - name: David
-  role: Organizer
+  role: Team
   twitter: "webdave_de"
   image: webdave.jpg
   organizer: true
@@ -46,7 +46,7 @@
   bio: >
     [David](https://twitter.com/webdave_de){:target="_blank"} is an Angular consultant who offers support for your Angular applications and projects. He's also part of the [Angular.DE](https://angular.de){:target="_blank"} team. We adapt Angular to your teams needs to find the perfect fit, and get the most out of Angular’s platform. For individual developers or small groups we offer monthly workshops in Berlin, Munich, Hamburg and Essen.
 - name: Maria
-  role: Organizer
+  role: Team
   twitter: "BrowserPerson"
   image: maria.jpeg
   organizer: true
