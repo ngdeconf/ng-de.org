@@ -1,4 +1,4 @@
-<div class="team {% if include.light %}team--light{% endif %} shuffle">
+<div class="team {% if include.light %}team--light{% endif %}">
   {% assign members = site.data.team | where: include.where, "true" %}
   {% for member in members %}
   <div class="team__member-container">
