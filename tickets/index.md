@@ -16,19 +16,19 @@ The venue Maritim Hotel is located next to the beautiful Rhein and has perfect t
 
 By buying a ticket you accept the code of conduct.
 
-Don't miss out on your chance to join the NG-DE conference! With only a limited number of cheap tickets available (Price Tiers), act fast to secure your place at this dynamic event.
+Don't miss out on your chance to join the NG-DE conference! With only a limited number of cheap tickets available (Price Tiers).
 
 What's included:
 
-- **2-Day Access**: Immerse yourself in two full days of insightful talks, engaging discussions, and exciting workshops.
+- **2-Day Access**: Two full days of insightful talks, engaging discussions, and exciting workshops.
 
 - **Delicious Meals**: Start your day right with breakfast, refuel with lunch, and enjoy in cake during the breaks. Unlimited coffee, soft drinks, and refreshments provided throughout.
 
-- **Inspiring Talks**: Gain valuable insights from 14 thought-provoking talks and 2 keynote speeches delivered by experts in the field.
+- **Inspiring Talks**: Gain valuable insights from 14 awesome talks (30% beginner, 70% expert-level) and 2 keynote speeches by core community members.
 
-- **Sponsoring Area**: Explore additional talks and mini-workshops in the sponsoring area, where you can also connect with leading industry professionals and discover new opportunities.
+- **Sponsoring Area**: Explore the sponsoring area, where you can  connect with leading industry professionals and discover new opportunities.
 
-- **Afterparty**: Wrap up the conference with a bang at our exclusive afterparty. Network, unwind, and celebrate a successful event with fellow attendees.
+- **Afterparty**: Wrap up the conference with a bang at our exclusive afterparty. Network, unwind, and celebrate a successful event with the community.
 
 This is more than just a conference; it's a chance to grow and connect with the NG-DE community. Don't let this opportunity pass you by - reserve your ticket now before they're gone!
 
