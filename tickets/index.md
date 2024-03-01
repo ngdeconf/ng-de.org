@@ -20,15 +20,15 @@ Don't miss out on your chance to join the NG-DE conference! With only a limited 
 
 What's included:
 
-- *2-Day Access*: Immerse yourself in two full days of insightful talks, engaging discussions, and exciting workshops.
+- **2-Day Access**: Immerse yourself in two full days of insightful talks, engaging discussions, and exciting workshops.
 
-- *Delicious Meals*: Start your day right with breakfast, refuel with lunch, and indulge in cake during the breaks. Unlimited coffee, soft drinks, and refreshments provided throughout.
+- **Delicious Meals**: Start your day right with breakfast, refuel with lunch, and indulge in cake during the breaks. Unlimited coffee, soft drinks, and refreshments provided throughout.
 
-- *Inspiring Talks*: Gain valuable insights from 14 thought-provoking talks and 2 keynote speeches delivered by experts in the field.
+- **Inspiring Talks**: Gain valuable insights from 14 thought-provoking talks and 2 keynote speeches delivered by experts in the field.
 
-- *Sponsoring Area*: Explore additional talks and mini-workshops in the sponsoring area, where you can also connect with leading industry professionals and discover new opportunities.
+- **Sponsoring Area**: Explore additional talks and mini-workshops in the sponsoring area, where you can also connect with leading industry professionals and discover new opportunities.
 
-- *Afterparty*: Wrap up the conference with a bang at our exclusive afterparty. Network, unwind, and celebrate a successful event with fellow attendees.
+- **Afterparty**: Wrap up the conference with a bang at our exclusive afterparty. Network, unwind, and celebrate a successful event with fellow attendees.
 
 This is more than just a conference; it's a chance to grow and connect with the NG-DE community. Don't let this opportunity pass you by - reserve your ticket now before they're gone!
 
