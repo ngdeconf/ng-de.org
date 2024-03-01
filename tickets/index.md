@@ -37,12 +37,7 @@ This is more than just a conference; it's a chance to grow and connect with the 
  
 ### Workshop Tickets
 Comming soon! =) 
-<!--
-<tito-widget event="ng-de/ng-de-vuejsde-conf-2022-workshop-day"></tito-widget>
 
-### Combo Tickets
-<tito-widget event="ng-de/vuejsde-conf-2022" releases="ngtgyud9c9c,ng-de-conf-2-day-pass-from-moduliths-to-micro-frontends-workshop,ng-de-conf-2-day-pass-rxjs-for-angular-workshop,ng-de-conf-2-day-pass-implementing-desktop-class-productivity-apps-with-angular-and-project-fugu-workshop,ng-de-conf-2-day-pass-handling-state-in-angular-applications-ngrx-store-and-componentstore-workshop,epljcabgrs8"></tito-widget>
--->
 <script>
   const url = new URL(location.href)
   const searchParams = new URLSearchParams(url.searchParams);
