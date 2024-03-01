@@ -16,8 +16,10 @@ The venue BOLLE FESTSÄLE is located next to the beautiful Spree river, close to
 
 By buying a ticket you accept the code of conduct.
 <tito-widget event="ng-de/ng-de-conf-2024" releases="nbqczabenoa,ng-de-2-day-price-tier-1-copy,ng-de-2-day-price-tier-2-copy,ng-de-2-days"></tito-widget>
-<!-- 
+ 
 ### Workshop Tickets
+Comming soon! =) 
+<!--
 <tito-widget event="ng-de/ng-de-vuejsde-conf-2022-workshop-day"></tito-widget>
 
 ### Combo Tickets
