@@ -12,7 +12,7 @@ NG-DE is the first community-driven angular conference in Germany. We partner to
 
 Both frameworks have a huge community focus and similar concepts so we provide a platform for these together. You are able to buy a combo ticket at a reduced price.
 
-The venue BOLLE FESTSÄLE is located next to the beautiful Spree river, close to Bellevue palace and Tiergarten. A bunch of one-day workshops are planned which can be booked separately from the main event.
+The venue Maritim Hotel is located next to the beautiful Rhein and has perfect travel conditions for public transport.
 
 By buying a ticket you accept the code of conduct.
 
