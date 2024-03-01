@@ -22,7 +22,7 @@ What's included:
 
 - **2-Day Access**: Immerse yourself in two full days of insightful talks, engaging discussions, and exciting workshops.
 
-- **Delicious Meals**: Start your day right with breakfast, refuel with lunch, and indulge in cake during the breaks. Unlimited coffee, soft drinks, and refreshments provided throughout.
+- **Delicious Meals**: Start your day right with breakfast, refuel with lunch, and enjoy in cake during the breaks. Unlimited coffee, soft drinks, and refreshments provided throughout.
 
 - **Inspiring Talks**: Gain valuable insights from 14 thought-provoking talks and 2 keynote speeches delivered by experts in the field.
 
