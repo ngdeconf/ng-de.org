@@ -30,9 +30,7 @@
   title: softwarearchitekt.at
   image: manfred-steyer.jpg
   biography: >
-    Trainer, consultant and programming architect with focus on Angular. Google Developer Expert (GDE) 
-    and Trusted Collaborator in the Angular team who writes for O'Reilly, the German Java Magazine, 
-    and windows.developer. Regularly speaks at conferences.
+    Trainer and Consultant with focus on Angular. Google Developer Expert (GDE) who writes for O'Reilly, the German Java Magazine and windows.developer. Regularly speaks at conferences.
   role: Trainer
   profiles:
     twitter: ManfredSteyer
@@ -71,7 +69,7 @@
   title: Google Developer Expert
   image: michael-hladky.jpg
   biography: >
-    Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back.
+    Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back.
   role: Trainer
   profiles:
     twitter: michael_hladky
@@ -195,14 +193,11 @@
   title: Software Cook at Marmicode
   image: younes-jaaidi.jpeg
   biography: >
-    Younes is a Google Developer Expert for Angular & Web Technologies.
+    Younes is a Software Cook born in eXtreme Programming, which made him a passionate advocate of Collective Ownership, TDD and snacks in the office.
 
-    He is a trainer, eXtreme Programming coach & tech advisor who loves the challenge of boosting teams’ efficiency and helping everyone enjoy every part of their job.
-    His experience convinced him that the key to making quality products is collective ownership, passion, and knowledge sharing.
+    He trains and coaches teams like yours to cook better apps. He’s also an NX champion, a Google Developer Expert for Angular and Web Technologies and a mediocre sailor.
 
-    In his spare time, you will find him contributing to open-source software, writing articles or speaking at meetups or conferences… and sometimes sailing.
-
-    His favorite trick? Adding features by removing code.
+    His favorite command is `sleep 300; git reset --hard; git clean -df`
   role: Speaker
   profiles:
     github: yjaaidi

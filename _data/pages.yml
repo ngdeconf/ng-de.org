@@ -12,9 +12,9 @@ links:
   # - name: Schedule
   #  url: /schedule/
   #  navigation: true
-  # - name: Workshops
-  #   url: /workshops/
-  #   navigation: true
+  - name: Workshops
+    url: /workshops/
+    navigation: true
   # - name: News
   #   url: /news/
   #   navigation: true

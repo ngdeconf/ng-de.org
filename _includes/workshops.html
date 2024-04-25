@@ -1,38 +1,40 @@
-{% assign workshops = site.data.sessions | where: "type", "workshop" | where: "tito.price_net", "395" %}
+{% assign workshops = site.data.sessions | where: "type", "workshop" | where: "tito.price_net", "415" %}
 
 {% assign ngGirls = site.data.sessions | where: "id", "ng-girls" %}
 
 <h2>Cost of the workshops</h2>
 <p>We try to offer the workshops at the NG-DE conference at a particularly reasonable rate.</p>
 <ul>
-  <li>Again, there is a standard price: €470.00 (incl. 19 % VAT) for lunch, break snacks and non-alcoholic seminar drinks.  </li>
+  <li>Again, there is a standard price: €495.00 (incl. 19 % VAT) for lunch, break snacks and non-alcoholic seminar
+    drinks. </li>
   <li>Number of participants per workshop: minimum 5 persons. (below this number, the workshop will not take place)</li>
   <li>Maximum number of participants per workshop: Will be determined by the trainers</li>
 </ul>
 
 <h2>Date & schedule</h2>
 <ul>
-  <li>Wednesday, 05.10.2022</li>
+  <li>Tuesday, 09.10.2024</li>
   <li>Start: 9am, End: approx. 5pm, Breaks: will be announced on site.</li>
   <li>Catering: Coffee, tea, soft drinks, lunch, afternoon snack.</li>
 </ul>
 
 <h2>Location</h2>
-<p>All workshops will take place at the <a href="/location">hotel of our conference</a> venue before the main conference.</p>
+<p>All workshops will take place at the <a href="/location">hotel of our conference</a> venue before the main
+  conference.</p>
 
 
 <h2>Workshop Offers</h2>
 
 {% for workshop in workshops %}
-  {% include _workshop-small.html %}
+{% include _workshop-small.html %}
 {% endfor %}
 
-<h2>Our special guest - ngGirls</h2>
+<!-- <h2>Our special guest - ngGirls</h2>
 <ul>
-  <li>Tuesday, 04.10.2022</li>
+  <li>Tuesday, 09.10.2024</li>
   <li>Start: 9am, End: approx. 5pm, Breaks: will be announced on site.</li>
 </ul>
 
 {% for workshop in ngGirls %}
-  {% include _workshop-small.html %}
-{% endfor %}
+{% include _workshop-small.html %}
+{% endfor %} -->

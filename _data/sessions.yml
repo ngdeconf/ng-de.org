@@ -6,116 +6,58 @@
     - dariusz-kalbarczyk
     - natalia-venditto
   type: 🎤
-- id: architectures-for-enterprise-applications
-  title: Angular Architecture Workshop - From Moduliths to Micro Frontends
+- id: angular-architecture-workshop-nx-micro-frontends-signal-store
+  title: Angular Architecture Workshop - Nx, Micro Frontends, and Signal Store
   logo: router.svg
   description: >
-    In this interactive workshop you will learn from Manfred Steyer and Rainer Hahnekamp how large and scalable enterprise applications can be developed with Angular.
+    In this interactive workshop, we utilize the latest Angular features to implement a modern and maintainable architecture. We start with Standalone Components and discuss approaches to modularization without NgModules, such as monorepos, Nx, and Sheriff. 
 
-    To do this, we first consider the use of Strategic Domain Design to create a front-end Modulith (modular monolith). We use the popular Nx and Monorepos for the implementation. We look at approaches to enforce your architecture. 
-    
-    Also, we use incremental builds and the build cache to speed up builds and test runs dramatically.
+    Then, we explore the potential of Micro Frontends. We discuss when they make sense and how to implement them using web standards, the Angular CLI’s new esbuild support, and Module Federation or Native Federation. 
+
+    We proceed with Signals, local change detection, and Zone-less Angular. Subsequently, we integrate the new Signal Store to establish modern and lightweight state management. Thanks to its custom features, we can use the Signal Store to implement recurring, complex requirements with just a few lines of code. 
+
+    By the end, you'll be equipped to design modern and maintainable Angular solutions.
   type: workshop
   speakers:
     - manfred-steyer
-    - rainer-hahnekamp
   tito:
-    price_net: 395
-    url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/angular-architecture-workshop-from-moduliths-to-micro-frontends
-  datetime: 2022-10-05 09:00:00 +0100
-  location: Hotel ABION
-- id: cypress-testing-in-and-out
-  title: Cypress in and out - testing all the things
+    price_net: 415
+    url: https://ti.to/ng-de/ng-de-conf-2024/with/angular-architecture-workshop-nx-micro-frontends-and-signal-store
+  datetime: 2024-10-09 09:00:00 +0100
+  location: Maritim Hotel, Bonn
+- id: high-speed-angular-apps-on-any-device
+  title: High-speed Angular Apps on any device
   logo: labs.svg
   description: >
-   We will briefly review some basic principles and patterns that can be used to counter unstable tests and which problems can even be traced back to shortcomings of the application.
+    Are you tired of performance bottlenecks holding back your Angular apps?
+    
+    Want to create a lightning-fast user experience that keeps your users engaged? Look no further! Our intensive hands-on workshop is designed to help you master Angular performance optimization and refining your app's performance in every way.
 
-    As cypress allows extensive request handling we will introduce into testing and mocking of requests.
-    Building on this knowledge we explain how to implement API testing with cypress.
+    You will gain a deep understanding of running performance tests effectively and utilizing performance metrics to optimize your Angular application.
 
-    Finally tests over multiple domains in cypress are possible. So we dive into cypress approach discuss the challenges.
-
-    We give some suggestions on how to structure and organize your tests in order to retain your overview even in larger projects.
-
-    How do I test if my application also looks correctly? We cover this with Visual Regression Test and show how a free platform can simplify the handling.
-
-    Finally for component and library developers we explain component testing.
-
-    The steps to get Cypress into an automatic build pipeline are essential and therefore last part of our workshop.
-  type: workshop
-  speakers:
-    - tobias-struckmeier
-    - ramona-schwering
-  tito:
-    price_net: 395
-    url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/kubnb1wpp8c
-  datetime: 2022-10-05 09:00:00 +0100
-  location: Hotel ABION
-- id: rxjs-for-angular
-  title: RxJS for Angular
-  logo: rxjs.png
-  description: >
-    Master global and component state and optimize template logic.
-    If you already know REDUX or reactive state management patterns and want to learn more advanced things about the architecture-related components, this is the workshop you need to book.
-
-    Local component state, flattening operators, contextual state and its display component templates, performance for component bindings and advanced custom operators – this workshop will provide a solid foundation from which you can continue to develop these and many more advanced skills pushing your knowledge to the next level.
-
-
-    We will learn:
-    - Local vs. global state (when to use what)
-    - Derived state (shared computations, distinct changes, and nullish values)
-    - Model vs. ViewModel
-    - OOP Design Patterns for Component state (Facade, MVVM/Presenter, MVC, Adapter)
-    - Subscription-less architecture
-    - Optimize data fetching with RxJS flattening operators
-    - How to handle error, complete, suspense, and values in the template
-    - Reactive Component lazy loading
-    - Improving UX with Reusable reactive helpers
-    - Resilient error handling
-    - Advanced custom operators
-    - Performant component bindings
+    Learn about Angular performance optimization with in-depth sessions on optimizing JavaScript code, native rendering performance, and much more. Get ready to supercharge your Angular applications with our engaging and interactive workshop!
   type: workshop
   speakers:
     - michael-hladky
   tito:
-    price_net: 395
-    url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/rxjs-level-up-essentials-in-reactive-programming
-  datetime: 2022-10-05 09:00:00 +0100
-  location: Hotel ABION
-- id: desktop-class-productivity-apps-with-angular-and-project-fugu
-  title: Implementing desktop-class productivity apps with Angular and Project Fugu 🅰️💘🐡
+    price_net: 415
+    url: https://ti.to/ng-de/ng-de-conf-2024/with/high-speed-angular-apps-on-any-device
+  datetime: 2024-10-09 09:00:00 +0100
+  location: Maritim Hotel, Bonn
+- id: pragmatic-angular-testing
+  title: Pragmatic Angular Testing
   logo: angular-solid-foundations.svg
   description: >
-    Chris is a GDE for Angular and web capabilities. 
-    In his hands-on workshop, you'll learn how to implement desktop-class productivity apps using the new Project Fugu web APIs. 
-    This joint project between Google, Intel, Microsoft, and others seeks to bring missing features to the web, including access to the local file system, clipboard, and registering Angular apps as default file handlers. 
-    Learn how you can finally bring productivity apps like IDEs, image editors, or office apps to the web!
-    You also need to bring your own laptop to this workshop.
+    Testing or more specifically, front-end testing is undeniably in the top 3 of the most complex topics associated with Angular & front-end development
+    This workshop presents, through practical exercises, pragmatic Angular testing techniques ranging from Object Mothers and Fakes to modern tools like Vitest & Playwright Component Testing. You will also learn how to implement simple, meaningful, maintainable, and above all profitable tests.
   type: workshop
   speakers:
-    - christian-liebel
+    - younes-jaaidi
   tito:
-    price_net: 395
-    url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/implementing-desktop-class-productivity-apps-with-angular-and-project-fugu
-  datetime: 2022-10-05 09:00:00 +0100
-  location: Hotel ABION
-- id: handling-state-in-angular-application
-  title: Handling state in Angular applications - NgRx Store and ComponentStore
-  logo: ngrx.svg
-  description: >
-    NgRx is the most popular state management library for Angular apps. It's widely used, well supported and maintained.
-
-    Now NgRx has two distinct and independent libraries for state management - Store and ComponentStore. We’ll start by learning WHY and HOW to use the Store properly and WHERE it can help, after that we’ll cover ComponentStore, its use cases and differences from the Store.
-
-    Who is this workshop for? Whether you have never used NgRx before or were using it for a while - you'll learn something new during this training. Intermediate and advanced Angular developers will benefit the most from this workshop.
-  type: workshop
-  speakers:
-    - alex-okrushko
-  tito:
-    price_net: 395
-    url: https://ti.to/ng-de/ng-de-vuejsde-conf-2022-workshop-day/with/handling-state-in-angular-applications-ngrx-store-and-componentstore
-  datetime: 2022-10-05 09:00:00 +0100
-  location: Hotel ABION
+    price_net: 415
+    url: https://ti.to/ng-de/ng-de-conf-2024/with/pragmatic-angular-testing
+  datetime: 2024-10-09 09:00:00 +0100
+  location: Maritim Hotel, Bonn
 - id: opening-keynote-day-1
   title: How do new Angular features improve developer experience?
   description: >
@@ -146,159 +88,3 @@
   speakers:
     - eliran-eliassy
   type: talk
-- id: micro-frontends
-  title: Beyond Micro Frontends - Three Additional Things Module Federation Makes Possible
-  description: >
-    Module Federation is often mentioned in the same breath as Micro Frontends. 
-    However, this innovative technology has so much more to offer. 
-    That is why we look at three different scenarios beyond Micro Frontends: 
-    Plugin-based systems that use extensions provided via an app store, A/B testing, and the drastic acceleration of your build times.  
-    By the end, you will know how to use these possibilities in your applications.
-  speakers:
-    - manfred-steyer
-  type: talk
-  slides: /assets/slides/ngde2022-steyer-slides.pdf
-- id: age-monorepos
-  title: The age of monorepos
-  description: >
-    The history of the web can be divided into evolutionary development leaps. 
-    The age of inline scripts, the age of jQuery, the age of SPAs, the age of JAMStack...  
-    We are now entering the next stage that has been carefully prepared in the past few years. 
-    Let me introduce you to the world of modern monorepo solutions and introduce you to the benefits you will reap by using them in every project size and setup. 
-    It's time you automate those boilerplate tasks and reduce the bottlenecks so you can focus on what truly matters.  Get ready for the next leap!
-  speakers:
-    - miroslav-jonas
-  type: talk
-  slides: https://speakerdeck.com/meeroslav/age-of-monorepos-ngde
-- id: trusted-types
-  title: Securing Angular with Trusted Types
-  description: >
-    Cross-Site Scripting is game over! We've been hearing this for a while now. 
-    Unfortunately, it is still more than relevant in the world of Angular-based frontends.
-    While Angular offers great protections out-of-the-box, I’ve witnessed first-hand how even a little room for mistakes can still result in XSS vulnerabilities.   
-    No more. In this session, we look at Trusted Types, a platform-based defense that will eradicate XSS vulnerabilities in frontends. 
-    We investigate how Trusted Types can stop typical frontend XSS attacks. 
-    Additionally, we explore how to enable Trusted Types in Angular to protect your entire application. 
-    You will walk away with actionable advice to get started with Trusted Types.
-  speakers:
-    - philippe-de-ryck
-  type: talk
-- id: partially-zonesless
-  title: Partially Zoneless - Performance tunning without Big Bang Refactorings
-  description: >
-    This session will feature the most up-to-date information to expand your knowledge of advanced
-    performance optimization techniques beyond the basics. Together, we will get hands-on with the powerful 
-    toolset, including Chrome and Angular DevTools, review the case study of web performance 
-    optimization and its outcomes, and learn how to achieve peak performance, reaching staggering 99 points. 
-    In the end, you'll go home with lots of exercises to guide you and a wealth of insights to work with, 
-    impressed by how much faster your application can get.
-  speakers:
-    - michael-hladky
-  type: talk
-- id: component-store
-  title: How to use NgRx ComponentStore?
-  description: >
-    By this time you might have heard about NgRx’s newest state management library, designed to help with locale state. 
-    You might have even enjoyed its elegant APIs. However you might still have one question: where and how can I use it? 
-    What are the best practices? 
-    In this presentation we’ll go over FOUR distinct use cases where this library can help. 
-    Understanding them will help take your state management skills onto the next level.
-  speakers:
-    - alex-okrushko
-  type: talk
-- id: lazy-loading
-  title: Lazy-loading techniques beyond (Angular) router
-  description: >
-    Lazy loading code & whole parts of the application is, or at least should be part of every production-ready product. 
-    This talk will guide us through techniques that might be applied beyond classic router level lazy-loading we all know from Angular router.
-  speakers:
-    - vojtech-masek
-  type: talk
-  slides: https://docs.google.com/presentation/d/1c9zbxJ2xngYeKaeWElZQ76iw2-TPczfaSAm88mexIU8/edit#slide=id.g5544e03e36_0_0
-- id: no-way-jose
-  title: No way, JOSE!
-  description: >
-    Is your first thought when thinking about cryptography, "nope, that's not for me!"? There's no need to. When explained with simple examples, you can see the basics are not that complicated. The JavaScript Object Signing and Encryption, or JOSE for short is a framework that helps us deal with encryption. It describes ways to securely transfer data either signed (JWS) or encrypted (JWE). Let's take a leap of faith and explore the wonderful world of cryptography together, shall we?
-
-    In this talk, I will try to explain the basics of encryption, signing, and hashing through simple examples. We'll look into how the JOSE standard can help us with encrypted content on the web using JSON Web Encryption (JWE) and JSON Web Keys (JWK). The audience does not need any specific knowledge about cryptography as this talk will go through the basics. Some programming knowledge can be useful but not necessary as code examples will be simple and explained.
-
-    The times when websites were just simple pieces of information are long gone. These days the web handles more sensitive data than ever before. To securely handle this data, we sometimes need to hash, encrypt or sign it. Sure there are a million tools, libraries, and pieces of software that handle this for you, but knowing the basics can certainly come in handy!
-  speakers:
-    - sam-bellen
-  type: talk
-- id: cypress-testing
-  title: Cypress Component Testing - The Disappearance of Mr. Button
-  description: >
-    In the fast but yet peaceful county of Jest, Mr. Button went missing but here comes Detective DOMinic Printer. 
-    The investigation begins and questions start raining: Was the change detection triggered? 
-    Is it just the wrong selector? Isn't Mr. Button working in browser-land? 
-    By the way, didn't we introduce a visual regression? 
-    While end-to-end testing with Cypress sounds like the natural alternative, it comes with other challenges related to the size of the investigation area.  
-    Join us on this case, where we will see how Cypress Component Testing bridges the gap between both worlds and helps us narrow the investigation to instantly solve the mystery of the missing Mr. Button.
-  speakers:
-    - younes-jaaidi
-  type: talk
-- id: faster-angular
-  title: Perceived faster Angular applications
-  description: >
-    Angular is a powerful all-in-one JavaScript Framework and therefore a common choice for Enterprise applications. 
-    But many developers complain that Angular is too slow compared to more lightweight UI-only Frameworks even though Ivy has improved performance significantly.
-    Insights into the bootstrapping process of an Angular application will provide you some ideas how to load data or configuration upfront. 
-    Usability improvements using shimmer animations or parallel backend requests can mask slow data fetching and allow you to reduce the perceived waiting time for website users. 
-    Tips and tricks for loading animations and caching strategies will be explained.
-  speakers:
-    - cathrin-moeller
-  type: talk
-- id: project-fugu
-  title: Building desktop-class productivity apps with Angular and Project Fugu
-  description: >
-    Project Fugu is a multi-vendor effort that aims to bridge the gap between platform-specific apps and web applications: 
-    By introducing powerful capabiltities such as file system or clipboard access, developers can create desktop-class productivity apps for the web. 
-    This is the perfect complement to Angular, which can be used to develop feature-rich Progressive Web Apps. 
-
-    In this talk, I'll explain the objective of Project Fugu and show you how to add superpowers to your Angular apps!
-  speakers:
-    - christian-liebel
-  type: talk
-  slides: https://speakerdeck.com/christianliebel/building-desktop-class-productivity-apps-with-angular-and-project-fugu
-- id: jamstack
-  title: Fast jamstack code to cloud with SWA CLI
-  description: >
-    We will learn a about Azure Jamstack tools fully integrated to VS Code, that make it possible to build and deploy an Angular (or any JavaScript) app, an api and configure the CI/CD pipelines in lightning fast record times.
-  speakers:
-    - natalia-venditto
-  type: talk
-- id: standalone-components
-  title: Component-First Architecture with Angular Standalone Components
-  description: >
-    Angular is releasing Standalone Components, and with that we need a new architecture approach.  
-    Component-First Architecture is where our components define and drive the user experience of our application. 
-    Anything that impacts the user’s experience should be handled via our components, as it is our components that the user interacts with.  
-    In this talk, I'll describe what Component-First Architecture is, and how to implement it in Angular with the Angular Standalone Components
-  speakers:
-    - colum-ferry
-  type: talk
-  slides: https://docs.google.com/presentation/d/1inVmi86hFoklakQMWf7OIgbZV2S2iAgOrZgR9hKmIyQ/edit?usp=sharing
-- id: being-reactive
-  title: Stop Micromanaging State and Start Being Reactive!
-  description: >
-    Is your component full of local properties to hide and show panels? 
-    Do you need to call ‘refresh’ functions to make sure your state is up to date? 
-    Then you might be micromanaging your state. The good news is there is an easier way! 
-    In this talk we will cover some common micromanagement anti-patterns and go over some solutions to start making your app more reactive.
-  speakers:
-    - lara-newsom
-  type: talk
-- id: ng-girls
-  title: ngGirls - build your own Angular application
-  logo: ngGirls.png
-  description: >
-    ngGirls aims to introduce women to the world of technology and increase the diversity. Angular is a great technology to start with. We believe this is a win-win situation! During the workshop you will build and deploy your very first Angular Web Application! Angular is an open-source platform for building web application, developed by Google and the community. It provides various tools to easily create a dynamic, interactive app that can run on desktop browsers, mobile and even robots.
-    The workshop is free of charge. Just fill out the application form. Don't wait too long - you can apply for a pass only until the stated deadline.
-  type: workshop
-  speakers:
-    - robert-willemelis
-  tito:
-    url: https://docs.google.com/forms/d/e/1FAIpQLSfZ2qMPfuigiq3KRnrTv30ndomTaGj6XK44RIvjHnnbIRO4Ow/viewform
-  datetime: 2022-10-04 09:00:00 +0100
-  location: Hotel ABION
