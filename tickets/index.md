@@ -36,7 +36,8 @@ This is more than just a conference; it's a chance to grow and connect with the 
 <tito-widget event="ng-de/ng-de-conf-2024" releases="ng-de-2-day-price-tier-1-copy,ng-de-2-day-price-tier-2-copy,ng-de-2-days,qcdbj5oyqpo"></tito-widget>
  
 ### Workshop Tickets
-Comming soon! =) 
+
+<tito-widget event="ng-de/ng-de-conf-2024" releases="angular-architecture-workshop-nx-micro-frontends-and-signal-store,high-speed-angular-apps-on-any-device,pragmatic-angular-testing"></tito-widget>
 
 <script>
   const url = new URL(location.href)
