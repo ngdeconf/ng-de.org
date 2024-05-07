@@ -121,7 +121,7 @@
       datetime: "2024-10-10T18:00:00"
       information: >
         Our meeting point will be marked with beach flags from the conference so you can't miss it.
-      location: Arminiusmarkthalle, Arminiusstraße 2-4, 10551 Berlin
+      location: TBA
       session: null
 
 - title: Friday
@@ -147,7 +147,7 @@
       datetime: "2024-10-11T10:00:00"
       information: ""
       location: Main Stage
-      session: opening-keynote-day-2
+      session: null
     - title: Talk 8
       datetime: "2024-10-11T10:30:00"
       information: ""
