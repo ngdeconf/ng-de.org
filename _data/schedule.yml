@@ -1,38 +1,38 @@
 - title: Wednesday
-  datetime: "2022-10-05T09:00:00"
+  datetime: "2024-10-11T09:00:00"
   entries:
     - title: Workshop 1
-      datetime: "2022-10-05T09:00:00"
+      datetime: "2024-10-11T09:00:00"
       information: ""
-      location: Hotel Abion
-      session: architectures-for-enterprise-applications
-    - title: Workshop 5
-      datetime: "2022-10-05T09:00:00"
-      information: ""
-      location: Hotel Abion
-      session: cypress-testing-in-and-out
+      location: Maritim Hotel, Bonn
+      session: angular-architecture-workshop-nx-micro-frontends-signal-store
     - title: Workshop 2
-      datetime: "2022-10-05T09:00:00"
+      datetime: "2024-10-11T09:00:00"
       information: ""
-      location: Hotel Abion
-      session: rxjs-for-angular
+      location: Maritim Hotel, Bonn
+      session: high-speed-angular-apps-on-any-device
     - title: Workshop 3
-      datetime: "2022-10-05T09:00:00"
+      datetime: "2024-10-11T09:00:00"
       information: ""
-      location: Hotel Abion
-      session: desktop-class-productivity-apps-with-angular-and-project-fugu
+      location: Maritim Hotel, Bonn
+      session: pragmatic-angular-testing
     - title: Workshop 4
-      datetime: "2022-10-05T09:00:00"
+      datetime: "2024-10-11T09:00:00"
       information: ""
-      location: Hotel Abion
-      session: handling-state-in-angular-application
-    - title: Get together and Pick up your badges 🥳🍻
-      datetime: "2022-10-05T18:00:00"
-      information: >
-        Our meeting point will be marked with beach flags from the conference so you can't miss it.
-        You will also be able to pick up already you conference badge 🥳
-      location: Arminiusmarkthalle, Arminiusstraße 2-4, 10551 Berlin
+      location: Maritim Hotel, Bonn
       session: null
+    - title: Workshop 5
+      datetime: "2024-10-11T09:00:00"
+      information: ""
+      location: Maritim Hotel, Bonn
+      session: null
+    # - title: Get together and Pick up your badges 🥳🍻
+    #   datetime: "2024-10-11T18:00:00"
+    #   information: >
+    #     Our meeting point will be marked with beach flags from the conference so you can't miss it.
+    #     You will also be able to pick up already you conference badge 🥳
+    #   location: Arminiusmarkthalle, Arminiusstraße 2-4, 10551 Berlin
+    #   session: null
 
 - title: Thursday
   datetime: "2022-10-06T09:00:00"
