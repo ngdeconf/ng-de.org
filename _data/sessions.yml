@@ -59,13 +59,13 @@
   datetime: 2024-10-09 09:00:00 +0100
   location: Maritim Hotel, Bonn
 - id: opening-keynote-day-1
-  title: How do new Angular features improve developer experience?
+  title: Angular's Momentum
   description: >
-    In this talk we’ll explore new features in Angular and how the improved developer experience is lowering the friction for building great experiences on the web.
+    There's never been a better time to be an Angular developer. Let's take a look at how the framework is increasing velocity to bring built-in performance best practices, and a better developer experience to millions of developers.
   type: keynote
   speakers:
-    - simona-cotin
-  datetime: 2022-09-06 09:30:00 +0100
+    - emma-twersky
+  datetime: 2024-10-10 09:30:00 +0100
   location: Main Stage
 - id: opening-keynote-day-2
   title: Community === You
