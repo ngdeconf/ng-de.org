@@ -10,8 +10,8 @@ links:
     url: /team/
     navigation: true
   - name: Schedule
-   url: /schedule/
-   navigation: true
+    url: /schedule/
+    navigation: true
   - name: Workshops
     url: /workshops/
     navigation: true
