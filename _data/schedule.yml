@@ -62,7 +62,7 @@
       datetime: "2024-10-10T10:30:00"
       information: ""
       location: Main Stage
-      session: being-reactive
+      session: null
     - title: Break
       datetime: "2024-10-10T11:00:00"
       information: >
@@ -73,12 +73,12 @@
       datetime: "2024-10-10T11:45:00"
       information: ""
       location: Main Stage
-      session: trusted-types
+      session: null
     - title: Talk 3
       datetime: "2024-10-10T12:15:00"
       information: ""
       location: Main Stage
-      session: iterable-differs
+      session: null
     - title: Lunch
       datetime: "2024-10-10T12:45:00"
       information: >
@@ -89,17 +89,17 @@
       datetime: "2024-10-10T14:15:00"
       information: ""
       location: Main Stage
-      session: lazy-loading
+      session: null
     - title: Talk 5
       datetime: "2024-10-10T14:45:00"
       information: ""
       location: Main Stage
-      session: partially-zonesless
+      session: null
     - title: Talk 6
       datetime: "2024-10-10T15:15:00"
       information: ""
       location: Main Stage
-      session: no-way-jose
+      session: null
     - title: Break
       datetime: "2024-10-10T15:45:00"
       information: >
@@ -110,7 +110,7 @@
       datetime: "2024-10-10T16:30:00"
       information: ""
       location: Main Stage
-      session: standalone-components
+      session: null
     - title: Closing Day 1
       datetime: "2024-10-10T17:00:00"
       information: >
@@ -152,7 +152,7 @@
       datetime: "2024-10-11T10:30:00"
       information: ""
       location: Main Stage
-      session: faster-angular
+      session: null
     - title: Break
       datetime: "2024-10-11T11:00:00"
       information: >
@@ -163,12 +163,12 @@
       datetime: "2024-10-11T11:45:00"
       information: ""
       location: Main Stage
-      session: cypress-testing
+      session: null
     - title: Talk 10
       datetime: "2024-10-11T12:15:00"
       information: ""
       location: Main Stage
-      session: component-store
+      session: null
     - title: Lunch & Family Photo 📷
       datetime: "2024-10-11T12:45:00"
       information: >
@@ -179,12 +179,12 @@
       datetime: "2024-10-11T14:15:00"
       information: ""
       location: Main Stage
-      session: project-fugu
+      session: null
     - title: Talk 12
       datetime: "2024-10-11T14:45:00"
       information: ""
       location: Main Stage
-      session: micro-frontends
+      session: null
     - title: Break
       datetime: "2024-10-11T15:15:00"
       information: >
@@ -195,12 +195,12 @@
       datetime: "2024-10-11T16:00:00"
       information: ""
       location: Main Stage
-      session: age-monorepos
+      session: null
     - title: Talk 14
       datetime: "2024-10-11T16:30:00"
       information: ""
       location: Main Stage
-      session: jamstack
+      session: null
     - title: Last Words & Closing the Conference
       datetime: "2024-10-11T17:00:00"
       information: >
