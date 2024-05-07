@@ -6,9 +6,6 @@ links:
   - name: Speakers
     url: /speakers/
     navigation: true
-  - name: Team
-    url: /team/
-    navigation: true
   - name: Schedule
     url: /schedule/
     navigation: true
@@ -21,6 +18,9 @@ links:
   #   cta: false
   - name: Location
     url: /location/
+    navigation: true
+  - name: Team
+    url: /team/
     navigation: true
   - name: Videos
     url: https://www.youtube.com/@ng-de
