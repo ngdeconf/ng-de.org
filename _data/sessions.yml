@@ -67,17 +67,6 @@
     - emma-twersky
   datetime: 2024-10-10 09:30:00 +0100
   location: Main Stage
-- id: opening-keynote-day-2
-  title: Community === You
-  description: >
-    We hear about it, we talk about it and we're a part of it: The Community - it's more than just a buzzword. 
-    The developer community at large is an incredible place, and many people have benefited from being part of it. But do you really know the value of being part of a community group and how it can help you? Whether you want to participate in an existing community group, build your own or just want to learn more, this talk will go in-depth about the developer community. We’ll dive into what the community is, how you can be a part of it and how it can help you grow. I’ll also share some personal learnings and findings that I have discovered on my journey to building and being a part of various community groups.
-  type: keynote
-  speakers:
-    - ana-cidre
-  datetime: 2022-09-07 09:30:00 +0100
-  location: Main Stage
-  slides: https://docs.google.com/presentation/d/11UFA__KseeUWKldZzR8wLT8ghOXXCPyVqkOVehmMRYo/edit?usp=sharing
 - id: iterable-differs
   title: Understanding The Iterable Differs
   description: >
