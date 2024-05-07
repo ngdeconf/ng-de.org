@@ -9,13 +9,13 @@ links:
   - name: Workshops
     url: /workshops/
     navigation: true
-  - name: Speakers
-    url: /speakers/
-    navigation: true
-  - name: News
-    url: /news/
-    navigation: true
-    cta: false
+  # - name: Speakers
+  #   url: /speakers/
+  #   navigation: true
+  # - name: News
+  #   url: /news/
+  #   navigation: true
+  #   cta: false
   - name: Location
     url: /location/
     navigation: true
