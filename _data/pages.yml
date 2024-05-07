@@ -9,9 +9,9 @@ links:
   - name: Workshops
     url: /workshops/
     navigation: true
-  # - name: Speakers
-  #   url: /speakers/
-  #   navigation: true
+  - name: Speakers
+    url: /speakers/
+    navigation: true
   # - name: News
   #   url: /news/
   #   navigation: true
