@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Code of Conduct - NG-DE 2022 - Angular Conference - 2022 in Berlin
+title: Code of Conduct - NG-DE 2024 - Angular Conference - 2024 in Bonn
 ---
 # Code of Conduct
 

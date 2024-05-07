@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Dariusz Kalbarczyk - NG-DE 2022 - Angular Conference - 2022 in Berlin
+title: Dariusz Kalbarczyk - NG-DE 2024 - Angular Conference - 2024 in Bonn
 description: >
   Master of Ceremonies
 speaker_id: dariusz-kalbarczyk

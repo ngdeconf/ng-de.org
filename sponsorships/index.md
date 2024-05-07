@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Sponsorships - NG-DE 2022 - Angular Conference - 2022 in Berlin
+title: Sponsorships - NG-DE 2024 - Angular Conference - 2024 in Bonn
 ---
 
 # Become a sponsor for NG-DE 2022

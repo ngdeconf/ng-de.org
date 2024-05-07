@@ -1,6 +1,6 @@
 ---
 layout: section
-title: COVID - NG-DE 2022 - Angular Conference - 2022 in Berlin
+title: COVID - NG-DE 2024 - Angular Conference - 2024 in Bonn
 ---
 # COVID-19 Rules
 
