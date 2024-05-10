@@ -1,10 +1,8 @@
 - id: ng-de-mc-dariusz-kalbarczyk
   title: Master of Ceremonies
   description: >
-  
   speakers:
-    - dariusz-kalbarczyk
-    - natalia-venditto
+
   type: 🎤
 - id: angular-architecture-workshop-nx-micro-frontends-signal-store
   title: Angular Architecture Workshop - Nx, Micro Frontends, and Signal Store
@@ -20,6 +18,7 @@
   type: workshop
   speakers:
     - manfred-steyer
+    - rainer-hahnekamp
   tito:
     price_net: 415
     url: https://ti.to/ng-de/ng-de-conf-2024/with/angular-architecture-workshop-nx-micro-frontends-and-signal-store
@@ -67,13 +66,108 @@
     - emma-twersky
   datetime: 2024-10-10 09:30:00 +0100
   location: Main Stage
-- id: iterable-differs
-  title: Understanding The Iterable Differs
+- id: opening-keynote-day-2
+  title: Partial Hydration, the art of sending the bare minimum over the wire
   description: >
-    Have you ever wondered how Angular works so fast? 
-    Most of us use built-in directives like ngFor, ngClass, ngStyle, and more on daily basis, and get an enormous fast result. 
-    The secret behind all these fast utils is an Angular Abstraction most of us not really familiar with.  
-    In this talk, we will explain what the differs are and how the framework uses them internally.
+    Single page application were known to be bloated and send way too much javascript to start.
+    This is why frameworks started to recommend Lazy-loading : Sending the minimum to start the app.
+    With Server Side Rendering (SSR) + Partial hydration, it is now possible to send even less and still have content rendered on the client.
+    Let’s dive into this new feature in Angular v18.x (TBD), how the magic works, the uses cases for your apps and what performances improvements to expect !
+  type: keynote
+  speakers:
+    - matthieu-riegler
+  datetime: 2024-10-10 09:30:00 +0100
+  location: Main Stage
+- id: language-server
+  title: The Angular Language Server Inside Out
+  description: >
+    Dive into the Angular Language Server, the backbone of your IDE experience, to uncover how it powers the features we rely on every day. 
+    This talk will explore its architecture and the real-world application of its capabilities, equipping you with the knowledge to troubleshoot IDE quirks effectively. Through a mix of in-depth analysis and practical insights, attendees will learn not just when to restart the language server, but how understanding its workings can streamline their Angular development workflow.
+  speakers:
+    - jan-wortmann
+  type: talk
+  location: Main Stage
+- id: angular-material
+  title: From Buttons to Breakpoints - A Deep Dive into Angular Material's Latest
+  description: >
+    Angular Material has recently undergone massive updates - both stylistically as it is more aligned with Google Material 3, and architecturally - leveraging all latest Angular features. Let's explore how to theme and customize an Angular application with the recent updates in the Angular Material World! Give you Angular application a complete makeover by customizing typography, build your own theme with ease - all without compromising accessibility and the user experience.
+  speakers:
+    - ankita-sood
+  type: talk
+  location: Main Stage
+- id: signal-scratch
+  title: DIY - Let's build a signal from scratch!
+  description: >
+    In the world of Angular, understanding the core concepts and tools can profoundly impact our development process, enabling us to create more efficient, scalable, and maintainable applications. 
+
+    One of the most powerful changes in Angular is the adoption of Signals, which simplifies the way we manage and use reactivity throughout our applications. 
+
+    We're all gonna use Signals more and more in our near future. But, have you ever wondered whats behind this? How you can build a Signal from scratch and what are the differences from Observables?
   speakers:
     - eliran-eliassy
   type: talk
+  location: Main Stage
+- id: fake-mock
+  title: Fake it till you Mock it
+  description: >
+    How much do you trust the Mocks, Stubs and Spies you are using in your tests? Aren’t you tired of maintaining and debugging them, or trying to keep them in sync with the real implementation? Join us to see how Fakes and their fellow companions, Object Mothers, and Gloves might just become the pillars of your testing strategy.
+  speakers:
+    - younes-jaaidi
+  type: talk
+  location: Main Stage
+- id: ai-browser
+  title: AI in the browser - Smarter Angular apps with WebGPU and WebNN
+  description: >
+    In this session, we will explore the integration of Generative AI functions into Angular applications using WebGPU API and Web Neural Network (WebNN) API. These APIs enable the execution of Large Language Models (LLM) and Stable Diffusion models on the user's device. The primary benefits of local execution include offline availability and data security, provided that the user's device has sufficient power to run the AI models. During the presentation, we will discuss different use cases and compare the advantages and disadvantages of each solution. Join us to learn how to make your Angular app smarter.
+  speakers:
+    - christian-liebel
+  type: talk
+  location: Main Stage
+- id: microfrontends
+  title: The hidden challenges of run-time integrated microfrontends
+  description: >
+    Microfrontends are a popular concept to simplify development in an enterprise project, where a large number of teams want to work independently.
+    Ideally, at run-time we can orchestrate multiple independent parts to obtain a seamless application.
+    Some real life experience with different integration patterns, using Angular Elements and Module Federation will demonstrate the challenges to be solved.
+    Especially with multiple instances of the Angular Router you might encounter some pitfalls and limitations which are not obvious at first sight. This talk will demonstrate how a solution can still be achieved.
+  speakers:
+    - cathrin-moeller
+  type: talk
+  location: Main Stage
+- id: tanstack
+  title: TanStack Angular Query - Building Efficient, Scalable Angular Applications
+  description: >
+    This presentation delves into the core functionalities of TanStack Angular Query, a powerful tool for managing server state in Angular applications. 
+    We'll explore how it optimizes data fetching, caching, and synchronization, leading to more efficient and scalable applications. 
+    The session will include real-world examples demonstrating how TanStack Angular Query can seamlessly integrate existing Angular projects, emphasizing best performance optimization and error-handling practices. Attendees will leave with a comprehensive understanding of how TanStack Angular Query can transform their approach to data management in Angular applications.
+  speakers:
+    - devlin-duldulao
+  type: talk
+  location: Main Stage
+- id: lightweight-stores
+  title: Modern Angular Architectures with Lightweight Stores - New Rules and Options
+  description: >
+    In this session, we will explore the integration of Generative AI functions into Angular applications using WebGPU API and Web Neural Network (WebNN) API. These APIs enable the execution of Large Language Models (LLM) and Stable Diffusion models on the user's device. The primary benefits of local execution include offline availability and data security, provided that the user's device has sufficient power to run the AI models. During the presentation, we will discuss different use cases and compare the advantages and disadvantages of each solution. Join us to learn how to make your Angular app smarter.
+  speakers:
+    - manfred-steyer
+  type: talk
+  location: Main Stage
+- id: web-audio
+  title: Make your app loud - Web Audio in UI
+  description: >
+    What is a common feature in desktop apps but rare in Web apps? Sound effects! Desktop apps use audio to enhance UX according to different interactions; you can even hear some of them just by looking at the screenshot of an error popup or loading screen. Web apps usually are silent, but it is easy to fix with Web Audio, and I'm going to show how to make it possible!.
+  speakers:
+    - vitalii-bobrov
+  type: talk
+  location: Main Stage
+- id: analogjs
+  title: AnalogJs - The Vite powered Angular meta-framework
+  description: >
+    This talk introduces AnalogJs to the audience. 
+    It gives insight into how AnalogJs takes full-stack Angular development to the next level. 
+    It shows how it adds file-based routing and Nitro powered API routes. 
+    It introduces hybrid SSR/SSG support & zero (or minimal) config deploys to cloud providers. Finally, it goes lays out clearly the technology driving the framework, Vite, and shows, with the help of Single File Components (.analog), how incredibly powerful it is. It compares AnalogJs' embrace of going all in on Vite with Angular deciding to use Vite as a dev server, but ultimately keeping it an implementation detail of their CLI.
+  speakers:
+    - robin-goetz
+  type: talk
+  location: Main Stage
