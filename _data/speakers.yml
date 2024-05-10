@@ -1,6 +1,6 @@
 - id: manfred-steyer
   name: Manfred Steyer
-  title: softwarearchitekt.at
+  title: ANGULARarchitects.io
   image: manfred-steyer.jpg
   biography: >
     Trainer and Consultant with focus on Angular. Google Developer Expert (GDE) who writes for O'Reilly, the German Java Magazine and windows.developer. Regularly speaks at conferences.
@@ -8,6 +8,16 @@
   profiles:
     twitter: ManfredSteyer
     github: manfredsteyer
+- id: rainer-hahnekamp
+  name: Rainer Hahnekamp
+  title: Trainer and Consultant • GDE in Angular
+  image: rainer-hahnekamp.png
+  biography: >
+    Rainer Hahnekamp is a Google Developer Expert, working as a trainer and consultant in the expert network of Angular Architects. In addition, he offers a weekly brief overview of relevant events in the Angular ecosystem on YouTube through ng-news.
+  role: Trainer
+  profiles:
+    twitter: rainerhahnekamp
+    github: rainerhahnekamp
 - id: michael-hladky
   name: Michael Hladky
   title: Google Developer Expert
@@ -26,8 +36,8 @@
     Emma is a Senior Developer Relations Engineer on the Angular team at Google. She cares deeply about making the open source web the best place to build web application
   role: Keynote
   profiles:
-    twitter: https://twitter.com/twerske
-    github: https://github.com/twerske
+    twitter: twerske
+    github: twerske
 - id: younes-jaaidi
   name: Younes Jaaidi
   title: Software Cook at Marmicode
@@ -42,3 +52,106 @@
   profiles:
     github: yjaaidi
     twitter: yjaaidi
+- id: jan-wortmann
+  name: Jan-Niklas Wortmann
+  title: Developer Advocate at JetBrains
+  image: jan-wortmann.png
+  biography: >
+    As a Developer Advocate for JetBrains, Jan-Niklas Wortmann isn't just another coder—he's a code evangelist. 
+    With TypeScript as his weapon of choice, he's on a mission to make your dev life easier, one line at a time. 
+    Angular geek? He's got you covered. Obsessed with reactive programming? 
+    So is he. Outside of fine-tuning the developer experience at JetBrains, 
+    Jan is a Google Developer Expert for Angular and a part of the RxJS Core Team.
+  role: Speaker
+  profiles:
+    github: niklas-wortmann
+    twitter: niklas_wortmann
+- id: matthieu-riegler
+  name: Matthieu Riegler
+  title: Viseo
+  image: matthieu-riegler.jpeg
+  biography: >
+    Born and raised with the web. I always wanted to build some part of it. 
+    Joined the Angular team as an OSS contributor.
+  role: Speaker
+  profiles:
+    github: JeanMeche
+    twitter: jean__meche
+- id: ankita-sood
+  name: Ankita Sood
+  title: Dell Secureworks
+  image: ankita-sood.png
+  biography: >
+    Ankita is currently adulting in Austin, Texas - where she is also learning how to survive the aggressive heat and increasing rent prices. 
+    Depending on the weather, she can be found outdoors hiking, biking, paddle boarding, trying to pet other peoples' dogs OR staying indoors reading a book. 
+    She has an avid interest in all things Design and Angular. She's been a frontend engineer all her adult working life, which is approximately either 10 years or 100 years, because she has lost sense of time since the pandemic.
+  role: Speaker
+  profiles:
+    twitter: GuacamoleAnkita
+- id: eliran-eliassy
+  name: Eliran Eliassy
+  title: e-square.io
+  image: eliran-eliassy.png
+  biography: >
+    I'm a Google Developer Expert (GDE) for Angular.
+    Experienced FE developer, specialized in high performance applications.
+    Founder & CEO @ e-square.io.
+    Angular enthusiast, Public speaker, Community leader.
+    Organiser @ Angular-TLV.
+  role: Speaker
+  profiles:
+    github: eliraneliassy
+    twitter: EliranEliassy
+- id: cathrin-moeller
+  name: Cathrin Möller
+  title: TNG Technology Consulting GmbH
+  image: cathrin-moeller.jpeg
+  biography: >
+    Cathrin is a full stack developer, architect and UX and CSS enthusiast and working as a Principal Consultant at TNG Technology Consulting. 
+    She has a broad experience from multiple client projects ranging from mature enterprise projects as well as development from scratch.
+    Therefore she knows common pitfalls and a lot of best practices.
+  role: Speaker
+- id: devlin-duldulao
+  name: Devlin Duldulao
+  title: inmeta
+  image: devlin-duldulao.png
+  biography: >
+    Devlin Duldulao, originally from the Philippines, is a full-stack cloud engineer in Norway. 
+    As a Microsoft MVP, he is a prolific trainer, conference speaker, and published book author who has dedicated his career to sharing his extensive knowledge. 
+    As a chief consultant at Inmeta, Devlin is passionate about staying current with the rapidly evolving tech industry. This has led him to delve into cutting-edge fields such as artificial intelligence, GPT, and prompt engineering. Through his unwavering commitment to learning and empowering others, Devlin continues to impact the global technology community significantly.
+  role: Speaker
+  profiles:
+    github: webmasterdevlin
+    twitter: DevlinDuldulao
+- id: vitalii-bobrov
+  name: Vitalii Bobrov
+  title: EPAM
+  image: vitalii-bobrov.png
+  biography: >
+    Vitalii is a Lead Software Engineer at EPAM Poland. 
+    With a solid decade of JS magic experience, he's not just about the code. 
+    Vitalii is a regular face at tech talks, always ready to dive into the latest and most excellent Web Platform features. 
+    His approach? Always fresh, always forward-thinking.
+  role: Speaker
+  profiles:
+    twitter: bobrov1989
+- id: robin-goetz
+  name: Robin Goetz
+  title: AnalogJs core team & creator of spartan/ui
+  image: robin-goetz.jpeg
+  biography: >
+    I am a developer working with Angular, Spring and AWS. AnalogJs core team & creator of spartan/ui.
+  role: Speaker
+  profiles:
+    github: goetzrobin
+    twitter: goetzrobin
+- id: christian-liebel
+  name: Christian Liebel
+  title: Thinktecture
+  image: christian-liebel.png
+  biography: >
+    Christian Liebel is a developer helping enterprises and ISVs develop modern cross-platform business applications based on Angular. As a Microsoft MVP, Google GDE, and W3C Web Applications working group participant, he speaks about modern web technologies at international user groups and conferences.
+  role: Speaker
+  profiles:
+    github: christianliebel
+    twitter: christianliebel
