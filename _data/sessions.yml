@@ -88,7 +88,7 @@
   type: talk
   location: Main Stage
 - id: angular-material
-  title: From Buttons to Breakpoints - A Deep Dive into Angular Material's Latest
+  title: "From Buttons to Breakpoints: A Deep Dive into Angular Material's Latest"
   description: >
     Angular Material has recently undergone massive updates - both stylistically as it is more aligned with Google Material 3, and architecturally - leveraging all latest Angular features. Let's explore how to theme and customize an Angular application with the recent updates in the Angular Material World! Give you Angular application a complete makeover by customizing typography, build your own theme with ease - all without compromising accessibility and the user experience.
   speakers:
@@ -96,7 +96,7 @@
   type: talk
   location: Main Stage
 - id: signal-scratch
-  title: DIY - Let's build a signal from scratch!
+  title: "DIY: Let's build a signal from scratch!"
   description: >
     In the world of Angular, understanding the core concepts and tools can profoundly impact our development process, enabling us to create more efficient, scalable, and maintainable applications. 
 
@@ -116,7 +116,7 @@
   type: talk
   location: Main Stage
 - id: ai-browser
-  title: AI in the browser - Smarter Angular apps with WebGPU and WebNN
+  title: 'AI in the browser: Smarter Angular apps with WebGPU and WebNN'
   description: >
     In this session, we will explore the integration of Generative AI functions into Angular applications using WebGPU API and Web Neural Network (WebNN) API. These APIs enable the execution of Large Language Models (LLM) and Stable Diffusion models on the user's device. The primary benefits of local execution include offline availability and data security, provided that the user's device has sufficient power to run the AI models. During the presentation, we will discuss different use cases and compare the advantages and disadvantages of each solution. Join us to learn how to make your Angular app smarter.
   speakers:
@@ -135,7 +135,7 @@
   type: talk
   location: Main Stage
 - id: tanstack
-  title: TanStack Angular Query - Building Efficient, Scalable Angular Applications
+  title: 'TanStack Angular Query: Building Efficient, Scalable Angular Applications'
   description: >
     This presentation delves into the core functionalities of TanStack Angular Query, a powerful tool for managing server state in Angular applications. 
     We'll explore how it optimizes data fetching, caching, and synchronization, leading to more efficient and scalable applications. 
@@ -145,7 +145,7 @@
   type: talk
   location: Main Stage
 - id: lightweight-stores
-  title: Modern Angular Architectures with Lightweight Stores - New Rules and Options
+  title: 'Modern Angular Architectures with Lightweight Stores: New Rules and Options'
   description: >
     In this session, we will explore the integration of Generative AI functions into Angular applications using WebGPU API and Web Neural Network (WebNN) API. These APIs enable the execution of Large Language Models (LLM) and Stable Diffusion models on the user's device. The primary benefits of local execution include offline availability and data security, provided that the user's device has sufficient power to run the AI models. During the presentation, we will discuss different use cases and compare the advantages and disadvantages of each solution. Join us to learn how to make your Angular app smarter.
   speakers:
@@ -153,7 +153,7 @@
   type: talk
   location: Main Stage
 - id: web-audio
-  title: Make your app loud - Web Audio in UI
+  title: 'Make your app loud: Web Audio in UI'
   description: >
     What is a common feature in desktop apps but rare in Web apps? Sound effects! Desktop apps use audio to enhance UX according to different interactions; you can even hear some of them just by looking at the screenshot of an error popup or loading screen. Web apps usually are silent, but it is easy to fix with Web Audio, and I'm going to show how to make it possible!.
   speakers:
@@ -161,7 +161,7 @@
   type: talk
   location: Main Stage
 - id: analogjs
-  title: AnalogJs - The Vite powered Angular meta-framework
+  title: 'AnalogJs: The Vite powered Angular meta-framework'
   description: >
     This talk introduces AnalogJs to the audience. 
     It gives insight into how AnalogJs takes full-stack Angular development to the next level. 
