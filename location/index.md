@@ -23,7 +23,7 @@ gmaps_bolle: https://maps.app.goo.gl/t7HBwcve68MgCUYg6
 ## The Venue
 
 The conference will take place at Maritim Hotel in Bonn, close to theRhine and Bonn's Museum Mile. 
-The congress room provides 2.500 square meters for the Vue community to connect
+The congress room provides 2.500 square meters for the Angular community to connect
 
 [Maritim Hotel]({{page.gmaps_bolle}}){:target="_blank"}<br>
 Godesberger Allee (Access: Kurt-Georg-Kiesinger Allee 1)<br>
