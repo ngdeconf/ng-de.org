@@ -73,9 +73,6 @@
           {% assign speaker = speakers | where: "id", speaker_id | first %}
         
           {% include speaker-thumb.html speaker_id=speaker_id layout="light" %}
-          {% if currentCount < speakerCount %}
-          & 
-          {% endif %}
         {% endfor %}
       </div>
     </div>
