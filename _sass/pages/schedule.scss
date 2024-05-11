@@ -32,6 +32,20 @@
   padding: 1rem;
   margin-bottom: .5rem;
 
+  display: flex;
+  flex-wrap: wrap;
+  
+  &__column {
+    width:100%;
+  }
+    @media (min-width:768px) {
+      &__column {
+          width:50%;
+      }
+    }
+  
+  
+
   &--hidden {
     display: none;
   }

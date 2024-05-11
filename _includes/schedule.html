@@ -23,6 +23,7 @@
     {% endif %}
 
     <div class="schedule-item schedule-item--hidden" data-entry-datetime="{{ entry.datetime }}">
+      <div class="schedule-item__column">
       <time class="schedule-item__time" datetime="{{ entry.datetime }}">
         {{ entry.datetime | date: "%H:%M" }}
       </time>
@@ -55,12 +56,30 @@
           & 
           {% endif %}
 
+          
         {% endfor %}
       </div>
       {% endif %}
 
       <div class="schedule-item__location">{{ entry.location }}</div>
     </div>
+    <div class="schedule-item__column">
+      <div class="speaker__thumb">
+        {% assign speakerCount = session.speakers.size %}
+        {% assign currentCount = 0 %}
+        {% for speaker_id in session.speakers %}
+
+          {%  assign currentCount = currentCount | plus: 1 %}
+          {% assign speaker = speakers | where: "id", speaker_id | first %}
+        
+          {% include speaker-thumb.html speaker_id=speaker_id layout=light %}
+          {% if currentCount < speakerCount %}
+          & 
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
   {% endfor %}
 {% endfor %}
 </div>
