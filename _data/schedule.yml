@@ -73,12 +73,12 @@
       datetime: "2024-10-10T11:45:00"
       information: ""
       location: Main Stage
-      session: null
+      session: angular-material
     - title: Talk 3
       datetime: "2024-10-10T12:15:00"
       information: ""
       location: Main Stage
-      session: null
+      session: signal-scratch
     - title: Lunch
       datetime: "2024-10-10T12:45:00"
       information: >
@@ -89,17 +89,17 @@
       datetime: "2024-10-10T14:15:00"
       information: ""
       location: Main Stage
-      session: null
+      session: fake-mock
     - title: Talk 5
       datetime: "2024-10-10T14:45:00"
       information: ""
       location: Main Stage
-      session: null
+      session: ai-browser
     - title: Talk 6
       datetime: "2024-10-10T15:15:00"
       information: ""
       location: Main Stage
-      session: null
+      session: microfrontends
     - title: Break
       datetime: "2024-10-10T15:45:00"
       information: >
@@ -110,7 +110,7 @@
       datetime: "2024-10-10T16:30:00"
       information: ""
       location: Main Stage
-      session: null
+      session: tanstack
     - title: Closing Day 1
       datetime: "2024-10-10T17:00:00"
       information: >
@@ -152,7 +152,7 @@
       datetime: "2024-10-11T10:30:00"
       information: ""
       location: Main Stage
-      session: null
+      session: lightweight-stores
     - title: Break
       datetime: "2024-10-11T11:00:00"
       information: >
@@ -163,12 +163,12 @@
       datetime: "2024-10-11T11:45:00"
       information: ""
       location: Main Stage
-      session: null
+      session: web-audio
     - title: Talk 10
       datetime: "2024-10-11T12:15:00"
       information: ""
       location: Main Stage
-      session: null
+      session: analogjs
     - title: Lunch & Family Photo 📷
       datetime: "2024-10-11T12:45:00"
       information: >
