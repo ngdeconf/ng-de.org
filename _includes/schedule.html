@@ -72,7 +72,7 @@
           {%  assign currentCount = currentCount | plus: 1 %}
           {% assign speaker = speakers | where: "id", speaker_id | first %}
         
-          {% include speaker-thumb.html speaker_id=speaker_id layout=light %}
+          {% include speaker-thumb.html speaker_id=speaker_id layout="light" %}
           {% if currentCount < speakerCount %}
           & 
           {% endif %}
