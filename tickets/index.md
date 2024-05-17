@@ -37,7 +37,7 @@ This is more than just a conference; it's a chance to grow and connect with the 
  
 ### Workshop Tickets
 
-<tito-widget event="ng-de/ng-de-conf-2024" releases="angular-architecture-workshop-nx-micro-frontends-and-signal-store,high-speed-angular-apps-on-any-device,pragmatic-angular-testing"></tito-widget>
+<tito-widget event="ng-de/ng-de-conf-2024" releases="angular-architecture-workshop-nx-micro-frontends-and-signal-store,high-speed-angular-apps-on-any-device,pragmatic-angular-testing,mastering-ngrx-signalstore-from-fundamentals-to-advanced-techniques,making-angular-apps-smarter-with-generative-ai-local-and-offline-capable"></tito-widget>
 
 <script>
   const url = new URL(location.href)
