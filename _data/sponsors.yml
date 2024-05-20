@@ -5,10 +5,19 @@ platinum:
 gold:
 
 silver:
+  - name: LeanIX
+    logo: leanix.png
+    url: https://www.leanix.net/
 
 bronze:
+  - name: qupaya technologies GmbH
+    logo: qupaya.svg
+    url: https://qupaya.com/
 
 travel:
+  - name: AG Grid
+    logo: AG-Grid.svg
+    url: https://www.ag-grid.com/
 
 scholarship:
 

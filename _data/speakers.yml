@@ -4,7 +4,7 @@
   image: manfred-steyer.jpg
   biography: >
     Trainer and Consultant with focus on Angular. Google Developer Expert (GDE) who writes for O'Reilly, the German Java Magazine and windows.developer. Regularly speaks at conferences.
-  role: Trainer
+  role: Trainer | Speaker
   profiles:
     twitter: ManfredSteyer
     github: manfredsteyer
@@ -14,7 +14,7 @@
   image: rainer-hahnekamp.png
   biography: >
     Rainer Hahnekamp is a Google Developer Expert, working as a trainer and consultant in the expert network of Angular Architects. In addition, he offers a weekly brief overview of relevant events in the Angular ecosystem on YouTube through ng-news.
-  role: Trainer | Speaker
+  role: Trainer
   profiles:
     twitter: rainerhahnekamp
     github: rainerhahnekamp
@@ -54,9 +54,7 @@
   image: younes-jaaidi.jpeg
   biography: >
     Younes is a Software Cook born in eXtreme Programming, which made him a passionate advocate of Collective Ownership, TDD and snacks in the office.
-
     He trains and coaches teams like yours to cook better apps. He’s also an NX champion, a Google Developer Expert for Angular and Web Technologies and a mediocre sailor.
-
     His favorite command is `sleep 300; git reset --hard; git clean -df`
   role: Trainer | Speaker
   profiles:
@@ -177,10 +175,6 @@
     I've written multiple blog posts regarding Angular performance, internals, Signals, and architecture which get a lot of daily traction.
     I tweet a lot about Angular's latest news and updates in X (formerly Twitter).
   role: Speaker
-  profiles:
-    github: eneajaho
-    twitter: Enea_Jahollari
-- id: enea-jahollari
   profiles:
     github: eneajaho
     twitter: Enea_Jahollari
