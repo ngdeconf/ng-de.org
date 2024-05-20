@@ -14,7 +14,7 @@
   image: rainer-hahnekamp.png
   biography: >
     Rainer Hahnekamp is a Google Developer Expert, working as a trainer and consultant in the expert network of Angular Architects. In addition, he offers a weekly brief overview of relevant events in the Angular ecosystem on YouTube through ng-news.
-  role: Trainer
+  role: Trainer | Speaker
   profiles:
     twitter: rainerhahnekamp
     github: rainerhahnekamp
@@ -28,6 +28,16 @@
   profiles:
     twitter: michael_hladky
     github: BioPhoton
+- id: alex-okrushko
+  name: Alex Okrushko
+  title: Snowflake
+  image: alex-okrushko.jpeg
+  biography: >
+    Alex is a Senior Software Engineer at Snowflake. He is part of the NgRx team, GDE in Angular, @AngularToronto organizer and co-organizer of the official Angular Discord. In his free time, he loves to learn & share the knowledge, provides NgRx workshops and helps with ts.dev/style - the TypeScript style guide.
+  role: Trainer
+  profiles:
+    twitter: AlexOkrushko
+    github: alex-okrushko
 - id: emma-twersky
   name: Emma Twersky
   title: staff developer relations @ google
@@ -48,7 +58,7 @@
     He trains and coaches teams like yours to cook better apps. He’s also an NX champion, a Google Developer Expert for Angular and Web Technologies and a mediocre sailor.
 
     His favorite command is `sleep 300; git reset --hard; git clean -df`
-  role: Trainer
+  role: Trainer | Speaker
   profiles:
     github: yjaaidi
     twitter: yjaaidi
@@ -151,7 +161,82 @@
   image: christian-liebel.png
   biography: >
     Christian Liebel is a developer helping enterprises and ISVs develop modern cross-platform business applications based on Angular. As a Microsoft MVP, Google GDE, and W3C Web Applications working group participant, he speaks about modern web technologies at international user groups and conferences.
-  role: Speaker
+  role: Trainer | Speaker
   profiles:
     github: christianliebel
     twitter: christianliebel
+- id: enea-jahollari
+  name: Enea Jahollari
+  title: Push-based.io
+  image: enea-jahollari.jpeg
+  biography: >
+    Software Engineer focused on performance, scalability, and architecture of web applications at Push-based.io
+    I'm also a Google Developer Expert for Angular. I've given talks and workshops about Angular at ngIndia, AngularAustria, and NgPoland, and also internal workshops at various companies.
+    I'm a maintainer of the RxAngular library known for bringing performance utils to your fingertips ready to be used.
+    I'm a co-creator of the ngxtension library which tries to make it easier to use Signal primitives in Angular apps.
+    I've written multiple blog posts regarding Angular performance, internals, Signals, and architecture which get a lot of daily traction.
+    I tweet a lot about Angular's latest news and updates in X (formerly Twitter).
+  role: Speaker
+  profiles:
+    github: eneajaho
+    twitter: Enea_Jahollari
+- id: enea-jahollari
+  profiles:
+    github: eneajaho
+    twitter: Enea_Jahollari
+- id: julian-jandl
+  name: Julian Jandl
+  title: Push-based.io
+  image: julian-jandl.jpeg
+  biography: >
+    Julian, based in the beautiful city of Vienna, Austria, is an accomplished frontend engineer, trainer, and consultant specializing in Angular and web performance optimization.
+    His expertise extends to conducting performance audits for client applications, identifying and fixing performance bottlenecks. Julian also imparts his knowledge through engaging workshops, where he shares insights & teaches on both web performance and the intricacies of Angular.
+    He continually explores cutting-edge technologies to enhance the speed of the web on a large scale.
+    Julian actively contributes to the community. He shares his knowledge through public workshops, talks at conferences and meetups, and actively contributes to the open-source landscape. He is one of the core contributors to the RxAngular project, solidifying his commitment to the evolution of the Angular ecosystem.
+  role: Speaker
+  profiles:
+    github: hoebbelsB
+    twitter: hoebbelsB
+- id: gregor-woiwode
+  name: Gregor Woiwode
+  title: co-IT.eu GmbH
+  image: gregor-woiwode.jpeg
+  biography: >
+    Gregor is the CTO of co-IT.eu GmbH, a Google Developer Expert for Angular & the 🎙️ host of the Podcast "Entwicklungszeit". He loves building tools that enable developers to be more effective.
+    He also enjoys to play with his two 💖 beloved sons, 🏃🏻‍♂️ running or trying his hand at 🧑🏻‍🍳 hobby cooking.
+  role: Speaker
+  profiles:
+    github: gregonnet
+    twitter: GregOnNet
+- id: benjamin-legrand
+  name: Benjamin Legrand
+  title: onepoint
+  image: benjamin-legrand.png
+  biography: >
+    Benjamin is a Software Engineer / Front-end architect from Nantes, France. He has worked on multiple angular projects since the AngularJS times. He cares about well-crafted user interfaces, testability, performance and accessibility.
+  role: Speaker
+  profiles:
+    github: benjilegnard
+    twitter: benjilegnard
+- id: alisa-duncan
+  name: Alisa Duncan
+  title: Okta
+  image: alisa-duncan.jpeg
+  biography: >
+    Alisa Duncan is a Senior Developer Advocate at Okta, a full-stack developer, content creator, conference speaker, Pluralsight author, and community builder who loves the thrill of learning new things. 
+    She is a Google Developer Expert in Angular, a Women Techmaker Ambassador, a ngGirls core team member, and a volunteer at community events supporting underrepresented groups entering tech. 
+    When not coding or volunteering, you can find her cooking, watching K-Dramas, or drinking a glass of wine.
+  role: Speaker
+  profiles:
+    github: alisaduncan
+    twitter: AlisaDuncan
+- id: stephen-cooper
+  name: Stephen Cooper
+  title: AG Grid
+  image: stephen-cooper.png
+  biography: >
+    Stephen is a Senior Developer at AG Grid. An active blogger writing about Web Tech. Stephen has spoken at conferences and meet-ups worldwide, sharing practical and experience-based tips, tricks, and case studies.
+  role: Speaker
+  profiles:
+    github: StephenCooper
+    twitter: SCooperDev
