@@ -37,6 +37,6 @@ second_links:
   - name: Code of Conduct
     url: /code-of-conduct/
     navigation: true
-  # - name: Scholarship
-  #   url: https://forms.gle/u86n8aZ5SKrsBHnk9
-  #   navigation: true
+  - name: Scholarship
+    url: https://forms.gle/fmWSvfTUFEMQTCAa6
+    navigation: true
