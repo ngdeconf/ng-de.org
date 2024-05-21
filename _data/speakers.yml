@@ -4,7 +4,7 @@
   image: manfred-steyer.jpg
   biography: >
     Trainer and Consultant with focus on Angular. Google Developer Expert (GDE) who writes for O'Reilly, the German Java Magazine and windows.developer. Regularly speaks at conferences.
-  role: Trainer | Speaker
+  role: Trainer
   profiles:
     twitter: ManfredSteyer
     github: manfredsteyer
@@ -56,7 +56,7 @@
     Younes is a Software Cook born in eXtreme Programming, which made him a passionate advocate of Collective Ownership, TDD and snacks in the office.
     He trains and coaches teams like yours to cook better apps. He’s also an NX champion, a Google Developer Expert for Angular and Web Technologies and a mediocre sailor.
     His favorite command is `sleep 300; git reset --hard; git clean -df`
-  role: Trainer | Speaker
+  role: Trainer
   profiles:
     github: yjaaidi
     twitter: yjaaidi
@@ -159,7 +159,7 @@
   image: christian-liebel.png
   biography: >
     Christian Liebel is a developer helping enterprises and ISVs develop modern cross-platform business applications based on Angular. As a Microsoft MVP, Google GDE, and W3C Web Applications working group participant, he speaks about modern web technologies at international user groups and conferences.
-  role: Trainer | Speaker
+  role: Trainer
   profiles:
     github: christianliebel
     twitter: christianliebel
