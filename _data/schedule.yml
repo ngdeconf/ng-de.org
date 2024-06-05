@@ -94,7 +94,7 @@
       datetime: "2024-10-10T14:45:00"
       information: ""
       location: Main Stage
-      session: concurrent-mode
+      session: language-server
     - title: Talk 6
       datetime: "2024-10-10T15:15:00"
       information: ""
@@ -205,7 +205,7 @@
       datetime: "2024-10-11T16:30:00"
       information: ""
       location: Main Stage
-      session: language-server
+      session: concurrent-mode
     - title: Talk 16
       datetime: "2024-10-11T17:00:00"
       information: ""
