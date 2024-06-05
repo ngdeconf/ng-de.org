@@ -34,7 +34,9 @@ GERMANY<br>
 
 Please look for affordable hotels as soon as possible. We have otherwise been able to secure a contingent for you at the conference hotel itself:
 
-- [Maritim Bonn ~159€ (use keyword <b>ngvueconf</b> for discount)](https://www.maritim.com/en/hotels/germany/hotel-bonn/rooms-suites)
+- [Maritim Bonn ~159€ (use keyword <b>ngvueconf</b> for discount)](mailto:reservierung.bon@maritim.de?subject=Anfrage%20f%C3%BCr%20Zimmer%20mit%20dem%20Code%20%22ngvueconf%22&body=Hello%20dear%20Team%2C%0D%0A%0D%0Awe%20like%20to%20book%20rooms%20for%20the%20Conference%20with%20the%20contingent%20code%20%22ngvueconf%22%3A%0D%0A%0D%0A%0D%0ADate%20of%20arrival%3A%0D%0ADate%20of%20departure%3A%0D%0A%0D%0ANumber%20of%20rooms%20needed%3A%0D%0A%0D%0A%0D%0AAll%20the%20best)
+
+Write an E-Mail to [reservierung.bon@maritim.de](mailto:reservierung.bon@maritim.de) or call [0228 8108 777](tel:00492288108777) and tell the code "ngvueconf". It's possible until 2nd of september!
 
 ### Public Transportation
 
