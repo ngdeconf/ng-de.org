@@ -169,7 +169,8 @@
 - id: lightweight-stores
   title: 'Modern Angular Architectures with Lightweight Stores: New Rules and Options'
   description: >
-    In this session, we will explore the integration of Generative AI functions into Angular applications using WebGPU API and Web Neural Network (WebNN) API. These APIs enable the execution of Large Language Models (LLM) and Stable Diffusion models on the user's device. The primary benefits of local execution include offline availability and data security, provided that the user's device has sufficient power to run the AI models. During the presentation, we will discuss different use cases and compare the advantages and disadvantages of each solution. Join us to learn how to make your Angular app smarter.
+    In the first few minutes of the session, we integrate the new NGRX Signal Store as a prominent example of a lightweight store in an application. This brings up several architecture-related questions and challenges that are addressed closely and lead to new ways of thinking, patterns, and changes in proven rules.
+    By the end, you will know how to leverage lightweight stores for your architecture and understand the differences compared to already known Redux-based solutions.
   speakers:
     - manfred-steyer
   type: talk
