@@ -9,12 +9,10 @@ const staticCacheName = `static::${version}`;
 
 console.log("installing service worker");
 
-// uncomment JS part - it prevents simple analytics and google tag manager to load properly
-// please just activate if fixed
-// workbox.routing.registerRoute(
-//   new RegExp('.*\.js'),
-//   new workbox.strategies.NetworkFirst()
-// );
+workbox.routing.registerRoute(
+  new RegExp('.*\.js'),
+  new workbox.strategies.NetworkFirst()
+);
 
 workbox.routing.registerRoute(
   /.*\.css/,
