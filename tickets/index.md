@@ -8,7 +8,7 @@ description: >
 
 ## For the community, by the community
 
-NG-DE is the first community-driven angular conference in Germany. We partner together with the [VueJS.DE Community Conference](https://conf.vuejs.de) that will happen just one day before NG-DE. 
+NG-DE is the first community-driven angular conference in Germany. We partner together with the [VueJS.DE Community Conference](https://conf.vuejs.de) that will happen just one day before NG-DE.
 
 Both frameworks have a huge community focus and similar concepts so we provide a platform for these together. You are able to buy a combo ticket at a reduced price.
 
@@ -33,11 +33,11 @@ What's included:
 This is more than just a conference; it's a chance to grow and connect with the NG-DE community. Don't let this opportunity pass you by - reserve your ticket now before they're gone!
 
 
-<tito-widget event="ng-de/ng-de-conf-2024" releases="ng-de-2-day-price-tier-1-copy,ng-de-2-day-price-tier-2-copy,ng-de-2-days,qcdbj5oyqpo"></tito-widget>
- 
+<tito-widget event="ng-de/ng-de-conf-2024" releases="ng-de-2-day-price-tier-1-copy,ng-de-2-day-price-tier-2-copy,ng-de-2-days,qcdbj5oyqpo" save-metadata-parameters="utm_*"></tito-widget>
+
 ### Workshop Tickets
 
-<tito-widget event="ng-de/ng-de-conf-2024" releases="angular-architecture-workshop-nx-micro-frontends-and-signal-store,high-speed-angular-apps-on-any-device,pragmatic-angular-testing,mastering-ngrx-signalstore-from-fundamentals-to-advanced-techniques,making-angular-apps-smarter-with-generative-ai-local-and-offline-capable"></tito-widget>
+<tito-widget event="ng-de/ng-de-conf-2024" releases="angular-architecture-workshop-nx-micro-frontends-and-signal-store,high-speed-angular-apps-on-any-device,pragmatic-angular-testing,mastering-ngrx-signalstore-from-fundamentals-to-advanced-techniques,making-angular-apps-smarter-with-generative-ai-local-and-offline-capable" save-metadata-parameters="utm_*"></tito-widget>
 
 <script>
   const url = new URL(location.href)
