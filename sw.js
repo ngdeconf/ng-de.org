@@ -2,7 +2,7 @@
 layout: null
 ---
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.1/workbox-sw.js');
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js');
 
 const version = '{{site.time | date: '%Y%m%d%H%M%S'}}';
 const staticCacheName = `static::${version}`;
@@ -11,22 +11,22 @@ console.log("installing service worker");
 
 workbox.routing.registerRoute(
   new RegExp('.*\.js'),
-  workbox.strategies.networkFirst()
+  new workbox.strategies.NetworkFirst()
 );
 
 workbox.routing.registerRoute(
   /.*\.css/,
-  workbox.strategies.staleWhileRevalidate({
+  new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'css-cache',
   })
 );
 
 workbox.routing.registerRoute(
   /.*\.(?:png|jpg|jpeg|svg|gif)/,
-  workbox.strategies.staleWhileRevalidate({
+  new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'image-cache',
     plugins: [
-      new workbox.expiration.Plugin({
+      new workbox.expiration.ExpirationPlugin({
         maxEntries: 20,
         maxAgeSeconds: 7 * 24 * 60 * 60,
       })
@@ -35,5 +35,5 @@ workbox.routing.registerRoute(
 );
 
 const filesToCache = [
-  
+
 ];
