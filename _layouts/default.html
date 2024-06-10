@@ -27,6 +27,9 @@
     {% endif %}
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Lora" rel="stylesheet">
     <link rel="stylesheet" href="{{ "css/default.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
+    <script>
+      window.dataLayer = window.dataLayer || [];
+    </script>
     {% include _gtm.html %}
   </head>
   <body>
