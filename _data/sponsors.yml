@@ -3,6 +3,9 @@ main: null
 platinum:
 
 gold:
+  - name: Bootcamps Europe GmbH
+    logo: coding-bootcamp.png
+    url: https://coding-bootcamps.eu/
 
 silver:
   - name: LeanIX
@@ -13,6 +16,9 @@ bronze:
   - name: qupaya technologies GmbH
     logo: qupaya.svg
     url: https://qupaya.com/
+  - name: HOUSE OF ANGULAR
+    logo: house-of-angular.png
+    url: https://houseofangular.io/
 
 travel:
   - name: AG Grid
@@ -97,7 +103,6 @@ community:
   # - name: IT-Schulungen.com
   #   logo: its_logo.png
   #   url: https://www.it-schulungen.com/
-
 
 partners:
   - name: angular.de
