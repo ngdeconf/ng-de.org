@@ -24,14 +24,13 @@ What's included:
 
 - **Delicious Meals**: Start your day right with breakfast, refuel with lunch, and enjoy in cake during the breaks. Unlimited coffee, soft drinks, and refreshments provided throughout.
 
-- **Inspiring Talks**: Gain valuable insights from 14 awesome talks (30% beginner, 70% expert-level) and 2 keynote speeches by core community members.
+- **Inspiring Talks**: Gain valuable insights from 16 awesome talks (30% beginner, 70% expert-level) and 2 keynote speeches by core community members.
 
-- **Sponsoring Area**: Explore the sponsoring area, where you can  connect with leading industry professionals and discover new opportunities.
+- **Sponsoring Area**: Explore the sponsoring area, where you can connect with leading industry professionals and discover new opportunities.
 
 - **Afterparty**: Wrap up the conference with a bang at our exclusive afterparty. Network, unwind, and celebrate a successful event with the community.
 
 This is more than just a conference; it's a chance to grow and connect with the NG-DE community. Don't let this opportunity pass you by - reserve your ticket now before they're gone!
-
 
 <tito-widget event="ng-de/ng-de-conf-2024" releases="ng-de-2-day-price-tier-1-copy,ng-de-2-day-price-tier-2-copy,ng-de-2-days,qcdbj5oyqpo" save-metadata-parameters="utm_*"></tito-widget>
 
