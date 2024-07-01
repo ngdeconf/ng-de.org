@@ -15,7 +15,7 @@ Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br>
 DE295155649
 
 ### Kontakt:
-E-Mail: [robin.boehm@workshops.de](mailto:robin.boehm@workshops.de)
+E-Mail: [info@ng-de.org](mailto:info@ng-de.org)
 Telefon: +49 (0) 201 / 87535773
 
 ### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
