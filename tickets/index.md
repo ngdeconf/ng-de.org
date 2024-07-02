@@ -32,7 +32,7 @@ What's included:
 
 This is more than just a conference; it's a chance to grow and connect with the NG-DE community. Don't let this opportunity pass you by - reserve your ticket now before they're gone!
 
-<tito-widget event="ng-de/ng-de-conf-2024" releases="ng-de-2-day-price-tier-1-copy,ng-de-2-day-price-tier-2-copy,ng-de-2-days,qcdbj5oyqpo" save-metadata-parameters="utm_*"></tito-widget>
+<tito-widget event="ng-de/ng-de-conf-2024" releases="ng-de-2-day-price-tier-1-copy,ng-de-2-day-price-tier-2-copy,mbyklkbnku8,ng-de-2-days,qcdbj5oyqpo" save-metadata-parameters="utm_*"></tito-widget>
 
 ### Workshop Tickets
 
