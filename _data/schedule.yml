@@ -94,7 +94,7 @@
       datetime: "2024-10-10T14:45:00"
       information: ""
       location: Main Stage
-      session: language-server
+      session: signal-scratch
     - title: Talk 6
       datetime: "2024-10-10T15:15:00"
       information: ""
@@ -168,7 +168,7 @@
       datetime: "2024-10-11T11:45:00"
       information: ""
       location: Main Stage
-      session: signal-scratch
+      session: language-server
     - title: Talk 11
       datetime: "2024-10-11T12:15:00"
       information: ""
