@@ -8,6 +8,9 @@ gold:
     url: https://coding-bootcamps.eu/
 
 silver:
+  - name: Auth0 by Okta
+    logo: Auth0byOkta.svg
+    url: https://auth0.com/
   - name: LeanIX
     logo: leanix.png
     url: https://www.leanix.net/
