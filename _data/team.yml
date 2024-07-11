@@ -40,16 +40,9 @@
   judge: true
   team: true
   bio: >
-    [Martina](https://twitter.com/MartinaKraus11){:target="_blank"} is a Google Developer Expert in Angular. As a Trainer, Consultant and Speaker she focuses on implementing highly scalable software-solution with WebAssembly and Angular. She is the Founder of the JavaScript User group and a team member for ngGirls Events and Co-organizes the local Angular Heidelberg.
-- name: Joe
-  role: Team
-  twitter: "JoeRayGregory"
-  image: joe.jpeg
-  organizer: true
-  judge: true
-  team: true
-  bio: >
-    [Joe Ray Gregory](https://twitter.com/JoeRayGregory){:target="_blank"}  is a 37 years old Vue.js enthusiast from Lüneburg, Germany. Joe works as a mentor, speaker, trainer and consultant to help his customers to reach their goals efficiently based on his over 15 years of experience in frontend and web development. He is the founder and organizer of the Vuejs Meetup Hamburg and supports the Open Source CMS Contao as organizer for years.
+    [Martina](https://twitter.com/MartinaKraus11){:target="_blank"} has been active in the world of web development from her early years and has over time developed into an expert in the field of web security.
+    As an Application Security Engineer, she focuses on integrating security best practices into all phases of software development.
+    In her role as a Google Developer Expert (GDE), she also loves to spread knowledge about web security at national and international conferences, regularly organizes ngGirls events (free Angular workshops for women).
 - name: Carina
   role: Organizer
   twitter: "Rejamela"
@@ -95,4 +88,3 @@
   role: Jury
   bio: >
     [Peter](https://twitter.com/baggersio){:target="_blank"} is co-founder and former organizer of the first edition of NG-DE. In addition, he co-founded [qupaya](https://qupaya.com){:target="_blank"}, a remote-first software engineering and consultancy company specialized in Angular and NestJS development. In his rare spare time and beside the pandemic, he's organizing the FrankenJS user group in the greater Nuremberg area.
-
