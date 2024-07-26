@@ -85,6 +85,12 @@ community:
   - name: Angular Cologne
     logo: angular-cologne.svg
     url: https://angular.cologne
+  - name: Angular Vienna
+    logo: angular_vienna.svg
+    url: https://www.meetup.com/angular-vienna/
+  - name: NestJS Vienna
+    logo: nestjsvienna.svg
+    url: https://www.meetup.com/nestjs-vienna/
   # - name: Heise
   #   logo: heise.png
   #   url: https://www.heise.de/news/Konferenz-zu-Angular-und-Vue-js-Veranstalter-haben-Call-for-Papers-gestartet-6349744.html
