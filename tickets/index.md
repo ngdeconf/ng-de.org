@@ -38,6 +38,17 @@ This is more than just a conference; it's a chance to grow and connect with the 
 
 <tito-widget event="ng-de/ng-de-conf-2024" releases="angular-architecture-workshop-nx-micro-frontends-and-signal-store,high-speed-angular-apps-on-any-device,pragmatic-angular-testing,mastering-ngrx-signalstore-from-fundamentals-to-advanced-techniques,making-angular-apps-smarter-with-generative-ai-local-and-offline-capable" save-metadata-parameters="utm_*"></tito-widget>
 
+### Hotel tickets
+
+We have secured a special rate with the Maritim Hotel Bonn at our event location.
+
+After filling the form we will send an introductory email to you and the Maritim Hotel Bonn.
+
+They will then offer a discounted rate from our hotel contingent. The rate is 159 Euro per night, breakfast included.
+
+<div data-tf-live="01J43T50M558WC5PYQAT424CG2"></div>
+<script src="//embed.typeform.com/next/embed.js"></script>
+
 <script>
   const url = new URL(location.href)
   const searchParams = new URLSearchParams(url.searchParams);
