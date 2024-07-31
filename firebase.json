@@ -11,6 +11,11 @@
         "source": "/news/ng-de-2020-postproned-to-2021/",
         "destination": "https://ng-de.org/news/ng-de-2020-postponed-to-2021/",
         "type": 301
+      },
+      {
+        "source": "/hotel-deal/",
+        "destination": "https://workshopsde.typeform.com/conf2024-hotel",
+        "type": 301
       }
     ]
   }
