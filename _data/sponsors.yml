@@ -27,6 +27,9 @@ travel:
   - name: AG Grid
     logo: AG-Grid.svg
     url: https://www.ag-grid.com/
+  - name: JetBrains
+    logo: jetbrains.svg
+    url: https://www.jetbrains.com/
 
 scholarship:
 
