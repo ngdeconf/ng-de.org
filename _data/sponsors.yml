@@ -79,6 +79,9 @@ community:
   - name: Simplified Courses
     logo: simplified-courses.png
     url: https://www.simplified.courses/
+  - name: Angular Space
+    logo: angular-space.png
+    url: https://angularspace.com/
   - name: Angular Israel
     logo: angular-il.jpg
     url: https://www.meetup.com/de-DE/Angular-IL
