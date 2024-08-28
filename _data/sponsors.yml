@@ -85,6 +85,9 @@ community:
   - name: Angular Israel
     logo: angular-il.jpg
     url: https://www.meetup.com/de-DE/Angular-IL
+  - name: Webdave
+    logo: webdave_de.png
+    url: https://webdave.tv/
   - name: Angular Rome
     logo: angular-rome.svg
     url: https://ngrome.io/home
