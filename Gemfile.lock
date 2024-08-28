@@ -82,6 +82,7 @@ GEM
 PLATFORMS
   arm64-darwin-23
   x64-mingw-ucrt
+  ruby
 
 DEPENDENCIES
   execjs (= 2.7.0)
