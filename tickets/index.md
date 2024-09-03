@@ -9,6 +9,7 @@ description: >
 ## For the community, by the community
 
 NG-DE is the first community-driven angular conference in Germany.
+
 By buying a ticket you accept the code of conduct.
 
 <tito-widget event="ng-de/ng-de-conf-2024" releases="ng-de-2-day-price-tier-1-copy,ng-de-2-day-price-tier-2-copy,mbyklkbnku8,ng-de-2-days,ng-de-2-days-regular-price-copy,vkqg8btpfmm,dmxs8oc7lqy,abz6w0epvh4,gaekbc6dus8,gpxgd0nwbuo" save-metadata-parameters="utm_*"></tito-widget>
