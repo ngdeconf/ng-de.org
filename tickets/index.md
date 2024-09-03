@@ -14,7 +14,7 @@ By buying a ticket you accept the code of conduct.
 
 <tito-widget event="ng-de/ng-de-conf-2024" releases="ng-de-2-day-price-tier-1-copy,ng-de-2-day-price-tier-2-copy,mbyklkbnku8,ng-de-2-days,ng-de-2-days-regular-price-copy,vkqg8btpfmm,dmxs8oc7lqy,abz6w0epvh4,gaekbc6dus8,gpxgd0nwbuo" save-metadata-parameters="utm_*"></tito-widget>
 
-### Workshop Tickets
+### Single Workshop Tickets
 
 <tito-widget event="ng-de/ng-de-conf-2024" releases="angular-architecture-workshop-nx-micro-frontends-and-signal-store,high-speed-angular-apps-on-any-device,pragmatic-angular-testing,mastering-ngrx-signalstore-from-fundamentals-to-advanced-techniques,making-angular-apps-smarter-with-generative-ai-local-and-offline-capable" save-metadata-parameters="utm_*"></tito-widget>
 
