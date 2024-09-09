@@ -14,6 +14,9 @@ silver:
   - name: LeanIX
     logo: leanix.png
     url: https://www.leanix.net/
+  - name: Adesso
+    logo: adesso.png
+    url: https://www.adesso.de
 
 bronze:
   - name: qupaya technologies GmbH
