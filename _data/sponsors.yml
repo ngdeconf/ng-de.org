@@ -33,6 +33,9 @@ travel:
   - name: JetBrains
     logo: jetbrains.svg
     url: https://www.jetbrains.com/
+  - name: Auth0 by Okta
+    logo: Auth0byOkta.svg
+    url: https://auth0.com/
 
 scholarship:
 
