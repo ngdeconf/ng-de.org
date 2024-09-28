@@ -36,6 +36,9 @@ travel:
   - name: Auth0 by Okta
     logo: Auth0byOkta.svg
     url: https://auth0.com/
+  - name: Thinktecture
+    logo: thinktecture.svg
+    url: https://thinktecture.com/
 
 scholarship:
 
