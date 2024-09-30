@@ -11,9 +11,9 @@ silver:
   - name: Auth0 by Okta
     logo: Auth0byOkta.svg
     url: https://auth0.com/
-  - name: LeanIX
-    logo: leanix.png
-    url: https://www.leanix.net/
+  - name: SAP
+    logo: SAP_LeanIX_R_grad_blu.svg
+    url: https://www.sap.com/
   - name: Adesso
     logo: adesso.png
     url: https://www.adesso.de
