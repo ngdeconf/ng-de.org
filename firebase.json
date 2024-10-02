@@ -16,6 +16,11 @@
         "source": "/hotel-deal/",
         "destination": "https://workshopsde.typeform.com/conf2024-hotel",
         "type": 301
+      },
+      {
+        "source": "/feedback/",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeOhXRB9dkjO6gOAXqEIK7Ng3Qzv1foUMDBNGDO_An_AONKGQ/viewform?usp=sf_link",
+        "type": 301
       }
     ]
   }
