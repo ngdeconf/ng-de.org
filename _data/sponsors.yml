@@ -6,6 +6,9 @@ gold:
   - name: Bootcamps Europe GmbH
     logo: coding-bootcamp.png
     url: https://coding-bootcamps.eu/
+  - name: Adesso
+    logo: adesso.png
+    url: https://www.adesso.de
 
 silver:
   - name: Auth0 by Okta
@@ -14,9 +17,6 @@ silver:
   - name: SAP
     logo: SAP_LeanIX_R_grad_blu.svg
     url: https://www.sap.com/
-  - name: Adesso
-    logo: adesso.png
-    url: https://www.adesso.de
 
 bronze:
   - name: qupaya technologies GmbH
