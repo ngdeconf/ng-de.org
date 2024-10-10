@@ -26,17 +26,6 @@ By buying a ticket you accept the code of conduct.
 
 <tito-widget event="ng-de/berlin-2025" releases="ng-de-2025-blind-bird-ticket,ng-de-2025-blind-bird-ticket-copy" save-metadata-parameters="utm_*"></tito-widget>
 
-### Hotel tickets
-
-We have secured a special rate with the Maritim Hotel Bonn at our event location.
-
-After filling the form we will send an introductory email to you and the Maritim Hotel Bonn.
-
-They will then offer a discounted rate from our hotel contingent. The rate is 159 Euro per night, breakfast included.
-
-<div data-tf-live="01J43T50M558WC5PYQAT424CG2"></div>
-<script src="//embed.typeform.com/next/embed.js"></script>
-
 <script>
   const url = new URL(location.href)
   const searchParams = new URLSearchParams(url.searchParams);
