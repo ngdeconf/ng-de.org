@@ -1,0 +1,40 @@
+name: Build Jekyll and Deploy to Firebase Archive 2024
+
+on:
+  push:
+    branches: [ng-de-2024]
+  pull_request:
+    branches: [ng-de-2024]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+
+      - name: Cache Bundler 💾
+        uses: actions/cache@v2
+        with:
+          path: ~/.firebase, ~/.jekyll-cache, ~/vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Use Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Build 🏗
+        run: bundle exec jekyll build --trace
+
+      - name: Deploy to Firebase
+        if: github.ref == 'refs/heads/ng-de-2024'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_NGDECONF }}"
+          channelId: live
+          projectId: ngdeconf-2024
