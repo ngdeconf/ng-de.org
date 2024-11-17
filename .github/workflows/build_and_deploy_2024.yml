@@ -28,7 +28,7 @@ jobs:
           bundler-cache: true
 
       - name: Build 🏗
-        run: bundle exec jekyll build --trace
+        run: bundle exec jekyll build --config _config.yml,_config.2024.yml --trace
 
       - name: Deploy to Firebase
         if: github.ref == 'refs/heads/ng-de-2024'
