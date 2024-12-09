@@ -21,7 +21,7 @@ description: >
 
 _By buying a ticket you accept the code of conduct._
 
-<tito-widget event="ng-de/berlin-2025" releases="ng-de-2025-blind-bird-ticket,ng-de-2025-blind-bird-ticket-copy" save-metadata-parameters="utm_*"></tito-widget>
+<tito-widget event="ng-de/berlin-2025" releases="bselfksgx8w" discount-code="christmas-for-friends" save-metadata-parameters="utm_*"></tito-widget>
 
 <script>
   const url = new URL(location.href)
