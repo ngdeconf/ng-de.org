@@ -3,28 +3,29 @@ links:
     url: /
     navigation: false
     cta: false
-  - name: Schedule
-    url: /schedule/
+  - name: 📺 Videos
+    url: https://www.youtube.com/playlist?list=PLkdIZQ2JS3AfVemw6Rx0vLYZcGi2wAo9c
     navigation: true
-  - name: Workshops
-    url: /workshops/
-    navigation: true
-  - name: Speakers
-    url: /speakers/
+  - name: Team
+    url: /team/
     navigation: true
   - name: News
     url: /news/
     navigation: true
     cta: false
-  - name: Location
+  - name: Schedule 2024
+    url: /schedule/
+    navigation: true
+  - name: Workshops 2024
+    url: /workshops/
+    navigation: true
+  - name: Speakers 2024
+    url: /speakers/
+    navigation: false
+  - name: Location 2024
     url: /location/
     navigation: true
-  - name: Team
-    url: /team/
-    navigation: true
-  # - name: Videos
-  #   url: https://www.youtube.com/@ng-de
-  #   navigation: true
+
   #- name: Call for PapersCall for Papers
   #  url: /call-for-papers/
   #  navigation: true

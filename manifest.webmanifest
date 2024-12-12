@@ -1,11 +1,11 @@
 {
-  "name": "NG-DE 2024",
+  "name": "NG-DE 2025",
   "short_name": "NG-DE",
   "start_url": ".",
   "display": "fullscreen",
   "background_color": "#323944",
   "theme_color": "#323944",
-  "description": "Angular Conference - Summer 2024 in Bonn",
+  "description": "Angular Conference - 2025 in Berlin",
   "icons": [
     {
       "src": "/assets/favicons/android-chrome-192x192.png",
