@@ -6,22 +6,21 @@ description: >
   We create an open, diverse and welcoming conference with fantastic speakers and a warm and friendly environment.
 ---
 
-## 🎉 NG-DE Friends Ticket – Your All-Inclusive Package! 🎉
+## NG-DE Friends Ticket 🎉
 
-- 👩‍🏫 Workshop Day: Participate in one of our exclusive workshops and level up your skills.
-- 🫂 Two Conference Days: Enjoy talks, networking, and all the NG-DE vibes!
-- 🍵 Limited Edition Cup: Perfect for your coffee or matcha tea.
-- ✒️ Special Conference Journal: Capture every idea and moment.
-- 👕 Exclusive NG-DE T-Shirt: Wear your community pride in style!
+If you love the NG-DE conference and want to snag a very special offer that only a select few attendees can get, the Friends Ticket is just what you’re looking for!
 
-- 💥 Total Value: _1428 €_
-- 🎄 Christmas Special: Only **€833 €**!
+### Why is it special?
 
-**🎅 Don’t Miss Out: This offer is only available until Christmas. Grab your Friends Ticket and join the NG-DE adventure!**
+- You’ll receive an exclusive swag package reserved only for our closest friends.
+- Enjoy all three conference days, including a workshop of your choice.
+- Be one of the first 10 buyers and get an invitation to our VIP dinner! Rub shoulders with speakers, workshop leaders, community icons, and even members of the Angular team themselves. 🤗
 
-_By buying a ticket you accept the code of conduct._
+**🎅 Don’t Miss Out:** This exclusive offer is only available until New Year's Eve. Grab your Friends Ticket now and be part of the NG-DE adventure!
 
 <tito-widget event="ng-de/berlin-2025" releases="bselfksgx8w" discount-code="christmas-for-friends" save-metadata-parameters="utm_*"></tito-widget>
+
+_By buying a ticket you accept the code of conduct._
 
 <script>
   const url = new URL(location.href)
