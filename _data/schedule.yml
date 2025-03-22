@@ -1,33 +1,33 @@
 - title: Wednesday
-  datetime: "2024-10-09T09:00:00"
+  datetime: "2025-11-05T09:00:00"
   entries:
     - title: Workshop 1
-      datetime: "2024-10-09T09:00:00"
+      datetime: "2025-11-05T09:00:00"
       information: ""
-      location: Maritim Hotel, Bonn
+      location: GLS Campus Berlin
       session: angular-architecture-workshop-nx-micro-frontends-signal-store
     - title: Workshop 2
-      datetime: "2024-10-09T09:00:00"
+      datetime: "2025-11-05T09:00:00"
       information: ""
-      location: Maritim Hotel, Bonn
+      location: GLS Campus Berlin
       session: high-speed-angular-apps-on-any-device
     - title: Workshop 3
-      datetime: "2024-10-09T09:00:00"
+      datetime: "2025-11-05T09:00:00"
       information: ""
-      location: Maritim Hotel, Bonn
+      location: GLS Campus Berlin
       session: pragmatic-angular-testing
     - title: Workshop 4
-      datetime: "2024-10-09T09:00:00"
+      datetime: "2025-11-05T09:00:00"
       information: ""
-      location: Maritim Hotel, Bonn
+      location: GLS Campus Berlin
       session: angular-gen-ai
     - title: Workshop 5
-      datetime: "2024-10-09T09:00:00"
+      datetime: "2025-11-05T09:00:00"
       information: ""
-      location: Maritim Hotel, Bonn
+      location: GLS Campus Berlin
       session: ngrx-signal-store
     # - title: Get together and Pick up your badges 🥳🍻
-    #   datetime: "2024-10-11T18:00:00"
+    #   datetime: "2025-11-07T18:00:00"
     #   information: >
     #     Our meeting point will be marked with beach flags from the conference so you can't miss it.
     #     You will also be able to pick up already you conference badge 🥳
@@ -35,184 +35,184 @@
     #   session: null
 
 - title: Thursday
-  datetime: "2024-10-10T09:00:00"
+  datetime: "2025-11-06T09:00:00"
   entries:
     - title: Open Doors
-      datetime: "2024-10-10T08:30:00"
+      datetime: "2025-11-06T08:30:00"
       information: ""
-      location: Maritim Hotel, Bonn
+      location: GLS Campus Berlin
       session: null
     - title: Breakfast
-      datetime: "2024-10-10T09:00:00"
+      datetime: "2025-11-06T09:00:00"
       information: ""
-      location: Maritim Hotel, Bonn
+      location: GLS Campus Berlin
       session: null
     - title: Warm Welcome
-      datetime: "2024-10-10T09:40:00"
+      datetime: "2025-11-06T09:40:00"
       information: >
         [NG-DE Team](/team)
       location: Main Stage
       session: null
     - title: Opening Keynote
-      datetime: "2024-10-10T10:00:00"
+      datetime: "2025-11-06T10:00:00"
       information: ""
       location: Main Stage
       session: opening-keynote-day-1
     - title: Talk 1
-      datetime: "2024-10-10T10:30:00"
+      datetime: "2025-11-06T10:30:00"
       information: ""
       location: Main Stage
       session: ai-browser
     - title: Break
-      datetime: "2024-10-10T11:00:00"
+      datetime: "2025-11-06T11:00:00"
       information: >
         ☕️🍎
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 2
-      datetime: "2024-10-10T11:45:00"
+      datetime: "2025-11-06T11:45:00"
       information: ""
       location: Main Stage
       session: angular-security
     - title: Talk 3
-      datetime: "2024-10-10T12:15:00"
+      datetime: "2025-11-06T12:15:00"
       information: ""
       location: Main Stage
       session: fake-mock
     - title: Lunch
-      datetime: "2024-10-10T12:45:00"
+      datetime: "2025-11-06T12:45:00"
       information: >
         🥙🥤
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 4
-      datetime: "2024-10-10T14:15:00"
+      datetime: "2025-11-06T14:15:00"
       information: ""
       location: Main Stage
       session: lightweight-stores
     - title: Talk 5
-      datetime: "2024-10-10T14:45:00"
+      datetime: "2025-11-06T14:45:00"
       information: ""
       location: Main Stage
       session: signal-scratch
     - title: Talk 6
-      datetime: "2024-10-10T15:15:00"
+      datetime: "2025-11-06T15:15:00"
       information: ""
       location: Main Stage
       session: microfrontends
     - title: Break
-      datetime: "2024-10-10T15:45:00"
+      datetime: "2025-11-06T15:45:00"
       information: >
         ☕️🍰
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 7
-      datetime: "2024-10-10T16:30:00"
+      datetime: "2025-11-06T16:30:00"
       information: ""
       location: Main Stage
       session: signals-change-detection
     - title: Talk 8
-      datetime: "2024-10-10T17:00:00"
+      datetime: "2025-11-06T17:00:00"
       information: ""
       location: Main Stage
       session: web-audio
     - title: Closing Day 1
-      datetime: "2024-10-10T17:30:00"
+      datetime: "2025-11-06T17:30:00"
       information: >
         [NG-DE Team](/team)
       location: Main Stage
       session: null
     - title: Party 🥳🍻
-      datetime: "2024-10-10T18:00:00"
+      datetime: "2025-11-06T18:00:00"
       information: >
         Our meeting point will be marked with beach flags from the conference so you can't miss it.
       location: TBA
       session: null
 
 - title: Friday
-  datetime: "2024-10-11T09:00:00"
+  datetime: "2025-11-07T09:00:00"
   entries:
     - title: Open Doors
-      datetime: "2024-10-11T08:30:00"
+      datetime: "2025-11-07T08:30:00"
       information: ""
-      location: Maritim Hotel, Bonn
+      location: GLS Campus Berlin
       session: null
     - title: Breakfast
-      datetime: "2024-10-11T09:00:00"
+      datetime: "2025-11-07T09:00:00"
       information: ""
       location: FESTSAAL
       session: null
     - title: Intro Day 2
-      datetime: "2024-10-11T09:50:00"
+      datetime: "2025-11-07T09:50:00"
       information: >
         [NG-DE Team](/team)
       location: Main Stage
       session: null
     - title: Opening Keynote
-      datetime: "2024-10-11T10:00:00"
+      datetime: "2025-11-07T10:00:00"
       information: ""
       location: Main Stage
       session: opening-keynote-day-2
     - title: Talk 9
-      datetime: "2024-10-11T10:30:00"
+      datetime: "2025-11-07T10:30:00"
       information: ""
       location: Main Stage
       session: analogjs
     - title: Break
-      datetime: "2024-10-11T11:00:00"
+      datetime: "2025-11-07T11:00:00"
       information: >
         ☕️🍎
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 10
-      datetime: "2024-10-11T11:45:00"
+      datetime: "2025-11-07T11:45:00"
       information: ""
       location: Main Stage
       session: language-server
     - title: Talk 11
-      datetime: "2024-10-11T12:15:00"
+      datetime: "2025-11-07T12:15:00"
       information: ""
       location: Main Stage
       session: angular-material
     - title: Lunch & Family Photo 📷
-      datetime: "2024-10-11T12:45:00"
+      datetime: "2025-11-07T12:45:00"
       information: >
         🥙🥤
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 12
-      datetime: "2024-10-11T14:15:00"
+      datetime: "2025-11-07T14:15:00"
       information: ""
       location: Main Stage
       session: angular-universal
     - title: Talk 13
-      datetime: "2024-10-11T14:45:00"
+      datetime: "2025-11-07T14:45:00"
       information: ""
       location: Main Stage
       session: tanstack
     - title: Break
-      datetime: "2024-10-11T15:15:00"
+      datetime: "2025-11-07T15:15:00"
       information: >
         ☕️🍰
       location: Sponsoring Hall & Catering Area
       session: null
     - title: Talk 14
-      datetime: "2024-10-11T16:00:00"
+      datetime: "2025-11-07T16:00:00"
       information: ""
       location: Main Stage
       session: profiling-skills
     - title: Talk 15
-      datetime: "2024-10-11T16:30:00"
+      datetime: "2025-11-07T16:30:00"
       information: ""
       location: Main Stage
       session: concurrent-mode
     - title: Talk 16
-      datetime: "2024-10-11T17:00:00"
+      datetime: "2025-11-07T17:00:00"
       information: ""
       location: Main Stage
       session: template-driven-forms
     - title: Last Words & Closing the Conference
-      datetime: "2024-10-11T17:30:00"
+      datetime: "2025-11-07T17:30:00"
       information: >
         [NG-DE Team](/team)
       location: Main Stage
