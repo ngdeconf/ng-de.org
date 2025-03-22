@@ -11,11 +11,11 @@ links:
     navigation: true
   - name: News
     url: /news/
-    navigation: true
+    navigation: false
     cta: false
   - name: Schedule
     url: /schedule/
-    navigation: true
+    navigation: false
   - name: Workshops 
     url: /workshops/
     navigation: true
