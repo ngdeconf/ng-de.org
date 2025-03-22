@@ -12,7 +12,7 @@ links:
     navigation: true
   - name: Schedule
     url: /schedule/
-    navigation: false
+    navigation: true
   - name: Workshops 
     url: /workshops/
     navigation: true
