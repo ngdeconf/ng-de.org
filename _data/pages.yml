@@ -5,7 +5,7 @@ links:
     cta: false
   - name: 📺 Videos
     url: https://www.youtube.com/playlist?list=PLkdIZQ2JS3AfVemw6Rx0vLYZcGi2wAo9c
-    navigation: true
+    navigation: false
   - name: Team
     url: /team/
     navigation: true
@@ -13,16 +13,16 @@ links:
     url: /news/
     navigation: true
     cta: false
-  - name: Schedule 2024
+  - name: Schedule
     url: /schedule/
     navigation: true
-  - name: Workshops 2024
+  - name: Workshops 
     url: /workshops/
     navigation: true
-  - name: Speakers 2024
+  - name: Speakers 
     url: /speakers/
-    navigation: false
-  - name: Location 2024
+    navigation: true
+  - name: Location 
     url: /location/
     navigation: true
 

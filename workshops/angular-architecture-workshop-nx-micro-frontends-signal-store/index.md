@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Angular Architecture Workshop - Nx, Micro Frontends, and Signal Store  - Workshop with Manfred Steyer - NG-DE 2024 - Angular Conference - Bonn
+title: Angular Architecture Workshop - Nx, Micro Frontends, and Signal Store  - Workshop with Manfred Steyer - NG-DE 2025 - Angular Conference - Berlin
 description: >
   In this interactive workshop, we utilize the latest Angular features to implement a modern and maintainable architecture. We start with Standalone Components and discuss approaches to modularization without NgModules, such as monorepos, Nx, and Sheriff. 
 

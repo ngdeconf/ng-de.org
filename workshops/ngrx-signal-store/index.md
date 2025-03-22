@@ -1,6 +1,6 @@
 ---
 layout: section
-title: "Mastering NgRx SignalStore: From Fundamentals to Advanced Techniques - Workshop with Alex Okrushko - NG-DE 2024 - Angular Conference - Bonn"
+title: "Mastering NgRx SignalStore: From Fundamentals to Advanced Techniques - Workshop with Alex Okrushko - NG-DE 2025 - Angular Conference - Berlin"
 description: >
   Explore the power of NgRx SignalStore in a comprehensive workshop led by a core member of the NgRx team: Alex Okrushko. This workshop offers a deep dive into the world of reactive state management powered by Angular Signals.
   NgRx SignalStore offers a pragmatic approach to state management in Angular applications. With its native support for Signals, you can define stores in a clear and declarative manner. The simplicity and flexibility of SignalStore, coupled with its opinionated and modular design, make it a versatile choice for Angular developers.

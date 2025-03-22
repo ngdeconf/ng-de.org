@@ -13,7 +13,7 @@
   title: Trainer and Consultant • GDE in Angular
   image: rainer-hahnekamp.png
   biography: >
-    Rainer Hahnekamp is a Google Developer Expert, working as a trainer and consultant in the expert network of Angular Architects. In addition, he offers a weekly brief overview of relevant events in the Angular ecosystem on YouTube through ng-news.
+    Rainer Hahnekampis a Google Developer Expert, working as a trainer and consultant in the expert network of Angular Architects. In addition, he offers a weekly brief overview of relevant events in the Angular ecosystem on YouTube through ng-news.
   role: Trainer
   profiles:
     twitter: rainerhahnekamp
@@ -28,130 +28,6 @@
   profiles:
     twitter: michael_hladky
     github: BioPhoton
-- id: alex-okrushko
-  name: Alex Okrushko
-  title: Snowflake
-  image: alex-okrushko.jpeg
-  biography: >
-    Alex is a Senior Software Engineer at Snowflake. He is part of the NgRx team, GDE in Angular, @AngularToronto organizer and co-organizer of the official Angular Discord. In his free time, he loves to learn & share the knowledge, provides NgRx workshops and helps with ts.dev/style - the TypeScript style guide.
-  role: Trainer
-  profiles:
-    twitter: AlexOkrushko
-    github: alex-okrushko
-- id: emma-twersky
-  name: Emma Twersky
-  title: staff developer relations @ google
-  image: emma-twersky.jpeg
-  biography: >
-    Emma is a Senior Developer Relations Engineer on the Angular team at Google. She cares deeply about making the open source web the best place to build web application
-  role: Keynote
-  profiles:
-    twitter: twerske
-    github: twerske
-- id: younes-jaaidi
-  name: Younes Jaaidi
-  title: Software Cook at Marmicode
-  image: younes-jaaidi.jpeg
-  biography: >
-    Younes is a Software Cook born in eXtreme Programming, which made him a passionate advocate of Collective Ownership, TDD and snacks in the office.
-    He trains and coaches teams like yours to cook better apps. He’s also an NX champion, a Google Developer Expert for Angular and Web Technologies and a mediocre sailor.
-    His favorite command is `sleep 300; git reset --hard; git clean -df`
-  role: Trainer
-  profiles:
-    github: yjaaidi
-    twitter: yjaaidi
-- id: jan-wortmann
-  name: Jan-Niklas Wortmann
-  title: Developer Advocate at JetBrains
-  image: jan-wortmann.png
-  biography: >
-    As a Developer Advocate for JetBrains, Jan-Niklas Wortmann isn't just another coder—he's a code evangelist. 
-    With TypeScript as his weapon of choice, he's on a mission to make your dev life easier, one line at a time. 
-    Angular geek? He's got you covered. Obsessed with reactive programming? 
-    So is he. Outside of fine-tuning the developer experience at JetBrains, 
-    Jan is a Google Developer Expert for Angular and a part of the RxJS Core Team.
-  role: Speaker
-  profiles:
-    github: niklas-wortmann
-    twitter: niklas_wortmann
-- id: matthieu-riegler
-  name: Matthieu Riegler
-  title: Viseo
-  image: matthieu-riegler.jpeg
-  biography: >
-    Born and raised with the web. I always wanted to build some part of it. 
-    Joined the Angular team as an OSS contributor.
-  role: Keynote
-  profiles:
-    github: JeanMeche
-    twitter: jean__meche
-- id: ankita-sood
-  name: Ankita Sood
-  title: Dell Secureworks
-  image: ankita-sood.png
-  biography: >
-    Ankita is currently adulting in Austin, Texas - where she is also learning how to survive the aggressive heat and increasing rent prices. 
-    Depending on the weather, she can be found outdoors hiking, biking, paddle boarding, trying to pet other peoples' dogs OR staying indoors reading a book. 
-    She has an avid interest in all things Design and Angular. She's been a frontend engineer all her adult working life, which is approximately either 10 years or 100 years, because she has lost sense of time since the pandemic.
-  role: Speaker
-  profiles:
-    twitter: GuacamoleAnkita
-- id: eliran-eliassy
-  name: Eliran Eliassy
-  title: e-square.io
-  image: eliran-eliassy.png
-  biography: >
-    I'm a Google Developer Expert (GDE) for Angular.
-    Experienced FE developer, specialized in high performance applications.
-    Founder & CEO @ e-square.io.
-    Angular enthusiast, Public speaker, Community leader.
-    Organiser @ Angular-TLV.
-  role: Speaker
-  profiles:
-    github: eliraneliassy
-    twitter: EliranEliassy
-- id: cathrin-moeller
-  name: Cathrin Möller
-  title: TNG Technology Consulting GmbH
-  image: cathrin-moeller.jpeg
-  biography: >
-    Cathrin is a professor for applied computer science. Having worked in IT consulting for many years she gained a lot of experience from enterprise projects to development from scratch. 
-    She likes sharing common pitfalls and best practices in her talks and lectures.
-  role: Speaker
-- id: devlin-duldulao
-  name: Devlin Duldulao
-  title: inmeta
-  image: devlin-duldulao.png
-  biography: >
-    Devlin Duldulao, originally from the Philippines, is a full-stack cloud engineer in Norway. 
-    As a Microsoft MVP, he is a prolific trainer, conference speaker, and published book author who has dedicated his career to sharing his extensive knowledge. 
-    As a chief consultant at Inmeta, Devlin is passionate about staying current with the rapidly evolving tech industry. This has led him to delve into cutting-edge fields such as artificial intelligence, GPT, and prompt engineering. Through his unwavering commitment to learning and empowering others, Devlin continues to impact the global technology community significantly.
-  role: Speaker
-  profiles:
-    github: webmasterdevlin
-    twitter: DevlinDuldulao
-- id: vitalii-bobrov
-  name: Vitalii Bobrov
-  title: EPAM
-  image: vitalii-bobrov.png
-  biography: >
-    Vitalii is a Lead Software Engineer at EPAM Poland. 
-    With a solid decade of JS magic experience, he's not just about the code. 
-    Vitalii is a regular face at tech talks, always ready to dive into the latest and most excellent Web Platform features. 
-    His approach? Always fresh, always forward-thinking.
-  role: Speaker
-  profiles:
-    twitter: bobrov1989
-- id: robin-goetz
-  name: Robin Goetz
-  title: AnalogJs core team & creator of spartan/ui
-  image: robin-goetz.jpeg
-  biography: >
-    I am a developer working with Angular, Spring and AWS. AnalogJs core team & creator of spartan/ui.
-  role: Speaker
-  profiles:
-    github: goetzrobin
-    twitter: goetzrobin
 - id: christian-liebel
   name: Christian Liebel
   title: Thinktecture
@@ -162,74 +38,23 @@
   profiles:
     github: christianliebel
     twitter: christianliebel
-- id: enea-jahollari
-  name: Enea Jahollari
-  title: Push-based.io
-  image: enea-jahollari.jpeg
+- id: martina-kraus
+  name: Martina Kraus
+  title: Angular Consultant & Trainer
+  image: martina-kraus.png
   biography: >
-    Software Engineer focused on performance, scalability, and architecture of web applications at Push-based.io
-    I'm also a Google Developer Expert for Angular. I've given talks and workshops about Angular at ngIndia, AngularAustria, and NgPoland, and also internal workshops at various companies.
-    I'm a maintainer of the RxAngular library known for bringing performance utils to your fingertips ready to be used.
-    I'm a co-creator of the ngxtension library which tries to make it easier to use Signal primitives in Angular apps.
-    I've written multiple blog posts regarding Angular performance, internals, Signals, and architecture which get a lot of daily traction.
-    I tweet a lot about Angular's latest news and updates in X (formerly Twitter).
+    Martina Kraus is a Google Developer Expert in Angular and web technologies. She is an Angular consultant and trainer with a focus on Angular applications. As a lecturer, she teaches at the Hochschule Mannheim. She is actively involved in the Angular community and speaks at international conferences.
   role: Speaker
   profiles:
-    github: eneajaho
-    twitter: Enea_Jahollari
-- id: julian-jandl
-  name: Julian Jandl
-  title: Push-based.io
-  image: julian-jandl.jpeg
+    twitter: martinakraus11
+    github: martinakraus
+- id: maria-korneeva
+  name: Maria Korneeva
+  title: Angular Consultant & Developer
+  image: maria-korneeva.jpeg
   biography: >
-    Julian, based in the beautiful city of Vienna, Austria, is an accomplished frontend engineer, trainer, and consultant specializing in Angular and web performance optimization.
-    His expertise extends to conducting performance audits for client applications, identifying and fixing performance bottlenecks. Julian also imparts his knowledge through engaging workshops, where he shares insights & teaches on both web performance and the intricacies of Angular.
-    He continually explores cutting-edge technologies to enhance the speed of the web on a large scale.
-    Julian actively contributes to the community. He shares his knowledge through public workshops, talks at conferences and meetups, and actively contributes to the open-source landscape. He is one of the core contributors to the RxAngular project, solidifying his commitment to the evolution of the Angular ecosystem.
+    Maria Korneeva is an experienced Angular developer and consultant specializing in building scalable web applications. She actively contributes to the Angular community through workshops, mentoring, and speaking at tech events.
   role: Speaker
   profiles:
-    github: hoebbelsB
-    twitter: hoebbelsB
-- id: gregor-woiwode
-  name: Gregor Woiwode
-  title: co-IT.eu GmbH
-  image: gregor-woiwode.jpeg
-  biography: >
-    Gregor is the CTO of co-IT.eu GmbH, a Google Developer Expert for Angular & the 🎙️ host of the Podcast "Entwicklungszeit". He loves building tools that enable developers to be more effective.
-    He also enjoys to play with his two 💖 beloved sons, 🏃🏻‍♂️ running or trying his hand at 🧑🏻‍🍳 hobby cooking.
-  role: Speaker
-  profiles:
-    github: gregonnet
-    twitter: GregOnNet
-- id: benjamin-legrand
-  name: Benjamin Legrand
-  title: onepoint
-  image: benjamin-legrand.png
-  biography: >
-    Benjamin is a Software Engineer / Front-end architect from Nantes, France. He has worked on multiple angular projects since the AngularJS times. He cares about well-crafted user interfaces, testability, performance and accessibility.
-  role: Speaker
-  profiles:
-    github: benjilegnard
-    twitter: benjilegnard
-- id: alisa-duncan
-  name: Alisa Duncan
-  title: Okta
-  image: alisa-duncan.jpeg
-  biography: >
-    Alisa Duncan is a Senior Developer Advocate at Okta, a full-stack developer, content creator, conference speaker, Pluralsight author, and community builder who loves the thrill of learning new things. 
-    She is a Google Developer Expert in Angular, a Women Techmaker Ambassador, a ngGirls core team member, and a volunteer at community events supporting underrepresented groups entering tech. 
-    When not coding or volunteering, you can find her cooking, watching K-Dramas, or drinking a glass of wine.
-  role: Speaker
-  profiles:
-    github: alisaduncan
-    twitter: AlisaDuncan
-- id: stephen-cooper
-  name: Stephen Cooper
-  title: AG Grid
-  image: stephen-cooper.png
-  biography: >
-    Stephen is a Senior Developer at AG Grid. An active blogger writing about Web Tech. Stephen has spoken at conferences and meet-ups worldwide, sharing practical and experience-based tips, tricks, and case studies.
-  role: Speaker
-  profiles:
-    github: StephenCooper
-    twitter: SCooperDev
+    twitter: mariakorneeva
+    github: mariakorneeva

@@ -1,6 +1,6 @@
 ---
 layout: section
-title: High-speed Angular Apps on any device  - Workshop with Michael Hladky - NG-DE 2024 - Angular Conference - Bonn
+title: High-speed Angular Apps on any device  - Workshop with Michael Hladky - NG-DE 2025 - Angular Conference - Berlin
 description: >
   Are you tired of performance bottlenecks holding back your Angular apps?
 

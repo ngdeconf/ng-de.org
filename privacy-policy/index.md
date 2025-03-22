@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Privacy Policy - NG-DE 2024 - Angular Conference - 2024 in Bonn
+title: Privacy Policy - NG-DE 2025 - Angular Conference - 2025 in Berlin
 noindex: true
 ---
 
@@ -88,7 +88,7 @@ You have the right to get information about your personal data for free in a str
 
 * Right of contradiction/revocation of permission according to Art. 21 GDPR
 
-If you have given us your consent to process your personal data,  you can revoke this at any time
+If you have given us your consent to process your personal data,  you can revoke this at any time
 
 * Right of complaint to the national supervisory authority according to Art. 13 para. 2 lit. d) GDPR
 

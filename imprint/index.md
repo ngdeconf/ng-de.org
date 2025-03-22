@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Imprint - NG-DE 2024 - Angular Conference - 2024 in Bonn
+title: Imprint - NG-DE 2025 - Angular Conference - 2025 in Berlin
 noindex: true
 ---
 

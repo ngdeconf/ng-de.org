@@ -1,6 +1,6 @@
 ---
 layout: section
-title: Call for Paper - NG-DE 2024 - Angular Conference - 2024 in Berlin
+title: Call for Paper - NG-DE 2025 - Angular Conference - 2025 in Berlin
 cfp_end: "April 10th, 2024 23:59 CET"
 cfp_url: https://forms.gle/VmwpQ6EM3HSBmejV6
 description: >

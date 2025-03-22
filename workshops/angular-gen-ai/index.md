@@ -1,6 +1,6 @@
 ---
 layout: section
-title: "Making Angular Apps Smarter with Generative AI: Local and Offline-capable (Hands-on)  - Workshop with Christian Liebel - NG-DE 2024 - Angular Conference - Bonn"
+title: "Making Angular Apps Smarter with Generative AI: Local and Offline-capable (Hands-on)  - Workshop with Christian Liebel - NG-DE 2025 - Angular Conference - Berlin"
 description: >
   Generative AI is on everyone's lips: Adobe Photoshop allows objects in images to be exchanged by simply entering a prompt, and Microsoft Copilot has come to Office and Windows. 
   With WebLLM and WebSD, we can now bring Generative AI to your Angular app: entirely local and offline-capable. 

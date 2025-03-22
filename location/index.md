@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Location - NG-DE 2024 - Angular Conference - 2024 in Bonn
+title: Location - NG-DE 2025 - Angular Conference - 2025 in Berlin
 description: >
   NG-DE is the first community-driven Angular conference in Germany.
   It will take place at Maritim Hotel in Bonn, close to the Rhine and Bonn's Museum Mile.
@@ -69,7 +69,7 @@ You can find more information about transportation [here](https://www.maritim.co
 The conference will be held on the ground floor and will allow all participants unrestricted access
 
 ### Wardrobe
-You find a wardrobe in the sponsoring hall where you can put your bags and jackets and other stuff. You’ll get a number for each piece you store. There will be people from our team the whole time.
+You find a wardrobe in the sponsoring hall where you can put your bags and jackets and other stuff. You'll get a number for each piece you store. There will be people from our team the whole time.
 
 
 ### Workshops

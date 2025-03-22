@@ -1,44 +1,25 @@
 main: null
 
 platinum:
+  - name: EON
+    logo: eon.png
+    url: https://www.eon.com/
 
 gold:
-  - name: Bootcamps Europe GmbH
-    logo: coding-bootcamp.png
-    url: https://coding-bootcamps.eu/
   - name: Adesso
     logo: adesso.png
     url: https://www.adesso.de
 
 silver:
-  - name: Auth0 by Okta
-    logo: Auth0byOkta.svg
-    url: https://auth0.com/
-  - name: SAP
-    logo: SAP_LeanIX_R_grad_blu.svg
-    url: https://www.sap.com/
+ 
 
 bronze:
   - name: qupaya technologies GmbH
     logo: qupaya.svg
     url: https://qupaya.com/
-  - name: HOUSE OF ANGULAR
-    logo: house-of-angular.png
-    url: https://houseofangular.io/
 
 travel:
-  - name: AG Grid
-    logo: AG-Grid.svg
-    url: https://www.ag-grid.com/
-  - name: JetBrains
-    logo: jetbrains.svg
-    url: https://www.jetbrains.com/
-  - name: Auth0 by Okta
-    logo: Auth0byOkta.svg
-    url: https://auth0.com/
-  - name: Thinktecture
-    logo: thinktecture.svg
-    url: https://thinktecture.com/
+  
 
 scholarship:
 
