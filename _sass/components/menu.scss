@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $menu-fontsize: 1.2rem;
 $menu-item-gap: 2rem;
 $menu-link-color: map-get($colors, dark);
@@ -9,14 +11,14 @@ $menu-link-color-hover: map-get($colors, primary);
   flex-flow: nowrap;
   align-items: center;
   padding: 0;
-  margin: 0 (-$menu-item-gap / 2);
+  margin: 0 math.div(-$menu-item-gap, 2);
   list-style-type: none;
   list-style-image: none;
 
   &__item {
     font-size: $menu-fontsize;
     padding: 0;
-    margin: 0 ($menu-item-gap / 2);
+    margin: 0 math.div($menu-item-gap, 2);
   }
 
   &__link {
@@ -68,7 +70,7 @@ $menu-link-color-hover: map-get($colors, primary);
       #{$b} {
         &__item {
           font-size: calc(22px + .5vw);
-          margin: ($menu-item-gap / 2) 0;
+          margin: math.div($menu-item-gap, 2) 0;
         }
       }
     }
