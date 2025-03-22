@@ -1,268 +1,268 @@
-- id: angular-architecture-workshop-nx-micro-frontends-signal-store
-  title: Angular Architecture Workshop - Nx, Micro Frontends, and Signal Store
-  logo: router.svg
-  description: >
-    In this interactive workshop, we utilize the latest Angular features to implement a modern and maintainable architecture. We start with Standalone Components and discuss approaches to modularization without NgModules, such as monorepos, Nx, and Sheriff. 
-    Then, we explore the potential of Micro Frontends. We discuss when they make sense and how to implement them using web standards, the Angular CLI’s new esbuild support, and Module Federation or Native Federation. 
-    We proceed with Signals, local change detection, and Zone-less Angular. Subsequently, we integrate the new Signal Store to establish modern and lightweight state management. Thanks to its custom features, we can use the Signal Store to implement recurring, complex requirements with just a few lines of code. 
-    By the end, you'll be equipped to design modern and maintainable Angular solutions.
-  type: workshop
-  speakers:
-    - manfred-steyer
-    - rainer-hahnekamp
-  tito:
-    price_net: 415
-    url: https://ti.to/ng-de/ng-de-conf-2024/with/angular-architecture-workshop-nx-micro-frontends-and-signal-store
-  datetime: 2024-10-09 09:00:00 +0100
-  location: Maritim Hotel, Bonn
-- id: high-speed-angular-apps-on-any-device
-  title: High-speed Angular Apps on any device
-  logo: labs.svg
-  description: >
-    Are you tired of performance bottlenecks holding back your Angular apps?
-    Want to create a lightning-fast user experience that keeps your users engaged? Look no further! Our intensive hands-on workshop is designed to help you master Angular performance optimization and refining your app's performance in every way.
-    You will gain a deep understanding of running performance tests effectively and utilizing performance metrics to optimize your Angular application.
-    Learn about Angular performance optimization with in-depth sessions on optimizing JavaScript code, native rendering performance, and much more. Get ready to supercharge your Angular applications with our engaging and interactive workshop!
-  type: workshop
-  speakers:
-    - michael-hladky
-    - enea-jahollari
-  tito:
-    price_net: 415
-    url: https://ti.to/ng-de/ng-de-conf-2024/with/high-speed-angular-apps-on-any-device
-  datetime: 2024-10-09 09:00:00 +0100
-  location: Maritim Hotel, Bonn
-- id: pragmatic-angular-testing
-  title: Pragmatic Angular Testing
-  logo: angular-solid-foundations.svg
-  description: >
-    Testing or more specifically, front-end testing is undeniably in the top 3 of the most complex topics associated with Angular & front-end development
-    This workshop presents, through practical exercises, pragmatic Angular testing techniques ranging from Object Mothers and Fakes to modern tools like Vitest & Playwright Component Testing. You will also learn how to implement simple, meaningful, maintainable, and above all profitable tests.
-  type: workshop
-  speakers:
-    - younes-jaaidi
-  tito:
-    price_net: 415
-    url: https://ti.to/ng-de/ng-de-conf-2024/with/pragmatic-angular-testing
-  datetime: 2024-10-09 09:00:00 +0100
-  location: Maritim Hotel, Bonn
-- id: ngrx-signal-store
-  title: "Mastering NgRx SignalStore: From Fundamentals to Advanced Techniques"
-  logo: ngrx.svg
-  description: >
-    Explore the power of NgRx SignalStore in a comprehensive workshop led by a core member of the NgRx team: Alex Okrushko. This workshop offers a deep dive into the world of reactive state management powered by Angular Signals.
-    NgRx SignalStore offers a pragmatic approach to state management in Angular applications. With its native support for Signals, you can define stores in a clear and declarative manner. The simplicity and flexibility of SignalStore, coupled with its opinionated and modular design, make it a versatile choice for Angular developers.
-    What to Expect:
-    In this workshop, we’ll walk through the fundamentals of the NgRx SignalStore with in-depth discussions, exercises, and code labs. We'll guide you through leveraging the power of both Signals and RxJS, showing you how to use each in the places where they shine, unlocking the full potential of reactivity in Angular. After exploring core concepts, we'll delve into using SignalStore plugins and architectural patterns that ensure code cleanliness, scalability, and robustness.
-    Prerequisites:
-    Participants should have a basic understanding of Angular and TypeScript fundamentals. Experience with NgRx and Signals is not required but would be beneficial.
-  type: workshop
-  speakers:
-    - alex-okrushko
-  tito:
-    price_net: 415
-    url: https://ti.to/ng-de/ng-de-conf-2024/with/mastering-ngrx-signalstore-from-fundamentals-to-advanced-techniques
-  datetime: 2024-10-09 09:00:00 +0100
-  location: Maritim Hotel, Bonn
-- id: angular-gen-ai
-  title: "Making Angular Apps Smarter with Generative AI: Local and Offline-capable (Hands-on)"
-  logo: labs.svg
-  description: >
-    Generative AI is on everyone's lips: Adobe Photoshop allows objects in images to be exchanged by simply entering a prompt, and Microsoft Copilot has come to Office and Windows. 
-    With WebLLM and WebSD, we can now bring Generative AI to your Angular app: entirely local and offline-capable. 
-    We generate images from text input and add a chatbot to a to-do application. If you want to code along, please bring a powerful device with Windows or macOS, a current version of Chrome, Node.js, an editor of your choice, and at least 10 GB of free hard disk space. 
-    Ideally, this should be your private device, as group policies or company proxies may cause issues.
-  type: workshop
-  speakers:
-    - christian-liebel
-  tito:
-    price_net: 415
-    url: https://ti.to/ng-de/ng-de-conf-2024/with/making-angular-apps-smarter-with-generative-ai-local-and-offline-capable
-  datetime: 2024-10-09 09:00:00 +0100
-  location: Maritim Hotel, Bonn
-- id: opening-keynote-day-1
-  title: Angular's Momentum
-  description: >
-    There's never been a better time to be an Angular developer. Let's take a look at how the framework is increasing velocity to bring built-in performance best practices, and a better developer experience to millions of developers.
-  type: keynote
-  speakers:
-    - emma-twersky
-  datetime: 2024-10-10 09:30:00 +0100
-  location: Main Stage
-- id: opening-keynote-day-2
-  title: Partial Hydration, the art of sending the bare minimum over the wire
-  description: >
-    Single page application were known to be bloated and send way too much javascript to start.
-    This is why frameworks started to recommend Lazy-loading : Sending the minimum to start the app.
-    With Server Side Rendering (SSR) + Partial hydration, it is now possible to send even less and still have content rendered on the client.
-    Let’s dive into this new feature in Angular v18.x (TBD), how the magic works, the uses cases for your apps and what performances improvements to expect !
-  type: keynote
-  speakers:
-    - matthieu-riegler
-  datetime: 2024-10-10 09:30:00 +0100
-  location: Main Stage
-- id: language-server
-  title: The Angular Language Server Inside Out
-  description: >
-    Dive into the Angular Language Server, the backbone of your IDE experience, to uncover how it powers the features we rely on every day. 
-    This talk will explore its architecture and the real-world application of its capabilities, equipping you with the knowledge to troubleshoot IDE quirks effectively. Through a mix of in-depth analysis and practical insights, attendees will learn not just when to restart the language server, but how understanding its workings can streamline their Angular development workflow.
-  speakers:
-    - jan-wortmann
-  type: talk
-  location: Main Stage
-- id: angular-material
-  title: "From Buttons to Breakpoints: A Deep Dive into Angular Material's Latest"
-  description: >
-    Angular Material has recently undergone massive updates - both stylistically as it is more aligned with Google Material 3, and architecturally - leveraging all latest Angular features. Let's explore how to theme and customize an Angular application with the recent updates in the Angular Material World! Give you Angular application a complete makeover by customizing typography, build your own theme with ease - all without compromising accessibility and the user experience.
-  speakers:
-    - ankita-sood
-  type: talk
-  location: Main Stage
-- id: signal-scratch
-  title: "DIY: Let's build a signal from scratch!"
-  description: >
-    In the world of Angular, understanding the core concepts and tools can profoundly impact our development process, enabling us to create more efficient, scalable, and maintainable applications. 
+# - id: angular-architecture-workshop-nx-micro-frontends-signal-store
+#   title: Angular Architecture Workshop - Nx, Micro Frontends, and Signal Store
+#   logo: router.svg
+#   description: >
+#     In this interactive workshop, we utilize the latest Angular features to implement a modern and maintainable architecture. We start with Standalone Components and discuss approaches to modularization without NgModules, such as monorepos, Nx, and Sheriff. 
+#     Then, we explore the potential of Micro Frontends. We discuss when they make sense and how to implement them using web standards, the Angular CLI’s new esbuild support, and Module Federation or Native Federation. 
+#     We proceed with Signals, local change detection, and Zone-less Angular. Subsequently, we integrate the new Signal Store to establish modern and lightweight state management. Thanks to its custom features, we can use the Signal Store to implement recurring, complex requirements with just a few lines of code. 
+#     By the end, you'll be equipped to design modern and maintainable Angular solutions.
+#   type: workshop
+#   speakers:
+#     - manfred-steyer
+#     - rainer-hahnekamp
+#   tito:
+#     price_net: 415
+#     url: https://ti.to/ng-de/ng-de-conf-2024/with/angular-architecture-workshop-nx-micro-frontends-and-signal-store
+#   datetime: 2024-10-09 09:00:00 +0100
+#   location: Maritim Hotel, Bonn
+# - id: high-speed-angular-apps-on-any-device
+#   title: High-speed Angular Apps on any device
+#   logo: labs.svg
+#   description: >
+#     Are you tired of performance bottlenecks holding back your Angular apps?
+#     Want to create a lightning-fast user experience that keeps your users engaged? Look no further! Our intensive hands-on workshop is designed to help you master Angular performance optimization and refining your app's performance in every way.
+#     You will gain a deep understanding of running performance tests effectively and utilizing performance metrics to optimize your Angular application.
+#     Learn about Angular performance optimization with in-depth sessions on optimizing JavaScript code, native rendering performance, and much more. Get ready to supercharge your Angular applications with our engaging and interactive workshop!
+#   type: workshop
+#   speakers:
+#     - michael-hladky
+#     - enea-jahollari
+#   tito:
+#     price_net: 415
+#     url: https://ti.to/ng-de/ng-de-conf-2024/with/high-speed-angular-apps-on-any-device
+#   datetime: 2024-10-09 09:00:00 +0100
+#   location: Maritim Hotel, Bonn
+# - id: pragmatic-angular-testing
+#   title: Pragmatic Angular Testing
+#   logo: angular-solid-foundations.svg
+#   description: >
+#     Testing or more specifically, front-end testing is undeniably in the top 3 of the most complex topics associated with Angular & front-end development
+#     This workshop presents, through practical exercises, pragmatic Angular testing techniques ranging from Object Mothers and Fakes to modern tools like Vitest & Playwright Component Testing. You will also learn how to implement simple, meaningful, maintainable, and above all profitable tests.
+#   type: workshop
+#   speakers:
+#     - younes-jaaidi
+#   tito:
+#     price_net: 415
+#     url: https://ti.to/ng-de/ng-de-conf-2024/with/pragmatic-angular-testing
+#   datetime: 2024-10-09 09:00:00 +0100
+#   location: Maritim Hotel, Bonn
+# - id: ngrx-signal-store
+#   title: "Mastering NgRx SignalStore: From Fundamentals to Advanced Techniques"
+#   logo: ngrx.svg
+#   description: >
+#     Explore the power of NgRx SignalStore in a comprehensive workshop led by a core member of the NgRx team: Alex Okrushko. This workshop offers a deep dive into the world of reactive state management powered by Angular Signals.
+#     NgRx SignalStore offers a pragmatic approach to state management in Angular applications. With its native support for Signals, you can define stores in a clear and declarative manner. The simplicity and flexibility of SignalStore, coupled with its opinionated and modular design, make it a versatile choice for Angular developers.
+#     What to Expect:
+#     In this workshop, we’ll walk through the fundamentals of the NgRx SignalStore with in-depth discussions, exercises, and code labs. We'll guide you through leveraging the power of both Signals and RxJS, showing you how to use each in the places where they shine, unlocking the full potential of reactivity in Angular. After exploring core concepts, we'll delve into using SignalStore plugins and architectural patterns that ensure code cleanliness, scalability, and robustness.
+#     Prerequisites:
+#     Participants should have a basic understanding of Angular and TypeScript fundamentals. Experience with NgRx and Signals is not required but would be beneficial.
+#   type: workshop
+#   speakers:
+#     - alex-okrushko
+#   tito:
+#     price_net: 415
+#     url: https://ti.to/ng-de/ng-de-conf-2024/with/mastering-ngrx-signalstore-from-fundamentals-to-advanced-techniques
+#   datetime: 2024-10-09 09:00:00 +0100
+#   location: Maritim Hotel, Bonn
+# - id: angular-gen-ai
+#   title: "Making Angular Apps Smarter with Generative AI: Local and Offline-capable (Hands-on)"
+#   logo: labs.svg
+#   description: >
+#     Generative AI is on everyone's lips: Adobe Photoshop allows objects in images to be exchanged by simply entering a prompt, and Microsoft Copilot has come to Office and Windows. 
+#     With WebLLM and WebSD, we can now bring Generative AI to your Angular app: entirely local and offline-capable. 
+#     We generate images from text input and add a chatbot to a to-do application. If you want to code along, please bring a powerful device with Windows or macOS, a current version of Chrome, Node.js, an editor of your choice, and at least 10 GB of free hard disk space. 
+#     Ideally, this should be your private device, as group policies or company proxies may cause issues.
+#   type: workshop
+#   speakers:
+#     - christian-liebel
+#   tito:
+#     price_net: 415
+#     url: https://ti.to/ng-de/ng-de-conf-2024/with/making-angular-apps-smarter-with-generative-ai-local-and-offline-capable
+#   datetime: 2024-10-09 09:00:00 +0100
+#   location: Maritim Hotel, Bonn
+# - id: opening-keynote-day-1
+#   title: Angular's Momentum
+#   description: >
+#     There's never been a better time to be an Angular developer. Let's take a look at how the framework is increasing velocity to bring built-in performance best practices, and a better developer experience to millions of developers.
+#   type: keynote
+#   speakers:
+#     - emma-twersky
+#   datetime: 2024-10-10 09:30:00 +0100
+#   location: Main Stage
+# - id: opening-keynote-day-2
+#   title: Partial Hydration, the art of sending the bare minimum over the wire
+#   description: >
+#     Single page application were known to be bloated and send way too much javascript to start.
+#     This is why frameworks started to recommend Lazy-loading : Sending the minimum to start the app.
+#     With Server Side Rendering (SSR) + Partial hydration, it is now possible to send even less and still have content rendered on the client.
+#     Let’s dive into this new feature in Angular v18.x (TBD), how the magic works, the uses cases for your apps and what performances improvements to expect !
+#   type: keynote
+#   speakers:
+#     - matthieu-riegler
+#   datetime: 2024-10-10 09:30:00 +0100
+#   location: Main Stage
+# - id: language-server
+#   title: The Angular Language Server Inside Out
+#   description: >
+#     Dive into the Angular Language Server, the backbone of your IDE experience, to uncover how it powers the features we rely on every day. 
+#     This talk will explore its architecture and the real-world application of its capabilities, equipping you with the knowledge to troubleshoot IDE quirks effectively. Through a mix of in-depth analysis and practical insights, attendees will learn not just when to restart the language server, but how understanding its workings can streamline their Angular development workflow.
+#   speakers:
+#     - jan-wortmann
+#   type: talk
+#   location: Main Stage
+# - id: angular-material
+#   title: "From Buttons to Breakpoints: A Deep Dive into Angular Material's Latest"
+#   description: >
+#     Angular Material has recently undergone massive updates - both stylistically as it is more aligned with Google Material 3, and architecturally - leveraging all latest Angular features. Let's explore how to theme and customize an Angular application with the recent updates in the Angular Material World! Give you Angular application a complete makeover by customizing typography, build your own theme with ease - all without compromising accessibility and the user experience.
+#   speakers:
+#     - ankita-sood
+#   type: talk
+#   location: Main Stage
+# - id: signal-scratch
+#   title: "DIY: Let's build a signal from scratch!"
+#   description: >
+#     In the world of Angular, understanding the core concepts and tools can profoundly impact our development process, enabling us to create more efficient, scalable, and maintainable applications. 
 
-    One of the most powerful changes in Angular is the adoption of Signals, which simplifies the way we manage and use reactivity throughout our applications. 
+#     One of the most powerful changes in Angular is the adoption of Signals, which simplifies the way we manage and use reactivity throughout our applications. 
 
-    We're all gonna use Signals more and more in our near future. But, have you ever wondered whats behind this? How you can build a Signal from scratch and what are the differences from Observables?
-  speakers:
-    - eliran-eliassy
-  type: talk
-  location: Main Stage
-- id: fake-mock
-  title: Fake it till you Mock it
-  description: >
-    How much do you trust the Mocks, Stubs and Spies you are using in your tests? Aren’t you tired of maintaining and debugging them, or trying to keep them in sync with the real implementation? Join us to see how Fakes and their fellow companions, Object Mothers, and Gloves might just become the pillars of your testing strategy.
-  speakers:
-    - younes-jaaidi
-  type: talk
-  location: Main Stage
-- id: ai-browser
-  title: "AI in the browser: Smarter Angular apps with WebGPU and WebNN"
-  description: >
-    In this session, we will explore the integration of Generative AI functions into Angular applications using WebGPU API and Web Neural Network (WebNN) API. These APIs enable the execution of Large Language Models (LLM) and Stable Diffusion models on the user's device. The primary benefits of local execution include offline availability and data security, provided that the user's device has sufficient power to run the AI models. During the presentation, we will discuss different use cases and compare the advantages and disadvantages of each solution. Join us to learn how to make your Angular app smarter.
-  speakers:
-    - christian-liebel
-  type: talk
-  location: Main Stage
-- id: microfrontends
-  title: The hidden challenges of run-time integrated microfrontends
-  description: >
-    Microfrontends are a popular concept to simplify development in an enterprise project, where a large number of teams want to work independently.
-    Ideally, at run-time we can orchestrate multiple independent parts to obtain a seamless application.
-    Some real life experience with different integration patterns, using Angular Elements and Module Federation will demonstrate the challenges to be solved.
-    Especially with multiple instances of the Angular Router you might encounter some pitfalls and limitations which are not obvious at first sight. This talk will demonstrate how a solution can still be achieved.
-  speakers:
-    - cathrin-moeller
-  type: talk
-  location: Main Stage
-- id: tanstack
-  title: "TanStack Angular Query: Building Efficient, Scalable Angular Applications"
-  description: >
-    This presentation delves into the core functionalities of TanStack Angular Query, a powerful tool for managing server state in Angular applications. 
-    We'll explore how it optimizes data fetching, caching, and synchronization, leading to more efficient and scalable applications. 
-    The session will include real-world examples demonstrating how TanStack Angular Query can seamlessly integrate existing Angular projects, emphasizing best performance optimization and error-handling practices. Attendees will leave with a comprehensive understanding of how TanStack Angular Query can transform their approach to data management in Angular applications.
-  speakers:
-    - devlin-duldulao
-  type: talk
-  location: Main Stage
-- id: lightweight-stores
-  title: "Modern Angular Architectures with Lightweight Stores: New Rules and Options"
-  description: >
-    In the first few minutes of the session, we integrate the new NGRX Signal Store as a prominent example of a lightweight store in an application. This brings up several architecture-related questions and challenges that are addressed closely and lead to new ways of thinking, patterns, and changes in proven rules.
-    By the end, you will know how to leverage lightweight stores for your architecture and understand the differences compared to already known Redux-based solutions.
-  speakers:
-    - manfred-steyer
-  type: talk
-  location: Main Stage
-- id: web-audio
-  title: "Make your app loud: Web Audio in UI"
-  description: >
-    What is a common feature in desktop apps but rare in Web apps? Sound effects! Desktop apps use audio to enhance UX according to different interactions; you can even hear some of them just by looking at the screenshot of an error popup or loading screen. Web apps usually are silent, but it is easy to fix with Web Audio, and I'm going to show how to make it possible!.
-  speakers:
-    - vitalii-bobrov
-  type: talk
-  location: Main Stage
-- id: analogjs
-  title: "AnalogJs: The Vite powered Angular meta-framework"
-  description: >
-    This talk introduces AnalogJs to the audience. 
-    It gives insight into how AnalogJs takes full-stack Angular development to the next level. 
-    It shows how it adds file-based routing and Nitro powered API routes. 
-    It introduces hybrid SSR/SSG support & zero (or minimal) config deploys to cloud providers. Finally, it goes lays out clearly the technology driving the framework, Vite, and shows, with the help of Single File Components (.analog), how incredibly powerful it is. It compares AnalogJs' embrace of going all in on Vite with Angular deciding to use Vite as a dev server, but ultimately keeping it an implementation detail of their CLI.
-  speakers:
-    - robin-goetz
-  type: talk
-  location: Main Stage
-- id: signals-change-detection
-  title: Going deep into Signals Change Detection
-  description: >
-    Angular's internals haven't changed a lot since Ivy. 
-    With Signals, we will get some new internals that change how Angular works under the hood when we work with Signals and Signal Components. 
-    The talk will be focused on the changes being made to support a new of creating faster Angular components.
-  speakers:
-    - enea-jahollari
-  type: talk
-  location: Main Stage
-- id: concurrent-mode
-  title: Cut My Task Into Pieces - This is Concurrent Mode
-  description: >
-    JavaScript is single threaded. Every script our application executes runs on the main thread. Keeping the execution time as short as possible is crucial for the runtime performance and responsiveness of our applications. Too long running scripts will result in bad (Core) Web Vitals like INP and TBT. Reducing the computation time of function executions of course is the desired solution, but often not possible or the most costly option. 
-    In this talk, we’ll uncover another solution to this problem, the Concurrent Mode. Having profound knowledge about how to orchestrate work on the main thread is key to understanding how the Concurrent Mode works. We’ll start with a deep dive into the JavaScript Event Loop and explore the characteristics of different scheduling techniques. 
-    Building up on the scheduling techniques, I will explain how to implement a custom scheduler. It enables to prioritize and execute work with the notion of frames, allowing the browser to render the application at a configurable frames per second rate.
-    Finally, we’ll wrap things up with a live demonstration on how to apply the Concurrent Mode to angular applications. We’ll progressively improve the (Core) Web Vitals INP and TBT on this journey.
-    The Live Demo also covers how this technique integrates nicely with the upcoming zoneless features introduced with Angular 17+
-  speakers:
-    - julian-jandl
-  type: talk
-  location: Main Stage
-- id: template-driven-forms
-  title: Pride and Prejudice - Template Driven Forms
-  description: >
-    What have we always said over the years? What might be easier to retell what most of the Angular community has told us without trying it out for yourself?
-    "Template driven forms don't scale", "If you have large complex forms, then you need to use reactive forms"
-    Hand on heart - were reactive forms that simple and straightforward to use?
-    Well, not for me.
-    That's why in this session I'm going to contrast Reactive Forms and Template Driven Forms and cover the following topics:
-    - Boilerplate
-    - Automatic validation
-    - Asynchronous validation
-    - Conditional form elements
-    - Managing form states
-    - Unidirectional data flow in forms with the help of signals
-    The aim is to come to an honest and well-founded comparison in order to better weigh up reactive forms and template-driven forms in the future.
-    After all, we all want to be able to use forms as effectively as possible, right?
-  speakers:
-    - gregor-woiwode
-  type: talk
-  location: Main Stage
-- id: angular-universal
-  title: Horror stories from running angular universal in production.
-  description: >
-    Angular has had a solution to do server-side rendering for a while now.
-    Let's discover first what it is, then what are the gotchas or "footguns" you need to know to NOT take down production, and what are the challenges and safe-guards we had to setup to avoid catastrophic failures.
-    We will mainly talk about angular but all the advice should be applicable to any server-side rendering JS framework
-  speakers:
-    - benjamin-legrand
-  type: talk
-  location: Main Stage
-- id: angular-security
-  title: Step Up Your Authentication Security
-  description: >
-    We all work on applications requiring authentication. But do you wish you could add extra authentication scrutiny for particular views, data, and actions? You're in luck! There's a standardized way to declare elevated authentication requirements for extra-sensitive resources. 
-    You'll learn about the Step Up Authentication Challenge OAuth specification in this talk, when to apply the spec, and how to do so within an Angular application.
-  speakers:
-    - alisa-duncan
-  type: talk
-  location: Main Stage
-- id: profiling-skills
-  title: Perfecting your Profiling Skills
-  description: >
-    One skill that will always be relevant is profiling. No matter the framework, no matter the version, at some point you will have to dive into why your application is not performing at its best.
-    In this talk we will show how you can use Angular Dev Tools alongside the standard Dev Tools and Web Vitals Extension to identify and resolve performance issues.
-    There are some hidden gems within Dev Tools profiling panel that goes beyond just measuring how much time is spent executing a function and we will discover them together.
-  speakers:
-    - stephen-cooper
-  type: talk
-  location: Main Stage
+#     We're all gonna use Signals more and more in our near future. But, have you ever wondered whats behind this? How you can build a Signal from scratch and what are the differences from Observables?
+#   speakers:
+#     - eliran-eliassy
+#   type: talk
+#   location: Main Stage
+# - id: fake-mock
+#   title: Fake it till you Mock it
+#   description: >
+#     How much do you trust the Mocks, Stubs and Spies you are using in your tests? Aren’t you tired of maintaining and debugging them, or trying to keep them in sync with the real implementation? Join us to see how Fakes and their fellow companions, Object Mothers, and Gloves might just become the pillars of your testing strategy.
+#   speakers:
+#     - younes-jaaidi
+#   type: talk
+#   location: Main Stage
+# - id: ai-browser
+#   title: "AI in the browser: Smarter Angular apps with WebGPU and WebNN"
+#   description: >
+#     In this session, we will explore the integration of Generative AI functions into Angular applications using WebGPU API and Web Neural Network (WebNN) API. These APIs enable the execution of Large Language Models (LLM) and Stable Diffusion models on the user's device. The primary benefits of local execution include offline availability and data security, provided that the user's device has sufficient power to run the AI models. During the presentation, we will discuss different use cases and compare the advantages and disadvantages of each solution. Join us to learn how to make your Angular app smarter.
+#   speakers:
+#     - christian-liebel
+#   type: talk
+#   location: Main Stage
+# - id: microfrontends
+#   title: The hidden challenges of run-time integrated microfrontends
+#   description: >
+#     Microfrontends are a popular concept to simplify development in an enterprise project, where a large number of teams want to work independently.
+#     Ideally, at run-time we can orchestrate multiple independent parts to obtain a seamless application.
+#     Some real life experience with different integration patterns, using Angular Elements and Module Federation will demonstrate the challenges to be solved.
+#     Especially with multiple instances of the Angular Router you might encounter some pitfalls and limitations which are not obvious at first sight. This talk will demonstrate how a solution can still be achieved.
+#   speakers:
+#     - cathrin-moeller
+#   type: talk
+#   location: Main Stage
+# - id: tanstack
+#   title: "TanStack Angular Query: Building Efficient, Scalable Angular Applications"
+#   description: >
+#     This presentation delves into the core functionalities of TanStack Angular Query, a powerful tool for managing server state in Angular applications. 
+#     We'll explore how it optimizes data fetching, caching, and synchronization, leading to more efficient and scalable applications. 
+#     The session will include real-world examples demonstrating how TanStack Angular Query can seamlessly integrate existing Angular projects, emphasizing best performance optimization and error-handling practices. Attendees will leave with a comprehensive understanding of how TanStack Angular Query can transform their approach to data management in Angular applications.
+#   speakers:
+#     - devlin-duldulao
+#   type: talk
+#   location: Main Stage
+# - id: lightweight-stores
+#   title: "Modern Angular Architectures with Lightweight Stores: New Rules and Options"
+#   description: >
+#     In the first few minutes of the session, we integrate the new NGRX Signal Store as a prominent example of a lightweight store in an application. This brings up several architecture-related questions and challenges that are addressed closely and lead to new ways of thinking, patterns, and changes in proven rules.
+#     By the end, you will know how to leverage lightweight stores for your architecture and understand the differences compared to already known Redux-based solutions.
+#   speakers:
+#     - manfred-steyer
+#   type: talk
+#   location: Main Stage
+# - id: web-audio
+#   title: "Make your app loud: Web Audio in UI"
+#   description: >
+#     What is a common feature in desktop apps but rare in Web apps? Sound effects! Desktop apps use audio to enhance UX according to different interactions; you can even hear some of them just by looking at the screenshot of an error popup or loading screen. Web apps usually are silent, but it is easy to fix with Web Audio, and I'm going to show how to make it possible!.
+#   speakers:
+#     - vitalii-bobrov
+#   type: talk
+#   location: Main Stage
+# - id: analogjs
+#   title: "AnalogJs: The Vite powered Angular meta-framework"
+#   description: >
+#     This talk introduces AnalogJs to the audience. 
+#     It gives insight into how AnalogJs takes full-stack Angular development to the next level. 
+#     It shows how it adds file-based routing and Nitro powered API routes. 
+#     It introduces hybrid SSR/SSG support & zero (or minimal) config deploys to cloud providers. Finally, it goes lays out clearly the technology driving the framework, Vite, and shows, with the help of Single File Components (.analog), how incredibly powerful it is. It compares AnalogJs' embrace of going all in on Vite with Angular deciding to use Vite as a dev server, but ultimately keeping it an implementation detail of their CLI.
+#   speakers:
+#     - robin-goetz
+#   type: talk
+#   location: Main Stage
+# - id: signals-change-detection
+#   title: Going deep into Signals Change Detection
+#   description: >
+#     Angular's internals haven't changed a lot since Ivy. 
+#     With Signals, we will get some new internals that change how Angular works under the hood when we work with Signals and Signal Components. 
+#     The talk will be focused on the changes being made to support a new of creating faster Angular components.
+#   speakers:
+#     - enea-jahollari
+#   type: talk
+#   location: Main Stage
+# - id: concurrent-mode
+#   title: Cut My Task Into Pieces - This is Concurrent Mode
+#   description: >
+#     JavaScript is single threaded. Every script our application executes runs on the main thread. Keeping the execution time as short as possible is crucial for the runtime performance and responsiveness of our applications. Too long running scripts will result in bad (Core) Web Vitals like INP and TBT. Reducing the computation time of function executions of course is the desired solution, but often not possible or the most costly option. 
+#     In this talk, we’ll uncover another solution to this problem, the Concurrent Mode. Having profound knowledge about how to orchestrate work on the main thread is key to understanding how the Concurrent Mode works. We’ll start with a deep dive into the JavaScript Event Loop and explore the characteristics of different scheduling techniques. 
+#     Building up on the scheduling techniques, I will explain how to implement a custom scheduler. It enables to prioritize and execute work with the notion of frames, allowing the browser to render the application at a configurable frames per second rate.
+#     Finally, we’ll wrap things up with a live demonstration on how to apply the Concurrent Mode to angular applications. We’ll progressively improve the (Core) Web Vitals INP and TBT on this journey.
+#     The Live Demo also covers how this technique integrates nicely with the upcoming zoneless features introduced with Angular 17+
+#   speakers:
+#     - julian-jandl
+#   type: talk
+#   location: Main Stage
+# - id: template-driven-forms
+#   title: Pride and Prejudice - Template Driven Forms
+#   description: >
+#     What have we always said over the years? What might be easier to retell what most of the Angular community has told us without trying it out for yourself?
+#     "Template driven forms don't scale", "If you have large complex forms, then you need to use reactive forms"
+#     Hand on heart - were reactive forms that simple and straightforward to use?
+#     Well, not for me.
+#     That's why in this session I'm going to contrast Reactive Forms and Template Driven Forms and cover the following topics:
+#     - Boilerplate
+#     - Automatic validation
+#     - Asynchronous validation
+#     - Conditional form elements
+#     - Managing form states
+#     - Unidirectional data flow in forms with the help of signals
+#     The aim is to come to an honest and well-founded comparison in order to better weigh up reactive forms and template-driven forms in the future.
+#     After all, we all want to be able to use forms as effectively as possible, right?
+#   speakers:
+#     - gregor-woiwode
+#   type: talk
+#   location: Main Stage
+# - id: angular-universal
+#   title: Horror stories from running angular universal in production.
+#   description: >
+#     Angular has had a solution to do server-side rendering for a while now.
+#     Let's discover first what it is, then what are the gotchas or "footguns" you need to know to NOT take down production, and what are the challenges and safe-guards we had to setup to avoid catastrophic failures.
+#     We will mainly talk about angular but all the advice should be applicable to any server-side rendering JS framework
+#   speakers:
+#     - benjamin-legrand
+#   type: talk
+#   location: Main Stage
+# - id: angular-security
+#   title: Step Up Your Authentication Security
+#   description: >
+#     We all work on applications requiring authentication. But do you wish you could add extra authentication scrutiny for particular views, data, and actions? You're in luck! There's a standardized way to declare elevated authentication requirements for extra-sensitive resources. 
+#     You'll learn about the Step Up Authentication Challenge OAuth specification in this talk, when to apply the spec, and how to do so within an Angular application.
+#   speakers:
+#     - alisa-duncan
+#   type: talk
+#   location: Main Stage
+# - id: profiling-skills
+#   title: Perfecting your Profiling Skills
+#   description: >
+#     One skill that will always be relevant is profiling. No matter the framework, no matter the version, at some point you will have to dive into why your application is not performing at its best.
+#     In this talk we will show how you can use Angular Dev Tools alongside the standard Dev Tools and Web Vitals Extension to identify and resolve performance issues.
+#     There are some hidden gems within Dev Tools profiling panel that goes beyond just measuring how much time is spent executing a function and we will discover them together.
+#   speakers:
+#     - stephen-cooper
+#   type: talk
+#   location: Main Stage

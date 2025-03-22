@@ -3,27 +3,24 @@ links:
     url: /
     navigation: false
     cta: false
-  - name: 📺 Videos
-    url: https://www.youtube.com/playlist?list=PLkdIZQ2JS3AfVemw6Rx0vLYZcGi2wAo9c
-    navigation: false
-  - name: Team
-    url: /team/
-    navigation: true
   - name: News
     url: /news/
     navigation: false
     cta: false
+  - name: Speakers 
+    url: /speakers/
+    navigation: true
   - name: Schedule
     url: /schedule/
     navigation: false
   - name: Workshops 
     url: /workshops/
     navigation: true
-  - name: Speakers 
-    url: /speakers/
-    navigation: true
   - name: Location 
     url: /location/
+    navigation: true
+  - name: Team
+    url: /team/
     navigation: true
 
   #- name: Call for PapersCall for Papers
