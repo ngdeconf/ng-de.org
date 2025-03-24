@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased font-sans transition-colors;
+}
+
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* Berlin color scheme - using red from Berlin flag and Angular colors */
+:root {
+  --berlin-red: #E03232;
+  --berlin-secondary: #202020;
+}
+
+/* Animated CTA button styles using only Tailwind utilities */
+.cta-button {
+  @apply inline-block px-6 py-3 font-medium rounded-md transition-all
+         bg-gradient-to-r from-primary-500 to-secondary-500
+         text-white shadow-md hover:shadow-lg transform 
+         hover:-translate-y-1 focus:outline-none focus:ring-2 
+         focus:ring-primary-500 focus:ring-opacity-50;
+}
+
+/* Berlin-themed CTA button */
+.cta-button-berlin {
+  @apply inline-block px-6 py-3 font-medium rounded-md transition-all
+         bg-gradient-to-r from-[#E03232] to-primary-500
+         text-white shadow-md hover:shadow-lg transform 
+         hover:-translate-y-1 focus:outline-none focus:ring-2 
+         focus:ring-primary-500 focus:ring-opacity-50;
+}
+
+.rotate-gradient:hover {
+  @apply bg-gradient-to-br;
+}
+
+/* Berlin skyline silhouette for the site background */
+.berlin-skyline {
+  position: relative;
+  overflow: hidden;
+}
+
+.berlin-skyline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a6/Skyline_Berlin.svg');
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  opacity: 0.1;
+}
