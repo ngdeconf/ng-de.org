@@ -43,6 +43,33 @@ Oderberger Str. 57<br>
 10435 Berlin<br>
 GERMANY<br>
 
+<div class="lead-content">
+    <section class="section section--impressions">
+      <div class="fullwidth">
+        <div class="impressions">
+          <div class="impressions__impression">
+            <img class="lazy" src="/assets/placeholder-image.svg"
+              data-src="/assets/location/impression-oderberger/berlin-oderberger-3.jpg"
+              data-srcset="/assets/location/impression-oderberger/berlin-oderberger-3.jpg" alt="Impression Hotel Oderberger Berlin"
+              title="Impression Hotel Oderberger Berlin" />
+          </div>
+          <div class="impressions__impression">
+            <img class="lazy" src="/assets/placeholder-image.svg"
+              data-src="/assets/location/impression-oderberger/berlin-oderberger-1.jpg"
+              data-srcset="/assets/location/impression-oderberger/berlin-oderberger-1.jpg" alt="Impression Hotel Oderberger Berlin"
+              title="Impression Hotel Oderberger Berlin" />
+          </div>
+           <div class="impressions__impression">
+            <img class="lazy" src="/assets/placeholder-image.svg"
+              data-src="/assets/location/impression-oderberger/berlin-oderberger-2.jpg"
+              data-srcset="/assets/location/impression-oderberger/berlin-oderberger-2.jpg" alt="Impression Hotel Oderberger Berlin"
+              title="Impression Hotel Oderberger Berlin" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
 ### Public Transportation
 
 GLS Campus Berlin is easily accessible via public transportation. The venue is just a short walk from the U-Bahn station Eberswalder Straße (U2) and tram stops for the M1 and M10 lines.
