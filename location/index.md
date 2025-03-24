@@ -11,8 +11,8 @@ gmaps_bolle: https://maps.app.goo.gl/yr8pJ9TeBu8Xo2JFA
   <div class="fullwidth">
     <img class="lazy"
       src="/assets/placeholder-image.svg"
-      data-src="/assets/location/cover/ng-de-sponsoring-area.jpg"
-      data-srcset="/assets/location/cover/ng-de-sponsoring-area.jpg"
+      data-src="/assets/location/cover/ng-de-sponsoring-area-gls.jpg"
+      data-srcset="/assets/location/cover/ng-de-sponsoring-area-gls.jpg"
       alt="GLS Campus Berlin"
       title="GLS Campus Berlin">
   </div>
