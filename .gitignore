@@ -1,6 +1,11 @@
-_site
-.sass-cache
-.jekyll-metadata
-.jekyll-cache
 .idea
 .DS_Store
+node_modules
+dist
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.angular
+.vscode
+*.code-workspace
