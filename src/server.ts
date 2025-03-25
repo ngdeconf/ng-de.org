@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 const serverDistFolder = dirname(fileURLToPath(import.meta.url));
 const browserDistFolder = resolve(serverDistFolder, '../browser');
 
+// Create the Express app
 const app = express();
 
 /**
@@ -31,10 +32,10 @@ app.use(
   })
 );
 
-/**
- * Handle all other requests by rendering the Angular application.
- */
-app.use('/**', createNodeRequestHandler(app));
+// Handle all other requests by rendering the Angular application
+app.use('/**', (req, res, next) => {
+  createNodeRequestHandler(app)(req, res, next);
+});
 
 /**
  * Start the server if this module is the main entry point.
