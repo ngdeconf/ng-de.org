@@ -12,7 +12,7 @@ export class ConferenceService {
       name: 'Manfred Steyer',
       title: 'ANGULARarchitects.io',
       company: 'ANGULARarchitects.io',
-      bio: 'Trainer and Consultant with focus on Angular. Google Developer Expert (GDE) who writes for O\'Reilly, the German Java Magazine and windows.developer. Regularly speaks at conferences.',
+      bio: 'Trainer, consultant, and programming architect with a focus on Angular, Google Developer Expert (GDE) who writes for O\'Reilly, the German Java Magazine, and windows.developer. Regularly speaks at conferences.',
       imageUrl: 'assets/images/speakers/manfred-steyer.jpg',
       twitterHandle: 'ManfredSteyer',
       githubHandle: 'manfredsteye'
@@ -72,9 +72,9 @@ export class ConferenceService {
   private readonly talks = signal<Talk[]>([
     {
       id: '1',
-      title: 'The Future of Angular',
-      abstract: 'Exploring the roadmap and exciting new features coming to Angular',
-      speakerId: '1',
+      title: 'The Missing Link in Angular\'s Signal Story: Resource API and httpResource',
+      abstract: 'Signals will shape Angular\'s future in terms of reactivity and change detection. The new Resource API, along with the httpResource, adds an essential piece to this story by providing an official solution for asynchronously loading data within a Signal-based dataflow.\n\nIn this session, we explore all the details you need to work effectively with this powerful API. Topics include managing different states, handling errors, streaming data, preventing race conditions, and canceling unnecessary requests. We also discuss how it interacts with RxJS through rxResource and demonstrate how to update loaded values.\n\nBy the end, you\'ll have a comprehensive understanding of the possibilities offered by this groundbreaking new API.',
+      speakerId: 'manfred-steyer',
       time: '10:00 - 11:00',
       day: 'day1',
       room: 'Main Hall'
@@ -147,35 +147,52 @@ export class ConferenceService {
   private readonly workshops = signal<Workshop[]>([
     {
       id: '1',
-      title: 'Angular Signals Masterclass',
-      abstract: 'A deep dive into Angular Signals with hands-on exercises',
-      trainerId: '1',
+      title: 'Modern Angular Architectures - 2025 Edition: Nx, Micro Frontends and Signal Store',
+      abstract: 'Enterprise applications need to be maintainable in the long term. This workshop shows you how to achieve this goal using modern Angular.\n\nTo accomplish this, we combine cutting-edge features like Signals, the Signal Store, and Module Federation with established concepts like Strategic Design (DDD), monorepos, vertical architectures, and Micro Frontends. We use Nx for incremental builds and demonstrate how to analyze and improve your application\'s maintainability.\n\nBy the end, you\'ll be equipped to plan and implement sustainable solutions with modern Angular and evaluate the pros and cons of various approaches for your specific solution.',
+      trainerId: 'manfred-steyer',
       duration: '6 hours',
-      capacity: 30
-    },
-    {
-      id: '2',
-      title: 'Building Angular Applications with Server-Side Rendering',
-      abstract: 'Learn how to build performant SSR Angular applications',
-      trainerId: '5',
-      duration: '6 hours',
-      capacity: 25
-    },
-    {
-      id: '3',
-      title: 'Angular Testing Workshop',
-      abstract: 'Master testing strategies for Angular applications',
-      trainerId: '4',
-      duration: '4 hours',
-      capacity: 20
-    },
-    {
-      id: '4',
-      title: 'Advanced Component Patterns',
-      abstract: 'Explore advanced component patterns and best practices',
-      trainerId: '6',
-      duration: '4 hours',
-      capacity: 25
+      capacity: 30,
+      outline: [
+        {
+          title: 'Block 1',
+          topics: [
+            'Vertical architectures and Strategic Design (DDD) as guiding theory',
+            'Implementing your Strategic Design with Nx',
+            'Enforcing your architecture with Nx & Sheriff',
+            'Incremental builds with Nx',
+            'Visualizing and analyzing your architecture and planning improvements'
+          ]
+        },
+        {
+          title: 'Block 2',
+          topics: [
+            'Hands-on lab',
+            'Micro Frontends with Native Federation'
+          ]
+        },
+        {
+          title: 'Block 3',
+          topics: [
+            'Reactive architectures with Signals',
+            'Reactive design and thinking',
+            'Building blocks: signal, computed, effects',
+            'Backgrounds: auto-tracking and glitch-free behavior',
+            'New in Angular 19: resource and linkedSignal',
+            'RxJS interoperability with Signals'
+          ]
+        },
+        {
+          title: 'Block 4',
+          topics: [
+            'State Management with the new NGRX Signal Store',
+            'Eventing (Redux) with the new Signal Store',
+            'Custom Features',
+            'Hands-on lab'
+          ]
+        }
+      ],
+      targetAudience: 'This workshop is designed for developers with project experience using Angular.',
+      trainers: ['manfred-steyer', 'rainer-hahnekamp']
     }
   ]);
 

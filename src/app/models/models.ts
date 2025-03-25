@@ -40,6 +40,12 @@ export interface Workshop {
   trainerId: string;
   duration: string;
   capacity: number;
+  outline?: {
+    title: string;
+    topics: string[];
+  }[];
+  targetAudience?: string;
+  trainers?: string[];
 }
 
 export interface Ticket {
