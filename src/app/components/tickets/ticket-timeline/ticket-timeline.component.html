@@ -1,0 +1,72 @@
+<!-- Desktop view -->
+<div class="hidden md:flex relative justify-between mx-auto my-10 py-5 dark:bg-gray-900">
+  <!-- Timeline bar -->
+  <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-emerald-400 via-green-400 via-yellow-400 to-red-400 shadow-lg shadow-emerald-400/50 dark:shadow-emerald-400/30"></div>
+
+  <!-- Timeline items -->
+  @for (phase of ticketPhases; track phase.name) {
+    <div class="relative z-10 flex-1 text-center px-2.5 pt-5 transition-all duration-300 ease-in-out hover:transform hover:scale-105">
+      <!-- Timeline dot -->
+      <div class="mx-auto mb-4 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300 
+           {{ phase.isActive ? 
+             'bg-emerald-400 border-emerald-400 text-gray-900 scale-110' : 
+             'bg-gray-100 border-gray-400 text-emerald-400 dark:bg-gray-800 dark:border-gray-600' }}">
+        @if (phase.isActive) {
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 animate-scale-in" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" d="M20 6L9 17l-5-5"/>
+          </svg>
+        }
+      </div>
+
+      <!-- Timeline content -->
+      <div class="text-center group">
+        <h3 class="text-lg font-semibold mb-1 text-gray-900 dark:text-white transition-colors duration-300">{{ phase.name }}</h3>
+        <p class="text-sm font-medium text-gray-600 dark:text-gray-400 transition-colors duration-300">
+          Begins {{ phase.startDate | date:'MMMM dd' }}
+        </p>
+      </div>
+    </div>
+  }
+</div>
+
+<!-- Mobile view -->
+<div class="md:hidden relative flex flex-col space-y-8 px-6 my-10 py-5 dark:bg-gray-900">
+  <!-- Vertical timeline bar -->
+  <div class="absolute top-0 bottom-0 left-8 w-1 bg-gradient-to-b from-emerald-400 via-green-400 via-yellow-400 to-red-400 
+              shadow-lg shadow-emerald-400/50 dark:shadow-emerald-400/30 rounded-full"></div>
+
+  <!-- Timeline items -->
+  @for (phase of ticketPhases; track phase.name) {
+    <div class="relative z-10 flex items-center transition-all duration-300 ease-in-out hover:transform hover:translate-x-2">
+      <!-- Timeline dot -->
+      <div class="mr-6 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300
+           {{ phase.isActive ? 
+             'bg-emerald-400 border-emerald-400 text-gray-900 scale-110' : 
+             'bg-gray-100 border-gray-400 text-emerald-400 dark:bg-gray-800 dark:border-gray-600' }}">
+        @if (phase.isActive) {
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 animate-scale-in" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" d="M20 6L9 17l-5-5"/>
+          </svg>
+        }
+      </div>
+
+      <!-- Timeline content -->
+      <div class="flex-1">
+        <h3 class="text-lg font-semibold mb-1 text-gray-900 dark:text-white transition-colors duration-300">{{ phase.name }}</h3>
+        <p class="text-sm font-medium text-gray-600 dark:text-gray-400 transition-colors duration-300">
+          Begins {{ phase.startDate | date:'MMMM dd' }}
+        </p>
+      </div>
+    </div>
+  }
+</div>
+
+<style>
+  @keyframes scale-in {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+  }
+  .animate-scale-in {
+    animation: scale-in 0.3s ease-out;
+  }
+</style>

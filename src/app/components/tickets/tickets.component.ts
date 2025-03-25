@@ -2,11 +2,12 @@ import { Component, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ConferenceService } from '../../services/conference.service';
 import { Ticket } from '../../models/models';
+import { TicketTimelineComponent } from './ticket-timeline/ticket-timeline.component';
 
 @Component({
   selector: 'app-tickets',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TicketTimelineComponent],
   template: `
     <section id="tickets" class="py-20 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4">
@@ -16,6 +17,8 @@ import { Ticket } from '../../models/models';
             Join us for the premier Angular conference in Germany. Secure your spot today!
           </p>
         </div>
+
+        <app-ticket-timeline/> 
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           @for (ticket of tickets(); track ticket.id) {
