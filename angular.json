@@ -26,6 +26,9 @@
             }
           },
           "options": {
+            "prerender": {
+              "discoverRoutes": true
+            },
             "assets": [
               {
                 "glob": "**/*",
@@ -36,16 +39,11 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "outputPath": "dist",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "scripts": [],
-            "styles": [
-              "src/global_styles.css"
-            ],
+            "styles": ["src/global_styles.css"],
             "tsConfig": "tsconfig.app.json",
             "server": "src/main.server.ts",
-            "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
             }
