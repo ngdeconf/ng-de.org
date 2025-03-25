@@ -488,7 +488,7 @@ export class ConferenceService {
           newTicket.price = currentPhase.basePrice - 200; // Workshop premium
           break;
         case 'bundle':
-          newTicket.price = currentPhase.basePrice + 400; // Bundle premium
+          newTicket.price = currentPhase.basePrice + 300; // Bundle premium
           break;
       }
       
