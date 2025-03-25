@@ -150,7 +150,7 @@ export class ConferenceService {
       title: 'Modern Angular Architectures - 2025 Edition: Nx, Micro Frontends and Signal Store',
       abstract: 'Enterprise applications need to be maintainable in the long term. This workshop shows you how to achieve this goal using modern Angular.\n\nTo accomplish this, we combine cutting-edge features like Signals, the Signal Store, and Module Federation with established concepts like Strategic Design (DDD), monorepos, vertical architectures, and Micro Frontends. We use Nx for incremental builds and demonstrate how to analyze and improve your application\'s maintainability.\n\nBy the end, you\'ll be equipped to plan and implement sustainable solutions with modern Angular and evaluate the pros and cons of various approaches for your specific solution.',
       trainerId: 'manfred-steyer',
-      duration: '6 hours',
+      duration: '8 hours',
       capacity: 30,
       outline: [
         {
