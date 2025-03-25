@@ -37,5 +37,13 @@ export interface Ticket {
   available: boolean;
   availableUntil?: Date;
   features: string[];
-  type: 'conference' | 'workshop' | 'combo' | 'online';
+  type: 'conference' | 'workshop' | 'bundle' | 'online';
+}
+
+export interface TicketPhase {
+  name: string;
+  startDate: Date;
+  isActive: boolean;
+  isPast: boolean;
+  basePrice: number;
 }

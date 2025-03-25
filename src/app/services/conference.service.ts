@@ -1,14 +1,6 @@
 import { Injectable, signal } from '@angular/core';
-import { Speaker, Talk, Workshop, Ticket } from '../models/models';
+import { Speaker, Talk, Workshop, Ticket, TicketPhase } from '../models/models';
 import { BehaviorSubject, Observable, map } from 'rxjs';
-
-export interface TicketPhase {
-  name: string;
-  startDate: Date;
-  isActive: boolean;
-  isPast: boolean;
-  basePrice: number;
-}
 
 @Injectable({
   providedIn: 'root'
@@ -190,31 +182,31 @@ export class ConferenceService {
   private ticketPhasesSubject = new BehaviorSubject<TicketPhase[]>([
     {
       name: 'Super Early Bird',
-      startDate: new Date('2024-02-05'),
+      startDate: new Date('2025-03-01'),
       isActive: false,
       isPast: false,
-      basePrice: 349
+      basePrice: 599
     },
     {
       name: 'Early Bird',
-      startDate: new Date('2024-04-08'),
+      startDate: new Date('2025-05-01'),
       isActive: false,
       isPast: false,
-      basePrice: 449
+      basePrice: 699
     },
     {
       name: 'Normal Bird',
-      startDate: new Date('2024-06-17'),
+      startDate: new Date('2025-07-01'),
       isActive: false,
       isPast: false,
-      basePrice: 549
+      basePrice: 799
     },
     {
       name: 'Final Bird',
-      startDate: new Date('2024-10-28'),
+      startDate: new Date('2025-10-01'),
       isActive: false,
       isPast: false,
-      basePrice: 649
+      basePrice: 899
     }
   ]);
 
@@ -271,7 +263,7 @@ export class ConferenceService {
           newTicket.price = currentPhase.basePrice;
           break;
         case 'workshop':
-          newTicket.price = currentPhase.basePrice + 250; // Workshop premium
+          newTicket.price = currentPhase.basePrice + 300; // Workshop premium
           break;
         case 'bundle':
           newTicket.price = currentPhase.basePrice + 400; // Bundle premium
@@ -289,7 +281,7 @@ export class ConferenceService {
       id: '1',
       name: 'Conference Ticket',
       description: 'Full access to all conference talks and networking events',
-      price: 349, // Will be updated based on current phase
+      price: 599, // Will be updated based on current phase
       currency: 'EUR',
       available: true,
       features: [
@@ -304,7 +296,7 @@ export class ConferenceService {
       id: '2',
       name: 'Conference + Workshop Bundle',
       description: 'Full conference access plus your choice of one workshop',
-      price: 749, // Will be updated based on current phase
+      price: 799, // Will be updated based on current phase
       currency: 'EUR',
       available: true,
       features: [

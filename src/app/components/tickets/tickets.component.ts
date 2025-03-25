@@ -25,7 +25,7 @@ import { TicketTimelineComponent } from './ticket-timeline/ticket-timeline.compo
             <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105 border-t-4"
                 [class.border-green-500]="ticket.type === 'conference'"
                 [class.border-blue-500]="ticket.type === 'workshop'"
-                [class.border-purple-500]="ticket.type === 'combo'"
+                [class.border-purple-500]="ticket.type === 'bundle'"
                 [class.border-yellow-500]="ticket.type === 'online'"
                 [class.opacity-75]="!ticket.available">
               <div class="p-6">
