@@ -1,5 +1,14 @@
 import { Injectable, signal } from '@angular/core';
 import { Speaker, Talk, Workshop, Ticket } from '../models/models';
+import { BehaviorSubject, Observable, map } from 'rxjs';
+
+export interface TicketPhase {
+  name: string;
+  startDate: Date;
+  isActive: boolean;
+  isPast: boolean;
+  basePrice: number;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -178,21 +187,111 @@ export class ConferenceService {
     }
   ]);
 
-  // Helper function to determine if a ticket is available based on date
-  private isTicketAvailable(availableUntil?: Date): boolean {
-    if (!availableUntil) return true;
-    return new Date() < availableUntil;
+  private ticketPhasesSubject = new BehaviorSubject<TicketPhase[]>([
+    {
+      name: 'Super Early Bird',
+      startDate: new Date('2024-02-05'),
+      isActive: false,
+      isPast: false,
+      basePrice: 349
+    },
+    {
+      name: 'Early Bird',
+      startDate: new Date('2024-04-08'),
+      isActive: false,
+      isPast: false,
+      basePrice: 449
+    },
+    {
+      name: 'Normal Bird',
+      startDate: new Date('2024-06-17'),
+      isActive: false,
+      isPast: false,
+      basePrice: 549
+    },
+    {
+      name: 'Final Bird',
+      startDate: new Date('2024-10-28'),
+      isActive: false,
+      isPast: false,
+      basePrice: 649
+    }
+  ]);
+
+  constructor() {
+    this.updatePhases();
+  }
+
+  getTicketPhases(): Observable<TicketPhase[]> {
+    return this.ticketPhasesSubject.asObservable();
+  }
+
+  getCurrentPhase(): Observable<TicketPhase | undefined> {
+    return this.getTicketPhases().pipe(
+      map(phases => phases.find(phase => phase.isActive))
+    );
+  }
+
+  private updatePhases() {
+    const now = new Date();
+    let foundActive = false;
+
+    const phases = this.ticketPhasesSubject.value
+      .sort((a, b) => a.startDate.getTime() - b.startDate.getTime())
+      .map(phase => ({ ...phase }));
+
+    // Go through phases in reverse to find current active phase
+    for (let i = phases.length - 1; i >= 0; i--) {
+      const phase = phases[i];
+      
+      if (!foundActive && now >= phase.startDate) {
+        phase.isActive = true;
+        phase.isPast = false;
+        foundActive = true;
+      } else {
+        phase.isActive = false;
+        phase.isPast = now >= phase.startDate;
+      }
+    }
+
+    this.ticketPhasesSubject.next(phases);
+    this.updateTicketPrices(phases);
+  }
+
+  private updateTicketPrices(phases: TicketPhase[]) {
+    const currentPhase = phases.find(phase => phase.isActive);
+    if (!currentPhase) return;
+
+    const tickets = this.tickets();
+    const updatedTickets = tickets.map(ticket => {
+      const newTicket = { ...ticket };
+      
+      switch (ticket.type) {
+        case 'conference':
+          newTicket.price = currentPhase.basePrice;
+          break;
+        case 'workshop':
+          newTicket.price = currentPhase.basePrice + 250; // Workshop premium
+          break;
+        case 'bundle':
+          newTicket.price = currentPhase.basePrice + 400; // Bundle premium
+          break;
+      }
+      
+      return newTicket;
+    });
+
+    this.tickets.set(updatedTickets);
   }
 
   private readonly tickets = signal<Ticket[]>([
     {
       id: '1',
-      name: 'Early-Bird Conference Ticket',
+      name: 'Conference Ticket',
       description: 'Full access to all conference talks and networking events',
-      price: 299,
+      price: 349, // Will be updated based on current phase
       currency: 'EUR',
-      available: this.isTicketAvailable(new Date('2025-05-01')),
-      availableUntil: new Date('2025-05-01'),
+      available: true,
       features: [
         'Access to all conference talks',
         'Conference swag',
@@ -203,55 +302,24 @@ export class ConferenceService {
     },
     {
       id: '2',
-      name: 'Regular Conference Ticket',
-      description: 'Full access to all conference talks and networking events',
-      price: 399,
+      name: 'Conference + Workshop Bundle',
+      description: 'Full conference access plus your choice of one workshop',
+      price: 749, // Will be updated based on current phase
       currency: 'EUR',
-      available: this.isTicketAvailable(new Date('2025-08-15')),
-      availableUntil: new Date('2025-08-15'),
+      available: true,
       features: [
-        'Access to all conference talks',
-        'Conference swag',
-        'Lunch and refreshments',
-        'Evening networking event'
+        'Everything in Conference Ticket',
+        'Access to one workshop of your choice',
+        'Workshop materials',
+        'Certificate of completion'
       ],
-      type: 'conference'
+      type: 'bundle'
     },
     {
       id: '3',
-      name: 'Last Minute Ticket',
-      description: 'Full access to all conference talks and networking events',
-      price: 499,
-      currency: 'EUR',
-      available: true,
-      features: [
-        'Access to all conference talks',
-        'Conference swag',
-        'Lunch and refreshments',
-        'Evening networking event'
-      ],
-      type: 'conference'
-    },
-    {
-      id: '4',
-      name: 'Online Ticket',
-      description: 'Live stream access to all conference talks',
-      price: 149,
-      currency: 'EUR',
-      available: true,
-      features: [
-        'Live stream access to all talks',
-        'Digital conference materials',
-        'Access to online Q&A sessions',
-        '30-day replay access'
-      ],
-      type: 'online'
-    },
-    {
-      id: '5',
-      name: 'Workshop Ticket',
+      name: 'Workshop Only',
       description: 'Access to one workshop of your choice',
-      price: 299,
+      price: 599, // Will be updated based on current phase
       currency: 'EUR',
       available: true,
       features: [
@@ -261,23 +329,6 @@ export class ConferenceService {
         'Certificate of completion'
       ],
       type: 'workshop'
-    },
-    {
-      id: '6',
-      name: 'Conference + Workshop Combo',
-      description: 'Full conference access plus one workshop',
-      price: 599,
-      currency: 'EUR',
-      available: true,
-      features: [
-        'Access to all conference talks',
-        'One workshop of your choice',
-        'Conference swag',
-        'Lunch and refreshments',
-        'Evening networking event',
-        'Certificate of completion'
-      ],
-      type: 'combo'
     }
   ]);
 

@@ -4,7 +4,7 @@
   <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-emerald-400 via-green-400 via-yellow-400 to-red-400 shadow-lg shadow-emerald-400/50 dark:shadow-emerald-400/30"></div>
 
   <!-- Timeline items -->
-  @for (phase of ticketPhases; track phase.name) {
+  @for (phase of ticketPhases$ | async; track phase.name) {
     <div class="relative z-10 flex-1 text-center px-2.5 pt-5 transition-all duration-300 ease-in-out hover:transform hover:scale-105">
       <!-- Timeline dot -->
       <div class="mx-auto mb-4 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300 
@@ -42,7 +42,7 @@
               shadow-lg shadow-emerald-400/50 dark:shadow-emerald-400/30 rounded-full"></div>
 
   <!-- Timeline items -->
-  @for (phase of ticketPhases; track phase.name) {
+  @for (phase of ticketPhases$ | async; track phase.name) {
     <div class="relative z-10 flex items-center transition-all duration-300 ease-in-out hover:transform hover:translate-x-2">
       <!-- Timeline dot -->
       <div class="mr-6 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300
