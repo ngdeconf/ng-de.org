@@ -8,64 +8,64 @@ import { BehaviorSubject, Observable, map } from 'rxjs';
 export class ConferenceService {
   private readonly speakers = signal<Speaker[]>([
     {
-      id: '1',
-      name: 'Minko Gechev',
-      title: 'Engineering Lead',
-      company: 'Angular Team at Google',
-      bio: 'Minko is an Engineering Lead on the Angular team at Google...',
-      imageUrl: 'https://avatars.githubusercontent.com/u/849095?v=4',
-      twitterHandle: 'mgechev',
-      githubHandle: 'mgechev'
+      id: 'manfred-steyer',
+      name: 'Manfred Steyer',
+      title: 'ANGULARarchitects.io',
+      company: 'ANGULARarchitects.io',
+      bio: 'Trainer and Consultant with focus on Angular. Google Developer Expert (GDE) who writes for O\'Reilly, the German Java Magazine and windows.developer. Regularly speaks at conferences.',
+      imageUrl: 'assets/images/speakers/manfred-steyer.jpg',
+      twitterHandle: 'ManfredSteyer',
+      githubHandle: 'manfredsteye'
     },
     {
-      id: '2',
-      name: 'Igor Minar',
-      title: 'Angular Lead',
-      company: 'Google',
-      bio: 'Igor is the Angular Team lead at Google...',
-      imageUrl: 'https://avatars.githubusercontent.com/u/216296?v=4',
-      twitterHandle: 'IgorMinar',
-      githubHandle: 'IgorMinar'
+      id: 'rainer-hahnekamp',
+      name: 'Rainer Hahnekamp',
+      title: 'Trainer and Consultant • GDE in Angular',
+      company: 'Angular Architects',
+      bio: 'Rainer Hahnekamp is a Google Developer Expert, working as a trainer and consultant in the expert network of Angular Architects. In addition, he offers a weekly brief overview of relevant events in the Angular ecosystem on YouTube through ng-news.',
+      imageUrl: 'assets/images/speakers/rainer-hahnekamp.png',
+      twitterHandle: 'rainerhahnekamp',
+      githubHandle: 'rainerhahnekamp'
     },
     {
-      id: '3',
-      name: 'Emma Twersky',
-      title: 'Developer Relations Engineer',
-      company: 'Google',
-      bio: 'Emma is a Developer Relations Engineer at Google focused on Angular...',
-      imageUrl: 'https://avatars.githubusercontent.com/u/11019579?v=4',
-      twitterHandle: 'emmaTwersky',
-      githubHandle: 'emmaTwersky'
+      id: 'michael-hladky',
+      name: 'Michael Hladky',
+      title: 'Push-based.io',
+      company: 'Push-based.io',
+      bio: 'Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back.',
+      imageUrl: 'assets/images/speakers/michael-hladky.jpg',
+      twitterHandle: 'michael_hladky',
+      githubHandle: 'BioPhoton'
     },
     {
-      id: '4',
-      name: 'Deborah Kurata',
-      title: 'Software Developer',
+      id: 'christian-liebel',
+      name: 'Christian Liebel',
+      title: 'Thinktecture',
+      company: 'Thinktecture',
+      bio: 'Christian Liebel is a developer helping enterprises and ISVs develop modern cross-platform business applications based on Angular. As a Microsoft MVP, Google GDE, and W3C Web Applications working group participant, he speaks about modern web technologies at international user groups and conferences.',
+      imageUrl: 'assets/images/speakers/christian-liebel.png',
+      twitterHandle: 'christianliebel',
+      githubHandle: 'christianliebel'
+    },
+    {
+      id: 'martina-kraus',
+      name: 'Martina Kraus',
+      title: 'Angular Consultant & Trainer',
       company: 'Independent',
-      bio: 'Deborah is an independent software developer...',
-      imageUrl: 'https://avatars.githubusercontent.com/u/7105159?v=4',
-      twitterHandle: 'DeborahKurata',
-      githubHandle: 'DeborahKurata'
+      bio: 'Martina Kraus is a Google Developer Expert in Angular and web technologies. She is an Angular consultant and trainer with a focus on Angular applications. As a lecturer, she teaches at the Hochschule Mannheim. She is actively involved in the Angular community and speaks at international conferences.',
+      imageUrl: 'assets/images/speakers/martina-kraus.png',
+      twitterHandle: 'martinakraus11',
+      githubHandle: 'martinakraus'
     },
     {
-      id: '5',
-      name: 'Alex Rickabaugh',
-      title: 'Software Engineer',
-      company: 'Google',
-      bio: 'Alex is a software engineer on the Angular team at Google...',
-      imageUrl: 'https://avatars.githubusercontent.com/u/11527635?v=4',
-      twitterHandle: 'AlexRickabaugh',
-      githubHandle: 'alxhub'
-    },
-    {
-      id: '6',
-      name: 'Natalia Venditto',
-      title: 'Principal Developer Advocate',
-      company: 'Microsoft',
-      bio: 'Natalia is a Principal Developer Advocate at Microsoft...',
-      imageUrl: 'https://avatars.githubusercontent.com/u/11398972?v=4',
-      twitterHandle: 'NataliaVenditto',
-      githubHandle: 'anfibiacreativa'
+      id: 'maria-korneeva',
+      name: 'Maria Korneeva',
+      title: 'Angular Consultant & Developer',
+      company: 'Independent',
+      bio: 'Maria Korneeva is an experienced Angular developer and consultant specializing in building scalable web applications. She actively contributes to the Angular community through workshops, mentoring, and speaking at tech events.',
+      imageUrl: 'assets/images/speakers/maria-korneeva.jpeg',
+      twitterHandle: 'mariakorneeva',
+      githubHandle: 'mariakorneeva'
     }
   ]);
 
