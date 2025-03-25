@@ -10,10 +10,16 @@
       <div class="mx-auto mb-4 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300 
            {{ phase.isActive ? 
              'bg-emerald-400 border-emerald-400 text-gray-900 scale-110' : 
-             'bg-gray-100 border-gray-400 text-emerald-400 dark:bg-gray-800 dark:border-gray-600' }}">
+             phase.isPast ?
+             'bg-red-100 border-red-400 text-red-500 dark:bg-red-900 dark:border-red-600' :
+             'bg-gray-100 border-gray-400 text-gray-400 dark:bg-gray-800 dark:border-gray-600' }}">
         @if (phase.isActive) {
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 animate-scale-in" viewBox="0 0 24 24">
             <path fill="none" stroke="currentColor" stroke-width="2" d="M20 6L9 17l-5-5"/>
+          </svg>
+        } @else if (phase.isPast) {
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 animate-scale-in" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" d="M6 6l12 12M6 18L18 6"/>
           </svg>
         }
       </div>
@@ -42,10 +48,16 @@
       <div class="mr-6 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300
            {{ phase.isActive ? 
              'bg-emerald-400 border-emerald-400 text-gray-900 scale-110' : 
-             'bg-gray-100 border-gray-400 text-emerald-400 dark:bg-gray-800 dark:border-gray-600' }}">
+             phase.isPast ?
+             'bg-red-100 border-red-400 text-red-500 dark:bg-red-900 dark:border-red-600' :
+             'bg-gray-100 border-gray-400 text-gray-400 dark:bg-gray-800 dark:border-gray-600' }}">
         @if (phase.isActive) {
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 animate-scale-in" viewBox="0 0 24 24">
             <path fill="none" stroke="currentColor" stroke-width="2" d="M20 6L9 17l-5-5"/>
+          </svg>
+        } @else if (phase.isPast) {
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 animate-scale-in" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-width="2" d="M6 6l12 12M6 18L18 6"/>
           </svg>
         }
       </div>
