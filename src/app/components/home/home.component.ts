@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HeroComponent } from '../hero/hero.component';
-import { ScheduleComponent } from '../schedule/schedule.component';
+// import { ScheduleComponent } from '../schedule/schedule.component';
 import { SpeakersComponent } from '../speakers/speakers.component';
 import { TicketsComponent } from '../tickets/tickets.component';
 import { WorkshopsComponent } from '../workshops/workshops.component';
@@ -12,14 +12,14 @@ import { WorkshopsComponent } from '../workshops/workshops.component';
     HeroComponent,
     TicketsComponent,
     SpeakersComponent,
-    ScheduleComponent,
+    // ScheduleComponent,
     WorkshopsComponent
   ],
   template: `
     <app-hero />
     <app-tickets />
     <app-speakers />
-    <app-schedule />
+    <!-- <app-schedule /> -->
     <app-workshops />
   `
 })

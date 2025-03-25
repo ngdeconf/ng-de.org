@@ -16,11 +16,6 @@ import { WorkshopsComponent } from './components/workshops/workshops.component';
     CommonModule,
     RouterOutlet,
     HeaderComponent,
-    HeroComponent,
-    TicketsComponent,
-    SpeakersComponent,
-    ScheduleComponent,
-    WorkshopsComponent,
     FooterComponent
   ],
   template: `
