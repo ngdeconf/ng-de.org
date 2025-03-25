@@ -34,7 +34,7 @@ import { ConferenceService } from '../../services/conference.service';
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2">{{ speaker.name }}</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">{{ speaker.bio }}</p>
+                <p class="text-gray-600 dark:text-gray-400 mb-4 line-clamp-6">{{ speaker.bio }}</p>
                 <div class="flex space-x-3">
                   @if (speaker.twitterHandle) {
                     <a 
