@@ -263,7 +263,7 @@ export class ConferenceService {
           newTicket.price = currentPhase.basePrice;
           break;
         case 'workshop':
-          newTicket.price = currentPhase.basePrice + 300; // Workshop premium
+          newTicket.price = currentPhase.basePrice - 200; // Workshop premium
           break;
         case 'bundle':
           newTicket.price = currentPhase.basePrice + 400; // Bundle premium
@@ -311,7 +311,7 @@ export class ConferenceService {
       id: '3',
       name: 'Workshop Only',
       description: 'Access to one workshop of your choice',
-      price: 599, // Will be updated based on current phase
+      price: 399, // Will be updated based on current phase
       currency: 'EUR',
       available: true,
       features: [
