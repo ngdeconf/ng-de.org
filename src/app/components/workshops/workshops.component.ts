@@ -30,16 +30,20 @@ import { ConferenceService } from '../../services/conference.service';
                 <p class="text-gray-600 dark:text-gray-400 mb-6">{{ workshop.abstract }}</p>
                 
                 <div class="mb-6">
-                  <div class="flex items-center">
-                    <img 
-                      [src]="getSpeakerImage(workshop.trainerId)" 
-                      [alt]="getSpeakerName(workshop.trainerId)"
-                      class="h-10 w-10 rounded-full mr-3" 
-                    />
-                    <div>
-                      <p class="font-medium">{{ getSpeakerName(workshop.trainerId) }}</p>
-                      <p class="text-sm text-gray-500 dark:text-gray-400">{{ getSpeakerTitle(workshop.trainerId) }}</p>
-                    </div>
+                  <div class="flex flex-col space-y-4">
+                    @for (trainerId of workshop.trainers || [workshop.trainerId]; track trainerId) {
+                      <div class="flex items-center">
+                        <img 
+                          [src]="getSpeakerImage(trainerId)" 
+                          [alt]="getSpeakerName(trainerId)"
+                          class="h-10 w-10 rounded-full mr-3" 
+                        />
+                        <div>
+                          <p class="font-medium">{{ getSpeakerName(trainerId) }}</p>
+                          <p class="text-sm text-gray-500 dark:text-gray-400">{{ getSpeakerTitle(trainerId) }}</p>
+                        </div>
+                      </div>
+                    }
                   </div>
                 </div>
                 
