@@ -18,25 +18,25 @@ export class TicketTimelineComponent {
   ticketPhases: TicketPhase[] = [
     {
       name: 'Super Early Bird',
-      startDate: new Date('2025-04-08'),
+      startDate: new Date('2025-04-01'),
       isActive: false,
       isPast: false
     },
     {
       name: 'Early Bird',
-      startDate: new Date('2025-06-17'),
+      startDate: new Date('2025-05-01'),
       isActive: false,
       isPast: false
     },
     {
       name: 'Normal Bird',
-      startDate: new Date('2025-08-12'),
+      startDate: new Date('2025-07-01'),
       isActive: false,
       isPast: false
     },
     {
       name: 'Final Bird',
-      startDate: new Date('2025-10-14'),
+      startDate: new Date('2025-10-01'),
       isActive: false,
       isPast: false
     }
