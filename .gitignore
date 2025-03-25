@@ -305,3 +305,11 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/angular,visualstudiocode,webstorm,node
+
+## Ignore old Jekyll sources when a person used the old system
+_site
+.sass-cache
+.jekyll-metadata
+.jekyll-cache
+.idea
+.DS_Store
