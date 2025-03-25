@@ -1,7 +1,6 @@
 {
   "name": "angular-conference",
   "private": true,
-  "packageManager": "^pnpm@10.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
