@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ConferenceService } from '../../services/conference.service';
-import { Talk } from '../../models/models';
+import { ScheduleDay } from '../../models/models';
 
 @Component({
   selector: 'app-schedule',
@@ -13,32 +13,23 @@ import { Talk } from '../../models/models';
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Conference Schedule</h2>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Two days packed with Angular insights, best practices, and community networking
+            Three days packed with Angular insights, best practices, and community networking
           </p>
           
           <div class="flex justify-center mt-8 space-x-4">
-            <button 
-              (click)="setActiveDay('day1')"
-              class="px-6 py-2 rounded-md font-medium transition-colors"
-              [class.bg-primary-500]="activeDay() === 'day1'"
-              [class.text-white]="activeDay() === 'day1'"
-              [class.bg-gray-200]="activeDay() !== 'day1'"
-              [class.dark:bg-gray-700]="activeDay() !== 'day1'"
-              [class.text-gray-800]="activeDay() !== 'day1'"
-              [class.dark:text-gray-200]="activeDay() !== 'day1'">
-              Day 1 (Nov 6)
-            </button>
-            <button 
-              (click)="setActiveDay('day2')"
-              class="px-6 py-2 rounded-md font-medium transition-colors"
-              [class.bg-primary-500]="activeDay() === 'day2'"
-              [class.text-white]="activeDay() === 'day2'"
-              [class.bg-gray-200]="activeDay() !== 'day2'"
-              [class.dark:bg-gray-700]="activeDay() !== 'day2'"
-              [class.text-gray-800]="activeDay() !== 'day2'"
-              [class.dark:text-gray-200]="activeDay() !== 'day2'">
-              Day 2 (Nov 7)
-            </button>
+            @for (day of schedule(); track day.datetime) {
+              <button 
+                (click)="setActiveDay(day.datetime)"
+                class="px-6 py-2 rounded-md font-medium transition-colors"
+                [class.bg-primary-500]="activeDay() === day.datetime"
+                [class.text-white]="activeDay() === day.datetime"
+                [class.bg-gray-200]="activeDay() !== day.datetime"
+                [class.dark:bg-gray-700]="activeDay() !== day.datetime"
+                [class.text-gray-800]="activeDay() !== day.datetime"
+                [class.dark:text-gray-200]="activeDay() !== day.datetime">
+                {{ day.title }}
+              </button>
+            }
           </div>
         </div>
         
@@ -47,60 +38,22 @@ import { Talk } from '../../models/models';
             <thead class="bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
               <tr>
                 <th scope="col" class="px-6 py-3 font-medium">Time</th>
-                <th scope="col" class="px-6 py-3 font-medium">Talk</th>
-                <th scope="col" class="px-6 py-3 font-medium">Speaker</th>
-                <th scope="col" class="px-6 py-3 font-medium hidden md:table-cell">Room</th>
+                <th scope="col" class="px-6 py-3 font-medium">Title</th>
+                <th scope="col" class="px-6 py-3 font-medium">Information</th>
+                <th scope="col" class="px-6 py-3 font-medium">Location</th>
               </tr>
             </thead>
             <tbody>
-              @for (talk of filteredTalks(); track talk.id) {
+              @for (entry of filteredEntries(); track entry.datetime) {
                 <tr class="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50">
-                  <td class="px-6 py-4 whitespace-nowrap">{{ talk.time }}</td>
+                  <td class="px-6 py-4 whitespace-nowrap">{{ formatTime(entry.datetime) }}</td>
                   <td class="px-6 py-4">
-                    <div class="font-medium">{{ talk.title }}</div>
-                    <div class="text-sm text-gray-500 dark:text-gray-400 line-clamp-2">{{ talk.abstract }}</div>
+                    <div class="font-medium">{{ entry.title }}</div>
                   </td>
                   <td class="px-6 py-4">
-                    <div class="flex items-center">
-                      <img 
-                        [src]="getSpeakerImage(talk.speakerId)" 
-                        [alt]="getSpeakerName(talk.speakerId)"
-                        class="h-8 w-8 rounded-full mr-3" 
-                      />
-                      <span>{{ getSpeakerName(talk.speakerId) }}</span>
-                    </div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">{{ entry.information }}</div>
                   </td>
-                  <td class="px-6 py-4 hidden md:table-cell">{{ talk.room }}</td>
-                </tr>
-              }
-              
-              @if (activeDay() === 'day1') {
-                <tr class="border-b border-gray-200 dark:border-gray-700 bg-primary-50 dark:bg-primary-900/20">
-                  <td class="px-6 py-4 whitespace-nowrap">12:30 - 14:00</td>
-                  <td class="px-6 py-4 font-medium">Lunch Break</td>
-                  <td class="px-6 py-4">-</td>
-                  <td class="px-6 py-4 hidden md:table-cell">Restaurant Area</td>
-                </tr>
-                <tr class="border-b border-gray-200 dark:border-gray-700 bg-primary-50 dark:bg-primary-900/20">
-                  <td class="px-6 py-4 whitespace-nowrap">17:00 - 19:00</td>
-                  <td class="px-6 py-4 font-medium">Networking Reception</td>
-                  <td class="px-6 py-4">-</td>
-                  <td class="px-6 py-4 hidden md:table-cell">Main Hall</td>
-                </tr>
-              }
-              
-              @if (activeDay() === 'day2') {
-                <tr class="border-b border-gray-200 dark:border-gray-700 bg-primary-50 dark:bg-primary-900/20">
-                  <td class="px-6 py-4 whitespace-nowrap">12:30 - 14:00</td>
-                  <td class="px-6 py-4 font-medium">Lunch Break</td>
-                  <td class="px-6 py-4">-</td>
-                  <td class="px-6 py-4 hidden md:table-cell">Restaurant Area</td>
-                </tr>
-                <tr class="border-b border-gray-200 dark:border-gray-700 bg-primary-50 dark:bg-primary-900/20">
-                  <td class="px-6 py-4 whitespace-nowrap">17:00 - 18:00</td>
-                  <td class="px-6 py-4 font-medium">Closing Keynote</td>
-                  <td class="px-6 py-4">Conference Team</td>
-                  <td class="px-6 py-4 hidden md:table-cell">Main Hall</td>
+                  <td class="px-6 py-4">{{ entry.location }}</td>
                 </tr>
               }
             </tbody>
@@ -111,26 +64,29 @@ import { Talk } from '../../models/models';
   `
 })
 export class ScheduleComponent {
-  activeDay = signal<'day1' | 'day2'>('day1');
-  talks = this.conferenceService.getTalks();
+  schedule = this.conferenceService.getSchedule();
+  activeDay = signal<string>('');
   
-  constructor(private conferenceService: ConferenceService) {}
-  
-  filteredTalks() {
-    return this.talks().filter(talk => talk.day === this.activeDay());
+  constructor(private conferenceService: ConferenceService) {
+    // Set the first day as active by default
+    if (this.schedule().length > 0) {
+      this.activeDay.set(this.schedule()[0].datetime);
+    }
   }
   
-  setActiveDay(day: 'day1' | 'day2') {
-    this.activeDay.set(day);
+  filteredEntries() {
+    return this.schedule().find(day => day.datetime === this.activeDay())?.entries || [];
   }
   
-  getSpeakerName(speakerId: string): string {
-    const speaker = this.conferenceService.getSpeakerById(speakerId);
-    return speaker ? speaker.name : 'Unknown Speaker';
+  setActiveDay(datetime: string) {
+    this.activeDay.set(datetime);
   }
   
-  getSpeakerImage(speakerId: string): string {
-    const speaker = this.conferenceService.getSpeakerById(speakerId);
-    return speaker ? speaker.imageUrl : '';
+  formatTime(datetime: string): string {
+    return new Date(datetime).toLocaleTimeString('en-US', { 
+      hour: '2-digit', 
+      minute: '2-digit',
+      hour12: false 
+    });
   }
 }

@@ -9,6 +9,20 @@ export interface Speaker {
   githubHandle?: string;
 }
 
+export interface ScheduleEntry {
+  title: string;
+  datetime: string;
+  information: string;
+  location: string;
+  session: string | null;
+}
+
+export interface ScheduleDay {
+  title: string;
+  datetime: string;
+  entries: ScheduleEntry[];
+}
+
 export interface Talk {
   id: string;
   title: string;
