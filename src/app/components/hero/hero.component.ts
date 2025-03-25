@@ -63,7 +63,7 @@ import { ConferenceService } from '../../services/conference.service';
             <p
               class="text-xl md:text-2xl mb-6 text-gray-700 dark:text-gray-300"
             >
-              The premier Angular conference in Germany
+              The community-driven Angular conference in Germany
             </p>
 
             <div class="mb-8 text-gray-600 dark:text-gray-400">
