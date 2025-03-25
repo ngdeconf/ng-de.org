@@ -211,54 +211,7 @@ export class ConferenceService {
   ]);
 
   private readonly schedule = signal<ScheduleDay[]>([
-    {
-      title: 'Wednesday',
-      datetime: '2025-11-05',
-      entries: [
-        {
-          title: 'Workshop 1',
-          datetime: '2025-11-05T09:00:00',
-          information: 'Workshop 1',
-          location: 'GLS Campus Berlin',
-          session: 'workshop-1'
-        },
-        {
-          title: 'Workshop 2',
-          datetime: '2025-11-05T09:00:00',
-          information: 'Workshop 2',
-          location: 'GLS Campus Berlin',
-          session: 'workshop-2'
-        },
-        {
-          title: 'Workshop 3',
-          datetime: '2025-11-05T09:00:00',
-          information: 'Workshop 3',
-          location: 'GLS Campus Berlin',
-          session: 'workshop-3'
-        },
-        {
-          title: 'Workshop 4',
-          datetime: '2025-11-05T09:00:00',
-          information: 'Workshop 4',
-          location: 'GLS Campus Berlin',
-          session: 'workshop-4'
-        },
-        {
-          title: 'Workshop 5',
-          datetime: '2025-11-05T09:00:00',
-          information: 'Workshop 5',
-          location: 'GLS Campus Berlin',
-          session: 'workshop-5'
-        },
-        {
-          title: 'Workshop 6',
-          datetime: '2025-11-05T09:00:00',
-          information: 'Workshop 6',
-          location: 'GLS Campus Berlin',
-          session: 'workshop-6'
-        }
-      ]
-    },
+    
     {
       title: 'Thursday',
       datetime: '2025-11-06',
