@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   template: `
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">
@@ -92,7 +93,7 @@ import { CommonModule } from '@angular/common';
           <div class="mt-2 space-x-4">
             <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" class="hover:text-white transition-colors">Code of Conduct</a>
+            <a routerLink="/code-of-conduct" class="hover:text-white transition-colors">Code of Conduct</a>
           </div>
         </div>
       </div>
