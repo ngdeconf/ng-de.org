@@ -8,5 +8,9 @@ export const serverRoutes: ServerRoute[] = [
   {
     path: 'code-of-conduct',
     renderMode: RenderMode.Prerender
+  },
+  {
+    path: 'privacy-policy',
+    renderMode: RenderMode.Prerender
   }
 ];

@@ -91,7 +91,7 @@ import { RouterModule } from '@angular/router';
         <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
           <p>&copy; {{ currentYear }} NG-DE Berlin. All rights reserved.</p>
           <div class="mt-2 space-x-4">
-            <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+            <a routerLink="/privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
             <a routerLink="/code-of-conduct" class="hover:text-white transition-colors">Code of Conduct</a>
           </div>
