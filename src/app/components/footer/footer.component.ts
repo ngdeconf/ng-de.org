@@ -46,47 +46,6 @@ import { RouterModule } from '@angular/router';
           </div>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-8">
-          <div>
-            <h4 class="text-lg font-semibold mb-4">About</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white transition-colors">About the Conference</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Team</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Venue in Berlin</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Past Events</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 class="text-lg font-semibold mb-4">Conference</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="#speakers" class="hover:text-white transition-colors">Speakers</a></li>
-              <li><a href="#schedule" class="hover:text-white transition-colors">Schedule</a></li>
-              <li><a href="#workshops" class="hover:text-white transition-colors">Workshops</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Call for Papers</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 class="text-lg font-semibold mb-4">Attend</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="#tickets" class="hover:text-white transition-colors">Buy Tickets</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Berlin Hotels</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Getting Around Berlin</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 class="text-lg font-semibold mb-4">Contact</h4>
-            <ul class="space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white transition-colors">Sponsorship</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Media</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Volunteers</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Email Us</a></li>
-            </ul>
-          </div>
-        </div>
         
         <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
           <p>&copy; {{ currentYear }} NG-DE Berlin. All rights reserved.</p>
