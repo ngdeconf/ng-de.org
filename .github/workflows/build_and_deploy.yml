@@ -1,13 +1,10 @@
-name: Build Jekyll and Deploy to Firebase
+name: Build and Deploy Angular to Firebase
 
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
-env:
-  JEKYLL_ENV: production
 
 jobs:
   build-and-deploy:
@@ -33,19 +30,19 @@ jobs:
       - name: Build
         run: pnpm build
 
-    - name: Deploy to Firebase
-      if: github.ref == 'refs/heads/master'
-      uses: FirebaseExtended/action-hosting-deploy@v0
-      with:
-        repoToken: '${{ secrets.GITHUB_TOKEN }}'
-        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NGDECONF }}'
-        channelId: live
-        projectId: ngdeconf
+      - name: Deploy to Firebase
+        if: github.ref == 'refs/heads/master'
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NGDECONF }}'
+          channelId: live
+          projectId: ngdeconf
 
-    - name: Deploy Preview to Firebase
-      if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
-      uses: FirebaseExtended/action-hosting-deploy@v0
-      with:
-        repoToken: '${{ secrets.GITHUB_TOKEN }}'
-        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NGDECONF }}'
-        projectId: ngdeconf
+      - name: Deploy Preview to Firebase
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NGDECONF }}'
+          projectId: ngdeconf
