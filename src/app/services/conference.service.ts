@@ -212,7 +212,7 @@ export class ConferenceService {
       basePrice: 699
     },
     {
-      name: 'Normal Bird',
+      name: 'Regular Ticket',
       startDate: new Date('2025-07-01'),
       isActive: false,
       isPast: false,
