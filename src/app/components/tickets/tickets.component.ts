@@ -72,17 +72,19 @@ import { TicketTimelineComponent } from './ticket-timeline/ticket-timeline.compo
                   }
                 </ul>
                 
-                <button 
-                  [disabled]="!ticket.available"
-                  [class.opacity-50]="!ticket.available"
-                  [class.cursor-not-allowed]="!ticket.available"
-                  class="w-full cta-button rotate-gradient flex justify-center items-center">
-                  @if (ticket.available) {
-                    Get Ticket
-                  } @else {
-                    Sold Out
-                  }
-                </button>
+                <a href="https://ti.to/ng-de/berlin-2025" target="_blank">
+                  <button 
+                    [disabled]="!ticket.available"
+                    [class.opacity-50]="!ticket.available"
+                    [class.cursor-not-allowed]="!ticket.available"
+                    class="w-full cta-button rotate-gradient flex justify-center items-center">
+                    @if (ticket.available) {
+                      Get Ticket
+                    } @else {
+                      Sold Out
+                    }
+                  </button>
+                </a>
               </div>
             </div>
           }

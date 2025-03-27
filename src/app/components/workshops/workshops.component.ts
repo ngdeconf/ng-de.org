@@ -55,9 +55,11 @@ import { ConferenceService } from '../../services/conference.service';
                     <span>Capacity: {{ workshop.capacity }} attendees</span>
                   </div>
                   
-                  <button class="cta-button rotate-gradient">
-                    Register Now
-                  </button>
+                  <a href="https://ti.to/ng-de/berlin-2025" target="_blank">
+                    <button class="cta-button rotate-gradient">
+                      Register Now
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
