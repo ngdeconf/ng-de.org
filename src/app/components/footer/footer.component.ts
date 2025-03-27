@@ -92,7 +92,7 @@ import { RouterModule } from '@angular/router';
           <p>&copy; {{ currentYear }} NG-DE Berlin. All rights reserved.</p>
           <div class="mt-2 space-x-4">
             <a routerLink="/privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            <a routerLink="/imprint" class="hover:text-white transition-colors">Imprint</a>
             <a routerLink="/code-of-conduct" class="hover:text-white transition-colors">Code of Conduct</a>
           </div>
         </div>
