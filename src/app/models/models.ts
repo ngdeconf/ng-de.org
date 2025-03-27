@@ -5,7 +5,6 @@ export interface Speaker {
   company: string;
   bio: string;
   imageUrl: string;
-  twitterHandle?: string;
   githubHandle?: string;
 }
 

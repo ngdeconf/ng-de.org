@@ -14,7 +14,6 @@ export class ConferenceService {
       company: 'ANGULARarchitects.io',
       bio: 'Trainer, consultant, and programming architect with a focus on Angular, Google Developer Expert (GDE) who writes for O\'Reilly, the German Java Magazine, and windows.developer. Regularly speaks at conferences.',
       imageUrl: 'assets/images/speakers/manfred-steyer.jpg',
-      twitterHandle: 'ManfredSteyer',
       githubHandle: 'manfredsteye'
     },
     {
@@ -24,7 +23,6 @@ export class ConferenceService {
       company: 'Angular Architects',
       bio: 'Rainer Hahnekamp is a Google Developer Expert, working as a trainer and consultant in the expert network of Angular Architects. In addition, he offers a weekly brief overview of relevant events in the Angular ecosystem on YouTube through ng-news.',
       imageUrl: 'assets/images/speakers/rainer-hahnekamp.png',
-      twitterHandle: 'rainerhahnekamp',
       githubHandle: 'rainerhahnekamp'
     },
     {
@@ -34,7 +32,6 @@ export class ConferenceService {
       company: 'Push-based.io',
       bio: 'Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back.',
       imageUrl: 'assets/images/speakers/michael-hladky.jpg',
-      twitterHandle: 'michael_hladky',
       githubHandle: 'BioPhoton'
     },
     {
@@ -44,7 +41,6 @@ export class ConferenceService {
       company: 'Thinktecture',
       bio: 'Christian Liebel is a developer helping enterprises and ISVs develop modern cross-platform business applications based on Angular. As a Microsoft MVP, Google GDE, and W3C Web Applications working group participant, he speaks about modern web technologies at international user groups and conferences.',
       imageUrl: 'assets/images/speakers/christian-liebel.png',
-      twitterHandle: 'christianliebel',
       githubHandle: 'christianliebel'
     },
     {
@@ -54,7 +50,6 @@ export class ConferenceService {
       company: 'Independent',
       bio: 'Martina Kraus is a Google Developer Expert in Angular and web technologies. She is an Angular consultant and trainer with a focus on Angular applications. As a lecturer, she teaches at the Hochschule Mannheim. She is actively involved in the Angular community and speaks at international conferences.',
       imageUrl: 'assets/images/speakers/martina-kraus.png',
-      twitterHandle: 'martinakraus11',
       githubHandle: 'martinakraus'
     },
     {
@@ -64,7 +59,6 @@ export class ConferenceService {
       company: 'Independent',
       bio: 'Maria Korneeva is an experienced Angular developer and consultant specializing in building scalable web applications. She actively contributes to the Angular community through workshops, mentoring, and speaking at tech events.',
       imageUrl: 'assets/images/speakers/maria-korneeva.jpeg',
-      twitterHandle: 'mariakorneeva',
       githubHandle: 'mariakorneeva'
     }
   ]);
