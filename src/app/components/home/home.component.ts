@@ -4,6 +4,7 @@ import { HeroComponent } from '../hero/hero.component';
 import { SpeakersComponent } from '../speakers/speakers.component';
 import { TicketsComponent } from '../tickets/tickets.component';
 import { WorkshopsComponent } from '../workshops/workshops.component';
+import { CallForPapersComponent } from '../call-for-papers/call-for-papers.component';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,8 @@ import { WorkshopsComponent } from '../workshops/workshops.component';
     TicketsComponent,
     SpeakersComponent,
     // ScheduleComponent,
-    WorkshopsComponent
+    WorkshopsComponent,
+    CallForPapersComponent
   ],
   template: `
     <app-hero />
@@ -21,6 +23,7 @@ import { WorkshopsComponent } from '../workshops/workshops.component';
     <app-speakers />
     <!-- <app-schedule /> -->
     <app-workshops />
+    <app-call-for-papers />
   `
 })
 export class HomeComponent {}
