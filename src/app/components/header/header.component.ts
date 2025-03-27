@@ -51,9 +51,6 @@ import { ThemeService } from '../../services/theme.service';
             <a href="#speakers" class="hover:text-primary-500 transition-colors"
               >Speakers</a
             >
-            <a href="#schedule" class="hover:text-primary-500 transition-colors"
-              >Schedule</a
-            >
             <a
               href="#workshops"
               class="hover:text-primary-500 transition-colors"
