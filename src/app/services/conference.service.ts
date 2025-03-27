@@ -25,15 +25,15 @@ export class ConferenceService {
       imageUrl: 'assets/images/speakers/rainer-hahnekamp.png',
       githubHandle: 'rainerhahnekamp'
     },
-    // {
-    //   id: 'michael-hladky',
-    //   name: 'Michael Hladky',
-    //   title: 'Push-based.io',
-    //   company: 'Push-based.io',
-    //   bio: 'Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back.',
-    //   imageUrl: 'assets/images/speakers/michael-hladky.jpg',
-    //   githubHandle: 'BioPhoton'
-    // },
+    {
+      id: 'michael-hladky',
+      name: 'Michael Hladky',
+      title: 'Push-based.io',
+      company: 'Push-based.io',
+      bio: 'Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back.',
+      imageUrl: 'assets/images/speakers/michael-hladky.jpg',
+      githubHandle: 'BioPhoton'
+    },
     {
       id: 'christian-liebel',
       name: 'Christian Liebel',
