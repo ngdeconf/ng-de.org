@@ -22,6 +22,15 @@ const app = express();
  */
 
 /**
+ * Handle service worker requests
+ */
+app.get('/sw.js', (req, res) => {
+  res.setHeader('Content-Type', 'application/javascript');
+  res.setHeader('Service-Worker-Allowed', '/');
+  res.sendFile(resolve(browserDistFolder, 'sw.js'));
+});
+
+/**
  * Serve static files from /browser
  */
 app.use(
