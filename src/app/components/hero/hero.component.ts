@@ -156,10 +156,10 @@ import { ConferenceService } from '../../services/conference.service';
                 Get Tickets
               </a>
               <a
-                href="#schedule"
+                href="#speakers"
                 class="inline-block px-6 py-3 font-medium rounded-md transition-all bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600 text-center"
               >
-                View Schedule
+                View Speakers
               </a>
             </div>
           </div>
