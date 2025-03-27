@@ -10,29 +10,28 @@ env:
   JEKYLL_ENV: production
 
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Clone repository
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-    - name: Cache Bundler 💾
-      uses: actions/cache@v4
-      with:
-        path: ~/.firebase, ~/.jekyll-cache, ~/vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+          run_install: false
 
-    - name: Use Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        bundler-cache: true
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          cache: 'pnpm'
 
-    - name: Build 🏗
-      run: bundle exec jekyll build --trace
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build
 
     - name: Deploy to Firebase
       if: github.ref == 'refs/heads/master'
