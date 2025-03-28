@@ -48,7 +48,7 @@ export class ConferenceService {
       name: 'Martina Kraus',
       title: 'Angular Consultant & Trainer',
       company: 'Independent',
-      bio: 'Martina Kraus is a Google Developer Expert in Angular and web technologies. She is an Angular consultant and trainer with a focus on Angular applications. As a lecturer, she teaches at the Hochschule Mannheim. She is actively involved in the Angular community and speaks at international conferences.',
+      bio: 'Martina Kraus has been active in web development since her early years and is now an expert in Angular and web security. As a Security Engineer, she integrates security best practices into all phases of software development. As a Google Developer Expert, she shares her knowledge on Angular at international conferences.',
       imageUrl: 'assets/images/speakers/martina-kraus.png',
       githubHandle: 'martinakraus'
     },
