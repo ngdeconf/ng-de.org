@@ -509,8 +509,8 @@ export class ConferenceService {
     },
     {
       id: '2',
-      name: 'Conference + Workshop Bundle',
-      description: 'Full conference access plus your choice of one workshop',
+      name: 'Conference + Workshop',
+      description: 'Full conference access plus one workshop',
       price: 799, // Will be updated based on current phase
       currency: 'EUR',
       available: true,
