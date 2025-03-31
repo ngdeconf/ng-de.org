@@ -10,7 +10,7 @@ export class ConferenceService {
     {
       id: 'manfred-steyer',
       name: 'Manfred Steyer',
-      title: 'Trainer and Consultant • GDE in Angular',
+      title: 'Trainer and Consultant',
       company: 'Angular Architects',
       bio: 'Trainer, consultant, and programming architect with a focus on Angular, Google Developer Expert (GDE) who writes for O\'Reilly, the German Java Magazine, and windows.developer. Regularly speaks at conferences.',
       imageUrl: 'assets/images/speakers/manfred-steyer.jpg',
@@ -19,7 +19,7 @@ export class ConferenceService {
     {
       id: 'rainer-hahnekamp',
       name: 'Rainer Hahnekamp',
-      title: 'Trainer and Consultant • GDE in Angular',
+      title: 'Trainer and Consultant',
       company: 'Angular Architects',
       bio: 'Rainer Hahnekamp is a Google Developer Expert, working as a trainer and consultant in the expert network of Angular Architects. In addition, he offers a weekly brief overview of relevant events in the Angular ecosystem on YouTube through ng-news.',
       imageUrl: 'assets/images/speakers/rainer-hahnekamp.png',
