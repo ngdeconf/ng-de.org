@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Ticket } from '../../models/models';
+import { Component, OnInit } from '@angular/core';
+import { Ticket, TicketPhase } from '../../models/models';
 import { ConferenceService } from '../../services/conference.service';
 import { TicketTimelineComponent } from './ticket-timeline.component';
 
@@ -43,13 +43,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                   </p>
                 </div>
 
-                @if (isEarlyBird(ticket)) {
-                <span
-                  class="bg-[#e40341] text-white text-xs font-medium px-3 py-1 rounded-full shadow-sm"
-                >
-                  Early Bird
-                </span>
-                } @else if (!ticket.available) {
+                @if (!ticket.available) {
                 <span
                   class="bg-gray-100 text-gray-800 text-xs font-medium px-3 py-1 rounded-full dark:bg-gray-700 dark:text-gray-300"
                 >
@@ -61,15 +55,52 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                 >
                   Online
                 </span>
+                } @else if (!isFinalBirdPhase() && ticket.type === 'conference')
+                {
+                <span
+                  class="bg-[#e40341]/10 text-[#e40341] text-xs font-medium px-3 py-1 rounded-full animate-pulse whitespace-nowrap"
+                >
+                  Save {{ getSavingsPercentage(ticket) }}%
+                </span>
                 }
               </div>
 
               <!-- Price Section -->
               <div class="mb-8">
+                @if (!isFinalBirdPhase() && ticket.type === 'conference') {
+                <div class="flex items-end gap-3">
+                  <p class="text-4xl font-bold text-[#e40341]">
+                    {{ ticket.price }} {{ ticket.currency }}
+                  </p>
+                  <div class="flex flex-col items-start">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                      instead of
+                    </p>
+                    <div class="relative">
+                      <p class="text-xl text-gray-500 dark:text-gray-400">
+                        {{ finalPrice }} {{ ticket.currency }}
+                      </p>
+                      <!-- Subtle line through price -->
+                      <div class="absolute inset-0 flex items-center">
+                        <div class="h-[1px] w-full bg-[#e40341]/40"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="mt-2 inline-block bg-[#e40341]/10 px-3 py-1 rounded-lg"
+                >
+                  <p
+                    class="text-sm font-medium text-[#e40341] whitespace-nowrap"
+                  >
+                    Save {{ getSavingsAmount(ticket) }} {{ ticket.currency }}
+                  </p>
+                </div>
+                } @else {
                 <p class="text-4xl font-bold text-[#e40341]">
                   {{ ticket.price }} {{ ticket.currency }}
                 </p>
-                @if (ticket.availableUntil && ticket.available) {
+                } @if (ticket.availableUntil && ticket.available) {
                 <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
                   Available until {{ formatDate(ticket.availableUntil) }}
                 </p>
@@ -131,10 +162,42 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
     </section>
   `
 })
-export class TicketsComponent {
+export class TicketsComponent implements OnInit {
   tickets = this.conferenceService.getTickets();
+  finalPrice = 899; // Default value for Final Bird phase
+  currentPhase: TicketPhase | undefined;
+  allPhases: TicketPhase[] = [];
 
   constructor(private conferenceService: ConferenceService) {}
+
+  ngOnInit() {
+    // Subscribe to get all phases
+    this.conferenceService.getTicketPhases().subscribe(phases => {
+      this.allPhases = phases;
+      // Find the "Final Bird" phase
+      const finalBirdPhase = phases.find(phase => phase.name === 'Final Bird');
+      if (finalBirdPhase) {
+        this.finalPrice = finalBirdPhase.basePrice;
+      }
+    });
+
+    // Subscribe to get current phase
+    this.conferenceService.getCurrentPhase().subscribe(phase => {
+      this.currentPhase = phase;
+    });
+  }
+
+  isFinalBirdPhase(): boolean {
+    return this.currentPhase?.name === 'Final Bird';
+  }
+
+  getSavingsAmount(ticket: Ticket): number {
+    return this.finalPrice - ticket.price;
+  }
+
+  getSavingsPercentage(ticket: Ticket): number {
+    return Math.round((this.getSavingsAmount(ticket) / this.finalPrice) * 100);
+  }
 
   isEarlyBird(ticket: Ticket): boolean {
     return ticket.name.toLowerCase().includes('early-bird') && ticket.available;
