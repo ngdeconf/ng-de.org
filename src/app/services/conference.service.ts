@@ -222,7 +222,6 @@ export class ConferenceService {
   ]);
 
   private readonly schedule = signal<ScheduleDay[]>([
-    
     {
       title: 'Thursday',
       datetime: '2025-11-06',
