@@ -25,15 +25,15 @@ export class ConferenceService {
       imageUrl: 'assets/images/speakers/rainer-hahnekamp.png',
       githubHandle: 'rainerhahnekamp'
     },
-    // {
-    //   id: 'michael-hladky',
-    //   name: 'Michael Hladky',
-    //   title: 'Push-based.io',
-    //   company: 'Push-based.io',
-    //   bio: 'Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back.',
-    //   imageUrl: 'assets/images/speakers/michael-hladky.jpg',
-    //   githubHandle: 'BioPhoton'
-    // },
+    {
+      id: 'michael-hladky',
+      name: 'Michael Hladky',
+      title: 'Push-based.io',
+      company: 'Push-based.io',
+      bio: 'Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back.',
+      imageUrl: 'assets/images/speakers/michael-hladky.jpg',
+      githubHandle: 'BioPhoton'
+    },
     {
       id: 'christian-liebel',
       name: 'Christian Liebel',
@@ -48,7 +48,7 @@ export class ConferenceService {
       name: 'Martina Kraus',
       title: 'Angular Consultant & Trainer',
       company: 'Independent',
-      bio: 'Martina Kraus has been active in web development since her early years and is now an expert in Angular and web security. As a Security Engineer, she integrates security best practices into all phases of software development. As a Google Developer Expert, she shares her knowledge on Angular at international conferences.',
+      bio: 'Martina Kraus is a Google Developer Expert in Angular and web technologies. She is an Angular consultant and trainer with a focus on Angular applications. As a lecturer, she teaches at the Hochschule Mannheim. She is actively involved in the Angular community and speaks at international conferences.',
       imageUrl: 'assets/images/speakers/martina-kraus.png',
       githubHandle: 'martinakraus'
     },
@@ -222,7 +222,6 @@ export class ConferenceService {
   ]);
 
   private readonly schedule = signal<ScheduleDay[]>([
-    
     {
       title: 'Thursday',
       datetime: '2025-11-06',

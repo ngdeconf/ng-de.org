@@ -4,20 +4,21 @@ import { ConferenceService } from '../../../services/conference.service';
 
 @Component({
   selector: 'app-ticket-timeline',
+  standalone: true,
   imports: [AsyncPipe, DatePipe],
   templateUrl: './ticket-timeline.component.html',
   styles: `
     @keyframes scale-in {
-    0% {
-      transform: scale(0);
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
     }
-    100% {
-      transform: scale(1);
+    .animate-scale-in {
+      animation: scale-in 0.3s ease-out;
     }
-  }
-  .animate-scale-in {
-    animation: scale-in 0.3s ease-out;
-  }
   `
 })
 export class TicketTimelineComponent {
