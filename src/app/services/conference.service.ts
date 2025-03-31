@@ -10,8 +10,8 @@ export class ConferenceService {
     {
       id: 'manfred-steyer',
       name: 'Manfred Steyer',
-      title: 'ANGULARarchitects.io',
-      company: 'ANGULARarchitects.io',
+      title: 'Trainer and Consultant • GDE in Angular',
+      company: 'Angular Architects',
       bio: 'Trainer, consultant, and programming architect with a focus on Angular, Google Developer Expert (GDE) who writes for O\'Reilly, the German Java Magazine, and windows.developer. Regularly speaks at conferences.',
       imageUrl: 'assets/images/speakers/manfred-steyer.jpg',
       githubHandle: 'manfredsteye'
@@ -28,7 +28,7 @@ export class ConferenceService {
     {
       id: 'michael-hladky',
       name: 'Michael Hladky',
-      title: 'Push-based.io',
+      title: 'Trainer and Consultant',
       company: 'Push-based.io',
       bio: 'Michael Hladky is a Google Developer Expert (GDE), Microsoft MVP, Nx champion, trainer, and consultant with a focus on Angular and RxJS. For years he has been helping companies and developers to set up scalable architectures and performant processes enabling teams to keep up with state-of-the-art development. A vibrant member of the tech community, he organizes multiple community events and workshops each year to give back.',
       imageUrl: 'assets/images/speakers/michael-hladky.jpg',
@@ -37,7 +37,7 @@ export class ConferenceService {
     {
       id: 'christian-liebel',
       name: 'Christian Liebel',
-      title: 'Thinktecture',
+      title: 'Trainer and Consultant',
       company: 'Thinktecture',
       bio: 'Christian Liebel is a developer helping enterprises and ISVs develop modern cross-platform business applications based on Angular. As a Microsoft MVP, Google GDE, and W3C Web Applications working group participant, he speaks about modern web technologies at international user groups and conferences.',
       imageUrl: 'assets/images/speakers/christian-liebel.png',
