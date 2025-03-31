@@ -1,4 +1,4 @@
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 import {
   Component,
   HostListener,
@@ -10,8 +10,6 @@ import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [CommonModule],
   template: `
     <header
       class="fixed w-full z-50 transition-all duration-300"
@@ -64,8 +62,8 @@ import { ThemeService } from '../../services/theme.service';
               class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               aria-label="Toggle theme"
             >
+              @if (!isDarkMode()) {
               <svg
-                *ngIf="!isDarkMode()"
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
                 viewBox="0 0 24 24"
@@ -75,8 +73,8 @@ import { ThemeService } from '../../services/theme.service';
                   d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
                 />
               </svg>
+              } @if (isDarkMode()) {
               <svg
-                *ngIf="isDarkMode()"
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
                 viewBox="0 0 24 24"
@@ -88,6 +86,7 @@ import { ThemeService } from '../../services/theme.service';
                   clip-rule="evenodd"
                 />
               </svg>
+              }
             </button>
 
             <button
@@ -95,8 +94,8 @@ import { ThemeService } from '../../services/theme.service';
               class="md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               aria-label="Toggle mobile menu"
             >
+              @if (!isMobileMenuOpen()) {
               <svg
-                *ngIf="!isMobileMenuOpen()"
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6"
                 fill="none"
@@ -110,8 +109,8 @@ import { ThemeService } from '../../services/theme.service';
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
+              } @if (isMobileMenuOpen()) {
               <svg
-                *ngIf="isMobileMenuOpen()"
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6"
                 fill="none"
@@ -125,13 +124,14 @@ import { ThemeService } from '../../services/theme.service';
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
+              }
             </button>
           </div>
         </div>
 
         <!-- Mobile Menu -->
+        @if (isMobileMenuOpen()) {
         <div
-          *ngIf="isMobileMenuOpen()"
           class="md:hidden mt-4 py-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg"
         >
           <nav
@@ -169,6 +169,7 @@ import { ThemeService } from '../../services/theme.service';
             >
           </nav>
         </div>
+        }
       </div>
     </header>
   `

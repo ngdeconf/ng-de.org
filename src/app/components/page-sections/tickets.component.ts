@@ -1,13 +1,11 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Ticket } from '../../models/models';
 import { ConferenceService } from '../../services/conference.service';
-import { TicketTimelineComponent } from './ticket-timeline/ticket-timeline.component';
+import { TicketTimelineComponent } from './ticket-timeline.component';
 
 @Component({
   selector: 'app-tickets',
-  standalone: true,
-  imports: [CommonModule, TicketTimelineComponent],
+  imports: [TicketTimelineComponent],
   template: `
     <section id="tickets" class="py-20 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4">

@@ -1,11 +1,8 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ConferenceService } from '../../services/conference.service';
 
 @Component({
   selector: 'app-hero',
-  standalone: true,
-  imports: [CommonModule],
   template: `
     <section
       id="home"

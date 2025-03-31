@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { HeroComponent } from '../hero/hero.component';
+import { HeroComponent } from '../page-sections/hero.component';
 // import { ScheduleComponent } from '../schedule/schedule.component';
-import { SpeakersComponent } from '../speakers/speakers.component';
-import { TicketsComponent } from '../tickets/tickets.component';
-import { WorkshopsComponent } from '../workshops/workshops.component';
-import { CallForPapersComponent } from '../call-for-papers/call-for-papers.component';
-import { ImpressionsComponent } from '../impressions/impressions.component';
+import { CallForPapersComponent } from '../page-sections/call-for-papers.component';
+import { ImpressionsComponent } from '../page-sections/impressions.component';
+import { SpeakersComponent } from '../page-sections/speakers.component';
+import { TicketsComponent } from '../page-sections/tickets.component';
+import { WorkshopsComponent } from '../page-sections/workshops.component';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
+
   imports: [
     HeroComponent,
     TicketsComponent,
