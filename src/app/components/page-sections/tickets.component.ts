@@ -7,7 +7,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
   selector: 'app-tickets',
   imports: [TicketTimelineComponent],
   template: `
-    <section id="tickets" class="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="tickets" class="py-28 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Get Your Tickets</h2>
@@ -19,7 +19,9 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
 
         <app-ticket-timeline />
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"
+        >
           @for (ticket of sortedTickets(); track ticket.id) {
           <div class="relative">
             @if (ticket.type === 'bundle') {
@@ -33,14 +35,14 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
             </div>
             }
             <div
-              class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition-all hover:shadow-xl border-t-4 grid grid-rows-[1fr_auto]"
+              class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition-all hover:shadow-xl border-t-4 grid grid-rows-[1fr_auto] h-full"
               [class.border-[#e40341]]="ticket.type === 'conference'"
               [class.border-[#f034e0]]="ticket.type === 'workshop'"
               [class.border-[#921bf2]]="ticket.type === 'bundle'"
               [class.border-[#2192d1]]="ticket.type === 'online'"
               [class.opacity-75]="!ticket.available"
             >
-              <div class="p-6 flex flex-col">
+              <div class="p-8 flex flex-col">
                 <!-- Header with Badge -->
                 <div class="flex justify-between items-start mb-6">
                   <div>
