@@ -1,6 +1,13 @@
 import { Injectable, signal } from '@angular/core';
-import { Speaker, Talk, Workshop, Ticket, TicketPhase, ScheduleDay } from '../models/models';
 import { BehaviorSubject, Observable, map } from 'rxjs';
+import {
+  ScheduleDay,
+  Speaker,
+  Talk,
+  Ticket,
+  TicketPhase,
+  Workshop
+} from '../models/models';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +19,7 @@ export class ConferenceService {
       name: 'Manfred Steyer',
       title: 'Trainer and Consultant',
       company: 'Angular Architects',
-      bio: 'Trainer, consultant, and programming architect with a focus on Angular, Google Developer Expert (GDE) who writes for O\'Reilly, the German Java Magazine, and windows.developer. Regularly speaks at conferences.',
+      bio: "Trainer, consultant, and programming architect with a focus on Angular, Google Developer Expert (GDE) who writes for O'Reilly, the German Java Magazine, and windows.developer. Regularly speaks at conferences.",
       imageUrl: 'assets/images/speakers/manfred-steyer.jpg',
       githubHandle: 'manfredsteye'
     },
@@ -66,8 +73,10 @@ export class ConferenceService {
   private readonly talks = signal<Talk[]>([
     {
       id: '1',
-      title: 'The Missing Link in Angular\'s Signal Story: Resource API and httpResource',
-      abstract: 'Signals will shape Angular\'s future in terms of reactivity and change detection. The new Resource API, along with the httpResource, adds an essential piece to this story by providing an official solution for asynchronously loading data within a Signal-based dataflow.\n\nIn this session, we explore all the details you need to work effectively with this powerful API. Topics include managing different states, handling errors, streaming data, preventing race conditions, and canceling unnecessary requests. We also discuss how it interacts with RxJS through rxResource and demonstrate how to update loaded values.\n\nBy the end, you\'ll have a comprehensive understanding of the possibilities offered by this groundbreaking new API.',
+      title:
+        "The Missing Link in Angular's Signal Story: Resource API and httpResource",
+      abstract:
+        "Signals will shape Angular's future in terms of reactivity and change detection. The new Resource API, along with the httpResource, adds an essential piece to this story by providing an official solution for asynchronously loading data within a Signal-based dataflow.\n\nIn this session, we explore all the details you need to work effectively with this powerful API. Topics include managing different states, handling errors, streaming data, preventing race conditions, and canceling unnecessary requests. We also discuss how it interacts with RxJS through rxResource and demonstrate how to update loaded values.\n\nBy the end, you'll have a comprehensive understanding of the possibilities offered by this groundbreaking new API.",
       speakerId: 'manfred-steyer',
       time: '10:00 - 11:00',
       day: 'day1',
@@ -76,7 +85,8 @@ export class ConferenceService {
     {
       id: '2',
       title: 'Signals Deep Dive',
-      abstract: 'Understanding Angular Signals and their impact on reactive programming',
+      abstract:
+        'Understanding Angular Signals and their impact on reactive programming',
       speakerId: '5',
       time: '11:30 - 12:30',
       day: 'day1',
@@ -141,8 +151,10 @@ export class ConferenceService {
   private readonly workshops = signal<Workshop[]>([
     {
       id: '1',
-      title: 'Modern Angular Architectures - 2025 Edition: Nx, Micro Frontends and Signal Store',
-      abstract: 'Enterprise applications need to be maintainable in the long term. This workshop shows you how to achieve this goal using modern Angular.\n\nTo accomplish this, we combine cutting-edge features like Signals, the Signal Store, and Module Federation with established concepts like Strategic Design (DDD), monorepos, vertical architectures, and Micro Frontends. We use Nx for incremental builds and demonstrate how to analyze and improve your application\'s maintainability.\n\nBy the end, you\'ll be equipped to plan and implement sustainable solutions with modern Angular and evaluate the pros and cons of various approaches for your specific solution.',
+      title:
+        'Modern Angular Architectures - 2025 Edition: Nx, Micro Frontends and Signal Store',
+      abstract:
+        "Enterprise applications need to be maintainable in the long term. This workshop shows you how to achieve this goal using modern Angular.\n\nTo accomplish this, we combine cutting-edge features like Signals, the Signal Store, and Module Federation with established concepts like Strategic Design (DDD), monorepos, vertical architectures, and Micro Frontends. We use Nx for incremental builds and demonstrate how to analyze and improve your application's maintainability.\n\nBy the end, you'll be equipped to plan and implement sustainable solutions with modern Angular and evaluate the pros and cons of various approaches for your specific solution.",
       trainerId: 'manfred-steyer',
       duration: '8 hours',
       capacity: 30,
@@ -159,10 +171,7 @@ export class ConferenceService {
         },
         {
           title: 'Block 2',
-          topics: [
-            'Hands-on lab',
-            'Micro Frontends with Native Federation'
-          ]
+          topics: ['Hands-on lab', 'Micro Frontends with Native Federation']
         },
         {
           title: 'Block 3',
@@ -185,7 +194,8 @@ export class ConferenceService {
           ]
         }
       ],
-      targetAudience: 'This workshop is designed for developers with project experience using Angular.',
+      targetAudience:
+        'This workshop is designed for developers with project experience using Angular.',
       trainers: ['manfred-steyer', 'rainer-hahnekamp']
     }
   ]);
@@ -193,7 +203,7 @@ export class ConferenceService {
   private ticketPhasesSubject = new BehaviorSubject<TicketPhase[]>([
     {
       name: 'Super Early Bird',
-      startDate: new Date('2025-03-01'),
+      startDate: new Date('2025-04-01'),
       isActive: false,
       isPast: false,
       basePrice: 599
@@ -450,7 +460,7 @@ export class ConferenceService {
     // Go through phases in reverse to find current active phase
     for (let i = phases.length - 1; i >= 0; i--) {
       const phase = phases[i];
-      
+
       if (!foundActive && now >= phase.startDate) {
         phase.isActive = true;
         phase.isPast = false;
@@ -472,7 +482,7 @@ export class ConferenceService {
     const tickets = this.tickets();
     const updatedTickets = tickets.map(ticket => {
       const newTicket = { ...ticket };
-      
+
       switch (ticket.type) {
         case 'conference':
           newTicket.price = currentPhase.basePrice;
@@ -484,7 +494,7 @@ export class ConferenceService {
           newTicket.price = currentPhase.basePrice + 300; // Bundle premium
           break;
       }
-      
+
       return newTicket;
     });
 

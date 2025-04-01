@@ -78,7 +78,7 @@ import { ConferenceService } from '../../services/conference.service';
             <p
               class="text-sm font-medium text-gray-600 dark:text-gray-400 transition-colors duration-300"
             >
-              Begins {{ phase.startDate | date : 'MMMM dd' }}
+              Begins {{ phase.startDate | date : 'd. MMMM' }}
             </p>
           </div>
         </div>
