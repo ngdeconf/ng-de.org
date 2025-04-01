@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { Ticket, TicketPhase } from '../../models/models';
 import { ConferenceService } from '../../services/conference.service';
 import { TicketTimelineComponent } from './ticket-timeline.component';
@@ -60,7 +60,8 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
 
               <!-- Price Section -->
               <div class="mb-8">
-                @if (!isFinalBirdPhase() && ticket.type === 'conference') {
+                @if (!isFinalBirdPhase() && (ticket.type === 'conference' ||
+                ticket.type === 'bundle' || ticket.type === 'workshop')) {
                 <div class="flex items-end gap-3">
                   <p class="text-4xl font-bold text-[#e40341]">
                     {{ ticket.price }} {{ ticket.currency }}
@@ -71,7 +72,8 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                     </p>
                     <div class="relative">
                       <p class="text-xl text-gray-500 dark:text-gray-400">
-                        {{ finalPrice }} {{ ticket.currency }}
+                        {{ ticketFinalPrices()[ticket.id] }}
+                        {{ ticket.currency }}
                       </p>
                       <!-- Subtle line through price -->
                       <div class="absolute inset-0 flex items-center">
@@ -86,7 +88,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                   <p
                     class="text-sm font-medium text-[#e40341] whitespace-nowrap"
                   >
-                    Save {{ getSavingsAmount(ticket) }} {{ ticket.currency }}
+                    Save {{ ticketSavings()[ticket.id] }} {{ ticket.currency }}
                   </p>
                 </div>
                 } @else {
@@ -160,6 +162,8 @@ export class TicketsComponent implements OnInit {
   finalPrice = 899; // Default value for Final Bird phase
   currentPhase: TicketPhase | undefined;
   allPhases: TicketPhase[] = [];
+  ticketFinalPrices = signal<Record<string, number>>({});
+  ticketSavings = signal<Record<string, number>>({});
 
   constructor(private conferenceService: ConferenceService) {}
 
@@ -171,6 +175,7 @@ export class TicketsComponent implements OnInit {
       const finalBirdPhase = phases.find(phase => phase.name === 'Final Bird');
       if (finalBirdPhase) {
         this.finalPrice = finalBirdPhase.basePrice;
+        this.updateTicketPrices();
       }
     });
 
@@ -180,20 +185,30 @@ export class TicketsComponent implements OnInit {
     });
   }
 
+  updateTicketPrices() {
+    const finalPrices: Record<string, number> = {};
+    const savings: Record<string, number> = {};
+
+    this.tickets().forEach(ticket => {
+      finalPrices[ticket.id] = this.calculateFinalPrice(ticket);
+      savings[ticket.id] = finalPrices[ticket.id] - ticket.price;
+    });
+
+    this.ticketFinalPrices.set(finalPrices);
+    this.ticketSavings.set(savings);
+  }
+
+  calculateFinalPrice(ticket: Ticket): number {
+    if (ticket.type === 'workshop') {
+      return this.finalPrice - 200;
+    } else if (ticket.type === 'bundle') {
+      return this.finalPrice + 300;
+    }
+    return this.finalPrice;
+  }
+
   isFinalBirdPhase(): boolean {
     return this.currentPhase?.name === 'Final Bird';
-  }
-
-  getSavingsAmount(ticket: Ticket): number {
-    return this.finalPrice - ticket.price;
-  }
-
-  getSavingsPercentage(ticket: Ticket): number {
-    return Math.round((this.getSavingsAmount(ticket) / this.finalPrice) * 100);
-  }
-
-  isEarlyBird(ticket: Ticket): boolean {
-    return ticket.name.toLowerCase().includes('early-bird') && ticket.available;
   }
 
   formatDate(date: Date): string {
