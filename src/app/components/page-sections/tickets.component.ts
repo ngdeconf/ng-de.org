@@ -55,19 +55,12 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                 >
                   Online
                 </span>
-                } @else if (false && !isFinalBirdPhase() && ticket.type === 'conference')
-                {
-                <span
-                  class="bg-[#e40341]/10 text-[#e40341] text-xs font-medium px-3 py-1 rounded-full animate-pulse whitespace-nowrap"
-                >
-                  Save {{ getSavingsPercentage(ticket) }}%
-                </span>
                 }
               </div>
 
               <!-- Price Section -->
               <div class="mb-8">
-                @if (false && !isFinalBirdPhase() && ticket.type === 'conference') {
+                @if (!isFinalBirdPhase() && ticket.type === 'conference') {
                 <div class="flex items-end gap-3">
                   <p class="text-4xl font-bold text-[#e40341]">
                     {{ ticket.price }} {{ ticket.currency }}
