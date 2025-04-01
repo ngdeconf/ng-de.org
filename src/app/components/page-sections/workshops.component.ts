@@ -1,11 +1,8 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ConferenceService } from '../../services/conference.service';
 
 @Component({
   selector: 'app-workshops',
-  standalone: true,
-  imports: [CommonModule],
   template: `
     <section id="workshops" class="py-20">
       <div class="container mx-auto px-4">

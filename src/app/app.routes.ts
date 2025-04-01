@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { CodeOfConductComponent } from './components/code-of-conduct/code-of-conduct.component';
-import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
-import { ImprintComponent } from './components/imprint/imprint.component';
+import { CodeOfConductComponent } from './components/pages/code-of-conduct.component';
+import { HomeComponent } from './components/pages/home.component';
+import { ImprintComponent } from './components/pages/imprint.component';
+import { PrivacyPolicyComponent } from './components/pages/privacy-policy.component';
 
 export const routes: Routes = [
   {
