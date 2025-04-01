@@ -1,3 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
 # Angular v19+ Development Standards and Best Practices: A Comprehensive Guide
 
 ## 1. Core Architecture Guidelines
