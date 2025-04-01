@@ -214,3 +214,7 @@ Documentation standards:
 - **API Documentation:** Document public APIs thoroughly
 - **Changelog:** Maintain a changelog for version updates
 - **Usage Examples:** Provide usage examples for components and services
+
+## SSR
+
+- **Browser APIS** Make sure that the component code works for Server Side Rendering, too
