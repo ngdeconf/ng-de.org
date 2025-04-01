@@ -35,7 +35,11 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
             </div>
             }
             <div
-              class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition-all hover:shadow-xl border-t-4 grid grid-rows-[1fr_auto] h-full"
+              class="group rounded-2xl shadow-lg overflow-hidden transition-all hover:shadow-xl border-t-4 grid grid-rows-[1fr_auto] h-full"
+              [class.bg-white]="ticket.type !== 'bundle'"
+              [class.dark:bg-gray-800]="ticket.type !== 'bundle'"
+              [class.bg-gray-900]="ticket.type === 'bundle'"
+              [class.dark:bg-white]="ticket.type === 'bundle'"
               [class.border-[#e40341]]="ticket.type === 'conference'"
               [class.border-[#f034e0]]="ticket.type === 'workshop'"
               [class.border-[#921bf2]]="ticket.type === 'bundle'"
@@ -47,7 +51,11 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                 <div class="flex justify-between items-start mb-6">
                   <div>
                     <h3
-                      class="text-2xl font-bold mb-2 text-gray-900 dark:text-white"
+                      class="text-2xl font-bold mb-2"
+                      [class.text-gray-900]="ticket.type !== 'bundle'"
+                      [class.dark:text-white]="ticket.type !== 'bundle'"
+                      [class.text-white]="ticket.type === 'bundle'"
+                      [class.dark:text-gray-900]="ticket.type === 'bundle'"
                     >
                       {{
                         ticket.name === 'Conference Ticket'
@@ -55,7 +63,12 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                           : ticket.name
                       }}
                     </h3>
-                    <p class="text-gray-600 dark:text-gray-400">
+                    <p
+                      [class.text-gray-600]="ticket.type !== 'bundle'"
+                      [class.dark:text-gray-400]="ticket.type !== 'bundle'"
+                      [class.text-gray-300]="ticket.type === 'bundle'"
+                      [class.dark:text-gray-600]="ticket.type === 'bundle'"
+                    >
                       {{ ticket.description }}
                     </p>
                   </div>
@@ -126,7 +139,9 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                   <li class="flex items-start group/item">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 mr-3 text-[#e40341] mt-0.5 transform group-hover/item:scale-110 transition-transform"
+                      class="h-5 w-5 mr-3 mt-0.5 transform group-hover/item:scale-110 transition-transform"
+                      [class.text-[#e40341]]="ticket.type !== 'bundle'"
+                      [class.text-[#f034e0]]="ticket.type === 'bundle'"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -137,7 +152,10 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                       />
                     </svg>
                     <span
-                      class="text-gray-700 dark:text-gray-300 group-hover/item:text-gray-900 dark:group-hover/item:text-white transition-colors"
+                      [class.text-gray-700]="ticket.type !== 'bundle'"
+                      [class.dark:text-gray-300]="ticket.type !== 'bundle'"
+                      [class.text-gray-200]="ticket.type === 'bundle'"
+                      [class.dark:text-gray-700]="ticket.type === 'bundle'"
                     >
                       {{ feature }}
                     </span>
