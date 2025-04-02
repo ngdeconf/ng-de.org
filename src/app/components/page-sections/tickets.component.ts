@@ -34,7 +34,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
             </div>
             }
             <div
-              class="group rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl border-t-4 grid grid-rows-[1fr_auto] h-full transform hover:-translate-y-1"
+              class="rounded-2xl shadow-lg overflow-hidden border-t-4 grid grid-rows-[1fr_auto] h-full"
               [class.bg-white]="ticket.type !== 'bundle'"
               [class.dark:bg-gray-800]="ticket.type !== 'bundle'"
               [class.bg-gray-900]="ticket.type === 'bundle'"
@@ -147,10 +147,10 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                     </h4>
                     <ul class="space-y-4">
                       @for (feature of ticket.features; track $index) {
-                      <li class="flex items-start group/item">
+                      <li class="flex items-start">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5 mr-3 mt-0.5 transform group-hover/item:scale-110 transition-transform"
+                          class="h-5 w-5 mr-3 mt-0.5"
                           [class.text-[#e40341]]="ticket.type !== 'bundle'"
                           [class.text-[#f034e0]]="ticket.type === 'bundle'"
                           viewBox="0 0 20 20"
@@ -191,11 +191,12 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                     [class.cursor-not-allowed]="!ticket.available"
                     class="w-full cta-button rotate-gradient flex justify-center items-center group/button py-3"
                   >
-                    <span class="relative z-10">
+                    <span class="relative z-10 font-semibold">
                       @if (ticket.available) { Get Ticket } @else { Sold Out }
                     </span>
                     <div
-                      class="absolute inset-0 bg-[#e40341] opacity-0 group-hover/button:opacity-100 transition-opacity duration-300 rounded-lg"
+                      class="absolute inset-0 bg-[#e40341] opacity-0 group-hover/button:opacity-100 rounded-lg"
+                      style="transition: opacity 0.2s ease"
                     ></div>
                   </button>
                 </a>
