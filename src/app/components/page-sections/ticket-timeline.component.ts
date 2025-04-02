@@ -1,5 +1,12 @@
-import { AsyncPipe, DatePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { AsyncPipe, DatePipe, isPlatformBrowser } from '@angular/common';
+import {
+  Component,
+  ElementRef,
+  Inject,
+  OnInit,
+  PLATFORM_ID,
+  ViewChild
+} from '@angular/core';
 import { ConferenceService } from '../../services/conference.service';
 
 @Component({
@@ -7,15 +14,23 @@ import { ConferenceService } from '../../services/conference.service';
   imports: [AsyncPipe, DatePipe],
   template: `
     <!-- Timeline Container -->
-    <div class="relative mx-auto my-10 py-5 dark:bg-gray-900">
+    <div
+      class="relative mx-auto my-10 py-5 dark:bg-gray-900"
+      #timelineContainer
+    >
       <!-- Timeline Bar - Hidden on mobile -->
       <div
-        class="hidden md:block absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[#e40341] via-[#f034e0] via-[#921bf2] to-[#2192d1] shadow-lg shadow-[#e40341]/30 dark:shadow-[#e40341]/20"
-      ></div>
+        class="hidden md:block absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[#e40341]/20 via-[#f034e0]/20 via-[#921bf2]/20 to-[#2192d1]/20 shadow-lg shadow-[#e40341]/30 dark:shadow-[#e40341]/20 rounded-full overflow-hidden"
+      >
+        <div
+          class="absolute top-0 left-0 h-full w-0 bg-gradient-to-r from-[#e40341] via-[#f034e0] via-[#921bf2] to-[#2192d1] shadow-[0_0_15px_rgba(228,3,65,0.5)] dark:shadow-[0_0_15px_rgba(228,3,65,0.3)]"
+          [class.animate-fill-gradient]="isVisible"
+        ></div>
+      </div>
 
       <!-- Vertical line for mobile - Single gradient line -->
       <div
-        class="md:hidden absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#e40341] via-[#f034e0] via-[#921bf2] to-[#2192d1]"
+        class="md:hidden absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#e40341] via-[#f034e0] via-[#921bf2] to-[#2192d1] rounded-full"
       ></div>
 
       <!-- Timeline Items -->
@@ -99,24 +114,86 @@ import { ConferenceService } from '../../services/conference.service';
       animation: scale-in 0.3s ease-out;
     }
 
-     @keyframes fade-in {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
       }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-      .animate-fade-in {
-        animation: fade-in 0.5s ease-out forwards;
+    .animate-fade-in {
+      animation: fade-in 0.5s ease-out forwards;
+    }
+
+    @keyframes fill-gradient {
+      from {
+        width: 0;
+        opacity: 0.8;
       }
+      to {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+
+    .animate-fill-gradient {
+      animation: fill-gradient 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
   `
 })
-export class TicketTimelineComponent {
+export class TicketTimelineComponent implements OnInit {
+  @ViewChild('timelineContainer') timelineContainer!: ElementRef;
   ticketPhases$ = this.conferenceService.getTicketPhases();
+  private observer: IntersectionObserver | null = null;
+  private isBrowser: boolean;
+  isVisible = false;
 
-  constructor(private conferenceService: ConferenceService) {}
+  constructor(
+    private conferenceService: ConferenceService,
+    @Inject(PLATFORM_ID) platformId: Object
+  ) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
+
+  ngOnInit() {
+    if (this.isBrowser) {
+      this.setupIntersectionObserver();
+    }
+  }
+
+  private setupIntersectionObserver() {
+    if (!this.isBrowser) return;
+
+    this.observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            this.isVisible = true;
+            this.observer?.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '100px 0px'
+      }
+    );
+
+    // Start observing after a short delay to ensure the element is rendered
+    setTimeout(() => {
+      if (this.timelineContainer?.nativeElement) {
+        this.observer?.observe(this.timelineContainer.nativeElement);
+      }
+    }, 100);
+  }
+
+  ngOnDestroy() {
+    if (this.isBrowser && this.observer) {
+      this.observer.disconnect();
+    }
+  }
 }
