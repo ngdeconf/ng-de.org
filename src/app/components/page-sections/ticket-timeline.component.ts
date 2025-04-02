@@ -1,4 +1,4 @@
-import { AsyncPipe, DatePipe, isPlatformBrowser } from '@angular/common';
+import { DatePipe, isPlatformBrowser } from '@angular/common';
 import {
   Component,
   ElementRef,
@@ -11,7 +11,7 @@ import { ConferenceService } from '../../services/conference.service';
 
 @Component({
   selector: 'app-ticket-timeline',
-  imports: [AsyncPipe, DatePipe],
+  imports: [DatePipe],
   template: `
     <!-- Timeline Container -->
     <div
@@ -35,8 +35,7 @@ import { ConferenceService } from '../../services/conference.service';
 
       <!-- Timeline Items -->
       <div class="relative flex flex-col md:flex-row md:justify-between">
-        @for (phase of ticketPhases$ | async; track phase.name; let i = $index)
-        {
+        @for (phase of ticketPhases(); track phase.name; let i = $index) {
         <div
           class="relative z-10 flex items-center md:flex-col md:flex-1 px-4 md:px-2.5 py-6 md:py-5 opacity-0 animate-fade-in"
           [style.animation-delay]="i * 200 + 'ms'"
@@ -147,7 +146,7 @@ import { ConferenceService } from '../../services/conference.service';
 })
 export class TicketTimelineComponent implements OnInit {
   @ViewChild('timelineContainer') timelineContainer!: ElementRef;
-  ticketPhases$ = this.conferenceService.getTicketPhases();
+  ticketPhases = this.conferenceService.getTicketPhases();
   private observer: IntersectionObserver | null = null;
   private isBrowser: boolean;
   isVisible = false;

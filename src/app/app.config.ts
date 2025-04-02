@@ -1,5 +1,8 @@
 import { provideHttpClient } from '@angular/common/http';
-import { ApplicationConfig } from '@angular/core';
+import {
+  ApplicationConfig,
+  provideExperimentalZonelessChangeDetection
+} from '@angular/core';
 import {
   provideClientHydration,
   withEventReplay
@@ -11,6 +14,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideHttpClient(),
     provideClientHydration(withEventReplay()),
-    provideRouter(routes)
+    provideRouter(routes),
+    provideExperimentalZonelessChangeDetection()
   ]
 };
