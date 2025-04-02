@@ -1,5 +1,4 @@
-import { Injectable, signal } from '@angular/core';
-import { BehaviorSubject, Observable, map } from 'rxjs';
+import { computed, Injectable, signal } from '@angular/core';
 import {
   ScheduleDay,
   Speaker,
@@ -9,9 +8,7 @@ import {
   Workshop
 } from '../models/models';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class ConferenceService {
   private readonly speakers = signal<Speaker[]>([
     {
@@ -200,7 +197,7 @@ export class ConferenceService {
     }
   ]);
 
-  private ticketPhasesSubject = new BehaviorSubject<TicketPhase[]>([
+  private readonly ticketPhases = signal<TicketPhase[]>([
     {
       name: 'Super Early Bird',
       startDate: new Date('2025-04-01'),
@@ -230,6 +227,10 @@ export class ConferenceService {
       basePrice: 899
     }
   ]);
+
+  readonly currentPhase = computed(() => {
+    return this.ticketPhases().find(phase => phase.isActive);
+  });
 
   private readonly schedule = signal<ScheduleDay[]>([
     {
@@ -435,72 +436,6 @@ export class ConferenceService {
     }
   ]);
 
-  constructor() {
-    this.updatePhases();
-  }
-
-  getTicketPhases(): Observable<TicketPhase[]> {
-    return this.ticketPhasesSubject.asObservable();
-  }
-
-  getCurrentPhase(): Observable<TicketPhase | undefined> {
-    return this.getTicketPhases().pipe(
-      map(phases => phases.find(phase => phase.isActive))
-    );
-  }
-
-  private updatePhases() {
-    const now = new Date();
-    let foundActive = false;
-
-    const phases = this.ticketPhasesSubject.value
-      .sort((a, b) => a.startDate.getTime() - b.startDate.getTime())
-      .map(phase => ({ ...phase }));
-
-    // Go through phases in reverse to find current active phase
-    for (let i = phases.length - 1; i >= 0; i--) {
-      const phase = phases[i];
-
-      if (!foundActive && now >= phase.startDate) {
-        phase.isActive = true;
-        phase.isPast = false;
-        foundActive = true;
-      } else {
-        phase.isActive = false;
-        phase.isPast = now >= phase.startDate;
-      }
-    }
-
-    this.ticketPhasesSubject.next(phases);
-    this.updateTicketPrices(phases);
-  }
-
-  private updateTicketPrices(phases: TicketPhase[]) {
-    const currentPhase = phases.find(phase => phase.isActive);
-    if (!currentPhase) return;
-
-    const tickets = this.tickets();
-    const updatedTickets = tickets.map(ticket => {
-      const newTicket = { ...ticket };
-
-      switch (ticket.type) {
-        case 'conference':
-          newTicket.price = currentPhase.basePrice;
-          break;
-        case 'workshop':
-          newTicket.price = currentPhase.basePrice - 200; // Workshop premium
-          break;
-        case 'bundle':
-          newTicket.price = currentPhase.basePrice + 300; // Bundle premium
-          break;
-      }
-
-      return newTicket;
-    });
-
-    this.tickets.set(updatedTickets);
-  }
-
   private readonly tickets = signal<Ticket[]>([
     {
       id: '1',
@@ -548,6 +483,70 @@ export class ConferenceService {
       type: 'workshop'
     }
   ]);
+
+  constructor() {
+    this.updatePhases();
+  }
+
+  getTicketPhases() {
+    return this.ticketPhases;
+  }
+
+  getCurrentPhase() {
+    return this.currentPhase;
+  }
+
+  private updatePhases() {
+    const now = new Date();
+    let foundActive = false;
+
+    const phases = [...this.ticketPhases()]
+      .sort((a, b) => a.startDate.getTime() - b.startDate.getTime())
+      .map(phase => ({ ...phase }));
+
+    // Go through phases in reverse to find current active phase
+    for (let i = phases.length - 1; i >= 0; i--) {
+      const phase = phases[i];
+
+      if (!foundActive && now >= phase.startDate) {
+        phase.isActive = true;
+        phase.isPast = false;
+        foundActive = true;
+      } else {
+        phase.isActive = false;
+        phase.isPast = now >= phase.startDate;
+      }
+    }
+
+    this.ticketPhases.set(phases);
+    this.updateTicketPrices(phases);
+  }
+
+  private updateTicketPrices(phases: TicketPhase[]) {
+    const currentPhase = phases.find(phase => phase.isActive);
+    if (!currentPhase) return;
+
+    const tickets = this.tickets();
+    const updatedTickets = tickets.map(ticket => {
+      const newTicket = { ...ticket };
+
+      switch (ticket.type) {
+        case 'conference':
+          newTicket.price = currentPhase.basePrice;
+          break;
+        case 'workshop':
+          newTicket.price = currentPhase.basePrice - 200; // Workshop premium
+          break;
+        case 'bundle':
+          newTicket.price = currentPhase.basePrice + 300; // Bundle premium
+          break;
+      }
+
+      return newTicket;
+    });
+
+    this.tickets.set(updatedTickets);
+  }
 
   getSpeakers() {
     return this.speakers;

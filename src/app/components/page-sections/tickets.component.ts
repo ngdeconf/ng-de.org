@@ -1,5 +1,5 @@
-import { Component, computed, OnInit, signal } from '@angular/core';
-import { Ticket, TicketPhase } from '../../models/models';
+import { Component, computed, effect, signal } from '@angular/core';
+import { Ticket } from '../../models/models';
 import { ConferenceService } from '../../services/conference.service';
 import { TicketTimelineComponent } from './ticket-timeline.component';
 
@@ -209,11 +209,9 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
     </section>
   `
 })
-export class TicketsComponent implements OnInit {
+export class TicketsComponent {
   tickets = this.conferenceService.getTickets();
-  finalPrice = 899; // Default value for Final Bird phase
-  currentPhase: TicketPhase | undefined;
-  allPhases: TicketPhase[] = [];
+  finalPrice = signal(899); // Default value for Final Bird phase
   ticketFinalPrices = signal<Record<string, number>>({});
   ticketSavings = signal<Record<string, number>>({});
 
@@ -231,23 +229,18 @@ export class TicketsComponent implements OnInit {
     );
   });
 
-  constructor(private conferenceService: ConferenceService) {}
+  constructor(private conferenceService: ConferenceService) {
+    // Setup effect to calculate prices when phases change
+    effect(() => {
+      const allPhases = this.conferenceService.getTicketPhases()();
+      const finalBirdPhase = allPhases.find(
+        phase => phase.name === 'Final Bird'
+      );
 
-  ngOnInit() {
-    // Subscribe to get all phases
-    this.conferenceService.getTicketPhases().subscribe(phases => {
-      this.allPhases = phases;
-      // Find the "Final Bird" phase
-      const finalBirdPhase = phases.find(phase => phase.name === 'Final Bird');
       if (finalBirdPhase) {
-        this.finalPrice = finalBirdPhase.basePrice;
+        this.finalPrice.set(finalBirdPhase.basePrice);
         this.updateTicketPrices();
       }
-    });
-
-    // Subscribe to get current phase
-    this.conferenceService.getCurrentPhase().subscribe(phase => {
-      this.currentPhase = phase;
     });
   }
 
@@ -266,15 +259,15 @@ export class TicketsComponent implements OnInit {
 
   calculateFinalPrice(ticket: Ticket): number {
     if (ticket.type === 'workshop') {
-      return this.finalPrice - 200;
+      return this.finalPrice() - 200;
     } else if (ticket.type === 'bundle') {
-      return this.finalPrice + 300;
+      return this.finalPrice() + 300;
     }
-    return this.finalPrice;
+    return this.finalPrice();
   }
 
   isFinalBirdPhase(): boolean {
-    return this.currentPhase?.name === 'Final Bird';
+    return this.conferenceService.getCurrentPhase()()?.name === 'Final Bird';
   }
 
   formatDate(date: Date): string {
