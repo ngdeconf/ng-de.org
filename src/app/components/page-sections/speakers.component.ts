@@ -17,7 +17,7 @@ import { ConferenceService } from '../../services/conference.service';
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           @for (speaker of speakers(); track speaker.id; let i = $index) {
           <div
-            class="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition-all hover:shadow-xl opacity-0 animate-fade-in"
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden opacity-0 animate-fade-in"
             [style.animation-delay]="i * 100 + 'ms'"
           >
             <!-- Card Header with Image -->
@@ -72,11 +72,16 @@ import { ConferenceService } from '../../services/conference.service';
                   [href]="'https://github.com/' + speaker.githubHandle"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="group/social text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                  class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                  style="transition: color 0.2s ease"
                   aria-label="GitHub"
                 >
                   <svg
-                    class="w-6 h-6 transform group-hover/social:scale-110 transition-transform"
+                    class="w-6 h-6"
+                    style="transition: transform 0.2s ease"
+                    [style.transform]="'scale(1)'"
+                    onmouseover="this.style.transform='scale(1.1)'"
+                    onmouseout="this.style.transform='scale(1)'"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -110,7 +115,7 @@ import { ConferenceService } from '../../services/conference.service';
       }
 
       .animate-fade-in {
-        animation: fade-in 0.5s ease-out forwards;
+        animation: fade-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
       }
     `
   ]
