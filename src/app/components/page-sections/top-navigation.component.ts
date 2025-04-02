@@ -16,46 +16,54 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
   imports: [ThemeToggleButtonComponent, MobileMenuComponent],
   template: `
     <header
-      class="fixed w-full z-50 transition-all duration-300"
+      class="fixed w-full z-50 transition-all duration-500 ease-in-out"
       [class.bg-white]="isScrolled() && !isDarkMode()"
-      [class.bg-black]="isScrolled() && isDarkMode()"
-      [class.shadow-md]="isScrolled()"
+      [class.bg-gray-900]="isScrolled() && isDarkMode()"
+      [class.bg-transparent]="!isScrolled()"
+      [class.backdrop-blur-sm]="isScrolled()"
+      [class.shadow-lg]="isScrolled()"
       [class.py-2]="isScrolled()"
       [class.py-4]="!isScrolled()"
     >
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center">
-          <div class="flex items-center space-x-2">
+          <div class="flex items-center space-x-3">
             <img src="assets/logo.svg" alt="NG-DE Logo" class="h-10 w-10" />
             <div>
-              <h1 class="text-2xl font-bold text-primary-500">
+              <h1 class="text-2xl font-bold">
                 <span
-                  class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500"
+                  class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 via-primary-400 to-secondary-500"
                 >
                   NG-DE
                 </span>
               </h1>
-              <p class="text-xs dark:text-gray-300">
+              <p class="text-xs text-gray-600 dark:text-gray-300">
                 November 5-7, 2025 • Berlin
               </p>
             </div>
           </div>
 
           <nav
-            class="hidden md:flex items-center space-x-6 text-gray-700 dark:text-gray-200"
+            class="hidden md:flex items-center space-x-8 text-gray-600 dark:text-gray-300"
           >
-            <a href="#home" class="hover:text-primary-500 transition-colors"
+            <a
+              href="#home"
+              class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300"
               >Home</a
             >
-            <a href="#tickets" class="hover:text-primary-500 transition-colors"
+            <a
+              href="#tickets"
+              class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300"
               >Tickets</a
             >
-            <a href="#speakers" class="hover:text-primary-500 transition-colors"
+            <a
+              href="#speakers"
+              class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300"
               >Speakers</a
             >
             <a
               href="#workshops"
-              class="hover:text-primary-500 transition-colors"
+              class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors duration-300"
               >Workshops</a
             >
           </nav>
@@ -65,7 +73,7 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
 
             <button
               (click)="toggleMobileMenu()"
-              class="md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300"
               aria-label="Toggle mobile menu"
             >
               @if (!isMobileMenuOpen()) {

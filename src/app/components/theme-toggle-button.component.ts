@@ -7,13 +7,13 @@ import { ThemeService } from '../services/theme.service';
   template: `
     <button
       (click)="toggleTheme()"
-      class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+      class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 ease-in-out"
       aria-label="Toggle theme"
     >
       @if (!isDarkMode()) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
+        class="h-5 w-5 text-gray-600 dark:text-gray-300"
         viewBox="0 0 24 24"
         fill="currentColor"
       >
@@ -24,7 +24,7 @@ import { ThemeService } from '../services/theme.service';
       } @if (isDarkMode()) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
+        class="h-5 w-5 text-gray-600 dark:text-gray-300"
         viewBox="0 0 24 24"
         fill="currentColor"
       >
