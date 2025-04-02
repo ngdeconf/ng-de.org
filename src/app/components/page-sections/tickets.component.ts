@@ -26,16 +26,15 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
           <div class="relative">
             @if (ticket.type === 'bundle') {
             <div
-              class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-800 px-4 py-1 rounded-full shadow-md z-10"
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[#921bf2] to-[#f034e0] px-6 py-2 rounded-full shadow-lg z-10"
             >
-              <span
-                class="text-[#7a62f5] dark:text-[#a788fd] font-medium text-sm"
-                >Most Value</span
+              <span class="text-white font-semibold text-sm tracking-wide"
+                >Best Value</span
               >
             </div>
             }
             <div
-              class="group rounded-2xl shadow-lg overflow-hidden transition-all hover:shadow-xl border-t-4 grid grid-rows-[1fr_auto] h-full"
+              class="group rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl border-t-4 grid grid-rows-[1fr_auto] h-full transform hover:-translate-y-1"
               [class.bg-white]="ticket.type !== 'bundle'"
               [class.dark:bg-gray-800]="ticket.type !== 'bundle'"
               [class.bg-gray-900]="ticket.type === 'bundle'"
@@ -123,9 +122,14 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                     </p>
                   </div>
                   } @else {
-                  <p class="text-4xl font-bold text-[#e40341]">
-                    {{ ticket.price }} {{ ticket.currency }}
-                  </p>
+                  <div class="flex flex-col">
+                    <span class="text-sm font-medium text-[#e40341]"
+                      >Regular Price</span
+                    >
+                    <p class="text-4xl font-bold text-[#e40341]">
+                      {{ ticket.price }} {{ ticket.currency }}
+                    </p>
+                  </div>
                   } @if (ticket.availableUntil && ticket.available) {
                   <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
                     Available until {{ formatDate(ticket.availableUntil) }}
@@ -134,34 +138,43 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                 </div>
 
                 <!-- Features List -->
-                <ul class="space-y-4 mb-8">
-                  @for (feature of ticket.features; track $index) {
-                  <li class="flex items-start group/item">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 mr-3 mt-0.5 transform group-hover/item:scale-110 transition-transform"
-                      [class.text-[#e40341]]="ticket.type !== 'bundle'"
-                      [class.text-[#f034e0]]="ticket.type === 'bundle'"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
+                <div class="space-y-6">
+                  <div class="space-y-4">
+                    <h4
+                      class="font-semibold text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400"
                     >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    <span
-                      [class.text-gray-700]="ticket.type !== 'bundle'"
-                      [class.dark:text-gray-300]="ticket.type !== 'bundle'"
-                      [class.text-gray-200]="ticket.type === 'bundle'"
-                      [class.dark:text-gray-700]="ticket.type === 'bundle'"
-                    >
-                      {{ feature }}
-                    </span>
-                  </li>
-                  }
-                </ul>
+                      What's Included
+                    </h4>
+                    <ul class="space-y-4">
+                      @for (feature of ticket.features; track $index) {
+                      <li class="flex items-start group/item">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5 mr-3 mt-0.5 transform group-hover/item:scale-110 transition-transform"
+                          [class.text-[#e40341]]="ticket.type !== 'bundle'"
+                          [class.text-[#f034e0]]="ticket.type === 'bundle'"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                        <span
+                          [class.text-gray-700]="ticket.type !== 'bundle'"
+                          [class.dark:text-gray-300]="ticket.type !== 'bundle'"
+                          [class.text-gray-200]="ticket.type === 'bundle'"
+                          [class.dark:text-gray-700]="ticket.type === 'bundle'"
+                        >
+                          {{ feature }}
+                        </span>
+                      </li>
+                      }
+                    </ul>
+                  </div>
+                </div>
               </div>
 
               <!-- Button Section -->
@@ -169,13 +182,14 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                 <a
                   href="https://ti.to/ng-de/berlin-2025"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="block"
                 >
                   <button
                     [disabled]="!ticket.available"
                     [class.opacity-50]="!ticket.available"
                     [class.cursor-not-allowed]="!ticket.available"
-                    class="w-full cta-button rotate-gradient flex justify-center items-center group/button"
+                    class="w-full cta-button rotate-gradient flex justify-center items-center group/button py-3"
                   >
                     <span class="relative z-10">
                       @if (ticket.available) { Get Ticket } @else { Sold Out }
