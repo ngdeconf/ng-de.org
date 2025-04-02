@@ -1,0 +1,94 @@
+{
+  "title": "NG-DE Conference 2025 – Q&A",
+  "sections": [
+    {
+      "category": "Tickets",
+      "questions": [
+        {
+          "question": "When can I buy tickets for NG-DE 2025?",
+          "answer": "Ticket sales have already started! Prices are tiered – the earlier you buy, the cheaper your ticket."
+        },
+        {
+          "question": "Will I receive an invoice for my ticket?",
+          "answer": "Yes, you will receive an invoice by email after purchasing your ticket."
+        },
+        {
+          "question": "Can I pay by invoice?",
+          "answer": "Yes, you can pay for your ticket via PayPal, Stripe (credit card), or by invoice."
+        },
+        {
+          "question": "Are there any discounts?",
+          "answer": "Yes, discount promotions are usually announced via our social media channels and can be redeemed during the ticket purchase."
+        },
+        {
+          "question": "Is catering included in the ticket?",
+          "answer": "Yes!\n\nConference days (Nov 6–7, 2025): A light breakfast, lunch, evening finger food, as well as all drinks and coffee are included.\n\nWorkshop day (Nov 5, 2025): A light breakfast, lunch, soft drinks, and coffee are included.\n\nSustainability focus: The catering is fully vegan to reduce our environmental footprint – something we deeply care about."
+        },
+        {
+          "question": "Is there an evening event?",
+          "answer": "Yes, your ticket includes automatic participation in our evening event. Food and drinks are included in the ticket price."
+        },
+        {
+          "question": "Can I cancel my ticket?",
+          "answer": "Yes, cancellations are possible in exceptional cases. Please write an email to info@ng-de.org."
+        }
+      ]
+    },
+    {
+      "category": "Sustainability",
+      "questions": [
+        {
+          "question": "Why is only vegan food offered?",
+          "answer": "Sustainability is a core value of the NG-DE Conference. By avoiding animal products, we significantly reduce CO₂ emissions and water usage. We also ensure that all attendees – regardless of dietary habits or allergies – can enjoy high-quality and sustainable meals."
+        },
+        {
+          "question": "What other sustainable practices does NG-DE implement?",
+          "answer": "We use an energy-efficient and accessible venue.\n\nAll printed materials are reduced to a minimum – we rely on digital solutions.\n\nWe encourage eco-friendly travel and provide information on sustainable transport options.\n\nOur waste management focuses on recycling and avoiding single-use plastics."
+        }
+      ]
+    },
+    {
+      "category": "Organization & Location",
+      "questions": [
+        {
+          "question": "Where will the NG-DE Conference 2025 take place?",
+          "answer": "NG-DE 2025 will take place at the GLS Campus Berlin:\n📍 GLS Campus Berlin, Kastanienallee 82, 10435 Berlin"
+        },
+        {
+          "question": "What do I need for check-in?",
+          "answer": "We are paperless! Please show your QR code at check-in. You will receive it in the confirmation email after purchasing your ticket."
+        },
+        {
+          "question": "Is there a cloakroom?",
+          "answer": "Yes, you can drop off your luggage at the cloakroom free of charge. Please note that we cannot accept liability for deposited items."
+        },
+        {
+          "question": "Is the venue accessible?",
+          "answer": "Yes! The main area is on the ground floor, and additional conference rooms and restrooms are accessible via elevator. Feel free to contact us in advance if you need special assistance."
+        }
+      ]
+    },
+    {
+      "category": "Partnerships",
+      "questions": [
+        {
+          "question": "How can I become a partner or sponsor?",
+          "answer": "We offer tailored sponsorship packages to present your company in the best possible way. Contact us at info@ng-de.org to learn more about our options."
+        }
+      ]
+    },
+    {
+      "category": "Program & Content",
+      "questions": [
+        {
+          "question": "How can I participate as a speaker at NG-DE?",
+          "answer": "The program is partially curated, but there is also an open call for papers for a limited number of slots. Submit your proposal via the link provided on our website."
+        },
+        {
+          "question": "Where can I find the conference program?",
+          "answer": "The current program is available on our website and is updated regularly."
+        }
+      ]
+    }
+  ]
+}
