@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HeroComponent } from '../page-sections/hero.component';
 // import { ScheduleComponent } from '../schedule/schedule.component';
 import { CallForPapersComponent } from '../page-sections/call-for-papers.component';
+import { FaqComponent } from '../page-sections/faq.component';
 import { ImpressionsComponent } from '../page-sections/impressions.component';
 import { SpeakersComponent } from '../page-sections/speakers.component';
 import { TicketsComponent } from '../page-sections/tickets.component';
@@ -17,7 +18,8 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     // ScheduleComponent,
     WorkshopsComponent,
     CallForPapersComponent,
-    ImpressionsComponent
+    ImpressionsComponent,
+    FaqComponent
   ],
   template: `
     <app-hero />
@@ -27,6 +29,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     <app-workshops />
     <app-impressions />
     <app-call-for-papers />
+    <app-faq />
   `
 })
 export class HomeComponent {}

@@ -70,6 +70,12 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 style="transition: opacity 0.2s ease"
                 >Workshops</a
               >
+              <a
+                href="#faq"
+                class="hover:text-primary-500 dark:hover:text-primary-400"
+                style="transition: opacity 0.2s ease"
+                >FAQ</a
+              >
             </nav>
 
             <div class="flex items-center space-x-4">

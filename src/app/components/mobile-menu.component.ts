@@ -47,6 +47,13 @@ import { Component, Input } from '@angular/core';
           (click)="onClose()"
           >Workshops</a
         >
+        <a
+          href="#faq"
+          class="py-2 hover:text-primary-500 dark:hover:text-primary-400"
+          style="transition: color 0.2s ease"
+          (click)="onClose()"
+          >FAQ</a
+        >
       </nav>
     </div>
     }
