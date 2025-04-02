@@ -189,15 +189,15 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                     [disabled]="!ticket.available"
                     [class.opacity-50]="!ticket.available"
                     [class.cursor-not-allowed]="!ticket.available"
-                    class="w-full cta-button rotate-gradient flex justify-center items-center group/button py-3"
+                    class="w-full text-white font-medium px-8 py-3.5 rounded-lg flex justify-center items-center"
+                    [class.bg-[#e40341]]="ticket.available"
+                    [class.hover:bg-[#c90339]]="ticket.available"
+                    [class.bg-gray-400]="!ticket.available"
+                    style="transition: background-color 0.2s ease"
                   >
-                    <span class="relative z-10 font-semibold">
+                    <span class="relative z-10 font-semibold text-center">
                       @if (ticket.available) { Get Ticket } @else { Sold Out }
                     </span>
-                    <div
-                      class="absolute inset-0 bg-[#e40341] opacity-0 group-hover/button:opacity-100 rounded-lg"
-                      style="transition: opacity 0.2s ease"
-                    ></div>
                   </button>
                 </a>
               </div>

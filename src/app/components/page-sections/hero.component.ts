@@ -113,12 +113,16 @@ import { Component } from '@angular/core';
             <div
               class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
             >
-              <a href="#tickets" class="cta-button-berlin text-center">
-                Get Tickets
+              <a
+                href="#tickets"
+                class="text-white font-medium px-8 py-4 rounded-lg relative overflow-hidden text-center bg-[#e40341] hover:bg-[#c90339]"
+                style="transition: background-color 0.2s ease"
+              >
+                <span class="relative z-10 font-semibold">Get Tickets</span>
               </a>
               <a
                 href="#speakers"
-                class="inline-block px-6 py-3 font-medium rounded-md transition-all bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600 text-center"
+                class="inline-block px-8 py-4 font-semibold rounded-lg transition-all bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600 text-center"
               >
                 View Speakers
               </a>
