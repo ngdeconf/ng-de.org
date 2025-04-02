@@ -10,12 +10,12 @@ import { ConferenceService } from '../../services/conference.service';
     <div class="relative mx-auto my-10 py-5 dark:bg-gray-900">
       <!-- Timeline Bar - Hidden on mobile -->
       <div
-        class="hidden md:block absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[#e40341] via-[#f034e0] via-[#921bf2] to-[#2192d1] shadow-lg shadow-[#e40341]/30 dark:shadow-[#e40341]/20"
+        class="hidden md:block absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[#e40341] via-[#f034e0] via-[#921bf2] to-[#2192d1] shadow-lg shadow-[#e40341]/30 dark:shadow-[#e40341]/20 rounded-full"
       ></div>
 
       <!-- Vertical line for mobile - Single gradient line -->
       <div
-        class="md:hidden absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#e40341] via-[#f034e0] via-[#921bf2] to-[#2192d1]"
+        class="md:hidden absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#e40341] via-[#f034e0] via-[#921bf2] to-[#2192d1] rounded-full"
       ></div>
 
       <!-- Timeline Items -->
