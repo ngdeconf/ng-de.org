@@ -39,9 +39,7 @@ import { FaqSection, FaqService } from '../../services/faq.service';
         <div class="max-w-4xl mx-auto">
           @for (section of faqSections(); track section.category) {
           <div class="mb-8">
-            <h3
-              class="text-2xl font-bold mb-4 text-[#e40341] dark:text-[#f034e0]"
-            >
+            <h3 class="text-2xl font-bold mb-4 text-[#e40341]">
               {{ section.category }}
             </h3>
 
