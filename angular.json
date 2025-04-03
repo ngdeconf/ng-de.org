@@ -26,6 +26,8 @@
             }
           },
           "options": {
+            "outputHashing": "all",
+            "sourceMap": true,
             "prerender": {
               "discoverRoutes": true
             },

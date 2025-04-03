@@ -64,6 +64,24 @@ export class ConferenceService {
       bio: 'Maria Korneeva is an experienced Angular developer and consultant specializing in building scalable web applications. She actively contributes to the Angular community through workshops, mentoring, and speaking at tech events.',
       imageUrl: 'assets/images/speakers/maria-korneeva.jpeg',
       githubHandle: 'mariakorneeva'
+    },
+    {
+      id: 'robin-boehm',
+      name: 'Robin Böhm',
+      title: 'CEO and Trainer',
+      company: 'Workshops.DE',
+      bio: 'Robin is the founder of Workshops.DE and a passionate technology enthusiast. He has been navigating the world of software development for over a decade and has made it his mission to make complex technical concepts accessible.\n\nWith a special focus on AI technologies, modern developer workflows, and practical learning approaches, he brings together people who want to harness the full potential of current tech innovations. Robin believes in the "Divide & Conquer" approach to learning and always conveys knowledge hands-on rather than with dry theory.\n\nWhen he\'s not building communities or leading workshops, he experiments with the latest AI tools and agents or shares his knowledge in live streams and interactive formats. His casual, authentic style and ability to explain complex topics in an understandable way make him a valued mentor in the tech community.',
+      imageUrl: 'assets/images/speakers/robin-boehm.jpg',
+      githubHandle: 'robinboehm'
+    },
+    {
+      id: 'gregor-woiwode',
+      name: 'Gregor Woiwode',
+      title: 'Angular Consultant & Trainer',
+      company: 'Workshops.DE',
+      bio: 'Gregor loves developing tools that allow programmers to be even more productive. As a speaker, trainer, and consultant, he teaches techniques to continuously improve the architecture of Angular applications. He enjoys running and tries his hand as an amateur chef from time to time.',
+      imageUrl: 'assets/images/speakers/gregor-woiwode.jpg',
+      githubHandle: 'GregOnNet'
     }
   ]);
 
@@ -194,6 +212,56 @@ export class ConferenceService {
       targetAudience:
         'This workshop is designed for developers with project experience using Angular.',
       trainers: ['manfred-steyer', 'rainer-hahnekamp']
+    },
+    {
+      id: '2',
+      title: 'Agent-Driven Coding: Boosting Developer Productivity with Cursor',
+      abstract:
+        "Discover how to make developers 10x more productive using Agent-Driven Coding techniques with Cursor IDE. This hands-on workshop will explore the power of AI-assisted development and teach you how to leverage different AI models to enhance your workflow.\n\nWe'll cover the setup and integration of Cursor IDE with various AI models, creating and managing rule files for code standards, and developing efficient workflows that combine human creativity with AI capabilities. Learn how to use semantic search, code suggestion engines, and error diagnostics to streamline your development process.\n\nBy the end of this workshop, you'll understand how to effectively incorporate AI assistants into your development workflow, resulting in faster coding, higher quality code, and increased productivity.",
+      trainerId: 'robin-boehm',
+      duration: '8 hours',
+      capacity: 30,
+      outline: [
+        {
+          title: 'Introduction to Agent-Driven Coding',
+          topics: [
+            'Understanding AI-assisted development',
+            'The evolution from auto-complete to agent-driven coding',
+            'Overview of Cursor IDE capabilities',
+            'Setting up Cursor and configuring AI models'
+          ]
+        },
+        {
+          title: 'Working with AI Models in Cursor',
+          topics: [
+            'Understanding different AI models and their strengths',
+            'Configuring model preferences for different tasks',
+            'Prompt engineering for optimal results',
+            'Hands-on lab: Model selection and interaction'
+          ]
+        },
+        {
+          title: 'Rule Files and Code Standards',
+          topics: [
+            'Creating and managing rule files',
+            'Enforcing code standards with AI assistance',
+            'Custom rules for project-specific requirements',
+            'Using rules for Angular projects'
+          ]
+        },
+        {
+          title: 'Workflow Optimization',
+          topics: [
+            'Building efficient AI-assisted workflows',
+            'Integration with existing development processes',
+            'Version control and collaboration with AI assistance',
+            'Hands-on lab: Developing a feature with agent-driven coding'
+          ]
+        }
+      ],
+      targetAudience:
+        'This workshop is designed for Angular developers interested in productivity enhancements and AI-assisted coding techniques.',
+      trainers: ['robin-boehm', 'gregor-woiwode']
     }
   ]);
 

@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               <span class="block">
                 <span
-                  class="bg-clip-text text-transparent bg-gradient-to-l from-[#e40341] via-[#f034e0] via-[#921bf2] to-[#2192d1]"
+                  class="bg-clip-text text-transparent bg-gradient-to-l from-primary-500 via-primary-400 to-secondary-500"
                 >
                   NG-DE
                 </span>

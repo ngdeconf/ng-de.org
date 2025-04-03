@@ -1,72 +1,75 @@
-import { Component } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  Inject,
+  OnInit,
+  PLATFORM_ID,
+  signal,
+  ViewChild
+} from '@angular/core';
 import { ConferenceService } from '../../services/conference.service';
 
 @Component({
   selector: 'app-speakers',
+  imports: [CommonModule],
   template: `
-    <section id="speakers" class="py-20">
+    <section #speakersSection id="speakers" class="py-16">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our Speakers</h2>
-          <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-3">Meet Our Speakers</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             Learn from Angular experts and community leaders from around the
             world
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          @for (speaker of speakers(); track speaker.id; let i = $index) {
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          @for (speaker of shuffledSpeakers(); track speaker.id; let i = $index)
+          {
           <div
-            class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden opacity-0 animate-fade-in"
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden card-item opacity-0"
+            [class.animate-fade-in]="isIntersecting()"
             [style.animation-delay]="i * 100 + 'ms'"
           >
             <!-- Card Header with Image -->
             <div
-              class="relative bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-8"
+              class="relative bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-4"
             >
-              <div class="relative mx-auto w-40 h-40 mb-6">
+              <div class="relative mx-auto w-28 h-28 mb-3">
                 <!-- Image Container -->
                 <div
-                  class="absolute inset-0 rounded-full overflow-hidden ring-4 ring-white dark:ring-gray-800 shadow-lg"
+                  class="absolute inset-0 rounded-full overflow-hidden ring-3 ring-white dark:ring-gray-800 shadow-md"
                 >
                   <img
                     [src]="speaker.imageUrl"
                     [alt]="speaker.name"
-                    class="w-full h-full"
+                    class="w-full h-full object-cover"
                   />
                 </div>
               </div>
             </div>
 
             <!-- Card Content -->
-            <div class="p-6">
+            <div class="p-4">
               <!-- Speaker Info -->
-              <div class="text-center mb-4">
-                <h3 class="text-2xl font-bold mb-1">{{ speaker.name }}</h3>
+              <div class="text-center mb-3">
+                <h3 class="text-xl font-bold mb-1">{{ speaker.name }}</h3>
                 <p
-                  class="text-primary-600 dark:text-primary-400 font-medium mb-1"
+                  class="text-primary-600 dark:text-primary-400 font-medium text-sm mb-1"
                 >
                   {{ speaker.title }}
                 </p>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                <p class="text-gray-600 dark:text-gray-400 text-xs">
                   {{ speaker.company }}
                 </p>
               </div>
 
-              <!-- Bio -->
-              <div class="relative mb-6">
-                <div
-                  class="absolute -top-4 left-1/2 -translate-x-1/2 w-12 h-1 bg-gradient-to-r from-[#e40341] via-[#f034e0] to-[#2192d1] rounded-full"
-                ></div>
-                <p
-                  class="text-gray-600 dark:text-gray-400 text-sm line-clamp-4"
-                >
-                  {{ speaker.bio }}
-                </p>
-              </div>
-
               <!-- Social Links -->
-              <div class="flex justify-center space-x-4">
+              <div class="flex justify-center space-x-3">
                 @if (speaker.githubHandle) {
                 <a
                   [href]="'https://github.com/' + speaker.githubHandle"
@@ -77,11 +80,9 @@ import { ConferenceService } from '../../services/conference.service';
                   aria-label="GitHub"
                 >
                   <svg
-                    class="w-6 h-6"
+                    class="w-5 h-5"
                     style="transition: transform 0.2s ease"
                     [style.transform]="'scale(1)'"
-                    onmouseover="this.style.transform='scale(1.1)'"
-                    onmouseout="this.style.transform='scale(1)'"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -93,13 +94,157 @@ import { ConferenceService } from '../../services/conference.service';
                   </svg>
                 </a>
                 }
+                <button
+                  class="text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 font-medium text-xs px-2 py-1 border border-primary-600 dark:border-primary-400 rounded-full transition-colors"
+                  (click)="openBioDialog(speaker)"
+                  aria-label="View Speaker Bio"
+                >
+                  BIO
+                </button>
               </div>
             </div>
           </div>
           }
+
+          <!-- Call for Speakers Card -->
+          <div
+            class="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/30 rounded-xl shadow-md overflow-hidden card-item opacity-0 border-2 border-dashed border-primary-300 dark:border-primary-700 flex flex-col"
+            [class.animate-fade-in]="isIntersecting()"
+            [style.animation-delay]="shuffledSpeakers().length * 100 + 'ms'"
+          >
+            <div class="p-6 flex flex-col items-center justify-center h-full">
+              <div
+                class="w-24 h-24 rounded-full bg-primary-100 dark:bg-primary-800/50 flex items-center justify-center mb-6"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-12 h-12 text-primary-600 dark:text-primary-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="text-xl font-bold text-center mb-3">
+                Newcomers welcome!
+              </h3>
+
+              <p class="text-center text-gray-600 dark:text-gray-300 mb-6">
+                Have knowledge to share? We're looking for passionate Angular
+                developers, architects or leaders to join our conference!
+              </p>
+
+              <a
+                href="#call-for-papers"
+                class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-6 rounded-lg transition-colors inline-flex items-center"
+              >
+                Apply as Speaker
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 ml-2"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Bio Dialog -->
+    @if (activeSpeaker()) {
+    <div
+      #dialogContainer
+      class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+      [class.dialog-enter]="isDialogVisible()"
+      [class.dialog-leave]="isDialogLeaving()"
+      (click)="closeBioDialog()"
+      role="dialog"
+      aria-modal="true"
+      [attr.aria-labelledby]="'speaker-bio-title'"
+      (keydown.escape)="closeBioDialog()"
+      tabindex="-1"
+    >
+      <div
+        #dialogContent
+        class="bg-white dark:bg-gray-800 rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-xl"
+        (click)="$event.stopPropagation()"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-4">
+            <h3 id="speaker-bio-title" class="text-2xl font-bold">
+              {{ activeSpeaker()?.name }}
+            </h3>
+            <button
+              #closeButton
+              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-2"
+              aria-label="Close dialog"
+              (click)="closeBioDialog()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-center mb-6">
+            <img
+              [src]="activeSpeaker()?.imageUrl"
+              [alt]="activeSpeaker()?.name"
+              class="w-16 h-16 rounded-full mr-4"
+            />
+            <div>
+              <p class="text-primary-600 dark:text-primary-400 font-medium">
+                {{ activeSpeaker()?.title }}
+              </p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm">
+                {{ activeSpeaker()?.company }}
+              </p>
+            </div>
+          </div>
+          <div>
+            <p class="text-gray-600 dark:text-gray-400">
+              {{ activeSpeaker()?.bio }}
+            </p>
+          </div>
+          <div class="mt-6 flex justify-end">
+            <button
+              class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+              (click)="closeBioDialog()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
   `,
   styles: [
     `
@@ -117,11 +262,178 @@ import { ConferenceService } from '../../services/conference.service';
       .animate-fade-in {
         animation: fade-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
       }
+
+      /* Dialog animations */
+      @keyframes dialog-fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes dialog-fade-out {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+
+      @keyframes dialog-content-in {
+        from {
+          opacity: 0;
+          transform: translateY(20px) scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes dialog-content-out {
+        from {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+        to {
+          opacity: 0;
+          transform: translateY(20px) scale(0.95);
+        }
+      }
+
+      .dialog-enter {
+        animation: dialog-fade-in 0.3s ease forwards;
+      }
+
+      .dialog-enter > div {
+        animation: dialog-content-in 0.3s ease forwards;
+      }
+
+      .dialog-leave {
+        animation: dialog-fade-out 0.3s ease forwards;
+      }
+
+      .dialog-leave > div {
+        animation: dialog-content-out 0.3s ease forwards;
+      }
     `
   ]
 })
-export class SpeakersComponent {
-  speakers = this.conferenceService.getSpeakers();
+export class SpeakersComponent implements AfterViewInit, OnInit {
+  @ViewChild('closeButton') closeButton?: ElementRef;
+  @ViewChild('dialogContainer') dialogContainer?: ElementRef;
+  @ViewChild('speakersSection') speakersSection?: ElementRef;
 
-  constructor(private conferenceService: ConferenceService) {}
+  speakers = this.conferenceService.getSpeakers();
+  shuffledSpeakers = signal<any[]>([]);
+  activeSpeaker = signal<any | null>(null);
+  isDialogVisible = signal(false);
+  isDialogLeaving = signal(false);
+  isIntersecting = signal(false);
+
+  private isBrowser: boolean;
+  private observer?: IntersectionObserver;
+
+  constructor(
+    private conferenceService: ConferenceService,
+    @Inject(PLATFORM_ID) platformId: Object
+  ) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
+
+  ngOnInit(): void {
+    // Initialize shuffled speakers
+    this.shuffledSpeakers.set(this.shuffleArray([...this.speakers()]));
+  }
+
+  /**
+   * Shuffles an array using the Fisher-Yates algorithm
+   */
+  private shuffleArray<T>(array: T[]): T[] {
+    const shuffled = [...array];
+
+    // Fisher-Yates shuffle algorithm
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    return shuffled;
+  }
+
+  ngAfterViewInit(): void {
+    if (this.isBrowser && this.speakersSection) {
+      this.setupIntersectionObserver();
+    } else if (!this.isBrowser) {
+      // For SSR, immediately set as intersecting to show content
+      this.isIntersecting.set(true);
+    }
+  }
+
+  private setupIntersectionObserver(): void {
+    this.observer = new IntersectionObserver(
+      entries => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          this.isIntersecting.set(true);
+          // Once we've triggered the animation, we can stop observing
+          if (this.observer && this.speakersSection) {
+            this.observer.unobserve(this.speakersSection.nativeElement);
+          }
+        }
+      },
+      {
+        threshold: 0.1, // Trigger when at least 10% of the section is visible
+        rootMargin: '50px' // Start animation slightly before it enters viewport
+      }
+    );
+
+    if (this.speakersSection) {
+      this.observer.observe(this.speakersSection.nativeElement);
+    }
+  }
+
+  openBioDialog(speaker: any): void {
+    this.activeSpeaker.set(speaker);
+    this.isDialogVisible.set(true);
+    this.isDialogLeaving.set(false);
+
+    // In SSR, we need to ensure browser APIs are only called in the browser environment
+    if (this.isBrowser) {
+      setTimeout(() => {
+        // Focus the close button when dialog opens
+        if (this.closeButton) {
+          this.closeButton.nativeElement.focus();
+        }
+      });
+    }
+  }
+
+  closeBioDialog(): void {
+    this.isDialogLeaving.set(true);
+
+    // Wait for animation to complete before removing dialog
+    if (this.isBrowser) {
+      setTimeout(() => {
+        this.activeSpeaker.set(null);
+        this.isDialogVisible.set(false);
+        this.isDialogLeaving.set(false);
+      }, 300);
+    } else {
+      // Immediately remove dialog in SSR context
+      this.activeSpeaker.set(null);
+      this.isDialogVisible.set(false);
+      this.isDialogLeaving.set(false);
+    }
+  }
+
+  ngOnDestroy(): void {
+    // Clean up the observer
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  }
 }
