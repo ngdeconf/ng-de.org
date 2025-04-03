@@ -1,8 +1,19 @@
-import { Component } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import {
+  Component,
+  ElementRef,
+  Inject,
+  OnDestroy,
+  PLATFORM_ID,
+  Renderer2,
+  signal,
+  ViewChild
+} from '@angular/core';
 import { ConferenceService } from '../../services/conference.service';
 
 @Component({
   selector: 'app-speakers',
+  imports: [CommonModule],
   template: `
     <section id="speakers" class="py-20">
       <div class="container mx-auto px-4">
@@ -53,18 +64,6 @@ import { ConferenceService } from '../../services/conference.service';
                 </p>
               </div>
 
-              <!-- Bio -->
-              <div class="relative mb-6">
-                <div
-                  class="absolute -top-4 left-1/2 -translate-x-1/2 w-12 h-1 bg-gradient-to-r from-[#e40341] via-[#f034e0] to-[#2192d1] rounded-full"
-                ></div>
-                <p
-                  class="text-gray-600 dark:text-gray-400 text-sm line-clamp-4"
-                >
-                  {{ speaker.bio }}
-                </p>
-              </div>
-
               <!-- Social Links -->
               <div class="flex justify-center space-x-4">
                 @if (speaker.githubHandle) {
@@ -80,8 +79,6 @@ import { ConferenceService } from '../../services/conference.service';
                     class="w-6 h-6"
                     style="transition: transform 0.2s ease"
                     [style.transform]="'scale(1)'"
-                    onmouseover="this.style.transform='scale(1.1)'"
-                    onmouseout="this.style.transform='scale(1)'"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -93,6 +90,13 @@ import { ConferenceService } from '../../services/conference.service';
                   </svg>
                 </a>
                 }
+                <button
+                  class="text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 font-medium text-sm px-3 py-1 border border-primary-600 dark:border-primary-400 rounded-full transition-colors"
+                  (click)="openBioDialog(speaker)"
+                  aria-label="View Speaker Bio"
+                >
+                  BIO
+                </button>
               </div>
             </div>
           </div>
@@ -100,6 +104,85 @@ import { ConferenceService } from '../../services/conference.service';
         </div>
       </div>
     </section>
+
+    <!-- Bio Dialog -->
+    @if (activeSpeaker()) {
+    <div
+      #dialogContainer
+      class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+      [class.dialog-enter]="isDialogVisible()"
+      [class.dialog-leave]="isDialogLeaving()"
+      (click)="closeBioDialog()"
+      role="dialog"
+      aria-modal="true"
+      [attr.aria-labelledby]="'speaker-bio-title'"
+      (keydown.escape)="closeBioDialog()"
+      tabindex="-1"
+    >
+      <div
+        #dialogContent
+        class="bg-white dark:bg-gray-800 rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-xl"
+        (click)="$event.stopPropagation()"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-4">
+            <h3 id="speaker-bio-title" class="text-2xl font-bold">
+              {{ activeSpeaker()?.name }}
+            </h3>
+            <button
+              #closeButton
+              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-2"
+              aria-label="Close dialog"
+              (click)="closeBioDialog()"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-center mb-6">
+            <img
+              [src]="activeSpeaker()?.imageUrl"
+              [alt]="activeSpeaker()?.name"
+              class="w-16 h-16 rounded-full mr-4"
+            />
+            <div>
+              <p class="text-primary-600 dark:text-primary-400 font-medium">
+                {{ activeSpeaker()?.title }}
+              </p>
+              <p class="text-gray-600 dark:text-gray-400 text-sm">
+                {{ activeSpeaker()?.company }}
+              </p>
+            </div>
+          </div>
+          <div>
+            <p class="text-gray-600 dark:text-gray-400">
+              {{ activeSpeaker()?.bio }}
+            </p>
+          </div>
+          <div class="mt-6 flex justify-end">
+            <button
+              class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+              (click)="closeBioDialog()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
   `,
   styles: [
     `
@@ -117,11 +200,120 @@ import { ConferenceService } from '../../services/conference.service';
       .animate-fade-in {
         animation: fade-in 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
       }
+
+      /* Dialog animations */
+      @keyframes dialog-fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes dialog-fade-out {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+
+      @keyframes dialog-content-in {
+        from {
+          opacity: 0;
+          transform: translateY(20px) scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes dialog-content-out {
+        from {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+        to {
+          opacity: 0;
+          transform: translateY(20px) scale(0.95);
+        }
+      }
+
+      .dialog-enter {
+        animation: dialog-fade-in 0.3s ease forwards;
+      }
+
+      .dialog-enter > div {
+        animation: dialog-content-in 0.3s ease forwards;
+      }
+
+      .dialog-leave {
+        animation: dialog-fade-out 0.3s ease forwards;
+      }
+
+      .dialog-leave > div {
+        animation: dialog-content-out 0.3s ease forwards;
+      }
     `
   ]
 })
-export class SpeakersComponent {
-  speakers = this.conferenceService.getSpeakers();
+export class SpeakersComponent implements OnDestroy {
+  @ViewChild('closeButton') closeButton?: ElementRef;
+  @ViewChild('dialogContainer') dialogContainer?: ElementRef;
 
-  constructor(private conferenceService: ConferenceService) {}
+  speakers = this.conferenceService.getSpeakers();
+  activeSpeaker = signal<any | null>(null);
+  isDialogVisible = signal(false);
+  isDialogLeaving = signal(false);
+
+  private isBrowser: boolean;
+
+  constructor(
+    private conferenceService: ConferenceService,
+    private renderer: Renderer2,
+    @Inject(PLATFORM_ID) platformId: Object
+  ) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
+
+  openBioDialog(speaker: any): void {
+    this.activeSpeaker.set(speaker);
+    this.isDialogVisible.set(true);
+    this.isDialogLeaving.set(false);
+
+    // In SSR, we need to ensure browser APIs are only called in the browser environment
+    if (this.isBrowser) {
+      setTimeout(() => {
+        // Focus the close button when dialog opens
+        if (this.closeButton) {
+          this.closeButton.nativeElement.focus();
+        }
+      });
+    }
+  }
+
+  closeBioDialog(): void {
+    this.isDialogLeaving.set(true);
+
+    // Wait for animation to complete before removing dialog
+    if (this.isBrowser) {
+      setTimeout(() => {
+        this.activeSpeaker.set(null);
+        this.isDialogVisible.set(false);
+        this.isDialogLeaving.set(false);
+      }, 300);
+    } else {
+      // Immediately remove dialog in SSR context
+      this.activeSpeaker.set(null);
+      this.isDialogVisible.set(false);
+      this.isDialogLeaving.set(false);
+    }
+  }
+
+  ngOnDestroy(): void {
+    // No need for specific cleanup as we're using the template event binding
+  }
 }
