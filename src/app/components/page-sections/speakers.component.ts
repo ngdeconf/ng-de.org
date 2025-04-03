@@ -3,9 +3,7 @@ import {
   Component,
   ElementRef,
   Inject,
-  OnDestroy,
   PLATFORM_ID,
-  Renderer2,
   signal,
   ViewChild
 } from '@angular/core';
@@ -262,7 +260,7 @@ import { ConferenceService } from '../../services/conference.service';
     `
   ]
 })
-export class SpeakersComponent implements OnDestroy {
+export class SpeakersComponent {
   @ViewChild('closeButton') closeButton?: ElementRef;
   @ViewChild('dialogContainer') dialogContainer?: ElementRef;
 
@@ -275,7 +273,6 @@ export class SpeakersComponent implements OnDestroy {
 
   constructor(
     private conferenceService: ConferenceService,
-    private renderer: Renderer2,
     @Inject(PLATFORM_ID) platformId: Object
   ) {
     this.isBrowser = isPlatformBrowser(platformId);
@@ -313,9 +310,5 @@ export class SpeakersComponent implements OnDestroy {
       this.isDialogVisible.set(false);
       this.isDialogLeaving.set(false);
     }
-  }
-
-  ngOnDestroy(): void {
-    // No need for specific cleanup as we're using the template event binding
   }
 }
