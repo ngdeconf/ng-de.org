@@ -4,6 +4,7 @@ import {
   Component,
   ElementRef,
   Inject,
+  OnInit,
   PLATFORM_ID,
   signal,
   ViewChild
@@ -27,7 +28,8 @@ import { ConferenceService } from '../../services/conference.service';
         <div
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
         >
-          @for (speaker of speakers(); track speaker.id; let i = $index) {
+          @for (speaker of shuffledSpeakers(); track speaker.id; let i = $index)
+          {
           <div
             class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden card-item opacity-0"
             [class.animate-fade-in]="isIntersecting()"
@@ -262,12 +264,13 @@ import { ConferenceService } from '../../services/conference.service';
     `
   ]
 })
-export class SpeakersComponent implements AfterViewInit {
+export class SpeakersComponent implements AfterViewInit, OnInit {
   @ViewChild('closeButton') closeButton?: ElementRef;
   @ViewChild('dialogContainer') dialogContainer?: ElementRef;
   @ViewChild('speakersSection') speakersSection?: ElementRef;
 
   speakers = this.conferenceService.getSpeakers();
+  shuffledSpeakers = signal<any[]>([]);
   activeSpeaker = signal<any | null>(null);
   isDialogVisible = signal(false);
   isDialogLeaving = signal(false);
@@ -281,6 +284,26 @@ export class SpeakersComponent implements AfterViewInit {
     @Inject(PLATFORM_ID) platformId: Object
   ) {
     this.isBrowser = isPlatformBrowser(platformId);
+  }
+
+  ngOnInit(): void {
+    // Initialize shuffled speakers
+    this.shuffledSpeakers.set(this.shuffleArray([...this.speakers()]));
+  }
+
+  /**
+   * Shuffles an array using the Fisher-Yates algorithm
+   */
+  private shuffleArray<T>(array: T[]): T[] {
+    const shuffled = [...array];
+
+    // Fisher-Yates shuffle algorithm
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    return shuffled;
   }
 
   ngAfterViewInit(): void {
