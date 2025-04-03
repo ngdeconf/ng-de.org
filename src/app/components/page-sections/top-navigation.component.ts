@@ -76,9 +76,35 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 style="transition: opacity 0.2s ease"
                 >FAQ</a
               >
+
+              <!-- Get Tickets CTA Button for desktop nav -->
+              <a
+                href="#tickets"
+                class="get-tickets-cta bg-[#e40341] hover:bg-[#c90339] text-white font-semibold py-2 px-5 rounded-lg transition-all duration-300 ease-in-out transform"
+                [class.opacity-0]="!showTicketsCTA()"
+                [class.translate-y-2]="!showTicketsCTA()"
+                [class.opacity-100]="showTicketsCTA()"
+                [class.translate-y-0]="showTicketsCTA()"
+                style="transition: opacity 0.3s ease, transform 0.3s ease"
+              >
+                Get Tickets
+              </a>
             </nav>
 
             <div class="flex items-center space-x-4">
+              <!-- Get Tickets CTA Button for mobile -->
+              <a
+                href="#tickets"
+                class="md:hidden get-tickets-cta bg-[#e40341] hover:bg-[#c90339] text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 ease-in-out transform"
+                [class.opacity-0]="!showTicketsCTA()"
+                [class.translate-y-2]="!showTicketsCTA()"
+                [class.opacity-100]="showTicketsCTA()"
+                [class.translate-y-0]="showTicketsCTA()"
+                style="transition: opacity 0.3s ease, transform 0.3s ease"
+              >
+                Get Tickets
+              </a>
+
               <app-theme-toggle-button />
 
               <button
@@ -135,12 +161,21 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
       :host {
         display: block;
       }
+
+      .get-tickets-cta {
+        visibility: visible;
+      }
+
+      .get-tickets-cta.opacity-0 {
+        visibility: hidden;
+      }
     `
   ]
 })
 export class TopNavigationComponent {
   isScrolled = signal(false);
   isMobileMenuOpen = signal(false);
+  showTicketsCTA = signal(false);
   private isBrowser: boolean;
 
   constructor(
@@ -166,6 +201,14 @@ export class TopNavigationComponent {
   onWindowScroll() {
     if (this.isBrowser) {
       this.isScrolled.set(window.scrollY > 10);
+
+      // Check if we've scrolled past the tickets section
+      const ticketsSection = document.getElementById('tickets');
+      if (ticketsSection) {
+        const ticketsSectionBottom =
+          ticketsSection.offsetTop + ticketsSection.offsetHeight;
+        this.showTicketsCTA.set(window.scrollY > ticketsSectionBottom);
+      }
     }
   }
 }
