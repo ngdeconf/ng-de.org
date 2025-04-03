@@ -15,57 +15,59 @@ import { ConferenceService } from '../../services/conference.service';
   selector: 'app-speakers',
   imports: [CommonModule],
   template: `
-    <section id="speakers" class="py-20">
+    <section id="speakers" class="py-16">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our Speakers</h2>
-          <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-3">Meet Our Speakers</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             Learn from Angular experts and community leaders from around the
             world
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
           @for (speaker of speakers(); track speaker.id; let i = $index) {
           <div
-            class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden opacity-0 animate-fade-in"
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden opacity-0 animate-fade-in"
             [style.animation-delay]="i * 100 + 'ms'"
           >
             <!-- Card Header with Image -->
             <div
-              class="relative bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-8"
+              class="relative bg-gradient-to-b from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 p-4"
             >
-              <div class="relative mx-auto w-40 h-40 mb-6">
+              <div class="relative mx-auto w-28 h-28 mb-3">
                 <!-- Image Container -->
                 <div
-                  class="absolute inset-0 rounded-full overflow-hidden ring-4 ring-white dark:ring-gray-800 shadow-lg"
+                  class="absolute inset-0 rounded-full overflow-hidden ring-3 ring-white dark:ring-gray-800 shadow-md"
                 >
                   <img
                     [src]="speaker.imageUrl"
                     [alt]="speaker.name"
-                    class="w-full h-full"
+                    class="w-full h-full object-cover"
                   />
                 </div>
               </div>
             </div>
 
             <!-- Card Content -->
-            <div class="p-6">
+            <div class="p-4">
               <!-- Speaker Info -->
-              <div class="text-center mb-4">
-                <h3 class="text-2xl font-bold mb-1">{{ speaker.name }}</h3>
+              <div class="text-center mb-3">
+                <h3 class="text-xl font-bold mb-1">{{ speaker.name }}</h3>
                 <p
-                  class="text-primary-600 dark:text-primary-400 font-medium mb-1"
+                  class="text-primary-600 dark:text-primary-400 font-medium text-sm mb-1"
                 >
                   {{ speaker.title }}
                 </p>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                <p class="text-gray-600 dark:text-gray-400 text-xs">
                   {{ speaker.company }}
                 </p>
               </div>
 
               <!-- Social Links -->
-              <div class="flex justify-center space-x-4">
+              <div class="flex justify-center space-x-3">
                 @if (speaker.githubHandle) {
                 <a
                   [href]="'https://github.com/' + speaker.githubHandle"
@@ -76,7 +78,7 @@ import { ConferenceService } from '../../services/conference.service';
                   aria-label="GitHub"
                 >
                   <svg
-                    class="w-6 h-6"
+                    class="w-5 h-5"
                     style="transition: transform 0.2s ease"
                     [style.transform]="'scale(1)'"
                     fill="currentColor"
@@ -91,7 +93,7 @@ import { ConferenceService } from '../../services/conference.service';
                 </a>
                 }
                 <button
-                  class="text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 font-medium text-sm px-3 py-1 border border-primary-600 dark:border-primary-400 rounded-full transition-colors"
+                  class="text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 font-medium text-xs px-2 py-1 border border-primary-600 dark:border-primary-400 rounded-full transition-colors"
                   (click)="openBioDialog(speaker)"
                   aria-label="View Speaker Bio"
                 >
