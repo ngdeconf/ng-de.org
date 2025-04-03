@@ -1,5 +1,6 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import {
+  AfterViewInit,
   Component,
   ElementRef,
   Inject,
@@ -13,7 +14,7 @@ import { ConferenceService } from '../../services/conference.service';
   selector: 'app-speakers',
   imports: [CommonModule],
   template: `
-    <section id="speakers" class="py-16">
+    <section #speakersSection id="speakers" class="py-16">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-3">Meet Our Speakers</h2>
@@ -28,7 +29,8 @@ import { ConferenceService } from '../../services/conference.service';
         >
           @for (speaker of speakers(); track speaker.id; let i = $index) {
           <div
-            class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden opacity-0 animate-fade-in"
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden card-item opacity-0"
+            [class.animate-fade-in]="isIntersecting()"
             [style.animation-delay]="i * 100 + 'ms'"
           >
             <!-- Card Header with Image -->
@@ -260,22 +262,57 @@ import { ConferenceService } from '../../services/conference.service';
     `
   ]
 })
-export class SpeakersComponent {
+export class SpeakersComponent implements AfterViewInit {
   @ViewChild('closeButton') closeButton?: ElementRef;
   @ViewChild('dialogContainer') dialogContainer?: ElementRef;
+  @ViewChild('speakersSection') speakersSection?: ElementRef;
 
   speakers = this.conferenceService.getSpeakers();
   activeSpeaker = signal<any | null>(null);
   isDialogVisible = signal(false);
   isDialogLeaving = signal(false);
+  isIntersecting = signal(false);
 
   private isBrowser: boolean;
+  private observer?: IntersectionObserver;
 
   constructor(
     private conferenceService: ConferenceService,
     @Inject(PLATFORM_ID) platformId: Object
   ) {
     this.isBrowser = isPlatformBrowser(platformId);
+  }
+
+  ngAfterViewInit(): void {
+    if (this.isBrowser && this.speakersSection) {
+      this.setupIntersectionObserver();
+    } else if (!this.isBrowser) {
+      // For SSR, immediately set as intersecting to show content
+      this.isIntersecting.set(true);
+    }
+  }
+
+  private setupIntersectionObserver(): void {
+    this.observer = new IntersectionObserver(
+      entries => {
+        const entry = entries[0];
+        if (entry.isIntersecting) {
+          this.isIntersecting.set(true);
+          // Once we've triggered the animation, we can stop observing
+          if (this.observer && this.speakersSection) {
+            this.observer.unobserve(this.speakersSection.nativeElement);
+          }
+        }
+      },
+      {
+        threshold: 0.1, // Trigger when at least 10% of the section is visible
+        rootMargin: '50px' // Start animation slightly before it enters viewport
+      }
+    );
+
+    if (this.speakersSection) {
+      this.observer.observe(this.speakersSection.nativeElement);
+    }
   }
 
   openBioDialog(speaker: any): void {
@@ -309,6 +346,13 @@ export class SpeakersComponent {
       this.activeSpeaker.set(null);
       this.isDialogVisible.set(false);
       this.isDialogLeaving.set(false);
+    }
+  }
+
+  ngOnDestroy(): void {
+    // Clean up the observer
+    if (this.observer) {
+      this.observer.disconnect();
     }
   }
 }
