@@ -137,6 +137,28 @@ import { WorkshopService } from '../../services/workshop.service';
                 </div>
               </div>
 
+              <!-- Learn More CTA -->
+              <button
+                class="w-full mb-6 bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm hover:shadow focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+                (click)="openWorkshopDetails(workshop)"
+                aria-label="View workshop details"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+                <span>What will I learn?</span>
+              </button>
+
               <!-- Trainers -->
               <div class="border-t border-gray-200 dark:border-gray-700 pt-4">
                 <div class="flex justify-between items-center mb-3">
@@ -145,29 +167,6 @@ import { WorkshopService } from '../../services/workshop.service';
                   >
                     Workshop Leaders
                   </h4>
-
-                  <button
-                    class="text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 font-medium text-sm px-3 py-1.5 border border-primary-600 dark:border-primary-400 rounded-full transition-colors flex items-center gap-1"
-                    (click)="openWorkshopDetails(workshop)"
-                    aria-label="View workshop details"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-4 w-4"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                      <path
-                        d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"
-                      ></path>
-                    </svg>
-                    What will I learn?
-                  </button>
                 </div>
                 <div class="flex flex-wrap gap-3">
                   @for (trainerId of workshop.trainers || [workshop.trainerId];
