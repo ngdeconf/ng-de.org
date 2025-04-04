@@ -8,7 +8,7 @@ import {
   signal,
   ViewChild
 } from '@angular/core';
-import { ConferenceService } from '../../services/conference.service';
+import { SpeakerService } from '../../services/speaker.service';
 import { WorkshopService } from '../../services/workshop.service';
 
 @Component({
@@ -559,7 +559,7 @@ export class WorkshopsComponent implements AfterViewInit {
   private isBrowser: boolean;
 
   constructor(
-    private conferenceService: ConferenceService,
+    private speakerService: SpeakerService,
     private workshopService: WorkshopService,
     @Inject(PLATFORM_ID) platformId: Object
   ) {
@@ -571,17 +571,17 @@ export class WorkshopsComponent implements AfterViewInit {
   }
 
   getSpeakerName(speakerId: string): string {
-    const speaker = this.conferenceService.getSpeakerById(speakerId);
+    const speaker = this.speakerService.getSpeakerById(speakerId);
     return speaker ? speaker.name : 'Unknown Speaker';
   }
 
   getSpeakerImage(speakerId: string): string {
-    const speaker = this.conferenceService.getSpeakerById(speakerId);
+    const speaker = this.speakerService.getSpeakerById(speakerId);
     return speaker ? speaker.imageUrl : '';
   }
 
   getSpeakerTitle(speakerId: string): string {
-    const speaker = this.conferenceService.getSpeakerById(speakerId);
+    const speaker = this.speakerService.getSpeakerById(speakerId);
     return speaker ? speaker.title : '';
   }
 

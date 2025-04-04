@@ -9,7 +9,7 @@ import {
   signal,
   ViewChild
 } from '@angular/core';
-import { ConferenceService } from '../../services/conference.service';
+import { SpeakerService } from '../../services/speaker.service';
 
 @Component({
   selector: 'app-speakers',
@@ -327,7 +327,7 @@ export class SpeakersComponent implements AfterViewInit, OnInit {
   @ViewChild('dialogContainer') dialogContainer?: ElementRef;
   @ViewChild('speakersSection') speakersSection?: ElementRef;
 
-  speakers = this.conferenceService.getSpeakers();
+  speakers = this.speakerService.getSpeakers();
   shuffledSpeakers = signal<any[]>([]);
   activeSpeaker = signal<any | null>(null);
   isDialogVisible = signal(false);
@@ -338,7 +338,7 @@ export class SpeakersComponent implements AfterViewInit, OnInit {
   private observer?: IntersectionObserver;
 
   constructor(
-    private conferenceService: ConferenceService,
+    private speakerService: SpeakerService,
     @Inject(PLATFORM_ID) platformId: Object
   ) {
     this.isBrowser = isPlatformBrowser(platformId);

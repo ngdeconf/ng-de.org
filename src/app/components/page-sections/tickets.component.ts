@@ -1,7 +1,7 @@
 import { Component, computed, effect, signal } from '@angular/core';
 import { Ticket } from '../../models/models';
-import { ConferenceService } from '../../services/conference.service';
 import { TicketPhaseService } from '../../services/ticket-phase.service';
+import { TicketService } from '../../services/ticket.service';
 import { TicketTimelineComponent } from './ticket-timeline.component';
 
 @Component({
@@ -212,7 +212,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
   styles: `/* Component styles here */`
 })
 export class TicketsComponent {
-  tickets = this.conferenceService.getTickets();
+  tickets = this.ticketService.getTickets();
   finalPrice = signal(899); // Default value for Final Bird phase
   ticketFinalPrices = signal<Record<string, number>>({});
   ticketSavings = signal<Record<string, number>>({});
@@ -226,7 +226,7 @@ export class TicketsComponent {
   });
 
   constructor(
-    private conferenceService: ConferenceService,
+    private ticketService: TicketService,
     private ticketPhaseService: TicketPhaseService
   ) {
     // Setup effect to calculate prices when phases change
