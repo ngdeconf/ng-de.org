@@ -8,7 +8,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
   selector: 'app-tickets',
   imports: [TicketTimelineComponent],
   template: `
-    <section class="py-28 bg-gray-50 dark:bg-gray-900">
+    <section id="tickets" class="py-28 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Get Your Tickets</h2>
@@ -18,7 +18,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
           </p>
         </div>
 
-        <app-ticket-timeline id="tickets" />
+        <app-ticket-timeline />
 
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"
