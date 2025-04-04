@@ -240,7 +240,7 @@ import { WorkshopService } from '../../services/workshop.service';
                   <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                   <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                 </svg>
-                <span class="tracking-wide">What will I learn?</span>
+                <span class="tracking-wide">View Workshop Details</span>
               </button>
             </div>
           </div>
