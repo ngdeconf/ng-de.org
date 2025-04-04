@@ -14,42 +14,54 @@ import { Component, Input } from '@angular/core';
       >
         <a
           href="#home"
-          class="py-2 hover:text-primary-500 dark:hover:text-primary-400"
+          class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+          [class.text-primary-500]="activeSection === 'home'"
+          [class.dark:text-primary-400]="activeSection === 'home'"
           style="transition: color 0.2s ease"
           (click)="onClose()"
           >Home</a
         >
         <a
           href="#tickets"
-          class="py-2 hover:text-primary-500 dark:hover:text-primary-400"
+          class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+          [class.text-primary-500]="activeSection === 'tickets'"
+          [class.dark:text-primary-400]="activeSection === 'tickets'"
           style="transition: color 0.2s ease"
           (click)="onClose()"
           >Tickets</a
         >
         <a
           href="#speakers"
-          class="py-2 hover:text-primary-500 dark:hover:text-primary-400"
+          class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+          [class.text-primary-500]="activeSection === 'speakers'"
+          [class.dark:text-primary-400]="activeSection === 'speakers'"
           style="transition: color 0.2s ease"
           (click)="onClose()"
           >Speakers</a
         >
         <a
           href="#schedule"
-          class="py-2 hover:text-primary-500 dark:hover:text-primary-400"
+          class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+          [class.text-primary-500]="activeSection === 'schedule'"
+          [class.dark:text-primary-400]="activeSection === 'schedule'"
           style="transition: color 0.2s ease"
           (click)="onClose()"
           >Schedule</a
         >
         <a
           href="#workshops"
-          class="py-2 hover:text-primary-500 dark:hover:text-primary-400"
+          class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+          [class.text-primary-500]="activeSection === 'workshops'"
+          [class.dark:text-primary-400]="activeSection === 'workshops'"
           style="transition: color 0.2s ease"
           (click)="onClose()"
           >Workshops</a
         >
         <a
           href="#faq"
-          class="py-2 hover:text-primary-500 dark:hover:text-primary-400"
+          class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+          [class.text-primary-500]="activeSection === 'faq'"
+          [class.dark:text-primary-400]="activeSection === 'faq'"
           style="transition: color 0.2s ease"
           (click)="onClose()"
           >FAQ</a
@@ -76,4 +88,5 @@ import { Component, Input } from '@angular/core';
 export class MobileMenuComponent {
   @Input() isOpen = false;
   @Input() onClose = () => {};
+  @Input() activeSection = 'home';
 }
