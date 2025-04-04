@@ -1,12 +1,6 @@
-import { computed, Injectable, signal } from '@angular/core';
-import {
-  ScheduleDay,
-  Speaker,
-  Talk,
-  Ticket,
-  TicketPhase,
-  Workshop
-} from '../models/models';
+import { Injectable, signal } from '@angular/core';
+import { ScheduleDay, Speaker, Talk, Ticket, Workshop } from '../models/models';
+import { TicketPhaseService } from './ticket-phase.service';
 
 @Injectable({ providedIn: 'root' })
 export class ConferenceService {
@@ -265,41 +259,6 @@ export class ConferenceService {
     }
   ]);
 
-  private readonly ticketPhases = signal<TicketPhase[]>([
-    {
-      name: 'Super Early Bird',
-      startDate: new Date('2025-04-01'),
-      isActive: false,
-      isPast: false,
-      basePrice: 599
-    },
-    {
-      name: 'Early Bird',
-      startDate: new Date('2025-05-01'),
-      isActive: false,
-      isPast: false,
-      basePrice: 699
-    },
-    {
-      name: 'Regular Ticket',
-      startDate: new Date('2025-07-01'),
-      isActive: false,
-      isPast: false,
-      basePrice: 799
-    },
-    {
-      name: 'Final Bird',
-      startDate: new Date('2025-10-01'),
-      isActive: false,
-      isPast: false,
-      basePrice: 899
-    }
-  ]);
-
-  readonly currentPhase = computed(() => {
-    return this.ticketPhases().find(phase => phase.isActive);
-  });
-
   private readonly schedule = signal<ScheduleDay[]>([
     {
       title: 'Thursday',
@@ -552,64 +511,34 @@ export class ConferenceService {
     }
   ]);
 
-  constructor() {
-    this.updatePhases();
+  constructor(private ticketPhaseService: TicketPhaseService) {
+    this.updateTicketPrices();
   }
 
+  /**
+   * Forward method to TicketPhaseService
+   */
   getTicketPhases() {
-    return this.ticketPhases;
+    return this.ticketPhaseService.getTicketPhases();
   }
 
+  /**
+   * Forward method to TicketPhaseService
+   */
   getCurrentPhase() {
-    return this.currentPhase;
+    return this.ticketPhaseService.getCurrentPhase();
   }
 
-  private updatePhases() {
-    const now = new Date();
-    let foundActive = false;
-
-    const phases = [...this.ticketPhases()]
-      .sort((a, b) => a.startDate.getTime() - b.startDate.getTime())
-      .map(phase => ({ ...phase }));
-
-    // Go through phases in reverse to find current active phase
-    for (let i = phases.length - 1; i >= 0; i--) {
-      const phase = phases[i];
-
-      if (!foundActive && now >= phase.startDate) {
-        phase.isActive = true;
-        phase.isPast = false;
-        foundActive = true;
-      } else {
-        phase.isActive = false;
-        phase.isPast = now >= phase.startDate;
-      }
-    }
-
-    this.ticketPhases.set(phases);
-    this.updateTicketPrices(phases);
-  }
-
-  private updateTicketPrices(phases: TicketPhase[]) {
-    const currentPhase = phases.find(phase => phase.isActive);
-    if (!currentPhase) return;
-
+  /**
+   * Updates the ticket prices based on the current phase
+   */
+  private updateTicketPrices() {
     const tickets = this.tickets();
     const updatedTickets = tickets.map(ticket => {
       const newTicket = { ...ticket };
-
-      switch (ticket.type) {
-        case 'conference':
-          newTicket.price = currentPhase.basePrice;
-          break;
-        case 'workshop':
-          newTicket.price = currentPhase.basePrice - 200; // Workshop premium
-          break;
-        case 'bundle':
-          newTicket.price = currentPhase.basePrice + 300; // Bundle premium
-          break;
-      }
-
+      newTicket.price = this.ticketPhaseService.calculateTicketPrice(
+        ticket.type
+      );
       return newTicket;
     });
 

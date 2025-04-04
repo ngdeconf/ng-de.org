@@ -1,6 +1,7 @@
 import { Component, computed, effect, signal } from '@angular/core';
 import { Ticket } from '../../models/models';
 import { ConferenceService } from '../../services/conference.service';
+import { TicketPhaseService } from '../../services/ticket-phase.service';
 import { TicketTimelineComponent } from './ticket-timeline.component';
 
 @Component({
@@ -207,7 +208,8 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
         </div>
       </div>
     </section>
-  `
+  `,
+  styles: `/* Component styles here */`
 })
 export class TicketsComponent {
   tickets = this.conferenceService.getTickets();
@@ -215,24 +217,21 @@ export class TicketsComponent {
   ticketFinalPrices = signal<Record<string, number>>({});
   ticketSavings = signal<Record<string, number>>({});
 
-  // Sort tickets in desired order: Conference, Workshop, Bundle
   sortedTickets = computed(() => {
-    const orderMap: Record<string, number> = {
-      conference: 1,
-      workshop: 2,
-      bundle: 3,
-      online: 4
-    };
-
-    return [...this.tickets()].sort(
-      (a, b) => (orderMap[a.type] || 99) - (orderMap[b.type] || 99)
-    );
+    // Sort tickets based on price or other criteria
+    return [...this.tickets()].sort((a, b) => {
+      // Sort by price, lowest first
+      return a.price - b.price;
+    });
   });
 
-  constructor(private conferenceService: ConferenceService) {
+  constructor(
+    private conferenceService: ConferenceService,
+    private ticketPhaseService: TicketPhaseService
+  ) {
     // Setup effect to calculate prices when phases change
     effect(() => {
-      const allPhases = this.conferenceService.getTicketPhases()();
+      const allPhases = this.ticketPhaseService.getTicketPhases()();
       const finalBirdPhase = allPhases.find(
         phase => phase.name === 'Final Bird'
       );
@@ -267,7 +266,7 @@ export class TicketsComponent {
   }
 
   isFinalBirdPhase(): boolean {
-    return this.conferenceService.getCurrentPhase()()?.name === 'Final Bird';
+    return this.ticketPhaseService.getCurrentPhase()()?.name === 'Final Bird';
   }
 
   formatDate(date: Date): string {
