@@ -36,6 +36,7 @@ export interface Workshop {
   id: string;
   title: string;
   abstract: string;
+  teaser: string;
   trainerId: string;
   duration: string;
   capacity: number;

@@ -31,6 +31,12 @@ import { WorkshopService } from '../../services/workshop.service';
                 </span>
               </div>
 
+              <p
+                class="text-lg font-semibold text-gray-800 dark:text-gray-300 mb-3"
+              >
+                {{ workshop.teaser }}
+              </p>
+
               <p class="text-gray-600 dark:text-gray-400 mb-6">
                 {{ workshop.abstract }}
               </p>
