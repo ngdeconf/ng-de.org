@@ -31,7 +31,7 @@ import { WorkshopService } from '../../services/workshop.service';
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           @for (workshop of workshops(); track workshop.id) {
           <div
-            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl focus-within:ring-2 focus-within:ring-primary-500 dark:focus-within:ring-primary-400"
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all focus-within:ring-2 focus-within:ring-primary-500 dark:focus-within:ring-primary-400"
             tabindex="-1"
           >
             <div class="p-8 md:p-10">
@@ -446,12 +446,9 @@ import { WorkshopService } from '../../services/workshop.service';
   `,
   styles: [
     `
-      /* Card hover transition */
+      /* Card transition */
       .bg-white {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .bg-white:hover {
-        transform: translateY(-5px);
+        transition: box-shadow 0.3s ease;
       }
 
       /* Benefit animations */
