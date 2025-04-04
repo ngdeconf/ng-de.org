@@ -17,24 +17,19 @@ import { WorkshopService } from '../../services/workshop.service';
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           @for (workshop of workshops(); track workshop.id) {
           <div
-            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl border-t-4"
-            [class.border-indigo-500]="workshop.id === '1'"
-            [class.border-fuchsia-500]="workshop.id === '2'"
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl"
           >
             <div class="p-8">
               <div class="flex items-start gap-6 mb-6">
                 <!-- Custom SVG Icon based on workshop -->
                 <div
-                  class="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center"
-                  [class.bg-indigo-100]="workshop.id === '1'"
-                  [class.dark:bg-indigo-900]="workshop.id === '1'"
-                  [class.bg-fuchsia-100]="workshop.id === '2'"
-                  [class.dark:bg-fuchsia-900]="workshop.id === '2'"
+                  class="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center bg-gray-100 dark:bg-gray-700"
                 >
                   @if (workshop.id === '1') {
+                  <!-- Angular Architecture Workshop Icon -->
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="w-10 h-10 text-indigo-600 dark:text-indigo-400"
+                    class="w-10 h-10 text-gray-700 dark:text-gray-300"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -42,15 +37,20 @@ import { WorkshopService } from '../../services/workshop.service';
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
-                    <path d="M12 21v-8L2 4l10 3 10-3-10 9v8"></path>
-                    <path d="M9 17h6"></path>
-                    <path d="M14 13h-4"></path>
-                    <path d="M9 9h6"></path>
+                    <!-- Angular Logo Shape -->
+                    <path d="M12 2L2 7l1.63 14.27L12 22l8.37-0.73L22 7z" />
+                    <!-- Component Boxes -->
+                    <rect x="7" y="9" width="10" height="3" rx="1" />
+                    <rect x="7" y="14" width="10" height="3" rx="1" />
+                    <!-- Connection Lines -->
+                    <line x1="12" y1="7" x2="12" y2="9" />
+                    <line x1="12" y1="12" x2="12" y2="14" />
                   </svg>
                   } @else if (workshop.id === '2') {
+                  <!-- AI Coding Assistant Workshop Icon -->
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="w-10 h-10 text-fuchsia-600 dark:text-fuchsia-400"
+                    class="w-10 h-10 text-gray-700 dark:text-gray-300"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -58,12 +58,16 @@ import { WorkshopService } from '../../services/workshop.service';
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
-                    <path
-                      d="M14.5 12a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"
-                    ></path>
-                    <path
-                      d="M18.49 11.48a1 1 0 0 1 0 1l-1.76 2.41a10 10 0 0 1-8.29 4.1h-.8a10 10 0 0 1-8.29-4.1L.6 12.48a1 1 0 0 1 0-1l1.76-2.41A10 10 0 0 1 10.65 5h.8a10 10 0 0 1 8.29 4.1Z"
-                    ></path>
+                    <!-- Code brackets -->
+                    <path d="M8 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h1" />
+                    <path d="M16 3h1a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-1" />
+                    <!-- AI Brain/CPU -->
+                    <rect x="9" y="8" width="6" height="6" rx="1" />
+                    <!-- Connection lines representing AI processing -->
+                    <path d="M12 14v3" />
+                    <path d="M9 11h-2" />
+                    <path d="M17 11h-2" />
+                    <path d="M12 8v-2" />
                   </svg>
                   }
                 </div>
@@ -159,10 +163,10 @@ import { WorkshopService } from '../../services/workshop.service';
   `,
   styles: [
     `
-      .border-t-4 {
+      .bg-white {
         transition: transform 0.3s ease;
       }
-      .border-t-4:hover {
+      .bg-white:hover {
         transform: translateY(-5px);
       }
     `
