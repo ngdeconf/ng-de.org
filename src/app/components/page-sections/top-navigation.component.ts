@@ -4,7 +4,7 @@ import {
   ElementRef,
   HostListener,
   signal,
-  ViewChild
+  viewChild
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ThemeService } from '../../services/theme.service';
@@ -182,9 +182,9 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
   ]
 })
 export class TopNavigationComponent {
-  @ViewChild('header') headerElement!: ElementRef;
-  @ViewChild('ticketsSection') ticketsSection!: ElementRef;
-  @ViewChild('heroSection') heroSection!: ElementRef;
+  headerElement = viewChild.required<ElementRef>('header');
+  ticketsSection = viewChild.required<ElementRef>('ticketsSection');
+  heroSection = viewChild.required<ElementRef>('heroSection');
 
   ticketsSectionBottom = 0;
   heroSectionBottom = 0;
@@ -278,7 +278,8 @@ export class TopNavigationComponent {
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerHeight = this.headerElement?.nativeElement?.offsetHeight || 0;
+      const headerHeight =
+        this.headerElement().nativeElement?.offsetHeight || 0;
       const targetPosition =
         element.getBoundingClientRect().top + window.scrollY - headerHeight;
 

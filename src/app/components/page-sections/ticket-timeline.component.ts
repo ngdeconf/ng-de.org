@@ -5,10 +5,9 @@ import {
   ElementRef,
   OnDestroy,
   OnInit,
-  QueryList,
   signal,
-  ViewChild,
-  ViewChildren
+  viewChild,
+  viewChildren
 } from '@angular/core';
 import { TicketPhaseService } from '../../services/ticket-phase.service';
 
@@ -149,8 +148,9 @@ import { TicketPhaseService } from '../../services/ticket-phase.service';
   `
 })
 export class TicketTimelineComponent implements OnInit, OnDestroy {
-  @ViewChild('timelineContainer') timelineContainer!: ElementRef;
-  @ViewChildren('timelineItem') timelineItems?: QueryList<ElementRef>;
+  timelineContainer = viewChild.required<ElementRef>('timelineContainer');
+  timelineItems = viewChildren<ElementRef>('timelineItem');
+
   ticketPhases = this.ticketPhaseService.getTicketPhases();
   isVisible = signal(false);
   private observer?: IntersectionObserver;
@@ -173,7 +173,7 @@ export class TicketTimelineComponent implements OnInit, OnDestroy {
   }
 
   private setupIntersectionObserver(): void {
-    if ('IntersectionObserver' in window && this.timelineContainer) {
+    if ('IntersectionObserver' in window) {
       this.observer = new IntersectionObserver(
         entries => {
           if (entries[0].isIntersecting) {
@@ -184,7 +184,7 @@ export class TicketTimelineComponent implements OnInit, OnDestroy {
         { threshold: 0.2 }
       );
 
-      this.observer.observe(this.timelineContainer.nativeElement);
+      this.observer.observe(this.timelineContainer().nativeElement);
     } else {
       // Fallback for browsers without IntersectionObserver
       this.isVisible.set(true);

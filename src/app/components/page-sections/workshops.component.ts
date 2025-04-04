@@ -4,7 +4,7 @@ import {
   Component,
   ElementRef,
   signal,
-  ViewChild
+  viewChild
 } from '@angular/core';
 import { SpeakerService } from '../../services/speaker.service';
 import { WorkshopService } from '../../services/workshop.service';
@@ -546,8 +546,8 @@ import { WorkshopService } from '../../services/workshop.service';
   standalone: true
 })
 export class WorkshopsComponent {
-  @ViewChild('closeButton') closeButton?: ElementRef;
-  @ViewChild('dialogContainer') dialogContainer?: ElementRef;
+  closeButton = viewChild.required<ElementRef>('closeButton');
+  dialogContainer = viewChild.required<ElementRef>('dialogContainer');
 
   workshops = this.workshopService.getWorkshops();
   activeWorkshop = signal<any | null>(null);
@@ -581,13 +581,11 @@ export class WorkshopsComponent {
           );
         }
 
-        if (this.dialogContainer) {
-          // Focus trap and accessibility improvements
-          this.dialogContainer.nativeElement.focus();
+        // Focus trap and accessibility improvements
+        this.dialogContainer().nativeElement.focus();
 
-          // Prevent scrolling of the body when dialog is open
-          document.body.style.overflow = 'hidden';
-        }
+        // Prevent scrolling of the body when dialog is open
+        document.body.style.overflow = 'hidden';
       };
 
       this.closeWorkshopDetailsHandler = () => {

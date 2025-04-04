@@ -5,7 +5,7 @@ import {
   ElementRef,
   OnInit,
   signal,
-  ViewChild
+  viewChild
 } from '@angular/core';
 import { SpeakerService } from '../../services/speaker.service';
 
@@ -322,9 +322,9 @@ import { SpeakerService } from '../../services/speaker.service';
   standalone: true
 })
 export class SpeakersComponent implements OnInit {
-  @ViewChild('closeButton') closeButton?: ElementRef;
-  @ViewChild('dialogContainer') dialogContainer?: ElementRef;
-  @ViewChild('speakersSection') speakersSection?: ElementRef;
+  closeButton = viewChild.required<ElementRef>('closeButton');
+  dialogContainer = viewChild.required<ElementRef>('dialogContainer');
+  speakersSection = viewChild.required<ElementRef>('speakersSection');
 
   speakers = this.speakerService.getSpeakers();
   shuffledSpeakers = signal<any[]>([]);
@@ -345,9 +345,7 @@ export class SpeakersComponent implements OnInit {
       this.isIntersecting.set(true);
 
       // Setup once view has been initialized
-      if (this.speakersSection) {
-        this.setupIntersectionObserver();
-      }
+      this.setupIntersectionObserver();
     });
   }
 
@@ -356,7 +354,7 @@ export class SpeakersComponent implements OnInit {
   }
 
   private setupIntersectionObserver(): void {
-    if ('IntersectionObserver' in window && this.speakersSection) {
+    if ('IntersectionObserver' in window) {
       this.observer = new IntersectionObserver(
         entries => {
           if (entries[0].isIntersecting) {
@@ -367,7 +365,7 @@ export class SpeakersComponent implements OnInit {
         { threshold: 0.1 }
       );
 
-      this.observer.observe(this.speakersSection.nativeElement);
+      this.observer.observe(this.speakersSection().nativeElement);
     }
   }
 
@@ -389,13 +387,11 @@ export class SpeakersComponent implements OnInit {
     this.isDialogVisible.set(true);
 
     afterNextRender(() => {
-      if (this.dialogContainer) {
-        // Focus trap and accessibility improvements
-        this.dialogContainer.nativeElement.focus();
+      // Focus trap and accessibility improvements
+      this.dialogContainer().nativeElement.focus();
 
-        // Prevent scrolling of the body when dialog is open
-        document.body.style.overflow = 'hidden';
-      }
+      // Prevent scrolling of the body when dialog is open
+      document.body.style.overflow = 'hidden';
     });
   }
 
