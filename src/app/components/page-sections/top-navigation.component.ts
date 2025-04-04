@@ -1,12 +1,12 @@
-import { isPlatformBrowser } from '@angular/common';
 import {
+  afterNextRender,
   Component,
+  ElementRef,
   HostListener,
-  Inject,
-  OnInit,
-  PLATFORM_ID,
-  signal
+  signal,
+  ViewChild
 } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { ThemeService } from '../../services/theme.service';
 import { MobileMenuComponent } from '../mobile-menu.component';
 import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
@@ -14,7 +14,7 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
 @Component({
   selector: 'ngde-top-navigation',
   standalone: true,
-  imports: [ThemeToggleButtonComponent, MobileMenuComponent],
+  imports: [ThemeToggleButtonComponent, MobileMenuComponent, RouterModule],
   template: `
     <header
       class="fixed w-full z-50"
@@ -181,88 +181,113 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
     `
   ]
 })
-export class TopNavigationComponent implements OnInit {
+export class TopNavigationComponent {
+  @ViewChild('header') headerElement!: ElementRef;
+  @ViewChild('ticketsSection') ticketsSection!: ElementRef;
+  @ViewChild('heroSection') heroSection!: ElementRef;
+
+  ticketsSectionBottom = 0;
+  heroSectionBottom = 0;
+  isHeaderCollapsed = signal(false);
+  isMenuOpen = signal(false);
   isScrolled = signal(false);
   isMobileMenuOpen = signal(false);
   showTicketsCTA = signal(false);
   isPastHero = signal(false);
 
-  private isBrowser: boolean;
-  private ticketsSectionBottom = 0;
-  private heroSectionBottom = 0;
-
-  constructor(
-    private themeService: ThemeService,
-    @Inject(PLATFORM_ID) platformId: Object
-  ) {
-    this.isBrowser = isPlatformBrowser(platformId);
+  constructor(private themeService: ThemeService) {
+    afterNextRender(() => {
+      this.calculateSectionPositions();
+    });
   }
 
-  ngOnInit() {
-    // Initial calculation of section positions after component initialization
-    if (this.isBrowser) {
-      setTimeout(() => this.calculateSectionPositions(), 300);
+  @HostListener('window:scroll')
+  handleScroll(): void {
+    this.checkScrollPosition();
+
+    // Update header collapse state
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    this.isHeaderCollapsed.set(scrollTop > 50);
+  }
+
+  @HostListener('window:resize')
+  onWindowResize(): void {
+    this.calculateSectionPositions();
+  }
+
+  private checkScrollPosition(): void {
+    // Basic scroll check
+    this.isScrolled.set(window.scrollY > 10);
+
+    // Check for ticket CTA visibility
+    if (this.ticketsSectionBottom > 0) {
+      this.showTicketsCTA.set(window.scrollY > this.ticketsSectionBottom);
     }
+
+    // Check if we've scrolled past hero section
+    if (this.heroSectionBottom > 0) {
+      this.isPastHero.set(window.scrollY > this.heroSectionBottom * 0.8);
+    }
+  }
+
+  private calculateSectionPositions(): void {
+    const ticketsSection = document.getElementById('tickets');
+    if (ticketsSection) {
+      const rect = ticketsSection.getBoundingClientRect();
+      this.ticketsSectionBottom = rect.bottom + window.scrollY;
+    }
+
+    const heroSection = document.getElementById('home');
+
+    if (heroSection) {
+      const rect = heroSection.getBoundingClientRect();
+      this.heroSectionBottom = rect.bottom + window.scrollY;
+    }
+
+    this.checkScrollPosition();
   }
 
   isDarkMode() {
     return this.themeService.darkMode();
   }
 
-  toggleMobileMenu() {
-    this.isMobileMenuOpen.update(value => !value);
+  toggleDarkMode(): void {
+    this.themeService.toggleDarkMode();
   }
 
-  closeMobileMenu() {
+  openMobileMenu(): void {
+    this.isMobileMenuOpen.set(true);
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeMobileMenu(): void {
     this.isMobileMenuOpen.set(false);
+    document.body.style.overflow = '';
   }
 
-  private calculateSectionPositions() {
-    const ticketsSection = document.getElementById('tickets');
-    const heroSection = document.getElementById('home');
+  toggleMobileMenu(): void {
+    this.isMobileMenuOpen.update(value => !value);
 
-    if (ticketsSection) {
-      this.ticketsSectionBottom =
-        ticketsSection.offsetTop + ticketsSection.offsetHeight;
-    }
-
-    if (heroSection) {
-      this.heroSectionBottom = heroSection.offsetTop + heroSection.offsetHeight;
-    }
-
-    // Initial check
-    this.checkScrollPosition();
-  }
-
-  private checkScrollPosition() {
-    if (this.ticketsSectionBottom > 0) {
-      this.showTicketsCTA.set(window.scrollY > this.ticketsSectionBottom);
-    }
-
-    if (this.heroSectionBottom > 0) {
-      this.isPastHero.set(window.scrollY > this.heroSectionBottom * 0.8);
+    if (this.isMobileMenuOpen()) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
     }
   }
 
-  @HostListener('window:scroll')
-  onWindowScroll() {
-    if (this.isBrowser) {
-      this.isScrolled.set(window.scrollY > 10);
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerHeight = this.headerElement?.nativeElement?.offsetHeight || 0;
+      const targetPosition =
+        element.getBoundingClientRect().top + window.scrollY - headerHeight;
 
-      // Recalculate if not yet set
-      if (this.ticketsSectionBottom === 0 || this.heroSectionBottom === 0) {
-        this.calculateSectionPositions();
-      } else {
-        this.checkScrollPosition();
-      }
-    }
-  }
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
 
-  @HostListener('window:resize')
-  onWindowResize() {
-    if (this.isBrowser) {
-      // Recalculate on resize to account for layout changes
-      this.calculateSectionPositions();
+      this.closeMobileMenu();
     }
   }
 }

@@ -4,7 +4,7 @@ import { FaqComponent } from '../page-sections/faq.component';
 import { HeroComponent } from '../page-sections/hero.component';
 import { ImpressionsComponent } from '../page-sections/impressions.component';
 import { OrganizerComponent } from '../page-sections/organizer.component';
-import { ScheduleComponent } from '../page-sections/schedule.component';
+// import { ScheduleComponent } from '../page-sections/schedule.component';
 import { SpeakersComponent } from '../page-sections/speakers.component';
 import { TicketsComponent } from '../page-sections/tickets.component';
 import { WorkshopsComponent } from '../page-sections/workshops.component';
@@ -16,7 +16,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     HeroComponent,
     TicketsComponent,
     SpeakersComponent,
-    ScheduleComponent,
+    // ScheduleComponent,
     WorkshopsComponent,
     OrganizerComponent,
     ImpressionsComponent,

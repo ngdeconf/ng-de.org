@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { afterNextRender, Component } from '@angular/core';
 import { ThemeService } from '../services/theme.service';
 
 @Component({
@@ -39,13 +39,17 @@ import { ThemeService } from '../services/theme.service';
   `
 })
 export class ThemeToggleButtonComponent {
-  constructor(private themeService: ThemeService) {}
+  constructor(private themeService: ThemeService) {
+    afterNextRender(() => {
+      this.themeService.initializeTheme();
+    });
+  }
 
   isDarkMode() {
     return this.themeService.darkMode();
   }
 
   toggleTheme() {
-    this.themeService.toggleTheme();
+    this.themeService.toggleDarkMode();
   }
 }
