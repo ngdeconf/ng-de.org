@@ -10,16 +10,21 @@ import { Component } from '@angular/core';
       <div class="container mx-auto px-4 relative z-10">
         <div class="md:flex md:items-center md:justify-between md:space-x-10">
           <div class="md:w-1/2 mb-10 md:mb-0">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span class="block">
-                <span
-                  class="bg-clip-text text-transparent bg-gradient-to-l from-primary-500 via-primary-400 to-secondary-500"
-                >
-                  NG-DE
+            <div class="flex items-center mb-6">
+              <div class="mr-6 md:mr-8 flex-shrink-0 self-center">
+                <img src="assets/logo.svg" alt="NG-DE Logo" class="h-32 w-32" />
+              </div>
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">
+                <span class="block">
+                  <span
+                    class="bg-clip-text text-transparent bg-gradient-to-l from-primary-500 via-primary-400 to-secondary-500"
+                  >
+                    NG-DE
+                  </span>
                 </span>
-              </span>
-              <span class="block">Berlin 2025</span>
-            </h1>
+                <span class="block">Berlin 2025</span>
+              </h1>
+            </div>
 
             <p
               class="text-xl md:text-2xl mb-6 text-gray-700 dark:text-gray-300"
@@ -141,12 +146,7 @@ import { Component } from '@angular/core';
               />
             </div>
 
-            <!-- Floating badges -->
-            <div
-              class="absolute -top-6 -right-6 bg-white dark:bg-gray-800 rounded-full p-4 shadow-lg"
-            >
-              <img src="assets/logo.svg" alt="NG-DE Logo" class="h-12 w-12" />
-            </div>
+            <!-- Floating badge -->
             <div
               class="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 rounded-full p-4 shadow-lg flex items-center justify-center"
             >

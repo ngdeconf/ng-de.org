@@ -28,7 +28,11 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
       <div class="w-full py-4">
         <div class="container mx-auto px-4">
           <div class="flex justify-between items-center">
-            <div class="flex items-center space-x-3">
+            <div
+              class="flex items-center space-x-3 transition-opacity duration-300"
+              [class.opacity-0]="!isPastHero()"
+              [class.opacity-100]="isPastHero()"
+            >
               <img src="assets/logo.svg" alt="NG-DE Logo" class="h-10 w-10" />
               <div>
                 <h1 class="text-2xl font-bold">
@@ -181,8 +185,11 @@ export class TopNavigationComponent implements OnInit {
   isScrolled = signal(false);
   isMobileMenuOpen = signal(false);
   showTicketsCTA = signal(false);
+  isPastHero = signal(false);
+
   private isBrowser: boolean;
   private ticketsSectionBottom = 0;
+  private heroSectionBottom = 0;
 
   constructor(
     private themeService: ThemeService,
@@ -212,17 +219,28 @@ export class TopNavigationComponent implements OnInit {
 
   private calculateSectionPositions() {
     const ticketsSection = document.getElementById('tickets');
+    const heroSection = document.getElementById('home');
+
     if (ticketsSection) {
       this.ticketsSectionBottom =
         ticketsSection.offsetTop + ticketsSection.offsetHeight;
-      // Initial check
-      this.checkScrollPosition();
     }
+
+    if (heroSection) {
+      this.heroSectionBottom = heroSection.offsetTop + heroSection.offsetHeight;
+    }
+
+    // Initial check
+    this.checkScrollPosition();
   }
 
   private checkScrollPosition() {
     if (this.ticketsSectionBottom > 0) {
       this.showTicketsCTA.set(window.scrollY > this.ticketsSectionBottom);
+    }
+
+    if (this.heroSectionBottom > 0) {
+      this.isPastHero.set(window.scrollY > this.heroSectionBottom * 0.8);
     }
   }
 
@@ -232,7 +250,7 @@ export class TopNavigationComponent implements OnInit {
       this.isScrolled.set(window.scrollY > 10);
 
       // Recalculate if not yet set
-      if (this.ticketsSectionBottom === 0) {
+      if (this.ticketsSectionBottom === 0 || this.heroSectionBottom === 0) {
         this.calculateSectionPositions();
       } else {
         this.checkScrollPosition();

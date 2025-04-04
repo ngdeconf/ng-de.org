@@ -7,7 +7,7 @@ import {
   PLATFORM_ID,
   ViewChild
 } from '@angular/core';
-import { ConferenceService } from '../../services/conference.service';
+import { TicketPhaseService } from '../../services/ticket-phase.service';
 
 @Component({
   selector: 'app-ticket-timeline',
@@ -146,13 +146,13 @@ import { ConferenceService } from '../../services/conference.service';
 })
 export class TicketTimelineComponent implements OnInit {
   @ViewChild('timelineContainer') timelineContainer!: ElementRef;
-  ticketPhases = this.conferenceService.getTicketPhases();
+  ticketPhases = this.ticketPhaseService.getTicketPhases();
   private observer: IntersectionObserver | null = null;
   private isBrowser: boolean;
   isVisible = false;
 
   constructor(
-    private conferenceService: ConferenceService,
+    private ticketPhaseService: TicketPhaseService,
     @Inject(PLATFORM_ID) platformId: Object
   ) {
     this.isBrowser = isPlatformBrowser(platformId);

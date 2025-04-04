@@ -1,12 +1,7 @@
-import { computed, Injectable, signal } from '@angular/core';
-import {
-  ScheduleDay,
-  Speaker,
-  Talk,
-  Ticket,
-  TicketPhase,
-  Workshop
-} from '../models/models';
+import { Injectable, signal } from '@angular/core';
+import { ScheduleDay, Speaker, Talk, Ticket } from '../models/models';
+import { TicketPhaseService } from './ticket-phase.service';
+import { WorkshopService } from './workshop.service';
 
 @Injectable({ providedIn: 'root' })
 export class ConferenceService {
@@ -52,7 +47,7 @@ export class ConferenceService {
       name: 'Martina Kraus',
       title: 'Angular Consultant & Trainer',
       company: 'Independent',
-      bio: 'Martina Kraus is a Google Developer Expert in Angular and web technologies. She is an Angular consultant and trainer with a focus on Angular applications. As a lecturer, she teaches at the Hochschule Mannheim. She is actively involved in the Angular community and speaks at international conferences.',
+      bio: 'Martina Kraus has been active in the world of web development since her early years and has gradually become an expert in web security. As an  Security Engineer, she focuses on integrating security best practices into all phases of software development. In her role as a Google Developer Expert (GDE) in Angular, she enjoys sharing her knowledge of Angular security at both national and international conferences. She also regularly organizes ngGirls events (free Angular workshops for women) and is currently writing a book in German about authentication and authorization in web applications.',
       imageUrl: 'assets/images/speakers/martina-kraus.png',
       githubHandle: 'martinakraus'
     },
@@ -162,143 +157,6 @@ export class ConferenceService {
       room: 'Room B'
     }
   ]);
-
-  private readonly workshops = signal<Workshop[]>([
-    {
-      id: '1',
-      title:
-        'Modern Angular Architectures - 2025 Edition: Nx, Micro Frontends and Signal Store',
-      abstract:
-        "Enterprise applications need to be maintainable in the long term. This workshop shows you how to achieve this goal using modern Angular.\n\nTo accomplish this, we combine cutting-edge features like Signals, the Signal Store, and Module Federation with established concepts like Strategic Design (DDD), monorepos, vertical architectures, and Micro Frontends. We use Nx for incremental builds and demonstrate how to analyze and improve your application's maintainability.\n\nBy the end, you'll be equipped to plan and implement sustainable solutions with modern Angular and evaluate the pros and cons of various approaches for your specific solution.",
-      trainerId: 'manfred-steyer',
-      duration: '8 hours',
-      capacity: 30,
-      outline: [
-        {
-          title: 'Block 1',
-          topics: [
-            'Vertical architectures and Strategic Design (DDD) as guiding theory',
-            'Implementing your Strategic Design with Nx',
-            'Enforcing your architecture with Nx & Sheriff',
-            'Incremental builds with Nx',
-            'Visualizing and analyzing your architecture and planning improvements'
-          ]
-        },
-        {
-          title: 'Block 2',
-          topics: ['Hands-on lab', 'Micro Frontends with Native Federation']
-        },
-        {
-          title: 'Block 3',
-          topics: [
-            'Reactive architectures with Signals',
-            'Reactive design and thinking',
-            'Building blocks: signal, computed, effects',
-            'Backgrounds: auto-tracking and glitch-free behavior',
-            'New in Angular 19: resource and linkedSignal',
-            'RxJS interoperability with Signals'
-          ]
-        },
-        {
-          title: 'Block 4',
-          topics: [
-            'State Management with the new NGRX Signal Store',
-            'Eventing (Redux) with the new Signal Store',
-            'Custom Features',
-            'Hands-on lab'
-          ]
-        }
-      ],
-      targetAudience:
-        'This workshop is designed for developers with project experience using Angular.',
-      trainers: ['manfred-steyer', 'rainer-hahnekamp']
-    },
-    {
-      id: '2',
-      title: 'Agent-Driven Coding: Boosting Developer Productivity with Cursor',
-      abstract:
-        "Discover how to make developers 10x more productive using Agent-Driven Coding techniques with Cursor IDE. This hands-on workshop will explore the power of AI-assisted development and teach you how to leverage different AI models to enhance your workflow.\n\nWe'll cover the setup and integration of Cursor IDE with various AI models, creating and managing rule files for code standards, and developing efficient workflows that combine human creativity with AI capabilities. Learn how to use semantic search, code suggestion engines, and error diagnostics to streamline your development process.\n\nBy the end of this workshop, you'll understand how to effectively incorporate AI assistants into your development workflow, resulting in faster coding, higher quality code, and increased productivity.",
-      trainerId: 'robin-boehm',
-      duration: '8 hours',
-      capacity: 30,
-      outline: [
-        {
-          title: 'Introduction to Agent-Driven Coding',
-          topics: [
-            'Understanding AI-assisted development',
-            'The evolution from auto-complete to agent-driven coding',
-            'Overview of Cursor IDE capabilities',
-            'Setting up Cursor and configuring AI models'
-          ]
-        },
-        {
-          title: 'Working with AI Models in Cursor',
-          topics: [
-            'Understanding different AI models and their strengths',
-            'Configuring model preferences for different tasks',
-            'Prompt engineering for optimal results',
-            'Hands-on lab: Model selection and interaction'
-          ]
-        },
-        {
-          title: 'Rule Files and Code Standards',
-          topics: [
-            'Creating and managing rule files',
-            'Enforcing code standards with AI assistance',
-            'Custom rules for project-specific requirements',
-            'Using rules for Angular projects'
-          ]
-        },
-        {
-          title: 'Workflow Optimization',
-          topics: [
-            'Building efficient AI-assisted workflows',
-            'Integration with existing development processes',
-            'Version control and collaboration with AI assistance',
-            'Hands-on lab: Developing a feature with agent-driven coding'
-          ]
-        }
-      ],
-      targetAudience:
-        'This workshop is designed for Angular developers interested in productivity enhancements and AI-assisted coding techniques.',
-      trainers: ['robin-boehm', 'gregor-woiwode']
-    }
-  ]);
-
-  private readonly ticketPhases = signal<TicketPhase[]>([
-    {
-      name: 'Super Early Bird',
-      startDate: new Date('2025-04-01'),
-      isActive: false,
-      isPast: false,
-      basePrice: 599
-    },
-    {
-      name: 'Early Bird',
-      startDate: new Date('2025-05-01'),
-      isActive: false,
-      isPast: false,
-      basePrice: 699
-    },
-    {
-      name: 'Regular Ticket',
-      startDate: new Date('2025-07-01'),
-      isActive: false,
-      isPast: false,
-      basePrice: 799
-    },
-    {
-      name: 'Final Bird',
-      startDate: new Date('2025-10-01'),
-      isActive: false,
-      isPast: false,
-      basePrice: 899
-    }
-  ]);
-
-  readonly currentPhase = computed(() => {
-    return this.ticketPhases().find(phase => phase.isActive);
-  });
 
   private readonly schedule = signal<ScheduleDay[]>([
     {
@@ -552,64 +410,37 @@ export class ConferenceService {
     }
   ]);
 
-  constructor() {
-    this.updatePhases();
+  constructor(
+    private ticketPhaseService: TicketPhaseService,
+    private workshopService: WorkshopService
+  ) {
+    this.updateTicketPrices();
   }
 
+  /**
+   * Forward method to TicketPhaseService
+   */
   getTicketPhases() {
-    return this.ticketPhases;
+    return this.ticketPhaseService.getTicketPhases();
   }
 
+  /**
+   * Forward method to TicketPhaseService
+   */
   getCurrentPhase() {
-    return this.currentPhase;
+    return this.ticketPhaseService.getCurrentPhase();
   }
 
-  private updatePhases() {
-    const now = new Date();
-    let foundActive = false;
-
-    const phases = [...this.ticketPhases()]
-      .sort((a, b) => a.startDate.getTime() - b.startDate.getTime())
-      .map(phase => ({ ...phase }));
-
-    // Go through phases in reverse to find current active phase
-    for (let i = phases.length - 1; i >= 0; i--) {
-      const phase = phases[i];
-
-      if (!foundActive && now >= phase.startDate) {
-        phase.isActive = true;
-        phase.isPast = false;
-        foundActive = true;
-      } else {
-        phase.isActive = false;
-        phase.isPast = now >= phase.startDate;
-      }
-    }
-
-    this.ticketPhases.set(phases);
-    this.updateTicketPrices(phases);
-  }
-
-  private updateTicketPrices(phases: TicketPhase[]) {
-    const currentPhase = phases.find(phase => phase.isActive);
-    if (!currentPhase) return;
-
+  /**
+   * Updates the ticket prices based on the current phase
+   */
+  private updateTicketPrices() {
     const tickets = this.tickets();
     const updatedTickets = tickets.map(ticket => {
       const newTicket = { ...ticket };
-
-      switch (ticket.type) {
-        case 'conference':
-          newTicket.price = currentPhase.basePrice;
-          break;
-        case 'workshop':
-          newTicket.price = currentPhase.basePrice - 200; // Workshop premium
-          break;
-        case 'bundle':
-          newTicket.price = currentPhase.basePrice + 300; // Bundle premium
-          break;
-      }
-
+      newTicket.price = this.ticketPhaseService.calculateTicketPrice(
+        ticket.type
+      );
       return newTicket;
     });
 
@@ -624,8 +455,25 @@ export class ConferenceService {
     return this.talks;
   }
 
+  /**
+   * Forward method to WorkshopService
+   */
   getWorkshops() {
-    return this.workshops;
+    return this.workshopService.getWorkshops();
+  }
+
+  /**
+   * Forward method to WorkshopService
+   */
+  getWorkshopById(id: string) {
+    return this.workshopService.getWorkshopById(id);
+  }
+
+  /**
+   * Forward method to WorkshopService
+   */
+  getWorkshopsByTrainerId(trainerId: string) {
+    return this.workshopService.getWorkshopsByTrainerId(trainerId);
   }
 
   getTickets() {
