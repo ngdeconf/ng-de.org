@@ -18,8 +18,12 @@ import { WorkshopService } from '../../services/workshop.service';
     <section id="workshops" class="py-20">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">Workshop Day</h2>
-          <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+            Workshop Day
+          </h2>
+          <p
+            class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
+          >
             November 5: Hands-on workshops to level up your Angular skills
           </p>
         </div>
@@ -27,13 +31,15 @@ import { WorkshopService } from '../../services/workshop.service';
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           @for (workshop of workshops(); track workshop.id) {
           <div
-            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl"
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all hover:shadow-xl focus-within:ring-2 focus-within:ring-primary-500 dark:focus-within:ring-primary-400"
+            tabindex="-1"
           >
-            <div class="p-8">
-              <div class="flex items-start gap-6 mb-6">
+            <div class="p-8 md:p-10">
+              <!-- Workshop Header -->
+              <div class="flex flex-col md:flex-row md:items-start gap-6 mb-8">
                 <!-- Custom SVG Icon based on workshop -->
                 <div
-                  class="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center bg-gray-100 dark:bg-gray-700"
+                  class="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center bg-gray-100 dark:bg-gray-700 mx-auto md:mx-0"
                 >
                   @if (workshop.id === '1') {
                   <!-- Angular Architecture Workshop Icon -->
@@ -82,10 +88,12 @@ import { WorkshopService } from '../../services/workshop.service';
                   }
                 </div>
 
-                <div class="flex-1">
-                  <h3 class="text-xl font-bold mb-2">{{ workshop.title }}</h3>
+                <div class="flex-1 text-center md:text-left">
+                  <h3 class="text-xl font-bold mb-3 leading-snug">
+                    {{ workshop.title }}
+                  </h3>
                   <p
-                    class="text-lg font-semibold text-gray-800 dark:text-gray-300 mb-3"
+                    class="text-lg font-medium text-primary-600 dark:text-primary-400 mb-0"
                   >
                     {{ workshop.teaser }}
                   </p>
@@ -93,20 +101,24 @@ import { WorkshopService } from '../../services/workshop.service';
               </div>
 
               <!-- Workshop Details -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8 bg-gray-50 dark:bg-gray-750 p-4 rounded-lg"
+              >
                 <!-- Duration -->
                 <div
-                  class="flex items-center space-x-2 text-gray-600 dark:text-gray-400"
+                  class="flex items-center space-x-3 text-gray-600 dark:text-gray-400"
+                  [attr.aria-label]="'Workshop duration: ' + workshop.duration"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
+                    class="h-5 w-5 flex-shrink-0 text-primary-500 dark:text-primary-400"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
+                    aria-hidden="true"
                   >
                     <circle cx="12" cy="12" r="10"></circle>
                     <polyline points="12 6 12 12 16 14"></polyline>
@@ -116,17 +128,21 @@ import { WorkshopService } from '../../services/workshop.service';
 
                 <!-- Attendees -->
                 <div
-                  class="flex items-center space-x-2 text-gray-600 dark:text-gray-400"
+                  class="flex items-center space-x-3 text-gray-600 dark:text-gray-400"
+                  [attr.aria-label]="
+                    'Capacity: ' + workshop.capacity + ' attendees'
+                  "
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
+                    class="h-5 w-5 flex-shrink-0 text-primary-500 dark:text-primary-400"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
+                    aria-hidden="true"
                   >
                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                     <circle cx="9" cy="7" r="4"></circle>
@@ -139,26 +155,33 @@ import { WorkshopService } from '../../services/workshop.service';
 
               <!-- Workshop Benefits -->
               @if (workshop.benefits && workshop.benefits.length > 0) {
-              <div class="mb-6">
+              <div
+                class="mb-8 px-4 py-5 bg-primary-50 dark:bg-primary-900/10 rounded-lg"
+              >
                 <h4
-                  class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3"
+                  class="text-sm uppercase tracking-wider text-primary-700 dark:text-primary-300 mb-4 font-medium"
                 >
-                  Core Benefits
+                  What you'll learn
                 </h4>
-                <div class="space-y-3">
+                <div class="space-y-4">
                   @for (benefit of workshop.benefits; track benefit; let i =
                   $index) {
                   <div
-                    class="flex items-start gap-3 benefit-item"
+                    class="flex items-start gap-4 benefit-item"
                     [style.animation-delay]="i * 100 + 'ms'"
                   >
                     <div
-                      class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center text-primary-600 dark:text-primary-400"
+                      class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 dark:bg-primary-800/40 flex items-center justify-center text-primary-600 dark:text-primary-400"
+                      aria-hidden="true"
                     >
-                      <span class="text-xs font-bold">{{ i + 1 }}</span>
+                      <span class="text-xs font-bold opacity-80">{{
+                        i + 1
+                      }}</span>
                     </div>
                     <div class="flex-1">
-                      <p class="text-gray-700 dark:text-gray-300">
+                      <p
+                        class="text-gray-700 dark:text-gray-300 leading-relaxed"
+                      >
                         {{ benefit }}
                       </p>
                     </div>
@@ -168,11 +191,41 @@ import { WorkshopService } from '../../services/workshop.service';
               </div>
               }
 
+              <!-- Workshop Leaders -->
+              <div class="mb-8">
+                <h4
+                  class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4 font-medium"
+                >
+                  Workshop Leaders
+                </h4>
+                <div class="flex flex-wrap gap-3">
+                  @for (trainerId of workshop.trainers || [workshop.trainerId];
+                  track trainerId) {
+                  <div
+                    class="flex items-center bg-gray-100 dark:bg-gray-700 rounded-full pl-1 pr-4 py-1.5"
+                  >
+                    <img
+                      [src]="getSpeakerImage(trainerId)"
+                      [alt]="getSpeakerName(trainerId)"
+                      class="h-8 w-8 rounded-full mr-3 border-2 border-white dark:border-gray-800"
+                    />
+                    <div>
+                      <p class="font-medium text-sm">
+                        {{ getSpeakerName(trainerId) }}
+                      </p>
+                    </div>
+                  </div>
+                  }
+                </div>
+              </div>
+
               <!-- Learn More CTA -->
               <button
-                class="w-full mb-6 bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm hover:shadow focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+                class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3.5 px-5 rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
                 (click)="openWorkshopDetails(workshop)"
-                aria-label="View workshop details"
+                [attr.aria-label]="
+                  'View detailed workshop information for ' + workshop.title
+                "
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -187,38 +240,8 @@ import { WorkshopService } from '../../services/workshop.service';
                   <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                   <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                 </svg>
-                <span>What will I learn?</span>
+                <span class="tracking-wide">What will I learn?</span>
               </button>
-
-              <!-- Trainers -->
-              <div class="border-t border-gray-200 dark:border-gray-700 pt-4">
-                <div class="flex justify-between items-center mb-3">
-                  <h4
-                    class="text-sm font-medium text-gray-500 dark:text-gray-400"
-                  >
-                    Workshop Leaders
-                  </h4>
-                </div>
-                <div class="flex flex-wrap gap-3">
-                  @for (trainerId of workshop.trainers || [workshop.trainerId];
-                  track trainerId) {
-                  <div
-                    class="flex items-center bg-gray-100 dark:bg-gray-700 rounded-full pl-1 pr-3 py-1"
-                  >
-                    <img
-                      [src]="getSpeakerImage(trainerId)"
-                      [alt]="getSpeakerName(trainerId)"
-                      class="h-8 w-8 rounded-full mr-2 border-2 border-white dark:border-gray-800"
-                    />
-                    <div>
-                      <p class="font-medium text-sm">
-                        {{ getSpeakerName(trainerId) }}
-                      </p>
-                    </div>
-                  </div>
-                  }
-                </div>
-              </div>
             </div>
           </div>
           }
@@ -240,19 +263,31 @@ import { WorkshopService } from '../../services/workshop.service';
       (keydown.escape)="closeWorkshopDetails()"
       tabindex="-1"
     >
+      <!-- Skip to close button for screen readers -->
+      <a
+        href="#dialog-close-btn"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:p-4 focus:bg-white focus:text-primary-700"
+      >
+        Skip to close button
+      </a>
+
       <div
         #dialogContent
         class="bg-white dark:bg-gray-800 rounded-2xl max-w-3xl w-full max-h-[80vh] overflow-y-auto shadow-xl"
         (click)="$event.stopPropagation()"
       >
-        <div class="p-6">
-          <div class="flex justify-between items-center mb-4">
-            <h3 id="workshop-details-title" class="text-2xl font-bold">
+        <div class="p-6 md:p-8">
+          <div class="flex justify-between items-center mb-6">
+            <h3
+              id="workshop-details-title"
+              class="text-2xl font-bold leading-tight"
+            >
               {{ activeWorkshop()?.title }}
             </h3>
             <button
               #closeButton
-              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-2"
+              id="dialog-close-btn"
+              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
               aria-label="Close dialog"
               (click)="closeWorkshopDetails()"
             >
@@ -262,6 +297,7 @@ import { WorkshopService } from '../../services/workshop.service';
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path
                   stroke-linecap="round"
@@ -274,9 +310,9 @@ import { WorkshopService } from '../../services/workshop.service';
           </div>
 
           <!-- Workshop Trainers -->
-          <div class="mb-6">
+          <div class="mb-8">
             <h4
-              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2"
+              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3 font-medium"
             >
               Led by
             </h4>
@@ -284,7 +320,7 @@ import { WorkshopService } from '../../services/workshop.service';
               @for (trainerId of activeWorkshop()?.trainers ||
               [activeWorkshop()?.trainerId]; track trainerId) {
               <div
-                class="flex items-center bg-gray-100 dark:bg-gray-700 rounded-lg pl-1 pr-4 py-1"
+                class="flex items-center bg-gray-100 dark:bg-gray-700 rounded-lg pl-1 pr-4 py-2"
               >
                 <img
                   [src]="getSpeakerImage(trainerId)"
@@ -303,13 +339,15 @@ import { WorkshopService } from '../../services/workshop.service';
           </div>
 
           <!-- Workshop Abstract -->
-          <div class="mb-6">
+          <div class="mb-8">
             <h4
-              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2"
+              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3 font-medium"
             >
               About this workshop
             </h4>
-            <p class="text-gray-600 dark:text-gray-300 whitespace-pre-line">
+            <p
+              class="text-gray-600 dark:text-gray-300 whitespace-pre-line leading-relaxed"
+            >
               {{ activeWorkshop()?.abstract }}
             </p>
           </div>
@@ -317,9 +355,9 @@ import { WorkshopService } from '../../services/workshop.service';
           <!-- Workshop Outline Accordion -->
           @if (activeWorkshop()?.outline && activeWorkshop()?.outline.length >
           0) {
-          <div>
+          <div class="mb-8">
             <h4
-              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3"
+              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4 font-medium"
             >
               Workshop Outline
             </h4>
@@ -330,7 +368,7 @@ import { WorkshopService } from '../../services/workshop.service';
                 class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden"
               >
                 <button
-                  class="w-full flex justify-between items-center p-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                  class="w-full flex justify-between items-center p-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 dark:focus:ring-primary-400"
                   [attr.aria-expanded]="isAccordionExpanded(i)"
                   [attr.aria-controls]="'section-' + i"
                   (click)="toggleAccordion(i)"
@@ -347,6 +385,7 @@ import { WorkshopService } from '../../services/workshop.service';
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
+                    aria-hidden="true"
                   >
                     <polyline points="6 9 12 15 18 9"></polyline>
                   </svg>
@@ -359,10 +398,10 @@ import { WorkshopService } from '../../services/workshop.service';
                 >
                   <div class="p-4 bg-white dark:bg-gray-800">
                     <ul
-                      class="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300"
+                      class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300"
                     >
                       @for (topic of section.topics; track topic) {
-                      <li>{{ topic }}</li>
+                      <li class="leading-relaxed">{{ topic }}</li>
                       }
                     </ul>
                   </div>
@@ -375,21 +414,21 @@ import { WorkshopService } from '../../services/workshop.service';
 
           <!-- Target Audience -->
           @if (activeWorkshop()?.targetAudience) {
-          <div class="mt-6 p-4 bg-gray-50 dark:bg-gray-700/30 rounded-lg">
+          <div class="mb-8 p-5 bg-gray-50 dark:bg-gray-700/30 rounded-lg">
             <h4
-              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2"
+              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3 font-medium"
             >
               Target Audience
             </h4>
-            <p class="text-gray-600 dark:text-gray-300">
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
               {{ activeWorkshop()?.targetAudience }}
             </p>
           </div>
           }
 
-          <div class="mt-6 flex justify-end">
+          <div class="flex justify-end">
             <button
-              class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+              class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2.5 px-5 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
               (click)="closeWorkshopDetails()"
             >
               Close
@@ -402,8 +441,9 @@ import { WorkshopService } from '../../services/workshop.service';
   `,
   styles: [
     `
+      /* Card hover transition */
       .bg-white {
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
       .bg-white:hover {
         transform: translateY(-5px);
@@ -424,6 +464,12 @@ import { WorkshopService } from '../../services/workshop.service';
       .benefit-item {
         animation: benefit-appear 0.5s ease forwards;
         opacity: 0;
+      }
+
+      /* Focus styles */
+      button:focus-visible {
+        outline: 2px solid var(--primary-color, #4f46e5);
+        outline-offset: 2px;
       }
 
       /* Dialog and accordion animations */
@@ -481,6 +527,13 @@ import { WorkshopService } from '../../services/workshop.service';
 
       .dialog-leave > div {
         animation: dialog-content-out 0.3s ease forwards;
+      }
+
+      /* Dark mode support */
+      @media (prefers-color-scheme: dark) {
+        .dark\:bg-gray-750 {
+          background-color: rgba(55, 65, 81, 0.5);
+        }
       }
     `
   ]
