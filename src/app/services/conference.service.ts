@@ -47,7 +47,7 @@ export class ConferenceService {
       name: 'Martina Kraus',
       title: 'Angular Consultant & Trainer',
       company: 'Independent',
-      bio: 'Martina Kraus has been active in web development since her early years and is now an expert in Angular and web security. As a Security Engineer, she integrates security best practices into all phases of software development. As a Google Developer Expert, she shares her knowledge on Angular at international conferences.',
+      bio: 'Martina Kraus has been active in the world of web development since her early years and has gradually become an expert in web security. As an  Security Engineer, she focuses on integrating security best practices into all phases of software development. In her role as a Google Developer Expert (GDE) in Angular, she enjoys sharing her knowledge of Angular security at both national and international conferences. She also regularly organizes ngGirls events (free Angular workshops for women) and is currently writing a book in German about authentication and authorization in web applications.',
       imageUrl: 'assets/images/speakers/martina-kraus.png',
       githubHandle: 'martinakraus'
     },
