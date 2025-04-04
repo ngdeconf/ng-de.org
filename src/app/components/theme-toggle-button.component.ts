@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ThemeService } from '../services/theme.service';
 
 @Component({
-  selector: 'app-theme-toggle-button',
+  selector: 'ngde-theme-toggle-button',
   standalone: true,
   template: `
     <button

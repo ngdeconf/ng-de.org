@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { ScheduleService } from '../../services/schedule.service';
 
 @Component({
-  selector: 'app-schedule',
+  selector: 'ngde-schedule',
   template: `
     <section id="schedule" class="py-20 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4">

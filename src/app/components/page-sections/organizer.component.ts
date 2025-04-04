@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-organizer',
+  selector: 'ngde-organizer',
   template: `
     <section id="organizer" class="relative py-20 overflow-hidden">
       <!-- Gradient background with wavy bottom -->

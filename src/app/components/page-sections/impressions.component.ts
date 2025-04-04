@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-impressions',
+  selector: 'ngde-impressions',
   template: `
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">

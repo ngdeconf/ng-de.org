@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'ngde-footer',
   imports: [RouterLink],
+  standalone: true,
   template: `
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">

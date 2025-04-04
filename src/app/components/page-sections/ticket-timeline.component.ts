@@ -10,7 +10,7 @@ import {
 import { TicketPhaseService } from '../../services/ticket-phase.service';
 
 @Component({
-  selector: 'app-ticket-timeline',
+  selector: 'ngde-ticket-timeline',
   imports: [DatePipe],
   template: `
     <!-- Timeline Container -->

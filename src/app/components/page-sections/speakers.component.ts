@@ -12,7 +12,7 @@ import {
 import { SpeakerService } from '../../services/speaker.service';
 
 @Component({
-  selector: 'app-speakers',
+  selector: 'ngde-speakers',
   imports: [CommonModule],
   template: `
     <section #speakersSection id="speakers" class="py-16">

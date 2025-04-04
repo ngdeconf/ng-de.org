@@ -12,7 +12,7 @@ import { MobileMenuComponent } from '../mobile-menu.component';
 import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
 
 @Component({
-  selector: 'app-top-navigation',
+  selector: 'ngde-top-navigation',
   standalone: true,
   imports: [ThemeToggleButtonComponent, MobileMenuComponent],
   template: `
@@ -106,7 +106,7 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 Get Tickets
               </a>
 
-              <app-theme-toggle-button />
+              <ngde-theme-toggle-button />
 
               <button
                 (click)="toggleMobileMenu()"
@@ -149,7 +149,7 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
             </div>
           </div>
 
-          <app-mobile-menu
+          <ngde-mobile-menu
             [isOpen]="isMobileMenuOpen()"
             [onClose]="closeMobileMenu.bind(this)"
           />

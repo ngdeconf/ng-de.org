@@ -5,7 +5,7 @@ import { TicketService } from '../../services/ticket.service';
 import { TicketTimelineComponent } from './ticket-timeline.component';
 
 @Component({
-  selector: 'app-tickets',
+  selector: 'ngde-tickets',
   imports: [TicketTimelineComponent],
   template: `
     <section id="tickets" class="py-28 bg-gray-50 dark:bg-gray-900">
@@ -18,7 +18,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
           </p>
         </div>
 
-        <app-ticket-timeline />
+        <ngde-ticket-timeline />
 
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"

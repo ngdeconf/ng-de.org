@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-mobile-menu',
+  selector: 'ngde-mobile-menu',
   standalone: true,
   template: `
     @if (isOpen) {
