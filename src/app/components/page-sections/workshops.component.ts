@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ConferenceService } from '../../services/conference.service';
+import { WorkshopService } from '../../services/workshop.service';
 
 @Component({
   selector: 'app-workshops',
@@ -89,9 +90,12 @@ import { ConferenceService } from '../../services/conference.service';
   `
 })
 export class WorkshopsComponent {
-  workshops = this.conferenceService.getWorkshops();
+  workshops = this.workshopService.getWorkshops();
 
-  constructor(private conferenceService: ConferenceService) {}
+  constructor(
+    private conferenceService: ConferenceService,
+    private workshopService: WorkshopService
+  ) {}
 
   getSpeakerName(speakerId: string): string {
     const speaker = this.conferenceService.getSpeakerById(speakerId);
