@@ -137,6 +137,37 @@ import { WorkshopService } from '../../services/workshop.service';
                 </div>
               </div>
 
+              <!-- Workshop Benefits -->
+              @if (workshop.benefits && workshop.benefits.length > 0) {
+              <div class="mb-6">
+                <h4
+                  class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3"
+                >
+                  Core Benefits
+                </h4>
+                <div class="space-y-3">
+                  @for (benefit of workshop.benefits; track benefit; let i =
+                  $index) {
+                  <div
+                    class="flex items-start gap-3 benefit-item"
+                    [style.animation-delay]="i * 100 + 'ms'"
+                  >
+                    <div
+                      class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center text-primary-600 dark:text-primary-400"
+                    >
+                      <span class="text-xs font-bold">{{ i + 1 }}</span>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-gray-700 dark:text-gray-300">
+                        {{ benefit }}
+                      </p>
+                    </div>
+                  </div>
+                  }
+                </div>
+              </div>
+              }
+
               <!-- Learn More CTA -->
               <button
                 class="w-full mb-6 bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm hover:shadow focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
@@ -376,6 +407,23 @@ import { WorkshopService } from '../../services/workshop.service';
       }
       .bg-white:hover {
         transform: translateY(-5px);
+      }
+
+      /* Benefit animations */
+      @keyframes benefit-appear {
+        from {
+          opacity: 0;
+          transform: translateX(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .benefit-item {
+        animation: benefit-appear 0.5s ease forwards;
+        opacity: 0;
       }
 
       /* Dialog and accordion animations */
