@@ -1,18 +1,16 @@
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import {
-  AfterViewInit,
+  afterNextRender,
   Component,
   ElementRef,
-  Inject,
-  PLATFORM_ID,
   signal,
-  ViewChild
+  viewChild
 } from '@angular/core';
-import { ConferenceService } from '../../services/conference.service';
+import { SpeakerService } from '../../services/speaker.service';
 import { WorkshopService } from '../../services/workshop.service';
 
 @Component({
-  selector: 'app-workshops',
+  selector: 'ngde-workshops',
   imports: [CommonModule],
   template: `
     <section id="workshops" class="py-20">
@@ -544,11 +542,12 @@ import { WorkshopService } from '../../services/workshop.service';
         }
       }
     `
-  ]
+  ],
+  standalone: true
 })
-export class WorkshopsComponent implements AfterViewInit {
-  @ViewChild('closeButton') closeButton?: ElementRef;
-  @ViewChild('dialogContainer') dialogContainer?: ElementRef;
+export class WorkshopsComponent {
+  closeButton = viewChild.required<ElementRef>('closeButton');
+  dialogContainer = viewChild.required<ElementRef>('dialogContainer');
 
   workshops = this.workshopService.getWorkshops();
   activeWorkshop = signal<any | null>(null);
@@ -556,76 +555,79 @@ export class WorkshopsComponent implements AfterViewInit {
   isDialogLeaving = signal(false);
   expandedAccordions = signal<boolean[]>([]);
 
-  private isBrowser: boolean;
-
   constructor(
-    private conferenceService: ConferenceService,
-    private workshopService: WorkshopService,
-    @Inject(PLATFORM_ID) platformId: Object
+    private speakerService: SpeakerService,
+    private workshopService: WorkshopService
   ) {
-    this.isBrowser = isPlatformBrowser(platformId);
+    // Initialize with all accordions collapsed
+    const workshop = this.workshops();
+    if (workshop.length > 0 && workshop[0].outline) {
+      this.expandedAccordions.set(
+        new Array(workshop[0].outline.length).fill(false)
+      );
+    }
+
+    // Setup afterNextRender handlers for dialog operations
+    afterNextRender(() => {
+      // This context is available for other methods to use
+      this.openWorkshopDetailsHandler = (workshop: any) => {
+        this.activeWorkshop.set(workshop);
+        this.isDialogVisible.set(true);
+
+        // Reset the expanded state of accordions
+        if (workshop.outline) {
+          this.expandedAccordions.set(
+            new Array(workshop.outline.length).fill(false)
+          );
+        }
+
+        // Focus trap and accessibility improvements
+        this.dialogContainer().nativeElement.focus();
+
+        // Prevent scrolling of the body when dialog is open
+        document.body.style.overflow = 'hidden';
+      };
+
+      this.closeWorkshopDetailsHandler = () => {
+        this.isDialogLeaving.set(true);
+
+        setTimeout(() => {
+          this.isDialogLeaving.set(false);
+          this.isDialogVisible.set(false);
+          this.activeWorkshop.set(null);
+
+          // Re-enable scrolling
+          document.body.style.overflow = '';
+        }, 300); // Match the CSS transition duration
+      };
+    });
   }
 
-  ngAfterViewInit(): void {
-    // No initialization needed for initial load
-  }
+  // Private handlers set up in constructor
+  private openWorkshopDetailsHandler: (workshop: any) => void = () => {};
+  private closeWorkshopDetailsHandler: () => void = () => {};
 
   getSpeakerName(speakerId: string): string {
-    const speaker = this.conferenceService.getSpeakerById(speakerId);
+    const speaker = this.speakerService.getSpeakerById(speakerId);
     return speaker ? speaker.name : 'Unknown Speaker';
   }
 
   getSpeakerImage(speakerId: string): string {
-    const speaker = this.conferenceService.getSpeakerById(speakerId);
+    const speaker = this.speakerService.getSpeakerById(speakerId);
     return speaker ? speaker.imageUrl : '';
   }
 
   getSpeakerTitle(speakerId: string): string {
-    const speaker = this.conferenceService.getSpeakerById(speakerId);
+    const speaker = this.speakerService.getSpeakerById(speakerId);
     return speaker ? speaker.title : '';
   }
 
   openWorkshopDetails(workshop: any): void {
-    this.activeWorkshop.set(workshop);
-    this.isDialogVisible.set(true);
-    this.isDialogLeaving.set(false);
-
-    // Initialize accordion state when opening a workshop
-    if (workshop.outline) {
-      // Default: first section is expanded, others collapsed
-      this.expandedAccordions.set(
-        workshop.outline.map((_: any, i: number) => i === 0)
-      );
-    } else {
-      this.expandedAccordions.set([]);
-    }
-
-    // Focus the close button when dialog opens
-    if (this.isBrowser) {
-      setTimeout(() => {
-        if (this.closeButton) {
-          this.closeButton.nativeElement.focus();
-        }
-      });
-    }
+    this.openWorkshopDetailsHandler(workshop);
   }
 
   closeWorkshopDetails(): void {
-    this.isDialogLeaving.set(true);
-
-    // Wait for animation to complete before removing dialog
-    if (this.isBrowser) {
-      setTimeout(() => {
-        this.activeWorkshop.set(null);
-        this.isDialogVisible.set(false);
-        this.isDialogLeaving.set(false);
-      }, 300);
-    } else {
-      // Immediately remove dialog in SSR context
-      this.activeWorkshop.set(null);
-      this.isDialogVisible.set(false);
-      this.isDialogLeaving.set(false);
-    }
+    this.closeWorkshopDetailsHandler();
   }
 
   toggleAccordion(index: number): void {
@@ -636,9 +638,5 @@ export class WorkshopsComponent implements AfterViewInit {
 
   isAccordionExpanded(index: number): boolean {
     return this.expandedAccordions()[index] || false;
-  }
-
-  ngOnDestroy(): void {
-    // Clean up any resources if needed
   }
 }

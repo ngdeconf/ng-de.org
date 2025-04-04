@@ -1,8 +1,8 @@
 import { Component, signal } from '@angular/core';
-import { ConferenceService } from '../../services/conference.service';
+import { ScheduleService } from '../../services/schedule.service';
 
 @Component({
-  selector: 'app-schedule',
+  selector: 'ngde-schedule',
   template: `
     <section id="schedule" class="py-20 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4">
@@ -74,10 +74,10 @@ import { ConferenceService } from '../../services/conference.service';
   `
 })
 export class ScheduleComponent {
-  schedule = this.conferenceService.getSchedule();
+  schedule = this.scheduleService.getSchedule();
   activeDay = signal<string>('');
 
-  constructor(private conferenceService: ConferenceService) {
+  constructor(private scheduleService: ScheduleService) {
     // Set the first day as active by default
     if (this.schedule().length > 0) {
       this.activeDay.set(this.schedule()[0].datetime);

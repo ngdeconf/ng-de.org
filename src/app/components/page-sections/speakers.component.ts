@@ -1,18 +1,16 @@
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import {
-  AfterViewInit,
+  afterNextRender,
   Component,
   ElementRef,
-  Inject,
   OnInit,
-  PLATFORM_ID,
   signal,
-  ViewChild
+  viewChild
 } from '@angular/core';
-import { ConferenceService } from '../../services/conference.service';
+import { SpeakerService } from '../../services/speaker.service';
 
 @Component({
-  selector: 'app-speakers',
+  selector: 'ngde-speakers',
   imports: [CommonModule],
   template: `
     <section #speakersSection id="speakers" class="py-16">
@@ -320,114 +318,96 @@ import { ConferenceService } from '../../services/conference.service';
         animation: dialog-content-out 0.3s ease forwards;
       }
     `
-  ]
+  ],
+  standalone: true
 })
-export class SpeakersComponent implements AfterViewInit, OnInit {
-  @ViewChild('closeButton') closeButton?: ElementRef;
-  @ViewChild('dialogContainer') dialogContainer?: ElementRef;
-  @ViewChild('speakersSection') speakersSection?: ElementRef;
+export class SpeakersComponent implements OnInit {
+  closeButton = viewChild.required<ElementRef>('closeButton');
+  dialogContainer = viewChild.required<ElementRef>('dialogContainer');
+  speakersSection = viewChild.required<ElementRef>('speakersSection');
 
-  speakers = this.conferenceService.getSpeakers();
+  speakers = this.speakerService.getSpeakers();
   shuffledSpeakers = signal<any[]>([]);
   activeSpeaker = signal<any | null>(null);
   isDialogVisible = signal(false);
   isDialogLeaving = signal(false);
   isIntersecting = signal(false);
 
-  private isBrowser: boolean;
   private observer?: IntersectionObserver;
 
-  constructor(
-    private conferenceService: ConferenceService,
-    @Inject(PLATFORM_ID) platformId: Object
-  ) {
-    this.isBrowser = isPlatformBrowser(platformId);
+  constructor(private speakerService: SpeakerService) {
+    // Shuffle speakers when component initializes
+    this.shuffleSpeakers();
+
+    // Use afterNextRender for browser-only code
+    afterNextRender(() => {
+      // Set default for SSR
+      this.isIntersecting.set(true);
+
+      // Setup once view has been initialized
+      this.setupIntersectionObserver();
+    });
   }
 
   ngOnInit(): void {
-    // Initialize shuffled speakers
-    this.shuffledSpeakers.set(this.shuffleArray([...this.speakers()]));
-  }
-
-  /**
-   * Shuffles an array using the Fisher-Yates algorithm
-   */
-  private shuffleArray<T>(array: T[]): T[] {
-    const shuffled = [...array];
-
-    // Fisher-Yates shuffle algorithm
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-
-    return shuffled;
-  }
-
-  ngAfterViewInit(): void {
-    if (this.isBrowser && this.speakersSection) {
-      this.setupIntersectionObserver();
-    } else if (!this.isBrowser) {
-      // For SSR, immediately set as intersecting to show content
-      this.isIntersecting.set(true);
-    }
+    // Initialization moved to constructor
   }
 
   private setupIntersectionObserver(): void {
-    this.observer = new IntersectionObserver(
-      entries => {
-        const entry = entries[0];
-        if (entry.isIntersecting) {
-          this.isIntersecting.set(true);
-          // Once we've triggered the animation, we can stop observing
-          if (this.observer && this.speakersSection) {
-            this.observer.unobserve(this.speakersSection.nativeElement);
+    if ('IntersectionObserver' in window) {
+      this.observer = new IntersectionObserver(
+        entries => {
+          if (entries[0].isIntersecting) {
+            this.isIntersecting.set(true);
+            this.observer?.disconnect();
           }
-        }
-      },
-      {
-        threshold: 0.1, // Trigger when at least 10% of the section is visible
-        rootMargin: '50px' // Start animation slightly before it enters viewport
-      }
-    );
+        },
+        { threshold: 0.1 }
+      );
 
-    if (this.speakersSection) {
-      this.observer.observe(this.speakersSection.nativeElement);
+      this.observer.observe(this.speakersSection().nativeElement);
     }
+  }
+
+  shuffleSpeakers(): void {
+    const speakersArray = [...this.speakers()];
+    // Simple Fisher-Yates shuffle algorithm
+    for (let i = speakersArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [speakersArray[i], speakersArray[j]] = [
+        speakersArray[j],
+        speakersArray[i]
+      ];
+    }
+    this.shuffledSpeakers.set(speakersArray);
   }
 
   openBioDialog(speaker: any): void {
     this.activeSpeaker.set(speaker);
     this.isDialogVisible.set(true);
-    this.isDialogLeaving.set(false);
 
-    // In SSR, we need to ensure browser APIs are only called in the browser environment
-    if (this.isBrowser) {
-      setTimeout(() => {
-        // Focus the close button when dialog opens
-        if (this.closeButton) {
-          this.closeButton.nativeElement.focus();
-        }
-      });
-    }
+    afterNextRender(() => {
+      // Focus trap and accessibility improvements
+      this.dialogContainer().nativeElement.focus();
+
+      // Prevent scrolling of the body when dialog is open
+      document.body.style.overflow = 'hidden';
+    });
   }
 
   closeBioDialog(): void {
     this.isDialogLeaving.set(true);
 
-    // Wait for animation to complete before removing dialog
-    if (this.isBrowser) {
+    afterNextRender(() => {
       setTimeout(() => {
-        this.activeSpeaker.set(null);
-        this.isDialogVisible.set(false);
         this.isDialogLeaving.set(false);
-      }, 300);
-    } else {
-      // Immediately remove dialog in SSR context
-      this.activeSpeaker.set(null);
-      this.isDialogVisible.set(false);
-      this.isDialogLeaving.set(false);
-    }
+        this.isDialogVisible.set(false);
+        this.activeSpeaker.set(null);
+
+        // Re-enable scrolling
+        document.body.style.overflow = '';
+      }, 300); // Match the CSS transition duration
+    });
   }
 
   ngOnDestroy(): void {

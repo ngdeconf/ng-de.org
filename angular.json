@@ -67,7 +67,7 @@
           "defaultConfiguration": "development"
         }
       },
-      "prefix": "app",
+      "prefix": "ngde",
       "projectType": "application",
       "root": "",
       "schematics": {},

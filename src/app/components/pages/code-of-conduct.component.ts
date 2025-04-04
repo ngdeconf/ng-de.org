@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-code-of-conduct',
+  selector: 'ngde-code-of-conduct',
   imports: [CommonModule],
   template: `
     <section class="py-20 bg-gray-50 dark:bg-gray-900">

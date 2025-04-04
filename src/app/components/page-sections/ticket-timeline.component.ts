@@ -1,17 +1,20 @@
-import { DatePipe, isPlatformBrowser } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import {
+  afterNextRender,
   Component,
   ElementRef,
-  Inject,
+  OnDestroy,
   OnInit,
-  PLATFORM_ID,
-  ViewChild
+  signal,
+  viewChild,
+  viewChildren
 } from '@angular/core';
 import { TicketPhaseService } from '../../services/ticket-phase.service';
 
 @Component({
-  selector: 'app-ticket-timeline',
-  imports: [DatePipe],
+  selector: 'ngde-ticket-timeline',
+  standalone: true,
+  imports: [CommonModule, DatePipe],
   template: `
     <!-- Timeline Container -->
     <div
@@ -24,7 +27,7 @@ import { TicketPhaseService } from '../../services/ticket-phase.service';
       >
         <div
           class="absolute top-0 left-0 h-full w-0 bg-gradient-to-r from-[#e40341] via-[#f034e0] via-[#921bf2] to-[#2192d1] shadow-[0_0_15px_rgba(228,3,65,0.5)] dark:shadow-[0_0_15px_rgba(228,3,65,0.3)]"
-          [class.animate-fill-gradient]="isVisible"
+          [class.animate-fill-gradient]="isVisible()"
         ></div>
       </div>
 
@@ -144,55 +147,54 @@ import { TicketPhaseService } from '../../services/ticket-phase.service';
     }
   `
 })
-export class TicketTimelineComponent implements OnInit {
-  @ViewChild('timelineContainer') timelineContainer!: ElementRef;
+export class TicketTimelineComponent implements OnInit, OnDestroy {
+  timelineContainer = viewChild.required<ElementRef>('timelineContainer');
+  timelineItems = viewChildren<ElementRef>('timelineItem');
+
   ticketPhases = this.ticketPhaseService.getTicketPhases();
-  private observer: IntersectionObserver | null = null;
-  private isBrowser: boolean;
-  isVisible = false;
+  isVisible = signal(false);
+  private observer?: IntersectionObserver;
 
-  constructor(
-    private ticketPhaseService: TicketPhaseService,
-    @Inject(PLATFORM_ID) platformId: Object
-  ) {
-    this.isBrowser = isPlatformBrowser(platformId);
-  }
-
-  ngOnInit() {
-    if (this.isBrowser) {
+  constructor(private ticketPhaseService: TicketPhaseService) {
+    afterNextRender(() => {
       this.setupIntersectionObserver();
-    }
+    });
   }
 
-  private setupIntersectionObserver() {
-    if (!this.isBrowser) return;
-
-    this.observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            this.isVisible = true;
-            this.observer?.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-        rootMargin: '100px 0px'
-      }
-    );
-
-    // Start observing after a short delay to ensure the element is rendered
-    setTimeout(() => {
-      if (this.timelineContainer?.nativeElement) {
-        this.observer?.observe(this.timelineContainer.nativeElement);
-      }
-    }, 100);
+  ngOnInit(): void {
+    // No additional initialization needed
   }
 
-  ngOnDestroy() {
-    if (this.isBrowser && this.observer) {
+  ngOnDestroy(): void {
+    // Clean up observer when component is destroyed
+    if (this.observer) {
       this.observer.disconnect();
     }
+  }
+
+  private setupIntersectionObserver(): void {
+    if ('IntersectionObserver' in window) {
+      this.observer = new IntersectionObserver(
+        entries => {
+          if (entries[0].isIntersecting) {
+            this.isVisible.set(true);
+            this.observer?.disconnect();
+          }
+        },
+        { threshold: 0.2 }
+      );
+
+      this.observer.observe(this.timelineContainer().nativeElement);
+    } else {
+      // Fallback for browsers without IntersectionObserver
+      this.isVisible.set(true);
+    }
+  }
+
+  formatDate(date: Date): string {
+    return date.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric'
+    });
   }
 }
