@@ -276,18 +276,21 @@ import { WorkshopService } from '../../services/workshop.service';
         class="bg-white dark:bg-gray-800 rounded-2xl max-w-3xl w-full max-h-[80vh] overflow-y-auto shadow-xl"
         (click)="$event.stopPropagation()"
       >
-        <div class="p-6 md:p-8">
-          <div class="flex justify-between items-center mb-6">
+        <!-- Sticky dialog header -->
+        <div
+          class="sticky top-0 z-10 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 px-6 py-4 md:px-8 md:py-5 rounded-t-2xl shadow-sm"
+        >
+          <div class="flex justify-between items-center">
             <h3
               id="workshop-details-title"
-              class="text-2xl font-bold leading-tight"
+              class="text-2xl font-bold leading-tight pr-8"
             >
               {{ activeWorkshop()?.title }}
             </h3>
             <button
               #closeButton
               id="dialog-close-btn"
-              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
+              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 absolute right-5 md:right-7"
               aria-label="Close dialog"
               (click)="closeWorkshopDetails()"
             >
@@ -308,7 +311,9 @@ import { WorkshopService } from '../../services/workshop.service';
               </svg>
             </button>
           </div>
+        </div>
 
+        <div class="p-6 pt-4 md:p-8 md:pt-4">
           <!-- Workshop Trainers -->
           <div class="mb-8">
             <h4
@@ -464,6 +469,12 @@ import { WorkshopService } from '../../services/workshop.service';
       .benefit-item {
         animation: benefit-appear 0.5s ease forwards;
         opacity: 0;
+      }
+
+      /* Sticky header styles */
+      .sticky {
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
       }
 
       /* Focus styles */
