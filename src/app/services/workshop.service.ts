@@ -11,9 +11,9 @@ export class WorkshopService {
       teaser:
         'Master cutting-edge architecture patterns to build maintainable enterprise Angular applications that stand the test of time.',
       benefits: [
-        'Build scalable enterprise architectures using DDD and modern Angular patterns',
-        'Master the Signal Store ecosystem for efficient state management',
-        'Implement Micro Frontends for modular, maintainable applications'
+        'Build scalable architectures with modern Angular patterns',
+        'Master Signal Store for efficient state management',
+        'Implement Micro Frontends for modular applications'
       ],
       abstract:
         "Enterprise applications need to be maintainable in the long term. This workshop shows you how to achieve this goal using modern Angular.\n\nTo accomplish this, we combine cutting-edge features like Signals, the Signal Store, and Module Federation with established concepts like Strategic Design (DDD), monorepos, vertical architectures, and Micro Frontends. We use Nx for incremental builds and demonstrate how to analyze and improve your application's maintainability.\n\nBy the end, you'll be equipped to plan and implement sustainable solutions with modern Angular and evaluate the pros and cons of various approaches for your specific solution.",
@@ -66,9 +66,9 @@ export class WorkshopService {
       teaser:
         'Supercharge your development workflow and become 10x more productive by harnessing AI models with Cursor IDE.',
       benefits: [
-        'Increase coding speed by 10x using AI-driven development techniques',
-        'Create custom rule files to enforce code standards automatically',
-        'Master prompt engineering for optimal AI code generation'
+        'Boost coding speed with AI-driven development',
+        'Create rule files for automatic code standards',
+        'Master prompts for optimal AI code generation'
       ],
       abstract:
         "Discover how to make developers 10x more productive using Agent-Driven Coding techniques with Cursor IDE. This hands-on workshop will explore the power of AI-assisted development and teach you how to leverage different AI models to enhance your workflow.\n\nWe'll cover the setup and integration of Cursor IDE with various AI models, creating and managing rule files for code standards, and developing efficient workflows that combine human creativity with AI capabilities. Learn how to use semantic search, code suggestion engines, and error diagnostics to streamline your development process.\n\nBy the end of this workshop, you'll understand how to effectively incorporate AI assistants into your development workflow, resulting in faster coding, higher quality code, and increased productivity.",
