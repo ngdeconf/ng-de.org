@@ -1,3 +1,4 @@
+import { DialogModule } from '@angular/cdk/dialog';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import {
   ApplicationConfig,
@@ -15,6 +16,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withFetch()),
     provideClientHydration(withEventReplay()),
     provideRouter(routes),
-    provideExperimentalZonelessChangeDetection()
+    provideExperimentalZonelessChangeDetection(),
+    DialogModule
   ]
 };
