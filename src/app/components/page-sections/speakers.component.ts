@@ -3,7 +3,6 @@ import {
   afterNextRender,
   Component,
   ElementRef,
-  OnInit,
   signal,
   viewChild
 } from '@angular/core';
@@ -321,7 +320,7 @@ import { SpeakerService } from '../../services/speaker.service';
   ],
   standalone: true
 })
-export class SpeakersComponent implements OnInit {
+export class SpeakersComponent {
   closeButton = viewChild.required<ElementRef>('closeButton');
   dialogContainer = viewChild.required<ElementRef>('dialogContainer');
   speakersSection = viewChild.required<ElementRef>('speakersSection');
@@ -347,10 +346,6 @@ export class SpeakersComponent implements OnInit {
       // Setup once view has been initialized
       this.setupIntersectionObserver();
     });
-  }
-
-  ngOnInit(): void {
-    // Initialization moved to constructor
   }
 
   private setupIntersectionObserver(): void {
@@ -386,28 +381,21 @@ export class SpeakersComponent implements OnInit {
     this.activeSpeaker.set(speaker);
     this.isDialogVisible.set(true);
 
-    afterNextRender(() => {
-      // Focus trap and accessibility improvements
-      this.dialogContainer().nativeElement.focus();
-
-      // Prevent scrolling of the body when dialog is open
-      document.body.style.overflow = 'hidden';
-    });
+    // Prevent scrolling of the body when dialog is open
+    document.body.style.overflow = 'hidden';
   }
 
   closeBioDialog(): void {
     this.isDialogLeaving.set(true);
 
-    afterNextRender(() => {
-      setTimeout(() => {
-        this.isDialogLeaving.set(false);
-        this.isDialogVisible.set(false);
-        this.activeSpeaker.set(null);
+    setTimeout(() => {
+      this.isDialogLeaving.set(false);
+      this.isDialogVisible.set(false);
+      this.activeSpeaker.set(null);
 
-        // Re-enable scrolling
-        document.body.style.overflow = '';
-      }, 300); // Match the CSS transition duration
-    });
+      // Re-enable scrolling
+      document.body.style.overflow = '';
+    }, 300); // Match the CSS transition duration
   }
 
   ngOnDestroy(): void {

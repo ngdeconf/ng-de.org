@@ -1,14 +1,8 @@
-import { afterNextRender, Injectable, signal } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
   darkMode = signal(false);
-
-  constructor() {
-    afterNextRender(() => {
-      this.initializeTheme();
-    });
-  }
 
   initializeTheme(): void {
     const isDarkMode = localStorage.getItem('darkMode') === 'true';

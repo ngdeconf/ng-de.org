@@ -380,12 +380,9 @@ export class TopNavigationComponent {
   openMobileMenu(): void {
     this.isMobileMenuOpen.set(true);
 
-    // Only manipulate DOM after rendering
-    afterNextRender(() => {
-      if (typeof document !== 'undefined') {
-        document.body.style.overflow = 'hidden';
-      }
-    });
+    if (typeof document !== 'undefined') {
+      document.body.style.overflow = 'hidden';
+    }
   }
 
   closeMobileMenu(): void {
