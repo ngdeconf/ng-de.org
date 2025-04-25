@@ -119,57 +119,61 @@ export class WorkshopService {
     },
     {
       id: '3',
-      title: 'High-Speed Angular: Performance Optimization and Modern Architecture',
-      teaser: 'Master Angular performance optimization techniques and modern architecture patterns to build lightning-fast applications.',
+      title: 'Angular Performance based on Modern Reactivity and SSR',
+      teaser: 'Master browser rendering, event loop, and modern Angular features like NgOptimizedImage and SSR for high-performance applications.',
       benefits: [
-        'Optimize Angular applications for maximum performance',
-        'Master modern Angular features like Signals and lazy loading',
-        'Implement advanced performance testing and monitoring'
+        'Control the browser render pipeline and optimize application performance',
+        'Master JavaScript event loop and network request optimization',
+        'Optimize User Experience with defer & Server Side Rendering'
       ],
-      abstract: 'High-speed Angular Apps on any device\n\nAre you tired of performance bottlenecks holding back your Angular apps? Want to create a lightning-fast user experience that keeps your users engaged? This comprehensive workshop will take you through the latest Angular performance optimization techniques and modern architecture patterns.\n\nYou will gain a deep understanding of running performance tests effectively and utilizing performance metrics to optimize your Angular application. Learn about Angular performance optimization with in-depth sessions on optimizing JavaScript code, native rendering performance, and modern features like Signals and lazy loading.\n\nDiscover how to architect Angular workspaces with standalone components, directives, and pipes for optimal performance. Master advanced lazy loading techniques with @defer and injectLazy, and implement efficient state management with Signals.\n\nDive into zoneless change detection and learn how to optimize your applications with server-side rendering, hydration, and partial hydration techniques. By the end of this workshop, you\'ll be equipped to build high-performance Angular applications that deliver an exceptional user experience.',
+      abstract: 'Advance your Angular expertise and build high-performance applications. You\'ll gain mastery over the JavaScript event loop to write efficient, non-blocking code. We will rigorously analyze network requests, identifying bottlenecks and implementing optimization strategies. Finally, we\'ll tackle Core Web Vitals and explore modern techniques like NgOptimizedImage, @defer and Server-Side Rendering to deliver blazingly fast user experiences.',
       trainerId: 'michael-hladky',
       duration: '8 hours',
       capacity: 30,
       outline: [
         {
-          title: 'Performance Fundamentals',
+          title: 'Browser Render Pipeline & Event Loop',
           topics: [
-            'Understanding Angular performance metrics',
-            'Running and analyzing performance tests',
-            'JavaScript optimization techniques',
-            'Native rendering performance optimization'
+            'Understanding the browser render pipeline stages',
+            'Tools for inspecting and analyzing bottlenecks',
+            'Mastering the JavaScript event loop',
+            'Techniques for writing optimal code',
+            'Hands-on: Performance analysis and optimization'
           ]
         },
         {
-          title: 'Modern Angular Architecture',
+          title: 'Network Optimization & Core Web Vitals',
           topics: [
-            'Standalone components and performance benefits',
-            'Function-based APIs and provide* patterns',
-            'Workspace architecture for optimal performance',
-            'Hands-on lab: Building a performant application'
+            'Identifying network performance bottlenecks',
+            'Optimizing data consumption strategies',
+            'Measuring and improving Core Web Vitals',
+            'LCP, CLS, INP, TBT, and TTFB optimization',
+            'Hands-on: Network performance optimization'
           ]
         },
         {
-          title: 'Advanced Performance Techniques',
+          title: 'Modern Angular Performance Features',
           topics: [
-            'Signals and efficient state management',
-            '@defer and advanced lazy loading strategies',
-            'Zoneless change detection and its benefits',
-            'Hands-on lab: Performance optimization'
+            'Mastering NgOptimizedImage directive',
+            'Lazy loading and priority hints',
+            'Responsive srcset generation',
+            'Improving LCP scores',
+            'Hands-on: Image optimization'
           ]
         },
         {
-          title: 'Server-Side Rendering and Hydration',
+          title: 'SSR & Advanced Performance Techniques',
           topics: [
-            'SSR performance optimization',
-            'Hydration and partial hydration techniques',
-            'Event delegation and performance',
-            'Performance monitoring and continuous optimization'
+            'In-depth @defer implementation',
+            'Server-Side Rendering fundamentals',
+            'Event replaying and partial hydration',
+            'Bundle size optimization',
+            'Hands-on: SSR implementation'
           ]
         }
       ],
-      targetAudience: 'This workshop is designed for Angular developers who want to master performance optimization and modern Angular features.',
-      trainers: ['michael-hladky']
+      targetAudience: 'This workshop is designed for Angular developers who want to master performance optimization, modern Angular features, and SSR implementation.',
+      trainers: ['michael-hladky', 'enea-jahollari']
     }
   ]);
 
