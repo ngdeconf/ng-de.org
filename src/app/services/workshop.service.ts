@@ -116,6 +116,60 @@ export class WorkshopService {
       targetAudience:
         'This workshop is designed for Angular developers interested in productivity enhancements and AI-assisted coding techniques.',
       trainers: ['robin-boehm', 'gregor-woiwode']
+    },
+    {
+      id: '3',
+      title: 'High-Speed Angular: Performance Optimization and Modern Architecture',
+      teaser: 'Master Angular performance optimization techniques and modern architecture patterns to build lightning-fast applications.',
+      benefits: [
+        'Optimize Angular applications for maximum performance',
+        'Master modern Angular features like Signals and lazy loading',
+        'Implement advanced performance testing and monitoring'
+      ],
+      abstract: 'High-speed Angular Apps on any device\n\nAre you tired of performance bottlenecks holding back your Angular apps? Want to create a lightning-fast user experience that keeps your users engaged? This comprehensive workshop will take you through the latest Angular performance optimization techniques and modern architecture patterns.\n\nYou will gain a deep understanding of running performance tests effectively and utilizing performance metrics to optimize your Angular application. Learn about Angular performance optimization with in-depth sessions on optimizing JavaScript code, native rendering performance, and modern features like Signals and lazy loading.\n\nDiscover how to architect Angular workspaces with standalone components, directives, and pipes for optimal performance. Master advanced lazy loading techniques with @defer and injectLazy, and implement efficient state management with Signals.\n\nDive into zoneless change detection and learn how to optimize your applications with server-side rendering, hydration, and partial hydration techniques. By the end of this workshop, you\'ll be equipped to build high-performance Angular applications that deliver an exceptional user experience.',
+      trainerId: 'michael-hladky',
+      duration: '8 hours',
+      capacity: 30,
+      outline: [
+        {
+          title: 'Performance Fundamentals',
+          topics: [
+            'Understanding Angular performance metrics',
+            'Running and analyzing performance tests',
+            'JavaScript optimization techniques',
+            'Native rendering performance optimization'
+          ]
+        },
+        {
+          title: 'Modern Angular Architecture',
+          topics: [
+            'Standalone components and performance benefits',
+            'Function-based APIs and provide* patterns',
+            'Workspace architecture for optimal performance',
+            'Hands-on lab: Building a performant application'
+          ]
+        },
+        {
+          title: 'Advanced Performance Techniques',
+          topics: [
+            'Signals and efficient state management',
+            '@defer and advanced lazy loading strategies',
+            'Zoneless change detection and its benefits',
+            'Hands-on lab: Performance optimization'
+          ]
+        },
+        {
+          title: 'Server-Side Rendering and Hydration',
+          topics: [
+            'SSR performance optimization',
+            'Hydration and partial hydration techniques',
+            'Event delegation and performance',
+            'Performance monitoring and continuous optimization'
+          ]
+        }
+      ],
+      targetAudience: 'This workshop is designed for Angular developers who want to master performance optimization and modern Angular features.',
+      trainers: ['michael-hladky']
     }
   ]);
 

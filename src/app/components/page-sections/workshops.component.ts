@@ -83,6 +83,29 @@ import { WorkshopService } from '../../services/workshop.service';
                     <path d="M17 11h-2" />
                     <path d="M12 8v-2" />
                   </svg>
+                  } @else if (workshop.id === '3') {
+                  <!-- Performance Workshop Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 h-10 text-gray-700 dark:text-gray-300"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <!-- Speedometer/Gauge -->
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 2v10" />
+                    <path d="M12 2l8 8" />
+                    <!-- Performance indicators -->
+                    <path d="M4 12h2" />
+                    <path d="M18 12h2" />
+                    <path d="M12 20v-2" />
+                    <!-- Lightning bolt for speed -->
+                    <path d="M12 6l-2 4h4l-2 4" />
+                  </svg>
                   }
                 </div>
 
