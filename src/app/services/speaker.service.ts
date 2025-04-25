@@ -75,6 +75,15 @@ export class SpeakerService {
       bio: 'Gregor loves developing tools that allow programmers to be even more productive. As a speaker, trainer, and consultant, he teaches techniques to continuously improve the architecture of Angular applications. He enjoys running and tries his hand as an amateur chef from time to time.',
       imageUrl: 'assets/images/speakers/gregor-woiwode.jpg',
       githubHandle: 'GregOnNet'
+    },
+    {
+      id: 'enea-jahollari',
+      name: 'Enea Jahollari',
+      title: 'Software Engineer & Google Developer Expert',
+      company: 'Push-based.io',
+      bio: 'Software Engineer focused on performance, scalability, and architecture of web applications. As a Google Developer Expert for Angular, Enea has given talks and workshops at ngIndia, AngularAustria, and NgPoland, as well as internal workshops at various companies. He is a maintainer of the RxAngular library, bringing performance utilities to developers, and a co-creator of the ngxtension library for Signal primitives in Angular. Enea regularly shares his expertise through blog posts about Angular performance, internals, Signals, and architecture, and keeps the community updated with the latest Angular news on X (formerly Twitter).',
+      imageUrl: 'assets/images/speakers/enea-jahollari.jpeg',
+      githubHandle: 'eneajaho'
     }
   ]);
 

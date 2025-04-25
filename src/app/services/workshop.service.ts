@@ -116,6 +116,64 @@ export class WorkshopService {
       targetAudience:
         'This workshop is designed for Angular developers interested in productivity enhancements and AI-assisted coding techniques.',
       trainers: ['robin-boehm', 'gregor-woiwode']
+    },
+    {
+      id: '3',
+      title: 'Angular Performance based on Modern Reactivity and SSR',
+      teaser: 'Master browser rendering, event loop, and modern Angular features like NgOptimizedImage and SSR for high-performance applications.',
+      benefits: [
+        'Control the browser render pipeline and optimize application performance',
+        'Master JavaScript event loop and network request optimization',
+        'Optimize User Experience with defer & Server Side Rendering'
+      ],
+      abstract: 'Advance your Angular expertise and build high-performance applications. You\'ll gain mastery over the JavaScript event loop to write efficient, non-blocking code. We will rigorously analyze network requests, identifying bottlenecks and implementing optimization strategies. Finally, we\'ll tackle Core Web Vitals and explore modern techniques like NgOptimizedImage, @defer and Server-Side Rendering to deliver blazingly fast user experiences.',
+      trainerId: 'michael-hladky',
+      duration: '8 hours',
+      capacity: 30,
+      outline: [
+        {
+          title: 'Browser Render Pipeline & Event Loop',
+          topics: [
+            'Understanding the browser render pipeline stages',
+            'Tools for inspecting and analyzing bottlenecks',
+            'Mastering the JavaScript event loop',
+            'Techniques for writing optimal code',
+            'Hands-on: Performance analysis and optimization'
+          ]
+        },
+        {
+          title: 'Network Optimization & Core Web Vitals',
+          topics: [
+            'Identifying network performance bottlenecks',
+            'Optimizing data consumption strategies',
+            'Measuring and improving Core Web Vitals',
+            'LCP, CLS, INP, TBT, and TTFB optimization',
+            'Hands-on: Network performance optimization'
+          ]
+        },
+        {
+          title: 'Modern Angular Performance Features',
+          topics: [
+            'Mastering NgOptimizedImage directive',
+            'Lazy loading and priority hints',
+            'Responsive srcset generation',
+            'Improving LCP scores',
+            'Hands-on: Image optimization'
+          ]
+        },
+        {
+          title: 'SSR & Advanced Performance Techniques',
+          topics: [
+            'In-depth @defer implementation',
+            'Server-Side Rendering fundamentals',
+            'Event replaying and partial hydration',
+            'Bundle size optimization',
+            'Hands-on: SSR implementation'
+          ]
+        }
+      ],
+      targetAudience: 'This workshop is designed for Angular developers who want to master performance optimization, modern Angular features, and SSR implementation.',
+      trainers: ['michael-hladky', 'enea-jahollari']
     }
   ]);
 
