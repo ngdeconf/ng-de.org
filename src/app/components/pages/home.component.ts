@@ -22,7 +22,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     OrganizerComponent,
     SponsorsComponent,
     ImpressionsComponent,
-    CallForPapersComponent,
+    // CallForPapersComponent,
     FaqComponent
   ],
   template: `
@@ -34,7 +34,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     <ngde-organizer />
     <ngde-sponsors />
     <ngde-impressions />
-    <ngde-call-for-papers />
+    <!-- <ngde-call-for-papers /> -->
     <ngde-faq />
   `
 })
