@@ -174,6 +174,65 @@ export class WorkshopService {
       ],
       targetAudience: 'This workshop is designed for Angular developers who want to master performance optimization, modern Angular features, and SSR implementation.',
       trainers: ['michael-hladky', 'enea-jahollari']
+    },
+    {
+      id: '4',
+      title: 'Hands On: CyberSecurity in Angular Applications',
+      teaser: 'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies.',
+      benefits: [
+        'Master core browser security concepts and XSS prevention',
+        'Implement Content Security Policy (CSP) effectively',
+        'Secure token handling and OAuth 2.0/2.1 patterns',
+        'Design and implement Backend-for-Frontend (BFF) architectures'
+      ],
+      abstract: 'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies. This workshop covers core browser security concepts, Cross-Site Scripting (XSS) prevention, Content Security Policy (CSP), and secure token handling. You\'ll explore advanced topics like OAuth 2.0/2.1 security patterns and Backend-for-Frontend (BFF) architectures. With practical examples and hands-on guidance, you\'ll gain the skills to identify vulnerabilities and implement effective protection mechanisms in your frontend code. Perfect for developers and architects who want to take their web application security to the next level.',
+      trainerId: 'martina-kraus',
+      duration: '8 hours',
+      capacity: 30,
+      outline: [
+        {
+          title: 'Core Security Concepts',
+          topics: [
+            'Browser security fundamentals',
+            'Same-origin policy and CORS',
+            'Cross-Site Scripting (XSS) prevention',
+            'Content Security Policy (CSP) implementation',
+            'Hands-on: Security headers and CSP configuration'
+          ]
+        },
+        {
+          title: 'Authentication & Authorization',
+          topics: [
+            'Secure token handling and storage',
+            'JWT security best practices',
+            'OAuth 2.0/2.1 security patterns',
+            'Implementing secure authentication flows',
+            'Hands-on: Secure token management'
+          ]
+        },
+        {
+          title: 'Advanced Security Patterns',
+          topics: [
+            'Backend-for-Frontend (BFF) architecture',
+            'Secure communication patterns',
+            'API security and rate limiting',
+            'Security monitoring and logging',
+            'Hands-on: BFF implementation'
+          ]
+        },
+        {
+          title: 'Security Testing & Best Practices',
+          topics: [
+            'Security testing methodologies',
+            'Vulnerability scanning and assessment',
+            'Security code review techniques',
+            'Implementing security in CI/CD',
+            'Hands-on: Security testing and assessment'
+          ]
+        }
+      ],
+      targetAudience: 'This workshop is designed for Angular developers and architects who want to enhance their application security knowledge and implement robust security measures.',
+      trainers: ['martina-kraus']
     }
   ]);
 

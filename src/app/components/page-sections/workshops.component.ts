@@ -106,6 +106,26 @@ import { WorkshopService } from '../../services/workshop.service';
                     <!-- Lightning bolt for speed -->
                     <path d="M12 6l-2 4h4l-2 4" />
                   </svg>
+                  } @else if (workshop.id === '4') {
+                  <!-- Security Workshop Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 h-10 text-gray-700 dark:text-gray-300"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <!-- Lock Body -->
+                    <rect x="6" y="11" width="12" height="8" rx="1" />
+                    <!-- Lock Top -->
+                    <path d="M12 11V8a3 3 0 0 1 3-3h0a3 3 0 0 1 3 3v3" />
+                    <!-- Lock Keyhole -->
+                    <circle cx="12" cy="15" r="1.5" />
+                    <path d="M12 16.5v2" />
+                  </svg>
                   }
                 </div>
 
