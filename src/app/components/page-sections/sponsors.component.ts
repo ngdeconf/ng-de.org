@@ -1,0 +1,188 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { SponsorService } from '../../services/sponsor.service';
+
+@Component({
+  selector: 'ngde-sponsors',
+  standalone: true,
+  imports: [CommonModule],
+  template: `
+    <section id="sponsors" class="py-20 bg-gray-50 dark:bg-gray-900">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Sponsors</h2>
+          <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            We are grateful to our sponsors who make NG-DE possible
+          </p>
+        </div>
+
+        <!-- Platinum Sponsors -->
+        @if (getSponsorsByLevel('Platinum').length > 0) {
+        <div class="mb-16">
+          <h3 class="text-2xl font-bold mb-8 text-center">Platinum Sponsors</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            @for (sponsor of getSponsorsByLevel('Platinum'); track sponsor.id) {
+            <div class="flex justify-center items-center">
+              <a
+                [href]="sponsor.websiteUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  [src]="sponsor.logoUrl"
+                  [alt]="sponsor.name"
+                  class="h-24 object-contain"
+                />
+              </a>
+            </div>
+            }
+          </div>
+        </div>
+        }
+
+        <!-- Gold Sponsors -->
+        @if (getSponsorsByLevel('Gold').length > 0) {
+        <div class="mb-16">
+          <h3 class="text-2xl font-bold mb-8 text-center">Gold Sponsors</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            @for (sponsor of getSponsorsByLevel('Gold'); track sponsor.id) {
+            <div class="flex justify-center items-center">
+              <a
+                [href]="sponsor.websiteUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <img
+                  [src]="sponsor.logoUrl"
+                  [alt]="sponsor.name"
+                  class="h-20 object-contain"
+                />
+              </a>
+            </div>
+            }
+          </div>
+        </div>
+        }
+
+        <!-- Silver Sponsors -->
+        @if (getSponsorsByLevel('Silver').length > 0) {
+        <div class="mb-16">
+          <h3 class="text-2xl font-bold mb-8 text-center">Silver Sponsors</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            @for (sponsor of getSponsorsByLevel('Silver'); track sponsor.id) {
+            <div class="flex justify-center items-center">
+              <a
+                [href]="sponsor.websiteUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              >
+                <img
+                  [src]="sponsor.logoUrl"
+                  [alt]="sponsor.name"
+                  class="h-16 object-contain"
+                />
+              </a>
+            </div>
+            }
+          </div>
+        </div>
+        }
+
+        <!-- Bronze Sponsors -->
+        @if (getSponsorsByLevel('Bronze').length > 0) {
+        <div class="mb-16">
+          <h3 class="text-2xl font-bold mb-8 text-center">Bronze Sponsors</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            @for (sponsor of getSponsorsByLevel('Bronze'); track sponsor.id) {
+            <div class="flex justify-center items-center">
+              <a
+                [href]="sponsor.websiteUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              >
+                <img
+                  [src]="sponsor.logoUrl"
+                  [alt]="sponsor.name"
+                  class="h-12 object-contain"
+                />
+              </a>
+            </div>
+            }
+          </div>
+        </div>
+        }
+
+        <!-- Travel Sponsors -->
+        @if (getSponsorsByLevel('Travel').length > 0) {
+        <div class="mb-16">
+          <h3 class="text-2xl font-bold mb-8 text-center">Travel Sponsors</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            @for (sponsor of getSponsorsByLevel('Travel'); track sponsor.id) {
+            <div class="flex justify-center items-center">
+              <a
+                [href]="sponsor.websiteUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              >
+                <img
+                  [src]="sponsor.logoUrl"
+                  [alt]="sponsor.name"
+                  class="h-12 object-contain"
+                />
+              </a>
+            </div>
+            }
+          </div>
+        </div>
+        }
+
+        <!-- Community Partners -->
+        @if (getSponsorsByLevel('Community Partners').length > 0) {
+        <div class="mb-16">
+          <h3 class="text-2xl font-bold mb-8 text-center">Community Partners</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            @for (sponsor of getSponsorsByLevel('Community Partners'); track sponsor.id) {
+            <div class="flex justify-center items-center">
+              <a
+                [href]="sponsor.websiteUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              >
+                <img
+                  [src]="sponsor.logoUrl"
+                  [alt]="sponsor.name"
+                  class="h-12 object-contain"
+                />
+              </a>
+            </div>
+            }
+          </div>
+        </div>
+        }
+
+        <!-- Become a Sponsor -->
+        <div class="text-center mt-12">
+          <a
+            href="mailto:info@ng-de.org"
+            class="inline-block bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+          >
+            Become a Sponsor
+          </a>
+        </div>
+      </div>
+    </section>
+  `
+})
+export class SponsorsComponent {
+  constructor(private sponsorService: SponsorService) {}
+
+  getSponsorsByLevel(level: 'Platinum' | 'Gold' | 'Silver' | 'Bronze' | 'Travel' | 'Community Partners') {
+    return this.sponsorService.getSponsorsByLevel(level);
+  }
+} 

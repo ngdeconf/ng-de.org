@@ -68,3 +68,11 @@ export interface TicketPhase {
   isPast: boolean;
   basePrice: number;
 }
+
+export interface Sponsor {
+  id: string;
+  name: string;
+  logoUrl: string;
+  websiteUrl: string;
+  level: 'Platinum' | 'Gold' | 'Silver' | 'Bronze' | 'Travel' | 'Community Partners';
+}

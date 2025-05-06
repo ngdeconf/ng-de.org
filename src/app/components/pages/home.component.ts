@@ -6,6 +6,7 @@ import { ImpressionsComponent } from '../page-sections/impressions.component';
 import { OrganizerComponent } from '../page-sections/organizer.component';
 // import { ScheduleComponent } from '../page-sections/schedule.component';
 import { SpeakersComponent } from '../page-sections/speakers.component';
+import { SponsorsComponent } from '../page-sections/sponsors.component';
 import { TicketsComponent } from '../page-sections/tickets.component';
 import { WorkshopsComponent } from '../page-sections/workshops.component';
 
@@ -19,6 +20,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     // ScheduleComponent,
     WorkshopsComponent,
     OrganizerComponent,
+    SponsorsComponent,
     ImpressionsComponent,
     CallForPapersComponent,
     FaqComponent
@@ -30,6 +32,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     <!-- <ngde-schedule /> -->
     <ngde-workshops />
     <ngde-organizer />
+    <ngde-sponsors />
     <ngde-impressions />
     <ngde-call-for-papers />
     <ngde-faq />
