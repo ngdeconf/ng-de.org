@@ -3,6 +3,7 @@ import { CallForPapersComponent } from '../page-sections/call-for-papers.compone
 import { FaqComponent } from '../page-sections/faq.component';
 import { HeroComponent } from '../page-sections/hero.component';
 import { ImpressionsComponent } from '../page-sections/impressions.component';
+import { NewsletterComponent } from '../page-sections/newsletter.component';
 import { OrganizerComponent } from '../page-sections/organizer.component';
 // import { ScheduleComponent } from '../page-sections/schedule.component';
 import { SpeakersComponent } from '../page-sections/speakers.component';
@@ -22,6 +23,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     OrganizerComponent,
     SponsorsComponent,
     ImpressionsComponent,
+    NewsletterComponent,
     // CallForPapersComponent,
     FaqComponent
   ],
@@ -34,6 +36,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     <ngde-organizer />
     <ngde-sponsors />
     <ngde-impressions />
+    <ngde-newsletter />
     <!-- <ngde-call-for-papers /> -->
     <ngde-faq />
   `
