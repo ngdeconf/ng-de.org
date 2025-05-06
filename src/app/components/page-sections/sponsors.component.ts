@@ -20,14 +20,14 @@ import { SponsorService } from '../../services/sponsor.service';
         @if (getSponsorsByLevel('Platinum').length > 0) {
         <div class="mb-16">
           <h3 class="text-2xl font-bold mb-8 text-center">Platinum Sponsors</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="flex flex-wrap justify-center gap-8">
             @for (sponsor of getSponsorsByLevel('Platinum'); track sponsor.id) {
-            <div class="flex justify-center items-center">
+            <div class="w-full md:w-[calc(50%-1rem)] max-w-md">
               <a
                 [href]="sponsor.websiteUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="block p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                class="block p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow h-full flex items-center justify-center"
               >
                 <img
                   [src]="sponsor.logoUrl"
@@ -45,14 +45,14 @@ import { SponsorService } from '../../services/sponsor.service';
         @if (getSponsorsByLevel('Gold').length > 0) {
         <div class="mb-16">
           <h3 class="text-2xl font-bold mb-8 text-center">Gold Sponsors</h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="flex flex-wrap justify-center gap-8">
             @for (sponsor of getSponsorsByLevel('Gold'); track sponsor.id) {
-            <div class="flex justify-center items-center">
+            <div class="w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.5rem)] max-w-sm">
               <a
                 [href]="sponsor.websiteUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="block p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                class="block p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow h-full flex items-center justify-center"
               >
                 <img
                   [src]="sponsor.logoUrl"
@@ -70,14 +70,14 @@ import { SponsorService } from '../../services/sponsor.service';
         @if (getSponsorsByLevel('Silver').length > 0) {
         <div class="mb-16">
           <h3 class="text-2xl font-bold mb-8 text-center">Silver Sponsors</h3>
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          <div class="flex flex-wrap justify-center gap-6">
             @for (sponsor of getSponsorsByLevel('Silver'); track sponsor.id) {
-            <div class="flex justify-center items-center">
+            <div class="w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] max-w-xs">
               <a
                 [href]="sponsor.websiteUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="block p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                class="block p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow h-full flex items-center justify-center"
               >
                 <img
                   [src]="sponsor.logoUrl"
@@ -95,14 +95,14 @@ import { SponsorService } from '../../services/sponsor.service';
         @if (getSponsorsByLevel('Bronze').length > 0) {
         <div class="mb-16">
           <h3 class="text-2xl font-bold mb-8 text-center">Bronze Sponsors</h3>
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <div class="flex flex-wrap justify-center gap-4">
             @for (sponsor of getSponsorsByLevel('Bronze'); track sponsor.id) {
-            <div class="flex justify-center items-center">
+            <div class="w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.75rem)] md:w-[calc(25%-0.75rem)] max-w-xs">
               <a
                 [href]="sponsor.websiteUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="block p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                class="block p-3 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow h-full flex items-center justify-center"
               >
                 <img
                   [src]="sponsor.logoUrl"
@@ -132,7 +132,7 @@ import { SponsorService } from '../../services/sponsor.service';
                 <img
                   [src]="sponsor.logoUrl"
                   [alt]="sponsor.name"
-                  class="h-12 object-contain"
+                  class="h-12 object-contain w-full"
                 />
               </a>
             </div>
@@ -157,7 +157,7 @@ import { SponsorService } from '../../services/sponsor.service';
                 <img
                   [src]="sponsor.logoUrl"
                   [alt]="sponsor.name"
-                  class="h-12 object-contain"
+                  class="h-12 object-contain w-full"
                 />
               </a>
             </div>
