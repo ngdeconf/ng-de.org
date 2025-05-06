@@ -102,64 +102,6 @@ import { SpeakerService } from '../../services/speaker.service';
             </div>
           </div>
           }
-
-          <!-- Call for Speakers Card -->
-          <div
-            class="bg-gradient-to-br from-primary-50 to-primary-100 dark:from-primary-900/20 dark:to-primary-800/30 rounded-xl shadow-md overflow-hidden card-item opacity-0 border-2 border-dashed border-primary-300 dark:border-primary-700 flex flex-col"
-            [class.animate-fade-in]="isIntersecting()"
-            [style.animation-delay]="shuffledSpeakers().length * 100 + 'ms'"
-          >
-            <div class="p-6 flex flex-col items-center justify-center h-full">
-              <div
-                class="w-24 h-24 rounded-full bg-primary-100 dark:bg-primary-800/50 flex items-center justify-center mb-6"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-12 h-12 text-primary-600 dark:text-primary-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
-                  />
-                </svg>
-              </div>
-
-              <h3 class="text-xl font-bold text-center mb-3">
-                Newcomers welcome!
-              </h3>
-
-              <p class="text-center text-gray-600 dark:text-gray-300 mb-6">
-                Have knowledge to share? We're looking for passionate Angular
-                developers, architects or leaders to join our conference!
-              </p>
-
-              <a
-                href="#call-for-papers"
-                class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-6 rounded-lg transition-colors inline-flex items-center"
-              >
-                Apply as Speaker
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 ml-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
