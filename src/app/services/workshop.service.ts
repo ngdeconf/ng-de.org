@@ -177,13 +177,13 @@ export class WorkshopService {
     },
     {
       id: '4',
-      title: 'Hands On: CyberSecurity in Angular Applications',
+      title: 'Hands On: Security in Angular Applications',
       teaser: 'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies.',
       benefits: [
         'Master core browser security concepts and XSS prevention',
-        'Implement Content Security Policy (CSP) effectively',
-        'Secure token handling and OAuth 2.0/2.1 patterns',
-        'Design and implement Backend-for-Frontend (BFF) architectures'
+        'Implement and deploy Content Security Policy (CSP) effectively',
+        'Secure token handling and OAuth 2.1 patterns',
+        'Learn Angular built-in Security mechanism and how to use them'
       ],
       abstract: 'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies. This workshop covers core browser security concepts, Cross-Site Scripting (XSS) prevention, Content Security Policy (CSP), and secure token handling. You\'ll explore advanced topics like OAuth 2.0/2.1 security patterns and Backend-for-Frontend (BFF) architectures. With practical examples and hands-on guidance, you\'ll gain the skills to identify vulnerabilities and implement effective protection mechanisms in your frontend code. Perfect for developers and architects who want to take their web application security to the next level.',
       trainerId: 'martina-kraus',
@@ -191,43 +191,41 @@ export class WorkshopService {
       capacity: 30,
       outline: [
         {
-          title: 'Core Security Concepts',
+          title: 'Browser Security Fundamentals',
           topics: [
-            'Browser security fundamentals',
-            'Same-origin policy and CORS',
-            'Cross-Site Scripting (XSS) prevention',
+            'Same-origin policy',
+            'Cross-Origin Resource Sharing (CORS)',
+            'Cookie Attributes and Session Management',
+            'Hands-on: Implementing Browser Security Fundamentals'
+          ]
+        },
+        {
+          title: 'Cross-Site Scripting (XSS) prevention',
+          topics: [
+            'Discovering typical Cross-Site Scripting Attacks',
             'Content Security Policy (CSP) implementation',
-            'Hands-on: Security headers and CSP configuration'
+            'Deploying CSPs in an Angular Application',
+            'Angular Trusted Types',
+            'Hands-on: CSP configuration and Trusted Types in Angular'
           ]
         },
         {
           title: 'Authentication & Authorization',
           topics: [
+            'Typical attacks on Access Tokens like Token theft',
             'Secure token handling and storage',
-            'JWT security best practices',
-            'OAuth 2.0/2.1 security patterns',
-            'Implementing secure authentication flows',
+            'OAuth 2.1 security patterns',
+            'Backend-for-Frontend (BFF) architecture',
             'Hands-on: Secure token management'
           ]
         },
         {
-          title: 'Advanced Security Patterns',
+          title: 'Further Angular Security Patterns',
           topics: [
-            'Backend-for-Frontend (BFF) architecture',
+            'Built-in Cross-Site Request Forgery Prevention in Angular',
             'Secure communication patterns',
-            'API security and rate limiting',
-            'Security monitoring and logging',
-            'Hands-on: BFF implementation'
-          ]
-        },
-        {
-          title: 'Security Testing & Best Practices',
-          topics: [
-            'Security testing methodologies',
-            'Vulnerability scanning and assessment',
-            'Security code review techniques',
-            'Implementing security in CI/CD',
-            'Hands-on: Security testing and assessment'
+            'Security Context of Angular',
+            'Hands-on: Implementing Security best practices in Angular'
           ]
         }
       ],
