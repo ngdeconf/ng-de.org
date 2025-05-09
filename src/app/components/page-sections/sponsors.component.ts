@@ -1,11 +1,9 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { SponsorService } from '../../services/sponsor.service';
 
 @Component({
   selector: 'ngde-sponsors',
   standalone: true,
-  imports: [CommonModule],
   template: `
     <section id="sponsors" class="py-20 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4">
@@ -47,7 +45,9 @@ import { SponsorService } from '../../services/sponsor.service';
           <h3 class="text-2xl font-bold mb-8 text-center">Gold Sponsors</h3>
           <div class="flex flex-wrap justify-center gap-8">
             @for (sponsor of getSponsorsByLevel('Gold'); track sponsor.id) {
-            <div class="w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.5rem)] max-w-sm">
+            <div
+              class="w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.5rem)] max-w-sm"
+            >
               <a
                 [href]="sponsor.websiteUrl"
                 target="_blank"
@@ -72,7 +72,9 @@ import { SponsorService } from '../../services/sponsor.service';
           <h3 class="text-2xl font-bold mb-8 text-center">Silver Sponsors</h3>
           <div class="flex flex-wrap justify-center gap-6">
             @for (sponsor of getSponsorsByLevel('Silver'); track sponsor.id) {
-            <div class="w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] max-w-xs">
+            <div
+              class="w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] max-w-xs"
+            >
               <a
                 [href]="sponsor.websiteUrl"
                 target="_blank"
@@ -97,7 +99,9 @@ import { SponsorService } from '../../services/sponsor.service';
           <h3 class="text-2xl font-bold mb-8 text-center">Bronze Sponsors</h3>
           <div class="flex flex-wrap justify-center gap-4">
             @for (sponsor of getSponsorsByLevel('Bronze'); track sponsor.id) {
-            <div class="w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.75rem)] md:w-[calc(25%-0.75rem)] max-w-xs">
+            <div
+              class="w-[calc(50%-0.5rem)] sm:w-[calc(33.333%-0.75rem)] md:w-[calc(25%-0.75rem)] max-w-xs"
+            >
               <a
                 [href]="sponsor.websiteUrl"
                 target="_blank"
@@ -144,9 +148,12 @@ import { SponsorService } from '../../services/sponsor.service';
         <!-- Community Partners -->
         @if (getSponsorsByLevel('Community Partners').length > 0) {
         <div class="mb-16">
-          <h3 class="text-2xl font-bold mb-8 text-center">Community Partners</h3>
+          <h3 class="text-2xl font-bold mb-8 text-center">
+            Community Partners
+          </h3>
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            @for (sponsor of getSponsorsByLevel('Community Partners'); track sponsor.id) {
+            @for (sponsor of getSponsorsByLevel('Community Partners'); track
+            sponsor.id) {
             <div class="flex justify-center items-center">
               <a
                 [href]="sponsor.websiteUrl"
@@ -182,7 +189,15 @@ import { SponsorService } from '../../services/sponsor.service';
 export class SponsorsComponent {
   constructor(private sponsorService: SponsorService) {}
 
-  getSponsorsByLevel(level: 'Platinum' | 'Gold' | 'Silver' | 'Bronze' | 'Travel' | 'Community Partners') {
+  getSponsorsByLevel(
+    level:
+      | 'Platinum'
+      | 'Gold'
+      | 'Silver'
+      | 'Bronze'
+      | 'Travel'
+      | 'Community Partners'
+  ) {
     return this.sponsorService.getSponsorsByLevel(level);
   }
-} 
+}
