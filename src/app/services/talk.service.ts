@@ -126,8 +126,8 @@ export class TalkService {
     },
     {
       id: 'talk-day2-15',
-      title: 'RxJS and Performance Optimization in Angular',
-      abstract: 'Leveraging RxJS for better performance in Angular applications',
+      title: 'Angular Design Systems Accelerated by AI & MCP',
+      abstract: 'Join us for an in-depth exploration of how we transformed an enterprise Angular Design System by integrating advanced AI techniques with streamlined MCP processes. In this session, we\'ll discuss the challenges of legacy systems, detail our innovative refactoring approach that cut development time in half, and share actionable insights for achieving scalability and improved maintainability. Whether you\'re a developer, architect, or business leader, you\'ll learn how AI-driven automation and strategic MCP integration can power your digital transformation and accelerate agile innovation across your enterprise.',
       speakerId: 'michael-hladky',
       time: '14:45 - 15:15',
       day: 'day2',
