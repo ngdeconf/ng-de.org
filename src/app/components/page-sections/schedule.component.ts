@@ -1,7 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { ScheduleService } from '../../services/schedule.service';
 import { SpeakerService } from '../../services/speaker.service';
-import { Speaker } from '../../models/models';
+import { TalkService } from '../../services/talk.service';
+import { Speaker, Talk } from '../../models/models';
 
 @Component({
   selector: 'ngde-schedule',
@@ -54,23 +55,34 @@ import { Speaker } from '../../models/models';
               @for (entry of filteredEntries(); track entry.datetime) {
               <tr
                 class="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50"
+                [class.cursor-pointer]="getTalkBySession(entry.session)"
+                (click)="showTalkDetails(entry.session)"
               >
                 <td class="px-6 py-4 whitespace-nowrap">
                   {{ formatTime(entry.datetime) }}
                 </td>
                 <td class="px-6 py-4">
-                  <div class="font-medium">{{ entry.title }}</div>
+                  <div class="font-medium">
+                    {{ getTalkTitle(entry) }}
+                    @if (getTalkBySession(entry.session)) {
+                      <span class="ml-1 text-xs text-primary-500 dark:text-primary-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                    }
+                  </div>
                 </td>
                 <td class="px-6 py-4">
-                  @if (getSpeakerByName(entry.information)) {
+                  @if (getSpeakerByName(entry.information) || getSpeakerBySession(entry.session)) {
                     <div class="flex items-center">
                       <img 
-                        [src]="getSpeakerByName(entry.information)?.imageUrl" 
+                        [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl" 
                         [alt]="entry.information"
                         class="w-8 h-8 rounded-full mr-2 object-cover"
                       />
                       <div class="text-sm text-gray-600 dark:text-gray-400">
-                        {{ entry.information }}
+                        {{ getSpeakerName(entry) }}
                       </div>
                     </div>
                   } @else {
@@ -85,6 +97,71 @@ import { Speaker } from '../../models/models';
             </tbody>
           </table>
         </div>
+
+        <!-- Talk Detail Modal -->
+        @if (selectedTalk()) {
+        <div 
+          class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+          (click)="closeModal()"
+        >
+          <div 
+            class="bg-white dark:bg-gray-800 rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-xl"
+            (click)="$event.stopPropagation()"
+          >
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-4">
+                <h3 class="text-2xl font-bold">{{ selectedTalk()?.title }}</h3>
+                <button
+                  class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-2"
+                  (click)="closeModal()"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              
+              <div class="flex items-center mb-4">
+                @if (selectedSpeaker()) {
+                <img 
+                  [src]="selectedSpeaker()?.imageUrl" 
+                  [alt]="selectedSpeaker()?.name"
+                  class="w-12 h-12 rounded-full mr-3 object-cover"
+                />
+                <div>
+                  <p class="font-medium">{{ selectedSpeaker()?.name }}</p>
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    {{ selectedSpeaker()?.title }} at {{ selectedSpeaker()?.company }}
+                  </p>
+                </div>
+                }
+              </div>
+
+              <div class="mb-4 flex space-x-4">
+                <div class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">
+                  {{ selectedTalk()?.time }}
+                </div>
+                <div class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">
+                  {{ selectedTalk()?.room }}
+                </div>
+              </div>
+              
+              <div class="prose dark:prose-invert max-w-none">
+                <p>{{ selectedTalk()?.abstract }}</p>
+              </div>
+              
+              <div class="mt-6 flex justify-end">
+                <button
+                  class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                  (click)="closeModal()"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        }
       </div>
     </section>
   `
@@ -93,10 +170,13 @@ export class ScheduleComponent {
   schedule = this.scheduleService.getSchedule();
   speakers = this.speakerService.getSpeakers();
   activeDay = signal<string>('');
+  selectedTalk = signal<Talk | null>(null);
+  selectedSpeaker = signal<Speaker | null>(null);
 
   constructor(
     private scheduleService: ScheduleService,
-    private speakerService: SpeakerService
+    private speakerService: SpeakerService,
+    private talkService: TalkService
   ) {
     // Set the first day as active by default
     if (this.schedule().length > 0) {
@@ -113,6 +193,7 @@ export class ScheduleComponent {
 
   setActiveDay(datetime: string) {
     this.activeDay.set(datetime);
+    this.selectedTalk.set(null);
   }
 
   formatTime(datetime: string): string {
@@ -121,6 +202,54 @@ export class ScheduleComponent {
       minute: '2-digit',
       hour12: false
     });
+  }
+
+  getTalkBySession(sessionId: string | null): Talk | undefined {
+    if (!sessionId) return undefined;
+    return this.talkService.getTalkBySessionId(sessionId);
+  }
+
+  getSpeakerBySession(sessionId: string | null): Speaker | undefined {
+    if (!sessionId) return undefined;
+    const talk = this.getTalkBySession(sessionId);
+    if (!talk) return undefined;
+    return this.speakerService.getSpeakerById(talk.speakerId);
+  }
+
+  getSpeakerName(entry: any): string {
+    // First try to get speaker from session
+    const sessionSpeaker = this.getSpeakerBySession(entry.session);
+    if (sessionSpeaker) return sessionSpeaker.name;
+    
+    // Fall back to information field
+    return entry.information;
+  }
+
+  getTalkTitle(entry: any): string {
+    // If there's a talk associated with this session, use its title
+    const talk = this.getTalkBySession(entry.session);
+    if (talk) return talk.title;
+    
+    // Otherwise use the entry title
+    return entry.title;
+  }
+
+  showTalkDetails(sessionId: string | null): void {
+    if (!sessionId) return;
+    
+    const talk = this.getTalkBySession(sessionId);
+    if (!talk) return;
+    
+    this.selectedTalk.set(talk);
+    
+    // Find the speaker for this talk
+    const speaker = this.speakerService.getSpeakerById(talk.speakerId);
+    this.selectedSpeaker.set(speaker || null);
+  }
+
+  closeModal(): void {
+    this.selectedTalk.set(null);
+    this.selectedSpeaker.set(null);
   }
 
   /**
