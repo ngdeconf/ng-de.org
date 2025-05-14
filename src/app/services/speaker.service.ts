@@ -84,6 +84,16 @@ export class SpeakerService {
       bio: 'Software Engineer focused on performance, scalability, and architecture of web applications. As a Google Developer Expert for Angular, Enea has given talks and workshops at ngIndia, AngularAustria, and NgPoland, as well as internal workshops at various companies. He is a maintainer of the RxAngular library, bringing performance utilities to developers, and a co-creator of the ngxtension library for Signal primitives in Angular. Enea regularly shares his expertise through blog posts about Angular performance, internals, Signals, and architecture, and keeps the community updated with the latest Angular news on X (formerly Twitter).',
       imageUrl: 'assets/images/speakers/enea-jahollari.jpeg',
       githubHandle: 'eneajaho'
+    },
+    {
+      id: 'jens-kuehlers',
+      name: 'Jens Kühlers',
+      title: 'Technical Program Manager',
+      company: 'Google',
+      bio: 'Jens is a Technical Program Manager with the Angular team at Google, where he focuses on managing the release schedule, prioritizing key features and making sure user needs are met. With 17 years of experience at Google, Jens has worked on a variety of things, from building technical solutions for Cloud Networking and running infrastructure projects in Sub-Saharan Africa to serving as a network engineer for Google\'s global network.',
+      imageUrl: 'assets/images/speakers/jens-kuehlers.jpg',
+      githubHandle: '',
+      pronouns: 'he/him'
     }
   ]);
 

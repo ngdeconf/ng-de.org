@@ -7,6 +7,7 @@ import {
   viewChild
 } from '@angular/core';
 import { SpeakerService } from '../../services/speaker.service';
+import { Speaker } from '../../models/models';
 
 @Component({
   selector: 'ngde-speakers',
@@ -165,6 +166,11 @@ import { SpeakerService } from '../../services/speaker.service';
               <p class="text-gray-600 dark:text-gray-400 text-sm">
                 {{ activeSpeaker()?.company }}
               </p>
+              @if (activeSpeaker()?.pronouns) {
+              <p class="text-gray-500 dark:text-gray-500 text-xs mt-1">
+                Pronouns: {{ activeSpeaker()?.pronouns }}
+              </p>
+              }
             </div>
           </div>
           <div>
@@ -268,8 +274,8 @@ export class SpeakersComponent {
   speakersSection = viewChild.required<ElementRef>('speakersSection');
 
   speakers = this.speakerService.getSpeakers();
-  shuffledSpeakers = signal<any[]>([]);
-  activeSpeaker = signal<any | null>(null);
+  shuffledSpeakers = signal<Speaker[]>([]);
+  activeSpeaker = signal<Speaker | null>(null);
   isDialogVisible = signal(false);
   isDialogLeaving = signal(false);
   isIntersecting = signal(false);
@@ -319,7 +325,7 @@ export class SpeakersComponent {
     this.shuffledSpeakers.set(speakersArray);
   }
 
-  openBioDialog(speaker: any): void {
+  openBioDialog(speaker: Speaker): void {
     this.activeSpeaker.set(speaker);
     this.isDialogVisible.set(true);
 
