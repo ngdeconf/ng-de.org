@@ -90,8 +90,8 @@ export class TalkService {
     },
     {
       id: 'talk-day2-11',
-      title: 'Advanced Angular Patterns',
-      abstract: 'Deep dive into advanced Angular patterns and techniques',
+      title: 'TBD',
+      abstract: 'Talk details to be determined',
       speakerId: 'maria-korneeva',
       time: '10:30 - 11:00',
       day: 'day2',
@@ -144,8 +144,8 @@ export class TalkService {
     },
     {
       id: 'talk-day2-17',
-      title: 'Signal Primitives and Performance',
-      abstract: 'Building high-performance Angular applications with Signals and other performance techniques',
+      title: 'TBD',
+      abstract: 'Talk details to be determined',
       speakerId: 'enea-jahollari',
       time: '17:00 - 17:30',
       day: 'day2',
