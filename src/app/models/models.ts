@@ -6,6 +6,7 @@ export interface Speaker {
   bio: string;
   imageUrl: string;
   githubHandle?: string;
+  pronouns?: string;
 }
 
 export interface ScheduleEntry {
