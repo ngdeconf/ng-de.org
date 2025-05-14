@@ -81,8 +81,8 @@ export class TalkService {
     // Day 2 - Friday
     {
       id: 'keynote-day2',
-      title: 'Keynote',
-      abstract: 'Day 2 keynote presentation on Angular roadmap and vision',
+      title: 'Mythbusting the Roadmap. What really drives Angular\'s feature prioritization',
+      abstract: 'Angular releases a new major version every six months. But you might wonder: how does the team determine which features to work on and what gets left out? How does the team make sure there\'s a steady stream of features without overwhelming users? This talk offers a look behind the scenes at how the Angular team operates. Jens will explain how the team gathers and analyzes data from different sources to make decisions, how we prioritize features and the trade-offs involved to build the most intuitive, performant and scalable framework for building web apps.',
       speakerId: 'jens-kuehlers',
       time: '10:00 - 10:30',
       day: 'day2',
