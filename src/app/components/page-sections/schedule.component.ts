@@ -23,7 +23,7 @@ interface ScheduleEntry {
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Conference Schedule</h2>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Three days packed with Angular insights, best practices, and community networking
+            Two days packed with Angular insights, best practices, and community networking
           </p>
 
           <div class="flex justify-center mt-8 space-x-4">
