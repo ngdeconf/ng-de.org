@@ -43,8 +43,8 @@ export class TalkService {
     },
     {
       id: 'talk-day1-5',
-      title: "The Missing Link in Angular's Signal Story",
-      abstract: "Signals will shape Angular's future in terms of reactivity and change detection. The new Resource API, along with the httpResource, adds an essential piece to this story by providing an official solution for asynchronously loading data within a Signal-based dataflow.",
+      title: "The Missing Link in Angular's Signal Story: Resource API and httpResource",
+      abstract: "Signals will shape Angular's future in terms of reactivity and change detection. The new Resource API, along with the httpResource, adds an essential piece to this story by providing an official solution for asynchronously loading data within a Signal-based dataflow.\n\nIn this session, we explore all the details you need to work effectively with this powerful API. Topics include managing different states, handling errors, streaming data, preventing race conditions, and canceling unnecessary requests. We also discuss how it interacts with RxJS through rxResource and demonstrate how to update loaded values.\n\nBy the end, you'll have a comprehensive understanding of the possibilities offered by this groundbreaking new API.",
       speakerId: 'manfred-steyer',
       time: '14:15 - 14:45',
       day: 'day1',
