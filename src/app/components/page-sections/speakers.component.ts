@@ -57,8 +57,15 @@ import { Speaker } from '../../models/models';
               <div class="text-center mb-3">
                 <h3 class="text-xl font-bold mb-1">{{ speaker.name }}</h3>
                 <p
-                  class="text-primary-600 dark:text-primary-400 font-medium text-sm mb-1"
+                  class="text-primary-600 dark:text-primary-400 font-medium text-sm mb-1 flex items-center justify-center"
                 >
+                  @if (speaker.angularTeam) {
+                  <img 
+                    src="assets/images/angular_gradient.png" 
+                    alt="Angular Team" 
+                    class="w-4 h-4 mr-1"
+                  />
+                  }
                   {{ speaker.title }}
                 </p>
                 <p class="text-gray-600 dark:text-gray-400 text-xs">
@@ -160,7 +167,14 @@ import { Speaker } from '../../models/models';
               class="w-16 h-16 rounded-full mr-4"
             />
             <div>
-              <p class="text-primary-600 dark:text-primary-400 font-medium">
+              <p class="text-primary-600 dark:text-primary-400 font-medium flex items-center">
+                @if (activeSpeaker()?.angularTeam) {
+                <img 
+                  src="assets/images/angular_gradient.png" 
+                  alt="Angular Team" 
+                  class="w-4 h-4 mr-1"
+                />
+                }
                 {{ activeSpeaker()?.title }}
               </p>
               <p class="text-gray-600 dark:text-gray-400 text-sm">
