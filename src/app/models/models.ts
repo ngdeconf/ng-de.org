@@ -7,6 +7,7 @@ export interface Speaker {
   imageUrl: string;
   githubHandle?: string;
   pronouns?: string;
+  angularTeam?: boolean;
 }
 
 export interface ScheduleEntry {
