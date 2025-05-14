@@ -108,8 +108,8 @@ export class TalkService {
     },
     {
       id: 'talk-day2-13',
-      title: 'Angular Security Best Practices',
-      abstract: 'Implementing security best practices in Angular applications',
+      title: 'Securing Angular Applications in Practice',
+      abstract: 'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies. This workshop covers core browser security concepts, Cross-Site Scripting (XSS) prevention, Content Security Policy (CSP), and secure token handling. You\'ll explore advanced topics like OAuth 2.0/2.1 security patterns and Backend-for-Frontend (BFF) architectures. With practical examples and hands-on guidance, you\'ll gain the skills to identify vulnerabilities and implement effective protection mechanisms in your frontend code. Perfect for developers and architects who want to take their web application security to the next level.',
       speakerId: 'martina-kraus',
       time: '12:15 - 12:45',
       day: 'day2',
