@@ -75,13 +75,29 @@ import { Speaker, Talk } from '../../models/models';
                 <td class="px-6 py-4">
                   @if (getSpeakerByName(entry.information) || getSpeakerBySession(entry.session)) {
                     <div class="flex items-center">
-                      <img 
-                        [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl" 
-                        [alt]="entry.information"
-                        class="w-8 h-8 rounded-full mr-2 object-cover"
-                      />
-                      <div class="text-sm text-gray-600 dark:text-gray-400">
-                        {{ getSpeakerName(entry) }}
+                      <div class="relative">
+                        <img 
+                          [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl" 
+                          [alt]="entry.information"
+                          class="w-10 h-10 rounded-full mr-3 object-cover border-2 border-gray-200 dark:border-gray-700"
+                        />
+                        @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam) {
+                          <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                            <img 
+                              src="assets/images/angular_gradient.png" 
+                              alt="Angular Team" 
+                              class="w-5 h-5"
+                            />
+                          </div>
+                        }
+                      </div>
+                      <div>
+                        <div class="font-medium text-gray-900 dark:text-gray-100">
+                          {{ getSpeakerName(entry) }}
+                        </div>
+                        <div class="text-xs text-gray-500 dark:text-gray-400">
+                          {{ getSpeakerTitle(entry) }}
+                        </div>
                       </div>
                     </div>
                   } @else {
@@ -119,17 +135,36 @@ import { Speaker, Talk } from '../../models/models';
                 </button>
               </div>
               
-              <div class="flex items-center mb-4">
+              <div class="flex items-center mb-6">
                 @if (selectedSpeaker()) {
-                <img 
-                  [src]="selectedSpeaker()?.imageUrl" 
-                  [alt]="selectedSpeaker()?.name"
-                  class="w-12 h-12 rounded-full mr-3 object-cover"
-                />
+                <div class="relative">
+                  <img 
+                    [src]="selectedSpeaker()?.imageUrl" 
+                    [alt]="selectedSpeaker()?.name"
+                    class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-primary-200 dark:border-primary-900"
+                  />
+                  @if (selectedSpeaker()?.angularTeam) {
+                    <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                      <img 
+                        src="assets/images/angular_gradient.png" 
+                        alt="Angular Team" 
+                        class="w-6 h-6"
+                      />
+                    </div>
+                  }
+                </div>
                 <div>
-                  <p class="font-medium">{{ selectedSpeaker()?.name }}</p>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">
-                    {{ selectedSpeaker()?.title }} at {{ selectedSpeaker()?.company }}
+                  <p class="text-lg font-bold flex items-center">
+                    {{ selectedSpeaker()?.name }}
+                    @if (selectedSpeaker()?.pronouns) {
+                      <span class="text-xs font-normal text-gray-500 dark:text-gray-400 ml-2">({{ selectedSpeaker()?.pronouns }})</span>
+                    }
+                  </p>
+                  <p class="text-primary-600 dark:text-primary-400 font-medium flex items-center">
+                    {{ selectedSpeaker()?.title }}
+                  </p>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    {{ selectedSpeaker()?.company }}
                   </p>
                 </div>
                 }
@@ -281,5 +316,14 @@ export class ScheduleComponent {
     );
     
     return speaker;
+  }
+
+  getSpeakerTitle(entry: any): string {
+    // First try to get speaker from session
+    const sessionSpeaker = this.getSpeakerBySession(entry.session);
+    if (sessionSpeaker) return `${sessionSpeaker.title}${sessionSpeaker.company ? ` at ${sessionSpeaker.company}` : ''}`;
+    
+    // Fall back to empty string
+    return '';
   }
 }
