@@ -5,7 +5,7 @@ import { HeroComponent } from '../page-sections/hero.component';
 import { ImpressionsComponent } from '../page-sections/impressions.component';
 import { NewsletterComponent } from '../page-sections/newsletter.component';
 import { OrganizerComponent } from '../page-sections/organizer.component';
-// import { ScheduleComponent } from '../page-sections/schedule.component';
+import { ScheduleComponent } from '../page-sections/schedule.component';
 import { SpeakersComponent } from '../page-sections/speakers.component';
 import { SponsorsComponent } from '../page-sections/sponsors.component';
 import { TicketsComponent } from '../page-sections/tickets.component';
@@ -18,7 +18,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     HeroComponent,
     TicketsComponent,
     SpeakersComponent,
-    // ScheduleComponent,
+    ScheduleComponent,
     WorkshopsComponent,
     OrganizerComponent,
     SponsorsComponent,
@@ -31,7 +31,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     <ngde-hero />
     <ngde-tickets />
     <ngde-speakers />
-    <!-- <ngde-schedule /> -->
+    <ngde-schedule />
     <ngde-workshops />
     <ngde-organizer />
     <ngde-sponsors />

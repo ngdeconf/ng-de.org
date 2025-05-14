@@ -79,6 +79,14 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 >Speakers</a
               >
               <a
+                href="#schedule"
+                class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                [class.text-primary-500]="isActiveSection('schedule')"
+                [class.dark:text-primary-400]="isActiveSection('schedule')"
+                style="transition: opacity 0.2s ease"
+                >Schedule</a
+              >
+              <a
                 href="#workshops"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('workshops')"
@@ -216,6 +224,7 @@ export class TopNavigationComponent {
     'home',
     'tickets',
     'speakers',
+    'schedule',
     'workshops',
     'faq'
   ];
@@ -224,6 +233,7 @@ export class TopNavigationComponent {
     'home',
     'tickets',
     'speakers',
+    'schedule',
     'workshops',
     'organizer',
     'impressions',
