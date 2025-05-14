@@ -9,109 +9,109 @@ export class ScheduleService {
       datetime: '2025-11-06',
       entries: [
         {
-          title: 'Open Doors',
-          datetime: '2025-11-06T09:00:00',
+          title: 'Registration & Breakfast',
+          datetime: '2025-11-06T08:30:00',
           information: 'Registration',
           location: 'GLS Campus Berlin',
           session: null
         },
         {
-          title: 'Warm Welcome',
-          datetime: '2025-11-06T09:40:00',
-          information: 'Welcome',
+          title: 'Opening & Welcome',
+          datetime: '2025-11-06T09:30:00',
+          information: 'Orga Team / MC',
           location: 'Main Stage',
           session: null
         },
         {
-          title: 'Keynote Talk',
+          title: 'Keynote',
           datetime: '2025-11-06T10:00:00',
-          information: 'Talk 1',
+          information: 'Angular Team',
           location: 'Main Stage',
-          session: 'talk-1'
+          session: 'keynote-day1'
         },
         {
           title: 'Talk',
           datetime: '2025-11-06T10:30:00',
-          information: 'Talk',
+          information: 'Rainer Hahnekamp',
           location: 'Main Stage',
-          session: 'talk-2'
+          session: 'talk-day1-2'
         },
         {
-          title: 'Break ☕️🍎',
+          title: 'Coffee Break ☕️',
           datetime: '2025-11-06T11:00:00',
-          information: '☕️🍎',
+          information: 'Networking opportunity',
           location: 'Sponsoring Hall & Catering Area',
-          session: 'talk-3'
+          session: null
         },
         {
           title: 'Talk',
           datetime: '2025-11-06T11:45:00',
-          information: 'Talk',
+          information: 'Call for Papers',
           location: 'Main Stage',
-          session: 'talk-2'
+          session: 'talk-day1-3'
         },
         {
           title: 'Talk',
           datetime: '2025-11-06T12:15:00',
-          information: 'Talk',
+          information: 'Christian Liebel',
           location: 'Main Stage',
-          session: 'talk-3'
+          session: 'talk-day1-4'
         },
         {
-          title: 'Lunch 🥙🥤',
+          title: 'Lunch Break 🍽️',
           datetime: '2025-11-06T12:45:00',
           information: 'Lunch',
           location: 'Sponsoring Hall & Catering Area',
-          session: 'talk-3'
+          session: null
         },
         {
           title: 'Talk',
           datetime: '2025-11-06T14:15:00',
-          information: 'Talk',
+          information: 'Manfred Steyer',
           location: 'Main Stage',
-          session: 'talk-5'
+          session: 'talk-day1-5'
         },
         {
           title: 'Talk',
           datetime: '2025-11-06T14:45:00',
-          information: 'Talk',
+          information: 'Call for Papers',
           location: 'Main Stage',
-          session: 'talk-6'
+          session: 'talk-day1-6'
         },
         {
-          title: 'Break ☕️🍰',
-          datetime: '2025-11-06T15:45:00',
-          information: '',
+          title: 'Coffee Break ☕️',
+          datetime: '2025-11-06T16:00:00',
+          information: 'Networking opportunity',
           location: 'Sponsoring Hall & Catering Area',
-          session: 'break'
+          session: null
         },
         {
-          title: 'Talk 7',
+          title: 'Talk',
           datetime: '2025-11-06T16:30:00',
-          information: 'Talk 7',
+          information: 'Call for Papers',
           location: 'Main Stage',
-          session: 'talk-7'
+          session: 'talk-day1-7'
         },
         {
           title: 'Panel Discussion',
           datetime: '2025-11-06T17:00:00',
-          information: 'Talk 8',
+          information: 'TBD (Speakers from the conference)',
           location: 'Main Stage',
-          session: 'talk-8'
+          session: 'panel-day1'
         },
         {
           title: 'Closing Day 1',
-          datetime: '2025-11-06T17:30:00',
-          information: 'Talk 12',
+          datetime: '2025-11-06T17:45:00',
+          information: 'Wrap-up of the first day',
           location: 'Main Stage',
-          session: 'closing-day-1'
+          session: null
         },
         {
-          title: 'Get together',
+          title: 'Community Event/Party 🎉',
           datetime: '2025-11-06T18:00:00',
-          information: '',
-          location: 'GLS Campus',
-          session: 'get-together'
+          information: 'Social event',
+          location: 'GLS Campus Berlin',
+          session: 'party'
         }
       ]
     },
@@ -120,88 +120,102 @@ export class ScheduleService {
       datetime: '2025-11-07',
       entries: [
         {
-          title: 'Talk 13',
-          datetime: '2025-11-07T09:00:00',
-          information: 'Talk 13',
+          title: 'Breakfast',
+          datetime: '2025-11-07T08:30:00',
+          information: 'Start your day with breakfast',
           location: 'GLS Campus Berlin',
-          session: 'talk-13'
+          session: null
         },
         {
-          title: 'Talk 14',
+          title: 'Intro Day 2',
+          datetime: '2025-11-07T09:30:00',
+          information: 'Orga Team / MC',
+          location: 'Main Stage',
+          session: null
+        },
+        {
+          title: 'Keynote',
           datetime: '2025-11-07T10:00:00',
-          information: 'Talk 14',
-          location: 'GLS Campus Berlin',
-          session: 'talk-14'
+          information: 'Jens Kühlers (Angular Team)',
+          location: 'Main Stage',
+          session: 'keynote-day2'
         },
         {
-          title: 'Talk 15',
+          title: 'Talk',
+          datetime: '2025-11-07T10:30:00',
+          information: 'Maria Korneeva',
+          location: 'Main Stage',
+          session: 'talk-day2-11'
+        },
+        {
+          title: 'Coffee Break ☕️',
           datetime: '2025-11-07T11:00:00',
-          information: 'Talk 15',
-          location: 'GLS Campus Berlin',
-          session: 'talk-15'
+          information: 'Networking opportunity',
+          location: 'Sponsoring Hall & Catering Area',
+          session: null
         },
         {
-          title: 'Talk 16',
-          datetime: '2025-11-07T12:00:00',
-          information: 'Talk 16',
-          location: 'GLS Campus Berlin',
-          session: 'talk-16'
+          title: 'Talk',
+          datetime: '2025-11-07T11:45:00',
+          information: 'Call for Papers',
+          location: 'Main Stage',
+          session: 'talk-day2-12'
         },
         {
-          title: 'Talk 17',
-          datetime: '2025-11-07T13:00:00',
-          information: 'Talk 17',
-          location: 'GLS Campus Berlin',
-          session: 'talk-17'
+          title: 'Talk',
+          datetime: '2025-11-07T12:15:00',
+          information: 'Martina Kraus',
+          location: 'Main Stage',
+          session: 'talk-day2-13'
         },
         {
-          title: 'Talk 18',
-          datetime: '2025-11-07T14:00:00',
-          information: 'Talk 18',
-          location: 'GLS Campus Berlin',
-          session: 'talk-18'
+          title: 'Lunch Break & Group Photo 📸',
+          datetime: '2025-11-07T12:45:00',
+          information: 'Lunch and conference photo',
+          location: 'Sponsoring Hall & Catering Area',
+          session: null
         },
         {
-          title: 'Talk 19',
-          datetime: '2025-11-07T15:00:00',
-          information: 'Talk 19',
-          location: 'GLS Campus Berlin',
-          session: 'talk-19'
+          title: 'Talk',
+          datetime: '2025-11-07T14:15:00',
+          information: 'Call for Papers',
+          location: 'Main Stage',
+          session: 'talk-day2-14'
         },
         {
-          title: 'Talk 20',
+          title: 'Talk',
+          datetime: '2025-11-07T14:45:00',
+          information: 'Michael Hladky',
+          location: 'Main Stage',
+          session: 'talk-day2-15'
+        },
+        {
+          title: 'Coffee Break ☕️',
           datetime: '2025-11-07T16:00:00',
-          information: 'Talk 20',
-          location: 'GLS Campus Berlin',
-          session: 'talk-20'
+          information: 'Networking opportunity',
+          location: 'Sponsoring Hall & Catering Area',
+          session: null
         },
         {
-          title: 'Talk 21',
+          title: 'Talk',
+          datetime: '2025-11-07T16:30:00',
+          information: 'Call for Papers',
+          location: 'Main Stage',
+          session: 'talk-day2-16'
+        },
+        {
+          title: 'Talk',
           datetime: '2025-11-07T17:00:00',
-          information: 'Talk 21',
-          location: 'GLS Campus Berlin',
-          session: 'talk-21'
+          information: 'Enea Jahollari',
+          location: 'Main Stage',
+          session: 'talk-day2-17'
         },
         {
-          title: 'Talk 22',
-          datetime: '2025-11-07T18:00:00',
-          information: 'Talk 22',
-          location: 'GLS Campus Berlin',
-          session: 'talk-22'
-        },
-        {
-          title: 'Talk 23',
-          datetime: '2025-11-07T19:00:00',
-          information: 'Talk 23',
-          location: 'GLS Campus Berlin',
-          session: 'talk-23'
-        },
-        {
-          title: 'Talk 24',
-          datetime: '2025-11-07T20:00:00',
-          information: 'Talk 24',
-          location: 'GLS Campus Berlin',
-          session: 'talk-24'
+          title: 'Closing & Farewell',
+          datetime: '2025-11-07T17:30:00',
+          information: 'Orga Team / MC',
+          location: 'Main Stage',
+          session: null
         }
       ]
     }
