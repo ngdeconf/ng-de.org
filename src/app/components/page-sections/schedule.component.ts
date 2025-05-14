@@ -48,7 +48,6 @@ import { Speaker, Talk } from '../../models/models';
                 <th scope="col" class="px-6 py-3 font-medium">Time</th>
                 <th scope="col" class="px-6 py-3 font-medium">Title</th>
                 <th scope="col" class="px-6 py-3 font-medium">Speaker</th>
-                <th scope="col" class="px-6 py-3 font-medium">Location</th>
               </tr>
             </thead>
             <tbody>
@@ -91,7 +90,6 @@ import { Speaker, Talk } from '../../models/models';
                     </div>
                   }
                 </td>
-                <td class="px-6 py-4">{{ entry.location }}</td>
               </tr>
               }
             </tbody>
