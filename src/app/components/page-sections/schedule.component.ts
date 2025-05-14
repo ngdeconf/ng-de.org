@@ -1,49 +1,52 @@
 import { Component, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ScheduleService } from '../../services/schedule.service';
 import { SpeakerService } from '../../services/speaker.service';
 import { TalkService } from '../../services/talk.service';
 import { Speaker, Talk } from '../../models/models';
 
+// Define interface for schedule entry to replace 'any' types
+interface ScheduleEntry {
+  datetime: string;
+  title: string;
+  information: string;
+  session: string | null;
+}
+
 @Component({
   selector: 'ngde-schedule',
   standalone: true,
+  imports: [CommonModule],
   template: `
     <section id="schedule" class="py-20 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Conference Schedule
-          </h2>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Conference Schedule</h2>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Three days packed with Angular insights, best practices, and
-            community networking
+            Three days packed with Angular insights, best practices, and community networking
           </p>
 
           <div class="flex justify-center mt-8 space-x-4">
             @for (day of schedule(); track day.datetime) {
-            <button
-              (click)="setActiveDay(day.datetime)"
-              class="px-6 py-2 rounded-md font-medium transition-colors"
-              [class.bg-primary-500]="activeDay() === day.datetime"
-              [class.text-white]="activeDay() === day.datetime"
-              [class.bg-gray-200]="activeDay() !== day.datetime"
-              [class.dark:bg-gray-700]="activeDay() !== day.datetime"
-              [class.text-gray-800]="activeDay() !== day.datetime"
-              [class.dark:text-gray-200]="activeDay() !== day.datetime"
-            >
-              {{ day.title }}
-            </button>
+              <button
+                (click)="setActiveDay(day.datetime)"
+                class="px-6 py-2 rounded-md font-medium transition-colors"
+                [class.bg-primary-500]="activeDay() === day.datetime"
+                [class.text-white]="activeDay() === day.datetime"
+                [class.bg-gray-200]="activeDay() !== day.datetime"
+                [class.dark:bg-gray-700]="activeDay() !== day.datetime"
+                [class.text-gray-800]="activeDay() !== day.datetime"
+                [class.dark:text-gray-200]="activeDay() !== day.datetime"
+              >
+                {{ day.title }}
+              </button>
             }
           </div>
         </div>
 
-        <div
-          class="relative overflow-x-auto rounded-lg shadow-lg bg-white dark:bg-gray-800"
-        >
+        <div class="relative overflow-x-auto rounded-lg shadow-lg bg-white dark:bg-gray-800">
           <table class="w-full text-left">
-            <thead
-              class="bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
-            >
+            <thead class="bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
               <tr>
                 <th scope="col" class="px-6 py-3 font-medium">Time</th>
                 <th scope="col" class="px-6 py-3 font-medium">Title</th>
@@ -52,61 +55,68 @@ import { Speaker, Talk } from '../../models/models';
             </thead>
             <tbody>
               @for (entry of filteredEntries(); track entry.datetime) {
-              <tr
-                class="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50"
-                [class.cursor-pointer]="getTalkBySession(entry.session)"
-                (click)="showTalkDetails(entry.session)"
-              >
-                <td class="px-6 py-4 whitespace-nowrap">
-                  {{ formatTime(entry.datetime) }}
-                </td>
-                <td class="px-6 py-4">
-                  <div class="font-medium">
-                    {{ getTalkTitle(entry) }}
-                    @if (getTalkBySession(entry.session)) {
-                      <span class="ml-1 text-xs text-primary-500 dark:text-primary-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </span>
-                    }
-                  </div>
-                </td>
-                <td class="px-6 py-4">
-                  @if (getSpeakerByName(entry.information) || getSpeakerBySession(entry.session)) {
-                    <div class="flex items-center">
-                      <div class="relative">
-                        <img 
-                          [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl" 
-                          [alt]="entry.information"
-                          class="w-10 h-10 rounded-full mr-3 object-cover border-2 border-gray-200 dark:border-gray-700"
-                        />
-                        @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam) {
-                          <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                            <img 
-                              src="assets/images/angular_gradient.png" 
-                              alt="Angular Team" 
-                              class="w-5 h-5"
-                            />
+                <tr
+                  class="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50"
+                  [class.cursor-pointer]="getTalkBySession(entry.session)"
+                  [class.bg-gradient-to-r]="isBreak(entry)"
+                  [class.from-[#e40341]]="isBreak(entry)"
+                  [class.via-[#f034e0]]="isBreak(entry)"
+                  [class.to-[#2192d1]]="isBreak(entry)"
+                  [class.text-white]="isBreak(entry)"
+                  [class.opacity-90]="isBreak(entry) && !isParty(entry)"
+                  [class.opacity-100]="isParty(entry)"
+                  (click)="showTalkDetails(entry.session)"
+                >
+                  <td class="px-6 py-4 whitespace-nowrap">
+                    {{ formatTime(entry.datetime) }}
+                  </td>
+                  <td class="px-6 py-4">
+                    <div class="font-medium">
+                      {{ getTalkTitle(entry) }}
+                      @if (getTalkBySession(entry.session)) {
+                        <span class="ml-1 text-xs text-primary-500 dark:text-primary-400">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </span>
+                      }
+                    </div>
+                  </td>
+                  <td class="px-6 py-4">
+                    @if (getSpeakerByName(entry.information) || getSpeakerBySession(entry.session)) {
+                      <div class="flex items-center">
+                        <div class="relative">
+                          <img 
+                            [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl" 
+                            [alt]="entry.information"
+                            class="w-10 h-10 rounded-full mr-3 object-cover border-2 border-gray-200 dark:border-gray-700"
+                          />
+                          @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam) {
+                            <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                              <img 
+                                src="assets/images/angular_gradient.png" 
+                                alt="Angular Team" 
+                                class="w-5 h-5"
+                              />
+                            </div>
+                          }
+                        </div>
+                        <div>
+                          <div class="font-medium" [class.text-white]="isBreak(entry)" [class.text-gray-900]="!isBreak(entry)" [class.dark:text-gray-100]="!isBreak(entry)">
+                            {{ getSpeakerName(entry) }}
                           </div>
-                        }
-                      </div>
-                      <div>
-                        <div class="font-medium text-gray-900 dark:text-gray-100">
-                          {{ getSpeakerName(entry) }}
-                        </div>
-                        <div class="text-xs text-gray-500 dark:text-gray-400">
-                          {{ getSpeakerTitle(entry) }}
+                          <div class="text-xs" [class.text-white]="isBreak(entry)" [class.text-gray-500]="!isBreak(entry)" [class.dark:text-gray-400]="!isBreak(entry)">
+                            {{ getSpeakerTitle(entry) }}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  } @else {
-                    <div class="text-sm text-gray-600 dark:text-gray-400">
-                      {{ entry.information }}
-                    </div>
-                  }
-                </td>
-              </tr>
+                    } @else {
+                      <div class="text-sm" [class.text-white]="isBreak(entry)" [class.text-gray-600]="!isBreak(entry)" [class.dark:text-gray-400]="!isBreak(entry)">
+                        {{ entry.information }}
+                      </div>
+                    }
+                  </td>
+                </tr>
               }
             </tbody>
           </table>
@@ -114,86 +124,86 @@ import { Speaker, Talk } from '../../models/models';
 
         <!-- Talk Detail Modal -->
         @if (selectedTalk()) {
-        <div 
-          class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
-          (click)="closeModal()"
-        >
           <div 
-            class="bg-white dark:bg-gray-800 rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-xl"
-            (click)="$event.stopPropagation()"
+            class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4"
+            (click)="closeModal()"
           >
-            <div class="p-6">
-              <div class="flex justify-between items-center mb-4">
-                <h3 class="text-2xl font-bold">{{ selectedTalk()?.title }}</h3>
-                <button
-                  class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-2"
-                  (click)="closeModal()"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-              
-              <div class="flex items-center mb-6">
-                @if (selectedSpeaker()) {
-                <div class="relative">
-                  <img 
-                    [src]="selectedSpeaker()?.imageUrl" 
-                    [alt]="selectedSpeaker()?.name"
-                    class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-primary-200 dark:border-primary-900"
-                  />
-                  @if (selectedSpeaker()?.angularTeam) {
-                    <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-0.5">
+            <div 
+              class="bg-white dark:bg-gray-800 rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto shadow-xl"
+              (click)="$event.stopPropagation()"
+            >
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                  <h3 class="text-2xl font-bold">{{ selectedTalk()?.title }}</h3>
+                  <button
+                    class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-2"
+                    (click)="closeModal()"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <div class="flex items-center mb-6">
+                  @if (selectedSpeaker()) {
+                    <div class="relative">
                       <img 
-                        src="assets/images/angular_gradient.png" 
-                        alt="Angular Team" 
-                        class="w-6 h-6"
+                        [src]="selectedSpeaker()?.imageUrl" 
+                        [alt]="selectedSpeaker()?.name"
+                        class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-primary-200 dark:border-primary-900"
                       />
+                      @if (selectedSpeaker()?.angularTeam) {
+                        <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                          <img 
+                            src="assets/images/angular_gradient.png" 
+                            alt="Angular Team" 
+                            class="w-6 h-6"
+                          />
+                        </div>
+                      }
+                    </div>
+                    <div>
+                      <p class="text-lg font-bold flex items-center">
+                        {{ selectedSpeaker()?.name }}
+                        @if (selectedSpeaker()?.pronouns) {
+                          <span class="text-xs font-normal text-gray-500 dark:text-gray-400 ml-2">({{ selectedSpeaker()?.pronouns }})</span>
+                        }
+                      </p>
+                      <p class="text-primary-600 dark:text-primary-400 font-medium flex items-center">
+                        {{ selectedSpeaker()?.title }}
+                      </p>
+                      <p class="text-gray-600 dark:text-gray-400 text-sm">
+                        {{ selectedSpeaker()?.company }}
+                      </p>
                     </div>
                   }
                 </div>
-                <div>
-                  <p class="text-lg font-bold flex items-center">
-                    {{ selectedSpeaker()?.name }}
-                    @if (selectedSpeaker()?.pronouns) {
-                      <span class="text-xs font-normal text-gray-500 dark:text-gray-400 ml-2">({{ selectedSpeaker()?.pronouns }})</span>
-                    }
-                  </p>
-                  <p class="text-primary-600 dark:text-primary-400 font-medium flex items-center">
-                    {{ selectedSpeaker()?.title }}
-                  </p>
-                  <p class="text-gray-600 dark:text-gray-400 text-sm">
-                    {{ selectedSpeaker()?.company }}
-                  </p>
-                </div>
-                }
-              </div>
 
-              <div class="mb-4 flex space-x-4">
-                <div class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">
-                  {{ selectedTalk()?.time }}
+                <div class="mb-4 flex space-x-4">
+                  <div class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">
+                    {{ selectedTalk()?.time }}
+                  </div>
+                  <div class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">
+                    {{ selectedTalk()?.room }}
+                  </div>
                 </div>
-                <div class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">
-                  {{ selectedTalk()?.room }}
+                
+                <div class="prose dark:prose-invert max-w-none">
+                  <p>{{ selectedTalk()?.abstract }}</p>
                 </div>
-              </div>
-              
-              <div class="prose dark:prose-invert max-w-none">
-                <p>{{ selectedTalk()?.abstract }}</p>
-              </div>
-              
-              <div class="mt-6 flex justify-end">
-                <button
-                  class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
-                  (click)="closeModal()"
-                >
-                  Close
-                </button>
+                
+                <div class="mt-6 flex justify-end">
+                  <button
+                    class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                    (click)="closeModal()"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         }
       </div>
     </section>
@@ -249,7 +259,7 @@ export class ScheduleComponent {
     return this.speakerService.getSpeakerById(talk.speakerId);
   }
 
-  getSpeakerName(entry: any): string {
+  getSpeakerName(entry: ScheduleEntry): string {
     // First try to get speaker from session
     const sessionSpeaker = this.getSpeakerBySession(entry.session);
     if (sessionSpeaker) return sessionSpeaker.name;
@@ -258,7 +268,7 @@ export class ScheduleComponent {
     return entry.information;
   }
 
-  getTalkTitle(entry: any): string {
+  getTalkTitle(entry: ScheduleEntry): string {
     // If there's a talk associated with this session, use its title
     const talk = this.getTalkBySession(entry.session);
     if (talk) return talk.title;
@@ -318,12 +328,30 @@ export class ScheduleComponent {
     return speaker;
   }
 
-  getSpeakerTitle(entry: any): string {
+  getSpeakerTitle(entry: ScheduleEntry): string {
     // First try to get speaker from session
     const sessionSpeaker = this.getSpeakerBySession(entry.session);
     if (sessionSpeaker) return `${sessionSpeaker.title}${sessionSpeaker.company ? ` at ${sessionSpeaker.company}` : ''}`;
     
     // Fall back to empty string
     return '';
+  }
+
+  // Check if an entry is a break
+  isBreak(entry: ScheduleEntry): boolean {
+    return entry.title.toLowerCase().includes('break') || 
+           entry.title.toLowerCase().includes('lunch') || 
+           entry.title.toLowerCase().includes('registration') || 
+           entry.title.toLowerCase().includes('breakfast') ||
+           entry.title.toLowerCase().includes('party') ||
+           entry.title.toLowerCase().includes('community event') ||
+           entry.information.toLowerCase().includes('social event');
+  }
+  
+  // Check if an entry is a party or social event
+  isParty(entry: ScheduleEntry): boolean {
+    return entry.title.toLowerCase().includes('party') || 
+           entry.title.toLowerCase().includes('community event') ||
+           entry.information.toLowerCase().includes('social event');
   }
 }
