@@ -93,7 +93,8 @@ export class SpeakerService {
       bio: 'Jens is a Technical Program Manager with the Angular team at Google, where he focuses on managing the release schedule, prioritizing key features and making sure user needs are met. With 17 years of experience at Google, Jens has worked on a variety of things, from building technical solutions for Cloud Networking and running infrastructure projects in Sub-Saharan Africa to serving as a network engineer for Google\'s global network.',
       imageUrl: 'assets/images/speakers/jens-kuehlers.jpg',
       githubHandle: '',
-      pronouns: 'he/him'
+      pronouns: 'he/him',
+      angularTeam: true
     }
   ]);
 
