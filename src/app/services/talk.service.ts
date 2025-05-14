@@ -16,8 +16,8 @@ export class TalkService {
     },
     {
       id: 'talk-day1-2',
-      title: 'Modern Angular Development',
-      abstract: 'Exploring modern Angular development patterns and practices',
+      title: 'TBD',
+      abstract: 'Talk details to be determined',
       speakerId: 'rainer-hahnekamp',
       time: '10:30 - 11:00',
       day: 'day1',
@@ -34,8 +34,8 @@ export class TalkService {
     },
     {
       id: 'talk-day1-4',
-      title: 'Angular and Modern Web Standards',
-      abstract: 'How Angular embraces and enhances modern web standards',
+      title: 'TBD',
+      abstract: 'Talk details to be determined',
       speakerId: 'christian-liebel',
       time: '12:15 - 12:45',
       day: 'day1',
