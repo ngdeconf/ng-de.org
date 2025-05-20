@@ -9,9 +9,9 @@ export class ScheduleService {
       datetime: '2025-11-06',
       entries: [
         {
-          title: 'Registration & Breakfast',
+          title: 'Registration & Light Refreshments',
           datetime: '2025-11-06T08:30:00',
-          information: 'Registration',
+          information: 'Registration with coffee and small snacks',
           location: 'GLS Campus Berlin',
           session: null
         },
@@ -120,9 +120,9 @@ export class ScheduleService {
       datetime: '2025-11-07',
       entries: [
         {
-          title: 'Breakfast',
+          title: 'Light Refreshments',
           datetime: '2025-11-07T08:30:00',
-          information: 'Start your day with breakfast',
+          information: 'Coffee and small snacks available',
           location: 'GLS Campus Berlin',
           session: null
         },
