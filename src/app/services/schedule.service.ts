@@ -120,7 +120,7 @@ export class ScheduleService {
       datetime: '2025-11-07',
       entries: [
         {
-          title: 'Light Refreshments',
+          title: 'Registration & Light Refreshments',
           datetime: '2025-11-07T09:00:00',
           information: 'Coffee and small snacks available',
           location: 'GLS Campus Berlin',
