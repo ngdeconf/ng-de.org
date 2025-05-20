@@ -80,36 +80,36 @@ export class ScheduleService {
         },
         {
           title: 'Coffee Break ☕️',
-          datetime: '2025-11-06T16:00:00',
+          datetime: '2025-11-06T15:15:00',
           information: 'Networking opportunity',
           location: 'Sponsoring Hall & Catering Area',
           session: null
         },
         {
           title: 'Talk',
-          datetime: '2025-11-06T16:30:00',
+          datetime: '2025-11-06T16:00:00',
           information: 'Call for Papers',
           location: 'Main Stage',
           session: 'talk-day1-7'
         },
         {
           title: 'Panel Discussion',
-          datetime: '2025-11-06T17:00:00',
+          datetime: '2025-11-06T16:45:00',
           information: 'TBD (Speakers from the conference)',
           location: 'Main Stage',
           session: 'panel-day1'
         },
         {
           title: 'Closing Day 1',
-          datetime: '2025-11-06T17:45:00',
+          datetime: '2025-11-06T16:45:00',
           information: 'Wrap-up of the first day',
           location: 'Main Stage',
           session: null
         },
         {
           title: 'Community Event/Party 🎉',
-          datetime: '2025-11-06T18:00:00',
-          information: 'Social event',
+          datetime: '2025-11-06T17:00:00',
+          information: 'Social event with drinks and food',
           location: 'GLS Campus Berlin',
           session: 'party'
         }
@@ -121,7 +121,7 @@ export class ScheduleService {
       entries: [
         {
           title: 'Light Refreshments',
-          datetime: '2025-11-07T08:30:00',
+          datetime: '2025-11-07T09:00:00',
           information: 'Coffee and small snacks available',
           location: 'GLS Campus Berlin',
           session: null
@@ -191,28 +191,28 @@ export class ScheduleService {
         },
         {
           title: 'Coffee Break ☕️',
-          datetime: '2025-11-07T16:00:00',
+          datetime: '2025-11-07T15:15:00',
           information: 'Networking opportunity',
           location: 'Sponsoring Hall & Catering Area',
           session: null
         },
         {
           title: 'Talk',
-          datetime: '2025-11-07T16:30:00',
+          datetime: '2025-11-07T16:00:00',
           information: 'Call for Papers',
           location: 'Main Stage',
           session: 'talk-day2-16'
         },
         {
           title: 'Talk',
-          datetime: '2025-11-07T17:00:00',
+          datetime: '2025-11-07T16:30:00',
           information: 'Enea Jahollari',
           location: 'Main Stage',
           session: 'talk-day2-17'
         },
         {
           title: 'Closing & Farewell',
-          datetime: '2025-11-07T17:30:00',
+          datetime: '2025-11-07T17:00:00',
           information: 'Orga Team / MC',
           location: 'Main Stage',
           session: null
