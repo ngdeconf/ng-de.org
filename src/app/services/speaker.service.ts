@@ -105,6 +105,15 @@ export class SpeakerService {
       imageUrl: 'assets/images/speakers/marko-stanimirovic.jpg',
       githubHandle: 'markostanimirovic',
       ngrxTeam: true
+    },
+    {
+      id: 'younes-jaaidi',
+      name: 'Younes Jaaidi',
+      title: 'Software Cook & Google Developer Expert',
+      company: 'Marmicode',
+      bio: 'Younes Jaaidi is a Software Cook who whips code until the tests pass. Raised in the kitchen of eXtreme Programming, he teaches and coaches teams — like yours — to cook better apps with ingredients such as Test-Driven Development and Collective Ownership. He\'s an Angular GDE, an NX Champion, and a mediocre sailor. His favorite spice: `sleep 300 && git reset --hard && git clean -df`',
+      imageUrl: 'assets/images/speakers/younes-jaaidi.webp',
+      githubHandle: 'yjaaidi'
     }
   ]);
 

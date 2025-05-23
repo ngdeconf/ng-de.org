@@ -52,9 +52,9 @@ export class TalkService {
     },
     {
       id: 'talk-day1-6',
-      title: 'Community Talk',
-      abstract: 'Selected from Call for Papers',
-      speakerId: 'cfp',
+      title: 'Component Testing That Feels Like Playwright — Because It Is',
+      abstract: `Tired of blindly debugging raw HTML output? Flaky end-to-end tests and their slow feedback loop? Stitching together five different tools to check if a button is disabled?\n\nYou're not alone.\n\nEveryone loves how smooth Playwright makes end-to-end testing feel — reliable, visual, easy to debug. But relying solely on e2e tests is rarely a sustainable strategy.\n\nWhat if we could zoom in to test just one component — and still enjoy the same Playwright magic?\n\nIn this talk, Younes & Rainer introduce a new approach to Angular component testing: same great DX, smaller scope, faster feedback.\n\nThey'll share why they got there, and how their open-source library brings the full Playwright experience to your components.`,
+      speakerId: 'younes-jaaidi',
       time: '14:45 - 15:15',
       day: 'day1',
       room: 'Main Stage'

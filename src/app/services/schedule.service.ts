@@ -74,7 +74,7 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T14:45:00',
-          information: 'Call for Papers',
+          information: 'Younes Jaaidi',
           location: 'Main Stage',
           session: 'talk-day1-6'
         },
