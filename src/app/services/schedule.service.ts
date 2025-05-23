@@ -44,9 +44,9 @@ export class ScheduleService {
           session: null
         },
         {
-          title: 'Talk',
+          title: 'Workshop: Mastering NgRx SignalStore',
           datetime: '2025-11-06T11:45:00',
-          information: 'Call for Papers',
+          information: 'Marko Stanimirović (NgRx Team)',
           location: 'Main Stage',
           session: 'talk-day1-3'
         },

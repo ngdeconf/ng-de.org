@@ -66,6 +66,13 @@ import { Speaker } from '../../models/models';
                     class="w-4 h-4 mr-1"
                   />
                   }
+                  @if (speaker.ngrxTeam) {
+                  <img 
+                    src="assets/images/ngrx-logo.png" 
+                    alt="NgRx Team" 
+                    class="w-4 h-4 mr-1"
+                  />
+                  }
                   {{ speaker.title }}
                 </p>
                 <p class="text-gray-600 dark:text-gray-400 text-xs">
@@ -172,6 +179,13 @@ import { Speaker } from '../../models/models';
                 <img 
                   src="assets/images/angular_gradient.png" 
                   alt="Angular Team" 
+                  class="w-4 h-4 mr-1"
+                />
+                }
+                @if (activeSpeaker()?.ngrxTeam) {
+                <img 
+                  src="assets/images/ngrx-logo.png" 
+                  alt="NgRx Team" 
                   class="w-4 h-4 mr-1"
                 />
                 }

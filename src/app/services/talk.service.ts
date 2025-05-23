@@ -25,9 +25,20 @@ export class TalkService {
     },
     {
       id: 'talk-day1-3',
-      title: 'Community Talk',
-      abstract: 'Selected from Call for Papers',
-      speakerId: 'cfp',
+      title: 'Mastering NgRx SignalStore: From Key Principles to Advanced Patterns',
+      abstract: 'Enhance your Angular and NgRx expertise in an in-depth workshop led by core members of the NgRx team: Marko Stanimirović and Alex Okrushko. This workshop provides hands-on guidance for implementing NgRx SignalStore to solve real-world challenges in modern Angular applications.\n\n' +
+        'NgRx SignalStore leverages the power of Angular Signals and a structured state management approach to streamline reactive development workflows. Its modular design, simplicity, and declarative nature form the foundation for maintainable and scalable implementations.\n\n' +
+        'What to Expect:\n\n' +
+        'This workshop guides you through a carefully structured curriculum where each topic builds upon the previous one, providing a progressive experience from foundational concepts to advanced techniques:\n\n' +
+        '- Exploring Angular Signals APIs to establish the technical foundation for what follows\n' +
+        '- Mastering SignalStore core principles and main building blocks\n' +
+        '- Integrating RxJS with SignalStore to combine the best of both reactive approaches\n' +
+        '- Building custom SignalStore features that consolidate common patterns into reusable abstractions\n' +
+        '- Using the Entities plugin to facilitate data collection management\n' +
+        '- Applying architectural patterns for managing local and global state in complex applications\n' +
+        '- Utilizing the new Events plugin for orchestrating complex workflows with elegance\n\n' +
+        'Each section includes practical implementation through exercises and code examples, allowing you to apply concepts directly to real-world development challenges.',
+      speakerId: 'marko-stanimirovic',
       time: '11:45 - 12:15',
       day: 'day1',
       room: 'Main Stage'

@@ -95,6 +95,16 @@ export class SpeakerService {
       githubHandle: '',
       pronouns: 'he/him',
       angularTeam: true
+    },
+    {
+      id: 'marko-stanimirovic',
+      name: 'Marko Stanimirović',
+      title: 'NgRx Team',
+      company: 'NgRx',
+      bio: 'Marko is a core member of the NgRx team, focusing on state management solutions for Angular applications. He is passionate about reactive programming and helping developers build scalable and maintainable applications using NgRx.',
+      imageUrl: 'assets/images/speakers/marko-stanimirovic.jpg',
+      githubHandle: 'markostanimirovic',
+      ngrxTeam: true
     }
   ]);
 

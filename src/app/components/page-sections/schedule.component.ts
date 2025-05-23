@@ -100,6 +100,15 @@ interface ScheduleEntry {
                               />
                             </div>
                           }
+                          @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam) {
+                            <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                              <img 
+                                src="assets/images/ngrx-logo.png" 
+                                alt="NgRx Team" 
+                                class="w-5 h-5"
+                              />
+                            </div>
+                          }
                         </div>
                         <div>
                           <div class="font-medium" [class.text-white]="isBreak(entry)" [class.text-gray-900]="!isBreak(entry)" [class.dark:text-gray-100]="!isBreak(entry)">
@@ -158,6 +167,15 @@ interface ScheduleEntry {
                           <img 
                             src="assets/images/angular_gradient.png" 
                             alt="Angular Team" 
+                            class="w-6 h-6"
+                          />
+                        </div>
+                      }
+                      @if (selectedSpeaker()?.ngrxTeam) {
+                        <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                          <img 
+                            src="assets/images/ngrx-logo.png" 
+                            alt="NgRx Team" 
                             class="w-6 h-6"
                           />
                         </div>

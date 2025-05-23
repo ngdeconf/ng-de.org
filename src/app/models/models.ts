@@ -8,6 +8,7 @@ export interface Speaker {
   githubHandle?: string;
   pronouns?: string;
   angularTeam?: boolean;
+  ngrxTeam?: boolean;
 }
 
 export interface ScheduleEntry {
