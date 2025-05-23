@@ -45,8 +45,8 @@ export class TalkService {
     },
     {
       id: 'talk-day1-4',
-      title: 'TBD',
-      abstract: 'Talk details to be determined',
+      title: 'What\'s New in Web AI?',
+      abstract: `Generative AI is becoming a key part of modern software architecture, and its presence in web apps is growing. As demand increases, vendors and specification authors are working to make AI capabilities more accessible and integrated into the web platform. In this session, Christian Liebel—W3C TAG Associate and member of the WebML Working Group—will share what's cooking behind the scenes in Web AI. You'll get an update on the latest advancements in the WebNN API, Chromium's Built-in AI APIs, emerging developer tools, and the real-world challenges that browser vendors and standards authors are navigating to bring AI to the web.`,
       speakerId: 'christian-liebel',
       time: '12:15 - 12:45',
       day: 'day1',
