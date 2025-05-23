@@ -101,8 +101,8 @@ export class TalkService {
     },
     {
       id: 'talk-day2-11',
-      title: 'TBD',
-      abstract: 'Talk details to be determined',
+      title: 'Permit A38 - or how to build accessible forms in Angular',
+      abstract: `In The Twelve Tasks of Asterix, the heroes are driven to madness trying to get Permit A38. That's what inaccessible forms feel like to many users — confusing, frustrating, and impossible to complete.\n\nThis talk dives into the practical side of building accessible forms in Angular. We'll cover:\n- Proper use of labels, fieldsets, and input types - from easy to tricky cases\n- Accessible error handling and validation\n- Distinction between hard accessibility requirements and UX recommendations\n\nAttendees will leave with clear, actionable steps to create Angular forms that are usable for screen readers, keyboard users, and everyone else. No bureaucracy required.`,
       speakerId: 'maria-korneeva',
       time: '10:30 - 11:00',
       day: 'day2',
