@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CallForPapersComponent } from '../page-sections/call-for-papers.component';
 import { CommunityPartnersComponent } from '../page-sections/community-partners.component';
+import { LocationComponent } from '../page-sections/location.component';
 import { FaqComponent } from '../page-sections/faq.component';
 import { HeroComponent } from '../page-sections/hero.component';
 import { ImpressionsComponent } from '../page-sections/impressions.component';
@@ -24,6 +25,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     OrganizerComponent,
     SponsorsComponent,
     CommunityPartnersComponent,
+    LocationComponent,
     ImpressionsComponent,
     NewsletterComponent,
     // CallForPapersComponent,
@@ -38,6 +40,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
     <ngde-organizer />
     <ngde-sponsors />
     <ngde-community-partners />
+    <ngde-location />
     <ngde-impressions />
     <ngde-newsletter />
     <!-- <ngde-call-for-papers /> -->
