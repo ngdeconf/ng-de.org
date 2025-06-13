@@ -143,15 +143,6 @@ export class SpeakerService {
       githubHandle: 'eliraneliassy'
     },
     {
-      id: 'marko-stanimirovic-new',
-      name: 'Marko Stanimirović',
-      title: 'NgRx Core Team & Angular GDE',
-      company: 'NgRx',
-      bio: 'Marko is a core member of NgRx and AnalogJS teams, a Google Developer Expert in Angular, and an organizer of the NG Belgrade conference. He actively contributes to open-source software, shares knowledge through technical articles and talks, and enjoys playing the guitar. Marko holds a Master of Science in Software Engineering from the University of Belgrade.',
-      imageUrl: 'assets/images/speakers/marko-stanimirovic-new.jpg',
-      githubHandle: 'markostanimirovic'
-    },
-    {
       id: 'kasia-biernat-kluba',
       name: 'Kasia Biernat-Kluba',
       title: 'Principal Frontend Developer',
@@ -166,7 +157,7 @@ export class SpeakerService {
       title: 'Google Developer Expert & MVP',
       company: 'SFEIR',
       bio: 'Google Developer Expert in Web Technologies and Angular, also a Microsoft Most Valuable Professional, Nicolas is a French Frontend specialist and User Interface Designer from Metz, France. He works as a Developer Advocate and Senior Staff Engineer at Sfeir Luxembourg. Besides that, Nicolas is a speaker, and likes to contribute to the community by giving talks, trainings, writing articles or participating in open source projects like Ng Zorro.',
-      imageUrl: 'assets/images/speakers/nicolas-frizzarin.jpg',
+      imageUrl: 'assets/images/speakers/nicolas-frizzarin.png',
       githubHandle: 'frizzarin'
     }
   ]);
