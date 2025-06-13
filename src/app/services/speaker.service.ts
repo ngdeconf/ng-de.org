@@ -114,6 +114,60 @@ export class SpeakerService {
       bio: 'Younes Jaaidi is a Software Cook who whips code until the tests pass. Raised in the kitchen of eXtreme Programming, he teaches and coaches teams — like yours — to cook better apps with ingredients such as Test-Driven Development and Collective Ownership. He\'s an Angular GDE, an NX Champion, and a mediocre sailor. His favorite spice: `sleep 300 && git reset --hard && git clean -df`',
       imageUrl: 'assets/images/speakers/younes-jaaidi.webp',
       githubHandle: 'yjaaidi'
+    },
+    {
+      id: 'robin-goetz',
+      name: 'Robin Götz',
+      title: 'Full Stack Engineer',
+      company: 'Goetz Software & IT Dienstleistungen',
+      bio: 'I\'m a full stack engineer and the creator of spartan, an open-source Angular UI toolkit. I contribute to projects like AnalogJS, ng-signal-forms, and Letta (formerly MemGPT), and I\'m passionate about building accessible, customizable tools that help developers build a better web for all. I love all kinds of tech and am especially excited about AI, VR, and open source. When I\'m not coding, you\'ll probably find me hiking, biking, (trail) running, or just being out in nature.',
+      imageUrl: 'assets/images/speakers/robin-goetz.jpg',
+      githubHandle: 'goetzrobin'
+    },
+    {
+      id: 'brygida-fiejdasz',
+      name: 'Brygida Fiejdasz',
+      title: 'Angular GDE & Lead Frontend Competence Center',
+      company: 'Avenga',
+      bio: 'I\'m an Angular GDE and Lead of the Frontend Competence Center at Avenga. Beyond that, I\'m an Angular enthusiast who loves to code and enjoys sharing knowledge – on stage, at meetups, and on my YouTube channel "Speed Date with Angular". In my free time, I\'m an explorer and a proud cat mom.',
+      imageUrl: 'assets/images/speakers/brygida-fiejdasz.jpg',
+      githubHandle: 'brygidafiejdasz'
+    },
+    {
+      id: 'eliran-eliassy',
+      name: 'Eliran Eliassy',
+      title: 'Founder & Angular GDE',
+      company: 'e-square.io',
+      bio: 'Eliran Eliassy is a passionate web architect, consultant, and Angular Google Developer Expert (GDE) with over a decade of experience building large-scale applications. As the founder of e-square.io and a co-organizer of Angular-TLV and AngularConnect, he\'s deeply involved in growing the global Angular community. Eliran specializes in modern frontend architectures, reactive programming, and helping teams unlock the full potential of Angular. When he\'s not coding or mentoring, he\'s on stage sharing practical, real-world insights — always with a focus on live coding and deep technical dives.',
+      imageUrl: 'assets/images/speakers/eliran-eliassy.jpg',
+      githubHandle: 'eliraneliassy'
+    },
+    {
+      id: 'marko-stanimirovic-new',
+      name: 'Marko Stanimirović',
+      title: 'NgRx Core Team & Angular GDE',
+      company: 'NgRx',
+      bio: 'Marko is a core member of NgRx and AnalogJS teams, a Google Developer Expert in Angular, and an organizer of the NG Belgrade conference. He actively contributes to open-source software, shares knowledge through technical articles and talks, and enjoys playing the guitar. Marko holds a Master of Science in Software Engineering from the University of Belgrade.',
+      imageUrl: 'assets/images/speakers/marko-stanimirovic-new.jpg',
+      githubHandle: 'markostanimirovic'
+    },
+    {
+      id: 'kasia-biernat-kluba',
+      name: 'Kasia Biernat-Kluba',
+      title: 'Principal Frontend Developer',
+      company: 'Hyland',
+      bio: 'I\'m a developer with over a decade of experience in IT, currently working as a Principal Frontend Developer at Hyland. While Angular has been my main playground in recent years, I\'m always up for the challenge of dabbling in backend development when the need arises. Clean and efficient code, best practices, and modern solutions are my jam.',
+      imageUrl: 'assets/images/speakers/kasia-biernat-kluba.jpg',
+      githubHandle: 'kasiabiernat'
+    },
+    {
+      id: 'nicolas-frizzarin',
+      name: 'Nicolas Frizzarin',
+      title: 'Google Developer Expert & MVP',
+      company: 'SFEIR',
+      bio: 'Google Developer Expert in Web Technologies and Angular, also a Microsoft Most Valuable Professional, Nicolas is a French Frontend specialist and User Interface Designer from Metz, France. He works as a Developer Advocate and Senior Staff Engineer at Sfeir Luxembourg. Besides that, Nicolas is a speaker, and likes to contribute to the community by giving talks, trainings, writing articles or participating in open source projects like Ng Zorro.',
+      imageUrl: 'assets/images/speakers/nicolas-frizzarin.jpg',
+      githubHandle: 'frizzarin'
     }
   ]);
 

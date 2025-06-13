@@ -46,7 +46,7 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T11:45:00',
-          information: 'Call for Papers',
+          information: 'Robin Götz',
           location: 'Main Stage',
           session: 'talk-day1-3'
         },
@@ -88,7 +88,7 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T16:00:00',
-          information: 'Call for Papers',
+          information: 'Brygida Fiejdasz',
           location: 'Main Stage',
           session: 'talk-day1-7'
         },
@@ -157,7 +157,7 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T11:45:00',
-          information: 'Call for Papers',
+          information: 'Eliran Eliassy',
           location: 'Main Stage',
           session: 'talk-day2-12'
         },
@@ -178,7 +178,7 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T14:15:00',
-          information: 'Call for Papers',
+          information: 'Marko Stanimirović',
           location: 'Main Stage',
           session: 'talk-day2-14'
         },
@@ -199,14 +199,14 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T16:00:00',
-          information: 'Call for Papers',
+          information: 'Kasia Biernat-Kluba',
           location: 'Main Stage',
           session: 'talk-day2-16'
         },
         {
           title: 'Talk',
           datetime: '2025-11-07T16:30:00',
-          information: 'Enea Jahollari',
+          information: 'Nicolas Frizzarin',
           location: 'Main Stage',
           session: 'talk-day2-17'
         },

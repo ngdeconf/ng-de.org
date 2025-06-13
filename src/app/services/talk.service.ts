@@ -25,9 +25,9 @@ export class TalkService {
     },
     {
       id: 'talk-day1-3',
-      title: 'Community Talk',
-      abstract: 'Selected from Call for Papers',
-      speakerId: 'cfp',
+      title: 'One UI Library to Rule Them All: How spartan Brings shadcn/ui & Radix to Angular',
+      abstract: 'Angular developers often find themselves choosing between heavy, opinionated UI libraries built around someone else\'s design system—or the blank canvas of building everything from scratch. spartan/ui offers a third path: a collection of unstyled, accessible, and composable UI primitives inspired by React\'s shadcn/ui and Radix, rebuilt for modern Angular applications. Instead of installing black-box components, spartan gives you the actual code—meant to be copied, customized, and fully owned. In this talk, we\'ll explore the philosophy behind spartan, how its CLI empowers fast scaffolding of customizable components, and why open code is the future of frontend architecture. Build faster. Style freely. Own every line.',
+      speakerId: 'robin-goetz',
       time: '11:45 - 12:15',
       day: 'day1',
       room: 'Main Stage'
@@ -61,9 +61,9 @@ export class TalkService {
     },
     {
       id: 'talk-day1-7',
-      title: 'Community Talk',
-      abstract: 'Selected from Call for Papers',
-      speakerId: 'cfp',
+      title: 'No Zone, No Problem - Building Angular Apps without Zone.js',
+      abstract: 'Angular no longer requires Zone.js, but dropping it isn\'t just a switch - it\'s a mindset shift. This session covers what really happens when you remove Zone.js, how to handle reactivity using Signals and manual strategies, and what this means for app architecture, testing, and performance. Discover how zoneless Angular changes the way we write code and reason about UI updates.',
+      speakerId: 'brygida-fiejdasz',
       time: '16:30 - 17:00',
       day: 'day1',
       room: 'Main Stage'
@@ -99,9 +99,9 @@ export class TalkService {
     },
     {
       id: 'talk-day2-12',
-      title: 'Community Talk',
-      abstract: 'Selected from Call for Papers',
-      speakerId: 'cfp',
+      title: 'Zero Bundle Size?',
+      abstract: 'What if your Angular app shipped nothing by default? With the introduction of the @defer block in Angular, the framework is entering a new era of ultra-granular code loading. In this session, we\'ll deep-dive into the mechanics and real-world impact of deferrable views—how Angular\'s control flow syntax enables not just lazy loading, but reactive, declarative code isolation. We\'ll go beyond the basic @defer syntax and explore strategies for architecting micro-frontends and feature islands, using build-time hints to reduce unused code paths, profiling and restructuring apps for minimal critical paths, and how defer blocks complement signals and zoneless change detection. Expect performance audits and advanced bundling techniques. If you\'re building large-scale Angular apps and want to minimize JS payload without compromising UX, this talk will give you concrete tools to reshape your app around runtime execution—not compile-time coupling.',
+      speakerId: 'eliran-eliassy',
       time: '11:45 - 12:15',
       day: 'day2',
       room: 'Main Stage'
@@ -119,9 +119,9 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
     },
     {
       id: 'talk-day2-14',
-      title: 'Community Talk',
-      abstract: 'Selected from Call for Papers',
-      speakerId: 'cfp',
+      title: '3 Dimensions of NgRx Signals: Choosing the Best Fit for Your App',
+      abstract: 'NgRx Signals is one of the fastest-growing packages in the Angular ecosystem, offering a reactive and flexible approach to state management. In this talk, we\'ll explore three techniques to managing state with NgRx Signals, each adaptable to different application needs. You\'ll learn how to leverage APIs like SignalState, SignalStore, and SignalStore Events Plugin, as well as how to select the approach that best aligns with your project\'s requirements and your team\'s expertise.',
+      speakerId: 'marko-stanimirovic-new',
       time: '14:15 - 14:45',
       day: 'day2',
       room: 'Main Stage'
@@ -137,18 +137,18 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
     },
     {
       id: 'talk-day2-16',
-      title: 'Community Talk',
-      abstract: 'Selected from Call for Papers',
-      speakerId: 'cfp',
+      title: 'Code That Writes Code: Supercharge Your Nx Workspace with Generators and Executors',
+      abstract: 'Nx generators and executors can automate your workflow, eliminate boilerplate, and bring consistency to your monorepo. In this talk, you\'ll learn how to create custom generators that scaffold code, build powerful executors for running tasks, and integrate both seamlessly into your Nx workspace.',
+      speakerId: 'kasia-biernat-kluba',
       time: '16:30 - 17:00',
       day: 'day2',
       room: 'Main Stage'
     },
     {
       id: 'talk-day2-17',
-      title: 'TBD',
-      abstract: 'Talk details to be determined',
-      speakerId: 'enea-jahollari',
+      title: 'Improve your code quality with the composition Pattern',
+      abstract: 'Are you fully leveraging Angular\'s potential beyond Signals and standalone components? Discover the Composition Pattern, a key development since v14 that allows building robust features through simple composition of functions and directives. Stay ahead of the curve, learn its implementation, and harness its advantages – including upcoming v20 features – for more powerful applications. Since Angular 14, each version has brought its share of new features. The most obvious are, of course, Signals, the new control flow, and also standalone components. However, since version 14, the Angular team has developed much more than these new functionalities; they have unlocked a new development pattern: the Composition Pattern. Come and discover what this pattern can offer you in your daily applications, how to implement it, and how to extract the best advantages from it.',
+      speakerId: 'nicolas-frizzarin',
       time: '17:00 - 17:30',
       day: 'day2',
       room: 'Main Stage'
