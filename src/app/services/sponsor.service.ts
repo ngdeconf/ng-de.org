@@ -24,6 +24,13 @@ export class SponsorService {
       logoUrl: 'assets/images/sponsors/snapaddy.svg',
       websiteUrl: 'https://www.snapaddy.com',
       level: 'Bronze'
+    },
+    {
+      id: 'house-of-angular',
+      name: 'House of Angular',
+      logoUrl: 'assets/images/sponsors/house-of-angular.png',
+      websiteUrl: 'https://houseofangular.io/',
+      level: 'Bronze'
     }
   ]);
 
