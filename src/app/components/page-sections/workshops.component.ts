@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import {
   afterNextRender,
   Component,
@@ -11,7 +11,7 @@ import { WorkshopService } from '../../services/workshop.service';
 
 @Component({
   selector: 'ngde-workshops',
-  imports: [CommonModule],
+  imports: [],
   template: `
     <section id="workshops" class="py-20">
       <div class="container mx-auto px-4">

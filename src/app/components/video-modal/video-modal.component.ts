@@ -1,5 +1,5 @@
 import { DIALOG_DATA, DialogRef } from '@angular/cdk/dialog';
-import { DOCUMENT } from '@angular/common';
+
 import {
   Component,
   ElementRef,
@@ -7,7 +7,8 @@ import {
   afterNextRender,
   computed,
   inject,
-  signal
+  signal,
+  DOCUMENT
 } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 

@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { ScheduleService } from '../../services/schedule.service';
 import { SpeakerService } from '../../services/speaker.service';
 import { TalkService } from '../../services/talk.service';
@@ -16,7 +16,7 @@ interface ScheduleEntry {
 @Component({
   selector: 'ngde-schedule',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   template: `
     <section id="schedule" class="py-20 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4">

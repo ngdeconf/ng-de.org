@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 interface CommunityPartner {
   id: string;
@@ -12,7 +12,7 @@ interface CommunityPartner {
 @Component({
   selector: 'ngde-community-partners',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   template: `
     <section id="community-partners" class="py-20 bg-white dark:bg-gray-900">
       <div class="container mx-auto px-4">
