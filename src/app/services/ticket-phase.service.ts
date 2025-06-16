@@ -107,4 +107,31 @@ export class TicketPhaseService {
         return basePriceToUse;
     }
   }
+
+  /**
+   * Returns the next ticket phase after the current active one, or undefined if at last phase
+   */
+  getNextPhase() {
+    const phases = this.ticketPhases().sort(
+      (a, b) => a.startDate.getTime() - b.startDate.getTime()
+    );
+    const currentIdx = phases.findIndex(phase => phase.isActive);
+    if (currentIdx >= 0 && currentIdx < phases.length - 1) {
+      return phases[currentIdx + 1];
+    }
+    return undefined;
+  }
+
+  /**
+   * Returns the number of days until the next phase starts, or null if at last phase
+   */
+  getDaysUntilNextPhase(): number | null {
+    const next = this.getNextPhase();
+    if (!next) return null;
+    const now = new Date();
+    // Calculate difference in days (rounded up)
+    const diffMs = next.startDate.getTime() - now.getTime();
+    const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+    return diffDays > 0 ? diffDays : 0;
+  }
 }

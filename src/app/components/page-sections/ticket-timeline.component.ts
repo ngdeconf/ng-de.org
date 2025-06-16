@@ -2,6 +2,7 @@ import { CommonModule, DatePipe } from '@angular/common';
 import {
   afterNextRender,
   Component,
+  computed,
   ElementRef,
   OnDestroy,
   OnInit,
@@ -21,6 +22,52 @@ import { TicketPhaseService } from '../../services/ticket-phase.service';
       class="relative mx-auto my-10 py-5 dark:bg-gray-900"
       #timelineContainer
     >
+      <!-- Countdown Indicator (centered above current phase) -->
+      @if ((daysUntilNextPhase() ?? 0) > 0) {
+      <div
+        class="absolute left-0 right-0 flex justify-center pointer-events-none -top-6 md:-top-14"
+      >
+        <div class="flex flex-col items-center">
+          <div
+            class="flex items-center gap-3 px-5 py-3 rounded-xl bg-gray-50/90 dark:bg-gray-800/90 shadow-lg border border-gray-200 dark:border-gray-700 pointer-events-auto"
+          >
+            <!-- Custom SVG icon (clock/alert style, modern, accessible) -->
+            <svg
+              class="w-6 h-6 text-red-500"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v6l3 3"
+              />
+            </svg>
+            <span class="text-base font-semibold text-gray-800 dark:text-white">
+              {{ daysUntilNextPhase() }}
+              {{ daysUntilNextPhase() === 1 ? 'day' : 'days' }} until prices
+              increase
+            </span>
+          </div>
+          <!-- Downward pointer, visually integrated -->
+          <div
+            class="w-0 h-0 border-l-8 border-r-8 border-t-[16px] border-l-transparent border-r-transparent border-t-gray-50 dark:border-t-gray-800 hidden md:block"
+          ></div>
+        </div>
+      </div>
+      }
       <!-- Timeline Bar - Hidden on mobile -->
       <div
         class="hidden md:block absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-[#e40341]/20 via-[#f034e0]/20 via-[#921bf2]/20 to-[#2192d1]/20 shadow-lg shadow-[#e40341]/30 dark:shadow-[#e40341]/20 rounded-full overflow-hidden"
@@ -155,6 +202,13 @@ export class TicketTimelineComponent implements OnInit, OnDestroy {
   isVisible = signal(false);
   private observer?: IntersectionObserver;
 
+  // New: Get current and next phase, and days until next phase
+  currentPhase = this.ticketPhaseService.getCurrentPhase();
+  nextPhase = computed(() => this.ticketPhaseService.getNextPhase());
+  daysUntilNextPhase = computed(() =>
+    this.ticketPhaseService.getDaysUntilNextPhase()
+  );
+
   constructor(private ticketPhaseService: TicketPhaseService) {
     afterNextRender(() => {
       this.setupIntersectionObserver();
@@ -184,7 +238,10 @@ export class TicketTimelineComponent implements OnInit, OnDestroy {
         { threshold: 0.2 }
       );
 
-      this.observer.observe(this.timelineContainer().nativeElement);
+      const container = this.timelineContainer();
+      if (container) {
+        this.observer.observe(container.nativeElement);
+      }
     } else {
       // Fallback for browsers without IntersectionObserver
       this.isVisible.set(true);

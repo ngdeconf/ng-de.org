@@ -50,13 +50,13 @@ importers:
     devDependencies:
       '@angular/build':
         specifier: ^20.0.2
-        version: 20.0.2(8f28f5ae562fe738e7b42aef077364a4)
+        version: 20.0.2(62240a724eafe1681157fb0e47cb8825)
       '@angular/cli':
         specifier: ^20.0.2
         version: 20.0.2(@types/node@18.19.83)(chokidar@4.0.1)
       '@angular/compiler-cli':
         specifier: ^20.0.3
-        version: 20.0.3(@angular/compiler@20.0.3)(typescript@5.6.3)
+        version: 20.0.3(@angular/compiler@20.0.3)(typescript@5.8.3)
       '@types/express':
         specifier: ^4.17.17
         version: 4.17.21
@@ -73,8 +73,8 @@ importers:
         specifier: ^3.4.0
         version: 3.4.17
       typescript:
-        specifier: ^5.6.3
-        version: 5.6.3
+        specifier: ^5.8.3
+        version: 5.8.3
 
 packages:
 
@@ -2541,8 +2541,8 @@ packages:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
 
-  typescript@5.6.3:
-    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+  typescript@5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2760,12 +2760,12 @@ snapshots:
       '@angular/core': 20.0.3(@angular/compiler@20.0.3)(rxjs@7.8.1)(zone.js@0.15.0)
       tslib: 2.8.1
 
-  '@angular/build@20.0.2(8f28f5ae562fe738e7b42aef077364a4)':
+  '@angular/build@20.0.2(62240a724eafe1681157fb0e47cb8825)':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@angular-devkit/architect': 0.2000.2(chokidar@4.0.1)
       '@angular/compiler': 20.0.3
-      '@angular/compiler-cli': 20.0.3(@angular/compiler@20.0.3)(typescript@5.6.3)
+      '@angular/compiler-cli': 20.0.3(@angular/compiler@20.0.3)(typescript@5.8.3)
       '@babel/core': 7.27.1
       '@babel/helper-annotate-as-pure': 7.27.1
       '@babel/helper-split-export-declaration': 7.24.7
@@ -2789,7 +2789,7 @@ snapshots:
       source-map-support: 0.5.21
       tinyglobby: 0.2.13
       tslib: 2.8.1
-      typescript: 5.6.3
+      typescript: 5.8.3
       vite: 6.3.5(@types/node@18.19.83)(jiti@1.21.7)(sass@1.88.0)(yaml@2.7.0)
       watchpack: 2.4.2
     optionalDependencies:
@@ -2851,7 +2851,7 @@ snapshots:
       rxjs: 7.8.1
       tslib: 2.8.1
 
-  '@angular/compiler-cli@20.0.3(@angular/compiler@20.0.3)(typescript@5.6.3)':
+  '@angular/compiler-cli@20.0.3(@angular/compiler@20.0.3)(typescript@5.8.3)':
     dependencies:
       '@angular/compiler': 20.0.3
       '@babel/core': 7.27.4
@@ -2863,7 +2863,7 @@ snapshots:
       tslib: 2.8.1
       yargs: 18.0.0
     optionalDependencies:
-      typescript: 5.6.3
+      typescript: 5.8.3
     transitivePeerDependencies:
       - supports-color
 
@@ -5268,7 +5268,7 @@ snapshots:
       media-typer: 0.3.0
       mime-types: 2.1.35
 
-  typescript@5.6.3: {}
+  typescript@5.8.3: {}
 
   undici-types@5.26.5: {}
 
