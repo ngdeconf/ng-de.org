@@ -126,6 +126,31 @@ import { WorkshopService } from '../../services/workshop.service';
                     <circle cx="12" cy="15" r="1.5" />
                     <path d="M12 16.5v2" />
                   </svg>
+                  } @else if (workshop.id === '5') {
+                  <!-- NgRx SignalStore Workshop Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 h-10 text-gray-700 dark:text-gray-300"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <!-- Store Container -->
+                    <rect x="3" y="8" width="18" height="12" rx="2" />
+                    <!-- Signal Waves -->
+                    <path d="M7 12c0-1.5 1.5-3 3-3s3 1.5 3 3-1.5 3-3 3-3-1.5-3-3z" />
+                    <path d="M5 12c0-2.5 2.5-5 5-5s5 2.5 5 5-2.5 5-5 5-5-2.5-5-5z" />
+                    <!-- State Flow Lines -->
+                    <path d="M16 12h2" />
+                    <path d="M16 10h1.5" />
+                    <path d="M16 14h1.5" />
+                    <!-- Data Input -->
+                    <path d="M12 8V5" />
+                    <path d="M10 6l2-2 2 2" />
+                  </svg>
                   }
                 </div>
 
