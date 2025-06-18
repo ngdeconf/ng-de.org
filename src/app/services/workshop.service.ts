@@ -289,6 +289,67 @@ export class WorkshopService {
       ],
       targetAudience: 'You should have a fundamental understanding of Angular Signals and TypeScript. Experience with NgRx is helpful but not required.',
       trainers: ['marko-stanimirovic']
+    },
+    {
+      id: '6',
+      title: 'Web Accessibility: Requirements, Implementation, and Testing for Modern Applications',
+      teaser: 'Learn how to build accessible web applications that comply with legal requirements and provide inclusive user experiences for everyone.',
+      benefits: [
+        'Understand legal accessibility requirements and WCAG guidelines',
+        'Implement accessible features in HTML, CSS, and JavaScript',
+        'Master testing tools and automation for accessibility audits'
+      ],
+      abstract: 'With accessibility laws becoming mandatory in many regions, ensuring your web applications are accessible is no longer optional. This hands-on workshop teaches you how to audit existing websites for accessibility compliance and implement digital accessibility according to legal requirements and WCAG guidelines.\n\nThrough a combination of theoretical background and practical exercises, you\'ll explore the fundamental principles of accessibility, analyze implementation of accessible features in HTML, CSS, and JavaScript, and learn to use tools for testing your websites for accessibility compliance.\n\nWe\'ll start with accessibility fundamentals and the current legal framework. Then we\'ll examine how to technically adapt websites and web applications to meet requirements. We\'ll dive into technical implementation details and learn what to consider for colors, media, layouts, page information, and web components when building accessible websites.\n\nBeyond accessible content design, navigation elements, and interaction possibilities, there\'s a special focus on practical testing of existing websites with appropriate tools. We\'ll conclude by looking at automation of accessibility audits, their limitations, and the future role of AI-supported testing mechanisms.',
+      trainerId: 'maria-korneeva',
+      duration: '8 hours',
+      capacity: 30,
+      outline: [
+        {
+          title: 'Accessibility Fundamentals & Legal Framework',
+          topics: [
+            'Definition and business value of accessibility',
+            'Legal framework: European Accessibility Act and WCAG',
+            'Understanding different types of disabilities',
+            'Experiencing barriers in the web: screen readers, responsiveness, color, keyboard navigation',
+            'Hands-on: Accessibility audit fundamentals'
+          ]
+        },
+        {
+          title: 'Accessible Web Development Practices',
+          topics: [
+            'Semantic HTML and page structure',
+            'WAI-ARIA implementation and best practices',
+            'Accessible navigation and menus',
+            'Forms, tables, and interactive elements',
+            'Media alternatives and non-textual content',
+            'Hands-on: Building accessible components'
+          ]
+        },
+        {
+          title: 'Advanced Accessibility Patterns',
+          topics: [
+            'Web Components and accessibility',
+            'Single Page Applications (SPA) accessibility challenges',
+            'Live regions and dynamic content',
+            'Input modalities and time restrictions',
+            'Focus management and keyboard interaction',
+            'Hands-on: Implementing complex accessible patterns'
+          ]
+        },
+        {
+          title: 'Testing & Automation',
+          topics: [
+            'Accessibility testing tools and linters',
+            'Unit tests for accessibility',
+            'End-to-end accessibility testing',
+            'CI/CD integration for accessibility checks',
+            'AI and accessibility: opportunities and limitations',
+            'Hands-on: Setting up automated accessibility testing'
+          ]
+        }
+      ],
+      targetAudience: 'This workshop is designed for frontend developers, UX designers, and QA engineers who want to create inclusive web applications. Basic knowledge of HTML, CSS, and JavaScript is required.',
+      trainers: ['maria-korneeva']
     }
   ]);
 

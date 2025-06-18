@@ -151,6 +151,32 @@ import { WorkshopService } from '../../services/workshop.service';
                     <path d="M12 8V5" />
                     <path d="M10 6l2-2 2 2" />
                   </svg>
+                  } @else if (workshop.id === '6') {
+                  <!-- Web Accessibility Workshop Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 h-10 text-gray-700 dark:text-gray-300"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <!-- Universal Access Symbol -->
+                    <circle cx="12" cy="12" r="10" />
+                    <!-- Head -->
+                    <circle cx="12" cy="8" r="1.5" />
+                    <!-- Body -->
+                    <path d="M12 9.5v4" />
+                    <!-- Arms/Accessibility -->
+                    <path d="M9 11l3-1 3 1" />
+                    <!-- Legs -->
+                    <path d="M10 13.5l2 3 2-3" />
+                    <!-- Accessibility indicators -->
+                    <path d="M6 12h2" />
+                    <path d="M16 12h2" />
+                  </svg>
                   }
                 </div>
 
