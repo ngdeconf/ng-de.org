@@ -58,7 +58,7 @@ export class WorkshopService {
       ],
       targetAudience:
         'This workshop is designed for developers with project experience using Angular.',
-      trainers: ['manfred-steyer', 'rainer-hahnekamp']
+      trainers: ['manfred-steyer', 'michael-egger-zikes']
     },
     {
       id: '2',
@@ -288,7 +288,7 @@ export class WorkshopService {
         }
       ],
       targetAudience: 'You should have a fundamental understanding of Angular Signals and TypeScript. Experience with NgRx is helpful but not required.',
-      trainers: ['marko-stanimirovic']
+      trainers: ['marko-stanimirovic', 'rainer-hahnekamp']
     },
     {
       id: '6',

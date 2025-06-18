@@ -11,7 +11,7 @@ export class SpeakerService {
       company: 'Angular Architects',
       bio: "Trainer, consultant, and programming architect with a focus on Angular, Google Developer Expert (GDE) who writes for O'Reilly, the German Java Magazine, and windows.developer. Regularly speaks at conferences.",
       imageUrl: 'assets/images/speakers/manfred-steyer.jpg',
-      githubHandle: 'manfredsteye'
+      githubHandle: 'manfredsteyer'
     },
     {
       id: 'rainer-hahnekamp',
@@ -20,7 +20,21 @@ export class SpeakerService {
       company: 'Angular Architects',
       bio: 'Rainer Hahnekamp is a Google Developer Expert, working as a trainer and consultant in the expert network of Angular Architects. In addition, he offers a weekly brief overview of relevant events in the Angular ecosystem on YouTube through ng-news.',
       imageUrl: 'assets/images/speakers/rainer-hahnekamp.png',
-      githubHandle: 'rainerhahnekamp'
+      githubHandle: 'rainerhahnekamp',
+      ngrxTeam: true
+    },
+    {
+      id: 'michael-egger-zikes',
+      name: 'Michael Egger-Zikes',
+      title: 'Trainer and Consultant',
+      company: 'intauria GmbH',
+      bio: 'Michael Egger-Zikes is a software architect, trainer, and consultant specializing in Angular for business applications.\n' +
+          'He has overseen large Angular projects in both the public sector and private industry and uses Angular in product development.\n' +
+          '\n' +
+          'As a guest lecturer, he also teaches this subject at the part-time FH CAMPUS 02 University of Applied Sciences in Graz.\n' +
+          'Michael holds a degree in Business Informatics and has many years of experience in software development and the automation of business processes.',
+      imageUrl: 'assets/images/speakers/michael-egger-zikes.webp',
+      githubHandle: 'mikezks'
     },
     {
       id: 'michael-hladky',
@@ -43,8 +57,8 @@ export class SpeakerService {
     {
       id: 'martina-kraus',
       name: 'Martina Kraus',
-      title: 'Angular Consultant & Trainer',
-      company: 'Independent',
+      title: 'Consultant and Security Engineer',
+      company: 'Kraus IT Consulting',
       bio: 'Martina Kraus has been active in the world of web development since her early years and has gradually become an expert in web security. As an  Security Engineer, she focuses on integrating security best practices into all phases of software development. In her role as a Google Developer Expert (GDE) in Angular, she enjoys sharing her knowledge of Angular security at both national and international conferences. She also regularly organizes ngGirls events (free Angular workshops for women) and is currently writing a book in German about authentication and authorization in web applications.',
       imageUrl: 'assets/images/speakers/martina-kraus.png',
       githubHandle: 'martinakraus'
@@ -52,8 +66,8 @@ export class SpeakerService {
     {
       id: 'maria-korneeva',
       name: 'Maria Korneeva',
-      title: 'Angular Consultant & Developer',
-      company: 'Independent',
+      title: 'Frontend Technology Lead',
+      company: 'Korneeva - IT Solutions',
       bio: 'Maria Korneeva is an experienced Angular developer and consultant specializing in building scalable web applications. She actively contributes to the Angular community through workshops, mentoring, and speaking at tech events.',
       imageUrl: 'assets/images/speakers/maria-korneeva.jpeg',
       githubHandle: 'mariakorneeva'
@@ -92,7 +106,18 @@ export class SpeakerService {
       company: 'Google',
       bio: 'Jens is a Technical Program Manager with the Angular team at Google, where he focuses on managing the release schedule, prioritizing key features and making sure user needs are met. With 17 years of experience at Google, Jens has worked on a variety of things, from building technical solutions for Cloud Networking and running infrastructure projects in Sub-Saharan Africa to serving as a network engineer for Google\'s global network.',
       imageUrl: 'assets/images/speakers/jens-kuehlers.jpg',
-      githubHandle: '',
+      githubHandle: 'thesmiler',
+      pronouns: 'he/him',
+      angularTeam: true
+    },
+    {
+      id: 'matthieu-riegler',
+      name: 'Matthieu Riegler',
+      title: 'Angular Core Team',
+      company: 'Google',
+      bio: 'tbd',
+      imageUrl: 'assets/images/speakers/matthieu-riegler.jpg',
+      githubHandle: 'JeanMeche',
       pronouns: 'he/him',
       angularTeam: true
     },
