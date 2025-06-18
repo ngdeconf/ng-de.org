@@ -234,61 +234,61 @@ export class WorkshopService {
     },
     {
       id: '5',
-      title: 'Mastering NgRx SignalStore: From Fundamentals to Advanced Techniques',
-      teaser: 'Explore the power of NgRx SignalStore in a comprehensive workshop that offers a deep dive into reactive state management powered by Angular Signals.',
+      title: 'Mastering NgRx SignalStore: From Key Principles to Advanced Patterns',
+      teaser: 'Enhance your Angular and NgRx expertise with hands-on guidance for implementing NgRx SignalStore to solve real-world challenges in modern Angular applications.',
       benefits: [
-        'Master NgRx SignalStore fundamentals and advanced patterns',
-        'Learn to leverage both Signals and RxJS effectively',
-        'Build scalable state management with SignalStore plugins'
+        'Master Angular Signals APIs and SignalStore core principles',
+        'Integrate RxJS with SignalStore for optimal reactive workflows',
+        'Build custom features and use advanced plugins like Entities and Events'
       ],
-      abstract: 'NgRx SignalStore offers a pragmatic approach to state management in Angular applications. With its native support for Signals, you can define stores in a clear and declarative manner. The simplicity and flexibility of SignalStore, coupled with its opinionated and modular design, make it a versatile choice for Angular developers.\n\nIn this workshop, we\'ll walk through the fundamentals of the NgRx SignalStore with in-depth discussions, exercises, and code labs. We\'ll guide you through leveraging the power of both Signals and RxJS, showing you how to use each in the places where they shine, unlocking the full potential of reactivity in Angular. After exploring core concepts, we\'ll delve into using SignalStore plugins and architectural patterns that ensure code cleanliness, scalability, and robustness.',
-      trainerId: 'rainer-hahnekamp',
+      abstract: 'Enhance your Angular and NgRx expertise in an in-depth workshop led by NgRx team members Marko Stanimirović and Rainer Hahnekamp. This workshop provides hands-on guidance for implementing NgRx SignalStore to solve real-world challenges in modern Angular applications.\n\nNgRx SignalStore leverages the power of Angular Signals and a structured state management approach to streamline reactive development workflows. Its modular design, simplicity, and declarative nature form the foundation for maintainable and scalable implementations.\n\nWhat to Expect:\n\nThis workshop guides you through a carefully structured curriculum where each topic builds upon the previous one, providing a progressive experience from foundational concepts to advanced techniques:\n\n- Exploring Angular Signals APIs to establish the technical foundation for what follows\n- Mastering SignalStore core principles and main building blocks\n- Integrating RxJS with SignalStore to combine the best of both reactive approaches\n- Building custom SignalStore features that consolidate common patterns into reusable abstractions\n- Using the Entities plugin to facilitate data collection management\n- Applying architectural patterns for managing local and global state in complex applications\n- Utilizing the new Events plugin for orchestrating complex workflows with elegance\n\nEach section includes practical implementation through exercises and code examples, allowing you to apply concepts directly to real-world development challenges.',
+      trainerId: 'marko-stanimirovic',
       duration: '8 hours',
       capacity: 30,
       outline: [
         {
-          title: 'NgRx SignalStore Fundamentals',
+          title: 'Angular Signals Foundation',
           topics: [
-            'Introduction to NgRx SignalStore architecture',
-            'Setting up SignalStore in Angular applications',
-            'Core concepts: State, Computed, and Methods',
+            'Angular Signals APIs deep dive',
+            'Signal primitives and reactive patterns',
+            'Understanding the technical foundation',
+            'Signal composition and derived state',
+            'Hands-on: Mastering Signals fundamentals'
+          ]
+        },
+        {
+          title: 'SignalStore Core Principles',
+          topics: [
+            'SignalStore architecture and main building blocks',
             'Declarative state management patterns',
+            'State, computed values, and methods',
+            'Store composition and modularity',
             'Hands-on: Building your first SignalStore'
           ]
         },
         {
-          title: 'Signals and RxJS Integration',
+          title: 'RxJS Integration & Custom Features',
           topics: [
-            'Understanding when to use Signals vs RxJS',
-            'Reactive patterns with Angular Signals',
-            'Integrating RxJS streams with SignalStore',
-            'Async operations and side effects',
-            'Hands-on: Combining Signals and RxJS effectively'
+            'Combining RxJS with SignalStore effectively',
+            'Building custom SignalStore features',
+            'Consolidating common patterns into reusable abstractions',
+            'Async operations and side effects management',
+            'Hands-on: Creating custom features and RxJS integration'
           ]
         },
         {
-          title: 'Advanced SignalStore Patterns',
+          title: 'Advanced Patterns & Plugins',
           topics: [
-            'Custom SignalStore features and plugins',
-            'State composition and modular design',
-            'Performance optimization techniques',
-            'Testing strategies for SignalStore',
-            'Hands-on: Building custom features'
-          ]
-        },
-        {
-          title: 'Architectural Patterns and Best Practices',
-          topics: [
-            'Scalable state management architectures',
-            'Code organization and maintainability',
-            'Migration strategies from traditional NgRx',
-            'Real-world application patterns',
-            'Hands-on: Implementing a complete feature'
+            'Using the Entities plugin for data collection management',
+            'Architectural patterns for local and global state',
+            'The new Events plugin for complex workflow orchestration',
+            'Real-world application patterns and best practices',
+            'Hands-on: Implementing advanced patterns with plugins'
           ]
         }
       ],
-      targetAudience: 'This workshop is designed for Angular developers with basic understanding of Angular and TypeScript. Experience with NgRx and Signals is beneficial but not required.',
-      trainers: ['rainer-hahnekamp', 'marko-stanimirovic']
+      targetAudience: 'You should have a fundamental understanding of Angular Signals and TypeScript. Experience with NgRx is helpful but not required.',
+      trainers: ['marko-stanimirovic']
     }
   ]);
 
