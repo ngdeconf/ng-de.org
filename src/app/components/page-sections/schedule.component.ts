@@ -365,51 +365,52 @@ interface ScheduleEntry {
                   </button>
                 </div>
 
-                <div class="flex items-center mb-6">
+                <div class="mb-6 space-y-6">
                   @for (selectedSpeaker of selectedSpeakers(); track selectedSpeaker) {
-                  @if (selectedSpeakers()) {
-                    <div class="relative flex-shrink-0">
-                      <img
-                          [src]="selectedSpeaker?.imageUrl"
-                          [alt]="selectedSpeaker?.name"
-                          class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-primary-200 dark:border-primary-900"
-                      />
-                      @if (selectedSpeaker?.angularTeam) {
-                        <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                    @if (selectedSpeaker) {
+                      <div class="flex items-start space-x-4">
+                        <div class="relative flex-shrink-0">
                           <img
-                              src="assets/images/angular_gradient.png"
-                              alt="Angular Team"
-                              class="w-6 h-6"
+                              [src]="selectedSpeaker?.imageUrl"
+                              [alt]="selectedSpeaker?.name"
+                              class="w-20 h-20 rounded-full object-cover border-2 border-primary-200 dark:border-primary-900"
                           />
+                          @if (selectedSpeaker?.angularTeam) {
+                            <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                              <img
+                                  src="assets/images/angular_gradient.png"
+                                  alt="Angular Team"
+                                  class="w-6 h-6"
+                              />
+                            </div>
+                          }
+                          @if (selectedSpeaker?.ngrxTeam) {
+                            <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                              <img
+                                  src="assets/images/ngrx-logo.png"
+                                  alt="NgRx Team"
+                                  class="w-6 h-6"
+                              />
+                            </div>
+                          }
                         </div>
-                      }
-                      @if (selectedSpeaker?.ngrxTeam) {
-                        <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                          <img
-                              src="assets/images/ngrx-logo.png"
-                              alt="NgRx Team"
-                              class="w-6 h-6"
-                          />
+                        <div class="min-w-0 flex-1">
+                          <p class="text-xl font-bold flex items-center mb-2">
+                            {{ selectedSpeaker?.name }}
+                            @if (selectedSpeaker?.pronouns) {
+                              <span
+                                  class="text-sm font-normal text-gray-500 dark:text-gray-400 ml-2">({{ selectedSpeaker?.pronouns }})</span>
+                            }
+                          </p>
+                          <p class="text-primary-600 dark:text-primary-400 font-semibold text-lg mb-1">
+                            {{ selectedSpeaker?.title }}
+                          </p>
+                          <p class="text-gray-600 dark:text-gray-400">
+                            {{ selectedSpeaker?.company }}
+                          </p>
                         </div>
-                      }
-                    </div>
-                    <div class="min-w-0">
-                      <p class="text-lg font-bold flex items-center">
-                        {{ selectedSpeaker?.name }}
-                        @if (selectedSpeaker?.pronouns) {
-                          <span
-                              class="text-xs font-normal text-gray-500 dark:text-gray-400 ml-2">({{ selectedSpeaker?.pronouns }}
-                            )</span>
-                        }
-                      </p>
-                      <p class="text-primary-600 dark:text-primary-400 font-medium">
-                        {{ selectedSpeaker?.title }}
-                      </p>
-                      <p class="text-gray-600 dark:text-gray-400 text-sm">
-                        {{ selectedSpeaker?.company }}
-                      </p>
-                    </div>
-                  }
+                      </div>
+                    }
                   }
                 </div>
 
