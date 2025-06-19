@@ -42,7 +42,6 @@ import { WorkshopService } from '../../services/workshop.service';
                 </div>
               </div>
             }
-          >
             <div class="p-8 md:p-10 flex-1 flex flex-col">
               <!-- Workshop Header -->
               <div class="flex flex-col md:flex-row md:items-start gap-6 mb-8">
