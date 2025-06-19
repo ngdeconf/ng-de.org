@@ -17,6 +17,7 @@ export interface ScheduleEntry {
   information: string;
   location: string;
   session: string | null;
+  speakers?: string[]
 }
 
 export interface ScheduleDay {
@@ -33,6 +34,7 @@ export interface Talk {
   time: string;
   day: 'day1' | 'day2';
   room: string;
+  speakers?: string[]
 }
 
 export interface Workshop {

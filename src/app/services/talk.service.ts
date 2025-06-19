@@ -18,7 +18,7 @@ export class TalkService {
       id: 'talk-day1-2',
       title: 'TBD',
       abstract: 'Talk details to be determined',
-      speakerId: 'rainer-hahnekamp',
+      speakerId: 'matthieu-riegler',
       time: '10:30 - 11:00',
       day: 'day1',
       room: 'Main Stage'
@@ -34,9 +34,9 @@ export class TalkService {
     },
     {
       id: 'talk-day1-4',
-      title: 'What\'s New in Web AI?',
-      abstract: `Generative AI is becoming a key part of modern software architecture, and its presence in web apps is growing. As demand increases, vendors and specification authors are working to make AI capabilities more accessible and integrated into the web platform. In this session, Christian Liebel—W3C TAG Associate and member of the WebML Working Group—will share what's cooking behind the scenes in Web AI. You'll get an update on the latest advancements in the WebNN API, Chromium's Built-in AI APIs, emerging developer tools, and the real-world challenges that browser vendors and standards authors are navigating to bring AI to the web.`,
-      speakerId: 'christian-liebel',
+      title: '3 Dimensions of NgRx Signals: Choosing the Best Fit for Your App',
+      abstract: 'NgRx Signals is one of the fastest-growing packages in the Angular ecosystem, offering a reactive and flexible approach to state management. In this talk, we\'ll explore three techniques to managing state with NgRx Signals, each adaptable to different application needs. You\'ll learn how to leverage APIs like SignalState, SignalStore, and SignalStore Events Plugin, as well as how to select the approach that best aligns with your project\'s requirements and your team\'s expertise.',
+      speakerId: 'marko-stanimirovic',
       time: '12:15 - 12:45',
       day: 'day1',
       room: 'Main Stage'
@@ -57,13 +57,16 @@ export class TalkService {
       speakerId: 'younes-jaaidi',
       time: '14:45 - 15:15',
       day: 'day1',
-      room: 'Main Stage'
+      room: 'Main Stage',
+      speakers: ['rainer-hahnekamp', 'younes-jaaidi']
     },
     {
       id: 'talk-day1-7',
-      title: 'No Zone, No Problem - Building Angular Apps without Zone.js',
-      abstract: 'Angular no longer requires Zone.js, but dropping it isn\'t just a switch - it\'s a mindset shift. This session covers what really happens when you remove Zone.js, how to handle reactivity using Signals and manual strategies, and what this means for app architecture, testing, and performance. Discover how zoneless Angular changes the way we write code and reason about UI updates.',
-      speakerId: 'brygida-fiejdasz',
+      title: 'Secure Angular Apps: Defend Against Attacks with Built-In Framework Power',
+      abstract: `Angular keeps evolving with cutting-edge features like Signals and Hydration—but did you know it's also quietly strengthening its security capabilities? The framework offers a range of built-in tools to help developers protect their applications against common threats like Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF).
+
+In this practical session, Google Developer Expert Martina Kraus will show you how to identify typical security risks in Angular applications and implement effective defenses. Through concrete, real-world examples, you'll gain the knowledge you need to build secure, robust Angular apps with confidence.`,
+      speakerId: 'martina-kraus',
       time: '16:30 - 17:00',
       day: 'day1',
       room: 'Main Stage'
@@ -108,20 +111,18 @@ export class TalkService {
     },
     {
       id: 'talk-day2-13',
-      title: 'Secure Angular Apps: Defend Against Attacks with Built-In Framework Power',
-      abstract: `Angular keeps evolving with cutting-edge features like Signals and Hydration—but did you know it's also quietly strengthening its security capabilities? The framework offers a range of built-in tools to help developers protect their applications against common threats like Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF).
-
-In this practical session, Google Developer Expert Martina Kraus will show you how to identify typical security risks in Angular applications and implement effective defenses. Through concrete, real-world examples, you'll gain the knowledge you need to build secure, robust Angular apps with confidence.`,
-      speakerId: 'martina-kraus',
+      title: 'No Zone, No Problem - Building Angular Apps without Zone.js',
+      abstract: 'Angular no longer requires Zone.js, but dropping it isn\'t just a switch - it\'s a mindset shift. This session covers what really happens when you remove Zone.js, how to handle reactivity using Signals and manual strategies, and what this means for app architecture, testing, and performance. Discover how zoneless Angular changes the way we write code and reason about UI updates.',
+      speakerId: 'brygida-fiejdasz',
       time: '12:15 - 12:45',
       day: 'day2',
       room: 'Main Stage'
     },
     {
       id: 'talk-day2-14',
-      title: '3 Dimensions of NgRx Signals: Choosing the Best Fit for Your App',
-      abstract: 'NgRx Signals is one of the fastest-growing packages in the Angular ecosystem, offering a reactive and flexible approach to state management. In this talk, we\'ll explore three techniques to managing state with NgRx Signals, each adaptable to different application needs. You\'ll learn how to leverage APIs like SignalState, SignalStore, and SignalStore Events Plugin, as well as how to select the approach that best aligns with your project\'s requirements and your team\'s expertise.',
-      speakerId: 'marko-stanimirovic-new',
+      title: 'What\'s New in Web AI?',
+      abstract: `Generative AI is becoming a key part of modern software architecture, and its presence in web apps is growing. As demand increases, vendors and specification authors are working to make AI capabilities more accessible and integrated into the web platform. In this session, Christian Liebel—W3C TAG Associate and member of the WebML Working Group—will share what's cooking behind the scenes in Web AI. You'll get an update on the latest advancements in the WebNN API, Chromium's Built-in AI APIs, emerging developer tools, and the real-world challenges that browser vendors and standards authors are navigating to bring AI to the web.`,
+      speakerId: 'christian-liebel',
       time: '14:15 - 14:45',
       day: 'day2',
       room: 'Main Stage'

@@ -53,7 +53,7 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T12:15:00',
-          information: 'Christian Liebel',
+          information: 'Marko Stanimirović',
           location: 'Main Stage',
           session: 'talk-day1-4'
         },
@@ -74,9 +74,10 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T14:45:00',
-          information: 'Younes Jaaidi',
+          information: '',
           location: 'Main Stage',
-          session: 'talk-day1-6'
+          session: 'talk-day1-6',
+          speakers: ['Younes Jaaidi', 'Rainer Hahnekamp']
         },
         {
           title: 'Coffee Break ☕️',
@@ -88,7 +89,7 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T16:00:00',
-          information: 'Brygida Fiejdasz',
+          information: 'Martina Kraus',
           location: 'Main Stage',
           session: 'talk-day1-7'
         },
@@ -164,7 +165,7 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T12:15:00',
-          information: 'Martina Kraus',
+          information: 'Brygida Fiejdasz',
           location: 'Main Stage',
           session: 'talk-day2-13'
         },
@@ -178,7 +179,7 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T14:15:00',
-          information: 'Marko Stanimirović',
+          information: 'Christian Liebel',
           location: 'Main Stage',
           session: 'talk-day2-14'
         },
