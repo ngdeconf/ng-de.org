@@ -80,12 +80,23 @@ interface ScheduleEntry {
                           @for (speaker of entry.speakers; track speaker) {
                             @if (getSpeakerByName(speaker)) {
                               <div class="flex items-center mb-2 last:mb-0">
-                                <div class="relative flex-shrink-0">
+                                <div class="relative flex-shrink-0"
+                                     [class.mr-6]="getSpeakerByName(speaker)?.ngrxTeam || getSpeakerByName(speaker)?.angularTeam"
+                                     [class.mr-4]="!getSpeakerByName(speaker)?.ngrxTeam && !getSpeakerByName(speaker)?.angularTeam">
                                   <img
                                       [src]="getSpeakerByName(speaker)?.imageUrl"
                                       [alt]="entry.information"
-                                      class="w-12 h-12 rounded-full mr-4 object-cover border-2 border-gray-200 dark:border-gray-700"
+                                      class="w-12 h-12 rounded-full object-cover border-2 border-gray-200 dark:border-gray-700"
                                   />
+                                  @if (getSpeakerByName(speaker)?.angularTeam) {
+                                    <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                                      <img
+                                          src="assets/images/angular_gradient.png"
+                                          alt="Angular Team"
+                                          class="w-5 h-5"
+                                      />
+                                    </div>
+                                  }
                                   @if (getSpeakerByName(speaker)?.ngrxTeam) {
                                     <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
                                       <img
@@ -114,11 +125,13 @@ interface ScheduleEntry {
                         } @else {
                           @if (getSpeakerByName(entry.information) || getSpeakerBySession(entry.session)) {
                             <div class="flex items-center">
-                              <div class="relative flex-shrink-0">
+                              <div class="relative flex-shrink-0"
+                                   [class.mr-6]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam || (getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam"
+                                   [class.mr-4]="!(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam && !(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam">
                                 <img
                                     [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl"
                                     [alt]="entry.information"
-                                    class="w-12 h-12 rounded-full mr-4 object-cover border-2 border-gray-200 dark:border-gray-700"
+                                    class="w-12 h-12 rounded-full object-cover border-2 border-gray-200 dark:border-gray-700"
                                 />
                                 @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam) {
                                   <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
@@ -221,33 +234,35 @@ interface ScheduleEntry {
                       <div class="space-y-3">
                         @for (speaker of entry.speakers; track speaker) {
                           @if (getSpeakerByName(speaker)) {
-                            <div class="flex items-center space-x-4">
-                              <div class="relative flex-shrink-0">
-                                <img
-                                    [src]="getSpeakerByName(speaker)?.imageUrl"
-                                    [alt]="speaker"
-                                    class="w-14 h-14 rounded-full object-cover border-2"
-                                    [class]="isBreak(entry) ? 'border-white/30' : 'border-gray-200 dark:border-gray-700'"
-                                />
-                                @if (getSpeakerByName(speaker)?.angularTeam) {
-                                  <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                                    <img
-                                        src="assets/images/angular_gradient.png"
-                                        alt="Angular Team"
-                                        class="w-5 h-5"
-                                    />
-                                  </div>
-                                }
-                                @if (getSpeakerByName(speaker)?.ngrxTeam) {
-                                  <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                                    <img
-                                        src="assets/images/ngrx-logo.png"
-                                        alt="NgRx Team"
-                                        class="w-5 h-5"
-                                    />
-                                  </div>
-                                }
-                              </div>
+                                                         <div class="flex items-center"
+                                  [class.space-x-5]="getSpeakerByName(speaker)?.ngrxTeam || getSpeakerByName(speaker)?.angularTeam"
+                                  [class.space-x-4]="!getSpeakerByName(speaker)?.ngrxTeam && !getSpeakerByName(speaker)?.angularTeam">
+                               <div class="relative flex-shrink-0">
+                                 <img
+                                     [src]="getSpeakerByName(speaker)?.imageUrl"
+                                     [alt]="speaker"
+                                     class="w-14 h-14 rounded-full object-cover border-2"
+                                     [class]="isBreak(entry) ? 'border-white/30' : 'border-gray-200 dark:border-gray-700'"
+                                 />
+                                 @if (getSpeakerByName(speaker)?.angularTeam) {
+                                   <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                                     <img
+                                         src="assets/images/angular_gradient.png"
+                                         alt="Angular Team"
+                                         class="w-5 h-5"
+                                     />
+                                   </div>
+                                 }
+                                 @if (getSpeakerByName(speaker)?.ngrxTeam) {
+                                   <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                                     <img
+                                         src="assets/images/ngrx-logo.png"
+                                         alt="NgRx Team"
+                                         class="w-5 h-5"
+                                     />
+                                   </div>
+                                 }
+                               </div>
                               <div class="min-w-0 flex-1">
                                 <div
                                     class="font-medium text-base"
@@ -267,33 +282,35 @@ interface ScheduleEntry {
                         }
                       </div>
                     } @else if (getSpeakerByName(entry.information) || getSpeakerBySession(entry.session)) {
-                      <div class="flex items-center space-x-4">
-                        <div class="relative flex-shrink-0">
-                          <img
-                              [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl"
-                              [alt]="entry.information"
-                              class="w-14 h-14 rounded-full object-cover border-2"
-                              [class]="isBreak(entry) ? 'border-white/30' : 'border-gray-200 dark:border-gray-700'"
-                          />
-                          @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam) {
-                            <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                              <img
-                                  src="assets/images/angular_gradient.png"
-                                  alt="Angular Team"
-                                  class="w-5 h-5"
-                              />
-                            </div>
-                          }
-                          @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam) {
-                            <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                              <img
-                                  src="assets/images/ngrx-logo.png"
-                                  alt="NgRx Team"
-                                  class="w-5 h-5"
-                              />
-                            </div>
-                          }
-                        </div>
+                                             <div class="flex items-center"
+                            [class.space-x-5]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam || (getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam"
+                            [class.space-x-4]="!(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam && !(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam">
+                         <div class="relative flex-shrink-0">
+                           <img
+                               [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl"
+                               [alt]="entry.information"
+                               class="w-14 h-14 rounded-full object-cover border-2"
+                               [class]="isBreak(entry) ? 'border-white/30' : 'border-gray-200 dark:border-gray-700'"
+                           />
+                           @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam) {
+                             <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                               <img
+                                   src="assets/images/angular_gradient.png"
+                                   alt="Angular Team"
+                                   class="w-5 h-5"
+                               />
+                             </div>
+                           }
+                           @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam) {
+                             <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                               <img
+                                   src="assets/images/ngrx-logo.png"
+                                   alt="NgRx Team"
+                                   class="w-5 h-5"
+                               />
+                             </div>
+                           }
+                         </div>
                         <div class="min-w-0 flex-1">
                           <div
                               class="font-medium text-base"
