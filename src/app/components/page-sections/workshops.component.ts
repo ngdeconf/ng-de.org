@@ -187,6 +187,23 @@ import { WorkshopService } from '../../services/workshop.service';
                     <path d="M6 12h2" />
                     <path d="M16 12h2" />
                   </svg>
+                  } @else if (workshop.id === '7') {
+                  <!-- Testing Workshop Icon -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-10 h-10 text-gray-700 dark:text-gray-300"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <!-- Shield for test protection/reliability -->
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <!-- Checkmark inside shield -->
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
                   }
                 </div>
 

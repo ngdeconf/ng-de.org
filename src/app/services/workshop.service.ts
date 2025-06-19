@@ -356,6 +356,66 @@ export class WorkshopService {
       targetAudience: 'This workshop is designed for frontend developers, UX designers, and QA engineers who want to create inclusive web applications. Basic knowledge of HTML, CSS, and JavaScript is required.',
       trainers: ['maria-korneeva'],
       soldOut: false
+    },
+    {
+      id: '7',
+      title: 'Pragmatic Angular Testing: Crafting Tests That Survive the Heat',
+      teaser: 'There are two ways to keep a product stable: never touch it — or cook up a solid testing strategy.',
+      benefits: [
+        'Craft low-maintenance, high-confidence tests that catch bugs',
+        'Build tests that survive refactors and migrations (Observables → Signals)',
+        'Master fast-running tests that fail early and guide development',
+        'Create Zoneless-ready tests for future Angular applications'
+      ],
+      abstract: 'There are two ways to keep a product stable: never touch it — or cook up a solid testing strategy.\n\nSo… how\'s yours holding up?\n• Refactor something and watch the tests boil over?\n• Maintaining mocks feels like duct tape meets rocket science?\n• Still chasing 100% coverage while bugs keep crawling through?\n• End-to-end tests looked tasty at first — until flakiness and slowness caused indigestion?\n• As release day nears, you skip tests and serve it raw — fingers crossed hoping no one gets burned?\n\nIf any of that hits close to home, this workshop is your way out of the fire.\nWe\'ll stop by the market for key ingredients such as Fakes, Object Mothers, Gloves, Vitest, Testing Library, and Playwright Component Testing.\n\nThen back to the kitchen, where we\'ll cook up low-maintenance, high-confidence tests that:\n• Catch both today\'s and tomorrow\'s bugs\n• Survive refactors and all sorts of migrations — including Observables → Signals\n• Run fast enough to fail early and guide you back as you type\n• Are Zoneless-ready — because tomorrow is Zoneless\n\nNo dogma. No silver bullets. Just practical techniques you can use tomorrow to test Angular apps with confidence and clarity.',
+      trainerId: 'younes-jaaidi',
+      duration: '8 hours',
+      capacity: 30,
+      outline: [
+        {
+          title: 'Testing Strategy & Foundations',
+          topics: [
+            'Building a sustainable testing strategy',
+            'Understanding test pyramid and testing types',
+            'Identifying what to test and what to avoid',
+            'Setting up modern testing tools: Vitest and Testing Library',
+            'Hands-on: Establishing testing foundations'
+          ]
+        },
+        {
+          title: 'Component Testing with Confidence',
+          topics: [
+            'Testing components without implementation details',
+            'Using Fakes and Object Mothers for maintainable tests',
+            'Testing user interactions and component behavior',
+            'Playwright Component Testing for isolated testing',
+            'Hands-on: Building robust component tests'
+          ]
+        },
+        {
+          title: 'Migration-Proof Testing Patterns',
+          topics: [
+            'Testing patterns that survive refactors',
+            'Handling Observables → Signals migrations in tests',
+            'Zoneless-ready testing approaches',
+            'Testing modern Angular features and patterns',
+            'Hands-on: Future-proofing your test suite'
+          ]
+        },
+        {
+          title: 'Fast, Reliable Test Execution',
+          topics: [
+            'Optimizing test performance and reliability',
+            'Eliminating test flakiness and slowness',
+            'Fast feedback loops for development',
+            'Integration testing strategies that work',
+            'Hands-on: Building a high-performance test suite'
+          ]
+        }
+      ],
+      targetAudience: 'This workshop is designed for Angular developers who want to master practical testing strategies and build maintainable, reliable test suites. Basic knowledge of Angular and testing concepts is recommended.',
+      trainers: ['younes-jaaidi'],
+      soldOut: false
     }
   ]);
 
