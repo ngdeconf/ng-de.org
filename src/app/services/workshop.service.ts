@@ -176,63 +176,6 @@ export class WorkshopService {
       trainers: ['michael-hladky', 'enea-jahollari']
     },
     {
-      id: '4',
-      title: 'Hands On: Security in Angular Applications',
-      teaser: 'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies.',
-      benefits: [
-        'Master core browser security concepts and XSS prevention',
-        'Implement and deploy Content Security Policy (CSP) effectively',
-        'Secure token handling and OAuth 2.1 patterns',
-        'Learn Angular built-in Security mechanism and how to use them'
-      ],
-      abstract: 'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies. This workshop covers core browser security concepts, Cross-Site Scripting (XSS) prevention, Content Security Policy (CSP), and secure token handling. You\'ll explore advanced topics like OAuth 2.0/2.1 security patterns and Backend-for-Frontend (BFF) architectures. With practical examples and hands-on guidance, you\'ll gain the skills to identify vulnerabilities and implement effective protection mechanisms in your frontend code. Perfect for developers and architects who want to take their web application security to the next level.',
-      trainerId: 'martina-kraus',
-      duration: '8 hours',
-      capacity: 30,
-      outline: [
-        {
-          title: 'Browser Security Fundamentals',
-          topics: [
-            'Same-origin policy',
-            'Cross-Origin Resource Sharing (CORS)',
-            'Cookie Attributes and Session Management',
-            'Hands-on: Implementing Browser Security Fundamentals'
-          ]
-        },
-        {
-          title: 'Cross-Site Scripting (XSS) prevention',
-          topics: [
-            'Discovering typical Cross-Site Scripting Attacks',
-            'Content Security Policy (CSP) implementation',
-            'Deploying CSPs in an Angular Application',
-            'Angular Trusted Types',
-            'Hands-on: CSP configuration and Trusted Types in Angular'
-          ]
-        },
-        {
-          title: 'Authentication & Authorization',
-          topics: [
-            'Typical attacks on Access Tokens like Token theft',
-            'Secure token handling and storage',
-            'OAuth 2.1 security patterns',
-            'Backend-for-Frontend (BFF) architecture',
-            'Hands-on: Secure token management'
-          ]
-        },
-        {
-          title: 'Further Angular Security Patterns',
-          topics: [
-            'Built-in Cross-Site Request Forgery Prevention in Angular',
-            'Secure communication patterns',
-            'Security Context of Angular',
-            'Hands-on: Implementing Security best practices in Angular'
-          ]
-        }
-      ],
-      targetAudience: 'This workshop is designed for Angular developers and architects who want to enhance their application security knowledge and implement robust security measures.',
-      trainers: ['martina-kraus']
-    },
-    {
       id: '5',
       title: 'Mastering NgRx SignalStore: From Key Principles to Advanced Patterns',
       teaser: 'Enhance your Angular and NgRx expertise with hands-on guidance for implementing NgRx SignalStore to solve real-world challenges in modern Angular applications.',
@@ -289,6 +232,63 @@ export class WorkshopService {
       ],
       targetAudience: 'You should have a fundamental understanding of Angular Signals and TypeScript. Experience with NgRx is helpful but not required.',
       trainers: ['marko-stanimirovic', 'rainer-hahnekamp']
+    },
+    {
+      id: '4',
+      title: 'Hands On: Security in Angular Applications',
+      teaser: 'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies.',
+      benefits: [
+        'Master core browser security concepts and XSS prevention',
+        'Implement and deploy Content Security Policy (CSP) effectively',
+        'Secure token handling and OAuth 2.1 patterns',
+        'Learn Angular built-in Security mechanism and how to use them'
+      ],
+      abstract: 'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies. This workshop covers core browser security concepts, Cross-Site Scripting (XSS) prevention, Content Security Policy (CSP), and secure token handling. You\'ll explore advanced topics like OAuth 2.0/2.1 security patterns and Backend-for-Frontend (BFF) architectures. With practical examples and hands-on guidance, you\'ll gain the skills to identify vulnerabilities and implement effective protection mechanisms in your frontend code. Perfect for developers and architects who want to take their web application security to the next level.',
+      trainerId: 'martina-kraus',
+      duration: '8 hours',
+      capacity: 30,
+      outline: [
+        {
+          title: 'Browser Security Fundamentals',
+          topics: [
+            'Same-origin policy',
+            'Cross-Origin Resource Sharing (CORS)',
+            'Cookie Attributes and Session Management',
+            'Hands-on: Implementing Browser Security Fundamentals'
+          ]
+        },
+        {
+          title: 'Cross-Site Scripting (XSS) prevention',
+          topics: [
+            'Discovering typical Cross-Site Scripting Attacks',
+            'Content Security Policy (CSP) implementation',
+            'Deploying CSPs in an Angular Application',
+            'Angular Trusted Types',
+            'Hands-on: CSP configuration and Trusted Types in Angular'
+          ]
+        },
+        {
+          title: 'Authentication & Authorization',
+          topics: [
+            'Typical attacks on Access Tokens like Token theft',
+            'Secure token handling and storage',
+            'OAuth 2.1 security patterns',
+            'Backend-for-Frontend (BFF) architecture',
+            'Hands-on: Secure token management'
+          ]
+        },
+        {
+          title: 'Further Angular Security Patterns',
+          topics: [
+            'Built-in Cross-Site Request Forgery Prevention in Angular',
+            'Secure communication patterns',
+            'Security Context of Angular',
+            'Hands-on: Implementing Security best practices in Angular'
+          ]
+        }
+      ],
+      targetAudience: 'This workshop is designed for Angular developers and architects who want to enhance their application security knowledge and implement robust security measures.',
+      trainers: ['martina-kraus']
     },
     {
       id: '6',

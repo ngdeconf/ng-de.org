@@ -29,10 +29,10 @@ import { WorkshopService } from '../../services/workshop.service';
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           @for (workshop of workshops(); track workshop.id) {
           <div
-            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all focus-within:ring-2 focus-within:ring-primary-500 dark:focus-within:ring-primary-400"
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all focus-within:ring-2 focus-within:ring-primary-500 dark:focus-within:ring-primary-400 h-[900px] flex flex-col"
             tabindex="-1"
           >
-            <div class="p-8 md:p-10">
+            <div class="p-8 md:p-10 flex-1 flex flex-col">
               <!-- Workshop Header -->
               <div class="flex flex-col md:flex-row md:items-start gap-6 mb-8">
                 <!-- Custom SVG Icon based on workshop -->
@@ -192,148 +192,195 @@ import { WorkshopService } from '../../services/workshop.service';
                 </div>
               </div>
 
-              <!-- Workshop Details -->
-              <div
-                class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8 bg-gray-50 dark:bg-gray-750 p-4 rounded-lg"
-              >
-                <!-- Duration -->
+                            <!-- Content Container -->
+              <div class="flex-1 flex flex-col">
+                <!-- Workshop Details -->
                 <div
-                  class="flex items-center space-x-3 text-gray-600 dark:text-gray-400"
-                  [attr.aria-label]="'Workshop duration: ' + workshop.duration"
+                  class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 bg-gray-50 dark:bg-gray-750 p-4 rounded-lg"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 flex-shrink-0 text-primary-500 dark:text-primary-400"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
+                  <!-- Duration -->
+                  <div
+                    class="flex items-center space-x-3 text-gray-600 dark:text-gray-400"
+                    [attr.aria-label]="'Workshop duration: ' + workshop.duration"
                   >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
-                  <span>{{ workshop.duration }}</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 flex-shrink-0 text-primary-500 dark:text-primary-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>{{ workshop.duration }}</span>
+                  </div>
+
+                  <!-- Attendees -->
+                  <div
+                    class="flex items-center space-x-3 text-gray-600 dark:text-gray-400"
+                    [attr.aria-label]="
+                      'Capacity: ' + workshop.capacity + ' attendees'
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 flex-shrink-0 text-primary-500 dark:text-primary-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>{{ workshop.capacity }} attendees</span>
+                  </div>
                 </div>
 
-                <!-- Attendees -->
+                <!-- Workshop Benefits -->
+                @if (workshop.benefits && workshop.benefits.length > 0) {
                 <div
-                  class="flex items-center space-x-3 text-gray-600 dark:text-gray-400"
+                  class="flex-1 px-4 py-4 bg-gray-50 dark:bg-gray-800 rounded-lg mb-6 border border-gray-200 dark:border-gray-700"
+                >
+                  <h4
+                    class="text-sm uppercase tracking-wider text-primary-700 dark:text-primary-300 mb-3 font-medium"
+                  >
+                    What you'll learn
+                  </h4>
+                  <div class="space-y-3">
+                    @for (benefit of workshop.benefits.slice(0, 4); track benefit; let i = $index) {
+                    <div
+                      class="flex items-start gap-3 benefit-item"
+                      [style.animation-delay]="i * 100 + 'ms'"
+                    >
+                      <div
+                        class="flex-shrink-0 w-5 h-5 rounded-full bg-primary-100 dark:bg-primary-800/40 flex items-center justify-center text-primary-600 dark:text-primary-400"
+                        aria-hidden="true"
+                      >
+                        <span class="text-xs font-bold opacity-80">{{
+                          i + 1
+                        }}</span>
+                      </div>
+                      <div class="flex-1">
+                        <p
+                          class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed"
+                        >
+                          {{ benefit }}
+                        </p>
+                      </div>
+                    </div>
+                    }
+                    @if (workshop.benefits.length > 4) {
+                      <div class="text-center mt-2">
+                        <span class="text-xs text-primary-600 dark:text-primary-400 font-medium">
+                          +{{ workshop.benefits.length - 4 }} more learning objectives
+                        </span>
+                      </div>
+                    }
+                  </div>
+                </div>
+                }
+
+                <!-- Workshop Leaders - Primary Focus -->
+                <div class="mb-6">
+                  <h4
+                    class="text-lg font-bold text-gray-900 dark:text-gray-100 mb-4 text-center md:text-left"
+                  >
+                    Led by Expert Trainers
+                  </h4>
+                  <div class="space-y-3">
+                    @for (trainerId of workshop.trainers || [workshop.trainerId]; track trainerId; let i = $index) {
+                      <!-- Limit to first 2 trainers for consistent height -->
+                      @if (i < 2) {
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+                          <div class="relative flex-shrink-0 mx-auto sm:mx-0">
+                            <img
+                              [src]="getSpeakerImage(trainerId)"
+                              [alt]="getSpeakerName(trainerId)"
+                              class="w-16 h-16 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
+                            />
+                            @if (getSpeakerById(trainerId)?.angularTeam) {
+                              <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                                <img
+                                    src="assets/images/angular_gradient.png"
+                                    alt="Angular Team"
+                                    class="w-5 h-5"
+                                />
+                              </div>
+                            }
+                            @if (getSpeakerById(trainerId)?.ngrxTeam) {
+                              <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                                <img
+                                    src="assets/images/ngrx-logo.png"
+                                    alt="NgRx Team"
+                                    class="w-5 h-5"
+                                />
+                              </div>
+                            }
+                          </div>
+                          <div class="flex-1 text-center sm:text-left">
+                            <h5 class="text-base font-bold text-gray-900 dark:text-gray-100 mb-1">
+                              {{ getSpeakerName(trainerId) }}
+                            </h5>
+                            <p class="text-sm font-medium text-primary-700 dark:text-primary-300 mb-1">
+                              {{ getSpeakerTitle(trainerId) }}
+                            </p>
+                            @if (getSpeakerCompany(trainerId)) {
+                              <p class="text-xs text-gray-600 dark:text-gray-400">
+                                {{ getSpeakerCompany(trainerId) }}
+                              </p>
+                            }
+                          </div>
+                        </div>
+                      }
+                    }
+                    <!-- Show additional trainers indicator if more than 2 -->
+                    @if ((workshop.trainers || [workshop.trainerId]).length > 2) {
+                      <div class="text-center">
+                        <span class="text-sm text-primary-600 dark:text-primary-400 font-medium">
+                          +{{ (workshop.trainers || [workshop.trainerId]).length - 2 }} more trainer(s)
+                        </span>
+                      </div>
+                    }
+                  </div>
+                </div>
+              </div>
+
+              <!-- Learn More CTA - Always at bottom -->
+              <div class="mt-auto">
+                <button
+                  class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3.5 px-5 rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+                  (click)="openWorkshopDetails(workshop)"
                   [attr.aria-label]="
-                    'Capacity: ' + workshop.capacity + ' attendees'
+                    'View detailed workshop information for ' + workshop.title
                   "
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 flex-shrink-0 text-primary-500 dark:text-primary-400"
+                    class="h-5 w-5"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    aria-hidden="true"
                   >
-                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="9" cy="7" r="4"></circle>
-                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                   </svg>
-                  <span>{{ workshop.capacity }} attendees</span>
-                </div>
+                  <span class="tracking-wide">View Workshop Details</span>
+                </button>
               </div>
-
-              <!-- Workshop Benefits -->
-              @if (workshop.benefits && workshop.benefits.length > 0) {
-              <div
-                class="mb-8 px-4 py-5 bg-primary-50 dark:bg-primary-900/10 rounded-lg"
-              >
-                <h4
-                  class="text-sm uppercase tracking-wider text-primary-700 dark:text-primary-300 mb-4 font-medium"
-                >
-                  What you'll learn
-                </h4>
-                <div class="space-y-4">
-                  @for (benefit of workshop.benefits; track benefit; let i =
-                  $index) {
-                  <div
-                    class="flex items-start gap-4 benefit-item"
-                    [style.animation-delay]="i * 100 + 'ms'"
-                  >
-                    <div
-                      class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 dark:bg-primary-800/40 flex items-center justify-center text-primary-600 dark:text-primary-400"
-                      aria-hidden="true"
-                    >
-                      <span class="text-xs font-bold opacity-80">{{
-                        i + 1
-                      }}</span>
-                    </div>
-                    <div class="flex-1">
-                      <p
-                        class="text-gray-700 dark:text-gray-300 leading-relaxed"
-                      >
-                        {{ benefit }}
-                      </p>
-                    </div>
-                  </div>
-                  }
-                </div>
-              </div>
-              }
-
-              <!-- Workshop Leaders -->
-              <div class="mb-8">
-                <h4
-                  class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4 font-medium"
-                >
-                  Workshop Leaders
-                </h4>
-                <div class="flex flex-wrap gap-3">
-                  @for (trainerId of workshop.trainers || [workshop.trainerId];
-                  track trainerId) {
-                  <div
-                    class="flex items-center bg-gray-100 dark:bg-gray-700 rounded-full pl-1 pr-4 py-1.5"
-                  >
-                    <img
-                      [src]="getSpeakerImage(trainerId)"
-                      [alt]="getSpeakerName(trainerId)"
-                      class="h-8 w-8 rounded-full mr-3 border-2 border-white dark:border-gray-800"
-                    />
-                    <div>
-                      <p class="font-medium text-sm">
-                        {{ getSpeakerName(trainerId) }}
-                      </p>
-                    </div>
-                  </div>
-                  }
-                </div>
-              </div>
-
-              <!-- Learn More CTA -->
-              <button
-                class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3.5 px-5 rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
-                (click)="openWorkshopDetails(workshop)"
-                [attr.aria-label]="
-                  'View detailed workshop information for ' + workshop.title
-                "
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                </svg>
-                <span class="tracking-wide">View Workshop Details</span>
-              </button>
             </div>
           </div>
           }
@@ -409,28 +456,58 @@ import { WorkshopService } from '../../services/workshop.service';
           <!-- Workshop Trainers -->
           <div class="mb-8">
             <h4
-              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3 font-medium"
+              class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6"
             >
-              Led by
+              Expert Workshop Leaders
             </h4>
-            <div class="flex flex-wrap gap-3">
+            <div class="space-y-6">
               @for (trainerId of activeWorkshop()?.trainers ||
               [activeWorkshop()?.trainerId]; track trainerId) {
-              <div
-                class="flex items-center bg-gray-100 dark:bg-gray-700 rounded-lg pl-1 pr-4 py-2"
-              >
-                <img
-                  [src]="getSpeakerImage(trainerId)"
-                  [alt]="getSpeakerName(trainerId)"
-                  class="h-10 w-10 rounded-full mr-3 border-2 border-white dark:border-gray-800"
-                />
-                <div>
-                  <p class="font-medium">{{ getSpeakerName(trainerId) }}</p>
-                  <p class="text-sm text-gray-600 dark:text-gray-400">
-                    {{ getSpeakerTitle(trainerId) }}
-                  </p>
+                <div class="flex flex-col sm:flex-row sm:items-start gap-6 p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+                  <div class="relative flex-shrink-0 mx-auto sm:mx-0">
+                    <img
+                      [src]="getSpeakerImage(trainerId)"
+                      [alt]="getSpeakerName(trainerId)"
+                      class="w-24 h-24 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
+                    />
+                    @if (getSpeakerById(trainerId)?.angularTeam) {
+                      <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-1">
+                        <img
+                            src="assets/images/angular_gradient.png"
+                            alt="Angular Team"
+                            class="w-7 h-7"
+                        />
+                      </div>
+                    }
+                    @if (getSpeakerById(trainerId)?.ngrxTeam) {
+                      <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-1">
+                        <img
+                            src="assets/images/ngrx-logo.png"
+                            alt="NgRx Team"
+                            class="w-7 h-7"
+                        />
+                      </div>
+                    }
+                  </div>
+                  <div class="flex-1 text-center sm:text-left">
+                    <h5 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+                      {{ getSpeakerName(trainerId) }}
+                    </h5>
+                    <p class="text-lg font-semibold text-primary-700 dark:text-primary-300 mb-2">
+                      {{ getSpeakerTitle(trainerId) }}
+                    </p>
+                    @if (getSpeakerCompany(trainerId)) {
+                      <p class="text-base text-gray-600 dark:text-gray-400 mb-3">
+                        {{ getSpeakerCompany(trainerId) }}
+                      </p>
+                    }
+                    @if (getSpeakerById(trainerId)?.bio) {
+                      <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                        {{ getSpeakerById(trainerId)?.bio }}
+                      </p>
+                    }
+                  </div>
                 </div>
-              </div>
               }
             </div>
           </div>
@@ -714,6 +791,15 @@ export class WorkshopsComponent {
   getSpeakerTitle(speakerId: string): string {
     const speaker = this.speakerService.getSpeakerById(speakerId);
     return speaker ? speaker.title : '';
+  }
+
+  getSpeakerById(speakerId: string) {
+    return this.speakerService.getSpeakerById(speakerId);
+  }
+
+  getSpeakerCompany(speakerId: string): string {
+    const speaker = this.speakerService.getSpeakerById(speakerId);
+    return speaker ? speaker.company || '' : '';
   }
 
   openWorkshopDetails(workshop: any): void {
