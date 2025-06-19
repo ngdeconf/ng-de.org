@@ -52,6 +52,7 @@ export interface Workshop {
   }[];
   targetAudience?: string;
   trainers?: string[];
+  soldOut?: boolean;
 }
 
 export interface Ticket {

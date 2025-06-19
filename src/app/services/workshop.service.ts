@@ -58,7 +58,8 @@ export class WorkshopService {
       ],
       targetAudience:
         'This workshop is designed for developers with project experience using Angular.',
-      trainers: ['manfred-steyer', 'michael-egger-zikes']
+      trainers: ['manfred-steyer', 'michael-egger-zikes'],
+      soldOut: false
     },
     {
       id: '2',
@@ -115,7 +116,8 @@ export class WorkshopService {
       ],
       targetAudience:
         'This workshop is designed for Angular developers interested in productivity enhancements and AI-assisted coding techniques.',
-      trainers: ['robin-boehm', 'gregor-woiwode']
+      trainers: ['robin-boehm', 'gregor-woiwode'],
+      soldOut: false
     },
     {
       id: '3',
@@ -173,7 +175,8 @@ export class WorkshopService {
         }
       ],
       targetAudience: 'This workshop is designed for Angular developers who want to master performance optimization, modern Angular features, and SSR implementation.',
-      trainers: ['michael-hladky', 'enea-jahollari']
+      trainers: ['michael-hladky', 'enea-jahollari'],
+      soldOut: false
     },
     {
       id: '5',
@@ -231,7 +234,8 @@ export class WorkshopService {
         }
       ],
       targetAudience: 'You should have a fundamental understanding of Angular Signals and TypeScript. Experience with NgRx is helpful but not required.',
-      trainers: ['marko-stanimirovic', 'rainer-hahnekamp']
+      trainers: ['marko-stanimirovic', 'rainer-hahnekamp'],
+      soldOut: false
     },
     {
       id: '4',
@@ -288,7 +292,8 @@ export class WorkshopService {
         }
       ],
       targetAudience: 'This workshop is designed for Angular developers and architects who want to enhance their application security knowledge and implement robust security measures.',
-      trainers: ['martina-kraus']
+      trainers: ['martina-kraus'],
+      soldOut: false
     },
     {
       id: '6',
@@ -349,7 +354,8 @@ export class WorkshopService {
         }
       ],
       targetAudience: 'This workshop is designed for frontend developers, UX designers, and QA engineers who want to create inclusive web applications. Basic knowledge of HTML, CSS, and JavaScript is required.',
-      trainers: ['maria-korneeva']
+      trainers: ['maria-korneeva'],
+      soldOut: false
     }
   ]);
 

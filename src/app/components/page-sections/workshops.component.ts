@@ -29,8 +29,19 @@ import { WorkshopService } from '../../services/workshop.service';
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           @for (workshop of workshops(); track workshop.id) {
           <div
-            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all focus-within:ring-2 focus-within:ring-primary-500 dark:focus-within:ring-primary-400 h-[900px] flex flex-col"
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all focus-within:ring-2 focus-within:ring-primary-500 dark:focus-within:ring-primary-400 h-[900px] flex flex-col relative"
             tabindex="-1"
+          >
+            <!-- Sold Out Banner -->
+            @if (workshop.soldOut) {
+              <div class="absolute inset-0 z-10 pointer-events-none overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full">
+                  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-red-600 text-white font-bold text-2xl w-96 h-20 flex items-center justify-center shadow-lg">
+                    <span class="tracking-widest">SOLD OUT</span>
+                  </div>
+                </div>
+              </div>
+            }
           >
             <div class="p-8 md:p-10 flex-1 flex flex-col">
               <!-- Workshop Header -->
@@ -359,26 +370,49 @@ import { WorkshopService } from '../../services/workshop.service';
               <!-- Learn More CTA - Always at bottom -->
               <div class="mt-auto">
                 <button
-                  class="w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3.5 px-5 rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
-                  (click)="openWorkshopDetails(workshop)"
+                  [class]="workshop.soldOut 
+                    ? 'w-full bg-gray-400 text-white font-medium py-3.5 px-5 rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-not-allowed opacity-60'
+                    : 'w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3.5 px-5 rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800'"
+                  (click)="!workshop.soldOut && openWorkshopDetails(workshop)"
+                  [disabled]="workshop.soldOut"
                   [attr.aria-label]="
-                    'View detailed workshop information for ' + workshop.title
+                    workshop.soldOut 
+                      ? 'Workshop sold out - no longer available'
+                      : 'View detailed workshop information for ' + workshop.title
                   "
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                  </svg>
-                  <span class="tracking-wide">View Workshop Details</span>
+                  @if (workshop.soldOut) {
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="15" y1="9" x2="9" y2="15"></line>
+                      <line x1="9" y1="9" x2="15" y2="15"></line>
+                    </svg>
+                    <span class="tracking-wide">Workshop Sold Out</span>
+                  } @else {
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                    <span class="tracking-wide">View Workshop Details</span>
+                  }
                 </button>
               </div>
             </div>
