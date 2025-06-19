@@ -79,12 +79,12 @@ interface ScheduleEntry {
                         @if (entry.speakers) {
                           @for (speaker of entry.speakers; track speaker) {
                             @if (getSpeakerByName(speaker)) {
-                              <div class="flex items-center">
+                              <div class="flex items-center mb-2 last:mb-0">
                                 <div class="relative flex-shrink-0">
                                   <img
                                       [src]="getSpeakerByName(speaker)?.imageUrl"
                                       [alt]="entry.information"
-                                      class="w-10 h-10 rounded-full mr-3 object-cover border-2 border-gray-200 dark:border-gray-700"
+                                      class="w-12 h-12 rounded-full mr-4 object-cover border-2 border-gray-200 dark:border-gray-700"
                                   />
                                   @if (getSpeakerByName(speaker)?.ngrxTeam) {
                                     <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
@@ -96,13 +96,13 @@ interface ScheduleEntry {
                                     </div>
                                   }
                                 </div>
-                                <div class="min-w-0">
-                                  <div class="font-medium truncate" [class.text-white]="isBreak(entry)"
+                                <div class="min-w-0 flex-1">
+                                  <div class="font-medium" [class.text-white]="isBreak(entry)"
                                        [class.text-gray-900]="!isBreak(entry)"
                                        [class.dark:text-gray-100]="!isBreak(entry)">
                                     {{ speaker }}
                                   </div>
-                                  <div class="text-xs truncate" [class.text-white]="isBreak(entry)"
+                                  <div class="text-sm mt-1" [class.text-white]="isBreak(entry)"
                                        [class.text-gray-500]="!isBreak(entry)"
                                        [class.dark:text-gray-400]="!isBreak(entry)">
                                     {{ getSpeakerByName(speaker)?.title }}
@@ -118,7 +118,7 @@ interface ScheduleEntry {
                                 <img
                                     [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl"
                                     [alt]="entry.information"
-                                    class="w-10 h-10 rounded-full mr-3 object-cover border-2 border-gray-200 dark:border-gray-700"
+                                    class="w-12 h-12 rounded-full mr-4 object-cover border-2 border-gray-200 dark:border-gray-700"
                                 />
                                 @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam) {
                                   <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
@@ -139,13 +139,13 @@ interface ScheduleEntry {
                                   </div>
                                 }
                               </div>
-                              <div class="min-w-0">
-                                <div class="font-medium truncate" [class.text-white]="isBreak(entry)"
+                              <div class="min-w-0 flex-1">
+                                <div class="font-medium" [class.text-white]="isBreak(entry)"
                                      [class.text-gray-900]="!isBreak(entry)"
                                      [class.dark:text-gray-100]="!isBreak(entry)">
                                   {{ getSpeakerName(entry) }}
                                 </div>
-                                <div class="text-xs truncate" [class.text-white]="isBreak(entry)"
+                                <div class="text-sm mt-1" [class.text-white]="isBreak(entry)"
                                      [class.text-gray-500]="!isBreak(entry)"
                                      [class.dark:text-gray-400]="!isBreak(entry)">
                                   {{ getSpeakerTitle(entry) }}
@@ -217,13 +217,62 @@ interface ScheduleEntry {
                     </h3>
 
                     <!-- Speaker Information -->
-                    @if (getSpeakerByName(entry.information) || getSpeakerBySession(entry.session)) {
-                      <div class="flex items-center space-x-3">
+                    @if (entry.speakers) {
+                      <div class="space-y-3">
+                        @for (speaker of entry.speakers; track speaker) {
+                          @if (getSpeakerByName(speaker)) {
+                            <div class="flex items-center space-x-4">
+                              <div class="relative flex-shrink-0">
+                                <img
+                                    [src]="getSpeakerByName(speaker)?.imageUrl"
+                                    [alt]="speaker"
+                                    class="w-14 h-14 rounded-full object-cover border-2"
+                                    [class]="isBreak(entry) ? 'border-white/30' : 'border-gray-200 dark:border-gray-700'"
+                                />
+                                @if (getSpeakerByName(speaker)?.angularTeam) {
+                                  <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                                    <img
+                                        src="assets/images/angular_gradient.png"
+                                        alt="Angular Team"
+                                        class="w-5 h-5"
+                                    />
+                                  </div>
+                                }
+                                @if (getSpeakerByName(speaker)?.ngrxTeam) {
+                                  <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                                    <img
+                                        src="assets/images/ngrx-logo.png"
+                                        alt="NgRx Team"
+                                        class="w-5 h-5"
+                                    />
+                                  </div>
+                                }
+                              </div>
+                              <div class="min-w-0 flex-1">
+                                <div
+                                    class="font-medium text-base"
+                                    [class]="isBreak(entry) ? 'text-white' : 'text-gray-900 dark:text-gray-100'"
+                                >
+                                  {{ speaker }}
+                                </div>
+                                <div
+                                    class="text-sm mt-1"
+                                    [class]="isBreak(entry) ? 'text-white/80' : 'text-gray-500 dark:text-gray-400'"
+                                >
+                                  {{ getSpeakerByName(speaker)?.title }}
+                                </div>
+                              </div>
+                            </div>
+                          }
+                        }
+                      </div>
+                    } @else if (getSpeakerByName(entry.information) || getSpeakerBySession(entry.session)) {
+                      <div class="flex items-center space-x-4">
                         <div class="relative flex-shrink-0">
                           <img
                               [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl"
                               [alt]="entry.information"
-                              class="w-12 h-12 rounded-full object-cover border-2"
+                              class="w-14 h-14 rounded-full object-cover border-2"
                               [class]="isBreak(entry) ? 'border-white/30' : 'border-gray-200 dark:border-gray-700'"
                           />
                           @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam) {
@@ -247,13 +296,13 @@ interface ScheduleEntry {
                         </div>
                         <div class="min-w-0 flex-1">
                           <div
-                              class="font-medium"
+                              class="font-medium text-base"
                               [class]="isBreak(entry) ? 'text-white' : 'text-gray-900 dark:text-gray-100'"
                           >
                             {{ getSpeakerName(entry) }}
                           </div>
                           <div
-                              class="text-sm"
+                              class="text-sm mt-1"
                               [class]="isBreak(entry) ? 'text-white/80' : 'text-gray-500 dark:text-gray-400'"
                           >
                             {{ getSpeakerTitle(entry) }}
