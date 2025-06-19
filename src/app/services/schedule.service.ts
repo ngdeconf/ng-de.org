@@ -95,21 +95,21 @@ export class ScheduleService {
         },
         {
           title: 'Panel Discussion',
-          datetime: '2025-11-06T16:45:00',
+          datetime: '2025-11-06T16:30:00',
           information: 'TBD (Speakers from the conference)',
           location: 'Main Stage',
           session: 'panel-day1'
         },
         {
           title: 'Closing Day 1',
-          datetime: '2025-11-06T16:45:00',
+          datetime: '2025-11-06T17:30:00',
           information: 'Wrap-up of the first day',
           location: 'Main Stage',
           session: null
         },
         {
           title: 'Community Event/Party 🎉',
-          datetime: '2025-11-06T17:00:00',
+          datetime: '2025-11-06T18:00:00',
           information: 'Social event with drinks and food',
           location: 'GLS Campus Berlin',
           session: 'party'
