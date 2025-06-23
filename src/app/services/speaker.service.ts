@@ -184,6 +184,17 @@ export class SpeakerService {
       bio: 'Google Developer Expert in Web Technologies and Angular, also a Microsoft Most Valuable Professional, Nicolas is a French Frontend specialist and User Interface Designer from Metz, France. He works as a Developer Advocate and Senior Staff Engineer at Sfeir Luxembourg. Besides that, Nicolas is a speaker, and likes to contribute to the community by giving talks, trainings, writing articles or participating in open source projects like Ng Zorro.',
       imageUrl: 'assets/images/speakers/nicolas-frizzarin.png',
       githubHandle: 'frizzarin'
+    },
+    {
+      id: 'mark-thompson',
+      name: 'Mark Thompson',
+      title: 'Developer Relations Engineer',
+      company: 'Google - Angular Team',
+      bio: 'Mark loves to teach and code. He is an award winning university instructor and engineer. He comes with a passion for creating meaningful learning experiences. With over a decade of developing solutions across the tech stack, speaking at conferences, and mentoring developers, he is excited to continue to make an impact in tech. Lately, Mark has been spending time as a developer relations engineer on the Angular Team.',
+      imageUrl: 'assets/images/speakers/mark-thompson.webp',
+      githubHandle: 'markthompson',
+      pronouns: 'he/him',
+      angularTeam: true
     }
   ]);
 

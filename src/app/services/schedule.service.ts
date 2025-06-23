@@ -25,7 +25,7 @@ export class ScheduleService {
         {
           title: 'Keynote',
           datetime: '2025-11-06T10:00:00',
-          information: 'Angular Team',
+          information: 'Mark Thompson (Angular Team)',
           location: 'Main Stage',
           session: 'keynote-day1'
         },

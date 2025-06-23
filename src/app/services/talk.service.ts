@@ -7,9 +7,9 @@ export class TalkService {
     // Day 1 - Thursday
     {
       id: 'keynote-day1',
-      title: 'Keynote',
-      abstract: 'Opening keynote by the Angular Team',
-      speakerId: 'angular-team',
+      title: 'Opening keynote by Mark Thompson from the Angular Team',
+      abstract: 'Opening keynote by Mark Thompson from the Angular Team',
+      speakerId: 'mark-thompson',
       time: '10:00 - 10:30',
       day: 'day1',
       room: 'Main Stage'
