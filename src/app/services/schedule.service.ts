@@ -94,11 +94,11 @@ export class ScheduleService {
           session: 'talk-day1-7'
         },
         {
-          title: 'Panel Discussion',
+          title: 'Build on top of signals',
           datetime: '2025-11-06T16:30:00',
-          information: 'TBD (Speakers from the conference)',
+          information: 'Enea Jahollari',
           location: 'Main Stage',
-          session: 'panel-day1'
+          session: 'talk-day1-8'
         },
         {
           title: 'Closing Day 1',

@@ -72,11 +72,11 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       room: 'Main Stage'
     },
     {
-      id: 'panel-day1',
-      title: 'Panel Discussion',
-      abstract: 'Conference speakers discuss current Angular topics and answer audience questions',
-      speakerId: 'panel',
-      time: '17:00 - 17:45',
+      id: 'talk-day1-8',
+      title: 'Build on top of signals',
+      abstract: 'Angular Signals are a game-changer. But we can go even further. This talk unveils how to build powerful utility functions, leveraging inject and DestroyRef to supercharge your Signals. Learn how to create reusable reactive patterns, simplify your code, and embrace a new "synchronization" mindset that optimizes performance. Prepare to level up your Angular development with the building blocks of the future!',
+      speakerId: 'enea-jahollari',
+      time: '17:00 - 17:30',
       day: 'day1',
       room: 'Main Stage'
     },
