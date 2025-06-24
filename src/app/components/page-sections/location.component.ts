@@ -40,7 +40,7 @@ interface Venue {
               <div class="relative h-64 lg:h-auto">
                 <img
                   src="assets/images/location/hotel-oderberger-poolhalle.jpg"
-                  alt="Hotel Orderberger (GLS Campus Berlin)"
+                  alt="Hotel Oderberger (GLS Campus Berlin)"
                   class="w-full h-full object-cover"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:hidden"></div>
@@ -59,10 +59,10 @@ interface Venue {
                   </span>
                 </div>
                 <h3 class="text-2xl lg:text-3xl font-bold mb-4 text-gray-900 dark:text-white">
-                  Hotel Orderberger (GLS Campus Berlin)
+                  Hotel Oderberger (GLS Campus Berlin)
                 </h3>
                 <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                  Located in the vibrant Prenzlauer Berg district, the Hotel Orderberger at GLS Campus offers modern conference facilities 
+                  Located in the vibrant Prenzlauer Berg district, the Hotel Oderberger at GLS Campus offers modern conference facilities 
                   in a creative and inspiring environment. Perfect for learning and networking in the heart of Berlin.
                 </p>
                 <div class="space-y-3 mb-6">
@@ -105,8 +105,8 @@ export class LocationComponent {
   private readonly venues = signal<Venue[]>([
     // Hotels
     {
-      id: 'hotel-orderberger',
-      name: 'Hotel Orderberger (GLS Campus Berlin)',
+      id: 'hotel-oderberger',
+      name: 'Hotel Oderberger (GLS Campus Berlin)',
       type: 'hotel',
       description: 'Conference venue in the heart of Prenzlauer Berg with modern facilities and creative atmosphere.',
       address: 'Oderberger Str. 57, 10435 Berlin Germany',
