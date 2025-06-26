@@ -362,10 +362,10 @@ export class WorkshopService {
       title: 'Pragmatic Angular Testing: Crafting Tests That Survive the Heat',
       teaser: 'There are two ways to keep a product stable: never touch it — or cook up a solid testing strategy.',
       benefits: [
-        'Craft low-maintenance, high-confidence tests that catch bugs',
-        'Build tests that survive refactors and migrations (Observables → Signals)',
-        'Master fast-running tests that fail early and guide development',
-        'Create Zoneless-ready tests for future Angular applications'
+        'Writing *readable* and *maintainable tests*',
+        'Writing tests that **focus on behavior** rather than implementation details.',
+        'Writing **future-proof tests** that survive migrations and refactorings.',
+        'Mocking” without suffering using **Fakes and Object Mothers**'
       ],
       abstract: 'There are two ways to keep a product stable: never touch it — or cook up a solid testing strategy.\n\nSo… how\'s yours holding up?\n• Refactor something and watch the tests boil over?\n• Maintaining mocks feels like duct tape meets rocket science?\n• Still chasing 100% coverage while bugs keep crawling through?\n• End-to-end tests looked tasty at first — until flakiness and slowness caused indigestion?\n• As release day nears, you skip tests and serve it raw — fingers crossed hoping no one gets burned?\n\nIf any of that hits close to home, this workshop is your way out of the fire.\nWe\'ll stop by the market for key ingredients such as Fakes, Object Mothers, Gloves, Vitest, Testing Library, and Playwright Component Testing.\n\nThen back to the kitchen, where we\'ll cook up low-maintenance, high-confidence tests that:\n• Catch both today\'s and tomorrow\'s bugs\n• Survive refactors and all sorts of migrations — including Observables → Signals\n• Run fast enough to fail early and guide you back as you type\n• Are Zoneless-ready — because tomorrow is Zoneless\n\nNo dogma. No silver bullets. Just practical techniques you can use tomorrow to test Angular apps with confidence and clarity.',
       trainerId: 'younes-jaaidi',
@@ -373,43 +373,83 @@ export class WorkshopService {
       capacity: 30,
       outline: [
         {
-          title: 'Testing Strategy & Foundations',
+          title: '💻 Hands-on Exercise: First Test',
           topics: [
-            'Building a sustainable testing strategy',
-            'Understanding test pyramid and testing types',
-            'Identifying what to test and what to avoid',
-            'Setting up modern testing tools: Vitest and Testing Library',
-            'Hands-on: Establishing testing foundations'
+            'Let’s write our first test by instinct — then dissect what works and what doesn’t.'
           ]
         },
         {
-          title: 'Component Testing with Confidence',
+          title: '👨🏻‍🏫 The Testing Pain',
           topics: [
-            'Testing components without implementation details',
-            'Using Fakes and Object Mothers for maintainable tests',
-            'Testing user interactions and component behavior',
-            'Playwright Component Testing for isolated testing',
-            'Hands-on: Building robust component tests'
+            'Developers hate testing: Why, and how do we fix that?',
+            'The Development Time Perception Bias.',
+            'What’s wrong with Unit vs. Integration taxonomy?',
+            'Narrow vs. Wide.'
           ]
         },
         {
-          title: 'Migration-Proof Testing Patterns',
+          title: '👨🏻‍🏫 Vitest',
           topics: [
-            'Testing patterns that survive refactors',
-            'Handling Observables → Signals migrations in tests',
-            'Zoneless-ready testing approaches',
-            'Testing modern Angular features and patterns',
-            'Hands-on: Future-proofing your test suite'
+            'Why Vitest?',
+            'Pros, cons, and the future.',
+            'Migration path from Karma or Jest.'
           ]
         },
         {
-          title: 'Fast, Reliable Test Execution',
+          title: '👨🏻‍🏫 Component Testing',
           topics: [
-            'Optimizing test performance and reliability',
-            'Eliminating test flakiness and slowness',
-            'Fast feedback loops for development',
-            'Integration testing strategies that work',
-            'Hands-on: Building a high-performance test suite'
+            'OIsolated vs. Shallow vs. Integration.',
+            '`TestBed` vs. `Testing Library`: What to pick from each?'
+          ]
+        },
+        {
+          title: '💻 Hands-on Exercises: TDD & Component Testing',
+          topics: [
+            'Progressive Test-Driven Development.',
+            'All-you-can-eat tips & tricks for precise and maintainable tests.',
+            'Future-proof testing with DOM-distancing and Gloves.',
+            'Zoneless-ready testing.',
+            'Debugging techniques.'
+          ]
+        },
+        {
+          title: '👨🏻‍🏫 Test Doubles & “Mocking”',
+          topics: [
+            'When, why, how, and where to “mock”.',
+            'Fake it till you mock it: picking the right Test Double.',
+            'Type-safe and maintainable doubles.',
+            'High confidence with contract testing.'
+         ]
+        },
+        {
+          title: '💻 Hands-on Exercises: Test Doubles & “Mocking”',
+          topics: [
+            'Narrowing down tests with Fakes.'
+          ]
+        },
+        {
+          title: '👨🏻‍🏫 Playwright Component Testing with Testronaut',
+          topics: [
+            'How is Testronaut different from anything else?',
+            'Component Testing with Testronaut.',
+            'Using test doubles.',
+            'Debugging',
+            'Visual regression testing that scales.'
+          ]
+        },
+        {
+          title: '👨🏻‍🏫 Building your Pragmatic Testing Strategy',
+          topics: [
+            'What to test?',
+            'Which tool to use?',
+            'What is the right size for a System Under Test?',
+            'Which strategy for legacy code?'
+          ]
+        },
+        {
+          title: '🎁 [Bonus] Charted Coding: AI-Assisted TDD',
+          topics: [
+            'Leveraging AI from design doc to tidy code with more TDD and less review fatigue.'
           ]
         }
       ],
