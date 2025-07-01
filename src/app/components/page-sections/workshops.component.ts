@@ -29,7 +29,7 @@ import { WorkshopService } from '../../services/workshop.service';
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           @for (workshop of workshops(); track workshop.id) {
           <div
-            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all focus-within:ring-2 focus-within:ring-primary-500 dark:focus-within:ring-primary-400 h-[900px] flex flex-col relative"
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all focus-within:ring-2 focus-within:ring-primary-500 dark:focus-within:ring-primary-400 md:h-[900px] flex flex-col relative"
             tabindex="-1"
           >
             <!-- Sold Out Banner -->
