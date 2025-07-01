@@ -96,7 +96,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       title: 'Permit A38 - or how to build accessible forms in Angular',
       abstract: `In The Twelve Tasks of Asterix, the heroes are driven to madness trying to get Permit A38. That's what inaccessible forms feel like to many users — confusing, frustrating, and impossible to complete.\n\nThis talk dives into the practical side of building accessible forms in Angular. We'll cover:\n- Proper use of labels, fieldsets, and input types - from easy to tricky cases\n- Accessible error handling and validation\n- Distinction between hard accessibility requirements and UX recommendations\n\nAttendees will leave with clear, actionable steps to create Angular forms that are usable for screen readers, keyboard users, and everyone else. No bureaucracy required.`,
       speakerId: 'maria-korneeva',
-      time: '10:30 - 11:00',
+      time: '16:30 - 17:00',
       day: 'day2',
       room: 'Main Stage'
     },
@@ -141,7 +141,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       title: 'Code That Writes Code: Supercharge Your Nx Workspace with Generators and Executors',
       abstract: 'Nx generators and executors can automate your workflow, eliminate boilerplate, and bring consistency to your monorepo. In this talk, you\'ll learn how to create custom generators that scaffold code, build powerful executors for running tasks, and integrate both seamlessly into your Nx workspace.',
       speakerId: 'kasia-biernat-kluba',
-      time: '16:30 - 17:00',
+      time: '10:30 - 11:00',
       day: 'day2',
       room: 'Main Stage'
     },

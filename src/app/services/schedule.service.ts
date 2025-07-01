@@ -144,9 +144,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T10:30:00',
-          information: 'Maria Korneeva',
+          information: 'Kasia Biernat-Kluba',
           location: 'Main Stage',
-          session: 'talk-day2-11'
+          session: 'talk-day2-16'
         },
         {
           title: 'Coffee Break ☕️',
@@ -199,10 +199,10 @@ export class ScheduleService {
         },
         {
           title: 'Talk',
-          datetime: '2025-11-07T16:00:00',
-          information: 'Kasia Biernat-Kluba',
+          datetime: '2025-11-07T16:30:00',
+          information: 'Maria Korneeva',
           location: 'Main Stage',
-          session: 'talk-day2-16'
+          session: 'talk-day2-11'
         },
         {
           title: 'Talk',
