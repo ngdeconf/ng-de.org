@@ -63,59 +63,59 @@ export class WorkshopService {
     },
     {
       id: '2',
-      title: 'Agent-Driven Coding: Boosting Developer Productivity with Cursor',
+      title: 'Agentic AI Engineering with Angular',
       teaser:
-        'Supercharge your development workflow and become 10x more productive by harnessing AI models with Cursor IDE.',
+        'Master the art of building intelligent Angular applications with autonomous AI agents and modern development workflows.',
       benefits: [
-        'Boost coding speed with AI-driven development',
-        'Create rule files for automatic code standards',
-        'Master prompts for optimal AI code generation'
+        'Build Angular applications with embedded AI agents',
+        'Implement AI-driven code generation for Angular patterns',
+        'Create intelligent development workflows for Angular projects'
       ],
       abstract:
-        "Discover how to make developers 10x more productive using Agent-Driven Coding techniques with Cursor IDE. This hands-on workshop will explore the power of AI-assisted development and teach you how to leverage different AI models to enhance your workflow.\n\nWe'll cover the setup and integration of Cursor IDE with various AI models, creating and managing rule files for code standards, and developing efficient workflows that combine human creativity with AI capabilities. Learn how to use semantic search, code suggestion engines, and error diagnostics to streamline your development process.\n\nBy the end of this workshop, you'll understand how to effectively incorporate AI assistants into your development workflow, resulting in faster coding, higher quality code, and increased productivity.",
+        "Explore the cutting-edge world of Agentic AI Engineering within Angular applications. This hands-on workshop demonstrates how to build intelligent Angular apps that leverage autonomous AI agents for dynamic functionality, automated code generation, and adaptive user experiences.\n\nWe'll dive deep into implementing AI agents in Angular using modern frameworks, creating self-managing components that adapt to user behavior, and building AI-powered development tools specifically for Angular projects. Learn how to integrate language models into Angular services, implement intelligent form handling, and create reactive AI-driven features using Angular Signals.\n\nBy the end of this workshop, you'll master the principles of agentic AI engineering and be able to build Angular applications that intelligently adapt, learn, and evolve based on user interactions and data patterns.",
       trainerId: 'robin-boehm',
       duration: '8 hours',
       capacity: 30,
       outline: [
         {
-          title: 'Introduction to Agent-Driven Coding',
+          title: 'Foundations of Agentic AI in Angular',
           topics: [
-            'Understanding AI-assisted development',
-            'The evolution from auto-complete to agent-driven coding',
-            'Overview of Cursor IDE capabilities',
-            'Setting up Cursor and configuring AI models'
+            'Understanding autonomous AI agents vs. traditional AI integration',
+            'Angular architecture patterns for AI-driven applications',
+            'Setting up the development environment for AI engineering',
+            'Introduction to LangChain.js and Angular integration'
           ]
         },
         {
-          title: 'Working with AI Models in Cursor',
+          title: 'Building Intelligent Angular Services',
           topics: [
-            'Understanding different AI models and their strengths',
-            'Configuring model preferences for different tasks',
-            'Prompt engineering for optimal results',
-            'Hands-on lab: Model selection and interaction'
+            'Creating AI-powered Angular services with dependency injection',
+            'Implementing reactive AI agents using Angular Signals',
+            'Memory management and state persistence for AI agents',
+            'Hands-on lab: Building your first intelligent Angular service'
           ]
         },
         {
-          title: 'Rule Files and Code Standards',
+          title: 'AI-Driven Component Architecture',
           topics: [
-            'Creating and managing rule files',
-            'Enforcing code standards with AI assistance',
-            'Custom rules for project-specific requirements',
-            'Using rules for Angular projects'
+            'Self-adapting components that learn from user behavior',
+            'Implementing AI-powered form validation and suggestions',
+            'Creating intelligent UI components with dynamic behavior',
+            'Real-time AI integration with Angular\'s reactive forms'
           ]
         },
         {
-          title: 'Workflow Optimization',
+          title: 'Advanced Agentic Patterns & Deployment',
           topics: [
-            'Building efficient AI-assisted workflows',
-            'Integration with existing development processes',
-            'Version control and collaboration with AI assistance',
-            'Hands-on lab: Developing a feature with agent-driven coding'
+            'Multi-agent orchestration in Angular applications',
+            'Performance optimization for AI-heavy Angular apps',
+            'Security considerations for AI-enabled applications',
+            'Hands-on lab: Building a complete agentic Angular application'
           ]
         }
       ],
       targetAudience:
-        'This workshop is designed for Angular developers interested in productivity enhancements and AI-assisted coding techniques.',
+        'This workshop is designed for experienced Angular developers who want to explore cutting-edge AI integration patterns and build intelligent, adaptive applications using autonomous AI agents.',
       trainers: ['robin-boehm', 'gregor-woiwode'],
       soldOut: false
     },
