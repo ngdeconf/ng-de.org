@@ -38,6 +38,13 @@ export class SponsorService {
       logoUrl: 'assets/images/sponsors/exxeta_logo_positiv_RGB.png',
       websiteUrl: 'https://www.exxeta.com',
       level: 'Bronze'
+    },
+    {
+      id: 'qupaya',
+      name: 'qupaya',
+      logoUrl: 'assets/images/sponsors/qupaya logo primary.svg',
+      websiteUrl: 'https://qupaya.com',
+      level: 'Bronze'
     }
   ]);
 
