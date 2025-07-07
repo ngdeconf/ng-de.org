@@ -31,6 +31,13 @@ export class SponsorService {
       logoUrl: 'assets/images/sponsors/house-of-angular.png',
       websiteUrl: 'https://houseofangular.io/',
       level: 'Bronze'
+    },
+    {
+      id: 'exxeta',
+      name: 'Exxeta',
+      logoUrl: 'assets/images/sponsors/exxeta_logo_positiv_RGB.png',
+      websiteUrl: 'https://www.exxeta.com',
+      level: 'Bronze'
     }
   ]);
 
