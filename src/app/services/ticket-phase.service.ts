@@ -19,8 +19,15 @@ export class TicketPhaseService {
       basePrice: 699
     },
     {
-      name: 'Regular Ticket',
+      name: 'Upgrade Bird',
       startDate: new Date('2025-07-01'),
+      isActive: false,
+      isPast: false,
+      basePrice: 699
+    },
+    {
+      name: 'Regular Ticket',
+      startDate: new Date('2025-09-01'),
       isActive: false,
       isPast: false,
       basePrice: 799
