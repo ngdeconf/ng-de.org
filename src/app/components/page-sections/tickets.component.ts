@@ -31,14 +31,13 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
               </div>
               <div class="flex-1">
                 <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  🚀 Exciting News: Upgrade Bird Ticket For Potential Second Stage!
+                  🚀 Exciting News: Upgrade for Potential Second Stage!
                 </h3>
                 <div class="text-gray-700 dark:text-gray-300 space-y-2">
                   <p class="font-medium text-[#e40341]">We're almost sold out - only about 70 spots remaining!</p>
-                  <p>We're considering opening a <strong>second stage</strong> featuring exclusive Q&A sessions and deep-dive workshops. To make this financially viable, we need to assess demand by the end of August.</p>
-                  <p>📝 <strong>Already have a regular ticket?</strong> You can also upgrade to take advantage of these reduced prices!</p>
+                  <p>We're considering opening a <strong>second stage</strong> featuring exclusive Q&A sessions and deep-dive workshops. To make this financially viable, we need to assess demand by the beginning of August. If if do this we can host 150 more people!</p>
                   <p class="text-sm font-medium bg-white/50 dark:bg-gray-800/50 px-3 py-2 rounded-lg border-l-4 border-[#e40341]">
-                    💡 If we sell out by then, we'll confidently book the additional venue space!
+                    💡 If we sell out by then, we'll confidently book the additional venue space! If not tickets are sold out soon! 
                   </p>
                 </div>
               </div>
