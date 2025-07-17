@@ -19,6 +19,20 @@ export class SponsorService {
       level: 'Gold'
     },
     {
+      id: 'google',
+      name: 'google',
+      logoUrl: 'assets/images/sponsors/google.png',
+      websiteUrl: 'https://google.com',
+      level: 'Bronze'
+    },
+    {
+      id: 'angular',
+      name: 'angular',
+      logoUrl: 'assets/images/sponsors/angular.svg',
+      websiteUrl: 'https://angular.dev',
+      level: 'Bronze'
+    },
+    {
       id: 'snapaddy',
       name: 'snapADDY',
       logoUrl: 'assets/images/sponsors/snapaddy.svg',

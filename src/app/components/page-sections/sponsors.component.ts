@@ -17,7 +17,7 @@ import { SponsorService } from '../../services/sponsor.service';
         <!-- Platinum Sponsors -->
         @if (getSponsorsByLevel('Platinum').length > 0) {
         <div class="mb-16">
-          <h3 class="text-2xl font-bold mb-8 text-center">Platinum Sponsors</h3>
+          <!-- <h3 class="text-2xl font-bold mb-8 text-center">Platinum Sponsors</h3> -->
           <div class="flex flex-wrap justify-center gap-8">
             @for (sponsor of getSponsorsByLevel('Platinum'); track sponsor.id) {
             <div class="w-full md:w-[calc(50%-1rem)] max-w-md">
@@ -42,7 +42,7 @@ import { SponsorService } from '../../services/sponsor.service';
         <!-- Gold Sponsors -->
         @if (getSponsorsByLevel('Gold').length > 0) {
         <div class="mb-16">
-          <h3 class="text-2xl font-bold mb-8 text-center">Gold Sponsors</h3>
+          <!-- <h3 class="text-2xl font-bold mb-8 text-center">Gold Sponsors</h3> -->
           <div class="flex flex-wrap justify-center gap-8">
             @for (sponsor of getSponsorsByLevel('Gold'); track sponsor.id) {
             <div
@@ -69,7 +69,7 @@ import { SponsorService } from '../../services/sponsor.service';
         <!-- Silver Sponsors -->
         @if (getSponsorsByLevel('Silver').length > 0) {
         <div class="mb-16">
-          <h3 class="text-2xl font-bold mb-8 text-center">Silver Sponsors</h3>
+          <!-- <h3 class="text-2xl font-bold mb-8 text-center">Silver Sponsors</h3> -->
           <div class="flex flex-wrap justify-center gap-6">
             @for (sponsor of getSponsorsByLevel('Silver'); track sponsor.id) {
             <div
@@ -96,7 +96,7 @@ import { SponsorService } from '../../services/sponsor.service';
         <!-- Bronze Sponsors -->
         @if (getSponsorsByLevel('Bronze').length > 0) {
         <div class="mb-16">
-          <h3 class="text-2xl font-bold mb-8 text-center">Bronze Sponsors</h3>
+          <!-- <h3 class="text-2xl font-bold mb-8 text-center">Bronze Sponsors</h3> -->
           <div class="flex flex-wrap justify-center gap-4">
             @for (sponsor of getSponsorsByLevel('Bronze'); track sponsor.id) {
             <div
