@@ -173,6 +173,53 @@ import { SponsorService } from '../../services/sponsor.service';
         </div>
         }
 
+        <!-- Sponsoring Process Info -->
+        <div class="max-w-4xl mx-auto mb-12">
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-700">
+            <h3 class="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-white">
+              How Sponsoring Works
+            </h3>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+              <div class="text-center">
+                <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-primary-600 dark:text-primary-400 font-bold text-lg">1</span>
+                </div>
+                <h4 class="font-semibold mb-2 text-gray-900 dark:text-white">We Get in Touch</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  Reach out to us and let us know about your interest in sponsoring NG-DE
+                </p>
+              </div>
+              
+              <div class="text-center">
+                <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-primary-600 dark:text-primary-400 font-bold text-lg">2</span>
+                </div>
+                <h4 class="font-semibold mb-2 text-gray-900 dark:text-white">Get Detailed Information</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  You'll receive a comprehensive PDF brochure with all sponsoring options and possibilities
+                </p>
+              </div>
+              
+              <div class="text-center">
+                <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span class="text-primary-600 dark:text-primary-400 font-bold text-lg">3</span>
+                </div>
+                <h4 class="font-semibold mb-2 text-gray-900 dark:text-white">Personal Consultation</h4>
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                  We'll have a call to discuss how we can tailor sponsoring to achieve your specific goals
+                </p>
+              </div>
+            </div>
+            
+            <div class="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 text-center">
+              <p class="text-gray-700 dark:text-gray-300 text-sm">
+                💡 <strong>Planning ahead?</strong> We're also already accepting inquiries for NG-DE 2026 sponsoring opportunities!
+              </p>
+            </div>
+          </div>
+        </div>
+
         <!-- Become a Sponsor -->
         <div class="text-center mt-12">
           <a
