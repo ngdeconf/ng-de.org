@@ -42,7 +42,7 @@ export class SponsorService {
     {
       id: 'qupaya',
       name: 'qupaya',
-      logoUrl: 'assets/images/sponsors/qupaya logo primary.svg',
+      logoUrl: 'assets/images/sponsors/qupaya logo primary.png',
       websiteUrl: 'https://qupaya.com',
       level: 'Bronze'
     }
