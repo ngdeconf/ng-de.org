@@ -26,23 +26,21 @@ interface CommunityPartner {
         </div>
 
         <!-- Community Partners Grid -->
-        <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 gap-3 md:gap-4">
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-8">
           @for (partner of getCommunityPartners(); track partner.id) {
             <div class="group">
               <a
                 [href]="partner.websiteUrl"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="block p-2 md:p-3 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-md"
+                class="block p-8 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg min-h-[180px] flex items-center justify-center"
                 [title]="partner.name"
               >
-                <div class="aspect-square flex items-center justify-center">
-                  <img
-                    [src]="partner.logoUrl"
-                    [alt]="partner.name + ' logo'"
-                    class="w-8 h-8 md:w-10 md:h-10 object-contain filter group-hover:brightness-110 transition-all duration-300"
-                  />
-                </div>
+                <img
+                  [src]="partner.logoUrl"
+                  [alt]="partner.name + ' logo'"
+                  class="h-32 object-contain max-w-full filter group-hover:brightness-110 transition-all duration-300"
+                />
               </a>
             </div>
           }
