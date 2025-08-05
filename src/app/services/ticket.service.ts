@@ -11,14 +11,15 @@ export class TicketService {
       description: 'Full access to all conference talks and networking events',
       price: 599, // Will be updated based on current phase
       currency: 'EUR',
-      available: true,
+      available: false, // Sold out
       features: [
         'Access to all conference talks',
         'Conference swag',
         'Lunch and refreshments',
         'Evening networking event'
       ],
-      type: 'conference'
+      type: 'conference',
+      soldOut: true
     },
     {
       id: '2',
@@ -26,14 +27,15 @@ export class TicketService {
       description: 'Full conference access plus one workshop',
       price: 799, // Will be updated based on current phase
       currency: 'EUR',
-      available: true,
+      available: false, // Sold out
       features: [
         'Everything in Conference Ticket',
         'Access to one workshop of your choice',
         'Workshop materials',
         'Certificate of completion'
       ],
-      type: 'bundle'
+      type: 'bundle',
+      soldOut: true
     },
     {
       id: '3',
@@ -48,7 +50,8 @@ export class TicketService {
         'Lunch and refreshments',
         'Certificate of completion'
       ],
-      type: 'workshop'
+      type: 'workshop',
+      soldOut: false
     }
   ]);
 

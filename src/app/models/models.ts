@@ -65,6 +65,7 @@ export interface Ticket {
   availableUntil?: Date;
   features: string[];
   type: 'conference' | 'workshop' | 'bundle' | 'online';
+  soldOut?: boolean;
 }
 
 export interface TicketPhase {
