@@ -43,22 +43,21 @@ export class TalkService {
     },
     {
       id: 'talk-day1-5',
-      title: "The Missing Link in Angular's Signal Story: Resource API and httpResource",
-      abstract: "Signals will shape Angular's future in terms of reactivity and change detection. The new Resource API, along with the httpResource, adds an essential piece to this story by providing an official solution for asynchronously loading data within a Signal-based dataflow.\n\nIn this session, we explore all the details you need to work effectively with this powerful API. Topics include managing different states, handling errors, streaming data, preventing race conditions, and canceling unnecessary requests. We also discuss how it interacts with RxJS through rxResource and demonstrate how to update loaded values.\n\nBy the end, you'll have a comprehensive understanding of the possibilities offered by this groundbreaking new API.",
-      speakerId: 'manfred-steyer',
+      title: 'Code That Writes Code: Supercharge Your Nx Workspace with Generators and Executors',
+      abstract: 'Nx generators and executors can automate your workflow, eliminate boilerplate, and bring consistency to your monorepo. In this talk, you\'ll learn how to create custom generators that scaffold code, build powerful executors for running tasks, and integrate both seamlessly into your Nx workspace.',
+      speakerId: 'kasia-biernat-kluba',
       time: '14:15 - 14:45',
-      day: 'day1',
+      day: 'day2',
       room: 'Main Stage'
     },
     {
       id: 'talk-day1-6',
-      title: 'Component Testing That Feels Like Playwright — Because It Is',
-      abstract: `Tired of blindly debugging raw HTML output? Flaky end-to-end tests and their slow feedback loop? Stitching together five different tools to check if a button is disabled?\n\nYou're not alone.\n\nEveryone loves how smooth Playwright makes end-to-end testing feel — reliable, visual, easy to debug. But relying solely on e2e tests is rarely a sustainable strategy.\n\nWhat if we could zoom in to test just one component — and still enjoy the same Playwright magic?\n\nIn this talk, Younes & Rainer introduce a new approach to Angular component testing: same great DX, smaller scope, faster feedback.\n\nThey'll share why they got there, and how their open-source library brings the full Playwright experience to your components.`,
-      speakerId: 'younes-jaaidi',
+      title: 'Zero Bundle Size?',
+      abstract: 'What if your Angular app shipped nothing by default? With the introduction of the @defer block in Angular, the framework is entering a new era of ultra-granular code loading. In this session, we\'ll deep-dive into the mechanics and real-world impact of deferrable views—how Angular\'s control flow syntax enables not just lazy loading, but reactive, declarative code isolation. We\'ll go beyond the basic @defer syntax and explore strategies for architecting micro-frontends and feature islands, using build-time hints to reduce unused code paths, profiling and restructuring apps for minimal critical paths, and how defer blocks complement signals and zoneless change detection. Expect performance audits and advanced bundling techniques. If you\'re building large-scale Angular apps and want to minimize JS payload without compromising UX, this talk will give you concrete tools to reshape your app around runtime execution—not compile-time coupling.',
+      speakerId: 'eliran-eliassy',
       time: '14:45 - 15:15',
-      day: 'day1',
-      room: 'Main Stage',
-      speakers: ['rainer-hahnekamp', 'younes-jaaidi']
+      day: 'day2',
+      room: 'Main Stage'
     },
     {
       id: 'talk-day1-7',
@@ -67,7 +66,7 @@ export class TalkService {
 
 In this practical session, Google Developer Expert Martina Kraus will show you how to identify typical security risks in Angular applications and implement effective defenses. Through concrete, real-world examples, you'll gain the knowledge you need to build secure, robust Angular apps with confidence.`,
       speakerId: 'martina-kraus',
-      time: '16:30 - 17:00',
+      time: '16:00 - 16:30',
       day: 'day1',
       room: 'Main Stage'
     },
@@ -76,7 +75,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       title: 'Build on top of signals',
       abstract: 'Angular Signals are a game-changer. But we can go even further. This talk unveils how to build powerful utility functions, leveraging inject and DestroyRef to supercharge your Signals. Learn how to create reusable reactive patterns, simplify your code, and embrace a new "synchronization" mindset that optimizes performance. Prepare to level up your Angular development with the building blocks of the future!',
       speakerId: 'enea-jahollari',
-      time: '17:00 - 17:30',
+      time: '16:30 - 17:00',
       day: 'day1',
       room: 'Main Stage'
     },
@@ -92,19 +91,20 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       room: 'Main Stage'
     },
     {
-      id: 'talk-day2-11',
-      title: 'Permit A38 - or how to build accessible forms in Angular',
-      abstract: `In The Twelve Tasks of Asterix, the heroes are driven to madness trying to get Permit A38. That's what inaccessible forms feel like to many users — confusing, frustrating, and impossible to complete.\n\nThis talk dives into the practical side of building accessible forms in Angular. We'll cover:\n- Proper use of labels, fieldsets, and input types - from easy to tricky cases\n- Accessible error handling and validation\n- Distinction between hard accessibility requirements and UX recommendations\n\nAttendees will leave with clear, actionable steps to create Angular forms that are usable for screen readers, keyboard users, and everyone else. No bureaucracy required.`,
-      speakerId: 'maria-korneeva',
-      time: '16:30 - 17:00',
-      day: 'day2',
-      room: 'Main Stage'
+      id: 'talk-day2-16',
+      title: 'Component Testing That Feels Like Playwright — Because It Is',
+      abstract: `Tired of blindly debugging raw HTML output? Flaky end-to-end tests and their slow feedback loop? Stitching together five different tools to check if a button is disabled?\n\nYou're not alone.\n\nEveryone loves how smooth Playwright makes end-to-end testing feel — reliable, visual, easy to debug. But relying solely on e2e tests is rarely a sustainable strategy.\n\nWhat if we could zoom in to test just one component — and still enjoy the same Playwright magic?\n\nIn this talk, Younes & Rainer introduce a new approach to Angular component testing: same great DX, smaller scope, faster feedback.\n\nThey'll share why they got there, and how their open-source library brings the full Playwright experience to your components.`,
+      speakerId: 'younes-jaaidi',
+      time: '10:30 - 11:00',
+      day: 'day1',
+      room: 'Main Stage',
+      speakers: ['rainer-hahnekamp', 'younes-jaaidi']
     },
     {
       id: 'talk-day2-12',
-      title: 'Zero Bundle Size?',
-      abstract: 'What if your Angular app shipped nothing by default? With the introduction of the @defer block in Angular, the framework is entering a new era of ultra-granular code loading. In this session, we\'ll deep-dive into the mechanics and real-world impact of deferrable views—how Angular\'s control flow syntax enables not just lazy loading, but reactive, declarative code isolation. We\'ll go beyond the basic @defer syntax and explore strategies for architecting micro-frontends and feature islands, using build-time hints to reduce unused code paths, profiling and restructuring apps for minimal critical paths, and how defer blocks complement signals and zoneless change detection. Expect performance audits and advanced bundling techniques. If you\'re building large-scale Angular apps and want to minimize JS payload without compromising UX, this talk will give you concrete tools to reshape your app around runtime execution—not compile-time coupling.',
-      speakerId: 'eliran-eliassy',
+      title: 'Permit A38 - or how to build accessible forms in Angular',
+      abstract: `In The Twelve Tasks of Asterix, the heroes are driven to madness trying to get Permit A38. That's what inaccessible forms feel like to many users — confusing, frustrating, and impossible to complete.\n\nThis talk dives into the practical side of building accessible forms in Angular. We'll cover:\n- Proper use of labels, fieldsets, and input types - from easy to tricky cases\n- Accessible error handling and validation\n- Distinction between hard accessibility requirements and UX recommendations\n\nAttendees will leave with clear, actionable steps to create Angular forms that are usable for screen readers, keyboard users, and everyone else. No bureaucracy required.`,
+      speakerId: 'maria-korneeva',
       time: '11:45 - 12:15',
       day: 'day2',
       room: 'Main Stage'
@@ -137,12 +137,12 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       room: 'Main Stage'
     },
     {
-      id: 'talk-day2-16',
-      title: 'Code That Writes Code: Supercharge Your Nx Workspace with Generators and Executors',
-      abstract: 'Nx generators and executors can automate your workflow, eliminate boilerplate, and bring consistency to your monorepo. In this talk, you\'ll learn how to create custom generators that scaffold code, build powerful executors for running tasks, and integrate both seamlessly into your Nx workspace.',
-      speakerId: 'kasia-biernat-kluba',
-      time: '10:30 - 11:00',
-      day: 'day2',
+      id: 'talk-day2-11',
+      title: "The Missing Link in Angular's Signal Story: Resource API and httpResource",
+      abstract: "Signals will shape Angular's future in terms of reactivity and change detection. The new Resource API, along with the httpResource, adds an essential piece to this story by providing an official solution for asynchronously loading data within a Signal-based dataflow.\n\nIn this session, we explore all the details you need to work effectively with this powerful API. Topics include managing different states, handling errors, streaming data, preventing race conditions, and canceling unnecessary requests. We also discuss how it interacts with RxJS through rxResource and demonstrate how to update loaded values.\n\nBy the end, you'll have a comprehensive understanding of the possibilities offered by this groundbreaking new API.",
+      speakerId: 'manfred-steyer',
+      time: '16:00 - 17:00',
+      day: 'day1',
       room: 'Main Stage'
     },
     {

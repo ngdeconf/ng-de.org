@@ -32,7 +32,7 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T10:30:00',
-          information: 'Rainer Hahnekamp',
+          information: 'Matthieu Riegler',
           location: 'Main Stage',
           session: 'talk-day1-2'
         },
@@ -77,7 +77,6 @@ export class ScheduleService {
           information: '',
           location: 'Main Stage',
           session: 'talk-day1-6',
-          speakers: ['Younes Jaaidi', 'Rainer Hahnekamp']
         },
         {
           title: 'Coffee Break ☕️',
@@ -102,14 +101,14 @@ export class ScheduleService {
         },
         {
           title: 'Closing Day 1',
-          datetime: '2025-11-06T17:30:00',
+          datetime: '2025-11-06T17:00:00',
           information: 'Wrap-up of the first day',
           location: 'Main Stage',
           session: null
         },
         {
           title: 'Community Event/Party 🎉',
-          datetime: '2025-11-06T18:00:00',
+          datetime: '2025-11-06T17:30:00',
           information: 'Social event with drinks and food',
           location: 'GLS Campus Berlin',
           session: 'party'
@@ -146,7 +145,8 @@ export class ScheduleService {
           datetime: '2025-11-07T10:30:00',
           information: 'Kasia Biernat-Kluba',
           location: 'Main Stage',
-          session: 'talk-day2-16'
+          session: 'talk-day2-16',
+          speakers: ['Younes Jaaidi', 'Rainer Hahnekamp']
         },
         {
           title: 'Coffee Break ☕️',
@@ -206,14 +206,14 @@ export class ScheduleService {
         },
         {
           title: 'Talk',
-          datetime: '2025-11-07T16:30:00',
+          datetime: '2025-11-07T17:00:00',
           information: 'Nicolas Frizzarin',
           location: 'Main Stage',
           session: 'talk-day2-17'
         },
         {
           title: 'Closing & Farewell',
-          datetime: '2025-11-07T17:00:00',
+          datetime: '2025-11-07T17:30:00',
           information: 'Orga Team / MC',
           location: 'Main Stage',
           session: null
