@@ -1,54 +1,21 @@
-# ng-de.org
-Website for the [ng-de.org](https://ng-de.org/) conference.
+<p align="center">
+   <img src="./src/assets/logo.svg" width="150px" height="auto" alt="logo og NG-DE, shows a shield with the text NG"/>
+</p>
+<h1 align="center">NG-DE</h1>
+<p align="center">
+   Website of the <a href="https://ng-de.org" target="_blank">biggest Angular conference</a>, in Germany.
+</p>
 
-## Build Status
-![Build Status](https://travis-ci.org/ngdeconf/ng-de.org.svg?branch=master "Travis Build Status")
+## Run website locally
 
-## Photos
-Background Image by Daniel Brosch on Unsplash
-
-## Development
-
-### 0. Prerequisite Software
-
-* [Git](http://git-scm.com) and/or the **GitHub app** (for [Mac](http://mac.github.com) or
-  [Windows](http://windows.github.com)); [GitHub's Guide to Installing
-  Git](https://help.github.com/articles/set-up-git) is a good source of information.
-
-* [Ruby](https://www.ruby-lang.org/en/)
-
-### 1. Getting the Sources
-
-Fork and clone repository:
-
-1. Login to your GitHub account or create one by following the instructions given
-   [here](https://github.com/signup/free).
-2. [Fork](http://help.github.com/forking) the [main repository](https://github.com/ngdeconf/ng-de.org).
-3. Clone your fork of the repository and define an `upstream` remote pointing back to
-   the main repository that you forked in the first place.
-
-```shell
-# Clone your GitHub repository:
-git clone git@github.com:<github username>/ng-de.org.git
-
-# Go to the directory:
-cd ng-de.org
-
-# Add the main repository as an upstream remote to your repository:
-git remote add upstream https://github.com/ngdeconf/ng-de.org.git
-```
-
-### 2. Install the project dependencies
-```bash
-# install bundler as ruby package manager
-gem install bundler
-# install the project depdencies defined int the Gemfile
-bundle install
-```
-
-### 3. Run the jekyll instance
+> Fork this repository and clone it to your machine.
 
 ```bash
-# start the web page at http://localhost:4000
-bundle exec jekyll serve --incremental
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm start
 ```
+
+Enjoy ❤️ - your NG-DE team
