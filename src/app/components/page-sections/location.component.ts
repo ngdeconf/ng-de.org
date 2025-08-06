@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 interface Venue {
   id: string;
@@ -26,7 +26,7 @@ interface TransportOption {
 @Component({
   selector: 'ngde-location',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   template: `
     <section id="location" class="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       <div class="container mx-auto px-4">

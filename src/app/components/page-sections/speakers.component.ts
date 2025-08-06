@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import {
   afterNextRender,
   Component,
@@ -11,7 +11,7 @@ import { Speaker } from '../../models/models';
 
 @Component({
   selector: 'ngde-speakers',
-  imports: [CommonModule],
+  imports: [],
   template: `
     <section #speakersSection id="speakers" class="py-16">
       <div class="container mx-auto px-4">

@@ -2,7 +2,7 @@ import { DialogModule } from '@angular/cdk/dialog';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import {
   ApplicationConfig,
-  provideExperimentalZonelessChangeDetection
+  provideZonelessChangeDetection
 } from '@angular/core';
 import {
   provideClientHydration,
@@ -16,7 +16,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withFetch()),
     provideClientHydration(withEventReplay()),
     provideRouter(routes),
-    provideExperimentalZonelessChangeDetection(),
+    provideZonelessChangeDetection(),
     DialogModule
   ]
 };
