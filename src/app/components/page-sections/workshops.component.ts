@@ -113,39 +113,44 @@ import { WorkshopService } from '../../services/workshop.service';
                     </div>
 
                     <div
-                      class="flex items-center gap-4 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-700"
+                      class="flex items-center gap-4 p-3 bg-primary-50 dark:bg-primary-900/20 rounded-lg border border-primary-200 dark:border-primary-700"
                     >
                       <div class="flex-shrink-0 w-16 text-center">
                         <span
-                          class="text-sm font-medium text-green-700 dark:text-green-300"
+                          class="text-sm font-medium text-primary-700 dark:text-primary-300"
                           >09:00</span
                         >
                       </div>
                       <div class="flex-1">
                         <span
-                          class="font-medium text-green-900 dark:text-green-100"
+                          class="font-medium text-primary-900 dark:text-primary-100"
                           >Workshops Begin</span
                         >
-                        <p class="text-sm text-green-700 dark:text-green-300">
+                        <p
+                          class="text-sm text-primary-700 dark:text-primary-300"
+                        >
                           All workshops start simultaneously
                         </p>
                       </div>
                     </div>
 
                     <div
-                      class="flex items-center gap-4 p-3 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-700"
+                      class="flex items-center gap-4 p-3 bg-primary-100 dark:bg-primary-900/30 rounded-lg border border-primary-300 dark:border-primary-600"
                     >
                       <div class="flex-shrink-0 w-16 text-center">
                         <span
-                          class="text-sm font-medium text-red-700 dark:text-red-300"
+                          class="text-sm font-medium text-primary-800 dark:text-primary-200"
                           >16:30</span
                         >
                       </div>
                       <div class="flex-1">
-                        <span class="font-medium text-red-900 dark:text-red-100"
+                        <span
+                          class="font-medium text-primary-900 dark:text-primary-100"
                           >Workshops End</span
                         >
-                        <p class="text-sm text-red-700 dark:text-red-300">
+                        <p
+                          class="text-sm text-primary-800 dark:text-primary-200"
+                        >
                           Wrap-up and networking
                         </p>
                       </div>
@@ -177,60 +182,60 @@ import { WorkshopService } from '../../services/workshop.service';
 
                   <div class="space-y-3">
                     <div
-                      class="flex items-center gap-4 p-3 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-700"
+                      class="flex items-center gap-4 p-3 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-300 dark:border-gray-600"
                     >
                       <div class="flex-shrink-0 w-16 text-center">
                         <span
-                          class="text-sm font-medium text-amber-700 dark:text-amber-300"
+                          class="text-sm font-medium text-gray-700 dark:text-gray-300"
                           >10:30</span
                         >
                       </div>
                       <div class="flex-1">
                         <span
-                          class="font-medium text-amber-900 dark:text-amber-100"
+                          class="font-medium text-gray-900 dark:text-gray-100"
                           >Coffee Break</span
                         >
-                        <p class="text-sm text-amber-700 dark:text-amber-300">
+                        <p class="text-sm text-gray-700 dark:text-gray-300">
                           15-minute refreshment break
                         </p>
                       </div>
                     </div>
 
                     <div
-                      class="flex items-center gap-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-700"
+                      class="flex items-center gap-4 p-3 bg-gray-200 dark:bg-gray-600 rounded-lg border border-gray-400 dark:border-gray-500"
                     >
                       <div class="flex-shrink-0 w-16 text-center">
                         <span
-                          class="text-sm font-medium text-blue-700 dark:text-blue-300"
+                          class="text-sm font-medium text-gray-700 dark:text-gray-300"
                           >12:30</span
                         >
                       </div>
                       <div class="flex-1">
                         <span
-                          class="font-medium text-blue-900 dark:text-blue-100"
+                          class="font-medium text-gray-900 dark:text-gray-100"
                           >Lunch Break</span
                         >
-                        <p class="text-sm text-blue-700 dark:text-blue-300">
+                        <p class="text-sm text-gray-700 dark:text-gray-300">
                           60-minute lunch break
                         </p>
                       </div>
                     </div>
 
                     <div
-                      class="flex items-center gap-4 p-3 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-700"
+                      class="flex items-center gap-4 p-3 bg-gray-100 dark:bg-gray-700 rounded-lg border border-gray-300 dark:border-gray-600"
                     >
                       <div class="flex-shrink-0 w-16 text-center">
                         <span
-                          class="text-sm font-medium text-amber-700 dark:text-amber-300"
+                          class="text-sm font-medium text-gray-700 dark:text-gray-300"
                           >15:15</span
                         >
                       </div>
                       <div class="flex-1">
                         <span
-                          class="font-medium text-amber-900 dark:text-amber-100"
+                          class="font-medium text-gray-900 dark:text-gray-100"
                           >Coffee Break</span
                         >
-                        <p class="text-sm text-amber-700 dark:text-amber-300">
+                        <p class="text-sm text-gray-700 dark:text-gray-300">
                           15-minute refreshment break
                         </p>
                       </div>
