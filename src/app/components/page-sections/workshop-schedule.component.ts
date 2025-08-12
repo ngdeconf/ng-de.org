@@ -195,7 +195,7 @@ import { Component } from '@angular/core';
                         >Coffee Break</span
                       >
                       <p class="text-sm text-gray-700 dark:text-gray-300">
-                        15-minute refreshment break
+                        Up to 30-minute refreshment break
                       </p>
                     </div>
                   </div>
@@ -233,7 +233,7 @@ import { Component } from '@angular/core';
                         >Coffee Break</span
                       >
                       <p class="text-sm text-gray-700 dark:text-gray-300">
-                        15-minute refreshment break
+                        Up to 30-minute refreshment break
                       </p>
                     </div>
                   </div>
