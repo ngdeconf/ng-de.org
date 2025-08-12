@@ -1,4 +1,3 @@
-
 import {
   afterNextRender,
   Component,
@@ -26,6 +25,257 @@ import { WorkshopService } from '../../services/workshop.service';
           </p>
         </div>
 
+        <!-- Workshop Day Agenda -->
+        <div class="mb-16">
+          <div
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden"
+          >
+            <!-- Agenda Header -->
+            <div
+              class="bg-gradient-to-r from-primary-600 to-primary-700 px-6 py-4"
+            >
+              <h3 class="text-xl font-bold text-white text-center">
+                📅 Workshop Day Schedule
+              </h3>
+            </div>
+
+            <!-- Agenda Content -->
+            <div class="p-6 md:p-8">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Main Schedule -->
+                <div class="space-y-4">
+                  <h4
+                    class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-primary-600 dark:text-primary-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Main Schedule
+                  </h4>
+
+                  <div class="space-y-3">
+                    <div
+                      class="flex items-center gap-4 p-3 bg-gray-50 dark:bg-gray-750 rounded-lg border border-gray-200 dark:border-gray-600"
+                    >
+                      <div class="flex-shrink-0 w-16 text-center">
+                        <span
+                          class="text-sm font-medium text-primary-700 dark:text-primary-300"
+                          >07:45</span
+                        >
+                        <span
+                          class="block text-xs text-gray-500 dark:text-gray-400"
+                          >- 08:30</span
+                        >
+                      </div>
+                      <div class="flex-1">
+                        <span
+                          class="font-medium text-gray-900 dark:text-gray-100"
+                          >Open Registration</span
+                        >
+                        <p class="text-sm text-gray-600 dark:text-gray-400">
+                          Check-in and welcome coffee
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-4 p-3 bg-gray-50 dark:bg-gray-750 rounded-lg border border-gray-200 dark:border-gray-600"
+                    >
+                      <div class="flex-shrink-0 w-16 text-center">
+                        <span
+                          class="text-sm font-medium text-primary-700 dark:text-primary-300"
+                          >08:30</span
+                        >
+                        <span
+                          class="block text-xs text-gray-500 dark:text-gray-400"
+                          >onwards</span
+                        >
+                      </div>
+                      <div class="flex-1">
+                        <span
+                          class="font-medium text-gray-900 dark:text-gray-100"
+                          >Snacks & Coffee</span
+                        >
+                        <p class="text-sm text-gray-600 dark:text-gray-400">
+                          Light refreshments available
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-4 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-700"
+                    >
+                      <div class="flex-shrink-0 w-16 text-center">
+                        <span
+                          class="text-sm font-medium text-green-700 dark:text-green-300"
+                          >09:00</span
+                        >
+                      </div>
+                      <div class="flex-1">
+                        <span
+                          class="font-medium text-green-900 dark:text-green-100"
+                          >Workshops Begin</span
+                        >
+                        <p class="text-sm text-green-700 dark:text-green-300">
+                          All workshops start simultaneously
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-4 p-3 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-700"
+                    >
+                      <div class="flex-shrink-0 w-16 text-center">
+                        <span
+                          class="text-sm font-medium text-red-700 dark:text-red-300"
+                          >16:30</span
+                        >
+                      </div>
+                      <div class="flex-1">
+                        <span class="font-medium text-red-900 dark:text-red-100"
+                          >Workshops End</span
+                        >
+                        <p class="text-sm text-red-700 dark:text-red-300">
+                          Wrap-up and networking
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Breaks -->
+                <div class="space-y-4">
+                  <h4
+                    class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-primary-600 dark:text-primary-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+                      ></path>
+                    </svg>
+                    Breaks & Refreshments
+                  </h4>
+
+                  <div class="space-y-3">
+                    <div
+                      class="flex items-center gap-4 p-3 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-700"
+                    >
+                      <div class="flex-shrink-0 w-16 text-center">
+                        <span
+                          class="text-sm font-medium text-amber-700 dark:text-amber-300"
+                          >10:30</span
+                        >
+                      </div>
+                      <div class="flex-1">
+                        <span
+                          class="font-medium text-amber-900 dark:text-amber-100"
+                          >Coffee Break</span
+                        >
+                        <p class="text-sm text-amber-700 dark:text-amber-300">
+                          15-minute refreshment break
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-700"
+                    >
+                      <div class="flex-shrink-0 w-16 text-center">
+                        <span
+                          class="text-sm font-medium text-blue-700 dark:text-blue-300"
+                          >12:30</span
+                        >
+                      </div>
+                      <div class="flex-1">
+                        <span
+                          class="font-medium text-blue-900 dark:text-blue-100"
+                          >Lunch Break</span
+                        >
+                        <p class="text-sm text-blue-700 dark:text-blue-300">
+                          60-minute lunch break
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex items-center gap-4 p-3 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-700"
+                    >
+                      <div class="flex-shrink-0 w-16 text-center">
+                        <span
+                          class="text-sm font-medium text-amber-700 dark:text-amber-300"
+                          >15:15</span
+                        >
+                      </div>
+                      <div class="flex-1">
+                        <span
+                          class="font-medium text-amber-900 dark:text-amber-100"
+                          >Coffee Break</span
+                        >
+                        <p class="text-sm text-amber-700 dark:text-amber-300">
+                          15-minute refreshment break
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Additional Info -->
+              <div
+                class="mt-6 p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg border border-primary-200 dark:border-primary-700"
+              >
+                <div class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary-600 dark:text-primary-400 mt-0.5 flex-shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                  </svg>
+                  <div>
+                    <p
+                      class="text-sm text-primary-800 dark:text-primary-200 font-medium"
+                    >
+                      All times are in Central European Time (CET)
+                    </p>
+                    <p
+                      class="text-xs text-primary-700 dark:text-primary-300 mt-1"
+                    >
+                      Please arrive 15 minutes before your workshop starts to
+                      ensure a smooth beginning
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           @for (workshop of workshops(); track workshop.id) {
           <div
@@ -34,13 +284,17 @@ import { WorkshopService } from '../../services/workshop.service';
           >
             <!-- Sold Out Banner -->
             @if (workshop.soldOut) {
-              <div class="absolute inset-0 z-10 pointer-events-none overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-full">
-                  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-red-600 text-white font-bold text-2xl w-96 h-20 flex items-center justify-center shadow-lg">
-                    <span class="tracking-widest">SOLD OUT</span>
-                  </div>
+            <div
+              class="absolute inset-0 z-10 pointer-events-none overflow-hidden"
+            >
+              <div class="absolute top-0 left-0 w-full h-full">
+                <div
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-red-600 text-white font-bold text-2xl w-96 h-20 flex items-center justify-center shadow-lg"
+                >
+                  <span class="tracking-widest">SOLD OUT</span>
                 </div>
               </div>
+            </div>
             }
             <div class="p-8 md:p-10 flex-1 flex flex-col">
               <!-- Workshop Header -->
@@ -151,8 +405,12 @@ import { WorkshopService } from '../../services/workshop.service';
                     <!-- Store Container -->
                     <rect x="3" y="8" width="18" height="12" rx="2" />
                     <!-- Signal Waves -->
-                    <path d="M7 12c0-1.5 1.5-3 3-3s3 1.5 3 3-1.5 3-3 3-3-1.5-3-3z" />
-                    <path d="M5 12c0-2.5 2.5-5 5-5s5 2.5 5 5-2.5 5-5 5-5-2.5-5-5z" />
+                    <path
+                      d="M7 12c0-1.5 1.5-3 3-3s3 1.5 3 3-1.5 3-3 3-3-1.5-3-3z"
+                    />
+                    <path
+                      d="M5 12c0-2.5 2.5-5 5-5s5 2.5 5 5-2.5 5-5 5-5-2.5-5-5z"
+                    />
                     <!-- State Flow Lines -->
                     <path d="M16 12h2" />
                     <path d="M16 10h1.5" />
@@ -219,7 +477,7 @@ import { WorkshopService } from '../../services/workshop.service';
                 </div>
               </div>
 
-                            <!-- Content Container -->
+              <!-- Content Container -->
               <div class="flex-1 flex flex-col">
                 <!-- Workshop Details -->
                 <div
@@ -228,7 +486,9 @@ import { WorkshopService } from '../../services/workshop.service';
                   <!-- Duration -->
                   <div
                     class="flex items-center space-x-3 text-gray-600 dark:text-gray-400"
-                    [attr.aria-label]="'Workshop duration: ' + workshop.duration"
+                    [attr.aria-label]="
+                      'Workshop duration: ' + workshop.duration
+                    "
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -265,7 +525,9 @@ import { WorkshopService } from '../../services/workshop.service';
                       stroke-linejoin="round"
                       aria-hidden="true"
                     >
-                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <path
+                        d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                      ></path>
                       <circle cx="9" cy="7" r="4"></circle>
                       <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
                       <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
@@ -285,7 +547,8 @@ import { WorkshopService } from '../../services/workshop.service';
                     What you'll learn
                   </h4>
                   <div class="space-y-3">
-                    @for (benefit of workshop.benefits.slice(0, 4); track benefit; let i = $index) {
+                    @for (benefit of workshop.benefits.slice(0, 4); track
+                    benefit; let i = $index) {
                     <div
                       class="flex items-start gap-3 benefit-item"
                       [style.animation-delay]="i * 100 + 'ms'"
@@ -306,13 +569,15 @@ import { WorkshopService } from '../../services/workshop.service';
                         </p>
                       </div>
                     </div>
-                    }
-                    @if (workshop.benefits.length > 4) {
-                      <div class="text-center mt-2">
-                        <span class="text-xs text-primary-600 dark:text-primary-400 font-medium">
-                          +{{ workshop.benefits.length - 4 }} more learning objectives
-                        </span>
-                      </div>
+                    } @if (workshop.benefits.length > 4) {
+                    <div class="text-center mt-2">
+                      <span
+                        class="text-xs text-primary-600 dark:text-primary-400 font-medium"
+                      >
+                        +{{ workshop.benefits.length - 4 }} more learning
+                        objectives
+                      </span>
+                    </div>
                     }
                   </div>
                 </div>
@@ -326,58 +591,73 @@ import { WorkshopService } from '../../services/workshop.service';
                     Led by Expert Trainers
                   </h4>
                   <div class="space-y-3">
-                    @for (trainerId of workshop.trainers || [workshop.trainerId]; track trainerId; let i = $index) {
-                      <!-- Limit to first 2 trainers for consistent height -->
-                      @if (i < 2) {
-                        <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
-                          <div class="relative flex-shrink-0 mx-auto sm:mx-0">
-                            <img
-                              [src]="getSpeakerImage(trainerId)"
-                              [alt]="getSpeakerName(trainerId)"
-                              class="w-16 h-16 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
-                            />
-                            @if (getSpeakerById(trainerId)?.angularTeam) {
-                              <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                                <img
-                                    src="assets/images/angular_gradient.png"
-                                    alt="Angular Team"
-                                    class="w-5 h-5"
-                                />
-                              </div>
-                            }
-                            @if (getSpeakerById(trainerId)?.ngrxTeam) {
-                              <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                                <img
-                                    src="assets/images/ngrx-logo.png"
-                                    alt="NgRx Team"
-                                    class="w-5 h-5"
-                                />
-                              </div>
-                            }
-                          </div>
-                          <div class="flex-1 text-center sm:text-left">
-                            <h5 class="text-base font-bold text-gray-900 dark:text-gray-100 mb-1">
-                              {{ getSpeakerName(trainerId) }}
-                            </h5>
-                            <p class="text-sm font-medium text-primary-700 dark:text-primary-300 mb-1">
-                              {{ getSpeakerTitle(trainerId) }}
-                            </p>
-                            @if (getSpeakerCompany(trainerId)) {
-                              <p class="text-xs text-gray-600 dark:text-gray-400">
-                                {{ getSpeakerCompany(trainerId) }}
-                              </p>
-                            }
-                          </div>
+                    @for (trainerId of workshop.trainers ||
+                    [workshop.trainerId]; track trainerId; let i = $index) {
+                    <!-- Limit to first 2 trainers for consistent height -->
+                    @if (i < 2) {
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700"
+                    >
+                      <div class="relative flex-shrink-0 mx-auto sm:mx-0">
+                        <img
+                          [src]="getSpeakerImage(trainerId)"
+                          [alt]="getSpeakerName(trainerId)"
+                          class="w-16 h-16 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
+                        />
+                        @if (getSpeakerById(trainerId)?.angularTeam) {
+                        <div
+                          class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5"
+                        >
+                          <img
+                            src="assets/images/angular_gradient.png"
+                            alt="Angular Team"
+                            class="w-5 h-5"
+                          />
                         </div>
-                      }
-                    }
-                    <!-- Show additional trainers indicator if more than 2 -->
-                    @if ((workshop.trainers || [workshop.trainerId]).length > 2) {
-                      <div class="text-center">
-                        <span class="text-sm text-primary-600 dark:text-primary-400 font-medium">
-                          +{{ (workshop.trainers || [workshop.trainerId]).length - 2 }} more trainer(s)
-                        </span>
+                        } @if (getSpeakerById(trainerId)?.ngrxTeam) {
+                        <div
+                          class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5"
+                        >
+                          <img
+                            src="assets/images/ngrx-logo.png"
+                            alt="NgRx Team"
+                            class="w-5 h-5"
+                          />
+                        </div>
+                        }
                       </div>
+                      <div class="flex-1 text-center sm:text-left">
+                        <h5
+                          class="text-base font-bold text-gray-900 dark:text-gray-100 mb-1"
+                        >
+                          {{ getSpeakerName(trainerId) }}
+                        </h5>
+                        <p
+                          class="text-sm font-medium text-primary-700 dark:text-primary-300 mb-1"
+                        >
+                          {{ getSpeakerTitle(trainerId) }}
+                        </p>
+                        @if (getSpeakerCompany(trainerId)) {
+                        <p class="text-xs text-gray-600 dark:text-gray-400">
+                          {{ getSpeakerCompany(trainerId) }}
+                        </p>
+                        }
+                      </div>
+                    </div>
+                    } }
+                    <!-- Show additional trainers indicator if more than 2 -->
+                    @if ((workshop.trainers || [workshop.trainerId]).length > 2)
+                    {
+                    <div class="text-center">
+                      <span
+                        class="text-sm text-primary-600 dark:text-primary-400 font-medium"
+                      >
+                        +{{
+                          (workshop.trainers || [workshop.trainerId]).length - 2
+                        }}
+                        more trainer(s)
+                      </span>
+                    </div>
                     }
                   </div>
                 </div>
@@ -386,48 +666,51 @@ import { WorkshopService } from '../../services/workshop.service';
               <!-- Learn More CTA - Always at bottom -->
               <div class="mt-auto">
                 <button
-                  [class]="workshop.soldOut 
-                    ? 'w-full bg-gray-400 text-white font-medium py-3.5 px-5 rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-not-allowed opacity-60'
-                    : 'w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3.5 px-5 rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800'"
+                  [class]="
+                    workshop.soldOut
+                      ? 'w-full bg-gray-400 text-white font-medium py-3.5 px-5 rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm cursor-not-allowed opacity-60'
+                      : 'w-full bg-primary-600 hover:bg-primary-700 text-white font-medium py-3.5 px-5 rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800'
+                  "
                   (click)="!workshop.soldOut && openWorkshopDetails(workshop)"
                   [disabled]="workshop.soldOut"
                   [attr.aria-label]="
-                    workshop.soldOut 
+                    workshop.soldOut
                       ? 'Workshop sold out - no longer available'
-                      : 'View detailed workshop information for ' + workshop.title
+                      : 'View detailed workshop information for ' +
+                        workshop.title
                   "
                 >
                   @if (workshop.soldOut) {
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <line x1="15" y1="9" x2="9" y2="15"></line>
-                      <line x1="9" y1="9" x2="15" y2="15"></line>
-                    </svg>
-                    <span class="tracking-wide">Workshop Sold Out</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                  </svg>
+                  <span class="tracking-wide">Workshop Sold Out</span>
                   } @else {
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                    </svg>
-                    <span class="tracking-wide">View Workshop Details</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span class="tracking-wide">View Workshop Details</span>
                   }
                 </button>
               </div>
@@ -505,59 +788,67 @@ import { WorkshopService } from '../../services/workshop.service';
         <div class="p-6 pt-4 md:p-8 md:pt-4">
           <!-- Workshop Trainers -->
           <div class="mb-8">
-            <h4
-              class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6"
-            >
+            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               Expert Workshop Leaders
             </h4>
             <div class="space-y-6">
               @for (trainerId of activeWorkshop()?.trainers ||
               [activeWorkshop()?.trainerId]; track trainerId) {
-                <div class="flex flex-col sm:flex-row sm:items-start gap-6 p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
-                  <div class="relative flex-shrink-0 mx-auto sm:mx-0">
+              <div
+                class="flex flex-col sm:flex-row sm:items-start gap-6 p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700"
+              >
+                <div class="relative flex-shrink-0 mx-auto sm:mx-0">
+                  <img
+                    [src]="getSpeakerImage(trainerId)"
+                    [alt]="getSpeakerName(trainerId)"
+                    class="w-24 h-24 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
+                  />
+                  @if (getSpeakerById(trainerId)?.angularTeam) {
+                  <div
+                    class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-1"
+                  >
                     <img
-                      [src]="getSpeakerImage(trainerId)"
-                      [alt]="getSpeakerName(trainerId)"
-                      class="w-24 h-24 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
+                      src="assets/images/angular_gradient.png"
+                      alt="Angular Team"
+                      class="w-7 h-7"
                     />
-                    @if (getSpeakerById(trainerId)?.angularTeam) {
-                      <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-1">
-                        <img
-                            src="assets/images/angular_gradient.png"
-                            alt="Angular Team"
-                            class="w-7 h-7"
-                        />
-                      </div>
-                    }
-                    @if (getSpeakerById(trainerId)?.ngrxTeam) {
-                      <div class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-1">
-                        <img
-                            src="assets/images/ngrx-logo.png"
-                            alt="NgRx Team"
-                            class="w-7 h-7"
-                        />
-                      </div>
-                    }
                   </div>
-                  <div class="flex-1 text-center sm:text-left">
-                    <h5 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-                      {{ getSpeakerName(trainerId) }}
-                    </h5>
-                    <p class="text-lg font-semibold text-primary-700 dark:text-primary-300 mb-2">
-                      {{ getSpeakerTitle(trainerId) }}
-                    </p>
-                    @if (getSpeakerCompany(trainerId)) {
-                      <p class="text-base text-gray-600 dark:text-gray-400 mb-3">
-                        {{ getSpeakerCompany(trainerId) }}
-                      </p>
-                    }
-                    @if (getSpeakerById(trainerId)?.bio) {
-                      <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                        {{ getSpeakerById(trainerId)?.bio }}
-                      </p>
-                    }
+                  } @if (getSpeakerById(trainerId)?.ngrxTeam) {
+                  <div
+                    class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-1"
+                  >
+                    <img
+                      src="assets/images/ngrx-logo.png"
+                      alt="NgRx Team"
+                      class="w-7 h-7"
+                    />
                   </div>
+                  }
                 </div>
+                <div class="flex-1 text-center sm:text-left">
+                  <h5
+                    class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2"
+                  >
+                    {{ getSpeakerName(trainerId) }}
+                  </h5>
+                  <p
+                    class="text-lg font-semibold text-primary-700 dark:text-primary-300 mb-2"
+                  >
+                    {{ getSpeakerTitle(trainerId) }}
+                  </p>
+                  @if (getSpeakerCompany(trainerId)) {
+                  <p class="text-base text-gray-600 dark:text-gray-400 mb-3">
+                    {{ getSpeakerCompany(trainerId) }}
+                  </p>
+                  } @if (getSpeakerById(trainerId)?.bio) {
+                  <p
+                    class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed"
+                  >
+                    {{ getSpeakerById(trainerId)?.bio }}
+                  </p>
+                  }
+                </div>
+              </div>
               }
             </div>
           </div>
