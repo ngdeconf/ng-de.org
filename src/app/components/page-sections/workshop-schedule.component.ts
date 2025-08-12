@@ -269,7 +269,8 @@ import { Component } from '@angular/core';
                     class="text-xs text-primary-700 dark:text-primary-300 mt-1"
                   >
                     Please arrive 15 minutes before your workshop starts to
-                    ensure a smooth beginning
+                    ensure a smooth beginning. Schedule may be subject to slight
+                    changes.
                   </p>
                 </div>
               </div>
