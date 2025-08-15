@@ -20,31 +20,6 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
 
         <ngde-ticket-timeline />
 
-        <!-- Sold Out Info Box -->
-        <div class="max-w-4xl mx-auto mb-12">
-          <div class="bg-gradient-to-r from-[#e40341]/10 to-[#f034e0]/10 border border-[#e40341]/20 rounded-xl p-6 backdrop-blur-sm">
-            <div class="flex items-start gap-4">
-              <div class="flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#e40341]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <div class="flex-1">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  🎉 Conference Only & Conference + Workshop Tickets: SOLD OUT!
-                </h3>
-                <div class="text-gray-700 dark:text-gray-300 space-y-2">
-                  <p class="font-medium text-[#e40341]">We are now really sold out and are trying to book the second stage at our location to expand our program.</p>
-                  <p>We will get in touch as soon as we have news about this. In the meantime, you can still secure a <strong>Workshop Only</strong> ticket to join us for the hands-on learning experience!</p>
-                  <p class="text-sm font-medium bg-white/50 dark:bg-gray-800/50 px-3 py-2 rounded-lg border-l-4 border-[#e40341]">
-                    💡 Stay tuned for updates on additional venue space and expanded program opportunities!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto"
         >
@@ -52,15 +27,18 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
           <div class="relative">
             <!-- Sold Out Overlay -->
             @if (ticket.soldOut) {
-              <div class="absolute inset-0 z-20 pointer-events-none overflow-hidden rounded-2xl">
-                <div class="absolute top-0 left-0 w-full h-full">
-                  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-red-600 text-white font-bold text-2xl w-96 h-20 flex items-center justify-center shadow-lg">
-                    <span class="tracking-widest">SOLD OUT</span>
-                  </div>
+            <div
+              class="absolute inset-0 z-20 pointer-events-none overflow-hidden rounded-2xl"
+            >
+              <div class="absolute top-0 left-0 w-full h-full">
+                <div
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-red-600 text-white font-bold text-2xl w-96 h-20 flex items-center justify-center shadow-lg"
+                >
+                  <span class="tracking-widest">SOLD OUT</span>
                 </div>
               </div>
-            }
-            @if (ticket.type === 'bundle') {
+            </div>
+            } @if (ticket.type === 'bundle') {
             <div
               class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[#921bf2] to-[#f034e0] px-6 py-2 rounded-full shadow-lg z-10"
             >
