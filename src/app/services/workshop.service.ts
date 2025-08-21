@@ -21,6 +21,7 @@ export class WorkshopService {
       duration: '8 hours',
       capacity: 30,
       room: 'Aula',
+      address: 'Oderberger Str. 57, 10435 Berlin, Germany',
       outline: [
         {
           title: 'Block 1',
@@ -78,6 +79,7 @@ export class WorkshopService {
       duration: '8 hours',
       capacity: 30,
       room: 'Room 129',
+      address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
           title: 'Foundations of Agentic AI in Angular',
@@ -137,6 +139,7 @@ export class WorkshopService {
       duration: '8 hours',
       capacity: 30,
       room: 'Room 121',
+      address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
           title: 'Browser Render Pipeline & Event Loop',
@@ -201,6 +204,7 @@ export class WorkshopService {
       duration: '8 hours',
       capacity: 30,
       room: 'Room 112',
+      address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
           title: 'Angular Signals Foundation',
@@ -265,6 +269,7 @@ export class WorkshopService {
       duration: '8 hours',
       capacity: 30,
       room: 'Room 129',
+      address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
           title: 'Browser Security Fundamentals',
@@ -327,6 +332,7 @@ export class WorkshopService {
       duration: '8 hours',
       capacity: 30,
       room: 'Scoolroom',
+      address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
           title: 'Accessibility Fundamentals & Legal Framework',
@@ -394,6 +400,7 @@ export class WorkshopService {
       duration: '8 hours',
       capacity: 30,
       room: 'Room 123',
+      address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
           title: '💻 Hands-on Exercise: First Test',

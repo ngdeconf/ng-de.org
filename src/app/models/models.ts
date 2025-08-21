@@ -47,6 +47,7 @@ export interface Workshop {
   duration: string;
   capacity: number;
   room: string;
+  address: string;
   outline?: {
     title: string;
     topics: string[];

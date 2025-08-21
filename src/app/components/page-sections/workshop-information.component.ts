@@ -91,6 +91,31 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 workshop.room
               }}</span>
             </div>
+
+            <!-- Location Indicator -->
+            <div
+              class="flex items-center gap-1.5 bg-gray-600/20 backdrop-blur-sm px-2 py-1 rounded-full border border-gray-500/30"
+              [title]="workshop.address"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-3 w-3 text-gray-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="text-gray-300 text-xs font-medium">
+                {{
+                  workshop.address.includes('Oderberger')
+                    ? 'Oderberger Str.'
+                    : 'Kastanienalle'
+                }}
+              </span>
+            </div>
           </div>
 
           <!-- Trainers - Postcard Style on Right -->
@@ -289,26 +314,102 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
               >
                 {{ activeWorkshop()?.title }}
               </h3>
+              <!-- Room and Location Information -->
               <div
-                class="flex items-center gap-2 text-primary-600 dark:text-primary-400"
+                class="flex items-center gap-4 text-primary-600 dark:text-primary-400"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-4 w-4"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-                  ></path>
-                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>
-                <span class="font-medium">{{ activeWorkshop()?.room }}</span>
+                <!-- Room -->
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                    ></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                  <span class="font-medium">{{ activeWorkshop()?.room }}</span>
+                </div>
+
+                <!-- Location -->
+                <div class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span class="font-medium">{{
+                    activeWorkshop()?.address
+                  }}</span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center gap-2 ml-auto">
+                  <a
+                    href="https://maps.google.com/?q={{
+                      activeWorkshop()?.address || ''
+                    }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="p-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+                    title="Open in Maps"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-1.447-.894L15 4m0 13V4m-6 3l6-3"
+                      ></path>
+                    </svg>
+                  </a>
+                  <button
+                    (click)="copyAddressToClipboard()"
+                    class="p-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+                    title="Copy Address"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                      ></path>
+                      <rect
+                        x="8"
+                        y="2"
+                        width="8"
+                        height="4"
+                        rx="1"
+                        ry="1"
+                      ></rect>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
             <button
@@ -684,6 +785,30 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
       </div>
     </div>
     }
+
+    <!-- Toast Notification -->
+    @if (showToast()) {
+    <div
+      class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-[60] bg-gray-800 dark:bg-gray-900 text-white px-6 py-3 rounded-lg shadow-lg flex items-center gap-3 animate-in slide-in-from-bottom-2 duration-300 border border-gray-700 dark:border-gray-600"
+      role="alert"
+      aria-live="polite"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5 text-green-400"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M9 12l2 2 4-4"></path>
+        <path
+          d="M21 12c-1 0-2-.4-2.7-1.1L16 8.4V6c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-2.4l2.3-2.5c.7-.7 1.7-1.1 2.7-1.1z"
+        ></path>
+      </svg>
+      <span class="font-medium">{{ toastMessage() }}</span>
+    </div>
+    }
   `,
   styles: [
     `
@@ -784,6 +909,37 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
           background-color: rgba(55, 65, 81, 0.5);
         }
       }
+
+      /* Toast animations */
+      .animate-in {
+        animation: toast-slide-in 0.3s ease-out forwards;
+      }
+
+      @keyframes toast-slide-in {
+        from {
+          opacity: 0;
+          transform: translate(-50%, 20px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, 0);
+        }
+      }
+
+      .slide-in-from-bottom-2 {
+        animation: slide-in-from-bottom-2 0.3s ease-out forwards;
+      }
+
+      @keyframes slide-in-from-bottom-2 {
+        from {
+          opacity: 0;
+          transform: translate(-50%, 20px);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, 0);
+        }
+      }
     `
   ],
   standalone: true,
@@ -800,6 +956,8 @@ export class WorkshopInformationComponent {
   expandedAccordions = signal<boolean[]>([]);
   isTrainersExpanded = signal(false);
   isAboutExpanded = signal(false);
+  showToast = signal(false);
+  toastMessage = signal('');
 
   constructor(
     private speakerService: SpeakerService,
@@ -901,5 +1059,23 @@ export class WorkshopInformationComponent {
 
   toggleAbout(): void {
     this.isAboutExpanded.set(!this.isAboutExpanded());
+  }
+
+  copyAddressToClipboard(): void {
+    const address = this.activeWorkshop()?.address;
+    if (address) {
+      navigator.clipboard
+        .writeText(address)
+        .then(() => {
+          this.toastMessage.set('Address copied to clipboard!');
+          this.showToast.set(true);
+          setTimeout(() => {
+            this.showToast.set(false);
+          }, 3000); // Hide toast after 3 seconds
+        })
+        .catch(err => {
+          console.error('Failed to copy address:', err);
+        });
+    }
   }
 }
