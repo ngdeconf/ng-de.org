@@ -412,16 +412,15 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 </div>
               </div>
             </div>
+            <!-- Close Button -->
             <button
-              #closeButton
-              id="dialog-close-btn"
-              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 absolute right-5 md:right-7"
+              class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500"
               aria-label="Close dialog"
               (click)="closeWorkshopDetails()"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -775,10 +774,10 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
             class="flex justify-end pt-6 border-t border-gray-200 dark:border-gray-700"
           >
             <button
-              class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
-              (click)="closeWorkshopDetails()"
+              class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 shadow-sm hover:shadow-md"
+              (click)="getTicket()"
             >
-              Close
+              Get your ticket
             </button>
           </div>
         </div>
@@ -1077,5 +1076,23 @@ export class WorkshopInformationComponent {
           console.error('Failed to copy address:', err);
         });
     }
+  }
+
+  getTicket(): void {
+    // Close the dialog first
+    this.closeWorkshopDetails();
+
+    // Wait for dialog to close, then scroll to ticket section
+    setTimeout(() => {
+      const ticketSection = document.getElementById('tickets');
+      if (ticketSection) {
+        ticketSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      } else {
+        console.warn('Tickets section not found');
+      }
+    }, 350); // Slightly longer than dialog close animation
   }
 }
