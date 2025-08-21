@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, model } from '@angular/core';
 
 @Component({
   selector: 'ngde-workshop-schedule',
@@ -15,17 +15,17 @@ import { Component } from '@angular/core';
         <div
           class="bg-gradient-to-r from-primary-600 to-primary-700 px-6 py-4 flex items-center justify-between"
         >
-          <h3 class="text-xl font-bold text-white">📅 Workshop Day Schedule</h3>
+          <h3 class="text-xl font-bold text-white">📅 Schedule</h3>
           <button
             (click)="toggleSchedule()"
             class="text-white hover:text-primary-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600 rounded-md p-1"
-            [attr.aria-expanded]="isOpen"
+            [attr.aria-expanded]="isOpen()"
             aria-label="Toggle schedule visibility"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5 transition-transform duration-300"
-              [class.rotate-180]="isOpen"
+              [class.rotate-180]="isOpen()"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -41,10 +41,10 @@ import { Component } from '@angular/core';
         <!-- Agenda Content -->
         <div
           class="overflow-hidden transition-all duration-300 ease-in-out"
-          [class.max-h-0]="!isOpen"
-          [class.max-h-[2000px]]="isOpen"
-          [class.opacity-0]="!isOpen"
-          [class.opacity-100]="isOpen"
+          [class.max-h-0]="!isOpen()"
+          [class.max-h-[2000px]]="isOpen()"
+          [class.opacity-0]="!isOpen()"
+          [class.opacity-100]="isOpen()"
         >
           <div class="p-6 md:p-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -283,9 +283,9 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class WorkshopScheduleComponent {
-  isOpen = true; // Default open
+  isOpen = model(true);
 
   toggleSchedule() {
-    this.isOpen = !this.isOpen;
+    this.isOpen.set(!this.isOpen());
   }
 }

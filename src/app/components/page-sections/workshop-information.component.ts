@@ -7,6 +7,7 @@ import {
 } from '@angular/core';
 import { SpeakerService } from '../../services/speaker.service';
 import { WorkshopService } from '../../services/workshop.service';
+import { WorkshopScheduleComponent } from './workshop-schedule.component';
 
 @Component({
   selector: 'ngde-workshop-information',
@@ -341,6 +342,8 @@ import { WorkshopService } from '../../services/workshop.service';
             </div>
           </div>
 
+          <ngde-workshop-schedule [isOpen]="false"></ngde-workshop-schedule>
+
           <!-- Workshop Trainers -->
           <div class="mb-8">
             <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
@@ -610,7 +613,8 @@ import { WorkshopService } from '../../services/workshop.service';
       }
     `
   ],
-  standalone: true
+  standalone: true,
+  imports: [WorkshopScheduleComponent]
 })
 export class WorkshopInformationComponent {
   closeButton = viewChild.required<ElementRef>('closeButton');
