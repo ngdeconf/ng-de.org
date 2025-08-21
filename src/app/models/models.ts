@@ -17,7 +17,7 @@ export interface ScheduleEntry {
   information: string;
   location: string;
   session: string | null;
-  speakers?: string[]
+  speakers?: string[];
 }
 
 export interface ScheduleDay {
@@ -34,7 +34,7 @@ export interface Talk {
   time: string;
   day: 'day1' | 'day2';
   room: string;
-  speakers?: string[]
+  speakers?: string[];
 }
 
 export interface Workshop {
@@ -46,6 +46,7 @@ export interface Workshop {
   trainerId: string;
   duration: string;
   capacity: number;
+  room: string;
   outline?: {
     title: string;
     topics: string[];
@@ -81,5 +82,11 @@ export interface Sponsor {
   name: string;
   logoUrl: string;
   websiteUrl: string;
-  level: 'Platinum' | 'Gold' | 'Silver' | 'Bronze' | 'Travel' | 'Community Partners';
+  level:
+    | 'Platinum'
+    | 'Gold'
+    | 'Silver'
+    | 'Bronze'
+    | 'Travel'
+    | 'Community Partners';
 }

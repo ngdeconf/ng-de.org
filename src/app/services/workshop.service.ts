@@ -20,6 +20,7 @@ export class WorkshopService {
       trainerId: 'manfred-steyer',
       duration: '8 hours',
       capacity: 30,
+      room: 'Aula',
       outline: [
         {
           title: 'Block 1',
@@ -76,6 +77,7 @@ export class WorkshopService {
       trainerId: 'robin-boehm',
       duration: '8 hours',
       capacity: 30,
+      room: 'Room 129',
       outline: [
         {
           title: 'Foundations of Agentic AI in Angular',
@@ -101,7 +103,7 @@ export class WorkshopService {
             'Self-adapting components that learn from user behavior',
             'Implementing AI-powered form validation and suggestions',
             'Creating intelligent UI components with dynamic behavior',
-            'Real-time AI integration with Angular\'s reactive forms'
+            "Real-time AI integration with Angular's reactive forms"
           ]
         },
         {
@@ -122,16 +124,19 @@ export class WorkshopService {
     {
       id: '3',
       title: 'Angular Performance based on Modern Reactivity and SSR',
-      teaser: 'Master browser rendering, event loop, and modern Angular features like NgOptimizedImage and SSR for high-performance applications.',
+      teaser:
+        'Master browser rendering, event loop, and modern Angular features like NgOptimizedImage and SSR for high-performance applications.',
       benefits: [
         'Control the browser render pipeline and optimize application performance',
         'Master JavaScript event loop and network request optimization',
         'Optimize User Experience with defer & Server Side Rendering'
       ],
-      abstract: 'Advance your Angular expertise and build high-performance applications. You\'ll gain mastery over the JavaScript event loop to write efficient, non-blocking code. We will rigorously analyze network requests, identifying bottlenecks and implementing optimization strategies. Finally, we\'ll tackle Core Web Vitals and explore modern techniques like NgOptimizedImage, @defer and Server-Side Rendering to deliver blazingly fast user experiences.',
+      abstract:
+        "Advance your Angular expertise and build high-performance applications. You'll gain mastery over the JavaScript event loop to write efficient, non-blocking code. We will rigorously analyze network requests, identifying bottlenecks and implementing optimization strategies. Finally, we'll tackle Core Web Vitals and explore modern techniques like NgOptimizedImage, @defer and Server-Side Rendering to deliver blazingly fast user experiences.",
       trainerId: 'michael-hladky',
       duration: '8 hours',
       capacity: 30,
+      room: 'Room 121',
       outline: [
         {
           title: 'Browser Render Pipeline & Event Loop',
@@ -174,23 +179,28 @@ export class WorkshopService {
           ]
         }
       ],
-      targetAudience: 'This workshop is designed for Angular developers who want to master performance optimization, modern Angular features, and SSR implementation.',
+      targetAudience:
+        'This workshop is designed for Angular developers who want to master performance optimization, modern Angular features, and SSR implementation.',
       trainers: ['michael-hladky', 'enea-jahollari'],
       soldOut: false
     },
     {
       id: '5',
-      title: 'Mastering NgRx SignalStore: From Key Principles to Advanced Patterns',
-      teaser: 'Enhance your Angular and NgRx expertise with hands-on guidance for implementing NgRx SignalStore to solve real-world challenges in modern Angular applications.',
+      title:
+        'Mastering NgRx SignalStore: From Key Principles to Advanced Patterns',
+      teaser:
+        'Enhance your Angular and NgRx expertise with hands-on guidance for implementing NgRx SignalStore to solve real-world challenges in modern Angular applications.',
       benefits: [
         'Master Angular Signals APIs and SignalStore core principles',
         'Integrate RxJS with SignalStore for optimal reactive workflows',
         'Build custom features and use advanced plugins like Entities and Events'
       ],
-      abstract: 'Enhance your Angular and NgRx expertise in an in-depth workshop led by NgRx team members Marko Stanimirović and Rainer Hahnekamp. This workshop provides hands-on guidance for implementing NgRx SignalStore to solve real-world challenges in modern Angular applications.\n\nNgRx SignalStore leverages the power of Angular Signals and a structured state management approach to streamline reactive development workflows. Its modular design, simplicity, and declarative nature form the foundation for maintainable and scalable implementations.\n\nWhat to Expect:\n\nThis workshop guides you through a carefully structured curriculum where each topic builds upon the previous one, providing a progressive experience from foundational concepts to advanced techniques:\n\n- Exploring Angular Signals APIs to establish the technical foundation for what follows\n- Mastering SignalStore core principles and main building blocks\n- Integrating RxJS with SignalStore to combine the best of both reactive approaches\n- Building custom SignalStore features that consolidate common patterns into reusable abstractions\n- Using the Entities plugin to facilitate data collection management\n- Applying architectural patterns for managing local and global state in complex applications\n- Utilizing the new Events plugin for orchestrating complex workflows with elegance\n\nEach section includes practical implementation through exercises and code examples, allowing you to apply concepts directly to real-world development challenges.',
+      abstract:
+        'Enhance your Angular and NgRx expertise in an in-depth workshop led by NgRx team members Marko Stanimirović and Rainer Hahnekamp. This workshop provides hands-on guidance for implementing NgRx SignalStore to solve real-world challenges in modern Angular applications.\n\nNgRx SignalStore leverages the power of Angular Signals and a structured state management approach to streamline reactive development workflows. Its modular design, simplicity, and declarative nature form the foundation for maintainable and scalable implementations.\n\nWhat to Expect:\n\nThis workshop guides you through a carefully structured curriculum where each topic builds upon the previous one, providing a progressive experience from foundational concepts to advanced techniques:\n\n- Exploring Angular Signals APIs to establish the technical foundation for what follows\n- Mastering SignalStore core principles and main building blocks\n- Integrating RxJS with SignalStore to combine the best of both reactive approaches\n- Building custom SignalStore features that consolidate common patterns into reusable abstractions\n- Using the Entities plugin to facilitate data collection management\n- Applying architectural patterns for managing local and global state in complex applications\n- Utilizing the new Events plugin for orchestrating complex workflows with elegance\n\nEach section includes practical implementation through exercises and code examples, allowing you to apply concepts directly to real-world development challenges.',
       trainerId: 'marko-stanimirovic',
       duration: '8 hours',
       capacity: 30,
+      room: 'Room 112',
       outline: [
         {
           title: 'Angular Signals Foundation',
@@ -233,24 +243,28 @@ export class WorkshopService {
           ]
         }
       ],
-      targetAudience: 'You should have a fundamental understanding of Angular Signals and TypeScript. Experience with NgRx is helpful but not required.',
+      targetAudience:
+        'You should have a fundamental understanding of Angular Signals and TypeScript. Experience with NgRx is helpful but not required.',
       trainers: ['marko-stanimirovic', 'rainer-hahnekamp'],
       soldOut: false
     },
     {
       id: '4',
       title: 'Hands On: Security in Angular Applications',
-      teaser: 'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies.',
+      teaser:
+        'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies.',
       benefits: [
         'Master core browser security concepts and XSS prevention',
         'Implement and deploy Content Security Policy (CSP) effectively',
         'Secure token handling and OAuth 2.1 patterns',
         'Learn Angular built-in Security mechanism and how to use them'
       ],
-      abstract: 'Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies. This workshop covers core browser security concepts, Cross-Site Scripting (XSS) prevention, Content Security Policy (CSP), and secure token handling. You\'ll explore advanced topics like OAuth 2.0/2.1 security patterns and Backend-for-Frontend (BFF) architectures. With practical examples and hands-on guidance, you\'ll gain the skills to identify vulnerabilities and implement effective protection mechanisms in your frontend code. Perfect for developers and architects who want to take their web application security to the next level.',
+      abstract:
+        "Learn how to build secure Angular applications by mastering real-world attack scenarios and modern defense strategies. This workshop covers core browser security concepts, Cross-Site Scripting (XSS) prevention, Content Security Policy (CSP), and secure token handling. You'll explore advanced topics like OAuth 2.0/2.1 security patterns and Backend-for-Frontend (BFF) architectures. With practical examples and hands-on guidance, you'll gain the skills to identify vulnerabilities and implement effective protection mechanisms in your frontend code. Perfect for developers and architects who want to take their web application security to the next level.",
       trainerId: 'martina-kraus',
       duration: '8 hours',
       capacity: 30,
+      room: 'Room 129',
       outline: [
         {
           title: 'Browser Security Fundamentals',
@@ -291,23 +305,28 @@ export class WorkshopService {
           ]
         }
       ],
-      targetAudience: 'This workshop is designed for Angular developers and architects who want to enhance their application security knowledge and implement robust security measures.',
+      targetAudience:
+        'This workshop is designed for Angular developers and architects who want to enhance their application security knowledge and implement robust security measures.',
       trainers: ['martina-kraus'],
       soldOut: false
     },
     {
       id: '6',
-      title: 'Web Accessibility: Requirements, Implementation, and Testing for Modern Applications',
-      teaser: 'Learn how to build accessible web applications that comply with legal requirements and provide inclusive user experiences for everyone.',
+      title:
+        'Web Accessibility: Requirements, Implementation, and Testing for Modern Applications',
+      teaser:
+        'Learn how to build accessible web applications that comply with legal requirements and provide inclusive user experiences for everyone.',
       benefits: [
         'Understand legal accessibility requirements and WCAG guidelines',
         'Implement accessible features in HTML, CSS, and JavaScript',
         'Master testing tools and automation for accessibility audits'
       ],
-      abstract: 'With accessibility laws becoming mandatory in many regions, ensuring your web applications are accessible is no longer optional. This hands-on workshop teaches you how to audit existing websites for accessibility compliance and implement digital accessibility according to legal requirements and WCAG guidelines.\n\nThrough a combination of theoretical background and practical exercises, you\'ll explore the fundamental principles of accessibility, analyze implementation of accessible features in HTML, CSS, and JavaScript, and learn to use tools for testing your websites for accessibility compliance.\n\nWe\'ll start with accessibility fundamentals and the current legal framework. Then we\'ll examine how to technically adapt websites and web applications to meet requirements. We\'ll dive into technical implementation details and learn what to consider for colors, media, layouts, page information, and web components when building accessible websites.\n\nBeyond accessible content design, navigation elements, and interaction possibilities, there\'s a special focus on practical testing of existing websites with appropriate tools. We\'ll conclude by looking at automation of accessibility audits, their limitations, and the future role of AI-supported testing mechanisms.',
+      abstract:
+        "With accessibility laws becoming mandatory in many regions, ensuring your web applications are accessible is no longer optional. This hands-on workshop teaches you how to audit existing websites for accessibility compliance and implement digital accessibility according to legal requirements and WCAG guidelines.\n\nThrough a combination of theoretical background and practical exercises, you'll explore the fundamental principles of accessibility, analyze implementation of accessible features in HTML, CSS, and JavaScript, and learn to use tools for testing your websites for accessibility compliance.\n\nWe'll start with accessibility fundamentals and the current legal framework. Then we'll examine how to technically adapt websites and web applications to meet requirements. We'll dive into technical implementation details and learn what to consider for colors, media, layouts, page information, and web components when building accessible websites.\n\nBeyond accessible content design, navigation elements, and interaction possibilities, there's a special focus on practical testing of existing websites with appropriate tools. We'll conclude by looking at automation of accessibility audits, their limitations, and the future role of AI-supported testing mechanisms.",
       trainerId: 'maria-korneeva',
       duration: '8 hours',
       capacity: 30,
+      room: 'Scoolroom',
       outline: [
         {
           title: 'Accessibility Fundamentals & Legal Framework',
@@ -353,24 +372,28 @@ export class WorkshopService {
           ]
         }
       ],
-      targetAudience: 'This workshop is designed for frontend developers, UX designers, and QA engineers who want to create inclusive web applications. Basic knowledge of HTML, CSS, and JavaScript is required.',
+      targetAudience:
+        'This workshop is designed for frontend developers, UX designers, and QA engineers who want to create inclusive web applications. Basic knowledge of HTML, CSS, and JavaScript is required.',
       trainers: ['maria-korneeva'],
       soldOut: false
     },
     {
       id: '7',
       title: 'Pragmatic Angular Testing: Crafting Tests That Survive the Heat',
-      teaser: 'There are two ways to keep a product stable: never touch it — or cook up a solid testing strategy.',
+      teaser:
+        'There are two ways to keep a product stable: never touch it — or cook up a solid testing strategy.',
       benefits: [
         'Writing *readable* and *maintainable tests*',
         'Writing tests that **focus on behavior** rather than implementation details.',
         'Writing **future-proof tests** that survive migrations and refactorings.',
-        'Mocking” without suffering using **Fakes and Object Mothers**'
+        'Mocking" without suffering using **Fakes and Object Mothers**'
       ],
-      abstract: 'There are two ways to keep a product stable: never touch it — or cook up a solid testing strategy.\n\nSo… how\'s yours holding up?\n• Refactor something and watch the tests boil over?\n• Maintaining mocks feels like duct tape meets rocket science?\n• Still chasing 100% coverage while bugs keep crawling through?\n• End-to-end tests looked tasty at first — until flakiness and slowness caused indigestion?\n• As release day nears, you skip tests and serve it raw — fingers crossed hoping no one gets burned?\n\nIf any of that hits close to home, this workshop is your way out of the fire.\nWe\'ll stop by the market for key ingredients such as Fakes, Object Mothers, Gloves, Vitest, Testing Library, and Playwright Component Testing.\n\nThen back to the kitchen, where we\'ll cook up low-maintenance, high-confidence tests that:\n• Catch both today\'s and tomorrow\'s bugs\n• Survive refactors and all sorts of migrations — including Observables → Signals\n• Run fast enough to fail early and guide you back as you type\n• Are Zoneless-ready — because tomorrow is Zoneless\n\nNo dogma. No silver bullets. Just practical techniques you can use tomorrow to test Angular apps with confidence and clarity.',
+      abstract:
+        "There are two ways to keep a product stable: never touch it — or cook up a solid testing strategy.\n\nSo… how's yours holding up?\n• Refactor something and watch the tests boil over?\n• Maintaining mocks feels like duct tape meets rocket science?\n• Still chasing 100% coverage while bugs keep crawling through?\n• End-to-end tests looked tasty at first — until flakiness and slowness caused indigestion?\n• As release day nears, you skip tests and serve it raw — fingers crossed hoping no one gets burned?\n\nIf any of that hits close to home, this workshop is your way out of the fire.\nWe'll stop by the market for key ingredients such as Fakes, Object Mothers, Gloves, Vitest, Testing Library, and Playwright Component Testing.\n\nThen back to the kitchen, where we'll cook up low-maintenance, high-confidence tests that:\n• Catch both today's and tomorrow's bugs\n• Survive refactors and all sorts of migrations — including Observables → Signals\n• Run fast enough to fail early and guide you back as you type\n• Are Zoneless-ready — because tomorrow is Zoneless\n\nNo dogma. No silver bullets. Just practical techniques you can use tomorrow to test Angular apps with confidence and clarity.",
       trainerId: 'younes-jaaidi',
       duration: '8 hours',
       capacity: 30,
+      room: 'Room 123',
       outline: [
         {
           title: '💻 Hands-on Exercise: First Test',
@@ -419,13 +442,11 @@ export class WorkshopService {
             'Fake it till you mock it: picking the right Test Double.',
             'Type-safe and maintainable doubles.',
             'High confidence with contract testing.'
-         ]
+          ]
         },
         {
           title: '💻 Hands-on Exercises: Test Doubles & “Mocking”',
-          topics: [
-            'Narrowing down tests with Fakes.'
-          ]
+          topics: ['Narrowing down tests with Fakes.']
         },
         {
           title: '👨🏻‍🏫 Playwright Component Testing with Testronaut',
@@ -453,7 +474,8 @@ export class WorkshopService {
           ]
         }
       ],
-      targetAudience: 'This workshop is designed for Angular developers who want to master practical testing strategies and build maintainable, reliable test suites. Basic knowledge of Angular and testing concepts is recommended.',
+      targetAudience:
+        'This workshop is designed for Angular developers who want to master practical testing strategies and build maintainable, reliable test suites. Basic knowledge of Angular and testing concepts is recommended.',
       trainers: ['younes-jaaidi'],
       soldOut: false
     }
