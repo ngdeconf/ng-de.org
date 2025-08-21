@@ -281,13 +281,36 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
         <div
           class="sticky top-0 z-10 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 px-6 py-4 md:px-8 md:py-5 rounded-t-2xl shadow-sm"
         >
-          <div class="flex justify-between items-center">
-            <h3
-              id="workshop-details-title"
-              class="text-2xl font-bold leading-tight pr-8"
-            >
-              {{ activeWorkshop()?.title }}
-            </h3>
+          <div class="flex justify-between items-start">
+            <div class="flex-1 pr-8">
+              <h3
+                id="workshop-details-title"
+                class="text-2xl font-bold leading-tight mb-2"
+              >
+                {{ activeWorkshop()?.title }}
+              </h3>
+              <div
+                class="flex items-center gap-2 text-primary-600 dark:text-primary-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                  ></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span class="font-medium">{{ activeWorkshop()?.room }}</span>
+              </div>
+            </div>
             <button
               #closeButton
               id="dialog-close-btn"
@@ -314,194 +337,344 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
           </div>
         </div>
 
-        <div class="p-6 pt-4 md:p-8 md:pt-4">
-          <!-- Workshop Location -->
-          <div
-            class="mb-6 p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg border border-primary-200 dark:border-primary-800"
-          >
-            <div class="flex items-center justify-center gap-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 text-primary-600 dark:text-primary-400"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-              </svg>
-              <span
-                class="text-lg font-semibold text-primary-700 dark:text-primary-300"
-              >
-                Location: {{ activeWorkshop()?.room }}
-              </span>
-            </div>
-          </div>
-
+        <div class="p-8">
           <ngde-workshop-schedule [isOpen]="false"></ngde-workshop-schedule>
 
-          <!-- Workshop Trainers -->
+          <!-- Target Audience -->
+          @if (activeWorkshop()?.targetAudience) {
           <div class="mb-8">
-            <h4 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6">
-              Expert Workshop Leaders
-            </h4>
-            <div class="space-y-6">
-              @for (trainerId of activeWorkshop()?.trainers ||
-              [activeWorkshop()?.trainerId]; track trainerId) {
-              <div
-                class="flex flex-col sm:flex-row sm:items-start gap-6 p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700"
-              >
-                <div class="relative flex-shrink-0 mx-auto sm:mx-0">
-                  <img
-                    [src]="getSpeakerImage(trainerId)"
-                    [alt]="getSpeakerName(trainerId)"
-                    class="w-24 h-24 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
-                  />
-                  @if (getSpeakerById(trainerId)?.angularTeam) {
-                  <div
-                    class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-1"
+            <div
+              class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            >
+              <div class="flex items-center gap-3 mb-4">
+                <div
+                  class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-primary-600 dark:text-primary-400"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
                   >
-                    <img
-                      src="assets/images/angular_gradient.png"
-                      alt="Angular Team"
-                      class="w-7 h-7"
-                    />
-                  </div>
-                  } @if (getSpeakerById(trainerId)?.ngrxTeam) {
-                  <div
-                    class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-1"
-                  >
-                    <img
-                      src="assets/images/ngrx-logo.png"
-                      alt="NgRx Team"
-                      class="w-7 h-7"
-                    />
-                  </div>
-                  }
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
                 </div>
-                <div class="flex-1 text-center sm:text-left">
-                  <h5
-                    class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2"
-                  >
-                    {{ getSpeakerName(trainerId) }}
-                  </h5>
-                  <p
-                    class="text-lg font-semibold text-primary-700 dark:text-primary-300 mb-2"
-                  >
-                    {{ getSpeakerTitle(trainerId) }}
-                  </p>
-                  @if (getSpeakerCompany(trainerId)) {
-                  <p class="text-base text-gray-600 dark:text-gray-400 mb-3">
-                    {{ getSpeakerCompany(trainerId) }}
-                  </p>
-                  } @if (getSpeakerById(trainerId)?.bio) {
-                  <p
-                    class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed"
-                  >
-                    {{ getSpeakerById(trainerId)?.bio }}
-                  </p>
-                  }
-                </div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">
+                  Target Audience
+                </h3>
               </div>
-              }
+              <p
+                class="text-gray-600 dark:text-gray-300 leading-relaxed text-base"
+              >
+                {{ activeWorkshop()?.targetAudience }}
+              </p>
             </div>
           </div>
-
-          <!-- Workshop Abstract -->
-          <div class="mb-8">
-            <h4
-              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3 font-medium"
-            >
-              About this workshop
-            </h4>
-            <p
-              class="text-gray-600 dark:text-gray-300 whitespace-pre-line leading-relaxed"
-            >
-              {{ activeWorkshop()?.abstract }}
-            </p>
-          </div>
+          }
 
           <!-- Workshop Outline Accordion -->
           @if (activeWorkshop()?.outline && activeWorkshop()?.outline.length >
           0) {
           <div class="mb-8">
-            <h4
-              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4 font-medium"
+            <div
+              class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden"
             >
-              Workshop Outline
-            </h4>
-            <div class="space-y-3">
-              @for (section of activeWorkshop()?.outline; track section.title;
-              let i = $index) {
               <div
-                class="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden"
+                class="p-6 bg-gray-50 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700"
               >
-                <button
-                  class="w-full flex justify-between items-center p-4 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 dark:focus:ring-primary-400"
-                  [attr.aria-expanded]="isAccordionExpanded(i)"
-                  [attr.aria-controls]="'section-' + i"
-                  (click)="toggleAccordion(i)"
-                >
-                  <span class="font-medium">{{ section.title }}</span>
-                  <svg
-                    class="w-5 h-5 transition-transform"
-                    [class.transform]="isAccordionExpanded(i)"
-                    [class.rotate-180]="isAccordionExpanded(i)"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center"
                   >
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </button>
-                <div
-                  [id]="'section-' + i"
-                  class="overflow-hidden transition-all duration-300"
-                  [style.maxHeight]="isAccordionExpanded(i) ? '500px' : '0'"
-                  [attr.aria-hidden]="!isAccordionExpanded(i)"
-                >
-                  <div class="p-4 bg-white dark:bg-gray-800">
-                    <ul
-                      class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300"
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-primary-600 dark:text-primary-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
                     >
-                      @for (topic of section.topics; track topic) {
-                      <li class="leading-relaxed">{{ topic }}</li>
-                      }
-                    </ul>
+                      <path d="M9 11H1a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2z"></path>
+                      <path d="M23 11h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2z"></path>
+                      <path d="M9 7H1a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2z"></path>
+                      <path d="M23 7h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2z"></path>
+                      <path d="M9 15H1a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2z"></path>
+                      <path d="M23 15h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2z"></path>
+                    </svg>
                   </div>
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-gray-100"
+                  >
+                    Workshop Outline
+                  </h3>
                 </div>
               </div>
-              }
+              <div class="bg-white dark:bg-gray-800">
+                <div class="space-y-1">
+                  @for (section of activeWorkshop()?.outline; track
+                  section.title; let i = $index) {
+                  <div
+                    class="border-b border-gray-100 dark:border-gray-700 last:border-b-0"
+                  >
+                    <button
+                      class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 dark:focus:ring-primary-400"
+                      [attr.aria-expanded]="isAccordionExpanded(i)"
+                      [attr.aria-controls]="'section-' + i"
+                      (click)="toggleAccordion(i)"
+                    >
+                      <span
+                        class="font-semibold text-gray-900 dark:text-gray-100"
+                        >{{ section.title }}</span
+                      >
+                      <svg
+                        class="w-5 h-5 text-gray-400 transition-transform"
+                        [class.rotate-180]="isAccordionExpanded(i)"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </button>
+                    <div
+                      [id]="'section-' + i"
+                      class="overflow-hidden transition-all duration-300"
+                      [style.maxHeight]="isAccordionExpanded(i) ? '500px' : '0'"
+                      [attr.aria-hidden]="!isAccordionExpanded(i)"
+                    >
+                      <div class="px-6 pb-6">
+                        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                          @for (topic of section.topics; track topic) {
+                          <li class="flex items-start gap-3">
+                            <div
+                              class="w-1.5 h-1.5 rounded-full bg-primary-500 mt-2.5 flex-shrink-0"
+                            ></div>
+                            <span class="leading-relaxed">{{ topic }}</span>
+                          </li>
+                          }
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  }
+                </div>
+              </div>
             </div>
           </div>
           }
 
-          <!-- Target Audience -->
-          @if (activeWorkshop()?.targetAudience) {
-          <div class="mb-8 p-5 bg-gray-50 dark:bg-gray-700/30 rounded-lg">
-            <h4
-              class="text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-3 font-medium"
+          <!-- Workshop Abstract -->
+          <div class="mb-8">
+            <div
+              class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden"
             >
-              Target Audience
-            </h4>
-            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-              {{ activeWorkshop()?.targetAudience }}
-            </p>
+              <button
+                class="w-full flex justify-between items-center p-6 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 dark:focus:ring-primary-400"
+                [attr.aria-expanded]="isAboutExpanded()"
+                [attr.aria-controls]="'about-section'"
+                (click)="toggleAbout()"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-primary-600 dark:text-primary-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M9 12l2 2 4-4"></path>
+                      <path
+                        d="M21 12c-1 0-2-.4-2.7-1.1L16 8.4V6c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-2.4l2.3-2.5c.7-.7 1.7-1.1 2.7-1.1z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-gray-100"
+                  >
+                    About This Workshop
+                  </h3>
+                </div>
+                <svg
+                  class="w-6 h-6 text-gray-400 transition-transform"
+                  [class.rotate-180]="isAboutExpanded()"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div
+                id="about-section"
+                class="overflow-hidden transition-all duration-300"
+                [style.maxHeight]="isAboutExpanded() ? '500px' : '0'"
+                [attr.aria-hidden]="!isAboutExpanded()"
+              >
+                <div class="p-6 bg-white dark:bg-gray-800">
+                  <div class="prose prose-gray dark:prose-invert max-w-none">
+                    <p
+                      class="text-gray-600 dark:text-gray-300 leading-relaxed text-base"
+                    >
+                      {{ activeWorkshop()?.abstract }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          }
 
-          <div class="flex justify-end">
+          <!-- Workshop Trainers -->
+          <div class="mb-8">
+            <div
+              class="border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden"
+            >
+              <button
+                class="w-full flex justify-between items-center p-6 text-left bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 dark:focus:ring-primary-400"
+                [attr.aria-expanded]="isTrainersExpanded()"
+                [attr.aria-controls]="'trainers-section'"
+                (click)="toggleTrainers()"
+              >
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-10 h-10 bg-primary-100 dark:bg-primary-900/30 rounded-lg flex items-center justify-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-primary-600 dark:text-primary-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <h3
+                    class="text-xl font-bold text-gray-900 dark:text-gray-100"
+                  >
+                    Expert Workshop Leaders
+                  </h3>
+                </div>
+                <svg
+                  class="w-6 h-6 text-gray-400 transition-transform"
+                  [class.rotate-180]="isTrainersExpanded()"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div
+                id="trainers-section"
+                class="overflow-hidden transition-all duration-300"
+                [style.maxHeight]="isTrainersExpanded() ? '800px' : '0'"
+                [attr.aria-hidden]="!isTrainersExpanded()"
+              >
+                <div class="p-6 bg-white dark:bg-gray-800">
+                  <div class="space-y-6">
+                    @for (trainerId of activeWorkshop()?.trainers ||
+                    [activeWorkshop()?.trainerId]; track trainerId) {
+                    <div
+                      class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+                    >
+                      <div class="flex flex-col sm:flex-row gap-6">
+                        <div class="relative flex-shrink-0">
+                          <img
+                            [src]="getSpeakerImage(trainerId)"
+                            [alt]="getSpeakerName(trainerId)"
+                            class="w-20 h-20 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-lg"
+                          />
+                          @if (getSpeakerById(trainerId)?.angularTeam) {
+                          <div
+                            class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-1.5 shadow-md"
+                          >
+                            <img
+                              src="assets/images/angular_gradient.png"
+                              alt="Angular Team"
+                              class="w-5 h-5"
+                            />
+                          </div>
+                          } @if (getSpeakerById(trainerId)?.ngrxTeam) {
+                          <div
+                            class="absolute -top-2 -right-2 bg-white dark:bg-gray-800 rounded-full p-1.5 shadow-md"
+                          >
+                            <img
+                              src="assets/images/ngrx-logo.png"
+                              alt="NgRx Team"
+                              class="w-5 h-5"
+                            />
+                          </div>
+                          }
+                        </div>
+                        <div class="flex-1 min-w-0">
+                          <h4
+                            class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2"
+                          >
+                            {{ getSpeakerName(trainerId) }}
+                          </h4>
+                          <p
+                            class="text-lg font-semibold text-primary-600 dark:text-primary-400 mb-2"
+                          >
+                            {{ getSpeakerTitle(trainerId) }}
+                          </p>
+                          @if (getSpeakerCompany(trainerId)) {
+                          <p
+                            class="text-base text-gray-600 dark:text-gray-400 mb-3 font-medium"
+                          >
+                            {{ getSpeakerCompany(trainerId) }}
+                          </p>
+                          } @if (getSpeakerById(trainerId)?.bio) {
+                          <p
+                            class="text-gray-600 dark:text-gray-300 leading-relaxed"
+                          >
+                            {{ getSpeakerById(trainerId)?.bio }}
+                          </p>
+                          }
+                        </div>
+                      </div>
+                    </div>
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-end pt-6 border-t border-gray-200 dark:border-gray-700"
+          >
             <button
-              class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-2.5 px-5 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+              class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
               (click)="closeWorkshopDetails()"
             >
               Close
@@ -625,6 +798,8 @@ export class WorkshopInformationComponent {
   isDialogVisible = signal(false);
   isDialogLeaving = signal(false);
   expandedAccordions = signal<boolean[]>([]);
+  isTrainersExpanded = signal(false);
+  isAboutExpanded = signal(false);
 
   constructor(
     private speakerService: SpeakerService,
@@ -718,5 +893,13 @@ export class WorkshopInformationComponent {
 
   isAccordionExpanded(index: number): boolean {
     return this.expandedAccordions()[index] || false;
+  }
+
+  toggleTrainers(): void {
+    this.isTrainersExpanded.set(!this.isTrainersExpanded());
+  }
+
+  toggleAbout(): void {
+    this.isAboutExpanded.set(!this.isAboutExpanded());
   }
 }

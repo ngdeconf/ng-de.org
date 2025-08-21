@@ -7,17 +7,18 @@ import { Component, model } from '@angular/core';
   imports: [CommonModule],
   template: `
     <!-- Workshop Day Agenda -->
-    <div class="mb-16">
+    <div class="mb-8">
       <div
         class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden"
       >
         <!-- Agenda Header -->
         <div
-          class="bg-gradient-to-r from-primary-600 to-primary-700 px-6 py-4 flex items-center justify-between"
+          class="bg-gradient-to-r from-primary-600 to-primary-700 px-6 py-4 flex items-center justify-between cursor-pointer"
+          (click)="toggleSchedule()"
         >
-          <h3 class="text-xl font-bold text-white">📅 Schedule</h3>
+          <h3 class="text-xl font-bold text-white">Your Schedule</h3>
           <button
-            (click)="toggleSchedule()"
+            (click)="toggleSchedule(); $event.stopPropagation()"
             class="text-white hover:text-primary-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600 rounded-md p-1"
             [attr.aria-expanded]="isOpen()"
             aria-label="Toggle schedule visibility"
