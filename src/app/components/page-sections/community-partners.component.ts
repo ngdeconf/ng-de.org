@@ -1,5 +1,4 @@
-import { Component, signal } from '@angular/core';
-
+import { Component, computed, signal } from '@angular/core';
 
 interface CommunityPartner {
   id: string;
@@ -17,32 +16,35 @@ interface CommunityPartner {
     <section id="community-partners" class="py-20 bg-white dark:bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+          <h2
+            class="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white"
+          >
             Community Partners
           </h2>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            We are proud to partner with amazing communities from around the world
+            We are proud to partner with amazing communities from around the
+            world
           </p>
         </div>
 
         <!-- Community Partners Grid -->
         <div class="grid grid-cols-3 md:grid-cols-6 gap-8">
-          @for (partner of getCommunityPartners(); track partner.id) {
-            <div class="group">
-              <a
-                [href]="partner.websiteUrl"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block p-8 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg min-h-[180px] flex items-center justify-center"
-                [title]="partner.name"
-              >
-                <img
-                  [src]="partner.logoUrl"
-                  [alt]="partner.name + ' logo'"
-                  class="h-32 object-contain max-w-full filter group-hover:brightness-110 transition-all duration-300"
-                />
-              </a>
-            </div>
+          @for (partner of shuffledCommunityPartners(); track partner.id) {
+          <div class="group">
+            <a
+              [href]="partner.websiteUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block p-8 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg min-h-[180px] flex items-center justify-center"
+              [title]="partner.name"
+            >
+              <img
+                [src]="partner.logoUrl"
+                [alt]="partner.name + ' logo'"
+                class="h-32 object-contain max-w-full filter group-hover:brightness-110 transition-all duration-300"
+              />
+            </a>
+          </div>
           }
         </div>
 
@@ -51,15 +53,29 @@ interface CommunityPartner {
           <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
             Want to become a Community Partner?
           </h3>
-          <p class="text-lg text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto">
-            Join our network of amazing communities and help us spread the Angular love worldwide!
+          <p
+            class="text-lg text-gray-600 dark:text-gray-400 mb-6 max-w-2xl mx-auto"
+          >
+            Join our network of amazing communities and help us spread the
+            Angular love worldwide!
           </p>
           <a
             href="mailto:info@ng-de.org?subject=Community Partnership"
             class="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V10a2 2 0 012-2h2m2 4h6m-6 4h6m-3-8V4a2 2 0 012-2h2a2 2 0 012 2v4M9 4a2 2 0 012-2h2a2 2 0 012 2v4" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V10a2 2 0 012-2h2m2 4h6m-6 4h6m-3-8V4a2 2 0 012-2h2a2 2 0 012 2v4M9 4a2 2 0 012-2h2a2 2 0 012 2v4"
+              />
             </svg>
             Become a Community Partner
           </a>
@@ -188,10 +204,24 @@ export class CommunityPartnersComponent {
       logoUrl: 'assets/images/community-partners/nestjsvienna.svg',
       websiteUrl: 'https://www.meetup.com/nestjs-vienna/',
       description: 'Vienna NestJS Community'
+    },
+    {
+      id: 'it-schulungen',
+      name: 'IT-Schulungen.com',
+      logoUrl: 'assets/images/community-partners/it-schulungen.png',
+      websiteUrl: 'https://www.it-schulungen.com/',
+      description: 'Professional IT Training & Certifications'
     }
   ]);
 
-  getCommunityPartners() {
-    return this.communityPartners();
-  }
-} 
+  protected shuffledCommunityPartners = computed(() => {
+    const partners = [...this.communityPartners()];
+
+    for (let i = partners.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [partners[i], partners[j]] = [partners[j], partners[i]];
+    }
+
+    return partners;
+  });
+}
