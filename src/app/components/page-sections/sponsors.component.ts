@@ -59,7 +59,7 @@ import { SponsorService } from '../../services/sponsor.service';
             </p>
           </div>
           <div class="flex justify-center">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
+            <div class="grid grid-cols-1 gap-8 max-w-6xl">
               @for (sponsor of getSponsorsByLevel('Platinum'); track sponsor.id)
               {
               <div class="group">
@@ -104,7 +104,7 @@ import { SponsorService } from '../../services/sponsor.service';
           </div>
           <div class="flex justify-center">
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl"
+              class="grid grid-cols-1 gap-6 max-w-6xl"
             >
               @for (sponsor of getSponsorsByLevel('Gold'); track sponsor.id) {
               <div class="group">
