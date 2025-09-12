@@ -58,7 +58,7 @@ export class SponsorService {
       name: 'qupaya',
       logoUrl: 'assets/images/sponsors/qupaya logo primary.png',
       websiteUrl: 'https://qupaya.com',
-      level: 'Bronze'
+      level: 'Silver'
     }
   ]);
 
