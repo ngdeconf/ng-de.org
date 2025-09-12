@@ -485,6 +485,68 @@ export class WorkshopService {
         'This workshop is designed for Angular developers who want to master practical testing strategies and build maintainable, reliable test suites. Basic knowledge of Angular and testing concepts is recommended.',
       trainers: ['younes-jaaidi'],
       soldOut: false
+    },
+    {
+      id: '8',
+      title: 'Build Your First Chatbot with Angular and MCP: A Hands-On Introduction to Conversational AI',
+      teaser: 'Learn to connect modern AI agents to Angular web frontends using the Model Context Protocol (MCP) and build a complete AI assistant.',
+      benefits: [
+        'Build a Python or TypeScript-based chat-bot with multiple data sources',
+        'Master the Model Context Protocol (MCP) for AI agent integration',
+        'Connect AI agents to a modern Angular chatbot UI',
+        'Extend your AI assistant with custom data and tools'
+      ],
+      abstract: 'In this full-day workshop, you\'ll learn how to connect modern AI agents to a web frontend using the Model Context Protocol (MCP). We\'ll start by building a Python or Typescript-based chat-bot, plug in multiple data sources (like knowledge bases), and expose them through MCP. In the afternoon, you\'ll bring it all together by connecting the agent to an Angular chatbot UI. By the end of the day, you\'ll have a working AI assistant that blends the power of LLMs with a modern frontend, plus a clear path to extend it with your own data and tools.',
+      trainerId: 'tom-ziegler',
+      duration: '8 hours',
+      capacity: 30,
+      room: 'Room 114',
+      address: 'Kastanienalle 82, 10115 Berlin, Germany',
+      outline: [
+        {
+          title: 'Foundation: Introduction to AI Agents & MCP',
+          topics: [
+            'Understanding modern AI agents and their capabilities',
+            'Introduction to the Model Context Protocol (MCP)',
+            'Overview of the workshop architecture: Backend agents + Angular frontend',
+            'Setting up the development environment',
+            'Hands-on: Your first simple agent'
+          ]
+        },
+        {
+          title: 'Building the AI Agent Backend',
+          topics: [
+            'Creating a Python or TypeScript-based chat-bot',
+            'Integrating multiple data sources (knowledge bases, APIs)',
+            'Implementing MCP server functionality',
+            'Managing context and conversation flow',
+            'Hands-on: Building and testing your agent backend'
+          ]
+        },
+        {
+          title: 'Angular Frontend Integration',
+          topics: [
+            'Designing a modern chatbot UI with Angular',
+            'Connecting Angular to the MCP-enabled backend',
+            'Real-time communication and WebSocket integration',
+            'Handling conversation state in Angular',
+            'Hands-on: Building the Angular chatbot interface'
+          ]
+        },
+        {
+          title: 'Advanced Features & Deployment',
+          topics: [
+            'Extending your agent with custom tools and data sources',
+            'Performance optimization for conversational AI',
+            'Security considerations for AI-enabled applications',
+            'Deployment strategies and scalability',
+            'Hands-on: Complete AI assistant implementation'
+          ]
+        }
+      ],
+      targetAudience: 'This workshop is designed for developers with basic Angular knowledge who want to explore AI agent integration and build conversational AI applications. Basic understanding of TypeScript and API integration is recommended.',
+      trainers: ['tom-ziegler', 'alisa-bogatinovski'],
+      soldOut: false
     }
   ]);
 

@@ -195,6 +195,22 @@ export class SpeakerService {
       githubHandle: 'markthompson',
       pronouns: 'he/him',
       angularTeam: true
+    },
+    {
+      id: 'tom-ziegler',
+      name: 'Tom Ziegler',
+      title: 'Intelligent Automation Developer',
+      company: 'Automate_X',
+      bio: 'Tom Ziegler brings hands-on expertise in deploying intelligent automation solutions powered by large language models (LLMs). At Automate_X, he integrates chatbots and LLMs into enterprise workflows, focusing on performance optimization and strategic prompting. His work spans multiple business domains, where he leverages AI to enhance efficiency, scalability, and innovation. Driven by curiosity and continuous improvement, Tom actively explores emerging models, techniques, and use cases to push the boundaries of automation and deliver forward-thinking solutions.',
+      imageUrl: 'assets/images/speakers/tom-ziegler.jpg'
+    },
+    {
+      id: 'alisa-bogatinovski',
+      name: 'Alisa Bogatinovski',
+      title: 'Senior Data & AI Scientist',
+      company: 'E.ON',
+      bio: 'Alisa Bogatinovski is a Senior Data & AI Scientist with a focus on large language models, agents, and AI product integration. At E.ON, she builds projects that apply GenAI to real-world business applications, supporting the journey through the energy transition. She is passionate about designing scalable software architectures that make AI both impactful and production-ready and about sharing ideas that help teams get the most out of AI technologies.',
+      imageUrl: 'assets/images/speakers/alisa-bogatinovski.png'
     }
   ]);
 
