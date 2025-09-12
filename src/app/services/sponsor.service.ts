@@ -59,6 +59,13 @@ export class SponsorService {
       logoUrl: 'assets/images/sponsors/qupaya logo primary.png',
       websiteUrl: 'https://qupaya.com',
       level: 'Silver'
+    },
+    {
+      id: 'cologne-intelligence',
+      name: 'Cologne Intelligence',
+      logoUrl: 'assets/images/sponsors/cologne-intelligence.webp',
+      websiteUrl: 'https://www.cologne-intelligence.de/',
+      level: 'Bronze'
     }
   ]);
 
