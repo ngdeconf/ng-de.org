@@ -500,7 +500,7 @@ export class WorkshopService {
       trainerId: 'tom-ziegler',
       duration: '8 hours',
       capacity: 30,
-      room: 'Room 114',
+      room: 'Library',
       address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
