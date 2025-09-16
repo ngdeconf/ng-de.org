@@ -153,6 +153,24 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       time: '17:00 - 17:30',
       day: 'day2',
       room: 'Main Stage'
+    },
+    {
+      id: 'talk-eon-microfrontends',
+      title: 'MicroFrontends - How to slice the elephant',
+      abstract: 'MicroFrontends are hot topic in the big enterprise world. The requirements and challenges of large projects sometimes mean that a split of the application is unavoidable. This talk will look at the reasons and tips for making this decision. I will also highlight risks, pitfalls and decisions to be made and show concrete examples of solutions based on real large projects (> 100 people) so that your large project can also be migrated to a MicroFrontend without pain.',
+      speakerId: 'tobias-brenner',
+      time: '14:15 - 14:45',
+      day: 'day1',
+      room: 'Stage Aula'
+    },
+    {
+      id: 'talk-cologne-intelligence-ai-ux',
+      title: 'Angular and AI-Driven UX: AI-assisted Interactions',
+      abstract: 'Artificial Intelligence is revolutionizing how users interact with web applications. In this talk, we will show how Angular developers can implement AI-driven user experience features to create smarter and more personalized applications. We explore practical approaches to integrating AI APIs, using machine learning for dynamic UI adaptations, and how Angular Signals and RxJS can be leveraged for reactive AI interactions. Through concrete examples from real projects at Cologne Intelligence, we demonstrate how chat-based interfaces, intelligent form assistants, and adaptive user interfaces are revolutionizing the user experience. Learn how to seamlessly integrate AI into your Angular architecture while optimizing performance and user-friendliness.',
+      speakerId: 'mario-trzensky',
+      time: '11:45 - 12:15',
+      day: 'day1',
+      room: 'Stage Aula'
     }
   ]);
 

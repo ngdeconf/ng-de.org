@@ -211,6 +211,22 @@ export class SpeakerService {
       company: 'E.ON',
       bio: 'Alisa Bogatinovski is a Senior Data & AI Scientist with a focus on large language models, agents, and AI product integration. At E.ON, she builds projects that apply GenAI to real-world business applications, supporting the journey through the energy transition. She is passionate about designing scalable software architectures that make AI both impactful and production-ready and about sharing ideas that help teams get the most out of AI technologies.',
       imageUrl: 'assets/images/speakers/alisa-bogatinovski.png'
+    },
+    {
+      id: 'tobias-brenner',
+      name: 'Tobias Brenner',
+      title: 'Principal Expert for Application Development',
+      company: 'E.ON Digital Technology GmbH',
+      bio: 'I have been a software developer for 20+ years and currently work as a Principal Expert for Application Development at E.ON Digital Technology GmbH. There I work in cross-functional teams on major projects; currently on a centerpiece that forms the digital basis of the German renewables turnover. I am also one of the community leads of our E.ON internal application development community, supervise trainees, perform in-house courses, take care of cooperations with schools and conferences, conference speaker and am the founder of two meetups (AngularRuhr, DevSecRuhr).',
+      imageUrl: 'assets/images/speakers/tobias-brenner.jpg'
+    },
+    {
+      id: 'mario-trzensky',
+      name: 'Mario Trzensky',
+      title: 'Web Frontend Developer',
+      company: 'Cologne Intelligence',
+      bio: 'Mario Trzensky is a Web Frontend Developer at Cologne Intelligence with nearly five years of professional experience in frontend development. He specializes in modern frontend technologies and AI-assisted user interfaces, with extensive hands-on experience in building scalable web applications. At Cologne Intelligence, he contributes to innovative digital solutions and custom software development, focusing on creating intelligent, responsive, and user-friendly interfaces that leverage AI to enhance user experience through cutting-edge frontend technologies.',
+      imageUrl: 'assets/images/speakers/mario-trzensky.jpeg'
     }
   ]);
 
