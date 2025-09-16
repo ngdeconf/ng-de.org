@@ -8,110 +8,139 @@ export class ScheduleService {
       title: 'Thursday',
       datetime: '2025-11-06',
       entries: [
+        // Registration - 08:30-09:30
         {
           title: 'Registration & Light Refreshments',
           datetime: '2025-11-06T08:30:00',
           information: 'Registration with coffee and small snacks',
-          location: 'GLS Campus Berlin',
+          location: 'Both Stages',
           session: null
         },
+        // Opening & Welcome - 09:30-10:00
         {
           title: 'Opening & Welcome',
           datetime: '2025-11-06T09:30:00',
-          information: 'Orga Team / MC',
-          location: 'Main Stage',
+          information: 'Robin Böhm and MC',
+          location: 'Both Stages',
           session: null
         },
+        // Keynote - 10:00-10:30
         {
           title: 'Keynote',
           datetime: '2025-11-06T10:00:00',
-          information: 'Mark Thompson (Angular Team)',
-          location: 'Main Stage',
+          information: 'Mark Thompson - tbd',
+          location: 'Both Stages',
           session: 'keynote-day1'
         },
+        // Slot 2 - 10:30-11:00
         {
           title: 'Talk',
           datetime: '2025-11-06T10:30:00',
-          information: 'Matthieu Riegler',
-          location: 'Main Stage',
+          information: 'Matthieu Riegler - tbd',
+          location: 'Both Stages',
           session: 'talk-day1-2'
         },
+        // Coffee Break - 11:00-11:45
         {
           title: 'Coffee Break ☕️',
           datetime: '2025-11-06T11:00:00',
           information: 'Networking opportunity',
-          location: 'Sponsoring Hall & Catering Area',
+          location: 'Both Stages',
           session: null
         },
+        // Slot 3 - 11:45-12:15 - Two different talks
         {
           title: 'Talk',
           datetime: '2025-11-06T11:45:00',
           information: 'Robin Götz',
-          location: 'Main Stage',
+          location: 'Pool House',
           session: 'talk-day1-3'
         },
         {
           title: 'Talk',
+          datetime: '2025-11-06T11:45:00',
+          information: 'Mario Trzensky',
+          location: 'Aula',
+          session: 'talk-cologne-intelligence-ai-ux'
+        },
+        // Slot 4 - 12:15-12:45
+        {
+          title: 'Talk',
           datetime: '2025-11-06T12:15:00',
           information: 'Marko Stanimirović',
-          location: 'Main Stage',
+          location: 'Both Stages',
           session: 'talk-day1-4'
         },
+        // Lunch - 12:45-14:15
         {
           title: 'Lunch Break 🍽️',
           datetime: '2025-11-06T12:45:00',
-          information: 'Lunch',
-          location: 'Sponsoring Hall & Catering Area',
+          information: 'Restaurant Oderberger',
+          location: 'Both Stages',
           session: null
         },
+        // Slot 5 - 14:15-14:45 - Two different talks
         {
           title: 'Talk',
           datetime: '2025-11-06T14:15:00',
-          information: 'Manfred Steyer',
-          location: 'Main Stage',
+          information: 'Kasia Biernat-Kluba',
+          location: 'Pool House',
           session: 'talk-day1-5'
         },
         {
           title: 'Talk',
-          datetime: '2025-11-06T14:45:00',
-          information: '',
-          location: 'Main Stage',
-          session: 'talk-day1-6',
+          datetime: '2025-11-06T14:15:00',
+          information: 'Tobias Brenner',
+          location: 'Aula',
+          session: 'talk-eon-microfrontends'
         },
+        // Slot 6 - 14:45-15:15
+        {
+          title: 'Talk',
+          datetime: '2025-11-06T14:45:00',
+          information: 'Eliran Eliassy',
+          location: 'Both Stages',
+          session: 'talk-day1-6'
+        },
+        // Coffee Break - 15:15-16:00
         {
           title: 'Coffee Break ☕️',
           datetime: '2025-11-06T15:15:00',
           information: 'Networking opportunity',
-          location: 'Sponsoring Hall & Catering Area',
+          location: 'Both Stages',
           session: null
         },
+        // Slot 7 - 16:00-16:30
         {
           title: 'Talk',
           datetime: '2025-11-06T16:00:00',
           information: 'Martina Kraus',
-          location: 'Main Stage',
+          location: 'Both Stages',
           session: 'talk-day1-7'
         },
+        // Slot 8 - 16:30-17:15
         {
-          title: 'Build on top of signals',
+          title: 'Talk',
           datetime: '2025-11-06T16:30:00',
           information: 'Enea Jahollari',
-          location: 'Main Stage',
+          location: 'Both Stages',
           session: 'talk-day1-8'
         },
+        // Closing - 17:15-18:00
         {
           title: 'Closing Day 1',
-          datetime: '2025-11-06T17:00:00',
-          information: 'Wrap-up of the first day',
-          location: 'Main Stage',
+          datetime: '2025-11-06T17:15:00',
+          information: 'Wrap-up',
+          location: 'Both Stages',
           session: null
         },
+        // Community Event - 18:00-22:00
         {
           title: 'Community Event/Party 🎉',
-          datetime: '2025-11-06T17:30:00',
-          information: 'Social event with drinks and food',
-          location: 'GLS Campus Berlin',
-          session: 'party'
+          datetime: '2025-11-06T18:00:00',
+          information: 'Social event and networking',
+          location: 'Both Stages',
+          session: null
         }
       ]
     },
@@ -119,103 +148,117 @@ export class ScheduleService {
       title: 'Friday',
       datetime: '2025-11-07',
       entries: [
+        // Registration - 09:00-09:30
         {
-          title: 'Registration & Light Refreshments',
+          title: 'Registration & Breakfast',
           datetime: '2025-11-07T09:00:00',
-          information: 'Coffee and small snacks available',
-          location: 'GLS Campus Berlin',
+          information: 'Registration and breakfast',
+          location: 'Both Stages',
           session: null
         },
+        // Opening - 09:30-10:00
         {
-          title: 'Intro Day 2',
+          title: 'Opening & Welcome',
           datetime: '2025-11-07T09:30:00',
-          information: 'Orga Team / MC',
-          location: 'Main Stage',
+          information: 'Opening Day 2',
+          location: 'Both Stages',
           session: null
         },
+        // Keynote - 10:00-10:30
         {
           title: 'Keynote',
           datetime: '2025-11-07T10:00:00',
-          information: 'Jens Kühlers (Angular Team)',
-          location: 'Main Stage',
+          information: 'Jens Kühlers',
+          location: 'Both Stages',
           session: 'keynote-day2'
         },
+        // Slot 11 - 10:30-11:00
         {
           title: 'Talk',
           datetime: '2025-11-07T10:30:00',
-          information: 'Kasia Biernat-Kluba',
-          location: 'Main Stage',
+          information: 'Component Testing That Feels Like Playwright',
+          location: 'Both Stages',
           session: 'talk-day2-16',
           speakers: ['Younes Jaaidi', 'Rainer Hahnekamp']
         },
+        // Coffee Break - 11:00-11:45
         {
           title: 'Coffee Break ☕️',
           datetime: '2025-11-07T11:00:00',
           information: 'Networking opportunity',
-          location: 'Sponsoring Hall & Catering Area',
+          location: 'Both Stages',
           session: null
         },
+        // Slot 12 - 11:45-12:15
         {
           title: 'Talk',
           datetime: '2025-11-07T11:45:00',
-          information: 'Eliran Eliassy',
-          location: 'Main Stage',
-          session: 'talk-day2-12'
+          information: 'Maria Korneeva',
+          location: 'Both Stages',
+          session: 'talk-day2-11'
         },
+        // Slot 13 - 12:15-12:45
         {
           title: 'Talk',
           datetime: '2025-11-07T12:15:00',
           information: 'Brygida Fiejdasz',
-          location: 'Main Stage',
+          location: 'Both Stages',
           session: 'talk-day2-13'
         },
+        // Lunch - 12:45-14:15
         {
           title: 'Lunch Break & Group Photo 📸',
           datetime: '2025-11-07T12:45:00',
-          information: 'Lunch and conference photo',
-          location: 'Sponsoring Hall & Catering Area',
+          information: 'Lunch & Gruppenfoto',
+          location: 'Both Stages',
           session: null
         },
+        // Slot 14 - 14:15-14:45
         {
           title: 'Talk',
           datetime: '2025-11-07T14:15:00',
           information: 'Christian Liebel',
-          location: 'Main Stage',
+          location: 'Both Stages',
           session: 'talk-day2-14'
         },
+        // Slot 15 - 14:45-15:15
         {
           title: 'Talk',
           datetime: '2025-11-07T14:45:00',
           information: 'Michael Hladky',
-          location: 'Main Stage',
+          location: 'Both Stages',
           session: 'talk-day2-15'
         },
+        // Coffee Break - 15:15-16:00
         {
           title: 'Coffee Break ☕️',
           datetime: '2025-11-07T15:15:00',
           information: 'Networking opportunity',
-          location: 'Sponsoring Hall & Catering Area',
+          location: 'Both Stages',
           session: null
         },
+        // Slot 16 - 16:30-17:00
         {
           title: 'Talk',
           datetime: '2025-11-07T16:30:00',
-          information: 'Maria Korneeva',
-          location: 'Main Stage',
-          session: 'talk-day2-11'
+          information: 'Manfred Steyer',
+          location: 'Both Stages',
+          session: 'talk-day2-18'
         },
+        // Slot 17 - 17:00-17:30
         {
           title: 'Talk',
           datetime: '2025-11-07T17:00:00',
           information: 'Nicolas Frizzarin',
-          location: 'Main Stage',
+          location: 'Both Stages',
           session: 'talk-day2-17'
         },
+        // Closing - 17:30
         {
           title: 'Closing & Farewell',
           datetime: '2025-11-07T17:30:00',
           information: 'Orga Team / MC',
-          location: 'Main Stage',
+          location: 'Both Stages',
           session: null
         }
       ]

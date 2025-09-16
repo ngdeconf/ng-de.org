@@ -138,11 +138,11 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
     },
     {
       id: 'talk-day2-11',
-      title: "The Missing Link in Angular's Signal Story: Resource API and httpResource",
-      abstract: "Signals will shape Angular's future in terms of reactivity and change detection. The new Resource API, along with the httpResource, adds an essential piece to this story by providing an official solution for asynchronously loading data within a Signal-based dataflow.\n\nIn this session, we explore all the details you need to work effectively with this powerful API. Topics include managing different states, handling errors, streaming data, preventing race conditions, and canceling unnecessary requests. We also discuss how it interacts with RxJS through rxResource and demonstrate how to update loaded values.\n\nBy the end, you'll have a comprehensive understanding of the possibilities offered by this groundbreaking new API.",
-      speakerId: 'manfred-steyer',
-      time: '16:00 - 17:00',
-      day: 'day1',
+      title: 'Permit A38 - or how to build accessible forms in Angular',
+      abstract: 'Building accessible forms is crucial for creating inclusive web applications, but it can often feel like navigating bureaucratic red tape – much like the infamous "Permit A38" from Asterix. In this talk, we will explore practical strategies for building accessible forms in Angular that comply with WCAG guidelines and provide an excellent user experience for all users. Learn how to implement proper ARIA labels, manage focus states, handle validation messages accessibly, and use Angular\'s reactive forms to create forms that work seamlessly with screen readers and other assistive technologies. We\'ll cover common accessibility pitfalls and demonstrate how to test your forms for accessibility compliance.',
+      speakerId: 'maria-korneeva',
+      time: '11:45 - 12:15',
+      day: 'day2',
       room: 'Main Stage'
     },
     {
@@ -171,6 +171,15 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       time: '11:45 - 12:15',
       day: 'day1',
       room: 'Stage Aula'
+    },
+    {
+      id: 'talk-day2-18',
+      title: "The Missing Link in Angular's Signal Story: Resource API and httpResource",
+      abstract: "Signals will shape Angular's future in terms of reactivity and change detection. The new Resource API, along with the httpResource, adds an essential piece to this story by providing an official solution for asynchronously loading data within a Signal-based dataflow.\n\nIn this session, we explore all the details you need to work effectively with this powerful API. Topics include managing different states, handling errors, streaming data, preventing race conditions, and canceling unnecessary requests. We also discuss how it interacts with RxJS through rxResource and demonstrate how to update loaded values.\n\nBy the end, you'll have a comprehensive understanding of the possibilities offered by this groundbreaking new API.",
+      speakerId: 'manfred-steyer',
+      time: '16:30 - 17:00',
+      day: 'day2',
+      room: 'Main Stage'
     }
   ]);
 
