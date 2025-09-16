@@ -850,11 +850,11 @@ export class ScheduleComponent {
            entry.information.toLowerCase().includes('social event');
   }
 
-  // Get entries for Stage Pool at a specific time
+  // Get entries for Pool House at a specific time
   getPoolStageEntries(entries: ScheduleEntry[], datetime: string): ScheduleEntry[] {
     return entries.filter(entry => 
       entry.datetime === datetime && 
-      (entry.location === 'Stage Pool' || entry.location === 'Both Stages')
+      (entry.location === 'Pool House' || entry.location === 'Both Stages')
     );
   }
 
@@ -862,7 +862,7 @@ export class ScheduleComponent {
   getAulaStageEntries(entries: ScheduleEntry[], datetime: string): ScheduleEntry[] {
     return entries.filter(entry => 
       entry.datetime === datetime && 
-      (entry.location === 'Stage Aula' || entry.location === 'Both Stages')
+      (entry.location === 'Aula' || entry.location === 'Both Stages')
     );
   }
 

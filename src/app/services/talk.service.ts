@@ -12,7 +12,7 @@ export class TalkService {
       speakerId: 'mark-thompson',
       time: '10:00 - 10:30',
       day: 'day1',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day1-2',
@@ -21,7 +21,7 @@ export class TalkService {
       speakerId: 'matthieu-riegler',
       time: '10:30 - 11:00',
       day: 'day1',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day1-3',
@@ -30,7 +30,7 @@ export class TalkService {
       speakerId: 'robin-goetz',
       time: '11:45 - 12:15',
       day: 'day1',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day1-4',
@@ -39,7 +39,7 @@ export class TalkService {
       speakerId: 'marko-stanimirovic',
       time: '12:15 - 12:45',
       day: 'day1',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day1-5',
@@ -48,7 +48,7 @@ export class TalkService {
       speakerId: 'kasia-biernat-kluba',
       time: '14:15 - 14:45',
       day: 'day2',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day1-6',
@@ -57,7 +57,7 @@ export class TalkService {
       speakerId: 'eliran-eliassy',
       time: '14:45 - 15:15',
       day: 'day2',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day1-7',
@@ -68,7 +68,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'martina-kraus',
       time: '16:00 - 16:30',
       day: 'day1',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day1-8',
@@ -77,7 +77,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'enea-jahollari',
       time: '16:30 - 17:00',
       day: 'day1',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
 
     // Day 2 - Friday
@@ -88,7 +88,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'jens-kuehlers',
       time: '10:00 - 10:30',
       day: 'day2',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day2-16',
@@ -97,7 +97,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'younes-jaaidi',
       time: '10:30 - 11:00',
       day: 'day1',
-      room: 'Main Stage',
+      room: 'Pool House',
       speakers: ['rainer-hahnekamp', 'younes-jaaidi']
     },
     {
@@ -107,7 +107,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'maria-korneeva',
       time: '11:45 - 12:15',
       day: 'day2',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day2-13',
@@ -116,7 +116,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'brygida-fiejdasz',
       time: '12:15 - 12:45',
       day: 'day2',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day2-14',
@@ -125,7 +125,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'christian-liebel',
       time: '14:15 - 14:45',
       day: 'day2',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day2-15',
@@ -134,7 +134,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'michael-hladky',
       time: '14:45 - 15:15',
       day: 'day2',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day2-11',
@@ -143,7 +143,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'maria-korneeva',
       time: '11:45 - 12:15',
       day: 'day2',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-day2-17',
@@ -152,7 +152,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'nicolas-frizzarin',
       time: '17:00 - 17:30',
       day: 'day2',
-      room: 'Main Stage'
+      room: 'Pool House'
     },
     {
       id: 'talk-eon-microfrontends',
@@ -161,7 +161,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'tobias-brenner',
       time: '14:15 - 14:45',
       day: 'day1',
-      room: 'Stage Aula'
+      room: 'Aula'
     },
     {
       id: 'talk-cologne-intelligence-ai-ux',
@@ -170,7 +170,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'mario-trzensky',
       time: '11:45 - 12:15',
       day: 'day1',
-      room: 'Stage Aula'
+      room: 'Aula'
     },
     {
       id: 'talk-day2-18',
@@ -179,7 +179,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'manfred-steyer',
       time: '16:30 - 17:00',
       day: 'day2',
-      room: 'Main Stage'
+      room: 'Pool House'
     }
   ]);
 
