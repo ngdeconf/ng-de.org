@@ -86,7 +86,7 @@ export class SpeakerService {
       name: 'Gregor Woiwode',
       title: 'Angular Consultant & Trainer',
       company: 'Workshops.DE',
-      bio: 'Gregor loves developing tools that allow programmers to be even more productive. As a speaker, trainer, and consultant, he teaches techniques to continuously improve the architecture of Angular applications. He enjoys running and tries his hand as an amateur chef from time to time.',
+      bio: 'Gregor loves developing tools that allow programmers to be even more productive. As a speaker, trainer, and consultant, he teaches techniques to continuously improve the architecture of Angular applications and specializes in AI-powered development workflows. He has extensive experience with modern IDEs like Cursor and implementing AI agents in CI/CD pipelines for Angular projects. He enjoys running and tries his hand as an amateur chef from time to time.',
       imageUrl: 'assets/images/speakers/gregor-woiwode.jpg',
       githubHandle: 'GregOnNet'
     },

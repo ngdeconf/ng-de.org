@@ -180,6 +180,15 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       time: '16:30 - 17:00',
       day: 'day2',
       room: 'Pool House'
+    },
+    {
+      id: 'talk-agentic-angular',
+      title: 'AI-Powered Angular Development',
+      abstract: 'Modern Angular development is being revolutionized by AI-powered tools and agents. This talk explores how to leverage cutting-edge IDEs like Cursor alongside autonomous AI agents in CI/CD pipelines to build and maintain Angular applications more efficiently. We\'ll demonstrate practical workflows for AI-assisted code generation, automated testing strategies, intelligent code reviews, and maintaining code quality at scale. Learn how to integrate AI agents into your Angular CI pipelines for automated refactoring, dependency updates, and performance optimization. We\'ll cover setting up AI-powered development environments, implementing intelligent build processes, and creating self-maintaining Angular codebases that evolve with your team\'s needs. Transform your Angular development workflow with practical AI tools that enhance productivity while maintaining code quality and architectural integrity.',
+      speakerId: 'gregor-woiwode',
+      time: '12:15 - 12:45',
+      day: 'day1',
+      room: 'Aula'
     }
   ]);
 

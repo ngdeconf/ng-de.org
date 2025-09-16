@@ -95,9 +95,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T12:15:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
+          information: 'Gregor Woiwode',
           location: 'Aula',
-          session: null
+          session: 'talk-agentic-angular'
         },
         // Lunch - 12:45-14:15
         {
