@@ -40,8 +40,8 @@ interface ScheduleEntry {
                 <thead class="bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
                 <tr>
                   <th scope="col" class="px-6 py-3 font-medium">Time</th>
-                  <th scope="col" class="px-6 py-3 font-medium">Title</th>
-                  <th scope="col" class="px-6 py-3 font-medium">Speaker</th>
+                  <th scope="col" class="px-6 py-3 font-medium">Stage Pool</th>
+                  <th scope="col" class="px-6 py-3 font-medium">Stage Aula</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -61,8 +61,10 @@ interface ScheduleEntry {
                       <td class="px-6 py-4 whitespace-nowrap">
                         {{ formatTime(entry.datetime) }}
                       </td>
+                      <!-- Stage Pool Column - Combined Title and Speaker -->
                       <td class="px-6 py-4">
-                        <div class="font-medium">
+                        <!-- Talk Title -->
+                        <div class="font-medium mb-2">
                           {{ getTalkTitle(entry) }}
                           @if (getTalkBySession(entry.session)) {
                             <span class="ml-1 text-xs text-primary-500 dark:text-primary-400">
@@ -74,8 +76,8 @@ interface ScheduleEntry {
                             </span>
                           }
                         </div>
-                      </td>
-                      <td class="px-6 py-4">
+                        
+                        <!-- Speaker Information -->
                         @if (entry.speakers) {
                           @for (speaker of entry.speakers; track speaker) {
                             @if (getSpeakerByName(speaker)) {
@@ -173,6 +175,13 @@ interface ScheduleEntry {
                           }
                         }
                       </td>
+                      <!-- Stage Aula Column - Empty for now -->
+                      <td class="px-6 py-4">
+                        <!-- Placeholder for Stage Aula content -->
+                        <div class="text-sm text-gray-400 dark:text-gray-500">
+                          <!-- Empty for now -->
+                        </div>
+                      </td>
                     </tr>
                   }
                 </tbody>
@@ -182,158 +191,182 @@ interface ScheduleEntry {
             <!-- Mobile Card Layout (hidden on desktop) -->
             <div class="md:hidden space-y-4 mb-12">
               @for (entry of day.entries; track entry.datetime) {
-                <div
-                    class="rounded-lg shadow-lg bg-white dark:bg-gray-800 overflow-hidden"
-                    [class.cursor-pointer]="getTalkBySession(entry.session)"
-                    [class.bg-gradient-to-r]="isBreak(entry)"
-                    [class.from-[#e40341]]="isBreak(entry)"
-                    [class.via-[#f034e0]]="isBreak(entry)"
-                    [class.to-[#2192d1]]="isBreak(entry)"
-                    [class.text-white]="isBreak(entry)"
-                    [class.opacity-90]="isBreak(entry) && !isParty(entry)"
-                    [class.opacity-100]="isParty(entry)"
-                    (click)="showTalkDetails(entry.session)"
-                >
-                  <div class="p-4">
-                    <!-- Time Badge -->
-                    <div class="flex items-start justify-between mb-3">
-                      <div
-                          class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium"
-                          [class]="isBreak(entry) ? 
-                          'bg-white/20 text-white' : 
-                          'bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-200'"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
-                             stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                        {{ formatTime(entry.datetime) }}
+                <div class="rounded-lg shadow-lg bg-white dark:bg-gray-800 overflow-hidden">
+                  <!-- Time Badge -->
+                  <div class="p-4 bg-gray-50 dark:bg-gray-700 border-b border-gray-200 dark:border-gray-600">
+                    <div
+                        class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800 dark:bg-primary-900/30 dark:text-primary-200"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                           stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                      </svg>
+                      {{ formatTime(entry.datetime) }}
+                    </div>
+                  </div>
+
+                  <!-- Two Stage Layout -->
+                  <div class="divide-y divide-gray-200 dark:divide-gray-600">
+                    <!-- Stage Pool -->
+                    <div 
+                        class="p-4"
+                        [class.cursor-pointer]="getTalkBySession(entry.session)"
+                        [class.bg-gradient-to-r]="isBreak(entry)"
+                        [class.from-[#e40341]]="isBreak(entry)"
+                        [class.via-[#f034e0]]="isBreak(entry)"
+                        [class.to-[#2192d1]]="isBreak(entry)"
+                        [class.text-white]="isBreak(entry)"
+                        [class.opacity-90]="isBreak(entry) && !isParty(entry)"
+                        [class.opacity-100]="isParty(entry)"
+                        (click)="showTalkDetails(entry.session)"
+                    >
+                      <!-- Stage Label -->
+                      <div class="flex items-center justify-between mb-3">
+                        <h4 
+                            class="text-sm font-semibold"
+                            [class]="isBreak(entry) ? 'text-white' : 'text-primary-600 dark:text-primary-400'"
+                        >
+                          Stage Pool
+                        </h4>
+                        @if (getTalkBySession(entry.session)) {
+                          <div [class]="isBreak(entry) ? 'text-white' : 'text-primary-500 dark:text-primary-400'">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                          </div>
+                        }
                       </div>
-                      @if (getTalkBySession(entry.session)) {
-                        <div [class]="isBreak(entry) ? 'text-white' : 'text-primary-500 dark:text-primary-400'">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                               stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                          </svg>
+
+                      <!-- Title -->
+                      <h5
+                          class="text-base font-semibold mb-3"
+                          [class]="isBreak(entry) ? 'text-white' : 'text-gray-900 dark:text-gray-100'"
+                      >
+                        {{ getTalkTitle(entry) }}
+                      </h5>
+
+                      <!-- Speaker Information -->
+                      @if (entry.speakers) {
+                        <div class="space-y-3">
+                          @for (speaker of entry.speakers; track speaker) {
+                            @if (getSpeakerByName(speaker)) {
+                              <div class="flex items-center"
+                                    [class.space-x-5]="getSpeakerByName(speaker)?.ngrxTeam || getSpeakerByName(speaker)?.angularTeam"
+                                    [class.space-x-4]="!getSpeakerByName(speaker)?.ngrxTeam && !getSpeakerByName(speaker)?.angularTeam">
+                                <div class="relative flex-shrink-0">
+                                  <img
+                                      [src]="getSpeakerByName(speaker)?.imageUrl"
+                                      [alt]="speaker"
+                                      class="w-12 h-12 rounded-full object-cover border-2"
+                                      [class]="isBreak(entry) ? 'border-white/30' : 'border-gray-200 dark:border-gray-700'"
+                                  />
+                                  @if (getSpeakerByName(speaker)?.angularTeam) {
+                                    <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                                      <img
+                                          src="assets/images/angular_gradient.png"
+                                          alt="Angular Team"
+                                          class="w-4 h-4"
+                                      />
+                                    </div>
+                                  }
+                                  @if (getSpeakerByName(speaker)?.ngrxTeam) {
+                                    <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                                      <img
+                                          src="assets/images/ngrx-logo.png"
+                                          alt="NgRx Team"
+                                          class="w-4 h-4"
+                                      />
+                                    </div>
+                                  }
+                                </div>
+                                <div class="min-w-0 flex-1">
+                                  <div
+                                      class="font-medium text-sm"
+                                      [class]="isBreak(entry) ? 'text-white' : 'text-gray-900 dark:text-gray-100'"
+                                  >
+                                    {{ speaker }}
+                                  </div>
+                                  <div
+                                      class="text-xs mt-1"
+                                      [class]="isBreak(entry) ? 'text-white/80' : 'text-gray-500 dark:text-gray-400'"
+                                  >
+                                    {{ getSpeakerByName(speaker)?.title }}
+                                  </div>
+                                </div>
+                              </div>
+                            }
+                          }
+                        </div>
+                      } @else if (getSpeakerByName(entry.information) || getSpeakerBySession(entry.session)) {
+                        <div class="flex items-center"
+                              [class.space-x-5]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam || (getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam"
+                              [class.space-x-4]="!(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam && !(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam">
+                          <div class="relative flex-shrink-0">
+                            <img
+                                [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl"
+                                [alt]="entry.information"
+                                class="w-12 h-12 rounded-full object-cover border-2"
+                                [class]="isBreak(entry) ? 'border-white/30' : 'border-gray-200 dark:border-gray-700'"
+                            />
+                            @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam) {
+                              <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                                <img
+                                    src="assets/images/angular_gradient.png"
+                                    alt="Angular Team"
+                                    class="w-4 h-4"
+                                />
+                              </div>
+                            }
+                            @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam) {
+                              <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
+                                <img
+                                    src="assets/images/ngrx-logo.png"
+                                    alt="NgRx Team"
+                                    class="w-4 h-4"
+                                />
+                              </div>
+                            }
+                          </div>
+                          <div class="min-w-0 flex-1">
+                            <div
+                                class="font-medium text-sm"
+                                [class]="isBreak(entry) ? 'text-white' : 'text-gray-900 dark:text-gray-100'"
+                            >
+                              {{ getSpeakerName(entry) }}
+                            </div>
+                            <div
+                                class="text-xs mt-1"
+                                [class]="isBreak(entry) ? 'text-white/80' : 'text-gray-500 dark:text-gray-400'"
+                            >
+                              {{ getSpeakerTitle(entry) }}
+                            </div>
+                          </div>
+                        </div>
+                      } @else {
+                        <div
+                            class="text-sm"
+                            [class]="isBreak(entry) ? 'text-white/90' : 'text-gray-600 dark:text-gray-400'"
+                        >
+                          {{ entry.information }}
                         </div>
                       }
                     </div>
 
-                    <!-- Title -->
-                    <h3
-                        class="text-lg font-semibold mb-3"
-                        [class]="isBreak(entry) ? 'text-white' : 'text-gray-900 dark:text-gray-100'"
-                    >
-                      {{ getTalkTitle(entry) }}
-                    </h3>
-
-                    <!-- Speaker Information -->
-                    @if (entry.speakers) {
-                      <div class="space-y-3">
-                        @for (speaker of entry.speakers; track speaker) {
-                          @if (getSpeakerByName(speaker)) {
-                                                         <div class="flex items-center"
-                                  [class.space-x-5]="getSpeakerByName(speaker)?.ngrxTeam || getSpeakerByName(speaker)?.angularTeam"
-                                  [class.space-x-4]="!getSpeakerByName(speaker)?.ngrxTeam && !getSpeakerByName(speaker)?.angularTeam">
-                               <div class="relative flex-shrink-0">
-                                 <img
-                                     [src]="getSpeakerByName(speaker)?.imageUrl"
-                                     [alt]="speaker"
-                                     class="w-14 h-14 rounded-full object-cover border-2"
-                                     [class]="isBreak(entry) ? 'border-white/30' : 'border-gray-200 dark:border-gray-700'"
-                                 />
-                                 @if (getSpeakerByName(speaker)?.angularTeam) {
-                                   <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                                     <img
-                                         src="assets/images/angular_gradient.png"
-                                         alt="Angular Team"
-                                         class="w-5 h-5"
-                                     />
-                                   </div>
-                                 }
-                                 @if (getSpeakerByName(speaker)?.ngrxTeam) {
-                                   <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                                     <img
-                                         src="assets/images/ngrx-logo.png"
-                                         alt="NgRx Team"
-                                         class="w-5 h-5"
-                                     />
-                                   </div>
-                                 }
-                               </div>
-                              <div class="min-w-0 flex-1">
-                                <div
-                                    class="font-medium text-base"
-                                    [class]="isBreak(entry) ? 'text-white' : 'text-gray-900 dark:text-gray-100'"
-                                >
-                                  {{ speaker }}
-                                </div>
-                                <div
-                                    class="text-sm mt-1"
-                                    [class]="isBreak(entry) ? 'text-white/80' : 'text-gray-500 dark:text-gray-400'"
-                                >
-                                  {{ getSpeakerByName(speaker)?.title }}
-                                </div>
-                              </div>
-                            </div>
-                          }
-                        }
+                    <!-- Stage Aula -->
+                    <div class="p-4">
+                      <!-- Stage Label -->
+                      <h4 class="text-sm font-semibold text-primary-600 dark:text-primary-400 mb-3">
+                        Stage Aula
+                      </h4>
+                      
+                      <!-- Empty placeholder -->
+                      <div class="text-sm text-gray-400 dark:text-gray-500 italic">
+                        <!-- Placeholder for future Stage Aula content -->
                       </div>
-                    } @else if (getSpeakerByName(entry.information) || getSpeakerBySession(entry.session)) {
-                                             <div class="flex items-center"
-                            [class.space-x-5]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam || (getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam"
-                            [class.space-x-4]="!(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam && !(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam">
-                         <div class="relative flex-shrink-0">
-                           <img
-                               [src]="(getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.imageUrl"
-                               [alt]="entry.information"
-                               class="w-14 h-14 rounded-full object-cover border-2"
-                               [class]="isBreak(entry) ? 'border-white/30' : 'border-gray-200 dark:border-gray-700'"
-                           />
-                           @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.angularTeam) {
-                             <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                               <img
-                                   src="assets/images/angular_gradient.png"
-                                   alt="Angular Team"
-                                   class="w-5 h-5"
-                               />
-                             </div>
-                           }
-                           @if ((getSpeakerBySession(entry.session) || getSpeakerByName(entry.information))?.ngrxTeam) {
-                             <div class="absolute -top-1 -right-1 bg-white dark:bg-gray-800 rounded-full p-0.5">
-                               <img
-                                   src="assets/images/ngrx-logo.png"
-                                   alt="NgRx Team"
-                                   class="w-5 h-5"
-                               />
-                             </div>
-                           }
-                         </div>
-                        <div class="min-w-0 flex-1">
-                          <div
-                              class="font-medium text-base"
-                              [class]="isBreak(entry) ? 'text-white' : 'text-gray-900 dark:text-gray-100'"
-                          >
-                            {{ getSpeakerName(entry) }}
-                          </div>
-                          <div
-                              class="text-sm mt-1"
-                              [class]="isBreak(entry) ? 'text-white/80' : 'text-gray-500 dark:text-gray-400'"
-                          >
-                            {{ getSpeakerTitle(entry) }}
-                          </div>
-                        </div>
-                      </div>
-                    } @else {
-                      <div
-                          class="text-sm"
-                          [class]="isBreak(entry) ? 'text-white/90' : 'text-gray-600 dark:text-gray-400'"
-                      >
-                        {{ entry.information }}
-                      </div>
-                    }
+                    </div>
                   </div>
                 </div>
               }
