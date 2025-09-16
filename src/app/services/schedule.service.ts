@@ -21,7 +21,14 @@ export class ScheduleService {
           title: 'Opening & Welcome',
           datetime: '2025-11-06T09:30:00',
           information: 'Robin Böhm and MC',
-          location: 'Both Stages',
+          location: 'Pool House',
+          session: null
+        },
+        {
+          title: 'Opening & Welcome',
+          datetime: '2025-11-06T09:30:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
           session: null
         },
         // Keynote - 10:00-10:30
@@ -29,16 +36,30 @@ export class ScheduleService {
           title: 'Keynote',
           datetime: '2025-11-06T10:00:00',
           information: 'Mark Thompson - tbd',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'keynote-day1'
+        },
+        {
+          title: 'Keynote',
+          datetime: '2025-11-06T10:00:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Slot 2 - 10:30-11:00
         {
           title: 'Talk',
           datetime: '2025-11-06T10:30:00',
           information: 'Matthieu Riegler - tbd',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day1-2'
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-06T10:30:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Coffee Break - 11:00-11:45
         {
@@ -68,8 +89,15 @@ export class ScheduleService {
           title: 'Talk',
           datetime: '2025-11-06T12:15:00',
           information: 'Marko Stanimirović',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day1-4'
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-06T12:15:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Lunch - 12:45-14:15
         {
@@ -99,8 +127,15 @@ export class ScheduleService {
           title: 'Talk',
           datetime: '2025-11-06T14:45:00',
           information: 'Eliran Eliassy',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day1-6'
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-06T14:45:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Coffee Break - 15:15-16:00
         {
@@ -115,23 +150,44 @@ export class ScheduleService {
           title: 'Talk',
           datetime: '2025-11-06T16:00:00',
           information: 'Martina Kraus',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day1-7'
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-06T16:00:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Slot 8 - 16:30-17:15
         {
           title: 'Talk',
           datetime: '2025-11-06T16:30:00',
           information: 'Enea Jahollari',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day1-8'
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-06T16:30:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Closing - 17:15-18:00
         {
           title: 'Closing Day 1',
           datetime: '2025-11-06T17:15:00',
           information: 'Wrap-up',
-          location: 'Both Stages',
+          location: 'Pool House',
+          session: null
+        },
+        {
+          title: 'Closing Day 1',
+          datetime: '2025-11-06T17:15:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
           session: null
         },
         // Community Event - 18:00-22:00
@@ -139,7 +195,14 @@ export class ScheduleService {
           title: 'Community Event/Party 🎉',
           datetime: '2025-11-06T18:00:00',
           information: 'Social event and networking',
-          location: 'Both Stages',
+          location: 'Pool House',
+          session: null
+        },
+        {
+          title: 'Community Event/Party 🎉',
+          datetime: '2025-11-06T18:00:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
           session: null
         }
       ]
@@ -161,7 +224,14 @@ export class ScheduleService {
           title: 'Opening & Welcome',
           datetime: '2025-11-07T09:30:00',
           information: 'Opening Day 2',
-          location: 'Both Stages',
+          location: 'Pool House',
+          session: null
+        },
+        {
+          title: 'Opening & Welcome',
+          datetime: '2025-11-07T09:30:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
           session: null
         },
         // Keynote - 10:00-10:30
@@ -169,17 +239,31 @@ export class ScheduleService {
           title: 'Keynote',
           datetime: '2025-11-07T10:00:00',
           information: 'Jens Kühlers',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'keynote-day2'
+        },
+        {
+          title: 'Keynote',
+          datetime: '2025-11-07T10:00:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Slot 11 - 10:30-11:00
         {
           title: 'Talk',
           datetime: '2025-11-07T10:30:00',
           information: 'Component Testing That Feels Like Playwright',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day2-16',
           speakers: ['Younes Jaaidi', 'Rainer Hahnekamp']
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-07T10:30:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Coffee Break - 11:00-11:45
         {
@@ -194,16 +278,30 @@ export class ScheduleService {
           title: 'Talk',
           datetime: '2025-11-07T11:45:00',
           information: 'Maria Korneeva',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day2-11'
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-07T11:45:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Slot 13 - 12:15-12:45
         {
           title: 'Talk',
           datetime: '2025-11-07T12:15:00',
           information: 'Brygida Fiejdasz',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day2-13'
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-07T12:15:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Lunch - 12:45-14:15
         {
@@ -218,16 +316,30 @@ export class ScheduleService {
           title: 'Talk',
           datetime: '2025-11-07T14:15:00',
           information: 'Christian Liebel',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day2-14'
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-07T14:15:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Slot 15 - 14:45-15:15
         {
           title: 'Talk',
           datetime: '2025-11-07T14:45:00',
           information: 'Michael Hladky',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day2-15'
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-07T14:45:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Coffee Break - 15:15-16:00
         {
@@ -242,23 +354,44 @@ export class ScheduleService {
           title: 'Talk',
           datetime: '2025-11-07T16:30:00',
           information: 'Manfred Steyer',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day2-18'
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-07T16:30:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Slot 17 - 17:00-17:30
         {
           title: 'Talk',
           datetime: '2025-11-07T17:00:00',
           information: 'Nicolas Frizzarin',
-          location: 'Both Stages',
+          location: 'Pool House',
           session: 'talk-day2-17'
+        },
+        {
+          title: 'Talk',
+          datetime: '2025-11-07T17:00:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
+          session: null
         },
         // Closing - 17:30
         {
           title: 'Closing & Farewell',
           datetime: '2025-11-07T17:30:00',
           information: 'Orga Team / MC',
-          location: 'Both Stages',
+          location: 'Pool House',
+          session: null
+        },
+        {
+          title: 'Closing & Farewell',
+          datetime: '2025-11-07T17:30:00',
+          information: 'Live Stream of Pool House Stage 📺🍿',
+          location: 'Aula',
           session: null
         }
       ]
