@@ -166,7 +166,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
     {
       id: 'talk-cologne-intelligence-ai-ux',
       title: 'Angular and AI-Driven UX: AI-assisted Interactions',
-      abstract: 'Artificial Intelligence is revolutionizing how users interact with web applications. In this talk, we will show how Angular developers can implement AI-driven user experience features to create smarter and more personalized applications. We explore practical approaches to integrating AI APIs, using machine learning for dynamic UI adaptations, and how Angular Signals and RxJS can be leveraged for reactive AI interactions. Through concrete examples from real projects at Cologne Intelligence, we demonstrate how chat-based interfaces, intelligent form assistants, and adaptive user interfaces are revolutionizing the user experience. Learn how to seamlessly integrate AI into your Angular architecture while optimizing performance and user-friendliness.',
+      abstract: 'In this talk, we explore how Angular can be combined with modern AI services to create smart and accessible user experiences. Using practical examples – from AI-generated text inputs to voice control and image analysis – we demonstrate how form fields can be intelligently populated and user journeys simplified. This provides a glimpse into how Angular apps can take the next step toward modern, multimodal UX through AI-assisted interactions.',
       speakerId: 'mario-trzensky',
       time: '11:45 - 12:15',
       day: 'day1',
