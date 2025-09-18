@@ -215,7 +215,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'robin-boehm',
       time: '14:45 - 15:15',
       day: 'day1',
-      room: 'Both Stages'
+      room: 'Aula'
     }
   ]);
 
