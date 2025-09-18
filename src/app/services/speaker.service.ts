@@ -235,6 +235,14 @@ export class SpeakerService {
       company: 'Guiding Ventures',
       bio: 'Mussie Haile brings a unique perspective to Angular development through his background in marketing and product innovation. At Guiding Ventures, he bridges the gap between business ideas and technical implementation by leveraging cutting-edge AI tools like Lovable and Bolt for rapid prototyping. His expertise lies in transforming marketing concepts into functional Angular prototypes within hours rather than weeks, enabling fast market validation and iterative product development. He specializes in using AI-powered development tools to democratize app creation and accelerate the journey from concept to market-ready Angular applications.',
       imageUrl: 'assets/images/speakers/mussie-haile.jpg'
+    },
+    {
+      id: 'panel-moderator',
+      name: 'Panel Moderator',
+      title: 'Conference Host',
+      company: 'NG-DE',
+      bio: 'Experienced conference moderator facilitating engaging discussions between industry experts and community leaders.',
+      imageUrl: 'assets/images/speakers/panel-moderator.jpg'
     }
   ]);
 

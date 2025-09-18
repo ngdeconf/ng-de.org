@@ -133,9 +133,10 @@ export class ScheduleService {
         {
           title: 'Panel Discussion',
           datetime: '2025-11-06T14:45:00',
-          information: 'Angular AI-Forward: supercharge your development with AI',
+          information: 'Community & Industry Voices',
           location: 'Aula',
-          session: 'panel-angular-ai-forward'
+          session: 'panel-angular-ai-forward',
+          speakers: ['mario-trzensky', 'gregor-woiwode', 'tobias-brenner', 'manfred-steyer', 'mark-thompson', 'alisa-bogatinovski']
         },
         // Coffee Break - 15:15-16:00
         {
