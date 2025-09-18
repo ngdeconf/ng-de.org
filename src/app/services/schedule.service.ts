@@ -133,7 +133,7 @@ export class ScheduleService {
         {
           title: 'Panel Discussion',
           datetime: '2025-11-06T14:45:00',
-          information: 'Angular AI-Forward: supercharge your development with AI',
+          information: 'Various speakers',
           location: 'Aula',
           session: 'panel-angular-ai-forward'
         },

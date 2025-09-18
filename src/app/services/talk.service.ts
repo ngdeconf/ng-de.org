@@ -210,9 +210,9 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
     },
     {
       id: 'panel-angular-ai-forward',
-      title: 'Angular AI-Forward: supercharge your development with AI',
-      abstract: 'Join our expert panel as we explore how artificial intelligence is transforming Angular development. This interactive discussion brings together industry leaders to share their perspectives on AI-powered development tools, intelligent code generation, and the future of Angular in an AI-driven world. We\'ll discuss practical strategies for integrating AI into your Angular workflow, from IDE assistance to automated testing and deployment. The panel will address real-world challenges, share success stories, and provide insights into emerging AI technologies that are reshaping how we build Angular applications. This is your chance to hear diverse viewpoints on the intersection of AI and Angular development, and participate in the conversation about where our industry is heading.',
-      speakerId: 'robin-boehm',
+      title: 'Panel Discussion: Angular AI-Forward. Supercharge your development with AI?!',
+      abstract: 'Join our expert panel as we explore how artificial intelligence is transforming Angular development. This interactive discussion brings together voices from the Angular team, community leaders, and industry experts to share their perspectives on AI-powered development tools, intelligent code generation, and the future of Angular in an AI-driven world. We\'ll discuss practical strategies for integrating AI into your Angular workflow, from IDE assistance to automated testing and deployment. The panel will address real-world challenges, share success stories, and provide insights into emerging AI technologies that are reshaping how we build Angular applications.',
+      speakerId: 'various-speakers',
       time: '14:45 - 15:15',
       day: 'day1',
       room: 'Aula'
