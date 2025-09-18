@@ -192,8 +192,8 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
     },
     {
       id: 'talk-rapid-prototyping-ai',
-      title: 'Rapid Prototyping with AI: From Marketing Idea to Angular MVP in Hours',
-      abstract: 'What if you could turn a marketing concept into a working Angular application in just a few hours? This talk explores the revolutionary world of AI-powered rapid prototyping tools like Lovable and Bolt that are democratizing app development. Coming from a marketing background, I\'ll demonstrate how non-technical team members can now create functional Angular prototypes to validate product ideas, test market assumptions, and iterate quickly without waiting for development cycles. We\'ll explore practical workflows for transforming user stories into working Angular components, leveraging AI for instant UI generation, and bridging the gap between marketing vision and technical reality. Learn how these tools are reshaping the product development lifecycle and enabling marketing teams to become active participants in the Angular ecosystem.',
+      title: 'Rapid Prototyping with AI: From Idea to MVP in Hours',
+      abstract: 'What if you could turn a marketing concept into a working application in just a few hours? This talk explores the revolutionary world of AI-powered rapid prototyping tools like Lovable and Bolt that are democratizing app development. Coming from a marketing background, I\'ll demonstrate how non-technical team members can now create functional prototypes to validate product ideas, test market assumptions, and iterate quickly without waiting for development cycles. We\'ll explore practical workflows for transforming user stories into working components, leveraging AI for instant UI generation, and bridging the gap between marketing vision and technical reality. Learn how these tools are reshaping the product development lifecycle and enabling marketing teams to become active participants in the Angular ecosystem.',
       speakerId: 'mussie-haile',
       time: '11:45 - 12:15',
       day: 'day2',
