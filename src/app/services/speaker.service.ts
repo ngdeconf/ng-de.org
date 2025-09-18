@@ -227,6 +227,14 @@ export class SpeakerService {
       company: 'Cologne Intelligence',
       bio: 'Mario Trzensky is a Web Frontend Developer at Cologne Intelligence with nearly five years of professional experience in frontend development. He specializes in modern frontend technologies and AI-assisted user interfaces, with extensive hands-on experience in building scalable web applications. At Cologne Intelligence, he contributes to innovative digital solutions and custom software development, focusing on creating intelligent, responsive, and user-friendly interfaces that leverage AI to enhance user experience through cutting-edge frontend technologies.',
       imageUrl: 'assets/images/speakers/mario-trzensky.jpeg'
+    },
+    {
+      id: 'mussie-haile',
+      name: 'Mussie Haile',
+      title: 'Product Marketing & AI Innovation Specialist',
+      company: 'Guiding Ventures',
+      bio: 'Mussie Haile brings a unique perspective to Angular development through his background in marketing and product innovation. At Guiding Ventures, he bridges the gap between business ideas and technical implementation by leveraging cutting-edge AI tools like Lovable and Bolt for rapid prototyping. His expertise lies in transforming marketing concepts into functional Angular prototypes within hours rather than weeks, enabling fast market validation and iterative product development. He specializes in using AI-powered development tools to democratize app creation and accelerate the journey from concept to market-ready Angular applications.',
+      imageUrl: 'assets/images/speakers/mussie-haile.jpg'
     }
   ]);
 

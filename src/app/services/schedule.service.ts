@@ -284,9 +284,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T11:45:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
+          information: 'Mussie Haile',
           location: 'Aula',
-          session: null
+          session: 'talk-rapid-prototyping-ai'
         },
         // Slot 13 - 12:15-12:45
         {
