@@ -198,6 +198,15 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       time: '11:45 - 12:15',
       day: 'day2',
       room: 'Aula'
+    },
+    {
+      id: 'talk-process-automation-ai-agents',
+      title: 'Intelligent Process Automation: Building Enterprise Workflows with AI Agents',
+      abstract: 'Enterprise workflows are becoming increasingly complex, but AI agents are revolutionizing how we automate business processes. This talk explores practical strategies for implementing intelligent process automation using autonomous AI agents that can make decisions, handle exceptions, and adapt to changing requirements. We\'ll demonstrate multi-agent orchestration patterns, from sequential content analysis to parallel decision-making workflows. Learn how to design robust agent pipelines that integrate with existing enterprise systems, implement intelligent error handling, and build self-monitoring automation systems. Through real-world examples, we\'ll show how AI agents can transform everything from document processing and approval workflows to customer service automation and data validation pipelines. Discover how to bridge the gap between business requirements and technical implementation while maintaining security, compliance, and scalability in your automated processes.',
+      speakerId: 'robin-boehm',
+      time: '12:15 - 12:45',
+      day: 'day2',
+      room: 'Aula'
     }
   ]);
 

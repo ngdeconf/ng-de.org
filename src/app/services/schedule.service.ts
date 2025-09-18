@@ -299,9 +299,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T12:15:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
+          information: 'Robin Böhm',
           location: 'Aula',
-          session: null
+          session: 'talk-process-automation-ai-agents'
         },
         // Lunch - 12:45-14:15
         {
