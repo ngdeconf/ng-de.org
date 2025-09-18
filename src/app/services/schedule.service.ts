@@ -122,20 +122,13 @@ export class ScheduleService {
           location: 'Aula',
           session: 'talk-eon-microfrontends'
         },
-        // Slot 6 - 14:45-15:15
+        // Slot 6 - 14:45-15:15 - Panel Discussion
         {
-          title: 'Talk',
+          title: 'Panel Discussion',
           datetime: '2025-11-06T14:45:00',
-          information: 'Eliran Eliassy',
-          location: 'Pool House',
-          session: 'talk-day1-6'
-        },
-        {
-          title: 'Talk',
-          datetime: '2025-11-06T14:45:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
-          location: 'Aula',
-          session: null
+          information: 'Angular AI-Forward: supercharge your development with AI',
+          location: 'Both Stages',
+          session: 'panel-angular-ai-forward'
         },
         // Coffee Break - 15:15-16:00
         {
