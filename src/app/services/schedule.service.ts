@@ -156,9 +156,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T16:00:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
+          information: 'Robin Böhm',
           location: 'Aula',
-          session: null
+          session: 'talk-process-automation-ai-agents'
         },
         // Slot 8 - 16:30-17:15
         {
@@ -299,9 +299,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T12:15:00',
-          information: 'Robin Böhm',
+          information: 'Live Stream of Pool House Stage 📺🍿',
           location: 'Aula',
-          session: 'talk-process-automation-ai-agents'
+          session: null
         },
         // Lunch - 12:45-14:15
         {
@@ -350,6 +350,7 @@ export class ScheduleService {
           session: null
         },
         // Slot 16 - 16:30-17:00
+        // Slot 17 - 16:30-17:00
         {
           title: 'Talk',
           datetime: '2025-11-07T16:30:00',
