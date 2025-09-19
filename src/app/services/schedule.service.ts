@@ -337,9 +337,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T14:45:00',
-          information: 'TBD',
+          information: 'Nicolas Frizzarin',
           location: 'Aula',
-          session: 'tbd-talk-4'
+          session: 'talk-day2-17'
         },
         // Coffee Break - 15:15-16:00
         {
@@ -365,34 +365,12 @@ export class ScheduleService {
           location: 'Aula',
           session: null
         },
-        // Slot 17 - 17:00-17:30
-        {
-          title: 'Talk',
-          datetime: '2025-11-07T17:00:00',
-          information: 'Nicolas Frizzarin',
-          location: 'Pool House',
-          session: 'talk-day2-17'
-        },
-        {
-          title: 'Talk',
-          datetime: '2025-11-07T17:00:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
-          location: 'Aula',
-          session: null
-        },
-        // Closing - 17:30
+        // Closing - 17:00
         {
           title: 'Closing & Farewell',
-          datetime: '2025-11-07T17:30:00',
+          datetime: '2025-11-07T17:00:00',
           information: 'Orga Team / MC',
-          location: 'Pool House',
-          session: null
-        },
-        {
-          title: 'Closing & Farewell',
-          datetime: '2025-11-07T17:30:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
-          location: 'Aula',
+          location: 'Both Stages',
           session: null
         }
       ]

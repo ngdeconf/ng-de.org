@@ -150,9 +150,9 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       title: 'Improve your code quality with the composition Pattern',
       abstract: 'Are you fully leveraging Angular\'s potential beyond Signals and standalone components? Discover the Composition Pattern, a key development since v14 that allows building robust features through simple composition of functions and directives. Stay ahead of the curve, learn its implementation, and harness its advantages – including upcoming v20 features – for more powerful applications. Since Angular 14, each version has brought its share of new features. The most obvious are, of course, Signals, the new control flow, and also standalone components. However, since version 14, the Angular team has developed much more than these new functionalities; they have unlocked a new development pattern: the Composition Pattern. Come and discover what this pattern can offer you in your daily applications, how to implement it, and how to extract the best advantages from it.',
       speakerId: 'nicolas-frizzarin',
-      time: '17:00 - 17:30',
+      time: '14:45 - 15:15',
       day: 'day2',
-      room: 'Pool House'
+      room: 'Aula'
     },
     {
       id: 'talk-eon-microfrontends',
@@ -244,15 +244,6 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       day: 'day2',
       room: 'Aula'
     },
-    {
-      id: 'tbd-talk-4',
-      title: 'TBD - Coming Soon!',
-      abstract: 'We\'re excited to announce an amazing speaker and topic for this slot very soon! Stay tuned for updates as we finalize this exciting addition to the NG-DE program.',
-      speakerId: 'tbd-speaker',
-      time: '14:45 - 15:15',
-      day: 'day2',
-      room: 'Aula'
-    }
   ]);
 
   /**
