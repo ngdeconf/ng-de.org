@@ -243,6 +243,14 @@ export class SpeakerService {
       company: 'Angular Team, Community and Industry',
       bio: 'Various speakers from angular team, community and industry',
       imageUrl: 'assets/images/speakers/various-speakers.jpg'
+    },
+    {
+      id: 'tbd-speaker',
+      name: 'TBD',
+      title: 'To Be Determined',
+      company: 'TBD',
+      bio: 'Speaker and topic to be announced soon. Stay tuned for exciting updates!',
+      imageUrl: 'assets/images/speakers/tbd-placeholder.jpg'
     }
   ]);
 

@@ -171,9 +171,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T16:30:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
+          information: 'TBD',
           location: 'Aula',
-          session: null
+          session: 'tbd-talk-1'
         },
         // Closing - 17:15-18:00
         {
@@ -299,9 +299,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T12:15:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
+          information: 'TBD',
           location: 'Aula',
-          session: null
+          session: 'tbd-talk-2'
         },
         // Lunch - 12:45-14:15
         {
@@ -322,9 +322,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T14:15:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
+          information: 'TBD',
           location: 'Aula',
-          session: null
+          session: 'tbd-talk-3'
         },
         // Slot 15 - 14:45-15:15
         {
@@ -337,9 +337,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T14:45:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
+          information: 'TBD',
           location: 'Aula',
-          session: null
+          session: 'tbd-talk-4'
         },
         // Coffee Break - 15:15-16:00
         {

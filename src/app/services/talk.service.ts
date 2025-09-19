@@ -216,6 +216,42 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       time: '14:45 - 15:15',
       day: 'day1',
       room: 'Aula'
+    },
+    {
+      id: 'tbd-talk-1',
+      title: 'TBD - Coming Soon!',
+      abstract: 'We\'re excited to announce an amazing speaker and topic for this slot very soon! Stay tuned for updates as we finalize this exciting addition to the NG-DE program.',
+      speakerId: 'tbd-speaker',
+      time: '16:30 - 17:00',
+      day: 'day1',
+      room: 'Aula'
+    },
+    {
+      id: 'tbd-talk-2',
+      title: 'TBD - Coming Soon!',
+      abstract: 'We\'re excited to announce an amazing speaker and topic for this slot very soon! Stay tuned for updates as we finalize this exciting addition to the NG-DE program.',
+      speakerId: 'tbd-speaker',
+      time: '12:15 - 12:45',
+      day: 'day2',
+      room: 'Aula'
+    },
+    {
+      id: 'tbd-talk-3',
+      title: 'TBD - Coming Soon!',
+      abstract: 'We\'re excited to announce an amazing speaker and topic for this slot very soon! Stay tuned for updates as we finalize this exciting addition to the NG-DE program.',
+      speakerId: 'tbd-speaker',
+      time: '14:15 - 14:45',
+      day: 'day2',
+      room: 'Aula'
+    },
+    {
+      id: 'tbd-talk-4',
+      title: 'TBD - Coming Soon!',
+      abstract: 'We\'re excited to announce an amazing speaker and topic for this slot very soon! Stay tuned for updates as we finalize this exciting addition to the NG-DE program.',
+      speakerId: 'tbd-speaker',
+      time: '14:45 - 15:15',
+      day: 'day2',
+      room: 'Aula'
     }
   ]);
 
