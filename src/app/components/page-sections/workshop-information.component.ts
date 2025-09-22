@@ -299,24 +299,24 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
 
       <div
         #dialogContent
-        class="bg-white dark:bg-gray-800 rounded-2xl max-w-3xl w-full max-h-[80vh] overflow-y-auto shadow-xl"
+        class="bg-white dark:bg-gray-800 rounded-2xl max-w-3xl w-full h-full max-h-screen overflow-y-auto shadow-xl"
         (click)="$event.stopPropagation()"
       >
         <!-- Sticky dialog header -->
         <div
-          class="sticky top-0 z-10 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 px-6 py-4 md:px-8 md:py-5 rounded-t-2xl shadow-sm"
+          class="sticky top-0 z-10 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 px-4 py-3 md:px-8 md:py-5 rounded-t-2xl shadow-sm"
         >
           <div class="flex justify-between items-start">
             <div class="flex-1 pr-8">
               <h3
                 id="workshop-details-title"
-                class="text-2xl font-bold leading-tight mb-2"
+                class="text-lg md:text-2xl font-bold leading-tight mb-2"
               >
                 {{ activeWorkshop()?.title }}
               </h3>
               <!-- Room and Location Information -->
               <div
-                class="flex items-center gap-4 text-primary-600 dark:text-primary-400"
+                class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-primary-600 dark:text-primary-400"
               >
                 <!-- Room -->
                 <div class="flex items-center gap-2">
@@ -360,7 +360,7 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 </div>
 
                 <!-- Action Buttons -->
-                <div class="flex items-center gap-2 ml-auto">
+                <div class="flex items-center gap-2 sm:ml-auto mt-2 sm:mt-0">
                   <a
                     href="https://maps.google.com/?q={{
                       activeWorkshop()?.address || ''
@@ -437,14 +437,14 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
           </div>
         </div>
 
-        <div class="p-8">
+        <div class="p-4 md:p-8">
           <ngde-workshop-schedule [isOpen]="false"></ngde-workshop-schedule>
 
           <!-- Target Audience -->
           @if (activeWorkshop()?.targetAudience) {
-          <div class="mb-8">
+          <div class="mb-6 md:mb-8">
             <div
-              class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+              class="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 md:p-6 border border-gray-200 dark:border-gray-700"
             >
               <div class="flex items-center gap-3 mb-4">
                 <div
@@ -549,10 +549,10 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                     <div
                       [id]="'section-' + i"
                       class="overflow-hidden transition-all duration-300"
-                      [style.maxHeight]="isAccordionExpanded(i) ? '500px' : '0'"
+                      [style.maxHeight]="isAccordionExpanded(i) ? 'none' : '0'"
                       [attr.aria-hidden]="!isAccordionExpanded(i)"
                     >
-                      <div class="px-6 pb-6">
+                      <div class="px-4 md:px-6 pb-4 md:pb-6">
                         <ul class="space-y-2 text-gray-600 dark:text-gray-300">
                           @for (topic of section.topics; track topic) {
                           <li class="flex items-start gap-3">
@@ -626,10 +626,10 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
               <div
                 id="about-section"
                 class="overflow-hidden transition-all duration-300"
-                [style.maxHeight]="isAboutExpanded() ? '500px' : '0'"
+                [style.maxHeight]="isAboutExpanded() ? 'none' : '0'"
                 [attr.aria-hidden]="!isAboutExpanded()"
               >
-                <div class="p-6 bg-white dark:bg-gray-800">
+                <div class="p-4 md:p-6 bg-white dark:bg-gray-800">
                   <div class="prose prose-gray dark:prose-invert max-w-none">
                     <p
                       class="text-gray-600 dark:text-gray-300 leading-relaxed text-base"
@@ -697,17 +697,17 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
               <div
                 id="trainers-section"
                 class="overflow-hidden transition-all duration-300"
-                [style.maxHeight]="isTrainersExpanded() ? '800px' : '0'"
+                [style.maxHeight]="isTrainersExpanded() ? 'none' : '0'"
                 [attr.aria-hidden]="!isTrainersExpanded()"
               >
-                <div class="p-6 bg-white dark:bg-gray-800">
-                  <div class="space-y-6">
+                <div class="p-4 md:p-6 bg-white dark:bg-gray-800">
+                  <div class="space-y-4 md:space-y-6">
                     @for (trainerId of activeWorkshop()?.trainers ||
                     [activeWorkshop()?.trainerId]; track trainerId) {
                     <div
-                      class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+                      class="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 md:p-6 border border-gray-200 dark:border-gray-700"
                     >
-                      <div class="flex flex-col sm:flex-row gap-6">
+                      <div class="flex flex-col sm:flex-row gap-4 md:gap-6">
                         <div class="relative flex-shrink-0">
                           <img
                             [src]="getSpeakerImage(trainerId)"
