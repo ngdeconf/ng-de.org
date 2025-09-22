@@ -261,9 +261,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T10:30:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
+          information: 'TBD',
           location: 'Aula',
-          session: null
+          session: 'tbd-talk-3'
         },
         // Coffee Break - 11:00-11:45
         {
