@@ -341,7 +341,9 @@ export class SpeakersComponent {
   }
 
   shuffleSpeakers(): void {
-    const speakersArray = [...this.speakers()];
+    // Filter out virtual speakers (Various speakers and TBD)
+    const filteredSpeakers = this.speakers().filter(speaker => !speaker.virtual);
+    const speakersArray = [...filteredSpeakers];
     // Simple Fisher-Yates shuffle algorithm
     for (let i = speakersArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));

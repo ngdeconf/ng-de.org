@@ -242,7 +242,8 @@ export class SpeakerService {
       title: 'Panel Discussion',
       company: 'Angular Team, Community and Industry',
       bio: 'Various speakers from angular team, community and industry',
-      imageUrl: 'assets/images/speakers/various-speakers.jpg'
+      imageUrl: 'assets/images/speakers/various-speakers.jpg',
+      virtual: true
     },
     {
       id: 'tbd-speaker',
@@ -250,7 +251,8 @@ export class SpeakerService {
       title: 'To Be Determined',
       company: 'TBD',
       bio: 'Speaker and topic to be announced soon. Stay tuned for exciting updates!',
-      imageUrl: 'assets/images/speakers/tbd-placeholder.jpg'
+      imageUrl: 'assets/images/speakers/tbd-placeholder.jpg',
+      virtual: true
     }
   ]);
 

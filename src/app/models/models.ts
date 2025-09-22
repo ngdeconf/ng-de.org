@@ -9,6 +9,7 @@ export interface Speaker {
   pronouns?: string;
   angularTeam?: boolean;
   ngrxTeam?: boolean;
+  virtual?: boolean;
 }
 
 export interface ScheduleEntry {
