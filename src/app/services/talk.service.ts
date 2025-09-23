@@ -52,8 +52,10 @@ export class TalkService {
     },
     {
       id: 'talk-day1-6',
-      title: 'Zero Bundle Size?',
-      abstract: 'What if your Angular app shipped nothing by default? With the introduction of the @defer block in Angular, the framework is entering a new era of ultra-granular code loading. In this session, we\'ll deep-dive into the mechanics and real-world impact of deferrable views—how Angular\'s control flow syntax enables not just lazy loading, but reactive, declarative code isolation. We\'ll go beyond the basic @defer syntax and explore strategies for architecting micro-frontends and feature islands, using build-time hints to reduce unused code paths, profiling and restructuring apps for minimal critical paths, and how defer blocks complement signals and zoneless change detection. Expect performance audits and advanced bundling techniques. If you\'re building large-scale Angular apps and want to minimize JS payload without compromising UX, this talk will give you concrete tools to reshape your app around runtime execution—not compile-time coupling.',
+      title: 'The Magic Behind The Resource API',
+      abstract: `The Angular Resource API is one of the most exciting recent additions to the framework, bringing powerful capabilities for managing and consuming asynchronous data with elegance and simplicity. In this talk, we’ll peel back the curtain and explore the magic that makes it work.
+Through a real-world, real-time example, you’ll see how the Resource API can dramatically simplify complex data flows and improve developer productivity. But we won’t stop there—together, we’ll dive deep into one of its lesser-known features: streaming resources. This hidden gem unlocks the ability to handle continuous streams of data, opening the door to highly dynamic applications.
+To showcase its potential, I’ll build a live chat experience—similar to ChatGPT—powered entirely by the Resource API. You’ll leave with both practical insights you can apply immediately and a fresh appreciation for the evolving power of Angular’s reactivity model.`,
       speakerId: 'eliran-eliassy',
       time: '14:45 - 15:15',
       day: 'day2',
