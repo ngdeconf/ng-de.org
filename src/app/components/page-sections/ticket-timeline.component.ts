@@ -18,7 +18,7 @@ import { TicketPhaseService } from '../../services/ticket-phase.service';
   template: `
     <!-- Timeline Container -->
     <div
-      class="relative mx-auto my-10 py-5 dark:bg-gray-900"
+      class="hidden md:block relative mx-auto my-10 py-5 dark:bg-gray-900"
       #timelineContainer
     >
       <!-- Timeline Bar - Hidden on mobile -->

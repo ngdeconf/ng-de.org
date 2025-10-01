@@ -1,12 +1,12 @@
 import {
-  afterNextRender,
-  Component,
-  DestroyRef,
-  ElementRef,
-  HostListener,
-  inject,
-  signal,
-  viewChild
+    afterNextRender,
+    Component,
+    DestroyRef,
+    ElementRef,
+    HostListener,
+    inject,
+    signal,
+    viewChild
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ThemeService } from '../../services/theme.service';
@@ -52,7 +52,7 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
             </div>
 
             <nav
-              class="hidden md:flex items-center space-x-8 text-gray-600 dark:text-gray-300"
+              class="hidden lg:flex items-center space-x-8 text-gray-600 dark:text-gray-300"
             >
               <a
                 href="#home"
@@ -119,7 +119,7 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
               <!-- Get Tickets CTA Button for mobile -->
               <a
                 href="#tickets"
-                class="md:hidden get-tickets-cta bg-[#e40341] hover:bg-[#c90339] text-white font-semibold py-1.5 px-3 text-sm rounded-lg transition-all duration-300 ease-in-out"
+                class="lg:hidden get-tickets-cta bg-[#e40341] hover:bg-[#c90339] text-white font-semibold py-1.5 px-3 text-sm rounded-lg transition-all duration-300 ease-in-out"
                 [class.opacity-0]="!showTicketsCTA()"
                 [class.opacity-100]="showTicketsCTA()"
                 style="transition: opacity 0.3s ease, transform 0.3s ease"
@@ -131,7 +131,7 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
 
               <button
                 (click)="toggleMobileMenu()"
-                class="md:hidden p-2 rounded-lg hover:opacity-80"
+                class="lg:hidden p-2 rounded-lg hover:opacity-80"
                 style="transition: opacity 0.2s ease"
                 aria-label="Toggle mobile menu"
               >
