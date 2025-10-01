@@ -46,16 +46,24 @@ import { TicketPhaseService } from '../../services/ticket-phase.service';
           <!-- Timeline dot -->
           <div class="relative z-10 md:mx-auto">
             <div
-              class="w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300 transform hover:scale-110
+              class="w-10 h-10 rounded-full border-3 flex items-center justify-center transition-all duration-300 transform hover:scale-110
           {{
                 phase.isActive
-                  ? 'bg-[#e40341] border-[#e40341] text-white shadow-lg shadow-[#e40341]/30'
+                  ? 'bg-gradient-to-br from-[#2192d1] to-[#921bf2] border-[#2192d1] text-white shadow-xl shadow-[#2192d1]/50 ring-4 ring-[#2192d1]/20 animate-pulse-slow'
                   : phase.isPast
-                  ? 'bg-[#921bf2] border-[#921bf2] text-white shadow-lg shadow-[#921bf2]/30'
+                  ? 'bg-gradient-to-br from-gray-400 to-gray-500 border-gray-400 text-white shadow-lg shadow-gray-400/40 dark:from-gray-600 dark:to-gray-700 dark:border-gray-600 opacity-75'
                   : 'bg-gray-100 border-gray-400 text-gray-400 dark:bg-gray-800 dark:border-gray-600'
               }}"
             >
               @if (phase.isActive) {
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="3" fill="currentColor" />
+              </svg>
+              } @else if (phase.isPast) {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="w-5 h-5"
@@ -68,19 +76,6 @@ import { TicketPhaseService } from '../../services/ticket-phase.service';
                   d="M20 6L9 17l-5-5"
                 />
               </svg>
-              } @else if (phase.isPast) {
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  d="M6 6l12 12M6 18L18 6"
-                />
-              </svg>
               }
             </div>
           </div>
@@ -88,12 +83,26 @@ import { TicketPhaseService } from '../../services/ticket-phase.service';
           <!-- Timeline content -->
           <div class="flex-1 md:text-center ml-4 md:ml-0">
             <h3
-              class="text-lg font-semibold mb-1 text-gray-900 dark:text-white transition-colors duration-300"
+              class="text-lg font-semibold mb-1 transition-colors duration-300
+              {{
+                phase.isActive
+                  ? 'text-[#2192d1] dark:text-[#2192d1]'
+                  : phase.isPast
+                  ? 'text-gray-700 dark:text-gray-300'
+                  : 'text-gray-500 dark:text-gray-500'
+              }}"
             >
               {{ phase.name }}
             </h3>
             <p
-              class="text-sm font-medium text-gray-600 dark:text-gray-400 transition-colors duration-300"
+              class="text-sm font-medium transition-colors duration-300
+              {{
+                phase.isActive
+                  ? 'text-[#921bf2] dark:text-[#921bf2]'
+                  : phase.isPast
+                  ? 'text-gray-600 dark:text-gray-400'
+                  : 'text-gray-400 dark:text-gray-600'
+              }}"
             >
               Begins {{ phase.startDate | date : 'd. MMMM' }}
             </p>
@@ -144,6 +153,19 @@ import { TicketPhaseService } from '../../services/ticket-phase.service';
 
     .animate-fill-gradient {
       animation: fill-gradient 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    @keyframes pulse-slow {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.8;
+      }
+    }
+
+    .animate-pulse-slow {
+      animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     }
   `
 })
