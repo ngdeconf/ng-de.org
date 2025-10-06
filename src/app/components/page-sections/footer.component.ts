@@ -64,6 +64,18 @@ import { RouterLink } from '@angular/router';
           </div>
         </div>
 
+        <!-- Funded by section -->
+        <div class="border-t border-gray-800 pt-8 pb-6">
+          <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+            <span class="text-gray-400 text-sm font-medium">Fonded by</span>
+            <img 
+              src="assets/images/berlin-senate-logo.png" 
+              alt="Senatsverwaltung für Wirtschaft, Energie und Betriebe Berlin" 
+              class="h-12 md:h-16 opacity-80 hover:opacity-100 transition-opacity"
+            />
+          </div>
+        </div>
+
         <div
           class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm"
         >
