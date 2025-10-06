@@ -65,7 +65,7 @@ export class SponsorService {
       name: 'Cologne Intelligence',
       logoUrl: 'assets/images/sponsors/cologne-intelligence.webp',
       websiteUrl: 'https://www.cologne-intelligence.de/',
-      level: 'Bronze'
+      level: 'Silver'
     }
   ]);
 
