@@ -97,6 +97,28 @@ import { Component } from '@angular/core';
             </p>
 
             <h2 class="text-2xl font-bold mb-4">
+              Data Sharing for Funding Programs
+            </h2>
+            <p class="mb-6">
+              For the proper accounting of funding under the "Kongressfonds für nachhaltiges Tagen" 
+              (Congress Fund for Sustainable Events) program, we may share the following personal data 
+              with the Senatsverwaltung für Wirtschaft, Energie und Betriebe (Senate Administration 
+              for Economics, Energy and Public Enterprises):
+            </p>
+            <ul class="list-disc pl-6 mb-6">
+              <li>First and last names</li>
+              <li>Institution/Organization</li>
+              <li>Location/City</li>
+              <li>Country</li>
+            </ul>
+            <p class="mb-6">
+              This data sharing is necessary to comply with the funding guidelines and to ensure 
+              proper accounting of the received funding. The legal basis for this processing is 
+              our legitimate interest in complying with funding requirements according to Art. 6 
+              para. 1 lit. f) GDPR.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4">
               Rights according to legal data protection regulations
             </h2>
             <p class="mb-4">
