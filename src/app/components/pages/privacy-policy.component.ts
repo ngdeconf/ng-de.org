@@ -114,8 +114,7 @@ import { Component } from '@angular/core';
             <p class="mb-6">
               This data sharing is necessary to comply with the funding guidelines and to ensure 
               proper accounting of the received funding. The legal basis for this processing is 
-              our legitimate interest in complying with funding requirements according to Art. 6 
-              para. 1 lit. f) GDPR.
+              our legitimate interest in complying with funding requirements.
             </p>
 
             <h2 class="text-2xl font-bold mb-4">
