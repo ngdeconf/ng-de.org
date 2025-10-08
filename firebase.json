@@ -17,6 +17,11 @@
         "source": "/feedback/",
         "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeOhXRB9dkjO6gOAXqEIK7Ng3Qzv1foUMDBNGDO_An_AONKGQ/viewform?usp=sf_link",
         "type": 301
+      },
+      {
+        "source": "/schedule/",
+        "destination": "https://ng-de.org/#schedule",
+        "type": 301
       }
     ]
   }
