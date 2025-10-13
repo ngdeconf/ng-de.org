@@ -18,7 +18,7 @@ import { WorkshopInformationComponent } from './workshop-information.component';
           </p>
         </div>
 
-        <ngde-workshop-information></ngde-workshop-information>
+        <ngde-workshop-information />
       </div>
     </section>
   `,

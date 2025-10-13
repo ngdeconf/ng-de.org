@@ -438,7 +438,7 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
         </div>
 
         <div class="p-4 md:p-8">
-          <ngde-workshop-schedule [isOpen]="false"></ngde-workshop-schedule>
+          <ngde-workshop-schedule [isOpen]="false" />
 
           <!-- Target Audience -->
           @if (activeWorkshop()?.targetAudience) {
