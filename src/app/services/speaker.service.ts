@@ -237,6 +237,15 @@ export class SpeakerService {
       imageUrl: 'assets/images/speakers/mussie-haile.jpg'
     },
     {
+      id: 'jim-sellmeijer',
+      name: 'Jim Sellmeijer',
+      title: 'Software Developer & Speaker',
+      company: 'Independent',
+      bio: 'Software developer and speaker focusing on AI integration in development workflows and the future of software engineering. Jim explores how AI tools can enhance developer productivity while addressing common misconceptions about AI replacing developers.',
+      imageUrl: 'assets/images/speakers/jim-sellmeijer.jpeg',
+      virtual: false
+    },
+    {
       id: 'various-speakers',
       name: 'Various speakers',
       title: 'Panel Discussion',
