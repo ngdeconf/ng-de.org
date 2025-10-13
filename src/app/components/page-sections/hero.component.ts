@@ -160,13 +160,9 @@ interface VideoModalData {
                 aria-label="Play conference impressions video"
               >
                 <div class="relative">
-                  <!-- Outer circle with pulse animation -->
+                  <!-- Play button -->
                   <div
-                    class="absolute inset-0 bg-white/30 dark:bg-black/30 rounded-full animate-ping"
-                  ></div>
-                  <!-- Inner circle -->
-                  <div
-                    class="relative bg-primary-500 text-white rounded-full p-4 shadow-lg"
+                    class="bg-primary-500 text-white rounded-full p-4 shadow-lg"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
