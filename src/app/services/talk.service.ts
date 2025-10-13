@@ -122,8 +122,8 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
     },
     {
       id: 'jim-ai-talk',
-      title: 'How AI will take your dev jobs... to the next level.',
-      abstract: 'Starting with what popular media says about the future of software development jobs, this talk explains why these predictions are mostly exaggerated and why dev jobs won\'t disappear. We\'ll explore the efficiency improvements that AI brings and argue that this will likely lead to more software being written overall, not the same amount by fewer people. The session concludes by showing concretely how we can use AI to become more efficient developers and take our careers to the next level.',
+      title: 'How AI will take your dev jobs...',
+      abstract: '...to the next level! Starting with what popular media says about the future of software development jobs, this talk explains why these predictions are mostly exaggerated and why dev jobs won\'t disappear. We\'ll explore the efficiency improvements that AI brings and argue that this will likely lead to more software being written overall, not the same amount by fewer people. The session concludes by showing concretely how we can use AI to take our development careers to the next level.',
       speakerId: 'jim-sellmeijer',
       time: '11:45 - 12:15',
       day: 'day1',

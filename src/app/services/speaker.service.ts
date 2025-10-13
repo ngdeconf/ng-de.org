@@ -238,10 +238,10 @@ export class SpeakerService {
     },
     {
       id: 'jim-sellmeijer',
-      name: 'Jim Sellmeijer',
+      name: 'Dr. Jim Sellmeijer',
       title: 'Software Developer & Speaker',
       company: 'Independent',
-      bio: 'Software developer and speaker focusing on AI integration in development workflows and the future of software engineering. Jim explores how AI tools can enhance developer productivity while addressing common misconceptions about AI replacing developers.',
+      bio: 'Software developer and speaker focusing on AI integration in development workflows and the future of software engineering. Dr. Jim explores how AI tools can enhance developer productivity while addressing common misconceptions about AI replacing developers.',
       imageUrl: 'assets/images/speakers/jim-sellmeijer.jpeg',
       virtual: false
     },
