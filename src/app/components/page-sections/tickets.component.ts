@@ -82,8 +82,8 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                       class="text-2xl font-bold mb-2"
                       [class.text-gray-900]="ticket.type !== 'bundle'"
                       [class.dark:text-white]="ticket.type !== 'bundle'"
-                      [class.text-white]="ticket.type === 'bundle'"
-                      [class.dark:text-gray-900]="ticket.type === 'bundle'"
+                      [class.text-white]="ticket.type === 'bundle' || isFlashSaleTicket(ticket)"
+                      [class.dark:text-gray-900]="ticket.type === 'bundle' && !isFlashSaleTicket(ticket)"
                     >
                       {{
                         ticket.name === 'Conference Ticket'
@@ -94,8 +94,9 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                     <p
                       [class.text-gray-600]="ticket.type !== 'bundle'"
                       [class.dark:text-gray-400]="ticket.type !== 'bundle'"
-                      [class.text-gray-300]="ticket.type === 'bundle'"
-                      [class.dark:text-gray-600]="ticket.type === 'bundle'"
+                      [class.text-white]="isFlashSaleTicket(ticket)"
+                      [class.text-gray-300]="ticket.type === 'bundle' && !isFlashSaleTicket(ticket)"
+                      [class.dark:text-gray-600]="ticket.type === 'bundle' && !isFlashSaleTicket(ticket)"
                     >
                       {{ ticket.description }}
                     </p>
@@ -125,17 +126,17 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                       {{ getTicketDisplayPrice(ticket) }} {{ ticket.currency }}
                     </p>
                     <div class="flex flex-col items-start">
-                      <p class="text-sm text-gray-400">
+                      <p class="text-sm text-white/60">
                         instead of
                       </p>
                       <div class="relative">
-                        <p class="text-xl text-gray-400">
+                        <p class="text-xl text-white/70">
                           {{ getTicketOriginalPrice(ticket) }}
                           {{ ticket.currency }}
                         </p>
                         <!-- Subtle line through price -->
                         <div class="absolute inset-0 flex items-center">
-                          <div class="h-[1px] w-full bg-[#FFD700]/60"></div>
+                          <div class="h-[1px] w-full bg-white/70"></div>
                         </div>
                       </div>
                     </div>
@@ -144,13 +145,13 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                     class="mt-2 inline-block bg-[#FFD700]/20 px-3 py-1 rounded-lg flash-sale-badge"
                   >
                     <p
-                      class="text-sm font-bold text-[#FFD700] whitespace-nowrap"
+                      class="text-sm font-bold text-white whitespace-nowrap"
                     >
                       Save {{ getTicketOriginalPrice(ticket) - getTicketDisplayPrice(ticket) }}
                       {{ ticket.currency }} (25% OFF)
                     </p>
                   </div>
-                  <p class="text-sm text-[#FFD700] mt-2 font-medium">
+                  <p class="text-sm text-white mt-2 font-medium">
                     ⏱️ Limited time offer - ends soon!
                   </p>
                   } @else if (!isFinalBirdPhase() && (ticket.type === 'conference' ||
@@ -206,6 +207,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                   <div class="space-y-4">
                     <h4
                       class="font-semibold text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400"
+                      [class.text-white]="isFlashSaleTicket(ticket)"
                     >
                       What's Included
                     </h4>
@@ -230,8 +232,9 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                         <span
                           [class.text-gray-700]="ticket.type !== 'bundle'"
                           [class.dark:text-gray-300]="ticket.type !== 'bundle'"
-                          [class.text-gray-200]="ticket.type === 'bundle'"
-                          [class.dark:text-gray-700]="ticket.type === 'bundle'"
+                          [class.text-gray-200]="ticket.type === 'bundle' && !isFlashSaleTicket(ticket)"
+                          [class.text-white]="isFlashSaleTicket(ticket)"
+                          [class.dark:text-gray-700]="ticket.type === 'bundle' && !isFlashSaleTicket(ticket)"
                         >
                           {{ feature }}
                         </span>
