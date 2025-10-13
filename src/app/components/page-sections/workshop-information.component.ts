@@ -36,7 +36,7 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
         <!-- Sold Out Overlay -->
         @if (workshop.soldOut) {
         <div
-          class="absolute inset-0 z-20 bg-black/80 backdrop-blur-sm flex items-center justify-center"
+          class="absolute inset-0 z-20 bg-black/40 flex items-center justify-center"
         >
           <div class="text-center">
             <div
