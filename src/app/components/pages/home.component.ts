@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CallForPapersComponent } from '../page-sections/call-for-papers.component';
+import { AnnouncementBannerComponent } from '../page-sections/announcement-banner.component';
 import { CommunityPartnersComponent } from '../page-sections/community-partners.component';
-import { LocationComponent } from '../page-sections/location.component';
 import { FaqComponent } from '../page-sections/faq.component';
 import { HeroComponent } from '../page-sections/hero.component';
 import { ImpressionsComponent } from '../page-sections/impressions.component';
+import { LocationComponent } from '../page-sections/location.component';
 import { NewsletterComponent } from '../page-sections/newsletter.component';
 import { OrganizerComponent } from '../page-sections/organizer.component';
 import { ScheduleComponent } from '../page-sections/schedule.component';
@@ -18,6 +18,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
   standalone: true,
   imports: [
     HeroComponent,
+    AnnouncementBannerComponent,
     TicketsComponent,
     SpeakersComponent,
     ScheduleComponent,
@@ -33,6 +34,7 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
   ],
   template: `
     <ngde-hero />
+    <ngde-announcement-banner />
     <ngde-tickets />
     <ngde-speakers />
     <ngde-schedule />
