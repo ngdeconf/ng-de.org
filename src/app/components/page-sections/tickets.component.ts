@@ -1,5 +1,6 @@
 import { Component, computed, effect, signal } from '@angular/core';
 import { Ticket } from '../../models/models';
+import { FlashSaleService } from '../../services/flash-sale.service';
 import { TicketPhaseService } from '../../services/ticket-phase.service';
 import { TicketService } from '../../services/ticket.service';
 import { TicketTimelineComponent } from './ticket-timeline.component';
@@ -38,7 +39,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                 </div>
               </div>
             </div>
-            } @if (ticket.type === 'bundle') {
+            } @if (ticket.type === 'bundle' && !isFlashSaleActive()) {
             <div
               class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[#921bf2] to-[#f034e0] px-6 py-2 rounded-full shadow-lg z-10"
             >
@@ -46,17 +47,31 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                 >Best Value</span
               >
             </div>
+            } @if (isFlashSaleTicket(ticket)) {
+            <div
+              class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FFD700] px-6 py-2 rounded-full shadow-lg z-10 flash-sale-badge"
+            >
+              <span class="text-gray-900 font-bold text-sm tracking-wide"
+                >FLASH SALE</span
+              >
+            </div>
             }
             <div
               class="rounded-2xl shadow-lg overflow-hidden border-t-4 grid grid-rows-[1fr_auto] h-full"
               [class.bg-white]="ticket.type !== 'bundle'"
               [class.dark:bg-gray-800]="ticket.type !== 'bundle'"
-              [class.bg-gray-900]="ticket.type === 'bundle'"
-              [class.dark:bg-white]="ticket.type === 'bundle'"
+              [class.bg-gray-900]="ticket.type === 'bundle' && !isFlashSaleTicket(ticket)"
+              [class.dark:bg-white]="ticket.type === 'bundle' && !isFlashSaleTicket(ticket)"
               [class.border-[#e40341]]="ticket.type === 'conference'"
               [class.border-[#f034e0]]="ticket.type === 'workshop'"
-              [class.border-[#921bf2]]="ticket.type === 'bundle'"
+              [class.border-[#921bf2]]="ticket.type === 'bundle' && !isFlashSaleTicket(ticket)"
               [class.border-[#2192d1]]="ticket.type === 'online'"
+              [class.border-[#FFD700]]="isFlashSaleTicket(ticket)"
+              [class.flash-sale-card]="isFlashSaleTicket(ticket)"
+              [class.bg-gradient-to-br]="isFlashSaleTicket(ticket)"
+              [class.from-gray-900]="isFlashSaleTicket(ticket)"
+              [class.via-gray-800]="isFlashSaleTicket(ticket)"
+              [class.to-gray-900]="isFlashSaleTicket(ticket)"
               [class.opacity-75]="!ticket.available"
             >
               <div class="p-8 flex flex-col">
@@ -103,7 +118,42 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
 
                 <!-- Price Section -->
                 <div class="mb-8">
-                  @if (!isFinalBirdPhase() && (ticket.type === 'conference' ||
+                  @if (isFlashSaleTicket(ticket)) {
+                  <!-- Flash Sale Pricing -->
+                  <div class="flex items-end gap-3">
+                    <p class="text-4xl font-bold text-[#FFD700] flash-sale-price">
+                      {{ getTicketDisplayPrice(ticket) }} {{ ticket.currency }}
+                    </p>
+                    <div class="flex flex-col items-start">
+                      <p class="text-sm text-gray-400">
+                        instead of
+                      </p>
+                      <div class="relative">
+                        <p class="text-xl text-gray-400">
+                          {{ getTicketOriginalPrice(ticket) }}
+                          {{ ticket.currency }}
+                        </p>
+                        <!-- Subtle line through price -->
+                        <div class="absolute inset-0 flex items-center">
+                          <div class="h-[1px] w-full bg-[#FFD700]/60"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="mt-2 inline-block bg-[#FFD700]/20 px-3 py-1 rounded-lg flash-sale-badge"
+                  >
+                    <p
+                      class="text-sm font-bold text-[#FFD700] whitespace-nowrap"
+                    >
+                      Save {{ getTicketOriginalPrice(ticket) - getTicketDisplayPrice(ticket) }}
+                      {{ ticket.currency }} (25% OFF)
+                    </p>
+                  </div>
+                  <p class="text-sm text-[#FFD700] mt-2 font-medium">
+                    ⏱️ Limited time offer - ends soon!
+                  </p>
+                  } @else if (!isFinalBirdPhase() && (ticket.type === 'conference' ||
                   ticket.type === 'bundle' || ticket.type === 'workshop')) {
                   <div class="flex items-end gap-3">
                     <p class="text-4xl font-bold text-[#e40341]">
@@ -165,8 +215,9 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           class="h-5 w-5 mr-3 mt-0.5"
-                          [class.text-[#e40341]]="ticket.type !== 'bundle'"
-                          [class.text-[#f034e0]]="ticket.type === 'bundle'"
+                          [class.text-[#e40341]]="ticket.type !== 'bundle' && !isFlashSaleTicket(ticket)"
+                          [class.text-[#f034e0]]="ticket.type === 'bundle' && !isFlashSaleTicket(ticket)"
+                          [class.text-[#FFD700]]="isFlashSaleTicket(ticket)"
                           viewBox="0 0 20 20"
                           fill="currentColor"
                         >
@@ -194,7 +245,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
               <!-- Button Section -->
               <div class="px-6 pb-6">
                 <a
-                  href="https://ti.to/ng-de/berlin-2025"
+                  [href]="getTicketUrl(ticket)"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="block"
@@ -204,13 +255,25 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                     [class.opacity-50]="!ticket.available"
                     [class.cursor-not-allowed]="!ticket.available"
                     class="w-full text-white font-medium px-8 py-3.5 rounded-lg flex justify-center items-center"
-                    [class.bg-[#e40341]]="ticket.available"
-                    [class.hover:bg-[#c90339]]="ticket.available"
+                    [class.bg-[#e40341]]="ticket.available && !isFlashSaleTicket(ticket)"
+                    [class.hover:bg-[#c90339]]="ticket.available && !isFlashSaleTicket(ticket)"
+                    [class.bg-gradient-to-r]="isFlashSaleTicket(ticket)"
+                    [class.from-[#FFD700]]="isFlashSaleTicket(ticket)"
+                    [class.via-[#FFA500]]="isFlashSaleTicket(ticket)"
+                    [class.to-[#FFD700]]="isFlashSaleTicket(ticket)"
+                    [class.flash-sale-button]="isFlashSaleTicket(ticket)"
+                    [class.text-black]="isFlashSaleTicket(ticket)"
                     [class.bg-gray-400]="!ticket.available"
                     style="transition: background-color 0.2s ease"
                   >
                     <span class="relative z-10 font-semibold text-center">
-                      @if (ticket.available) { Get Ticket } @else { Sold Out }
+                      @if (ticket.available) {
+                        @if (isFlashSaleTicket(ticket)) {
+                          Get Flash Sale Ticket
+                        } @else {
+                          Get Ticket
+                        }
+                      } @else { Sold Out }
                     </span>
                   </button>
                 </a>
@@ -222,7 +285,89 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
       </div>
     </section>
   `,
-  styles: `/* Component styles here */`
+  styles: `
+    @keyframes flash-pulse {
+      0%, 100% {
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.3), 0 0 30px rgba(255, 215, 0, 0.2);
+      }
+      50% {
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.3);
+      }
+    }
+
+    @keyframes flash-shine {
+      0% {
+        background-position: -200% center;
+      }
+      100% {
+        background-position: 200% center;
+      }
+    }
+
+    @keyframes flash-glow {
+      0%, 100% {
+        filter: brightness(1);
+      }
+      50% {
+        filter: brightness(1.2);
+      }
+    }
+
+    .flash-sale-card {
+      animation: flash-pulse 5s ease-in-out infinite;
+      position: relative;
+    }
+
+    .flash-sale-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 215, 0, 0.1),
+        transparent
+      );
+      background-size: 200% 100%;
+      animation: flash-shine 4s linear infinite;
+      pointer-events: none;
+      border-radius: 1rem;
+    }
+
+    .flash-sale-badge {
+      animation: flash-glow 4s ease-in-out infinite;
+    }
+
+    .flash-sale-price {
+      animation: flash-glow 4s ease-in-out infinite;
+    }
+
+    .flash-sale-button {
+      position: relative;
+      overflow: hidden;
+      font-weight: 800;
+      animation: flash-glow 5s ease-in-out infinite;
+    }
+
+    .flash-sale-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+      );
+      animation: flash-shine 3.5s linear infinite;
+    }
+  `
 })
 export class TicketsComponent {
   tickets = this.ticketService.getTickets();
@@ -240,7 +385,8 @@ export class TicketsComponent {
 
   constructor(
     private ticketService: TicketService,
-    private ticketPhaseService: TicketPhaseService
+    private ticketPhaseService: TicketPhaseService,
+    private flashSaleService: FlashSaleService
   ) {
     // Setup effect to calculate prices when phases change
     effect(() => {
@@ -280,6 +426,32 @@ export class TicketsComponent {
 
   isFinalBirdPhase(): boolean {
     return this.ticketPhaseService.getCurrentPhase()()?.name === 'Final Bird';
+  }
+
+  isFlashSaleActive(): boolean {
+    return this.flashSaleService.isFlashSaleActive();
+  }
+
+  isFlashSaleTicket(ticket: Ticket): boolean {
+    return ticket.type === 'bundle' && this.isFlashSaleActive();
+  }
+
+  getTicketDisplayPrice(ticket: Ticket): number {
+    if (this.isFlashSaleTicket(ticket)) {
+      return this.flashSaleService.getFlashSalePrice(ticket.price);
+    }
+    return ticket.price;
+  }
+
+  getTicketOriginalPrice(ticket: Ticket): number {
+    return ticket.price;
+  }
+
+  getTicketUrl(ticket: Ticket): string {
+    if (this.isFlashSaleTicket(ticket)) {
+      return this.flashSaleService.getDiscountUrl();
+    }
+    return 'https://ti.to/ng-de/berlin-2025';
   }
 
   formatDate(date: Date): string {

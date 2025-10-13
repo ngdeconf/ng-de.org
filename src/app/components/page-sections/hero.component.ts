@@ -1,5 +1,6 @@
 import { Dialog } from '@angular/cdk/dialog';
 import { Component, inject } from '@angular/core';
+import { FlashSaleService } from '../../services/flash-sale.service';
 import { VideoModalComponent } from '../video-modal/video-modal.component';
 
 interface VideoModalData {
@@ -8,6 +9,46 @@ interface VideoModalData {
 
 @Component({
   selector: 'ngde-hero',
+  styles: `
+    @keyframes hero-flash-pulse {
+      0%, 100% {
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.4), 0 0 25px rgba(255, 215, 0, 0.2);
+      }
+      50% {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.6), 0 0 35px rgba(255, 215, 0, 0.4);
+      }
+    }
+
+    @keyframes hero-flash-shine {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+    .hero-flash-sale-button {
+      animation: hero-flash-pulse 10s ease-in-out infinite;
+      position: relative;
+    }
+
+    .hero-flash-sale-button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+      );
+      animation: hero-flash-shine 10s linear infinite;
+    }
+  `,
   template: `
     <section
       id="home"
@@ -124,6 +165,15 @@ interface VideoModalData {
             <div
               class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
             >
+              @if (flashSaleService.isFlashSaleActive()) {
+              <a
+                href="#tickets"
+                class="text-gray-900 font-bold px-8 py-4 rounded-lg relative overflow-hidden text-center bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FFD700] hero-flash-sale-button"
+                style="transition: background-color 0.2s ease"
+              >
+                <span class="relative z-10 font-semibold">Go to Flash Sale</span>
+              </a>
+              } @else {
               <a
                 href="#tickets"
                 class="text-white font-medium px-8 py-4 rounded-lg relative overflow-hidden text-center bg-[#e40341] hover:bg-[#c90339]"
@@ -131,6 +181,7 @@ interface VideoModalData {
               >
                 <span class="relative z-10 font-semibold">Get Tickets</span>
               </a>
+              }
               <a
                 href="#speakers"
                 class="inline-block px-8 py-4 font-semibold rounded-lg transition-all bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600 text-center"
@@ -204,6 +255,7 @@ interface VideoModalData {
 })
 export class HeroComponent {
   private dialog = inject(Dialog);
+  flashSaleService = inject(FlashSaleService);
 
   openVideoModal(): void {
     this.dialog.open<VideoModalComponent, VideoModalData>(VideoModalComponent, {
