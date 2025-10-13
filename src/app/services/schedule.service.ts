@@ -80,9 +80,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T11:45:00',
-          information: 'Mario Trzensky',
+          information: 'Jim Sellmeijer',
           location: 'Aula',
-          session: 'talk-cologne-intelligence-ai-ux'
+          session: 'jim-ai-talk'
         },
         // Slot 4 - 12:15-12:45
         {
@@ -118,9 +118,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T14:15:00',
-          information: 'Tobias Brenner',
+          information: 'Mario Trzensky',
           location: 'Aula',
-          session: 'talk-eon-microfrontends'
+          session: 'talk-cologne-intelligence-ai-ux'
         },
         // Slot 6 - 14:45-15:15 - Parallel Sessions
         {
@@ -299,9 +299,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T12:15:00',
-          information: 'Jim Sellmeijer',
+          information: 'TBD',
           location: 'Aula',
-          session: 'jim-ai-talk'
+          session: 'tbd-talk-2'
         },
         // Lunch - 12:45-14:15
         {
@@ -315,31 +315,31 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T14:15:00',
-          information: 'Christian Liebel',
+          information: 'Tobias Brenner',
           location: 'Pool House',
-          session: 'talk-day2-14'
+          session: 'talk-eon-microfrontends'
         },
         {
           title: 'Talk',
           datetime: '2025-11-07T14:15:00',
-          information: 'TBD',
+          information: 'Christian Liebel',
           location: 'Aula',
-          session: 'tbd-talk-3'
+          session: 'talk-day2-14'
         },
         // Slot 15 - 14:45-15:15
         {
           title: 'Talk',
           datetime: '2025-11-07T14:45:00',
-          information: 'Michael Hladky',
+          information: 'Nicolas Frizzarin',
           location: 'Pool House',
-          session: 'talk-day2-15'
+          session: 'talk-day2-17'
         },
         {
           title: 'Talk',
           datetime: '2025-11-07T14:45:00',
-          information: 'Nicolas Frizzarin',
+          information: 'Michael Hladky',
           location: 'Aula',
-          session: 'talk-day2-17'
+          session: 'talk-day2-15'
         },
         // Coffee Break - 15:15-16:00
         {

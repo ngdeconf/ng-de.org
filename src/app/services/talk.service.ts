@@ -125,8 +125,8 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       title: 'How AI will take your dev jobs... to the next level.',
       abstract: 'Starting with what popular media says about the future of software development jobs, this talk explains why these predictions are mostly exaggerated and why dev jobs won\'t disappear. We\'ll explore the efficiency improvements that AI brings and argue that this will likely lead to more software being written overall, not the same amount by fewer people. The session concludes by showing concretely how we can use AI to become more efficient developers and take our careers to the next level.',
       speakerId: 'jim-sellmeijer',
-      time: '12:15 - 12:45',
-      day: 'day2',
+      time: '11:45 - 12:15',
+      day: 'day1',
       room: 'Aula'
     },
     {
@@ -136,7 +136,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'christian-liebel',
       time: '14:15 - 14:45',
       day: 'day2',
-      room: 'Pool House'
+      room: 'Aula'
     },
     {
       id: 'talk-day2-15',
@@ -145,7 +145,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'michael-hladky',
       time: '14:45 - 15:15',
       day: 'day2',
-      room: 'Pool House'
+      room: 'Aula'
     },
     {
       id: 'talk-day2-11',
@@ -163,7 +163,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'nicolas-frizzarin',
       time: '14:45 - 15:15',
       day: 'day2',
-      room: 'Aula'
+      room: 'Pool House'
     },
     {
       id: 'talk-eon-microfrontends',
@@ -171,15 +171,15 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       abstract: 'MicroFrontends are hot topic in the big enterprise world. The requirements and challenges of large projects sometimes mean that a split of the application is unavoidable. This talk will look at the reasons and tips for making this decision. I will also highlight risks, pitfalls and decisions to be made and show concrete examples of solutions based on real large projects (> 100 people) so that your large project can also be migrated to a MicroFrontend without pain.',
       speakerId: 'tobias-brenner',
       time: '14:15 - 14:45',
-      day: 'day1',
-      room: 'Aula'
+      day: 'day2',
+      room: 'Pool House'
     },
     {
       id: 'talk-cologne-intelligence-ai-ux',
       title: 'Angular and AI-Driven UX: AI-assisted Interactions',
       abstract: 'In this talk, we explore how Angular can be combined with modern AI services to create smart and accessible user experiences. Using practical examples – from AI-generated text inputs to voice control and image analysis – we demonstrate how form fields can be intelligently populated and user journeys simplified. This provides a glimpse into how Angular apps can take the next step toward modern, multimodal UX through AI-assisted interactions.',
       speakerId: 'mario-trzensky',
-      time: '11:45 - 12:15',
+      time: '14:15 - 14:45',
       day: 'day1',
       room: 'Aula'
     },
