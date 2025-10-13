@@ -5,8 +5,8 @@ import { computed, Injectable, signal } from '@angular/core';
 })
 export class FlashSaleService {
   // Flash Sale Period: October 16, 2025 11:00 AM - October 17, 2025 11:00 AM
-  private readonly FLASH_SALE_START = new Date('2025-10-16T11:00:00');
-  private readonly FLASH_SALE_END = new Date('2025-10-17T11:00:00');
+  private readonly FLASH_SALE_START = new Date('2025-10-16T11:00:00+02:00'); // Berlin time (CEST)
+  private readonly FLASH_SALE_END = new Date('2025-10-17T11:00:00+02:00'); // Berlin time (CEST)
   private readonly FLASH_SALE_DISCOUNT_URL = 'https://ti.to/ng-de/berlin-2025/discount/FlashSale';
   private readonly FLASH_SALE_DISCOUNT_PERCENT = 25;
 
