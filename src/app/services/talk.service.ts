@@ -121,6 +121,15 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       room: 'Pool House'
     },
     {
+      id: 'jim-ai-talk',
+      title: 'How AI will take your dev jobs... to the next level.',
+      abstract: 'Starting with what popular media says about the future of software development jobs, this talk explains why these predictions are mostly exaggerated and why dev jobs won\'t disappear. We\'ll explore the efficiency improvements that AI brings and argue that this will likely lead to more software being written overall, not the same amount by fewer people. The session concludes by showing concretely how we can use AI to become more efficient developers and take our careers to the next level.',
+      speakerId: 'jim-sellmeijer',
+      time: '12:15 - 12:45',
+      day: 'day2',
+      room: 'Aula'
+    },
+    {
       id: 'talk-day2-14',
       title: 'What\'s New in Web AI?',
       abstract: `Generative AI is becoming a key part of modern software architecture, and its presence in web apps is growing. As demand increases, vendors and specification authors are working to make AI capabilities more accessible and integrated into the web platform. In this session, Christian Liebel—W3C TAG Associate and member of the WebML Working Group—will share what's cooking behind the scenes in Web AI. You'll get an update on the latest advancements in the WebNN API, Chromium's Built-in AI APIs, emerging developer tools, and the real-world challenges that browser vendors and standards authors are navigating to bring AI to the web.`,

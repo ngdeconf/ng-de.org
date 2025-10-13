@@ -299,9 +299,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T12:15:00',
-          information: 'TBD',
+          information: 'Jim Sellmeijer',
           location: 'Aula',
-          session: 'tbd-talk-2'
+          session: 'jim-ai-talk'
         },
         // Lunch - 12:45-14:15
         {
