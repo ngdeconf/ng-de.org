@@ -25,23 +25,25 @@ interface TimeRemaining {
             <!-- Main heading with glow effect -->
             <div class="mb-4">
               <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 animate-glow">
-                🎉 Big Surprise Coming! 🎉
+                ⚡ Flash Sale Ending Soon! ⚡
               </h2>
               <p class="text-lg md:text-xl text-white/90 font-medium">
-                Come back on <span class="font-bold">Thursday, October 16th at 11:00 AM</span> (Berlin Time)
+                Last chance! Flash Sale ends on <span class="font-bold">Friday, October 17th at 11:00 AM</span> (Berlin Time)
               </p>
               <p class="text-base md:text-lg text-white/80 mt-1">
-                for an exclusive announcement that ticket buyers won't want to miss!
+                Get your tickets now before prices go up!
               </p>
             </div>
 
             <!-- Countdown Timer -->
             <div class="flex justify-center items-center gap-3 md:gap-6 mt-6">
-              <div class="countdown-box">
-                <div class="countdown-value">{{ timeRemaining().days }}</div>
-                <div class="countdown-label">Days</div>
-              </div>
-              <div class="countdown-separator">:</div>
+              @if (timeRemaining().days > 0) {
+                <div class="countdown-box">
+                  <div class="countdown-value">{{ timeRemaining().days }}</div>
+                  <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-separator">:</div>
+              }
               <div class="countdown-box">
                 <div class="countdown-value">{{ timeRemaining().hours }}</div>
                 <div class="countdown-label">Hours</div>
@@ -217,9 +219,9 @@ export class AnnouncementBannerComponent implements OnInit, OnDestroy {
   isVisible = signal<boolean>(true);
 
   ngOnInit(): void {
-    // October 16th, 2025 at 11:00 Berlin time (CEST is UTC+2)
+    // October 17th, 2025 at 11:00 Berlin time (CEST is UTC+2)
     // Creating date in UTC and adjusting for Berlin timezone
-    this.targetDate = new Date('2025-10-16T09:00:00.000Z'); // 11:00 CEST = 09:00 UTC
+    this.targetDate = new Date('2025-10-17T09:00:00.000Z'); // 11:00 CEST = 09:00 UTC
 
     this.updateCountdown();
     this.intervalId = window.setInterval(() => {
