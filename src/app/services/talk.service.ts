@@ -140,8 +140,8 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
     },
     {
       id: 'talk-day2-15',
-      title: 'Angular Design Systems Accelerated by AI & MCP',
-      abstract: 'Join us for an in-depth exploration of how we transformed an enterprise Angular Design System by integrating advanced AI techniques with streamlined MCP processes. In this session, we\'ll discuss the challenges of legacy systems, detail our innovative refactoring approach that cut development time in half, and share actionable insights for achieving scalability and improved maintainability. Whether you\'re a developer, architect, or business leader, you\'ll learn how AI-driven automation and strategic MCP integration can power your digital transformation and accelerate agile innovation across your enterprise.',
+      title: 'Moving Legacy with AI - Context Engineering MCPs & Agents',
+      abstract: 'Explore how AI and Model Context Protocol (MCP) can revolutionize your Angular design system development. Learn practical techniques for automating design token generation, component creation, and maintaining consistency across your applications using cutting-edge AI tools.',
       speakerId: 'michael-hladky',
       time: '14:45 - 15:15',
       day: 'day2',
