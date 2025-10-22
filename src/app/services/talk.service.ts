@@ -16,8 +16,8 @@ export class TalkService {
     },
     {
       id: 'talk-day1-2',
-      title: 'TBD',
-      abstract: 'Talk details to be determined',
+      title: 'Forget that you hated writing forms with Signal Forms',
+      abstract: 'Over the last year, we\'ve been reimagining Angular forms with a new signal-driven model that\'s reactive, composable, and declarative by design. Let\'s dive into this experimental API that the Angular Team is excited to launch in v21 !',
       speakerId: 'matthieu-riegler',
       time: '10:30 - 11:00',
       day: 'day1',

@@ -115,7 +115,7 @@ export class SpeakerService {
       name: 'Matthieu Riegler',
       title: 'Angular Team',
       company: 'Google',
-      bio: 'tbd',
+      bio: 'Matthieu is a Software Engineer from France, born and raised in the Alps, he is known for his community contributions over the years. Active as community speaker, he recently he joined the Angular team as a Google contractor and works on the devtools, documentation and of course the framework itself.',
       imageUrl: 'assets/images/speakers/matthieu-riegler.jpg',
       githubHandle: 'JeanMeche',
       pronouns: 'he/him',
