@@ -73,6 +73,9 @@ import { Speaker } from '../../models/models';
                     class="w-4 h-4 mr-1"
                   />
                   }
+                  @if (speaker.mc) {
+                  <span class="mr-1" title="Master of Ceremonies">🎤</span>
+                  }
                   {{ speaker.title }}
                 </p>
                 <p class="text-gray-600 dark:text-gray-400 text-xs">
@@ -188,6 +191,9 @@ import { Speaker } from '../../models/models';
                   alt="NgRx Team" 
                   class="w-4 h-4 mr-1"
                 />
+                }
+                @if (activeSpeaker()?.mc) {
+                <span class="mr-1" title="Master of Ceremonies">🎤</span>
                 }
                 {{ activeSpeaker()?.title }}
               </p>

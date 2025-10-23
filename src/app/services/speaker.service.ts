@@ -5,6 +5,15 @@ import { Speaker } from '../models/models';
 export class SpeakerService {
   private readonly speakers = signal<Speaker[]>([
     {
+      id: 'ola-gasidlo-braendel',
+      name: 'Ola Gasidlo-Brändel',
+      title: 'Master of Ceremonies',
+      company: 'Senior Principal Engineer',
+      bio: "Ola is a Senior Principal Engineer from near Berlin who lives and breathes open source, web standards, and empowering people through technology. She loves breaking down complex ideas into something everyone can enjoy. As your MC at ng-de, she can't wait to bring the community together for two days of inspiration, learning, and a bit of magic.",
+      imageUrl: 'assets/images/speakers/ola-gasidlo-braendel.jpg',
+      mc: true
+    },
+    {
       id: 'manfred-steyer',
       name: 'Manfred Steyer',
       title: 'Trainer and Consultant',
