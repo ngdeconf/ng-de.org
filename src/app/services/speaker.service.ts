@@ -264,6 +264,15 @@ export class SpeakerService {
       virtual: true
     },
     {
+      id: 'naoufal-el-hassnaoui',
+      name: 'Naoufal El Hassnaoui',
+      title: 'AI Engineering & Cursor IDE Ambassador',
+      company: 'Leapsome',
+      bio: 'Naoufal is an AI Engineering specialist and Cursor IDE Ambassador based in Berlin. He focuses on revolutionizing development workflows through AI-powered tools and intelligent agents. At Leapsome, he leverages cutting-edge AI technologies to enhance developer productivity and code quality. As a Cursor IDE Ambassador, Naoufal is passionate about demonstrating how modern AI-assisted development environments can transform the way we build software. He brings practical insights into agent-based development, prompt engineering, and building intelligent development workflows that maximize developer efficiency while maintaining high code quality standards.',
+      imageUrl: 'assets/images/speakers/naoufal-el-hassnaoui.jpeg',
+      githubHandle: 'naoufalelh'
+    },
+    {
       id: 'tbd-speaker',
       name: 'TBD',
       title: 'To Be Determined',
