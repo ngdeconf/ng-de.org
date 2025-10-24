@@ -261,9 +261,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T10:30:00',
-          information: 'TBD',
+          information: 'Naoufal El Hassnaoui',
           location: 'Aula',
-          session: 'tbd-talk-3'
+          session: 'talk-cursor-ai-agents'
         },
         // Coffee Break - 11:00-11:45
         {
