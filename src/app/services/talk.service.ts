@@ -224,9 +224,9 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       title: 'Panel Discussion: Angular AI-Forward - Supercharge your development with AI',
       abstract: 'Join our expert panel as we explore how artificial intelligence is transforming Angular development. This interactive discussion brings together voices from the Angular team, community leaders, and industry experts to share their perspectives on AI-powered development tools, intelligent code generation, and the future of Angular in an AI-driven world. We\'ll discuss practical strategies for integrating AI into your Angular workflow, from IDE assistance to automated testing and deployment. The panel will address real-world challenges, share success stories, and provide insights into emerging AI technologies that are reshaping how we build Angular applications.',
       speakerId: 'various-speakers',
-      time: '14:45 - 15:15',
+      time: '16:30 - 17:15',
       day: 'day1',
-      room: 'Aula'
+      room: 'Pool House'
     },
     {
       id: 'tbd-talk-1',
@@ -254,6 +254,15 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       time: '14:15 - 14:45',
       day: 'day2',
       room: 'Aula'
+    },
+    {
+      id: 'panel-angular-team',
+      title: 'Panel Discussion: The Future of Angular with the Core Team',
+      abstract: 'Join members of the Angular core team for an exclusive panel discussion about the future of Angular. This interactive session brings together the minds behind Angular to discuss the latest features, upcoming innovations, and the strategic direction of the framework.',
+      speakerId: 'various-speakers',
+      time: '16:30 - 17:00',
+      day: 'day2',
+      room: 'Pool House'
     },
   ]);
 

@@ -354,12 +354,12 @@ export class ScheduleService {
         {
           title: 'Panel Discussion',
           datetime: '2025-11-07T16:30:00',
-          information: 'Angular Team',
+          information: 'Various speakers',
           location: 'Pool House',
           session: 'panel-angular-team'
         },
         {
-          title: 'Talk',
+          title: 'Panel Discussion',
           datetime: '2025-11-07T16:30:00',
           information: 'Live Stream of Pool House Stage 📺🍿',
           location: 'Aula',
