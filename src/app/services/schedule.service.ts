@@ -73,9 +73,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T11:45:00',
-          information: 'Robin Götz',
+          information: 'Enea Jahollari',
           location: 'Pool House',
-          session: 'talk-day1-3'
+          session: 'talk-day1-8'
         },
         {
           title: 'Talk',
@@ -131,11 +131,11 @@ export class ScheduleService {
           session: 'talk-day1-6'
         },
         {
-          title: 'Panel Discussion',
+          title: 'Talk',
           datetime: '2025-11-06T14:45:00',
-          information: 'Various speakers',
+          information: 'Robin Götz',
           location: 'Aula',
-          session: 'panel-angular-ai-forward'
+          session: 'talk-day1-3'
         },
         // Coffee Break - 15:15-16:00
         {
@@ -162,18 +162,18 @@ export class ScheduleService {
         },
         // Slot 8 - 16:30-17:15
         {
-          title: 'Talk',
+          title: 'Panel Discussion',
           datetime: '2025-11-06T16:30:00',
-          information: 'Enea Jahollari',
+          information: 'Various speakers',
           location: 'Pool House',
-          session: 'talk-day1-8'
+          session: 'panel-angular-ai-forward'
         },
         {
-          title: 'Talk',
+          title: 'Panel Discussion',
           datetime: '2025-11-06T16:30:00',
-          information: 'TBD',
+          information: 'Live Stream of Pool House Stage 📺🍿',
           location: 'Aula',
-          session: 'tbd-talk-1'
+          session: null
         },
         // Closing - 17:15-18:00
         {
@@ -277,16 +277,16 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T11:45:00',
-          information: 'Maria Korneeva',
+          information: 'Michael Hladky',
           location: 'Pool House',
-          session: 'talk-day2-11'
+          session: 'talk-day2-15'
         },
         {
           title: 'Talk',
           datetime: '2025-11-07T11:45:00',
-          information: 'Mussie Haile',
+          information: 'Maria Korneeva',
           location: 'Aula',
-          session: 'talk-rapid-prototyping-ai'
+          session: 'talk-day2-11'
         },
         // Slot 13 - 12:15-12:45
         {
@@ -299,9 +299,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T12:15:00',
-          information: 'TBD',
+          information: 'Mussie Haile',
           location: 'Aula',
-          session: 'tbd-talk-2'
+          session: 'talk-rapid-prototyping-ai'
         },
         // Lunch - 12:45-14:15
         {
@@ -330,16 +330,16 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T14:45:00',
-          information: 'Nicolas Frizzarin',
+          information: 'Manfred Steyer',
           location: 'Pool House',
-          session: 'talk-day2-17'
+          session: 'talk-day2-18'
         },
         {
           title: 'Talk',
           datetime: '2025-11-07T14:45:00',
-          information: 'Michael Hladky',
+          information: 'Nicolas Frizzarin',
           location: 'Aula',
-          session: 'talk-day2-15'
+          session: 'talk-day2-17'
         },
         // Coffee Break - 15:15-16:00
         {
@@ -352,11 +352,11 @@ export class ScheduleService {
         // Slot 16 - 16:30-17:00
         // Slot 17 - 16:30-17:00
         {
-          title: 'Talk',
+          title: 'Panel Discussion',
           datetime: '2025-11-07T16:30:00',
-          information: 'Manfred Steyer',
+          information: 'Angular Team',
           location: 'Pool House',
-          session: 'talk-day2-18'
+          session: 'panel-angular-team'
         },
         {
           title: 'Talk',
