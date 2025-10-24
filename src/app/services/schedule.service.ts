@@ -84,25 +84,25 @@ export class ScheduleService {
           location: 'Aula',
           session: 'jim-ai-talk'
         },
-        // Slot 4 - 12:15-12:45
+        // Slot 4 - 12:25-12:55
         {
           title: 'Talk',
-          datetime: '2025-11-06T12:15:00',
+          datetime: '2025-11-06T12:30:00',
           information: 'Marko Stanimirović',
           location: 'Pool House',
           session: 'talk-day1-4'
         },
         {
           title: 'Talk',
-          datetime: '2025-11-06T12:15:00',
+          datetime: '2025-11-06T12:30:00',
           information: 'Gregor Woiwode',
           location: 'Aula',
           session: 'talk-agentic-angular'
         },
-        // Lunch - 12:45-14:15
+        // Lunch - 13:00-14:15
         {
           title: 'Lunch Break 🍽️',
-          datetime: '2025-11-06T12:45:00',
+          datetime: '2025-11-06T13:00:00',
           information: 'Restaurant Oderberger',
           location: 'Both Stages',
           session: null
@@ -122,25 +122,25 @@ export class ScheduleService {
           location: 'Aula',
           session: 'talk-cologne-intelligence-ai-ux'
         },
-        // Slot 6 - 14:45-15:15 - Parallel Sessions
+        // Slot 6 - 14:55-15:25 - Parallel Sessions
         {
           title: 'Talk',
-          datetime: '2025-11-06T14:45:00',
+          datetime: '2025-11-06T15:00:00',
           information: 'Eliran Eliassy',
           location: 'Pool House',
           session: 'talk-day1-6'
         },
         {
           title: 'Talk',
-          datetime: '2025-11-06T14:45:00',
+          datetime: '2025-11-06T15:00:00',
           information: 'Robin Götz',
           location: 'Aula',
           session: 'talk-day1-3'
         },
-        // Coffee Break - 15:15-16:00
+        // Coffee Break - 15:30-16:00
         {
           title: 'Coffee Break ☕️',
-          datetime: '2025-11-06T15:15:00',
+          datetime: '2025-11-06T15:30:00',
           information: 'Networking opportunity',
           location: 'Both Stages',
           session: null
@@ -160,32 +160,32 @@ export class ScheduleService {
           location: 'Aula',
           session: 'talk-process-automation-ai-agents'
         },
-        // Slot 8 - 16:30-17:15
+        // Slot 8 - 16:45-17:30
         {
           title: 'Panel Discussion',
-          datetime: '2025-11-06T16:30:00',
+          datetime: '2025-11-06T16:45:00',
           information: 'Various speakers',
           location: 'Pool House',
           session: 'panel-angular-ai-forward'
         },
         {
           title: 'Panel Discussion',
-          datetime: '2025-11-06T16:30:00',
+          datetime: '2025-11-06T16:45:00',
           information: 'Live Stream of Pool House Stage 📺🍿',
           location: 'Aula',
           session: null
         },
-        // Closing - 17:15-18:00
+        // Closing - 17:30-18:00
         {
           title: 'Closing Day 1',
-          datetime: '2025-11-06T17:15:00',
+          datetime: '2025-11-06T17:30:00',
           information: 'Wrap-up',
           location: 'Pool House',
           session: null
         },
         {
           title: 'Closing Day 1',
-          datetime: '2025-11-06T17:15:00',
+          datetime: '2025-11-06T17:30:00',
           information: 'Live Stream of Pool House Stage 📺🍿',
           location: 'Aula',
           session: null
@@ -288,25 +288,25 @@ export class ScheduleService {
           location: 'Aula',
           session: 'talk-day2-11'
         },
-        // Slot 13 - 12:15-12:45
+        // Slot 13 - 12:25-12:55
         {
           title: 'Talk',
-          datetime: '2025-11-07T12:15:00',
+          datetime: '2025-11-07T12:30:00',
           information: 'Brygida Fiejdasz',
           location: 'Pool House',
           session: 'talk-day2-13'
         },
         {
           title: 'Talk',
-          datetime: '2025-11-07T12:15:00',
+          datetime: '2025-11-07T12:30:00',
           information: 'Mussie Haile',
           location: 'Aula',
           session: 'talk-rapid-prototyping-ai'
         },
-        // Lunch - 12:45-14:15
+        // Lunch - 13:00-14:15
         {
           title: 'Lunch Break & Group Photo 📸',
-          datetime: '2025-11-07T12:45:00',
+          datetime: '2025-11-07T13:00:00',
           information: 'Lunch & Gruppenfoto',
           location: 'Both Stages',
           session: null
@@ -326,49 +326,49 @@ export class ScheduleService {
           location: 'Aula',
           session: 'talk-day2-14'
         },
-        // Slot 15 - 14:45-15:15
+        // Slot 15 - 14:55-15:25
         {
           title: 'Talk',
-          datetime: '2025-11-07T14:45:00',
+          datetime: '2025-11-07T14:55:00',
           information: 'Manfred Steyer',
           location: 'Pool House',
           session: 'talk-day2-18'
         },
         {
           title: 'Talk',
-          datetime: '2025-11-07T14:45:00',
+          datetime: '2025-11-07T14:55:00',
           information: 'Nicolas Frizzarin',
           location: 'Aula',
           session: 'talk-day2-17'
         },
-        // Coffee Break - 15:15-16:00
+        // Coffee Break - 15:30-16:00
         {
           title: 'Coffee Break ☕️',
-          datetime: '2025-11-07T15:15:00',
+          datetime: '2025-11-07T15:30:00',
           information: 'Networking opportunity',
           location: 'Both Stages',
           session: null
         },
-        // Slot 16 - 16:30-17:00
-        // Slot 17 - 16:30-17:00
+        // Slot 16 - 16:45-17:30
+        // Slot 17 - 16:45-17:30
         {
           title: 'Panel Discussion',
-          datetime: '2025-11-07T16:30:00',
+          datetime: '2025-11-07T16:45:00',
           information: 'Various speakers',
           location: 'Pool House',
           session: 'panel-angular-team'
         },
         {
           title: 'Panel Discussion',
-          datetime: '2025-11-07T16:30:00',
+          datetime: '2025-11-07T16:45:00',
           information: 'Live Stream of Pool House Stage 📺🍿',
           location: 'Aula',
           session: null
         },
-        // Closing - 17:00
+        // Closing - 17:30
         {
           title: 'Closing & Farewell',
-          datetime: '2025-11-07T17:00:00',
+          datetime: '2025-11-07T17:30:00',
           information: 'Orga Team / MC',
           location: 'Both Stages',
           session: null
