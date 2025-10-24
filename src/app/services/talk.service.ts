@@ -247,11 +247,11 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       room: 'Aula'
     },
     {
-      id: 'tbd-talk-3',
-      title: 'TBD - Coming Soon!',
-      abstract: 'We\'re excited to announce an amazing speaker and topic for this slot very soon! Stay tuned for updates as we finalize this exciting addition to the NG-DE program.',
-      speakerId: 'tbd-speaker',
-      time: '14:15 - 14:45',
+      id: 'talk-cursor-ai-agents',
+      title: 'Cursor IDE',
+      abstract: 'Discover how Cursor IDE is revolutionizing the way we build Angular applications through intelligent AI assistance and agent-based development workflows. ',
+      speakerId: 'naoufal-el-hassnaoui',
+      time: '10:30 - 11:00',
       day: 'day2',
       room: 'Aula'
     },
