@@ -248,8 +248,8 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
     },
     {
       id: 'talk-cursor-ai-agents',
-      title: 'Cursor IDE',
-      abstract: 'Discover how Cursor IDE is revolutionizing the way we build Angular applications through intelligent AI assistance and agent-based development workflows. ',
+      title: 'Vibe Engineering: The Dos and Don\'ts of AI-Assisted Coding',
+      abstract: 'AI coding assistants have changed how we write software, but too often, "vibe coding" replaces engineering discipline with improvisation. This talk introduces vibe engineering: a practical mindset for building with AI responsibly, creatively, and at scale. You\'ll learn how to harness LLMs without surrendering architecture, testing, or intent. Through real examples and lessons learned, we\'ll explore how to collaborate with AI tools like Cursor, effectively crafting prompts that steer reasoning, balancing automation with design, and preserving the human touch in the loop. The goal: to elevate your AI workflows from quick hacks to engineered systems that actually last.',
       speakerId: 'naoufal-el-hassnaoui',
       time: '10:30 - 11:00',
       day: 'day2',
