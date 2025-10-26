@@ -15,7 +15,7 @@
       },
       {
         "source": "/feedback/",
-        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSeOhXRB9dkjO6gOAXqEIK7Ng3Qzv1foUMDBNGDO_An_AONKGQ/viewform?usp=sf_link",
+        "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdZG6-bJb6ewetlOeb-55SpcAhdBf2Utn-a-C39YMx6NMI_Yg/viewform?usp=header",
         "type": 301
       },
       {
