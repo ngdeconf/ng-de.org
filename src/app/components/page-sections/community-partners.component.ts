@@ -204,13 +204,6 @@ export class CommunityPartnersComponent {
       logoUrl: 'assets/images/community-partners/nestjsvienna.svg',
       websiteUrl: 'https://www.meetup.com/nestjs-vienna/',
       description: 'Vienna NestJS Community'
-    },
-    {
-      id: 'it-schulungen',
-      name: 'IT-Schulungen.com',
-      logoUrl: 'assets/images/community-partners/it-schulungen.png',
-      websiteUrl: 'https://www.it-schulungen.com/',
-      description: 'Professional IT Training & Certifications'
     }
   ]);
 
