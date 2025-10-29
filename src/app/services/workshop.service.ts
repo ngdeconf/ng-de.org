@@ -78,7 +78,7 @@ export class WorkshopService {
       trainerId: 'robin-boehm',
       duration: '8 hours',
       capacity: 30,
-      room: 'Room 111',
+      room: 'Room 123',
       address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
@@ -399,7 +399,7 @@ export class WorkshopService {
       trainerId: 'younes-jaaidi',
       duration: '8 hours',
       capacity: 30,
-      room: 'Room 123',
+      room: 'Room 111',
       address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
