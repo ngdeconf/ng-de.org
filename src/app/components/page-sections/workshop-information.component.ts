@@ -16,65 +16,46 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
       @for (workshop of workshops(); track workshop.id) {
       <div
         class="group relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl overflow-hidden shadow-2xl hover:shadow-primary-500/20 transition-all duration-300 hover:scale-[1.02] cursor-pointer border border-gray-700/50 hover:border-primary-500/50"
-        (click)="!workshop.soldOut && openWorkshopDetails(workshop)"
-        [class.cursor-not-allowed]="workshop.soldOut"
+        (click)="openWorkshopDetails(workshop)"
         tabindex="0"
         role="button"
-        [attr.aria-label]="
-          workshop.soldOut
-            ? 'Workshop sold out - no longer available'
-            : 'View detailed workshop information for ' + workshop.title
-        "
-        (keydown.enter)="!workshop.soldOut && openWorkshopDetails(workshop)"
-        (keydown.space)="!workshop.soldOut && openWorkshopDetails(workshop)"
+        [attr.aria-label]="'View detailed workshop information for ' + workshop.title"
+        (keydown.enter)="openWorkshopDetails(workshop)"
+        (keydown.space)="openWorkshopDetails(workshop)"
       >
         <!-- Glowing border effect on hover -->
         <div
           class="absolute inset-0 bg-gradient-to-r from-primary-500/0 via-primary-500/20 to-primary-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
         ></div>
 
-        <!-- Sold Out Overlay -->
+        <!-- Sold Out Stamp Badge -->
         @if (workshop.soldOut) {
-        <div
-          class="absolute inset-0 z-20 bg-black/50 backdrop-blur-[2px] flex items-center justify-center"
-        >
-          <div class="text-center px-4">
-            <div class="inline-flex flex-col items-center gap-1.5 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-xl px-5 py-4 shadow-lg border border-gray-200/80 dark:border-gray-700/80">
-              <!-- Outlined Circle Icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-8 w-8 text-[#e40341] opacity-80"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="15" y1="9" x2="9" y2="15"></line>
-                <line x1="9" y1="9" x2="15" y2="15"></line>
-              </svg>
+        <div class="absolute bottom-6 right-6 z-20 transform rotate-[-8deg]">
+          <div class="relative inline-flex items-center gap-1.5 bg-transparent backdrop-blur-sm rounded px-4 py-2 border-[3px] border-dashed border-gray-500 shadow-md">
+            <!-- Inner stamp border -->
+            <div class="absolute inset-[2px] border border-dashed border-gray-400/50 rounded pointer-events-none"></div>
 
-              <!-- Sorry Message -->
-              <div class="space-y-0.5">
-                <p class="text-xs text-gray-600 dark:text-gray-400 font-medium">
-                  Sorry, this workshop is
-                </p>
-                <p class="text-[#e40341] font-semibold text-sm tracking-wide">
-                  SOLD OUT
-                </p>
-              </div>
-            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 text-gray-500 relative z-10"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="15" y1="9" x2="9" y2="15"></line>
+              <line x1="9" y1="9" x2="15" y2="15"></line>
+            </svg>
+            <span class="text-gray-500 font-bold text-xs tracking-widest uppercase relative z-10" style="letter-spacing: 0.15em;">Sold Out</span>
           </div>
         </div>
         }
 
         <!-- Card Content -->
-        <div
-          class="relative z-10 p-6"
-          [class.grayscale]="workshop.soldOut"
-        >
+        <div class="relative z-10 p-6">
           <!-- Workshop Title -->
           <h3
             class="text-lg font-bold text-white mb-3 leading-tight group-hover:text-primary-300 transition-colors duration-300 line-clamp-2 pr-32"
