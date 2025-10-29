@@ -175,34 +175,44 @@ export class ScheduleService {
           location: 'Aula',
           session: null
         },
-        // Closing - 17:30-18:00
+        // Closing & Preparation - 17:30-18:00
         {
-          title: 'Closing Day 1',
+          title: 'Closing Day 1 & Break',
           datetime: '2025-11-06T17:30:00',
-          information: 'Wrap-up',
-          location: 'Pool House',
+          information: 'Preparation of the Pool Hall for 🎉',
+          location: 'Both Stages',
           session: null
         },
+        // Community Event - 18:00-19:30
         {
-          title: 'Closing Day 1',
-          datetime: '2025-11-06T17:30:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
-          location: 'Aula',
-          session: null
-        },
-        // Community Event - 18:00-22:00
-        {
-          title: 'Community Event/Party 🎉',
+          title: 'Community Event 🎉',
           datetime: '2025-11-06T18:00:00',
-          information: 'Social event and networking',
-          location: 'Pool House',
+          information: 'Drinks, Food, Music, Tablesoccer Tournament, Networking',
+          location: 'Both Stages',
           session: null
         },
+        // Open Stage - 19:30-20:30
         {
-          title: 'Community Event/Party 🎉',
-          datetime: '2025-11-06T18:00:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
-          location: 'Aula',
+          title: 'Open Stage / PowerPoint Karaoke 🎤',
+          datetime: '2025-11-06T19:30:00',
+          information: 'Interactive entertainment',
+          location: 'Both Stages',
+          session: null
+        },
+        // Late Evening - 20:30-22:00
+        {
+          title: 'Community Event 🎉',
+          datetime: '2025-11-06T20:30:00',
+          information: 'Drinks, Music, Tablesoccer Tournament, Networking',
+          location: 'Both Stages',
+          session: null
+        },
+        // Location Closes - 22:00
+        {
+          title: 'Location Closes 🌙',
+          datetime: '2025-11-06T22:00:00',
+          information: 'End of Day 1',
+          location: 'Both Stages',
           session: null
         }
       ]

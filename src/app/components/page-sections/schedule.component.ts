@@ -839,7 +839,8 @@ export class ScheduleComponent {
            entry.title.toLowerCase().includes('registration') ||
            entry.title.toLowerCase().includes('breakfast') ||
            entry.title.toLowerCase().includes('party') ||
-           entry.title.toLowerCase().includes('community event') ||
+           //entry.title.toLowerCase().includes('community event') ||
+           entry.title.toLowerCase().includes('closes') ||
            entry.information.toLowerCase().includes('social event');
   }
 
