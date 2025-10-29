@@ -14,6 +14,15 @@ export class SpeakerService {
       mc: true
     },
     {
+      id: 'lulezim-ukaj',
+      name: 'Lulezim Ukaj',
+      title: 'Master of Ceremonies',
+      company: 'Software Developer & Political Activist',
+      bio: "Lulezim is a passionate software developer with a keen focus on AI technologies and modern web development. He actively explores the intersection of artificial intelligence and web applications, staying at the forefront of technological innovation. Beyond his technical expertise, Lulezim is deeply committed to political engagement and social change. As your MC at ng-de, he brings both technical insight and a broader perspective on how technology shapes our society.",
+      imageUrl: 'assets/images/speakers/lulezim-ukaj.jpg',
+      mc: true
+    },
+    {
       id: 'manfred-steyer',
       name: 'Manfred Steyer',
       title: 'Trainer and Consultant',
