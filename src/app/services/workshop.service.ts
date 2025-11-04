@@ -331,7 +331,7 @@ export class WorkshopService {
       trainerId: 'maria-korneeva',
       duration: '8 hours',
       capacity: 30,
-      room: 'Schoolroom',
+      room: '612',
       address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
