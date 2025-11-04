@@ -99,19 +99,9 @@ export class WorkshopService {
           ]
         },
         {
-          title: 'AI-Driven Component Architecture',
-          topics: [
-            'Self-adapting components that learn from user behavior',
-            'Implementing AI-powered form validation and suggestions',
-            'Creating intelligent UI components with dynamic behavior',
-            "Real-time AI integration with Angular's reactive forms"
-          ]
-        },
-        {
           title: 'Advanced Agentic Patterns & Deployment',
           topics: [
             'Multi-agent orchestration in Angular applications',
-            'Performance optimization for AI-heavy Angular apps',
             'Security considerations for AI-enabled applications',
             'Hands-on lab: Building a complete agentic Angular application'
           ]
