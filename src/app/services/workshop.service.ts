@@ -87,7 +87,6 @@ export class WorkshopService {
             'Understanding autonomous AI agents vs. traditional AI integration',
             'Angular architecture patterns for AI-driven applications',
             'Setting up the development environment for AI engineering',
-            'Introduction to LangChain.js and Angular integration'
           ]
         },
         {
