@@ -10,6 +10,34 @@ import { Component } from '@angular/core';
         <div class="max-w-4xl mx-auto">
           <h1 class="text-4xl md:text-5xl font-bold mb-8">Code of Conduct</h1>
 
+          <!-- Awareness Team & Contact Information -->
+          <div class="mb-12 bg-primary-50 dark:bg-primary-900/20 rounded-xl p-6 border-l-4 border-primary-500">
+            <h2 class="text-2xl font-bold mb-4">AWARENESS TEAM & CONTACT INFORMATION</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+              If you need immediate assistance or want to report an incident, please contact our awareness team:
+            </p>
+            <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-primary-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <div>
+                  <strong>Robin via Phone:</strong><br>
+                  <a href="tel:+4915172826176" class="text-primary-500 hover:text-primary-600 dark:text-primary-400">+49 151 72826176</a>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 text-primary-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+                <div>
+                  <strong>Ola and Lulezim (MCs):</strong><br>
+                  Available at the Conference stage
+                </div>
+              </li>
+            </ul>
+          </div>
+
           <!-- Purpose -->
           <div class="mb-12">
             <h2 class="text-2xl font-bold mb-4">PURPOSE</h2>
