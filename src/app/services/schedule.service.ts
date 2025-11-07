@@ -339,14 +339,14 @@ export class ScheduleService {
         // Slot 15 - 14:55-15:25
         {
           title: 'Talk',
-          datetime: '2025-11-07T14:55:00',
+          datetime: '2025-11-07T15:00:00',
           information: 'Manfred Steyer',
           location: 'Pool House',
           session: 'talk-day2-18'
         },
         {
           title: 'Talk',
-          datetime: '2025-11-07T14:55:00',
+          datetime: '2025-11-07T15:00:00',
           information: 'Nicolas Frizzarin',
           location: 'Aula',
           session: 'talk-day2-17'
