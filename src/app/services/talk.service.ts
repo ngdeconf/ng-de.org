@@ -154,7 +154,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'maria-korneeva',
       time: '11:45 - 12:15',
       day: 'day2',
-      room: 'Pool House'
+      room: 'Aula'
     },
     {
       id: 'talk-day2-17',
