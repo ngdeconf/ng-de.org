@@ -363,14 +363,14 @@ export class ScheduleService {
         // Slot 17 - 16:45-17:30
         {
           title: 'Panel Discussion',
-          datetime: '2025-11-07T16:45:00',
+          datetime: '2025-11-07T16:00:00',
           information: 'Various speakers',
           location: 'Pool House',
           session: 'panel-angular-team'
         },
         {
           title: 'Panel Discussion',
-          datetime: '2025-11-07T16:45:00',
+          datetime: '2025-11-07T16:00:00',
           information: 'Live Stream of Pool House Stage 📺🍿',
           location: 'Aula',
           session: null
@@ -378,7 +378,7 @@ export class ScheduleService {
         // Closing - 17:30
         {
           title: 'Closing & Farewell',
-          datetime: '2025-11-07T17:30:00',
+          datetime: '2025-11-07T17:00:00',
           information: 'Orga Team / MC',
           location: 'Both Stages',
           session: null
