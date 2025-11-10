@@ -69,77 +69,17 @@ interface VideoModalData {
                     NG-DE
                   </span>
                 </span>
-                <span class="block">Berlin 2025</span>
+                <span class="block">Thank you for a great conference!</span>
               </h1>
             </div>
 
             <p
               class="text-xl md:text-2xl mb-6 text-gray-700 dark:text-gray-300"
             >
-              The community-driven Angular conference in Germany
+              The community-driven Angular conference in Germany is over.
             </p>
 
             <div class="mb-8 text-gray-600 dark:text-gray-400">
-              <div class="flex items-center mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 mr-2 text-primary-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-                <span>November 5-7, 2025</span>
-              </div>
-
-              <div class="flex items-center mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 mr-2 text-primary-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-                <span>Hotel Orderberger (GLS Campus Berlin)</span>
-              </div>
-
-              <div class="flex items-center mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 mr-2 text-primary-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                  />
-                </svg>
-                <span>Oderberger Str. 57, 10435 Berlin Germany</span>
-              </div>
-
               <div class="flex items-start mb-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -156,38 +96,10 @@ interface VideoModalData {
                   />
                 </svg>
                 <div>
-                  <span class="block">Nov 5: Workshop Day</span>
-                  <span class="block">Nov 6-7: Conference Days</span>
+                  <span class="block">Workshops and talks are beeing uploaded to youtube.</span>
+                  <span class="block">Subscribe to our newsletter to get notified.</span>
                 </div>
               </div>
-            </div>
-
-            <div
-              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
-            >
-              @if (flashSaleService.isFlashSaleActive()) {
-              <a
-                href="#tickets"
-                class="text-gray-900 font-bold px-8 py-4 rounded-lg relative overflow-hidden text-center bg-gradient-to-r from-[#FFD700] via-[#FFA500] to-[#FFD700] hero-flash-sale-button"
-                style="transition: background-color 0.2s ease"
-              >
-                <span class="relative z-10 font-semibold">Go to Flash Sale</span>
-              </a>
-              } @else {
-              <a
-                href="#tickets"
-                class="text-white font-medium px-8 py-4 rounded-lg relative overflow-hidden text-center bg-[#e40341] hover:bg-[#c90339]"
-                style="transition: background-color 0.2s ease"
-              >
-                <span class="relative z-10 font-semibold">Get Tickets</span>
-              </a>
-              }
-              <a
-                href="#speakers"
-                class="inline-block px-8 py-4 font-semibold rounded-lg transition-all bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-600 text-center"
-              >
-                View Speakers
-              </a>
             </div>
           </div>
 
@@ -200,8 +112,8 @@ interface VideoModalData {
                 class="w-full h-full absolute top-0 left-0 bg-gradient-to-br from-primary-500/20 to-secondary-500/20 z-10"
               ></div>
               <img
-                src="https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&q=80&w=1000"
-                alt="Berlin TV Tower and Conference"
+                src="assets/images/impressions/ng-de-stage.jpg"
+                alt="Impressions from NG-DE conference"
                 class="w-full rounded-lg transform group-hover:scale-105 transition-transform duration-500 ease-in-out"
               />
 

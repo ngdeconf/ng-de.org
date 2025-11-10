@@ -35,12 +35,12 @@ import { WorkshopsComponent } from '../page-sections/workshops.component';
   template: `
     <ngde-hero />
     <ngde-announcement-banner />
-    <ngde-tickets />
+    <ngde-sponsors />
+    <!-- <ngde-tickets /> -->
     <ngde-speakers />
     <ngde-schedule />
     <ngde-workshops />
     <ngde-organizer />
-    <ngde-sponsors />
     <ngde-community-partners />
     <ngde-location />
     <ngde-impressions />
