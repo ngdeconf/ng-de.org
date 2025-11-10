@@ -181,7 +181,7 @@ interface VideoModalData {
               class="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 rounded-full p-4 shadow-lg flex items-center justify-center"
             >
               <div class="text-xs font-semibold text-gray-500">BERLIN</div>
-              <div class="text-2xl font-bold text-primary-500 ml-1">2025</div>
+              <div class="text-2xl font-bold text-primary-500 ml-1">2026</div>
             </div>
           </div>
         </div>
