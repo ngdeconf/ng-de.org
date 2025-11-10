@@ -69,7 +69,7 @@ interface VideoModalData {
                     NG-DE
                   </span>
                 </span>
-                <span class="block">Thank you for a great conference!</span>
+                <span class="block">We are back in 2026!</span>
               </h1>
             </div>
 
@@ -100,6 +100,30 @@ interface VideoModalData {
                   <span class="block">Subscribe to our newsletter to get notified.</span>
                 </div>
               </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4">
+              <button
+                type="button"
+                class="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500 px-6 py-3 text-base font-semibold text-white shadow-lg transition hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+                (click)="scrollToNewsletter()"
+              >
+                Subscribe to Newsletter
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </button>
             </div>
           </div>
 
@@ -173,5 +197,12 @@ export class HeroComponent {
     this.dialog.open<VideoModalComponent, VideoModalData>(VideoModalComponent, {
       data: { videoId: 'VRNG-iuF2Lk' }
     });
+  }
+
+  scrollToNewsletter(): void {
+    const target = document.getElementById('newsletter');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

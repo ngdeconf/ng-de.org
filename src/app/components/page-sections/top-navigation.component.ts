@@ -46,7 +46,7 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                   </span>
                 </h1>
                 <p class="text-xs text-gray-600 dark:text-gray-300">
-                  November 5-7, 2025 • Berlin
+                  We are back in 2026!
                 </p>
               </div>
             </div>

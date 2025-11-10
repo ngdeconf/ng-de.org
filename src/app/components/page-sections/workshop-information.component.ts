@@ -28,32 +28,6 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
           class="absolute inset-0 bg-gradient-to-r from-primary-500/0 via-primary-500/20 to-primary-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
         ></div>
 
-        <!-- Sold Out Stamp Badge -->
-        @if (workshop.soldOut) {
-        <div class="absolute bottom-6 right-6 z-20 transform rotate-[-8deg]">
-          <div class="relative inline-flex items-center gap-1.5 bg-transparent backdrop-blur-sm rounded px-4 py-2 border-[3px] border-dashed border-gray-500 shadow-md">
-            <!-- Inner stamp border -->
-            <div class="absolute inset-[2px] border border-dashed border-gray-400/50 rounded pointer-events-none"></div>
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4 text-gray-500 relative z-10"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="15" y1="9" x2="9" y2="15"></line>
-              <line x1="9" y1="9" x2="15" y2="15"></line>
-            </svg>
-            <span class="text-gray-500 font-bold text-xs tracking-widest uppercase relative z-10" style="letter-spacing: 0.15em;">Sold Out</span>
-          </div>
-        </div>
-        }
-
         <!-- Card Content -->
         <div class="relative z-10 p-6">
           <!-- Workshop Title -->
@@ -762,16 +736,7 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
             </div>
           </div>
 
-          <div
-            class="flex justify-end pt-6 border-t border-gray-200 dark:border-gray-700"
-          >
-            <button
-              class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 shadow-sm hover:shadow-md"
-              (click)="getTicket()"
-            >
-              Get your ticket
-            </button>
-          </div>
+          <div class="flex justify-end pt-6 border-t border-gray-200 dark:border-gray-700"></div>
         </div>
       </div>
     </div>
