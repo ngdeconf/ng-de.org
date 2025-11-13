@@ -1,6 +1,9 @@
 {
   "projects": {
+    "2019": "ngdeconf-2019",
     "2022": "ngdeconf-2022",
+    "2024": "ngdeconf-2024",
+    "2025": "ngdeconf-2025",
     "default": "ngdeconf",
     "beta": "ngdeconf-beta",
     "master": "ngdeconf"
