@@ -29,7 +29,9 @@ import { RouterLink } from '@angular/router';
             <a
               href="https://github.com/ngdeconf/ng-de.org"
               target="_blank"
+              rel="noopener noreferrer"
               class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Open NG-DE GitHub repository"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -42,7 +44,9 @@ import { RouterLink } from '@angular/router';
             <a
               href="https://www.linkedin.com/company/ngdeconf/"
               target="_blank"
+              rel="noopener noreferrer"
               class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Open NG-DE LinkedIn page"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -53,7 +57,9 @@ import { RouterLink } from '@angular/router';
             <a
               href="https://www.instagram.com/ngdeconf"
               target="_blank"
+              rel="noopener noreferrer"
               class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Open NG-DE Instagram profile"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path

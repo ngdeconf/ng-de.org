@@ -129,8 +129,7 @@ interface VideoModalData {
 
           <div class="md:w-1/2 relative group">
             <div
-              class="relative overflow-hidden rounded-lg shadow-2xl cursor-pointer"
-              (click)="openVideoModal()"
+              class="relative overflow-hidden rounded-lg shadow-2xl"
             >
               <div
                 class="w-full h-full absolute top-0 left-0 bg-gradient-to-br from-primary-500/20 to-secondary-500/20 z-10"
@@ -142,15 +141,15 @@ interface VideoModalData {
               />
 
               <!-- Play button with animation -->
-              <div
-                class="absolute inset-0 flex items-center justify-center z-20 transition-transform duration-300 group-hover:scale-110"
+              <button
+                type="button"
+                class="absolute inset-0 flex items-center justify-center z-20 transition-transform duration-300 group-hover:scale-110 focus:outline-none focus-visible:ring-4 focus-visible:ring-primary-500 focus-visible:ring-offset-4 focus-visible:ring-offset-white dark:focus-visible:ring-offset-gray-900"
                 aria-label="Play conference impressions video"
+                (click)="openVideoModal()"
               >
-                <div class="relative">
-                  <!-- Play button -->
-                  <div
-                    class="bg-primary-500 text-white rounded-full p-4 shadow-lg"
-                  >
+                <span class="sr-only">Play conference impressions video</span>
+                <span class="relative" aria-hidden="true">
+                  <span class="bg-primary-500 text-white rounded-full p-4 shadow-lg inline-flex">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-8 w-8"
@@ -171,9 +170,9 @@ interface VideoModalData {
                         d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                  </div>
-                </div>
-              </div>
+                  </span>
+                </span>
+              </button>
             </div>
 
             <!-- Floating badge -->

@@ -19,7 +19,7 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
         (click)="openWorkshopDetails(workshop)"
         tabindex="0"
         role="button"
-        [attr.aria-label]="'View detailed workshop information for ' + workshop.title"
+        [attr.aria-label]="workshop.title"
         (keydown.enter)="openWorkshopDetails(workshop)"
         (keydown.space)="openWorkshopDetails(workshop)"
       >
@@ -110,7 +110,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 >
                   <img
                     src="assets/images/angular_gradient.png"
-                    alt="Angular Team"
+                    alt=""
+                    aria-hidden="true"
                     class="w-6 h-6"
                   />
                 </div>
@@ -121,7 +122,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 >
                   <img
                     src="assets/images/ngrx-logo.png"
-                    alt="NgRx Team"
+                    alt=""
+                    aria-hidden="true"
                     class="w-6 h-6"
                   />
                 </div>
@@ -152,7 +154,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 >
                   <img
                     src="assets/images/angular_gradient.png"
-                    alt="Angular Team"
+                    alt=""
+                    aria-hidden="true"
                     class="w-4 h-4"
                   />
                 </div>
@@ -163,7 +166,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 >
                   <img
                     src="assets/images/ngrx-logo.png"
-                    alt="NgRx Team"
+                    alt=""
+                    aria-hidden="true"
                     class="w-4 h-4"
                   />
                 </div>
@@ -686,7 +690,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                           >
                             <img
                               src="assets/images/angular_gradient.png"
-                              alt="Angular Team"
+                              alt=""
+                              aria-hidden="true"
                               class="w-5 h-5"
                             />
                           </div>
@@ -696,7 +701,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                           >
                             <img
                               src="assets/images/ngrx-logo.png"
-                              alt="NgRx Team"
+                              alt=""
+                              aria-hidden="true"
                               class="w-5 h-5"
                             />
                           </div>

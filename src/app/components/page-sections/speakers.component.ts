@@ -62,14 +62,16 @@ import { Speaker } from '../../models/models';
                   @if (speaker.angularTeam) {
                   <img 
                     src="assets/images/angular_gradient.png" 
-                    alt="Angular Team" 
+                    alt="" 
+                    aria-hidden="true"
                     class="w-4 h-4 mr-1"
                   />
                   }
                   @if (speaker.ngrxTeam) {
                   <img 
                     src="assets/images/ngrx-logo.png" 
-                    alt="NgRx Team" 
+                    alt="" 
+                    aria-hidden="true"
                     class="w-4 h-4 mr-1"
                   />
                   }
@@ -181,14 +183,16 @@ import { Speaker } from '../../models/models';
                 @if (activeSpeaker()?.angularTeam) {
                 <img 
                   src="assets/images/angular_gradient.png" 
-                  alt="Angular Team" 
+                  alt="" 
+                  aria-hidden="true"
                   class="w-4 h-4 mr-1"
                 />
                 }
                 @if (activeSpeaker()?.ngrxTeam) {
                 <img 
                   src="assets/images/ngrx-logo.png" 
-                  alt="NgRx Team" 
+                  alt="" 
+                  aria-hidden="true"
                   class="w-4 h-4 mr-1"
                 />
                 }
