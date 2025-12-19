@@ -135,7 +135,7 @@ interface VideoModalData {
                 class="w-full h-full absolute top-0 left-0 bg-gradient-to-br from-primary-500/20 to-secondary-500/20 z-10"
               ></div>
               <img
-                src="assets/images/impressions/ng-de-stage.jpg"
+                src="assets/images/impressions/2025-mood-video.png"
                 alt="Impressions from NG-DE conference"
                 class="w-full rounded-lg transform group-hover:scale-105 transition-transform duration-500 ease-in-out"
               />
@@ -194,7 +194,7 @@ export class HeroComponent {
 
   openVideoModal(): void {
     this.dialog.open<VideoModalComponent, VideoModalData>(VideoModalComponent, {
-      data: { videoId: 'VRNG-iuF2Lk' }
+      data: { videoId: '_l3Krgk6LSI' }
     });
   }
 
