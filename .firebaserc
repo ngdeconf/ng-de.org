@@ -6,7 +6,7 @@
     "2025": "ngdeconf-2025",
     "default": "ngdeconf",
     "beta": "ngdeconf-beta",
-    "master": "ngdeconf"
+    "main": "ngdeconf"
   },
   "targets": {}
 }
