@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Call for Papers</h2>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Share your expertise with the Angular community at NG-DE 2025
+            Share your expertise with the Angular community at NG-DE 2026
           </p>
         </div>
 
@@ -429,7 +429,7 @@ import { Component } from '@angular/core';
           <h3 class="text-2xl font-bold mb-6">Submit Your Proposal</h3>
           <p class="text-gray-600 dark:text-gray-400 mb-8">
             The Call for Papers is now open! Submit your proposal by April 30th
-            2025.
+            2026.
           </p>
           <a
             href="https://forms.gle/1iRNxjfE6KVopnu7A"

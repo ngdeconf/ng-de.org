@@ -454,7 +454,7 @@ export class TicketsComponent {
     if (this.isFlashSaleTicket(ticket)) {
       return this.flashSaleService.getDiscountUrl();
     }
-    return 'https://ti.to/ng-de/berlin-2025';
+    return 'https://ti.to/ng-de/berlin-2026';
   }
 
   formatDate(date: Date): string {

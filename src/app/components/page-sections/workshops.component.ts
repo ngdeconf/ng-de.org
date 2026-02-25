@@ -14,7 +14,7 @@ import { WorkshopInformationComponent } from './workshop-information.component';
           <p
             class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
           >
-            November 5: Hands-on workshops to level up your Angular skills
+            October 14: Hands-on workshops to level up your Angular skills
           </p>
         </div>
 

@@ -43,7 +43,7 @@ import { Component } from '@angular/core';
                 <div>
                   <h3 class="text-xl font-bold">Workshop Day</h3>
                   <p class="text-gray-500 dark:text-gray-400">
-                    November 5, 2025
+                    October 14, 2026
                   </p>
                 </div>
               </div>
@@ -134,7 +134,7 @@ import { Component } from '@angular/core';
                 <div>
                   <h3 class="text-xl font-bold">Conference Day 1</h3>
                   <p class="text-gray-500 dark:text-gray-400">
-                    November 6, 2025
+                    October 15, 2026
                   </p>
                 </div>
               </div>
@@ -223,7 +223,7 @@ import { Component } from '@angular/core';
                 <div>
                   <h3 class="text-xl font-bold">Conference Day 2</h3>
                   <p class="text-gray-500 dark:text-gray-400">
-                    November 7, 2025
+                    October 16, 2026
                   </p>
                 </div>
               </div>
