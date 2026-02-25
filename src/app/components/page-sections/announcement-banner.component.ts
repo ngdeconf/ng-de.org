@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, OnInit, signal } from '@angular/core';
+import { afterNextRender, Component, OnDestroy, signal } from '@angular/core';
 
 interface TimeRemaining {
   days: number;
@@ -205,7 +205,7 @@ interface TimeRemaining {
     }
   `]
 })
-export class AnnouncementBannerComponent implements OnInit, OnDestroy {
+export class AnnouncementBannerComponent implements OnDestroy {
   private intervalId?: number;
   private targetDate!: Date;
 
@@ -218,15 +218,18 @@ export class AnnouncementBannerComponent implements OnInit, OnDestroy {
 
   isVisible = signal<boolean>(true);
 
-  ngOnInit(): void {
-    // October 17th, 2025 at 11:00 Berlin time (CEST is UTC+2)
-    // Creating date in UTC and adjusting for Berlin timezone
-    this.targetDate = new Date('2025-10-17T09:00:00.000Z'); // 11:00 CEST = 09:00 UTC
+  constructor() {
+    afterNextRender({
+      write: () => {
+      // October 17th, 2025 at 11:00 Berlin time (CEST is UTC+2)
+      // Creating date in UTC and adjusting for Berlin timezone
+      this.targetDate = new Date('2025-10-17T09:00:00.000Z'); // 11:00 CEST = 09:00 UTC
 
-    this.updateCountdown();
-    this.intervalId = window.setInterval(() => {
       this.updateCountdown();
-    }, 1000);
+      this.intervalId = window.setInterval(() => {
+        this.updateCountdown();
+      }, 1000);
+    }});
   }
 
   ngOnDestroy(): void {

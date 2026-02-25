@@ -62,38 +62,38 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 style="transition: opacity 0.2s ease"
                 >Home</a
               >
-              <a
+              <!-- <a
                 href="#tickets"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('tickets')"
                 [class.dark:text-primary-400]="isActiveSection('tickets')"
                 style="transition: opacity 0.2s ease"
                 >Tickets</a
-              >
-              <a
+              > -->
+              <!-- <a
                 href="#speakers"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('speakers')"
                 [class.dark:text-primary-400]="isActiveSection('speakers')"
                 style="transition: opacity 0.2s ease"
                 >Speakers</a
-              >
-              <a
+              > -->
+              <!-- <a
                 href="#schedule"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('schedule')"
                 [class.dark:text-primary-400]="isActiveSection('schedule')"
                 style="transition: opacity 0.2s ease"
                 >Schedule</a
-              >
-              <a
+              > -->
+              <!-- <a
                 href="#workshops"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('workshops')"
                 [class.dark:text-primary-400]="isActiveSection('workshops')"
                 style="transition: opacity 0.2s ease"
                 >Workshops</a
-              >
+              > -->
               <a
                 href="#faq"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"

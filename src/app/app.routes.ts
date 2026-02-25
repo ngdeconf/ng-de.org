@@ -3,7 +3,7 @@ import { CodeOfConductComponent } from './components/pages/code-of-conduct.compo
 import { HomeComponent } from './components/pages/home.component';
 import { ImprintComponent } from './components/pages/imprint.component';
 import { PrivacyPolicyComponent } from './components/pages/privacy-policy.component';
-import { Talks2025Component } from './components/pages/talks-2025.component';
+import { TalksArchiveComponent } from './components/pages/talks-archive.component';
 
 export const routes: Routes = [
   {
@@ -11,8 +11,8 @@ export const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: '2025/talks',
-    component: Talks2025Component
+    path: ':year/talks',
+    component: TalksArchiveComponent
   },
   {
     path: 'code-of-conduct',

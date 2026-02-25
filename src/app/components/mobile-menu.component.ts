@@ -22,7 +22,7 @@ import { RouterLink } from '@angular/router';
           (click)="onClose()()"
           >Home</a
         >
-        <a
+        <!-- <a
           href="#tickets"
           class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
           [class.text-primary-500]="activeSection() === 'tickets'"
@@ -30,8 +30,8 @@ import { RouterLink } from '@angular/router';
           style="transition: color 0.2s ease"
           (click)="onClose()()"
           >Tickets</a
-        >
-        <a
+        > -->
+        <!-- <a
           href="#speakers"
           class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
           [class.text-primary-500]="activeSection() === 'speakers'"
@@ -39,8 +39,8 @@ import { RouterLink } from '@angular/router';
           style="transition: color 0.2s ease"
           (click)="onClose()()"
           >Speakers</a
-        >
-        <a
+        > -->
+        <!-- <a
           href="#schedule"
           class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
           [class.text-primary-500]="activeSection() === 'schedule'"
@@ -48,8 +48,8 @@ import { RouterLink } from '@angular/router';
           style="transition: color 0.2s ease"
           (click)="onClose()()"
           >Schedule</a
-        >
-        <a
+        > -->
+        <!-- <a
           href="#workshops"
           class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
           [class.text-primary-500]="activeSection() === 'workshops'"
@@ -57,7 +57,7 @@ import { RouterLink } from '@angular/router';
           style="transition: color 0.2s ease"
           (click)="onClose()()"
           >Workshops</a
-        >
+        > -->
         <a
           href="#faq"
           class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"

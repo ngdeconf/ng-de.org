@@ -106,9 +106,9 @@ interface VideoModalData {
               <button
                 type="button"
                 class="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500 px-6 py-3 text-base font-semibold text-white shadow-lg transition hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-                (click)="scrollToNewsletter()"
+                (click)="scrollToCallForPapers()"
               >
-                Subscribe to Newsletter
+                Become a speaker
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -124,6 +124,13 @@ interface VideoModalData {
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>
               </button>
+              <a
+                href="#sponsors"
+                (click)="scrollToSponsors($event)"
+                class="inline-flex items-center gap-2 rounded-lg border-2 border-gray-300 dark:border-gray-600 px-6 py-3 text-base font-medium text-gray-700 dark:text-gray-300 transition hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+              >
+                Become a sponsor
+              </a>
             </div>
           </div>
 
@@ -198,8 +205,16 @@ export class HeroComponent {
     });
   }
 
-  scrollToNewsletter(): void {
-    const target = document.getElementById('newsletter');
+  scrollToCallForPapers(): void {
+    const target = document.getElementById('call-for-papers');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  scrollToSponsors($event: Event): void {
+    $event.preventDefault();
+    const target = document.getElementById('sponsors');
     if (target) {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
