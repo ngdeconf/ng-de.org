@@ -95,6 +95,14 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 >Workshops</a
               > -->
               <a
+                href="#call-for-papers"
+                class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                [class.text-primary-500]="isActiveSection('call-for-papers')"
+                [class.dark:text-primary-400]="isActiveSection('call-for-papers')"
+                style="transition: opacity 0.2s ease"
+                >Call for Papers</a
+              >
+              <a
                 href="#faq"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('faq')"
@@ -238,6 +246,7 @@ export class TopNavigationComponent {
     'speakers',
     'schedule',
     'workshops',
+    'call-for-papers',
     'faq'
   ];
   // All sections on the page, including ones not in navigation

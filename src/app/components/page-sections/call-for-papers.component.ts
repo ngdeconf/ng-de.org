@@ -1,440 +1,108 @@
-
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'ngde-call-for-papers',
-
   imports: [],
   template: `
-    <section id="call-for-papers" class="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="call-for-papers" class="py-16 bg-gray-50 dark:bg-gray-900">
       <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">Call for Papers</h2>
-          <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold mb-3">Call for Papers</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Share your expertise with the Angular community at NG-DE 2026
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <!-- Submission Guidelines -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-            <h3 class="text-2xl font-bold mb-6">Submission Guidelines</h3>
-            <ul class="space-y-4">
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>The talk should be 30 minutes long</span>
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+            <h3 class="text-xl font-bold mb-4">Submission Guidelines</h3>
+            <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-300">
+              <li class="flex items-start gap-2">
+                <span class="text-primary-500 shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                <span>30 min talk, English, single track</span>
               </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span
-                  >We won't do any Q&A, but if you want to have one it should
-                  not exceed your 30 minute slot</span
-                >
+              <li class="flex items-start gap-2">
+                <span class="text-primary-500 shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                <span>Q&A only within your slot if desired</span>
               </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>The talk must be in English</span>
+              <li class="flex items-start gap-2">
+                <span class="text-primary-500 shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                <span>Abstract, learning objectives, code/demos where useful</span>
               </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>We will run a single track for both days</span>
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span
-                  >By submitting a talk you agree with our Code of Conduct and
-                  Privacy Policy</span
-                >
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Include a detailed abstract and learning objectives</span>
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Provide code examples and demos when applicable</span>
+              <li class="flex items-start gap-2">
+                <span class="text-primary-500 shrink-0 mt-0.5" aria-hidden="true">✓</span>
+                <span>By submitting you agree to our Code of Conduct & Privacy Policy</span>
               </li>
             </ul>
           </div>
 
           <!-- Topics of Interest -->
-          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-            <h3 class="text-2xl font-bold mb-6">Topics of Interest</h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-4">
-              Our audience will be people interested in Angular from every level
-              of expertise. So don't worry, your talk can address any level from
-              beginners to experts.
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6">
+            <h3 class="text-xl font-bold mb-3">Topics of Interest</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+              Talks for all levels welcome — from beginners to experts.
             </p>
-            <ul class="space-y-4">
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Angular in general</span>
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span
-                  >Latest Innovations in Angular (Signals, Hydration, Vite,
-                  esbuild)</span
-                >
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Reactive Patterns</span>
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>NgRx & State Management</span>
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Security & Web Performance</span>
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>AI Integration with Angular</span>
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Vibe Coding: AI-Powered Development Workflows</span>
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Making developers lives easier</span>
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>Becoming a better developer</span>
-              </li>
-              <li class="flex items-start">
-                <svg
-                  class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-                <span>How to improve the community</span>
-              </li>
-            </ul>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-flex items-center rounded-full p-[2px] bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-gray-600 dark:via-gray-500 dark:to-gray-600">
+                <span class="rounded-full bg-white dark:bg-gray-800 px-3 py-1.5 text-sm font-medium text-gray-800 dark:text-gray-200">Angular (core, Signals, Hydration, Vite)</span>
+              </span>
+              <span class="inline-flex items-center rounded-full p-[2px] bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-gray-600 dark:via-gray-500 dark:to-gray-600">
+                <span class="rounded-full bg-white dark:bg-gray-800 px-3 py-1.5 text-sm font-medium text-gray-800 dark:text-gray-200">Reactive patterns & NgRx</span>
+              </span>
+              <span class="inline-flex items-center rounded-full p-[2px] bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-gray-600 dark:via-gray-500 dark:to-gray-600">
+                <span class="rounded-full bg-white dark:bg-gray-800 px-3 py-1.5 text-sm font-medium text-gray-800 dark:text-gray-200">Security & performance</span>
+              </span>
+              <span class="inline-flex items-center rounded-full p-[2px] bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-gray-600 dark:via-gray-500 dark:to-gray-600">
+                <span class="rounded-full bg-white dark:bg-gray-800 px-3 py-1.5 text-sm font-medium text-gray-800 dark:text-gray-200">AI, agentic engineering & AI-generated UIs</span>
+              </span>
+              <span class="inline-flex items-center rounded-full p-[2px] bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:from-gray-600 dark:via-gray-500 dark:to-gray-600">
+                <span class="rounded-full bg-white dark:bg-gray-800 px-3 py-1.5 text-sm font-medium text-gray-800 dark:text-gray-200">Developer experience & community</span>
+              </span>
+            </div>
           </div>
         </div>
 
-        <!-- Selection Process -->
-        <div class="mt-12 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-          <h3 class="text-2xl font-bold mb-6">The Selection Process</h3>
-          <p class="text-gray-600 dark:text-gray-400 mb-6">
-            This year, we're implementing a new selection process where 50% of
-            the talks will be pre-selected and 50% will be chosen through our
-            jury process. Here's how it works:
+        <!-- Selection Process + Timeline -->
+        <div class="mt-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 md:p-8">
+          <h3 class="text-xl font-bold mb-3">Selection Process</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">
+            Submissions are anonymized and evaluated by our jury on content quality and impact.
           </p>
-          <ul class="space-y-4 mb-8">
-            <li class="flex items-start">
-              <svg
-                class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <span
-                >50% of the talks will be pre-selected to ensure a balanced
-                program covering key topics and speakers</span
-              >
-            </li>
-            <li class="flex items-start">
-              <svg
-                class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <span
-                >The remaining 50% will be selected through our jury
-                process</span
-              >
-            </li>
-            <li class="flex items-start">
-              <svg
-                class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <span
-                >All submissions will be anonymized to ensure unbiased
-                evaluation</span
-              >
-            </li>
-            <li class="flex items-start">
-              <svg
-                class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <span
-                >The jury will review and vote on submissions based on content
-                quality, relevance, and potential impact</span
-              >
-            </li>
-            <li class="flex items-start">
-              <svg
-                class="w-6 h-6 text-primary-500 mr-3 mt-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                ></path>
-              </svg>
-              <span
-                >Final selections will be made considering both the pre-selected
-                talks and jury recommendations</span
-              >
-            </li>
-          </ul>
+          <!-- Timeline -->
+          <div class="relative">
+            <div class="hidden sm:block absolute top-5 left-0 right-0 h-0.5 bg-primary-500/30 dark:bg-primary-400/20 rounded" aria-hidden="true"></div>
+            <ol class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-0 relative">
+              <li class="flex flex-col items-center text-center">
+                <span class="w-10 h-10 rounded-full bg-primary-500 text-white flex items-center justify-center text-sm font-semibold shrink-0 z-10">1</span>
+                <span class="mt-2 text-xs font-medium text-gray-700 dark:text-gray-300">Submit</span>
+              </li>
+              <li class="flex flex-col items-center text-center">
+                <span class="w-10 h-10 rounded-full bg-primary-500/90 text-white flex items-center justify-center text-sm font-semibold shrink-0 z-10">2</span>
+                <span class="mt-2 text-xs font-medium text-gray-700 dark:text-gray-300">Anonymize</span>
+              </li>
+              <li class="flex flex-col items-center text-center">
+                <span class="w-10 h-10 rounded-full bg-primary-500/90 text-white flex items-center justify-center text-sm font-semibold shrink-0 z-10">3</span>
+                <span class="mt-2 text-xs font-medium text-gray-700 dark:text-gray-300">Jury review</span>
+              </li>
+              <li class="flex flex-col items-center text-center col-span-2 sm:col-span-1">
+                <span class="w-10 h-10 rounded-full bg-primary-500/90 text-white flex items-center justify-center text-sm font-semibold shrink-0 z-10">4</span>
+                <span class="mt-2 text-xs font-medium text-gray-700 dark:text-gray-300">Program</span>
+              </li>
+            </ol>
+          </div>
         </div>
 
-        <!-- Submission Form -->
-        <div class="mt-12 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-          <h3 class="text-2xl font-bold mb-6">Submit Your Proposal</h3>
-          <p class="text-gray-600 dark:text-gray-400 mb-8">
-            The Call for Papers is now open! Submit your proposal by April 30th
-            2026.
-          </p>
+        <!-- Submit CTA -->
+        <div class="mt-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <h3 class="text-xl font-bold mb-1">Submit Your Proposal</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Open until April 30th 2026.</p>
+          </div>
           <a
             href="https://forms.gle/1iRNxjfE6KVopnu7A"
             target="_blank"
-            class="inline-block px-8 py-4 bg-primary-500 text-white rounded-lg font-medium hover:bg-primary-600 transition-colors"
+            class="inline-flex justify-center px-6 py-3 bg-primary-500 text-white rounded-lg font-medium hover:bg-primary-600 transition-colors shrink-0"
           >
             Submit Your Talk
           </a>

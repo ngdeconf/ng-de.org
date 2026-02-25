@@ -59,6 +59,15 @@ import { RouterLink } from '@angular/router';
           >Workshops</a
         > -->
         <a
+          href="#call-for-papers"
+          class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+          [class.text-primary-500]="activeSection() === 'call-for-papers'"
+          [class.dark:text-primary-400]="activeSection() === 'call-for-papers'"
+          style="transition: color 0.2s ease"
+          (click)="onClose()()"
+          >Call for Papers</a
+        >
+        <a
           href="#faq"
           class="py-2 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
           [class.text-primary-500]="activeSection() === 'faq'"
