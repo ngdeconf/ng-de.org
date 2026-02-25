@@ -76,31 +76,8 @@ interface VideoModalData {
             <p
               class="text-xl md:text-2xl mb-6 text-gray-700 dark:text-gray-300"
             >
-              The community-driven Angular conference in Germany is over.
+              The largest Angular Conference in Germany is here.
             </p>
-
-            <div class="mb-8 text-gray-600 dark:text-gray-400">
-              <div class="flex items-start mb-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 mr-2 mt-1 text-primary-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <div>
-                  <span class="block">Workshops and talks are beeing uploaded to youtube.</span>
-                  <span class="block">Subscribe to our newsletter to get notified.</span>
-                </div>
-              </div>
-            </div>
 
             <div class="flex flex-wrap items-center gap-4">
               <button
