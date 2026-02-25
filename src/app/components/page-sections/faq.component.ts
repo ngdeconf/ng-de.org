@@ -1,10 +1,10 @@
 import {
-  Component,
-  DestroyRef,
-  OnInit,
-  computed,
-  inject,
-  signal
+    Component,
+    DestroyRef,
+    OnInit,
+    computed,
+    inject,
+    signal
 } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FaqSection, FaqService } from '../../services/faq.service';
@@ -19,7 +19,7 @@ import { FaqSection, FaqService } from '../../services/faq.service';
             Frequently Asked Questions
           </h2>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-            Everything you need to know about the NG-DE Conference 2025
+            Everything you need to know about the NG-DE Conference 2026
           </p>
         </div>
 

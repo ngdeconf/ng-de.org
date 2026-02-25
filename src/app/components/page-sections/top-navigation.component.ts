@@ -62,37 +62,45 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 style="transition: opacity 0.2s ease"
                 >Home</a
               >
-              <a
+              <!-- <a
                 href="#tickets"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('tickets')"
                 [class.dark:text-primary-400]="isActiveSection('tickets')"
                 style="transition: opacity 0.2s ease"
                 >Tickets</a
-              >
-              <a
+              > -->
+              <!-- <a
                 href="#speakers"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('speakers')"
                 [class.dark:text-primary-400]="isActiveSection('speakers')"
                 style="transition: opacity 0.2s ease"
                 >Speakers</a
-              >
-              <a
+              > -->
+              <!-- <a
                 href="#schedule"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('schedule')"
                 [class.dark:text-primary-400]="isActiveSection('schedule')"
                 style="transition: opacity 0.2s ease"
                 >Schedule</a
-              >
-              <a
+              > -->
+              <!-- <a
                 href="#workshops"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('workshops')"
                 [class.dark:text-primary-400]="isActiveSection('workshops')"
                 style="transition: opacity 0.2s ease"
                 >Workshops</a
+              > -->
+              <a
+                href="#call-for-papers"
+                class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                [class.text-primary-500]="isActiveSection('call-for-papers')"
+                [class.dark:text-primary-400]="isActiveSection('call-for-papers')"
+                style="transition: opacity 0.2s ease"
+                >Call for Papers</a
               >
               <a
                 href="#faq"
@@ -101,6 +109,12 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 [class.dark:text-primary-400]="isActiveSection('faq')"
                 style="transition: opacity 0.2s ease"
                 >FAQ</a
+              >
+
+              <a
+                routerLink="/2025/talks"
+                class="font-semibold py-2 px-4 rounded-lg border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-400 dark:hover:text-gray-900 transition-colors"
+                >Watch 2025 talks</a
               >
 
               <!-- Get Tickets CTA Button for desktop nav -->
@@ -116,6 +130,12 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
             </nav>
 
             <div class="flex items-center space-x-4">
+              <!-- Watch 2025 talks CTA - visible when desktop nav is hidden (mobile/tablet) -->
+              <a
+                routerLink="/2025/talks"
+                class="lg:hidden font-semibold py-1.5 px-3 text-sm rounded-lg border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-400 dark:hover:text-gray-900 transition-colors shrink-0"
+                >Watch 2025 talks</a
+              >
               <!-- Get Tickets CTA Button for mobile -->
               <a
                 href="#tickets"
@@ -226,6 +246,7 @@ export class TopNavigationComponent {
     'speakers',
     'schedule',
     'workshops',
+    'call-for-papers',
     'faq'
   ];
   // All sections on the page, including ones not in navigation
@@ -398,16 +419,16 @@ export class TopNavigationComponent {
   closeMobileMenu(): void {
     this.isMobileMenuOpen.set(false);
 
-    document.body.style.overflow = '';
+      document.body.style.overflow = '';
   }
 
   toggleMobileMenu(): void {
     this.isMobileMenuOpen.update(value => !value);
 
-    if (this.isMobileMenuOpen()) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
+      if (this.isMobileMenuOpen()) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
     }
   }
 
