@@ -1,12 +1,12 @@
 import {
-    afterNextRender,
-    Component,
-    DestroyRef,
-    ElementRef,
-    HostListener,
-    inject,
-    signal,
-    viewChild
+  afterNextRender,
+  Component,
+  DestroyRef,
+  ElementRef,
+  HostListener,
+  inject,
+  signal,
+  viewChild
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ThemeService } from '../../services/theme.service';
@@ -103,6 +103,12 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 >FAQ</a
               >
 
+              <a
+                routerLink="/2025/talks"
+                class="font-semibold py-2 px-4 rounded-lg border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-400 dark:hover:text-gray-900 transition-colors"
+                >Watch 2025 talks</a
+              >
+
               <!-- Get Tickets CTA Button for desktop nav -->
               <a
                 href="#tickets"
@@ -116,6 +122,12 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
             </nav>
 
             <div class="flex items-center space-x-4">
+              <!-- Watch 2025 talks CTA - visible when desktop nav is hidden (mobile/tablet) -->
+              <a
+                routerLink="/2025/talks"
+                class="lg:hidden font-semibold py-1.5 px-3 text-sm rounded-lg border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-400 dark:hover:text-gray-900 transition-colors shrink-0"
+                >Watch 2025 talks</a
+              >
               <!-- Get Tickets CTA Button for mobile -->
               <a
                 href="#tickets"

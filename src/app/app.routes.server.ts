@@ -6,6 +6,10 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender
   },
   {
+    path: '2025/talks',
+    renderMode: RenderMode.Prerender
+  },
+  {
     path: 'code-of-conduct',
     renderMode: RenderMode.Prerender
   },
