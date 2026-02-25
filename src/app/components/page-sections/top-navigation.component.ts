@@ -410,16 +410,16 @@ export class TopNavigationComponent {
   closeMobileMenu(): void {
     this.isMobileMenuOpen.set(false);
 
-    document.body.style.overflow = '';
+      document.body.style.overflow = '';
   }
 
   toggleMobileMenu(): void {
     this.isMobileMenuOpen.update(value => !value);
 
-    if (this.isMobileMenuOpen()) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
+      if (this.isMobileMenuOpen()) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
     }
   }
 

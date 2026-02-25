@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   template: `
     @if (isOpen()) {
     <div
-      class="md:hidden mt-4 py-4 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-lg shadow-xl border border-gray-100 dark:border-gray-800"
+      class="lg:hidden mt-4 py-4 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-lg shadow-xl border border-gray-100 dark:border-gray-800"
       style="transform-origin: top; animation: slideIn 0.2s ease-out forwards;"
     >
       <nav
