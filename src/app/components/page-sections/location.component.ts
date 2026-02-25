@@ -155,7 +155,7 @@ interface TransportOption {
               
               <div class="space-y-4">
                 <div class="flex items-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                  <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                  <div class="w-8 h-8 bg-green-900 rounded-full flex items-center justify-center mr-3">
                     <span class="text-white text-xs font-bold">M1</span>
                   </div>
                   <div>
@@ -164,7 +164,7 @@ interface TransportOption {
                   </div>
                 </div>
                 <div class="flex items-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                  <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3">
+                  <div class="w-8 h-8 bg-blue-800 rounded-full flex items-center justify-center mr-3">
                     <span class="text-white text-xs font-bold">U2</span>
                   </div>
                   <div>
@@ -173,7 +173,7 @@ interface TransportOption {
                   </div>
                 </div>
                 <div class="flex items-center p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                  <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3">
+                  <div class="w-8 h-8 bg-orange-700 rounded-full flex items-center justify-center mr-3">
                     <span class="text-white text-xs font-bold">142</span>
                   </div>
                   <div>

@@ -46,13 +46,13 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                   </span>
                 </h1>
                 <p class="text-xs text-gray-600 dark:text-gray-300">
-                  November 5-7, 2025 • Berlin
+                  We are back in 2026!
                 </p>
               </div>
             </div>
 
             <nav
-              class="hidden md:flex items-center space-x-8 text-gray-600 dark:text-gray-300"
+              class="hidden lg:flex items-center space-x-8 text-gray-600 dark:text-gray-300"
             >
               <a
                 href="#home"
@@ -62,37 +62,45 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 style="transition: opacity 0.2s ease"
                 >Home</a
               >
-              <a
+              <!-- <a
                 href="#tickets"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('tickets')"
                 [class.dark:text-primary-400]="isActiveSection('tickets')"
                 style="transition: opacity 0.2s ease"
                 >Tickets</a
-              >
-              <a
+              > -->
+              <!-- <a
                 href="#speakers"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('speakers')"
                 [class.dark:text-primary-400]="isActiveSection('speakers')"
                 style="transition: opacity 0.2s ease"
                 >Speakers</a
-              >
-              <a
+              > -->
+              <!-- <a
                 href="#schedule"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('schedule')"
                 [class.dark:text-primary-400]="isActiveSection('schedule')"
                 style="transition: opacity 0.2s ease"
                 >Schedule</a
-              >
-              <a
+              > -->
+              <!-- <a
                 href="#workshops"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('workshops')"
                 [class.dark:text-primary-400]="isActiveSection('workshops')"
                 style="transition: opacity 0.2s ease"
                 >Workshops</a
+              > -->
+              <a
+                href="#call-for-papers"
+                class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                [class.text-primary-500]="isActiveSection('call-for-papers')"
+                [class.dark:text-primary-400]="isActiveSection('call-for-papers')"
+                style="transition: opacity 0.2s ease"
+                >Call for Papers</a
               >
               <a
                 href="#faq"
@@ -101,6 +109,12 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 [class.dark:text-primary-400]="isActiveSection('faq')"
                 style="transition: opacity 0.2s ease"
                 >FAQ</a
+              >
+
+              <a
+                routerLink="/2025/talks"
+                class="font-semibold py-2 px-4 rounded-lg border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-400 dark:hover:text-gray-900 transition-colors"
+                >Watch 2025 talks</a
               >
 
               <!-- Get Tickets CTA Button for desktop nav -->
@@ -116,10 +130,16 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
             </nav>
 
             <div class="flex items-center space-x-4">
+              <!-- Watch 2025 talks CTA - visible when desktop nav is hidden (mobile/tablet) -->
+              <a
+                routerLink="/2025/talks"
+                class="lg:hidden font-semibold py-1.5 px-3 text-sm rounded-lg border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-400 dark:hover:text-gray-900 transition-colors shrink-0"
+                >Watch 2025 talks</a
+              >
               <!-- Get Tickets CTA Button for mobile -->
               <a
                 href="#tickets"
-                class="md:hidden get-tickets-cta bg-[#e40341] hover:bg-[#c90339] text-white font-semibold py-1.5 px-3 text-sm rounded-lg transition-all duration-300 ease-in-out"
+                class="lg:hidden get-tickets-cta bg-[#e40341] hover:bg-[#c90339] text-white font-semibold py-1.5 px-3 text-sm rounded-lg transition-all duration-300 ease-in-out"
                 [class.opacity-0]="!showTicketsCTA()"
                 [class.opacity-100]="showTicketsCTA()"
                 style="transition: opacity 0.3s ease, transform 0.3s ease"
@@ -131,7 +151,7 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
 
               <button
                 (click)="toggleMobileMenu()"
-                class="md:hidden p-2 rounded-lg hover:opacity-80"
+                class="lg:hidden p-2 rounded-lg hover:opacity-80"
                 style="transition: opacity 0.2s ease"
                 aria-label="Toggle mobile menu"
               >
@@ -226,6 +246,7 @@ export class TopNavigationComponent {
     'speakers',
     'schedule',
     'workshops',
+    'call-for-papers',
     'faq'
   ];
   // All sections on the page, including ones not in navigation
@@ -398,16 +419,16 @@ export class TopNavigationComponent {
   closeMobileMenu(): void {
     this.isMobileMenuOpen.set(false);
 
-    document.body.style.overflow = '';
+      document.body.style.overflow = '';
   }
 
   toggleMobileMenu(): void {
     this.isMobileMenuOpen.update(value => !value);
 
-    if (this.isMobileMenuOpen()) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
+      if (this.isMobileMenuOpen()) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
     }
   }
 

@@ -826,7 +826,7 @@ export class ScheduleComponent {
   getSpeakerTitle(entry: ScheduleEntry): string {
     // First try to get speaker from session
     const sessionSpeaker = this.getSpeakerBySession(entry.session);
-    if (sessionSpeaker) return `${sessionSpeaker.title}${sessionSpeaker.company ? ` at ${sessionSpeaker.company}` : ''}`;
+    if (sessionSpeaker) return `${sessionSpeaker.title}${sessionSpeaker.company ? ` -  ${sessionSpeaker.company}` : ''}`;
 
     // Fall back to empty string
     return '';
@@ -839,7 +839,8 @@ export class ScheduleComponent {
            entry.title.toLowerCase().includes('registration') ||
            entry.title.toLowerCase().includes('breakfast') ||
            entry.title.toLowerCase().includes('party') ||
-           entry.title.toLowerCase().includes('community event') ||
+           //entry.title.toLowerCase().includes('community event') ||
+           entry.title.toLowerCase().includes('closes') ||
            entry.information.toLowerCase().includes('social event');
   }
 

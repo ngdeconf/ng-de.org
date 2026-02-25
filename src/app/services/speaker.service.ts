@@ -5,6 +5,24 @@ import { Speaker } from '../models/models';
 export class SpeakerService {
   private readonly speakers = signal<Speaker[]>([
     {
+      id: 'ola-gasidlo-braendel',
+      name: 'Ola Gasidlo-Brändel',
+      title: 'Master of Ceremonies',
+      company: 'Senior Principal Engineer',
+      bio: "Ola is a Senior Principal Engineer from near Berlin who lives and breathes open source, web standards, and empowering people through technology. She loves breaking down complex ideas into something everyone can enjoy. As your MC at ng-de, she can't wait to bring the community together for two days of inspiration, learning, and a bit of magic.",
+      imageUrl: 'assets/images/speakers/ola-gasidlo-braendel.jpg',
+      mc: true
+    },
+    {
+      id: 'lulezim-ukaj',
+      name: 'Lulezim Ukaj',
+      title: 'Master of Ceremonies',
+      company: 'Software Developer & Political Activist',
+      bio: "Lulezim is a passionate software developer with a keen focus on AI technologies and modern web development. He actively explores the intersection of artificial intelligence and web applications, staying at the forefront of technological innovation. Beyond his technical expertise, Lulezim is deeply committed to political engagement and social change. As your MC at ng-de, he brings both technical insight and a broader perspective on how technology shapes our society.",
+      imageUrl: 'assets/images/speakers/lulezim-ukaj.jpg',
+      mc: true
+    },
+    {
       id: 'manfred-steyer',
       name: 'Manfred Steyer',
       title: 'Trainer and Consultant',
@@ -115,7 +133,7 @@ export class SpeakerService {
       name: 'Matthieu Riegler',
       title: 'Angular Team',
       company: 'Google',
-      bio: 'tbd',
+      bio: 'Matthieu is a Software Engineer from France, born and raised in the Alps, he is known for his community contributions over the years. Active as community speaker, he recently he joined the Angular team as a Google contractor and works on the devtools, documentation and of course the framework itself.',
       imageUrl: 'assets/images/speakers/matthieu-riegler.jpg',
       githubHandle: 'JeanMeche',
       pronouns: 'he/him',
@@ -237,6 +255,15 @@ export class SpeakerService {
       imageUrl: 'assets/images/speakers/mussie-haile.jpg'
     },
     {
+      id: 'jim-sellmeijer',
+      name: 'Dr. Jim Sellmeijer',
+      title: 'Software Developer & Speaker',
+      company: 'Independent',
+      bio: 'Software developer and speaker focusing on AI integration in development workflows and the future of software engineering. Dr. Jim explores how AI tools can enhance developer productivity while addressing common misconceptions about AI replacing developers.',
+      imageUrl: 'assets/images/speakers/jim-sellmeijer.jpeg',
+      virtual: false
+    },
+    {
       id: 'various-speakers',
       name: 'Various speakers',
       title: 'Panel Discussion',
@@ -244,6 +271,15 @@ export class SpeakerService {
       bio: 'Various speakers from angular team, community and industry',
       imageUrl: 'assets/images/speakers/various-speakers.jpg',
       virtual: true
+    },
+    {
+      id: 'naoufal-el-hassnaoui',
+      name: 'Naoufal El Hassnaoui',
+      title: 'AI Engineering & Cursor IDE Ambassador',
+      company: 'Leapsome',
+      bio: 'Naoufal is an AI Engineering specialist and Cursor IDE Ambassador based in Berlin. He focuses on revolutionizing development workflows through AI-powered tools and intelligent agents. At Leapsome, he leverages cutting-edge AI technologies to enhance developer productivity and code quality. As a Cursor IDE Ambassador, Naoufal is passionate about demonstrating how modern AI-assisted development environments can transform the way we build software. He brings practical insights into agent-based development, prompt engineering, and building intelligent development workflows that maximize developer efficiency while maintaining high code quality standards.',
+      imageUrl: 'assets/images/speakers/naoufal-el-hassnaoui.jpeg',
+      githubHandle: 'naoufalelh'
     },
     {
       id: 'tbd-speaker',

@@ -21,7 +21,7 @@ import { RouterLink } from '@angular/router';
                   NG-DE
                 </span>
               </h3>
-              <p class="text-xs text-gray-400">November 5-7, 2025 • Berlin</p>
+              <p class="text-xs text-gray-400">14.–16. October 2026 • Berlin</p>
             </div>
           </div>
 
@@ -29,7 +29,9 @@ import { RouterLink } from '@angular/router';
             <a
               href="https://github.com/ngdeconf/ng-de.org"
               target="_blank"
+              rel="noopener noreferrer"
               class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Open NG-DE GitHub repository"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -42,7 +44,9 @@ import { RouterLink } from '@angular/router';
             <a
               href="https://www.linkedin.com/company/ngdeconf/"
               target="_blank"
+              rel="noopener noreferrer"
               class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Open NG-DE LinkedIn page"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -53,7 +57,9 @@ import { RouterLink } from '@angular/router';
             <a
               href="https://www.instagram.com/ngdeconf"
               target="_blank"
+              rel="noopener noreferrer"
               class="text-gray-400 hover:text-white transition-colors"
+              aria-label="Open NG-DE Instagram profile"
             >
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -61,6 +67,24 @@ import { RouterLink } from '@angular/router';
                 />
               </svg>
             </a>
+          </div>
+        </div>
+
+        <!-- Funded by section -->
+        <div class="border-t border-gray-800 pt-8 pb-6">
+          <div class="flex flex-col items-center justify-center space-y-4">
+            <span class="text-gray-400 text-sm font-medium">Funded by</span>
+            <img
+              src="assets/images/berlin-senate-logo.png"
+              alt="Senatsverwaltung für Wirtschaft, Energie und Betriebe Berlin"
+              class="h-12 md:h-16 opacity-80 hover:opacity-100 transition-opacity"
+            />
+            <div class="text-center">
+              <p class="text-gray-500 text-xs">
+                Förderrichtlinie<br>
+                „Kongressfonds für nachhaltiges Tagen"
+              </p>
+            </div>
           </div>
         </div>
 

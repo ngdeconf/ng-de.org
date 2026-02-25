@@ -16,51 +16,17 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
       @for (workshop of workshops(); track workshop.id) {
       <div
         class="group relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-2xl overflow-hidden shadow-2xl hover:shadow-primary-500/20 transition-all duration-300 hover:scale-[1.02] cursor-pointer border border-gray-700/50 hover:border-primary-500/50"
-        (click)="!workshop.soldOut && openWorkshopDetails(workshop)"
-        [class.cursor-not-allowed]="workshop.soldOut"
+        (click)="openWorkshopDetails(workshop)"
         tabindex="0"
         role="button"
-        [attr.aria-label]="
-          workshop.soldOut
-            ? 'Workshop sold out - no longer available'
-            : 'View detailed workshop information for ' + workshop.title
-        "
-        (keydown.enter)="!workshop.soldOut && openWorkshopDetails(workshop)"
-        (keydown.space)="!workshop.soldOut && openWorkshopDetails(workshop)"
+        [attr.aria-label]="workshop.title"
+        (keydown.enter)="openWorkshopDetails(workshop)"
+        (keydown.space)="openWorkshopDetails(workshop)"
       >
         <!-- Glowing border effect on hover -->
         <div
           class="absolute inset-0 bg-gradient-to-r from-primary-500/0 via-primary-500/20 to-primary-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
         ></div>
-
-        <!-- Sold Out Overlay -->
-        @if (workshop.soldOut) {
-        <div
-          class="absolute inset-0 z-20 bg-black/80 backdrop-blur-sm flex items-center justify-center"
-        >
-          <div class="text-center">
-            <div
-              class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-8 w-8 text-white"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="15" y1="9" x2="9" y2="15"></line>
-                <line x1="9" y1="9" x2="15" y2="15"></line>
-              </svg>
-            </div>
-            <span class="text-red-400 font-bold text-lg tracking-wider"
-              >SOLD OUT</span
-            >
-          </div>
-        </div>
-        }
 
         <!-- Card Content -->
         <div class="relative z-10 p-6">
@@ -144,7 +110,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 >
                   <img
                     src="assets/images/angular_gradient.png"
-                    alt="Angular Team"
+                    alt=""
+                    aria-hidden="true"
                     class="w-6 h-6"
                   />
                 </div>
@@ -155,7 +122,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 >
                   <img
                     src="assets/images/ngrx-logo.png"
-                    alt="NgRx Team"
+                    alt=""
+                    aria-hidden="true"
                     class="w-6 h-6"
                   />
                 </div>
@@ -186,7 +154,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 >
                   <img
                     src="assets/images/angular_gradient.png"
-                    alt="Angular Team"
+                    alt=""
+                    aria-hidden="true"
                     class="w-4 h-4"
                   />
                 </div>
@@ -197,7 +166,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 >
                   <img
                     src="assets/images/ngrx-logo.png"
-                    alt="NgRx Team"
+                    alt=""
+                    aria-hidden="true"
                     class="w-4 h-4"
                   />
                 </div>
@@ -299,24 +269,24 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
 
       <div
         #dialogContent
-        class="bg-white dark:bg-gray-800 rounded-2xl max-w-3xl w-full max-h-[80vh] overflow-y-auto shadow-xl"
+        class="bg-white dark:bg-gray-800 rounded-2xl max-w-3xl w-full h-full max-h-screen overflow-y-auto shadow-xl"
         (click)="$event.stopPropagation()"
       >
         <!-- Sticky dialog header -->
         <div
-          class="sticky top-0 z-10 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 px-6 py-4 md:px-8 md:py-5 rounded-t-2xl shadow-sm"
+          class="sticky top-0 z-10 bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700 px-4 py-3 md:px-8 md:py-5 rounded-t-2xl shadow-sm"
         >
           <div class="flex justify-between items-start">
             <div class="flex-1 pr-8">
               <h3
                 id="workshop-details-title"
-                class="text-2xl font-bold leading-tight mb-2"
+                class="text-lg md:text-2xl font-bold leading-tight mb-2"
               >
                 {{ activeWorkshop()?.title }}
               </h3>
               <!-- Room and Location Information -->
               <div
-                class="flex items-center gap-4 text-primary-600 dark:text-primary-400"
+                class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-primary-600 dark:text-primary-400"
               >
                 <!-- Room -->
                 <div class="flex items-center gap-2">
@@ -360,7 +330,7 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                 </div>
 
                 <!-- Action Buttons -->
-                <div class="flex items-center gap-2 ml-auto">
+                <div class="flex items-center gap-2 sm:ml-auto mt-2 sm:mt-0">
                   <a
                     href="https://maps.google.com/?q={{
                       activeWorkshop()?.address || ''
@@ -437,14 +407,14 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
           </div>
         </div>
 
-        <div class="p-8">
-          <ngde-workshop-schedule [isOpen]="false"></ngde-workshop-schedule>
+        <div class="p-4 md:p-8">
+          <ngde-workshop-schedule [isOpen]="false" />
 
           <!-- Target Audience -->
           @if (activeWorkshop()?.targetAudience) {
-          <div class="mb-8">
+          <div class="mb-6 md:mb-8">
             <div
-              class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+              class="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 md:p-6 border border-gray-200 dark:border-gray-700"
             >
               <div class="flex items-center gap-3 mb-4">
                 <div
@@ -549,10 +519,10 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                     <div
                       [id]="'section-' + i"
                       class="overflow-hidden transition-all duration-300"
-                      [style.maxHeight]="isAccordionExpanded(i) ? '500px' : '0'"
+                      [style.maxHeight]="isAccordionExpanded(i) ? 'none' : '0'"
                       [attr.aria-hidden]="!isAccordionExpanded(i)"
                     >
-                      <div class="px-6 pb-6">
+                      <div class="px-4 md:px-6 pb-4 md:pb-6">
                         <ul class="space-y-2 text-gray-600 dark:text-gray-300">
                           @for (topic of section.topics; track topic) {
                           <li class="flex items-start gap-3">
@@ -626,10 +596,10 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
               <div
                 id="about-section"
                 class="overflow-hidden transition-all duration-300"
-                [style.maxHeight]="isAboutExpanded() ? '500px' : '0'"
+                [style.maxHeight]="isAboutExpanded() ? 'none' : '0'"
                 [attr.aria-hidden]="!isAboutExpanded()"
               >
-                <div class="p-6 bg-white dark:bg-gray-800">
+                <div class="p-4 md:p-6 bg-white dark:bg-gray-800">
                   <div class="prose prose-gray dark:prose-invert max-w-none">
                     <p
                       class="text-gray-600 dark:text-gray-300 leading-relaxed text-base"
@@ -697,17 +667,17 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
               <div
                 id="trainers-section"
                 class="overflow-hidden transition-all duration-300"
-                [style.maxHeight]="isTrainersExpanded() ? '800px' : '0'"
+                [style.maxHeight]="isTrainersExpanded() ? 'none' : '0'"
                 [attr.aria-hidden]="!isTrainersExpanded()"
               >
-                <div class="p-6 bg-white dark:bg-gray-800">
-                  <div class="space-y-6">
+                <div class="p-4 md:p-6 bg-white dark:bg-gray-800">
+                  <div class="space-y-4 md:space-y-6">
                     @for (trainerId of activeWorkshop()?.trainers ||
                     [activeWorkshop()?.trainerId]; track trainerId) {
                     <div
-                      class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+                      class="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 md:p-6 border border-gray-200 dark:border-gray-700"
                     >
-                      <div class="flex flex-col sm:flex-row gap-6">
+                      <div class="flex flex-col sm:flex-row gap-4 md:gap-6">
                         <div class="relative flex-shrink-0">
                           <img
                             [src]="getSpeakerImage(trainerId)"
@@ -720,7 +690,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                           >
                             <img
                               src="assets/images/angular_gradient.png"
-                              alt="Angular Team"
+                              alt=""
+                              aria-hidden="true"
                               class="w-5 h-5"
                             />
                           </div>
@@ -730,7 +701,8 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
                           >
                             <img
                               src="assets/images/ngrx-logo.png"
-                              alt="NgRx Team"
+                              alt=""
+                              aria-hidden="true"
                               class="w-5 h-5"
                             />
                           </div>
@@ -770,16 +742,7 @@ import { WorkshopScheduleComponent } from './workshop-schedule.component';
             </div>
           </div>
 
-          <div
-            class="flex justify-end pt-6 border-t border-gray-200 dark:border-gray-700"
-          >
-            <button
-              class="bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 shadow-sm hover:shadow-md"
-              (click)="getTicket()"
-            >
-              Get your ticket
-            </button>
-          </div>
+          <div class="flex justify-end pt-6 border-t border-gray-200 dark:border-gray-700"></div>
         </div>
       </div>
     </div>

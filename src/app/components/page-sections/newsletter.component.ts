@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
         <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Stay Updated</h2>
           <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
-            Subscribe to our newsletter to get the latest news about our conferences and events.
+            Subscribe to our newsletter to get the latest news about our conferences and events. We will inform you about the next Call for Papers, Ticket information and when the talks are uploaded to youtube.
           </p>
           <a
             href="http://eepurl.com/dzDRM9"
@@ -40,4 +40,4 @@ import { Component } from '@angular/core';
   `,
   standalone: true
 })
-export class NewsletterComponent {} 
+export class NewsletterComponent {}

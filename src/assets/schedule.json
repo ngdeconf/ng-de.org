@@ -1,0 +1,351 @@
+[
+  {
+    "title": "Thursday",
+    "datetime": "2025-11-06",
+    "entries": [
+      {
+        "title": "Registration & Light Refreshments",
+        "datetime": "2025-11-06T08:30:00",
+        "information": "Registration with coffee and small snacks",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Opening & Welcome",
+        "datetime": "2025-11-06T09:30:00",
+        "information": "Robin Böhm and MC",
+        "location": "Pool House",
+        "session": null
+      },
+      {
+        "title": "Opening & Welcome",
+        "datetime": "2025-11-06T09:30:00",
+        "information": "Live Stream of Pool House Stage 📺🍿",
+        "location": "Aula",
+        "session": null
+      },
+      {
+        "title": "Keynote",
+        "datetime": "2025-11-06T10:00:00",
+        "information": "Mark Thompson - tbd",
+        "location": "Pool House",
+        "session": "keynote-day1"
+      },
+      {
+        "title": "Keynote",
+        "datetime": "2025-11-06T10:00:00",
+        "information": "Live Stream of Pool House Stage 📺🍿",
+        "location": "Aula",
+        "session": null
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T10:30:00",
+        "information": "Matthieu Riegler - tbd",
+        "location": "Pool House",
+        "session": "talk-day1-2"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T10:30:00",
+        "information": "Live Stream of Pool House Stage 📺🍿",
+        "location": "Aula",
+        "session": null
+      },
+      {
+        "title": "Coffee Break ☕️",
+        "datetime": "2025-11-06T11:00:00",
+        "information": "Networking opportunity",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T11:45:00",
+        "information": "Enea Jahollari",
+        "location": "Pool House",
+        "session": "talk-day1-8"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T11:45:00",
+        "information": "Jim Sellmeijer",
+        "location": "Aula",
+        "session": "jim-ai-talk"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T12:30:00",
+        "information": "Marko Stanimirović",
+        "location": "Pool House",
+        "session": "talk-day1-4"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T12:30:00",
+        "information": "Gregor Woiwode",
+        "location": "Aula",
+        "session": "talk-agentic-angular"
+      },
+      {
+        "title": "Lunch Break 🍽️",
+        "datetime": "2025-11-06T13:00:00",
+        "information": "Restaurant Oderberger",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T14:15:00",
+        "information": "Kasia Biernat-Kluba",
+        "location": "Pool House",
+        "session": "talk-day1-5"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T14:15:00",
+        "information": "Mario Trzensky",
+        "location": "Aula",
+        "session": "talk-cologne-intelligence-ai-ux"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T15:00:00",
+        "information": "Eliran Eliassy",
+        "location": "Pool House",
+        "session": "talk-day1-6"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T15:00:00",
+        "information": "Robin Götz",
+        "location": "Aula",
+        "session": "talk-day1-3"
+      },
+      {
+        "title": "Coffee Break ☕️",
+        "datetime": "2025-11-06T15:30:00",
+        "information": "Networking opportunity",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T16:00:00",
+        "information": "Martina Kraus",
+        "location": "Pool House",
+        "session": "talk-day1-7"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-06T16:00:00",
+        "information": "Robin Böhm",
+        "location": "Aula",
+        "session": "talk-process-automation-ai-agents"
+      },
+      {
+        "title": "Panel Discussion",
+        "datetime": "2025-11-06T16:45:00",
+        "information": "Various speakers",
+        "location": "Pool House",
+        "session": "panel-angular-ai-forward"
+      },
+      {
+        "title": "Panel Discussion",
+        "datetime": "2025-11-06T16:45:00",
+        "information": "Live Stream of Pool House Stage 📺🍿",
+        "location": "Aula",
+        "session": null
+      },
+      {
+        "title": "Closing Day 1 & Break",
+        "datetime": "2025-11-06T17:30:00",
+        "information": "Preparation of the Pool Hall for 🎉",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Community Event 🎉",
+        "datetime": "2025-11-06T18:00:00",
+        "information": "Drinks, Food, Music, Tablesoccer Tournament, Networking",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Open Stage / PowerPoint Karaoke 🎤",
+        "datetime": "2025-11-06T19:30:00",
+        "information": "Interactive entertainment",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Community Event 🎉",
+        "datetime": "2025-11-06T20:30:00",
+        "information": "Drinks, Music, Tablesoccer Tournament, Networking",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Location Closes 🌙",
+        "datetime": "2025-11-06T22:00:00",
+        "information": "End of Day 1",
+        "location": "Both Stages",
+        "session": null
+      }
+    ]
+  },
+  {
+    "title": "Friday",
+    "datetime": "2025-11-07",
+    "entries": [
+      {
+        "title": "Registration & Breakfast",
+        "datetime": "2025-11-07T09:00:00",
+        "information": "Registration and breakfast",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Opening & Welcome",
+        "datetime": "2025-11-07T09:30:00",
+        "information": "Opening Day 2",
+        "location": "Pool House",
+        "session": null
+      },
+      {
+        "title": "Opening & Welcome",
+        "datetime": "2025-11-07T09:30:00",
+        "information": "Live Stream of Pool House Stage 📺🍿",
+        "location": "Aula",
+        "session": null
+      },
+      {
+        "title": "Keynote",
+        "datetime": "2025-11-07T10:00:00",
+        "information": "Jens Kühlers",
+        "location": "Pool House",
+        "session": "keynote-day2"
+      },
+      {
+        "title": "Keynote",
+        "datetime": "2025-11-07T10:00:00",
+        "information": "Live Stream of Pool House Stage 📺🍿",
+        "location": "Aula",
+        "session": null
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-07T10:30:00",
+        "information": "Component Testing That Feels Like Playwright",
+        "location": "Pool House",
+        "session": "talk-day2-16",
+        "speakers": ["Younes Jaaidi", "Rainer Hahnekamp"]
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-07T10:30:00",
+        "information": "Naoufal El Hassnaoui",
+        "location": "Aula",
+        "session": "talk-cursor-ai-agents"
+      },
+      {
+        "title": "Coffee Break ☕️",
+        "datetime": "2025-11-07T11:00:00",
+        "information": "Networking opportunity",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-07T11:45:00",
+        "information": "Michael Hladky",
+        "location": "Pool House",
+        "session": "talk-day2-15"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-07T11:45:00",
+        "information": "Maria Korneeva",
+        "location": "Aula",
+        "session": "talk-day2-11"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-07T12:30:00",
+        "information": "Brygida Fiejdasz",
+        "location": "Pool House",
+        "session": "talk-day2-13"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-07T12:30:00",
+        "information": "Mussie Haile",
+        "location": "Aula",
+        "session": "talk-rapid-prototyping-ai"
+      },
+      {
+        "title": "Lunch Break & Group Photo 📸",
+        "datetime": "2025-11-07T13:00:00",
+        "information": "Lunch & Gruppenfoto",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-07T14:15:00",
+        "information": "Tobias Brenner",
+        "location": "Pool House",
+        "session": "talk-eon-microfrontends"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-07T14:15:00",
+        "information": "Christian Liebel",
+        "location": "Aula",
+        "session": "talk-day2-14"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-07T15:00:00",
+        "information": "Manfred Steyer",
+        "location": "Pool House",
+        "session": "talk-day2-18"
+      },
+      {
+        "title": "Talk",
+        "datetime": "2025-11-07T15:00:00",
+        "information": "Nicolas Frizzarin",
+        "location": "Aula",
+        "session": "talk-day2-17"
+      },
+      {
+        "title": "Coffee Break ☕️",
+        "datetime": "2025-11-07T15:30:00",
+        "information": "Networking opportunity",
+        "location": "Both Stages",
+        "session": null
+      },
+      {
+        "title": "Panel Discussion",
+        "datetime": "2025-11-07T16:00:00",
+        "information": "Various speakers",
+        "location": "Pool House",
+        "session": "panel-angular-team"
+      },
+      {
+        "title": "Panel Discussion",
+        "datetime": "2025-11-07T16:00:00",
+        "information": "Live Stream of Pool House Stage 📺🍿",
+        "location": "Aula",
+        "session": null
+      },
+      {
+        "title": "Closing & Farewell",
+        "datetime": "2025-11-07T17:00:00",
+        "information": "Orga Team / MC",
+        "location": "Both Stages",
+        "session": null
+      }
+    ]
+  }
+]

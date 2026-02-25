@@ -73,36 +73,36 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T11:45:00',
-          information: 'Robin Götz',
+          information: 'Enea Jahollari',
           location: 'Pool House',
-          session: 'talk-day1-3'
+          session: 'talk-day1-8'
         },
         {
           title: 'Talk',
           datetime: '2025-11-06T11:45:00',
-          information: 'Mario Trzensky',
+          information: 'Jim Sellmeijer',
           location: 'Aula',
-          session: 'talk-cologne-intelligence-ai-ux'
+          session: 'jim-ai-talk'
         },
-        // Slot 4 - 12:15-12:45
+        // Slot 4 - 12:25-12:55
         {
           title: 'Talk',
-          datetime: '2025-11-06T12:15:00',
+          datetime: '2025-11-06T12:30:00',
           information: 'Marko Stanimirović',
           location: 'Pool House',
           session: 'talk-day1-4'
         },
         {
           title: 'Talk',
-          datetime: '2025-11-06T12:15:00',
+          datetime: '2025-11-06T12:30:00',
           information: 'Gregor Woiwode',
           location: 'Aula',
           session: 'talk-agentic-angular'
         },
-        // Lunch - 12:45-14:15
+        // Lunch - 13:00-14:15
         {
           title: 'Lunch Break 🍽️',
-          datetime: '2025-11-06T12:45:00',
+          datetime: '2025-11-06T13:00:00',
           information: 'Restaurant Oderberger',
           location: 'Both Stages',
           session: null
@@ -118,29 +118,29 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-06T14:15:00',
-          information: 'Tobias Brenner',
+          information: 'Mario Trzensky',
           location: 'Aula',
-          session: 'talk-eon-microfrontends'
+          session: 'talk-cologne-intelligence-ai-ux'
         },
-        // Slot 6 - 14:45-15:15 - Parallel Sessions
+        // Slot 6 - 14:55-15:25 - Parallel Sessions
         {
           title: 'Talk',
-          datetime: '2025-11-06T14:45:00',
+          datetime: '2025-11-06T15:00:00',
           information: 'Eliran Eliassy',
           location: 'Pool House',
           session: 'talk-day1-6'
         },
         {
-          title: 'Panel Discussion',
-          datetime: '2025-11-06T14:45:00',
-          information: 'Various speakers',
+          title: 'Talk',
+          datetime: '2025-11-06T15:00:00',
+          information: 'Robin Götz',
           location: 'Aula',
-          session: 'panel-angular-ai-forward'
+          session: 'talk-day1-3'
         },
-        // Coffee Break - 15:15-16:00
+        // Coffee Break - 15:30-16:00
         {
           title: 'Coffee Break ☕️',
-          datetime: '2025-11-06T15:15:00',
+          datetime: '2025-11-06T15:30:00',
           information: 'Networking opportunity',
           location: 'Both Stages',
           session: null
@@ -160,49 +160,59 @@ export class ScheduleService {
           location: 'Aula',
           session: 'talk-process-automation-ai-agents'
         },
-        // Slot 8 - 16:30-17:15
+        // Slot 8 - 16:45-17:30
         {
-          title: 'Talk',
-          datetime: '2025-11-06T16:30:00',
-          information: 'Enea Jahollari',
+          title: 'Panel Discussion',
+          datetime: '2025-11-06T16:45:00',
+          information: 'Various speakers',
           location: 'Pool House',
-          session: 'talk-day1-8'
+          session: 'panel-angular-ai-forward'
         },
         {
-          title: 'Talk',
-          datetime: '2025-11-06T16:30:00',
-          information: 'TBD',
-          location: 'Aula',
-          session: 'tbd-talk-1'
-        },
-        // Closing - 17:15-18:00
-        {
-          title: 'Closing Day 1',
-          datetime: '2025-11-06T17:15:00',
-          information: 'Wrap-up',
-          location: 'Pool House',
-          session: null
-        },
-        {
-          title: 'Closing Day 1',
-          datetime: '2025-11-06T17:15:00',
+          title: 'Panel Discussion',
+          datetime: '2025-11-06T16:45:00',
           information: 'Live Stream of Pool House Stage 📺🍿',
           location: 'Aula',
           session: null
         },
-        // Community Event - 18:00-22:00
+        // Closing & Preparation - 17:30-18:00
         {
-          title: 'Community Event/Party 🎉',
-          datetime: '2025-11-06T18:00:00',
-          information: 'Social event and networking',
-          location: 'Pool House',
+          title: 'Closing Day 1 & Break',
+          datetime: '2025-11-06T17:30:00',
+          information: 'Preparation of the Pool Hall for 🎉',
+          location: 'Both Stages',
           session: null
         },
+        // Community Event - 18:00-19:30
         {
-          title: 'Community Event/Party 🎉',
+          title: 'Community Event 🎉',
           datetime: '2025-11-06T18:00:00',
-          information: 'Live Stream of Pool House Stage 📺🍿',
-          location: 'Aula',
+          information: 'Drinks, Food, Music, Tablesoccer Tournament, Networking',
+          location: 'Both Stages',
+          session: null
+        },
+        // Open Stage - 19:30-20:30
+        {
+          title: 'Open Stage / PowerPoint Karaoke 🎤',
+          datetime: '2025-11-06T19:30:00',
+          information: 'Interactive entertainment',
+          location: 'Both Stages',
+          session: null
+        },
+        // Late Evening - 20:30-22:00
+        {
+          title: 'Community Event 🎉',
+          datetime: '2025-11-06T20:30:00',
+          information: 'Drinks, Music, Tablesoccer Tournament, Networking',
+          location: 'Both Stages',
+          session: null
+        },
+        // Location Closes - 22:00
+        {
+          title: 'Location Closes 🌙',
+          datetime: '2025-11-06T22:00:00',
+          information: 'End of Day 1',
+          location: 'Both Stages',
           session: null
         }
       ]
@@ -261,9 +271,9 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T10:30:00',
-          information: 'TBD',
+          information: 'Naoufal El Hassnaoui',
           location: 'Aula',
-          session: 'tbd-talk-3'
+          session: 'talk-cursor-ai-agents'
         },
         // Coffee Break - 11:00-11:45
         {
@@ -277,36 +287,36 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T11:45:00',
-          information: 'Maria Korneeva',
+          information: 'Michael Hladky',
           location: 'Pool House',
-          session: 'talk-day2-11'
+          session: 'talk-day2-15'
         },
         {
           title: 'Talk',
           datetime: '2025-11-07T11:45:00',
-          information: 'Mussie Haile',
+          information: 'Maria Korneeva',
           location: 'Aula',
-          session: 'talk-rapid-prototyping-ai'
+          session: 'talk-day2-11'
         },
-        // Slot 13 - 12:15-12:45
+        // Slot 13 - 12:25-12:55
         {
           title: 'Talk',
-          datetime: '2025-11-07T12:15:00',
+          datetime: '2025-11-07T12:30:00',
           information: 'Brygida Fiejdasz',
           location: 'Pool House',
           session: 'talk-day2-13'
         },
         {
           title: 'Talk',
-          datetime: '2025-11-07T12:15:00',
-          information: 'TBD',
+          datetime: '2025-11-07T12:30:00',
+          information: 'Mussie Haile',
           location: 'Aula',
-          session: 'tbd-talk-2'
+          session: 'talk-rapid-prototyping-ai'
         },
-        // Lunch - 12:45-14:15
+        // Lunch - 13:00-14:15
         {
           title: 'Lunch Break & Group Photo 📸',
-          datetime: '2025-11-07T12:45:00',
+          datetime: '2025-11-07T13:00:00',
           information: 'Lunch & Gruppenfoto',
           location: 'Both Stages',
           session: null
@@ -315,57 +325,57 @@ export class ScheduleService {
         {
           title: 'Talk',
           datetime: '2025-11-07T14:15:00',
-          information: 'Christian Liebel',
+          information: 'Tobias Brenner',
           location: 'Pool House',
-          session: 'talk-day2-14'
+          session: 'talk-eon-microfrontends'
         },
         {
           title: 'Talk',
           datetime: '2025-11-07T14:15:00',
-          information: 'TBD',
+          information: 'Christian Liebel',
           location: 'Aula',
-          session: 'tbd-talk-3'
+          session: 'talk-day2-14'
         },
-        // Slot 15 - 14:45-15:15
+        // Slot 15 - 14:55-15:25
         {
           title: 'Talk',
-          datetime: '2025-11-07T14:45:00',
-          information: 'Michael Hladky',
-          location: 'Pool House',
-          session: 'talk-day2-15'
-        },
-        {
-          title: 'Talk',
-          datetime: '2025-11-07T14:45:00',
-          information: 'Nicolas Frizzarin',
-          location: 'Aula',
-          session: 'talk-day2-17'
-        },
-        // Coffee Break - 15:15-16:00
-        {
-          title: 'Coffee Break ☕️',
-          datetime: '2025-11-07T15:15:00',
-          information: 'Networking opportunity',
-          location: 'Both Stages',
-          session: null
-        },
-        // Slot 16 - 16:30-17:00
-        // Slot 17 - 16:30-17:00
-        {
-          title: 'Talk',
-          datetime: '2025-11-07T16:30:00',
+          datetime: '2025-11-07T15:00:00',
           information: 'Manfred Steyer',
           location: 'Pool House',
           session: 'talk-day2-18'
         },
         {
           title: 'Talk',
-          datetime: '2025-11-07T16:30:00',
+          datetime: '2025-11-07T15:00:00',
+          information: 'Nicolas Frizzarin',
+          location: 'Aula',
+          session: 'talk-day2-17'
+        },
+        // Coffee Break - 15:30-16:00
+        {
+          title: 'Coffee Break ☕️',
+          datetime: '2025-11-07T15:30:00',
+          information: 'Networking opportunity',
+          location: 'Both Stages',
+          session: null
+        },
+        // Slot 16 - 16:45-17:30
+        // Slot 17 - 16:45-17:30
+        {
+          title: 'Panel Discussion',
+          datetime: '2025-11-07T16:00:00',
+          information: 'Various speakers',
+          location: 'Pool House',
+          session: 'panel-angular-team'
+        },
+        {
+          title: 'Panel Discussion',
+          datetime: '2025-11-07T16:00:00',
           information: 'Live Stream of Pool House Stage 📺🍿',
           location: 'Aula',
           session: null
         },
-        // Closing - 17:00
+        // Closing - 17:30
         {
           title: 'Closing & Farewell',
           datetime: '2025-11-07T17:00:00',

@@ -16,8 +16,8 @@ export class TalkService {
     },
     {
       id: 'talk-day1-2',
-      title: 'TBD',
-      abstract: 'Talk details to be determined',
+      title: 'Forget that you hated writing forms with Signal Forms',
+      abstract: 'Over the last year, we\'ve been reimagining Angular forms with a new signal-driven model that\'s reactive, composable, and declarative by design. Let\'s dive into this experimental API that the Angular Team is excited to launch in v21 !',
       speakerId: 'matthieu-riegler',
       time: '10:30 - 11:00',
       day: 'day1',
@@ -28,16 +28,16 @@ export class TalkService {
       title: 'One UI Library to Rule Them All: How spartan Brings shadcn/ui & Radix to Angular',
       abstract: 'Angular developers often find themselves choosing between heavy, opinionated UI libraries built around someone else\'s design system—or the blank canvas of building everything from scratch. spartan/ui offers a third path: a collection of unstyled, accessible, and composable UI primitives inspired by React\'s shadcn/ui and Radix, rebuilt for modern Angular applications. Instead of installing black-box components, spartan gives you the actual code—meant to be copied, customized, and fully owned. In this talk, we\'ll explore the philosophy behind spartan, how its CLI empowers fast scaffolding of customizable components, and why open code is the future of frontend architecture. Build faster. Style freely. Own every line.',
       speakerId: 'robin-goetz',
-      time: '11:45 - 12:15',
+      time: '15:00 - 15:30',
       day: 'day1',
-      room: 'Pool House'
+      room: 'Aula'
     },
     {
       id: 'talk-day1-4',
       title: '3 Dimensions of NgRx Signals: Choosing the Best Fit for Your App',
       abstract: 'NgRx Signals is one of the fastest-growing packages in the Angular ecosystem, offering a reactive and flexible approach to state management. In this talk, we\'ll explore three techniques to managing state with NgRx Signals, each adaptable to different application needs. You\'ll learn how to leverage APIs like SignalState, SignalStore, and SignalStore Events Plugin, as well as how to select the approach that best aligns with your project\'s requirements and your team\'s expertise.',
       speakerId: 'marko-stanimirovic',
-      time: '12:15 - 12:45',
+      time: '12:30 - 13:00',
       day: 'day1',
       room: 'Pool House'
     },
@@ -52,11 +52,13 @@ export class TalkService {
     },
     {
       id: 'talk-day1-6',
-      title: 'Zero Bundle Size?',
-      abstract: 'What if your Angular app shipped nothing by default? With the introduction of the @defer block in Angular, the framework is entering a new era of ultra-granular code loading. In this session, we\'ll deep-dive into the mechanics and real-world impact of deferrable views—how Angular\'s control flow syntax enables not just lazy loading, but reactive, declarative code isolation. We\'ll go beyond the basic @defer syntax and explore strategies for architecting micro-frontends and feature islands, using build-time hints to reduce unused code paths, profiling and restructuring apps for minimal critical paths, and how defer blocks complement signals and zoneless change detection. Expect performance audits and advanced bundling techniques. If you\'re building large-scale Angular apps and want to minimize JS payload without compromising UX, this talk will give you concrete tools to reshape your app around runtime execution—not compile-time coupling.',
+      title: 'The Magic Behind The Resource API',
+      abstract: `The Angular Resource API is one of the most exciting recent additions to the framework, bringing powerful capabilities for managing and consuming asynchronous data with elegance and simplicity. In this talk, we’ll peel back the curtain and explore the magic that makes it work.
+Through a real-world, real-time example, you’ll see how the Resource API can dramatically simplify complex data flows and improve developer productivity. But we won’t stop there—together, we’ll dive deep into one of its lesser-known features: streaming resources. This hidden gem unlocks the ability to handle continuous streams of data, opening the door to highly dynamic applications.
+To showcase its potential, I’ll build a live chat experience—similar to ChatGPT—powered entirely by the Resource API. You’ll leave with both practical insights you can apply immediately and a fresh appreciation for the evolving power of Angular’s reactivity model.`,
       speakerId: 'eliran-eliassy',
-      time: '14:45 - 15:15',
-      day: 'day2',
+      time: '15:00 - 15:30',
+      day: 'day1',
       room: 'Pool House'
     },
     {
@@ -75,7 +77,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       title: 'Build on top of signals',
       abstract: 'Angular Signals are a game-changer. But we can go even further. This talk unveils how to build powerful utility functions, leveraging inject and DestroyRef to supercharge your Signals. Learn how to create reusable reactive patterns, simplify your code, and embrace a new "synchronization" mindset that optimizes performance. Prepare to level up your Angular development with the building blocks of the future!',
       speakerId: 'enea-jahollari',
-      time: '16:30 - 17:00',
+      time: '11:45 - 12:15',
       day: 'day1',
       room: 'Pool House'
     },
@@ -114,9 +116,18 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       title: 'No Zone, No Problem - Building Angular Apps without Zone.js',
       abstract: 'Angular no longer requires Zone.js, but dropping it isn\'t just a switch - it\'s a mindset shift. This session covers what really happens when you remove Zone.js, how to handle reactivity using Signals and manual strategies, and what this means for app architecture, testing, and performance. Discover how zoneless Angular changes the way we write code and reason about UI updates.',
       speakerId: 'brygida-fiejdasz',
-      time: '12:15 - 12:45',
+      time: '12:30 - 13:00',
       day: 'day2',
       room: 'Pool House'
+    },
+    {
+      id: 'jim-ai-talk',
+      title: 'How AI will take your dev jobs...',
+      abstract: '...to the next level! Starting with what popular media says about the future of software development jobs, this talk explains why these predictions are mostly exaggerated and why dev jobs won\'t disappear. We\'ll explore the efficiency improvements that AI brings and argue that this will likely lead to more software being written overall, not the same amount by fewer people. The session concludes by showing concretely how we can use AI to take our development careers to the next level.',
+      speakerId: 'jim-sellmeijer',
+      time: '11:45 - 12:15',
+      day: 'day1',
+      room: 'Aula'
     },
     {
       id: 'talk-day2-14',
@@ -125,16 +136,16 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'christian-liebel',
       time: '14:15 - 14:45',
       day: 'day2',
-      room: 'Pool House'
+      room: 'Aula'
     },
     {
       id: 'talk-day2-15',
-      title: 'Angular Design Systems Accelerated by AI & MCP',
-      abstract: 'Join us for an in-depth exploration of how we transformed an enterprise Angular Design System by integrating advanced AI techniques with streamlined MCP processes. In this session, we\'ll discuss the challenges of legacy systems, detail our innovative refactoring approach that cut development time in half, and share actionable insights for achieving scalability and improved maintainability. Whether you\'re a developer, architect, or business leader, you\'ll learn how AI-driven automation and strategic MCP integration can power your digital transformation and accelerate agile innovation across your enterprise.',
+      title: 'Moving Legacy with AI - Context Engineering MCPs & Agents',
+      abstract: 'Explore how AI and Model Context Protocol (MCP) can revolutionize your Angular design system development. Learn practical techniques for automating design token generation, component creation, and maintaining consistency across your applications using cutting-edge AI tools.',
       speakerId: 'michael-hladky',
       time: '14:45 - 15:15',
       day: 'day2',
-      room: 'Pool House'
+      room: 'Aula'
     },
     {
       id: 'talk-day2-11',
@@ -143,14 +154,14 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       speakerId: 'maria-korneeva',
       time: '11:45 - 12:15',
       day: 'day2',
-      room: 'Pool House'
+      room: 'Aula'
     },
     {
       id: 'talk-day2-17',
       title: 'Improve your code quality with the composition Pattern',
       abstract: 'Are you fully leveraging Angular\'s potential beyond Signals and standalone components? Discover the Composition Pattern, a key development since v14 that allows building robust features through simple composition of functions and directives. Stay ahead of the curve, learn its implementation, and harness its advantages – including upcoming v20 features – for more powerful applications. Since Angular 14, each version has brought its share of new features. The most obvious are, of course, Signals, the new control flow, and also standalone components. However, since version 14, the Angular team has developed much more than these new functionalities; they have unlocked a new development pattern: the Composition Pattern. Come and discover what this pattern can offer you in your daily applications, how to implement it, and how to extract the best advantages from it.',
       speakerId: 'nicolas-frizzarin',
-      time: '14:45 - 15:15',
+      time: '15:00 - 15:30',
       day: 'day2',
       room: 'Aula'
     },
@@ -160,15 +171,15 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       abstract: 'MicroFrontends are hot topic in the big enterprise world. The requirements and challenges of large projects sometimes mean that a split of the application is unavoidable. This talk will look at the reasons and tips for making this decision. I will also highlight risks, pitfalls and decisions to be made and show concrete examples of solutions based on real large projects (> 100 people) so that your large project can also be migrated to a MicroFrontend without pain.',
       speakerId: 'tobias-brenner',
       time: '14:15 - 14:45',
-      day: 'day1',
-      room: 'Aula'
+      day: 'day2',
+      room: 'Pool House'
     },
     {
       id: 'talk-cologne-intelligence-ai-ux',
       title: 'Angular and AI-Driven UX: AI-assisted Interactions',
       abstract: 'In this talk, we explore how Angular can be combined with modern AI services to create smart and accessible user experiences. Using practical examples – from AI-generated text inputs to voice control and image analysis – we demonstrate how form fields can be intelligently populated and user journeys simplified. This provides a glimpse into how Angular apps can take the next step toward modern, multimodal UX through AI-assisted interactions.',
       speakerId: 'mario-trzensky',
-      time: '11:45 - 12:15',
+      time: '14:15 - 14:45',
       day: 'day1',
       room: 'Aula'
     },
@@ -177,16 +188,16 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       title: "The Missing Link in Angular's Signal Story: Resource API and httpResource",
       abstract: "Signals will shape Angular's future in terms of reactivity and change detection. The new Resource API, along with the httpResource, adds an essential piece to this story by providing an official solution for asynchronously loading data within a Signal-based dataflow.\n\nIn this session, we explore all the details you need to work effectively with this powerful API. Topics include managing different states, handling errors, streaming data, preventing race conditions, and canceling unnecessary requests. We also discuss how it interacts with RxJS through rxResource and demonstrate how to update loaded values.\n\nBy the end, you'll have a comprehensive understanding of the possibilities offered by this groundbreaking new API.",
       speakerId: 'manfred-steyer',
-      time: '16:30 - 17:00',
+      time: '15:00 - 15:30',
       day: 'day2',
       room: 'Pool House'
     },
     {
       id: 'talk-agentic-angular',
       title: 'AI-Powered Angular Development',
-      abstract: 'Modern Angular development is being revolutionized by AI-powered tools and agents. This talk explores how to leverage cutting-edge IDEs like Cursor alongside autonomous AI agents in CI/CD pipelines to build and maintain Angular applications more efficiently. We\'ll demonstrate practical workflows for AI-assisted code generation, automated testing strategies, intelligent code reviews, and maintaining code quality at scale. Learn how to integrate AI agents into your Angular CI pipelines for automated refactoring, dependency updates, and performance optimization. We\'ll cover setting up AI-powered development environments, implementing intelligent build processes, and creating self-maintaining Angular codebases that evolve with your team\'s needs. Transform your Angular development workflow with practical AI tools that enhance productivity while maintaining code quality and architectural integrity.',
+      abstract: 'This talk shares a personal journey from skepticism to confidently using AI in Angular development. We’ll explore how to build a healthy, professional mindset around AI, how Angular already supports the AI ecosystem, and how agentic workflows — powered by clear instructions, rules, and the Angular CLI MCP server — can support real engineering tasks.',
       speakerId: 'gregor-woiwode',
-      time: '12:15 - 12:45',
+      time: '12:30 - 13:00',
       day: 'day1',
       room: 'Aula'
     },
@@ -195,7 +206,7 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       title: 'Rapid Prototyping with AI: From Idea to MVP in Hours',
       abstract: 'What if you could turn a marketing concept into a working application in just a few hours? This talk explores the revolutionary world of AI-powered rapid prototyping tools like Lovable and Bolt that are democratizing app development. Coming from a marketing background, I\'ll demonstrate how non-technical team members can now create functional prototypes to validate product ideas, test market assumptions, and iterate quickly without waiting for development cycles. We\'ll explore practical workflows for transforming user stories into working components, leveraging AI for instant UI generation, and bridging the gap between marketing vision and technical reality. Learn how these tools are reshaping the product development lifecycle and enabling marketing teams to become active participants in the Angular ecosystem.',
       speakerId: 'mussie-haile',
-      time: '11:45 - 12:15',
+      time: '12:30 - 13:00',
       day: 'day2',
       room: 'Aula'
     },
@@ -213,9 +224,9 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       title: 'Panel Discussion: Angular AI-Forward - Supercharge your development with AI',
       abstract: 'Join our expert panel as we explore how artificial intelligence is transforming Angular development. This interactive discussion brings together voices from the Angular team, community leaders, and industry experts to share their perspectives on AI-powered development tools, intelligent code generation, and the future of Angular in an AI-driven world. We\'ll discuss practical strategies for integrating AI into your Angular workflow, from IDE assistance to automated testing and deployment. The panel will address real-world challenges, share success stories, and provide insights into emerging AI technologies that are reshaping how we build Angular applications.',
       speakerId: 'various-speakers',
-      time: '14:45 - 15:15',
+      time: '16:45 - 17:30',
       day: 'day1',
-      room: 'Aula'
+      room: 'Pool House'
     },
     {
       id: 'tbd-talk-1',
@@ -236,13 +247,22 @@ In this practical session, Google Developer Expert Martina Kraus will show you h
       room: 'Aula'
     },
     {
-      id: 'tbd-talk-3',
-      title: 'TBD - Coming Soon!',
-      abstract: 'We\'re excited to announce an amazing speaker and topic for this slot very soon! Stay tuned for updates as we finalize this exciting addition to the NG-DE program.',
-      speakerId: 'tbd-speaker',
-      time: '14:15 - 14:45',
+      id: 'talk-cursor-ai-agents',
+      title: 'Vibe Engineering: The Dos and Don\'ts of AI-Assisted Coding',
+      abstract: 'AI coding assistants have changed how we write software, but too often, "vibe coding" replaces engineering discipline with improvisation. This talk introduces vibe engineering: a practical mindset for building with AI responsibly, creatively, and at scale. You\'ll learn how to harness LLMs without surrendering architecture, testing, or intent. Through real examples and lessons learned, we\'ll explore how to collaborate with AI tools like Cursor, effectively crafting prompts that steer reasoning, balancing automation with design, and preserving the human touch in the loop. The goal: to elevate your AI workflows from quick hacks to engineered systems that actually last.',
+      speakerId: 'naoufal-el-hassnaoui',
+      time: '10:30 - 11:00',
       day: 'day2',
       room: 'Aula'
+    },
+    {
+      id: 'panel-angular-team',
+      title: 'Panel Discussion: The Future of Angular with the Core Team',
+      abstract: 'Join members of the Angular core team for an exclusive panel discussion about the future of Angular. This interactive session brings together the minds behind Angular to discuss the latest features, upcoming innovations, and the strategic direction of the framework.',
+      speakerId: 'various-speakers',
+      time: '16:45 - 17:30',
+      day: 'day2',
+      room: 'Pool House'
     },
   ]);
 

@@ -149,7 +149,7 @@ import { SponsorService } from '../../services/sponsor.service';
           </div>
           <div class="flex justify-center">
             <div
-              class="grid grid-cols-1 gap-6 max-w-6xl"
+              class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl"
             >
               @for (sponsor of getSponsorsByLevel('Silver'); track sponsor.id) {
               <div class="group">

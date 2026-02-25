@@ -10,6 +10,7 @@ export interface Speaker {
   angularTeam?: boolean;
   ngrxTeam?: boolean;
   virtual?: boolean;
+  mc?: boolean;
 }
 
 export interface ScheduleEntry {

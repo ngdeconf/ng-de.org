@@ -61,7 +61,7 @@ export class WorkshopService {
       targetAudience:
         'This workshop is designed for developers with project experience using Angular.',
       trainers: ['manfred-steyer', 'michael-egger-zikes'],
-      soldOut: false
+      soldOut: true
     },
     {
       id: '2',
@@ -78,7 +78,7 @@ export class WorkshopService {
       trainerId: 'robin-boehm',
       duration: '8 hours',
       capacity: 30,
-      room: 'Room 111',
+      room: 'Room 123',
       address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
@@ -87,7 +87,6 @@ export class WorkshopService {
             'Understanding autonomous AI agents vs. traditional AI integration',
             'Angular architecture patterns for AI-driven applications',
             'Setting up the development environment for AI engineering',
-            'Introduction to LangChain.js and Angular integration'
           ]
         },
         {
@@ -100,19 +99,9 @@ export class WorkshopService {
           ]
         },
         {
-          title: 'AI-Driven Component Architecture',
-          topics: [
-            'Self-adapting components that learn from user behavior',
-            'Implementing AI-powered form validation and suggestions',
-            'Creating intelligent UI components with dynamic behavior',
-            "Real-time AI integration with Angular's reactive forms"
-          ]
-        },
-        {
           title: 'Advanced Agentic Patterns & Deployment',
           topics: [
             'Multi-agent orchestration in Angular applications',
-            'Performance optimization for AI-heavy Angular apps',
             'Security considerations for AI-enabled applications',
             'Hands-on lab: Building a complete agentic Angular application'
           ]
@@ -250,7 +239,7 @@ export class WorkshopService {
       targetAudience:
         'You should have a fundamental understanding of Angular Signals and TypeScript. Experience with NgRx is helpful but not required.',
       trainers: ['marko-stanimirovic', 'rainer-hahnekamp'],
-      soldOut: false
+      soldOut: true
     },
     {
       id: '4',
@@ -331,7 +320,7 @@ export class WorkshopService {
       trainerId: 'maria-korneeva',
       duration: '8 hours',
       capacity: 30,
-      room: 'Schoolroom',
+      room: '612',
       address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
@@ -399,7 +388,7 @@ export class WorkshopService {
       trainerId: 'younes-jaaidi',
       duration: '8 hours',
       capacity: 30,
-      room: 'Room 123',
+      room: 'Room 111',
       address: 'Kastanienalle 82, 10115 Berlin, Germany',
       outline: [
         {
