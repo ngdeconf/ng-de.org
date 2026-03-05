@@ -1,0 +1,10 @@
+{
+  "name": "ng-de-content",
+  "version": "1.0.0",
+  "description": "Content management for ng-de.org conference website. Manage speakers, talks, sponsors, workshops and schedule without coding knowledge.",
+  "author": {
+    "name": "Workshops.DE",
+    "email": "robin@workshops.de"
+  },
+  "keywords": ["ng-de", "conference", "content", "speakers", "sponsors"]
+}
