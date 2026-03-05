@@ -66,6 +66,13 @@ export class SponsorService {
       logoUrl: 'assets/images/sponsors/cologne-intelligence.webp',
       websiteUrl: 'https://www.cologne-intelligence.de/',
       level: 'Silver'
+    },
+    {
+      id: 'anthropic',
+      name: 'Anthropic',
+      logoUrl: 'assets/images/sponsors/anthropic.png',
+      websiteUrl: 'https://www.anthropic.com',
+      level: 'Gold'
     }
   ]);
 
