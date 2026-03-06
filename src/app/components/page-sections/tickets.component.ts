@@ -16,14 +16,20 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
   selector: 'ngde-tickets',
   imports: [TicketTimelineComponent],
   template: `
-    <section id="tickets" class="py-28 bg-gray-50 dark:bg-gray-900">
+    <section id="tickets" class="py-28 dark:bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
+          @if (isTicketSalesStarted()) {
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Get Your Tickets</h2>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             Join us for the premier Angular conference in Germany. Secure your
             spot today!
           </p>
+          } @else {
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Ticket sales will start on {{ formatDate(ticketSalesStart()) }}
+          </h2>
+          }
         </div>
 
         <ngde-ticket-timeline />

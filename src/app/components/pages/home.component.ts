@@ -35,10 +35,10 @@ import { TicketsComponent } from "../page-sections/tickets.component";
   template: `
     <ngde-hero />
     <ngde-countdown />
+    <ngde-tickets [ticketSalesStart]="ticketSalesStartDate" />
     <ngde-newsletter-subscription />
     <ngde-announcement-banner />
     <ngde-sponsors />
-    <ngde-tickets [ticketSalesStart]="ticketSalesStartDate" />
     <ngde-speakers />
     <!-- <ngde-schedule /> -->
     <!-- <ngde-workshops /> -->
