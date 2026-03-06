@@ -47,3 +47,8 @@ export class MyComponent {}
 })
 export class MyComponent {}
 ```
+
+## Component Methods
+
+- `private` Methods need to be place after `public` methods
+- Methods being used in the Component's template have access-modifier `protected`

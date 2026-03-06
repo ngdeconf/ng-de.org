@@ -12,7 +12,13 @@
 
 ## Code style guidelines
 
-- Use Angular MCP to load best practices
+### S.O.L.I.D
+
+- Apply SOLID principles to TypeScript Code
+- Apply SOLID principles to HTML-Templates
+
+### Angular
+
 - Always use standalone components over NgModules
 - Use `input()` and `output()` functions instead of decorators
 - Use `computed()` for derived state
