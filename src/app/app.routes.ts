@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { CallForPapersComponent } from './components/pages/call-for-papers.component';
 import { CodeOfConductComponent } from './components/pages/code-of-conduct.component';
+import { ForSponsorsComponent } from './components/pages/for-sponsors.component';
 import { HomeComponent } from './components/pages/home.component';
 import { ImprintComponent } from './components/pages/imprint.component';
 import { PrivacyPolicyComponent } from './components/pages/privacy-policy.component';
@@ -16,6 +17,11 @@ export const routes: Routes = [
     path: 'call-for-papers',
     component: CallForPapersComponent,
     title: 'Call for Papers - NG-DE 2026'
+  },
+  {
+    path: 'for-sponsors',
+    component: ForSponsorsComponent,
+    title: 'For Sponsors - NG-DE 2026'
   },
   {
     path: 'code-of-conduct',

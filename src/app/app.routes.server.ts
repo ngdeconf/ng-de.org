@@ -10,6 +10,10 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender
   },
   {
+    path: 'for-sponsors',
+    renderMode: RenderMode.Prerender
+  },
+  {
     path: ':year/talks',
     renderMode: RenderMode.Prerender,
     getPrerenderParams() {

@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
 import { SponsorService } from '../../services/sponsor.service';
 
 @Component({
   selector: 'ngde-sponsors',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section
-      id="sponsors"
+      [id]="year() ? 'sponsors-' + year() : 'sponsors'"
       class="py-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800"
     >
       <div class="container mx-auto px-4">
@@ -15,8 +16,9 @@ import { SponsorService } from '../../services/sponsor.service';
           <h2
             class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent"
           >
-            Our Amazing Sponsors
+            {{ year() ? 'Our Amazing Sponsors ' + year() : 'Our Amazing Sponsors' }}
           </h2>
+          @if (!year()) {
           <p
             class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed"
           >
@@ -38,10 +40,17 @@ import { SponsorService } from '../../services/sponsor.service';
               </span>
             </div>
           </div>
+          } @else {
+          <p
+            class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed"
+          >
+            A heartfelt thank you to our sponsors who made NG-DE {{ year() }} possible.
+          </p>
+          }
         </div>
 
         <!-- Platinum Sponsors -->
-        @if (getSponsorsByLevel('Platinum').length > 0) {
+        @if (getSponsorsByLevel('Platinum', year()).length > 0) {
         <div class="mb-20">
           <div class="text-center mb-12">
             <div class="inline-flex items-center gap-3 mb-4">
@@ -60,7 +69,7 @@ import { SponsorService } from '../../services/sponsor.service';
           </div>
           <div class="flex justify-center">
             <div class="grid grid-cols-1 gap-8 max-w-6xl">
-              @for (sponsor of getSponsorsByLevel('Platinum'); track sponsor.id)
+              @for (sponsor of getSponsorsByLevel('Platinum', year()); track sponsor.id)
               {
               <div class="group">
                 <a
@@ -85,7 +94,7 @@ import { SponsorService } from '../../services/sponsor.service';
         }
 
         <!-- Gold Sponsors -->
-        @if (getSponsorsByLevel('Gold').length > 0) {
+        @if (getSponsorsByLevel('Gold', year()).length > 0) {
         <div class="mb-20">
           <div class="text-center mb-12">
             <div class="inline-flex items-center gap-3 mb-4">
@@ -106,7 +115,7 @@ import { SponsorService } from '../../services/sponsor.service';
             <div
               class="grid grid-cols-1 gap-6 max-w-6xl"
             >
-              @for (sponsor of getSponsorsByLevel('Gold'); track sponsor.id) {
+              @for (sponsor of getSponsorsByLevel('Gold', year()); track sponsor.id) {
               <div class="group">
                 <a
                   [href]="sponsor.websiteUrl"
@@ -130,7 +139,7 @@ import { SponsorService } from '../../services/sponsor.service';
         }
 
         <!-- Silver Sponsors -->
-        @if (getSponsorsByLevel('Silver').length > 0) {
+        @if (getSponsorsByLevel('Silver', year()).length > 0) {
         <div class="mb-20">
           <div class="text-center mb-12">
             <div class="inline-flex items-center gap-3 mb-4">
@@ -151,7 +160,7 @@ import { SponsorService } from '../../services/sponsor.service';
             <div
               class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl"
             >
-              @for (sponsor of getSponsorsByLevel('Silver'); track sponsor.id) {
+              @for (sponsor of getSponsorsByLevel('Silver', year()); track sponsor.id) {
               <div class="group">
                 <a
                   [href]="sponsor.websiteUrl"
@@ -175,7 +184,7 @@ import { SponsorService } from '../../services/sponsor.service';
         }
 
         <!-- Bronze Sponsors -->
-        @if (getSponsorsByLevel('Bronze').length > 0) {
+        @if (getSponsorsByLevel('Bronze', year()).length > 0) {
         <div class="mb-20">
           <div class="text-center mb-12">
             <div class="inline-flex items-center gap-3 mb-4">
@@ -196,7 +205,7 @@ import { SponsorService } from '../../services/sponsor.service';
             <div
               class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 max-w-7xl"
             >
-              @for (sponsor of getSponsorsByLevel('Bronze'); track sponsor.id) {
+              @for (sponsor of getSponsorsByLevel('Bronze', year()); track sponsor.id) {
               <div class="group">
                 <a
                   [href]="sponsor.websiteUrl"
@@ -220,7 +229,7 @@ import { SponsorService } from '../../services/sponsor.service';
         }
 
         <!-- Travel Sponsors -->
-        @if (getSponsorsByLevel('Travel').length > 0) {
+        @if (getSponsorsByLevel('Travel', year()).length > 0) {
         <div class="mb-20">
           <div class="text-center mb-12">
             <div class="inline-flex items-center gap-3 mb-4">
@@ -241,7 +250,7 @@ import { SponsorService } from '../../services/sponsor.service';
             <div
               class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl"
             >
-              @for (sponsor of getSponsorsByLevel('Travel'); track sponsor.id) {
+              @for (sponsor of getSponsorsByLevel('Travel', year()); track sponsor.id) {
               <div class="group">
                 <a
                   [href]="sponsor.websiteUrl"
@@ -265,7 +274,7 @@ import { SponsorService } from '../../services/sponsor.service';
         }
 
         <!-- Community Partners -->
-        @if (getSponsorsByLevel('Community Partners').length > 0) {
+        @if (getSponsorsByLevel('Community Partners', year()).length > 0) {
         <div class="mb-20">
           <div class="text-center mb-12">
             <div class="inline-flex items-center gap-3 mb-4">
@@ -286,7 +295,7 @@ import { SponsorService } from '../../services/sponsor.service';
             <div
               class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl"
             >
-              @for (sponsor of getSponsorsByLevel('Community Partners'); track
+              @for (sponsor of getSponsorsByLevel('Community Partners', year()); track
               sponsor.id) {
               <div class="group">
                 <a
@@ -310,7 +319,8 @@ import { SponsorService } from '../../services/sponsor.service';
         </div>
         }
 
-        <!-- Sponsoring Process Info -->
+        <!-- Sponsoring Process Info (current year only) -->
+        @if (!year()) {
         <div class="max-w-5xl mx-auto mb-16">
           <div
             class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-10 border border-gray-200 dark:border-gray-700"
@@ -398,8 +408,10 @@ import { SponsorService } from '../../services/sponsor.service';
             </div>
           </div>
         </div>
+        }
 
-        <!-- Become a Sponsor -->
+        <!-- Become a Sponsor (current year only) -->
+        @if (!year()) {
         <div class="text-center">
           <div class="mb-6">
             <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3">
@@ -429,12 +441,16 @@ import { SponsorService } from '../../services/sponsor.service';
             </svg>
           </a>
         </div>
+        }
       </div>
     </section>
   `
 })
 export class SponsorsComponent {
-  constructor(private sponsorService: SponsorService) {}
+  private sponsorService = inject(SponsorService);
+
+  /** When set (e.g. 2025), shows sponsors for that year and hides process/CTA sections. */
+  year = input<number>();
 
   getSponsorsByLevel(
     level:
@@ -443,8 +459,9 @@ export class SponsorsComponent {
       | 'Silver'
       | 'Bronze'
       | 'Travel'
-      | 'Community Partners'
+      | 'Community Partners',
+    year?: number
   ) {
-    return this.sponsorService.getSponsorsByLevel(level);
+    return this.sponsorService.getSponsorsByLevel(level, year);
   }
 }

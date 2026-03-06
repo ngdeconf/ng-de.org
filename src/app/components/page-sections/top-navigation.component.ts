@@ -103,6 +103,14 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 >Call for Papers</a
               >
               <a
+                routerLink="/for-sponsors"
+                routerLinkActive="text-primary-500 dark:text-primary-400"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                style="transition: opacity 0.2s ease"
+                >For Sponsors</a
+              >
+              <a
                 href="#faq"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
                 [class.text-primary-500]="isActiveSection('faq')"
