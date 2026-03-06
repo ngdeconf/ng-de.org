@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { afterNextRender, Component, OnDestroy, signal } from '@angular/core';
 
 interface TimeRemaining {
@@ -11,7 +11,7 @@ interface TimeRemaining {
 @Component({
   selector: 'ngde-announcement-banner',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   template: `
     @if (isVisible()) {
       <section class="relative py-8 overflow-hidden bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500 animate-gradient-x">
