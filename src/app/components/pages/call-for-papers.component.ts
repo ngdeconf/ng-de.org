@@ -188,7 +188,7 @@ interface Topic {
                   href="https://forms.gle/1iRNxjfE6KVopnu7A"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="inline-flex justify-center px-6 py-3 bg-primary-500 text-white rounded-lg font-semibold hover:bg-primary-600 transition-colors shadow-lg hover:shadow-xl"
+                  class="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-gray-300 dark:border-gray-600 px-6 py-3 text-base font-medium text-gray-700 dark:text-gray-300 transition hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
                 >
                   Submit Your Talk Proposal
                 </a>
