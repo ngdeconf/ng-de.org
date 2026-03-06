@@ -95,10 +95,10 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 >Workshops</a
               > -->
               <a
-                href="#call-for-papers"
+                routerLink="/call-for-papers"
+                routerLinkActive="text-primary-500 dark:text-primary-400"
+                [routerLinkActiveOptions]="{ exact: true }"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                [class.text-primary-500]="isActiveSection('call-for-papers')"
-                [class.dark:text-primary-400]="isActiveSection('call-for-papers')"
                 style="transition: opacity 0.2s ease"
                 >Call for Papers</a
               >
@@ -156,35 +156,35 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 aria-label="Toggle mobile menu"
               >
                 @if (!isMobileMenuOpen()) {
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
                 } @else {
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
                 }
               </button>
             </div>
@@ -419,16 +419,16 @@ export class TopNavigationComponent {
   closeMobileMenu(): void {
     this.isMobileMenuOpen.set(false);
 
-      document.body.style.overflow = '';
+    document.body.style.overflow = '';
   }
 
   toggleMobileMenu(): void {
     this.isMobileMenuOpen.update(value => !value);
 
-      if (this.isMobileMenuOpen()) {
-        document.body.style.overflow = 'hidden';
-      } else {
-        document.body.style.overflow = '';
+    if (this.isMobileMenuOpen()) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
     }
   }
 

@@ -6,6 +6,10 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Prerender
   },
   {
+    path: 'call-for-papers',
+    renderMode: RenderMode.Prerender
+  },
+  {
     path: ':year/talks',
     renderMode: RenderMode.Prerender,
     getPrerenderParams() {
