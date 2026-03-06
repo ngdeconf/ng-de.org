@@ -6,28 +6,28 @@ export class TicketPhaseService {
   private readonly ticketPhases = signal<TicketPhase[]>([
     {
       name: 'Super Early Bird',
-      startDate: new Date('2025-04-01'),
+      startDate: new Date('2026-04-01'),
       isActive: false,
       isPast: false,
       basePrice: 599
     },
     {
       name: 'Early Bird',
-      startDate: new Date('2025-05-01'),
+      startDate: new Date('2026-05-01'),
       isActive: false,
       isPast: false,
       basePrice: 699
     },
     {
       name: 'Regular Ticket',
-      startDate: new Date('2025-07-01'),
+      startDate: new Date('2026-07-01'),
       isActive: false,
       isPast: false,
       basePrice: 799
     },
     {
       name: 'Final Bird',
-      startDate: new Date('2025-10-01'),
+      startDate: new Date('2026-10-01'),
       isActive: false,
       isPast: false,
       basePrice: 899
@@ -36,6 +36,14 @@ export class TicketPhaseService {
 
   readonly currentPhase = computed(() => {
     return this.ticketPhases().find(phase => phase.isActive);
+  });
+
+  /** Base price of the earliest phase (Super Early Bird), used when date is before any phase. */
+  private readonly firstPhaseBasePrice = computed(() => {
+    const phases = [...this.ticketPhases()].sort(
+      (a, b) => a.startDate.getTime() - b.startDate.getTime()
+    );
+    return phases[0]?.basePrice ?? 0;
   });
 
   constructor() {
@@ -90,9 +98,8 @@ export class TicketPhaseService {
     basePrice?: number
   ): number {
     const currentPhase = this.currentPhase();
-    if (!currentPhase && !basePrice) return 0;
-
-    const basePriceToUse = basePrice ?? currentPhase!.basePrice;
+    const basePriceToUse =
+      basePrice ?? currentPhase?.basePrice ?? this.firstPhaseBasePrice();
 
     switch (ticketType) {
       case 'conference':

@@ -1,4 +1,11 @@
-import { Component, computed, effect, signal } from '@angular/core';
+import {
+  afterNextRender,
+  Component,
+  computed,
+  effect,
+  input,
+  signal
+} from '@angular/core';
 import { Ticket } from '../../models/models';
 import { FlashSaleService } from '../../services/flash-sale.service';
 import { TicketPhaseService } from '../../services/ticket-phase.service';
@@ -246,6 +253,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
               </div>
 
               <!-- Button Section -->
+              @if (isTicketSalesStarted()) {
               <div class="px-6 pb-6">
                 <a
                   [href]="getTicketUrl(ticket)"
@@ -281,6 +289,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                   </button>
                 </a>
               </div>
+              }
             </div>
           </div>
           }
@@ -373,10 +382,20 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
   `
 })
 export class TicketsComponent {
+  private now = signal(new Date());
+
+  /** Date from which the ticket CTAs (Get Ticket buttons) become visible. */
+  ticketSalesStart = input.required<Date>();
+
   tickets = this.ticketService.getTickets();
   finalPrice = signal(899); // Default value for Final Bird phase
   ticketFinalPrices = signal<Record<string, number>>({});
   ticketSavings = signal<Record<string, number>>({});
+
+  isTicketSalesStarted = computed(() => {
+    const start = this.ticketSalesStart();
+    return this.now() >= start;
+  });
 
   sortedTickets = computed(() => {
     // Sort tickets based on price or other criteria
@@ -391,6 +410,8 @@ export class TicketsComponent {
     private ticketPhaseService: TicketPhaseService,
     private flashSaleService: FlashSaleService
   ) {
+    afterNextRender(() => this.startTicketSalesStartTimeUpdates());
+
     // Setup effect to calculate prices when phases change
     effect(() => {
       const allPhases = this.ticketPhaseService.getTicketPhases()();
@@ -404,6 +425,7 @@ export class TicketsComponent {
       }
     });
   }
+
 
   updateTicketPrices() {
     const finalPrices: Record<string, number> = {};
@@ -464,5 +486,9 @@ export class TicketsComponent {
       day: 'numeric'
     };
     return new Date(date).toLocaleDateString('en-US', options);
+  }
+
+  private startTicketSalesStartTimeUpdates(): void {
+    setInterval(() => this.now.set(new Date()), 60_000);
   }
 }

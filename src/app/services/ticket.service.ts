@@ -7,7 +7,7 @@ export class TicketService {
   private readonly tickets = signal<Ticket[]>([
     {
       id: '1',
-      name: 'Conference Ticket',
+      name: 'Conference Pass',
       description: 'Full access to all conference talks and networking events',
       price: 599, // Will be updated based on current phase
       currency: 'EUR',
@@ -23,13 +23,13 @@ export class TicketService {
     },
     {
       id: '2',
-      name: 'Conference + Workshop',
+      name: 'Multi Pass',
       description: 'Full conference access plus one workshop',
       price: 799, // Will be updated based on current phase
       currency: 'EUR',
       available: true,
       features: [
-        'Everything in Conference Ticket',
+        'Everything in Conference Pass',
         'Access to one workshop of your choice',
         'Workshop materials',
         'Certificate of completion'
@@ -39,7 +39,7 @@ export class TicketService {
     },
     {
       id: '3',
-      name: 'Workshop Only',
+      name: 'Workshop Pass',
       description: 'Access to one workshop of your choice',
       price: 399, // Will be updated based on current phase
       currency: 'EUR',

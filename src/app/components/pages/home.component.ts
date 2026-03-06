@@ -10,6 +10,7 @@ import { NewsletterSubscriptionComponent } from '../page-sections/newsletter-sub
 import { OrganizerComponent } from '../page-sections/organizer.component';
 import { SpeakersComponent } from '../page-sections/speakers.component';
 import { SponsorsComponent } from '../page-sections/sponsors.component';
+import { TicketsComponent } from "../page-sections/tickets.component";
 
 @Component({
   selector: 'ngde-home',
@@ -28,15 +29,16 @@ import { SponsorsComponent } from '../page-sections/sponsors.component';
     LocationComponent,
     ImpressionsComponent,
     NewsletterSubscriptionComponent,
-    FaqComponent
-  ],
+    FaqComponent,
+    TicketsComponent
+],
   template: `
     <ngde-hero />
     <ngde-countdown />
     <ngde-newsletter-subscription />
     <ngde-announcement-banner />
     <ngde-sponsors />
-    <!-- <ngde-tickets /> -->
+    <ngde-tickets [ticketSalesStart]="ticketSalesStartDate" />
     <ngde-speakers />
     <!-- <ngde-schedule /> -->
     <!-- <ngde-workshops /> -->
@@ -47,4 +49,7 @@ import { SponsorsComponent } from '../page-sections/sponsors.component';
     <ngde-faq />
   `
 })
-export class HomeComponent {}
+export class HomeComponent {
+  /** Ticket sales CTA becomes visible on 1 April, 7:00 CET */
+  readonly ticketSalesStartDate = new Date('2026-04-01T07:00:00+02:00');
+}
