@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CountdownComponent } from '../countdown.component';
 import { AnnouncementBannerComponent } from '../page-sections/announcement-banner.component';
 import { CommunityPartnersComponent } from '../page-sections/community-partners.component';
 import { FaqComponent } from '../page-sections/faq.component';
@@ -15,6 +16,7 @@ import { SponsorsComponent } from '../page-sections/sponsors.component';
   standalone: true,
   imports: [
     HeroComponent,
+    CountdownComponent,
     AnnouncementBannerComponent,
     // TicketsComponent,
     SpeakersComponent,
@@ -30,6 +32,7 @@ import { SponsorsComponent } from '../page-sections/sponsors.component';
   ],
   template: `
     <ngde-hero />
+    <ngde-countdown />
     <ngde-newsletter-subscription />
     <ngde-announcement-banner />
     <ngde-sponsors />
