@@ -47,7 +47,7 @@ interface Topic {
             </span>
           </div>
           <p class="text-sm text-primary-500 font-semibold mt-3">
-            CFP opens April 1st, 2026
+            CFP ends April 30th, 2026
           </p>
           <a
             href="https://forms.gle/Wf6tr6KHMrEz7XKq8"
