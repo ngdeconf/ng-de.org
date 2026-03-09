@@ -50,7 +50,7 @@ interface Topic {
             CFP opens April 1st, 2026
           </p>
           <a
-            href="https://forms.gle/1iRNxjfE6KVopnu7A"
+            href="https://forms.gle/Wf6tr6KHMrEz7XKq8"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 mt-6 rounded-lg bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500 px-6 py-3 text-base font-semibold text-white shadow-lg transition hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
@@ -185,7 +185,7 @@ interface Topic {
                   </p>
                 </div>
                 <a
-                  href="https://forms.gle/1iRNxjfE6KVopnu7A"
+                  href="https://forms.gle/Wf6tr6KHMrEz7XKq8"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-gray-300 dark:border-gray-600 px-6 py-3 text-base font-medium text-gray-700 dark:text-gray-300 transition hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
