@@ -1,21 +1,29 @@
-import { Dialog } from '@angular/cdk/dialog';
-import { Component, inject } from '@angular/core';
-import { FlashSaleService } from '../../services/flash-sale.service';
-import { VideoModalComponent } from '../video-modal/video-modal.component';
+import { Dialog } from "@angular/cdk/dialog";
+import { Component, inject } from "@angular/core";
+import { RouterLink } from "@angular/router";
+import { FlashSaleService } from "../../services/flash-sale.service";
+import { VideoModalComponent } from "../video-modal/video-modal.component";
 
 interface VideoModalData {
   videoId: string;
 }
 
 @Component({
-  selector: 'ngde-hero',
+  selector: "ngde-hero",
+  standalone: true,
+  imports: [RouterLink],
   styles: `
     @keyframes hero-flash-pulse {
-      0%, 100% {
-        box-shadow: 0 0 15px rgba(255, 215, 0, 0.4), 0 0 25px rgba(255, 215, 0, 0.2);
+      0%,
+      100% {
+        box-shadow:
+          0 0 15px rgba(255, 215, 0, 0.4),
+          0 0 25px rgba(255, 215, 0, 0.2);
       }
       50% {
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.6), 0 0 35px rgba(255, 215, 0, 0.4);
+        box-shadow:
+          0 0 20px rgba(255, 215, 0, 0.6),
+          0 0 35px rgba(255, 215, 0, 0.4);
       }
     }
 
@@ -34,7 +42,7 @@ interface VideoModalData {
     }
 
     .hero-flash-sale-button::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: -100%;
@@ -69,46 +77,88 @@ interface VideoModalData {
                     NG-DE
                   </span>
                 </span>
-                <span class="block">We are back in 2026!</span>
+                <span class="lg:text-4xl block"
+                  >The largest Angular Conference in Germany is here.</span
+                >
               </h1>
             </div>
 
-            <p
-              class="text-xl md:text-2xl mb-6 text-gray-700 dark:text-gray-300"
-            >
-              The community-driven Angular conference in Germany is over.
-            </p>
-
-            <div class="mb-8 text-gray-600 dark:text-gray-400">
-              <div class="flex items-start mb-3">
+            <div class="mt-6 space-y-2">
+              <div
+                class="flex items-center gap-3 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-400"
+              >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 mr-2 mt-1 text-primary-500"
+                  class="h-5 w-5 text-primary-500 shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
+                  stroke-width="2"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                   />
                 </svg>
-                <div>
-                  <span class="block">Workshops and talks are beeing uploaded to youtube.</span>
-                  <span class="block">Subscribe to our newsletter to get notified.</span>
+                <span>October 14-16, 2026</span>
+              </div>
+              <div
+                class="flex items-center gap-3 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-400"
+              >
+                <svg
+                  class="h-5 w-5 text-primary-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+                <span>Berlin, Germany</span>
+              </div>
+              <div class="space-y-0.5">
+                <div
+                  class="flex items-center gap-3 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-400"
+                >
+                  <svg
+                    class="h-5 w-5 text-primary-500 shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Oct 14: Workshop Day</span>
+                </div>
+                <div
+                  class="flex items-center gap-3 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-400"
+                >
+                  <span class="w-5 shrink-0"></span>
+                  <span>Oct 15-16: Conference Days</span>
                 </div>
               </div>
             </div>
 
-            <div class="flex flex-wrap items-center gap-4">
-              <button
-                type="button"
+            <div class="flex flex-wrap items-center gap-4 mt-8">
+              <a
+                routerLink="/call-for-papers"
                 class="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500 px-6 py-3 text-base font-semibold text-white shadow-lg transition hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-                (click)="scrollToNewsletter()"
               >
-                Subscribe to Newsletter
+                Become a speaker
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -123,14 +173,32 @@ interface VideoModalData {
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>
-              </button>
+              </a>
+              <a
+                routerLink="/for-sponsors"
+                class="inline-flex items-center gap-2 rounded-lg border-2 border-gray-300 dark:border-gray-600 px-6 py-3 text-base font-medium text-gray-700 dark:text-gray-300 transition hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+              >
+                Become a sponsor
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
             </div>
           </div>
 
           <div class="md:w-1/2 relative group">
-            <div
-              class="relative overflow-hidden rounded-lg shadow-2xl"
-            >
+            <div class="relative overflow-hidden rounded-lg shadow-2xl">
               <div
                 class="w-full h-full absolute top-0 left-0 bg-gradient-to-br from-primary-500/20 to-secondary-500/20 z-10"
               ></div>
@@ -149,7 +217,9 @@ interface VideoModalData {
               >
                 <span class="sr-only">Play conference impressions video</span>
                 <span class="relative" aria-hidden="true">
-                  <span class="bg-primary-500 text-white rounded-full p-4 shadow-lg inline-flex">
+                  <span
+                    class="bg-primary-500 text-white rounded-full p-4 shadow-lg inline-flex"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-8 w-8"
@@ -186,7 +256,7 @@ interface VideoModalData {
         </div>
       </div>
     </section>
-  `
+  `,
 })
 export class HeroComponent {
   private dialog = inject(Dialog);
@@ -194,14 +264,7 @@ export class HeroComponent {
 
   openVideoModal(): void {
     this.dialog.open<VideoModalComponent, VideoModalData>(VideoModalComponent, {
-      data: { videoId: '_l3Krgk6LSI' }
+      data: { videoId: "_l3Krgk6LSI" },
     });
-  }
-
-  scrollToNewsletter(): void {
-    const target = document.getElementById('newsletter');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
   }
 }

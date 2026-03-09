@@ -6,34 +6,46 @@ import { interval } from 'rxjs';
   selector: 'ngde-countdown',
   standalone: true,
   template: `
-    <div class="countdown-container">
-      <div class="countdown-grid">
-        <div class="countdown-item">
-          <div class="countdown-value">{{ days() }}</div>
-          <div class="countdown-label">Days</div>
-        </div>
-        <div class="countdown-separator">:</div>
-        <div class="countdown-item">
-          <div class="countdown-value">{{ formatNumber(hours()) }}</div>
-          <div class="countdown-label">Hours</div>
-        </div>
-        <div class="countdown-separator">:</div>
-        <div class="countdown-item">
-          <div class="countdown-value">{{ formatNumber(minutes()) }}</div>
-          <div class="countdown-label">Minutes</div>
-        </div>
-        <div class="countdown-separator">:</div>
-        <div class="countdown-item">
-          <div class="countdown-value">{{ formatNumber(seconds()) }}</div>
-          <div class="countdown-label">Seconds</div>
+    <section class="py-12 bg-gray-50 dark:bg-gray-800">
+      <div class="container mx-auto px-4">
+        <div class="text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Super Early Bird Sale Starts In
+          </h2>
+          <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
+            Get ready for exclusive early access tickets on April 1st, 2026!
+          </p>
+          <div class="countdown-container">
+            <div class="countdown-grid">
+              <div class="countdown-item">
+                <div class="countdown-value">{{ days() }}</div>
+                <div class="countdown-label">Days</div>
+              </div>
+              <div class="countdown-separator">:</div>
+              <div class="countdown-item">
+                <div class="countdown-value">{{ formatNumber(hours()) }}</div>
+                <div class="countdown-label">Hours</div>
+              </div>
+              <div class="countdown-separator">:</div>
+              <div class="countdown-item">
+                <div class="countdown-value">{{ formatNumber(minutes()) }}</div>
+                <div class="countdown-label">Minutes</div>
+              </div>
+              <div class="countdown-separator">:</div>
+              <div class="countdown-item">
+                <div class="countdown-value">{{ formatNumber(seconds()) }}</div>
+                <div class="countdown-label">Seconds</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   `,
   styles: [
     `
       .countdown-container {
-        @apply mb-8;
+        @apply max-w-4xl mx-auto;
       }
 
       .countdown-grid {
@@ -76,10 +88,10 @@ import { interval } from 'rxjs';
 })
 export class CountdownComponent {
   private readonly destroyRef = inject(DestroyRef);
-  
-  // Target date: December 16th, 2026 at 00:00:00 UTC
-  private readonly targetDate = new Date('2025-12-16T00:00:00Z');
-  
+
+  // Target date: April 1st, 2026 at 00:00:00 UTC (Super Early Bird Sale start)
+  private readonly targetDate = new Date('2026-04-01T00:00:00Z');
+
   days = signal(0);
   hours = signal(0);
   minutes = signal(0);
@@ -107,7 +119,9 @@ export class CountdownComponent {
 
     if (difference > 0) {
       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const hours = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
       const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
@@ -124,4 +138,3 @@ export class CountdownComponent {
     }
   }
 }
-

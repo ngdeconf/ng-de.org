@@ -1,4 +1,11 @@
-import { Component, computed, effect, signal } from '@angular/core';
+import {
+  afterNextRender,
+  Component,
+  computed,
+  effect,
+  input,
+  signal
+} from '@angular/core';
 import { Ticket } from '../../models/models';
 import { FlashSaleService } from '../../services/flash-sale.service';
 import { TicketPhaseService } from '../../services/ticket-phase.service';
@@ -9,14 +16,20 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
   selector: 'ngde-tickets',
   imports: [TicketTimelineComponent],
   template: `
-    <section id="tickets" class="py-28 bg-gray-50 dark:bg-gray-900">
+    <section id="tickets" class="py-28 dark:bg-gray-900">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
+          @if (isTicketSalesStarted()) {
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Get Your Tickets</h2>
           <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             Join us for the premier Angular conference in Germany. Secure your
             spot today!
           </p>
+          } @else {
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Ticket sales will start on {{ formatDate(ticketSalesStart()) }}
+          </h2>
+          }
         </div>
 
         <ngde-ticket-timeline />
@@ -246,6 +259,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
               </div>
 
               <!-- Button Section -->
+              @if (isTicketSalesStarted()) {
               <div class="px-6 pb-6">
                 <a
                   [href]="getTicketUrl(ticket)"
@@ -281,6 +295,7 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
                   </button>
                 </a>
               </div>
+              }
             </div>
           </div>
           }
@@ -373,10 +388,20 @@ import { TicketTimelineComponent } from './ticket-timeline.component';
   `
 })
 export class TicketsComponent {
+  private now = signal(new Date());
+
+  /** Date from which the ticket CTAs (Get Ticket buttons) become visible. */
+  ticketSalesStart = input.required<Date>();
+
   tickets = this.ticketService.getTickets();
   finalPrice = signal(899); // Default value for Final Bird phase
   ticketFinalPrices = signal<Record<string, number>>({});
   ticketSavings = signal<Record<string, number>>({});
+
+  isTicketSalesStarted = computed(() => {
+    const start = this.ticketSalesStart();
+    return this.now() >= start;
+  });
 
   sortedTickets = computed(() => {
     // Sort tickets based on price or other criteria
@@ -391,6 +416,8 @@ export class TicketsComponent {
     private ticketPhaseService: TicketPhaseService,
     private flashSaleService: FlashSaleService
   ) {
+    afterNextRender(() => this.startTicketSalesStartTimeUpdates());
+
     // Setup effect to calculate prices when phases change
     effect(() => {
       const allPhases = this.ticketPhaseService.getTicketPhases()();
@@ -404,6 +431,7 @@ export class TicketsComponent {
       }
     });
   }
+
 
   updateTicketPrices() {
     const finalPrices: Record<string, number> = {};
@@ -454,7 +482,7 @@ export class TicketsComponent {
     if (this.isFlashSaleTicket(ticket)) {
       return this.flashSaleService.getDiscountUrl();
     }
-    return 'https://ti.to/ng-de/berlin-2025';
+    return 'https://ti.to/ng-de/berlin-2026';
   }
 
   formatDate(date: Date): string {
@@ -464,5 +492,9 @@ export class TicketsComponent {
       day: 'numeric'
     };
     return new Date(date).toLocaleDateString('en-US', options);
+  }
+
+  private startTicketSalesStartTimeUpdates(): void {
+    setInterval(() => this.now.set(new Date()), 60_000);
   }
 }

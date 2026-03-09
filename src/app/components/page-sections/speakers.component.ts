@@ -6,8 +6,8 @@ import {
   signal,
   viewChild
 } from '@angular/core';
-import { SpeakerService } from '../../services/speaker.service';
 import { Speaker } from '../../models/models';
+import { SpeakerService } from '../../services/speaker.service';
 
 @Component({
   selector: 'ngde-speakers',
@@ -16,7 +16,7 @@ import { Speaker } from '../../models/models';
     <section #speakersSection id="speakers" class="py-16">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-bold mb-3">Meet Our Speakers</h2>
+          <h2 class="text-3xl md:text-4xl font-bold mb-3">Hall of Fame 2025</h2>
           <p class="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
             Learn from Angular experts and community leaders from around the
             world
@@ -60,17 +60,17 @@ import { Speaker } from '../../models/models';
                   class="text-primary-600 dark:text-primary-400 font-medium text-sm mb-1 flex items-center justify-center"
                 >
                   @if (speaker.angularTeam) {
-                  <img 
-                    src="assets/images/angular_gradient.png" 
-                    alt="" 
+                  <img
+                    src="assets/images/angular_gradient.png"
+                    alt=""
                     aria-hidden="true"
                     class="w-4 h-4 mr-1"
                   />
                   }
                   @if (speaker.ngrxTeam) {
-                  <img 
-                    src="assets/images/ngrx-logo.png" 
-                    alt="" 
+                  <img
+                    src="assets/images/ngrx-logo.png"
+                    alt=""
                     aria-hidden="true"
                     class="w-4 h-4 mr-1"
                   />
@@ -181,17 +181,17 @@ import { Speaker } from '../../models/models';
             <div>
               <p class="text-primary-600 dark:text-primary-400 font-medium flex items-center">
                 @if (activeSpeaker()?.angularTeam) {
-                <img 
-                  src="assets/images/angular_gradient.png" 
-                  alt="" 
+                <img
+                  src="assets/images/angular_gradient.png"
+                  alt=""
                   aria-hidden="true"
                   class="w-4 h-4 mr-1"
                 />
                 }
                 @if (activeSpeaker()?.ngrxTeam) {
-                <img 
-                  src="assets/images/ngrx-logo.png" 
-                  alt="" 
+                <img
+                  src="assets/images/ngrx-logo.png"
+                  alt=""
                   aria-hidden="true"
                   class="w-4 h-4 mr-1"
                 />

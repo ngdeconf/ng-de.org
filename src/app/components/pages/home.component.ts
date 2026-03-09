@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AnnouncementBannerComponent } from '../page-sections/announcement-banner.component';
+import { CountdownComponent } from '../countdown.component';
 import { CommunityPartnersComponent } from '../page-sections/community-partners.component';
 import { FaqComponent } from '../page-sections/faq.component';
 import { HeroComponent } from '../page-sections/hero.component';
@@ -7,46 +7,46 @@ import { ImpressionsComponent } from '../page-sections/impressions.component';
 import { LocationComponent } from '../page-sections/location.component';
 import { NewsletterSubscriptionComponent } from '../page-sections/newsletter-subscription.component';
 import { OrganizerComponent } from '../page-sections/organizer.component';
-import { ScheduleComponent } from '../page-sections/schedule.component';
 import { SpeakersComponent } from '../page-sections/speakers.component';
 import { SponsorsComponent } from '../page-sections/sponsors.component';
-import { TicketsComponent } from '../page-sections/tickets.component';
-import { WorkshopsComponent } from '../page-sections/workshops.component';
+import { TicketsComponent } from "../page-sections/tickets.component";
 
 @Component({
   selector: 'ngde-home',
   standalone: true,
   imports: [
     HeroComponent,
-    AnnouncementBannerComponent,
-    TicketsComponent,
+    CountdownComponent,
+    // TicketsComponent,
     SpeakersComponent,
-    ScheduleComponent,
-    WorkshopsComponent,
+    // ScheduleComponent,
+    // WorkshopsComponent,
     OrganizerComponent,
     SponsorsComponent,
     CommunityPartnersComponent,
     LocationComponent,
     ImpressionsComponent,
     NewsletterSubscriptionComponent,
-    // CallForPapersComponent,
-    FaqComponent
-  ],
+    FaqComponent,
+    TicketsComponent
+],
   template: `
     <ngde-hero />
+    <ngde-countdown />
+    <ngde-tickets [ticketSalesStart]="ticketSalesStartDate" />
     <ngde-newsletter-subscription />
-    <ngde-announcement-banner />
     <ngde-sponsors />
-    <!-- <ngde-tickets /> -->
     <ngde-speakers />
-    <ngde-schedule />
-    <ngde-workshops />
+    <!-- <ngde-schedule /> -->
+    <!-- <ngde-workshops /> -->
     <ngde-organizer />
     <ngde-community-partners />
     <ngde-location />
     <ngde-impressions />
-    <!-- <ngde-call-for-papers /> -->
     <ngde-faq />
   `
 })
-export class HomeComponent {}
+export class HomeComponent {
+  /** Ticket sales CTA becomes visible on 1 April, 7:00 CET */
+  readonly ticketSalesStartDate = new Date('2026-04-01T07:00:00+02:00');
+}
