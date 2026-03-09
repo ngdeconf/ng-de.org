@@ -88,7 +88,7 @@ interface VideoModalData {
                 class="flex items-center gap-3 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-400"
               >
                 <svg
-                  class="h-5 w-5 text-primary-500"
+                  class="h-5 w-5 text-primary-500 shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -124,6 +124,32 @@ interface VideoModalData {
                   />
                 </svg>
                 <span>Berlin, Germany</span>
+              </div>
+              <div class="space-y-0.5">
+                <div
+                  class="flex items-center gap-3 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-400"
+                >
+                  <svg
+                    class="h-5 w-5 text-primary-500 shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Oct 14: Workshop Day</span>
+                </div>
+                <div
+                  class="flex items-center gap-3 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-400"
+                >
+                  <span class="w-5 shrink-0"></span>
+                  <span>Oct 15-16: Conference Days</span>
+                </div>
               </div>
             </div>
 
