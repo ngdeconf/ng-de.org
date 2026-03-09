@@ -1,15 +1,15 @@
-import { Dialog } from '@angular/cdk/dialog';
-import { Component, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { FlashSaleService } from '../../services/flash-sale.service';
-import { VideoModalComponent } from '../video-modal/video-modal.component';
+import { Dialog } from "@angular/cdk/dialog";
+import { Component, inject } from "@angular/core";
+import { RouterLink } from "@angular/router";
+import { FlashSaleService } from "../../services/flash-sale.service";
+import { VideoModalComponent } from "../video-modal/video-modal.component";
 
 interface VideoModalData {
   videoId: string;
 }
 
 @Component({
-  selector: 'ngde-hero',
+  selector: "ngde-hero",
   standalone: true,
   imports: [RouterLink],
   styles: `
@@ -42,7 +42,7 @@ interface VideoModalData {
     }
 
     .hero-flash-sale-button::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: -100%;
@@ -100,7 +100,7 @@ interface VideoModalData {
                     d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                   />
                 </svg>
-                <span>October 15-16, 2026</span>
+                <span>October 14-16, 2026</span>
               </div>
               <div
                 class="flex items-center gap-3 text-lg md:text-xl font-medium text-gray-600 dark:text-gray-400"
@@ -230,7 +230,7 @@ interface VideoModalData {
         </div>
       </div>
     </section>
-  `
+  `,
 })
 export class HeroComponent {
   private dialog = inject(Dialog);
@@ -238,7 +238,7 @@ export class HeroComponent {
 
   openVideoModal(): void {
     this.dialog.open<VideoModalComponent, VideoModalData>(VideoModalComponent, {
-      data: { videoId: '_l3Krgk6LSI' }
+      data: { videoId: "_l3Krgk6LSI" },
     });
   }
 }

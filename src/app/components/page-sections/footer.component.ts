@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'ngde-footer',
+  selector: "ngde-footer",
   imports: [RouterLink],
   standalone: true,
   template: `
@@ -21,7 +21,7 @@ import { RouterLink } from '@angular/router';
                   NG-DE
                 </span>
               </h3>
-              <p class="text-xs text-gray-400">14.–16. October 2026 • Berlin</p>
+              <p class="text-xs text-gray-400">October 14-16 2026 • Berlin</p>
             </div>
           </div>
 
@@ -81,7 +81,7 @@ import { RouterLink } from '@angular/router';
             />
             <div class="text-center">
               <p class="text-gray-500 text-xs">
-                Förderrichtlinie<br>
+                Förderrichtlinie<br />
                 „Kongressfonds für nachhaltiges Tagen"
               </p>
             </div>
@@ -110,7 +110,7 @@ import { RouterLink } from '@angular/router';
         </div>
       </div>
     </footer>
-  `
+  `,
 })
 export class FooterComponent {
   get currentYear(): number {

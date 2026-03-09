@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 
 interface TalkFormat {
   title: string;
@@ -17,7 +17,7 @@ interface Topic {
 }
 
 @Component({
-  selector: 'ngde-call-for-papers',
+  selector: "ngde-call-for-papers",
   imports: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
@@ -25,23 +25,56 @@ interface Topic {
       <div class="container mx-auto px-4">
         <header class="pt-8 px-4 mb-10 text-left">
           <div class="flex items-center gap-4 mb-3">
-            <img src="assets/logo.svg" alt="NG-DE Logo" class="h-16 w-16 md:h-20 md:w-20 shrink-0" />
+            <img
+              src="assets/logo.svg"
+              alt="NG-DE Logo"
+              class="h-16 w-16 md:h-20 md:w-20 shrink-0"
+            />
             <h2 class="text-3xl md:text-4xl font-bold">Call for Papers</h2>
           </div>
           <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
             Share your expertise with the Angular community at NG-DE 2026
           </p>
-          <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mt-4 text-sm text-gray-600 dark:text-gray-400">
+          <div
+            class="flex flex-wrap items-center gap-x-6 gap-y-2 mt-4 text-sm text-gray-600 dark:text-gray-400"
+          >
             <span class="inline-flex items-center gap-2">
-              <svg class="w-5 h-5 text-primary-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              <svg
+                class="w-5 h-5 text-primary-500 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
               </svg>
-              October 15–16, 2026
+              October 14–16, 2026
             </span>
             <span class="inline-flex items-center gap-2">
-              <svg class="w-5 h-5 text-primary-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <svg
+                class="w-5 h-5 text-primary-500 shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
               </svg>
               Berlin, Germany
             </span>
@@ -234,7 +267,7 @@ interface Topic {
                 </div>
                 @if (step.number < processSteps.length) {
                   <div
-                    class="hidden md:block w-full h-0.5 bg-gray-300 dark:bg-gray-600 mx-2"
+                    class="hidden md:block w-40 flex-shrink-0 h-0.5 bg-gray-300 dark:bg-gray-600 mx-1"
                   ></div>
                 }
               }
@@ -243,37 +276,37 @@ interface Topic {
         </div>
       </div>
     </section>
-  `
+  `,
 })
 export class CallForPapersComponent {
   readonly topics: Topic[] = [
-    { name: 'Angular (core, Signals, Hydration, Vite)' },
-    { name: 'Reactive patterns & NgRx' },
-    { name: 'Security & performance' },
-    { name: 'AI, agentic engineering & AI-generated UIs' },
-    { name: 'Developer experience & community' }
+    { name: "Angular (core, Signals, Hydration, Vite)" },
+    { name: "Reactive patterns & NgRx" },
+    { name: "Security & performance" },
+    { name: "AI, agentic engineering & AI-generated UIs" },
+    { name: "Developer experience & community" },
   ];
 
   readonly processSteps: ProcessStep[] = [
     {
       number: 1,
-      label: 'You send an abstract',
-      description: 'Submit your talk proposal via our Google Form'
+      label: "You send an abstract",
+      description: "Submit your talk proposal via our Google Form",
     },
     {
       number: 2,
-      label: 'We anonymize it',
-      description: 'Your submission is anonymized for unbiased evaluation'
+      label: "We anonymize it",
+      description: "Your submission is anonymized for unbiased evaluation",
     },
     {
       number: 3,
-      label: 'Jury decides',
-      description: 'Our jury reviews and selects the best submissions'
+      label: "Jury decides",
+      description: "Our jury reviews and selects the best submissions",
     },
     {
       number: 4,
-      label: 'You get informed',
-      description: 'We notify you whether your talk was selected'
-    }
+      label: "You get informed",
+      description: "We notify you whether your talk was selected",
+    },
   ];
 }
