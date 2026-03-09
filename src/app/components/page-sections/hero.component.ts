@@ -1,5 +1,6 @@
 import { Dialog } from '@angular/cdk/dialog';
 import { Component, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { FlashSaleService } from '../../services/flash-sale.service';
 import { VideoModalComponent } from '../video-modal/video-modal.component';
 
@@ -9,6 +10,8 @@ interface VideoModalData {
 
 @Component({
   selector: 'ngde-hero',
+  standalone: true,
+  imports: [RouterLink],
   styles: `
     @keyframes hero-flash-pulse {
       0%,
@@ -125,10 +128,9 @@ interface VideoModalData {
             </div>
 
             <div class="flex flex-wrap items-center gap-4 mt-8">
-              <button
-                type="button"
+              <a
+                routerLink="/call-for-papers"
                 class="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-500 px-6 py-3 text-base font-semibold text-white shadow-lg transition hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-                (click)="scrollToCallForPapers()"
               >
                 Become a speaker
                 <svg
@@ -145,13 +147,26 @@ interface VideoModalData {
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>
-              </button>
+              </a>
               <a
-                href="#sponsors"
-                (click)="scrollToSponsors($event)"
+                routerLink="/for-sponsors"
                 class="inline-flex items-center gap-2 rounded-lg border-2 border-gray-300 dark:border-gray-600 px-6 py-3 text-base font-medium text-gray-700 dark:text-gray-300 transition hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
               >
                 Become a sponsor
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
               </a>
             </div>
           </div>
@@ -225,20 +240,5 @@ export class HeroComponent {
     this.dialog.open<VideoModalComponent, VideoModalData>(VideoModalComponent, {
       data: { videoId: '_l3Krgk6LSI' }
     });
-  }
-
-  scrollToCallForPapers(): void {
-    const target = document.getElementById('call-for-papers');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-
-  scrollToSponsors($event: Event): void {
-    $event.preventDefault();
-    const target = document.getElementById('sponsors');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
   }
 }
