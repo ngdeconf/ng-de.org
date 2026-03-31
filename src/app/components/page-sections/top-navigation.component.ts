@@ -47,8 +47,8 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                     NG-DE
                   </span>
                 </h1>
-                <p class="text-xs text-gray-600 dark:text-gray-300">
-                  The Angular Conference in Germany
+                <p class="text-xs font-semibold text-red-600 dark:text-red-400">
+                  NG-DE 2026 is canceled
                 </p>
               </div>
             </div>

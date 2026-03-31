@@ -39,31 +39,20 @@ interface VideoModalData {
             </div>
 
             <div
-              class="mt-6 p-5 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/60"
+              class="mt-6 rounded-2xl border-2 border-red-500/70 bg-red-50 dark:bg-red-900/20 p-6 md:p-8 shadow-lg"
             >
-              <p class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-3">
-                NG-DE 2026 has been canceled.
+              <p
+                class="text-red-700 dark:text-red-300 text-sm font-bold tracking-[0.18em] uppercase mb-3"
+              >
+                Important Update
               </p>
-              <p class="text-gray-600 dark:text-gray-400 mb-2">
-                What led to this:
+              <p
+                class="text-3xl md:text-4xl font-extrabold leading-tight text-red-700 dark:text-red-200"
+              >
+                NG-DE 2026 is canceled. R.I.P. 🪦
               </p>
-              <ul class="space-y-1 text-gray-600 dark:text-gray-400 mb-4">
-                <li class="flex items-start gap-2">
-                  <span class="text-primary-500 mt-1 shrink-0">•</span>
-                  <span>No sponsors</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-primary-500 mt-1 shrink-0">•</span>
-                  <span>Significantly less interest than expected</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <span class="text-primary-500 mt-1 shrink-0">•</span>
-                  <span>Extremely high and unsustainable costs</span>
-                </li>
-              </ul>
-              <p class="text-sm text-gray-500 dark:text-gray-500">
-                There are no tickets, no refunds, nothing you need to do.
-                Thank you for being part of NG-DE.
+              <p class="mt-3 text-base md:text-lg text-red-700/90 dark:text-red-300/90">
+                There are no tickets, no refunds, and nothing you need to do.
               </p>
             </div>
 
