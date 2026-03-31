@@ -1,10 +1,11 @@
-import { Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component } from "@angular/core";
 import { RouterLink } from "@angular/router";
 
 @Component({
   selector: "ngde-footer",
   imports: [RouterLink],
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">
@@ -21,7 +22,7 @@ import { RouterLink } from "@angular/router";
                   NG-DE
                 </span>
               </h3>
-              <p class="text-xs text-gray-400">October 14-16 2026 • Berlin</p>
+              <p class="text-xs text-gray-400">The Angular Conference in Germany</p>
             </div>
           </div>
 
