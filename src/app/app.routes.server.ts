@@ -7,11 +7,11 @@ export const serverRoutes: ServerRoute[] = [
   },
   {
     path: 'call-for-papers',
-    renderMode: RenderMode.Prerender
+    renderMode: RenderMode.Server
   },
   {
     path: 'for-sponsors',
-    renderMode: RenderMode.Prerender
+    renderMode: RenderMode.Server
   },
   {
     path: ':year/talks',

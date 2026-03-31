@@ -1,5 +1,6 @@
 import {
     afterNextRender,
+    ChangeDetectionStrategy,
     Component,
     DestroyRef,
     ElementRef,
@@ -16,6 +17,7 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
 @Component({
   selector: 'ngde-top-navigation',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [ThemeToggleButtonComponent, MobileMenuComponent, RouterModule],
   template: `
     <header
@@ -45,8 +47,8 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                     NG-DE
                   </span>
                 </h1>
-                <p class="text-xs text-gray-600 dark:text-gray-300">
-                  We are back in 2026!
+                <p class="text-xs font-semibold text-red-600 dark:text-red-400">
+                  NG-DE 2026 is canceled
                 </p>
               </div>
             </div>
@@ -62,54 +64,6 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 style="transition: opacity 0.2s ease"
                 >Home</a
               >
-              <!-- <a
-                href="#tickets"
-                class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                [class.text-primary-500]="isActiveSection('tickets')"
-                [class.dark:text-primary-400]="isActiveSection('tickets')"
-                style="transition: opacity 0.2s ease"
-                >Tickets</a
-              > -->
-              <!-- <a
-                href="#speakers"
-                class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                [class.text-primary-500]="isActiveSection('speakers')"
-                [class.dark:text-primary-400]="isActiveSection('speakers')"
-                style="transition: opacity 0.2s ease"
-                >Speakers</a
-              > -->
-              <!-- <a
-                href="#schedule"
-                class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                [class.text-primary-500]="isActiveSection('schedule')"
-                [class.dark:text-primary-400]="isActiveSection('schedule')"
-                style="transition: opacity 0.2s ease"
-                >Schedule</a
-              > -->
-              <!-- <a
-                href="#workshops"
-                class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                [class.text-primary-500]="isActiveSection('workshops')"
-                [class.dark:text-primary-400]="isActiveSection('workshops')"
-                style="transition: opacity 0.2s ease"
-                >Workshops</a
-              > -->
-              <a
-                routerLink="/call-for-papers"
-                routerLinkActive="text-primary-500 dark:text-primary-400"
-                [routerLinkActiveOptions]="{ exact: true }"
-                class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                style="transition: opacity 0.2s ease"
-                >Call for Papers</a
-              >
-              <a
-                routerLink="/for-sponsors"
-                routerLinkActive="text-primary-500 dark:text-primary-400"
-                [routerLinkActiveOptions]="{ exact: true }"
-                class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                style="transition: opacity 0.2s ease"
-                >For Sponsors</a
-              >
               <a
                 href="#faq"
                 class="hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
@@ -124,17 +78,6 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 class="font-semibold py-2 px-4 rounded-lg border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-400 dark:hover:text-gray-900 transition-colors"
                 >Watch 2025 talks</a
               >
-
-              <!-- Get Tickets CTA Button for desktop nav -->
-              <a
-                href="#tickets"
-                class="get-tickets-cta bg-[#e40341] hover:bg-[#c90339] text-white font-semibold py-2 px-5 rounded-lg transition-all duration-300 ease-in-out"
-                [class.opacity-0]="!showTicketsCTA()"
-                [class.opacity-100]="showTicketsCTA()"
-                style="transition: opacity 0.3s ease, transform 0.3s ease"
-              >
-                Get Tickets
-              </a>
             </nav>
 
             <div class="flex items-center space-x-4">
@@ -144,16 +87,6 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
                 class="lg:hidden font-semibold py-1.5 px-3 text-sm rounded-lg border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-400 dark:hover:text-gray-900 transition-colors shrink-0"
                 >Watch 2025 talks</a
               >
-              <!-- Get Tickets CTA Button for mobile -->
-              <a
-                href="#tickets"
-                class="lg:hidden get-tickets-cta bg-[#e40341] hover:bg-[#c90339] text-white font-semibold py-1.5 px-3 text-sm rounded-lg transition-all duration-300 ease-in-out"
-                [class.opacity-0]="!showTicketsCTA()"
-                [class.opacity-100]="showTicketsCTA()"
-                style="transition: opacity 0.3s ease, transform 0.3s ease"
-              >
-                Get Tickets
-              </a>
 
               <ngde-theme-toggle-button />
 
@@ -212,87 +145,52 @@ import { ThemeToggleButtonComponent } from '../theme-toggle-button.component';
       :host {
         display: block;
       }
-
-      .get-tickets-cta {
-        transition: opacity 0.3s ease;
-        opacity: 0;
-        pointer-events: none;
-      }
-
-      .get-tickets-cta.opacity-100 {
-        opacity: 1;
-        pointer-events: auto;
-      }
-
-      .get-tickets-cta.opacity-0 {
-        opacity: 0;
-        pointer-events: none;
-      }
     `
   ]
 })
 export class TopNavigationComponent {
   headerElement = viewChild.required<ElementRef>('header');
-  private destroyRef = inject(DestroyRef);
+  private readonly destroyRef = inject(DestroyRef);
+  private readonly themeService = inject(ThemeService);
 
-  ticketsSectionBottom = signal(0);
   heroSectionBottom = signal(0);
   isHeaderCollapsed = signal(false);
   isMenuOpen = signal(false);
   isScrolled = signal(false);
   isMobileMenuOpen = signal(false);
-  showTicketsCTA = signal(false);
   isPastHero = signal(false);
 
-  // Track the active section
   activeSection = signal<string>('home');
 
-  // Navigation menu sections - ordered by appearance
-  private readonly navSections = [
-    'home',
-    'tickets',
-    'speakers',
-    'schedule',
-    'workshops',
-    'call-for-papers',
-    'faq'
-  ];
-  // All sections on the page, including ones not in navigation
+  private readonly navSections = ['home', 'faq'];
   private readonly allSections = [
     'home',
-    'tickets',
     'speakers',
-    'schedule',
-    'workshops',
     'organizer',
     'impressions',
-    'call-for-papers',
     'faq'
   ];
-  // Throttling for scroll events
-  private scrollThrottleTimeout: any = null;
 
-  constructor(private themeService: ThemeService) {
-    // Only run browser-specific code after rendering
+  private scrollThrottleTimeout: ReturnType<typeof setTimeout> | null = null;
+
+  constructor() {
     afterNextRender(() => {
-      // Setup scroll handler
+      // SSR guard: `window`/`document` are not available during server rendering.
+      if (typeof window === 'undefined' || typeof document === 'undefined') return;
+
       this.setupScrollHandling();
-
-      // Calculate initial positions
       this.calculateSectionPositions();
-
-      // Initial update of active section
       this.updateActiveSection();
     });
   }
 
   private setupScrollHandling(): void {
-    // Add event listener using bind to maintain context
+    if (typeof window === 'undefined') return;
+
     window.addEventListener('scroll', this.handleScrollThrottled.bind(this), {
       passive: true
     });
 
-    // Clean up listener when component is destroyed
     this.destroyRef.onDestroy(() => {
       window.removeEventListener(
         'scroll',
@@ -304,7 +202,6 @@ export class TopNavigationComponent {
     });
   }
 
-  // Throttle scroll handler to improve performance
   private handleScrollThrottled(): void {
     if (!this.scrollThrottleTimeout) {
       this.scrollThrottleTimeout = setTimeout(() => {
@@ -314,46 +211,32 @@ export class TopNavigationComponent {
     }
   }
 
-  // This host listener isn't used for actual scroll handling but is kept
-  // for potential future Angular-specific functionality
   @HostListener('window:scroll')
   handleScroll(): void {
-    if (typeof window === 'undefined') return; // SSR guard
+    if (typeof window === 'undefined') return;
 
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    // Basic scroll check
     this.isScrolled.set(scrollTop > 10);
-
-    // Update header collapse state
     this.isHeaderCollapsed.set(scrollTop > 50);
 
-    // Check for ticket CTA visibility
-    if (this.ticketsSectionBottom() > 0) {
-      this.showTicketsCTA.set(scrollTop > this.ticketsSectionBottom());
-    }
-
-    // Check if we've scrolled past hero section
     if (this.heroSectionBottom() > 0) {
       this.isPastHero.set(scrollTop > this.heroSectionBottom() * 0.8);
     }
 
-    // Update active section based on scroll position
     this.updateActiveSection();
   }
 
   @HostListener('window:resize')
   onWindowResize(): void {
+    if (typeof window === 'undefined' || typeof document === 'undefined') return;
+
     this.calculateSectionPositions();
     this.updateActiveSection();
   }
 
   private calculateSectionPositions(): void {
-    const ticketsSection = document.getElementById('tickets');
-    if (ticketsSection) {
-      const rect = ticketsSection.getBoundingClientRect();
-      this.ticketsSectionBottom.set(rect.bottom + window.scrollY);
-    }
+    if (typeof window === 'undefined' || typeof document === 'undefined') return;
 
     const heroSection = document.getElementById('home');
     if (heroSection) {
@@ -404,19 +287,19 @@ export class TopNavigationComponent {
     this.activeSection.set(this.navSections[0]);
   }
 
-  isActiveSection(sectionId: string): boolean {
+  protected isActiveSection(sectionId: string): boolean {
     return this.activeSection() === sectionId;
   }
 
-  isDarkMode() {
+  protected isDarkMode() {
     return this.themeService.darkMode();
   }
 
-  toggleDarkMode(): void {
+  protected toggleDarkMode(): void {
     this.themeService.toggleDarkMode();
   }
 
-  openMobileMenu(): void {
+  protected openMobileMenu(): void {
     this.isMobileMenuOpen.set(true);
 
     if (typeof document !== 'undefined') {
@@ -424,13 +307,13 @@ export class TopNavigationComponent {
     }
   }
 
-  closeMobileMenu(): void {
+  protected closeMobileMenu(): void {
     this.isMobileMenuOpen.set(false);
 
     document.body.style.overflow = '';
   }
 
-  toggleMobileMenu(): void {
+  protected toggleMobileMenu(): void {
     this.isMobileMenuOpen.update(value => !value);
 
     if (this.isMobileMenuOpen()) {
@@ -440,7 +323,7 @@ export class TopNavigationComponent {
     }
   }
 
-  scrollToSection(sectionId: string): void {
+  protected scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
 
     if (!element) return;
