@@ -49,10 +49,7 @@ interface VideoModalData {
               <p
                 class="text-3xl md:text-4xl font-extrabold leading-tight text-red-700 dark:text-red-200"
               >
-                NG-DE 2026 is canceled. R.I.P. 🪦
-              </p>
-              <p class="mt-3 text-base md:text-lg text-red-700/90 dark:text-red-300/90">
-                There are no tickets, no refunds, and nothing you need to do.
+                NG-DE 2026 is cancelled. R.I.P. 🪦
               </p>
             </div>
 
