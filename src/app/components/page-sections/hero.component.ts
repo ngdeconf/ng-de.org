@@ -38,21 +38,6 @@ interface VideoModalData {
               </h1>
             </div>
 
-            <div
-              class="mt-6 rounded-2xl border-2 border-red-500/70 bg-red-50 dark:bg-red-900/20 p-6 md:p-8 shadow-lg"
-            >
-              <p
-                class="text-red-700 dark:text-red-300 text-sm font-bold tracking-[0.18em] uppercase mb-3"
-              >
-                Important Update
-              </p>
-              <p
-                class="text-3xl md:text-4xl font-extrabold leading-tight text-red-700 dark:text-red-200"
-              >
-                NG-DE 2026 is cancelled. R.I.P. 🪦
-              </p>
-            </div>
-
             <div class="flex flex-wrap items-center gap-4 mt-8">
               <a
                 routerLink="/2025/talks"
