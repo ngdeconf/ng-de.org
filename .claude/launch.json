@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ng-serve",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start"],
+      "port": 4200
+    },
+    {
+      "name": "serve-ssr",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "serve:ssr:demo"],
+      "port": 4000
+    }
+  ]
+}
